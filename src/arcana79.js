@@ -10,7 +10,7 @@ function arc79Intent(question,scene){
  let primary=result.primary;
  if(/(?:비교|어느\s*(?:쪽|곳|것)|둘\s*중|A\s*(?:와|과|또는|vs)\s*B|[가-힣]*[을할갈낼볼둘날릴질]지.{0,50}[가-힣]*[을할갈낼볼둘날릴질]지|(?:아니면|혹은).{0,30}(?:나을|좋을|선택))/i.test(ask))primary='compare';
  else if(/(?:배울|깨달을|돌아보|성찰)/.test(ask)&&!/(?:방법|어떻게|해야)/.test(ask))primary='open';
- else if(/(?:어떻게|어떡|무엇부터|뭐부터|어디부터|무엇을|뭘|어떤\s*(?:준비|행동|방법|점)|조언|대처|준비할|고칠|손볼|보완할|줄일|다스릴|추스를|정리할|관리할|해야|해도\s*(?:될|괜찮)|하는\s*(?:게|것이)\s*(?:좋|나)|(?:연락|전화|지원|퇴사|도전|시작|이직|신청)할까요|볼까요|갈까요|보낼까요|쉴까요|그만둘까요)/.test(ask)&&!/(?:어떻게\s*(?:될|되었|됐|흘러)|왜|이유|원인|배경)/.test(ask))primary='action';
+ else if(/(?:어떻게|어떡|무엇부터|뭐부터|어디부터|무엇을|뭘|어떤\s*(?:준비|행동|방법|점)|조언|대처|준비할|고칠|손볼|보완할|줄일|다스릴|추스를|정리할|관리할|해야|해도\s*(?:될|괜찮)|하는\s*(?:게|것이)\s*(?:좋|나)|(?:연락|전화|지원|퇴사|도전|시작|이직|신청)할까요|볼까요|갈까요|보낼까요|쉴까요|그만둘까요)/.test(ask)&&!/(?:어떻게\s*(?:될|되었|됐|흘러)|왜|어째서|까닭|이유|원인|배경)/.test(ask))primary='action';
  else if(/(?:왜|어째서|까닭|원인|이유|배경|무슨\s*(?:뜻|의미))/.test(ask))primary='cause';
  else if(/(?:어도|아도)\s*(?:될까|괜찮)/.test(ask))primary='action';
  else if(/(?:불안|걱정|두렵|두려).{0,60}(?:어요|습니다|에요)$/.test(ask)&&!/(?:할까요|일까요|될까요|있을까요|언제)/.test(ask))primary='emotion';
@@ -217,6 +217,9 @@ function arc79UI(){
  // Advanced experimental model controls belong in the guide, away from the answer.
  const advanced=document.createElement('details');advanced.className='arc79-advanced';advanced.innerHTML='<summary>실험 기능 · 기기 내 언어모델</summary>';
  document.querySelector('#about').appendChild(advanced);
+ const artCredit=document.createElement('p');artCredit.className='arc79-art-credit';
+ artCredit.innerHTML='카드 그림: Pamela Colman Smith · 1909 RWS “Roses &amp; Lilies” 원본 스캔 · Saskia Jansen 소장본. <a href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)" target="_blank" rel="noopener noreferrer">원본 출처 보기</a>. 78장 모두 앱에 내장되어 인터넷 없이도 원본이 표시됩니다.';
+ $('deckGrid').before(artCredit);
  ['a33Panel','a34Panel'].forEach(id=>{if($(id))advanced.appendChild($(id));});
  update();
 }

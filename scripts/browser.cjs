@@ -9,7 +9,7 @@ module.exports = async () => {
     const target=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
     if(target!==root&&!target.startsWith(root+path.sep)){res.writeHead(403).end();return;}
     const file=target===root?path.join(root,'index.html'):target;
-    try{res.setHeader('Content-Type',file.endsWith('.html')?'text/html; charset=utf-8':'application/octet-stream');res.end(fs.readFileSync(file));}
+    try{res.setHeader('Content-Type',file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.jpg')?'image/jpeg':'application/octet-stream');res.end(fs.readFileSync(file));}
     catch{res.writeHead(404).end();}
   });
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));

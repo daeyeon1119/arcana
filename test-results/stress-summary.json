@@ -1,6 +1,6 @@
 {
   "seed": 790026,
-  "appSHA256": "cac2c9980dffc160bc0f7ad69966e7c91fa2460fdb045eb54a58bf641723fcfe",
+  "appSHA256": "523eb25cdb54c4c993cb8385a5a878ab8255682ff31574ead923d36c6816eadc",
   "scenarioCount": 128,
   "readingCount": 1024,
   "passed": 1024,
@@ -625,10 +625,10 @@
     ]
   },
   "holdout": {
-    "note": "Legacy 48 prompts; no tuning based on these results in this change.",
+    "note": "Legacy 48 prompts. One known regression (까닭 misread as action) was used for this follow-up fix; final scores are regression data, not independent accuracy.",
     "count": 48,
     "before": 34,
-    "after": 36,
+    "after": 37,
     "results": [
       {
         "question": "언젠가 부모님과의 거리가 다시 가까워질까요?",
@@ -742,7 +742,7 @@
         "question": "최근 일에 대한 의욕이 떨어진 까닭은 뭘까요?",
         "expected": "cause",
         "before": "cause",
-        "after": "action"
+        "after": "cause"
       },
       {
         "question": "작은 지적에도 유독 민감하게 반응하는 원인이 궁금해요.",
@@ -918,14 +918,16 @@
         "before": "open",
         "after": "open"
       }
-    ]
+    ],
+    "improved": 3,
+    "regressed": 0
   },
   "failures": [],
   "latencyMs": {
     "note": "Single local generation, excluding browser startup, UI animation and baseline comparison.",
     "p50": 0.8,
-    "p95": 1.8,
-    "max": 19.6,
-    "total": 1019
+    "p95": 1.7,
+    "max": 15,
+    "total": 970.1
   }
 }

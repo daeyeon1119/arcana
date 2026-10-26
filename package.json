@@ -7,7 +7,8 @@
     "build": "python scripts/build.py",
     "test:stress": "node scripts/stress.cjs",
     "test:ui": "node scripts/ui.cjs",
-    "test": "npm run test:stress && npm run test:ui"
+    "test:images": "node scripts/images.cjs",
+    "test": "npm run test:stress && npm run test:ui && npm run test:images"
   },
   "devDependencies": {
     "playwright": "1.62.1"

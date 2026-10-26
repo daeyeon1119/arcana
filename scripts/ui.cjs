@@ -77,6 +77,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
   const empty=__arcana79Build('','one',cards).direct;
   return {rejects,next:next.scene.facts.known===false,manual,empty:!!empty};
  });assert.deepEqual(edge,{rejects:true,next:true,manual:'career',empty:true});checks.push('invalid inputs / next attempt / manual domain / empty question');
+ assert.equal(await p.evaluate(()=>{arc79ForcedIntent='auto';return arc79Scene('최근 일에 대한 의욕이 떨어진 까닭은 뭘까요?').intent.primary;}),'cause');checks.push('cause question with 까닭 and 뭘 remains cause');
  assert.deepEqual(errors,[]);checks.push('no browser page errors / external requests blocked');
  fs.writeFileSync('test-results/ui-summary.json',JSON.stringify({checks,errors,browser:await browser.version()},null,2));console.log(JSON.stringify({passed:checks.length,checks,errors},null,2));
  }finally{await browser.close();}

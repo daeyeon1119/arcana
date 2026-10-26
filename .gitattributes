@@ -1,0 +1,6 @@
+* text=auto
+*.jpg -text
+*.jpeg -text
+*.png -text
+*.gz -text
+index.html text eol=lf

@@ -23,6 +23,7 @@
     "draw/reveal celtic 10",
     "card dialog keyboard trap / Escape",
     "invalid inputs / next attempt / manual domain / empty question",
+    "cause question with 까닭 and 뭘 remains cause",
     "no browser page errors / external requests blocked"
   ],
   "errors": [],
