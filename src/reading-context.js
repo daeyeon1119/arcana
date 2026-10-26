@@ -5,7 +5,7 @@ arc79Scene=function(question,override='auto'){
  if(model.evidenceQuestion!==model.question)scene.facts={...ARC82_SCENE(model.evidenceQuestion,override).scene.facts};
  const f=scene.facts;
  const contacts=model.events.filter(e=>e.kind==='contact'),replies=model.events.filter(e=>e.kind==='reply'),results=model.events.filter(e=>e.kind==='result');
- if(contacts.length)f.sent=state.sent===true;
+ if(contacts.length||state.sent!==null)f.sent=state.sent===true;
  if(state.received!==null)f.replied=state.received;
  else if(replies.some(e=>e.actor==='self'||e.recipient?.actor==='other'&&e.direction==='receive'&&!e.accepting))f.replied=false;
  if(state.replyWaiting)f.noReply=true;
@@ -16,7 +16,9 @@ arc79Scene=function(question,override='auto'){
  }
  if(state.previousOutcome){f.previousOutcome=state.previousOutcome;f.known=false;f.resultFailed=false;f.resultPassed=false;}
  if(f.known)scene.phase='known';
+ else if(state.assessmentUpcoming&&!state.replyWaiting||state.previousOutcome!==undefined)scene.phase='active';
  else if(state.waiting)scene.phase='pending';
+ else if(results.length&&state.resultKnown===null&&!state.resultWaiting)scene.phase='active';
  else if(state.received===true&&!state.resultWaiting)scene.phase='active';
  f.waiting=scene.phase==='pending';
  if(override==='auto'&&model.entities.romantic&&!scene.medical&&!['health','finances'].includes(scene.domain))scene.domain='relationship';
@@ -28,7 +30,8 @@ function arc82Action(scene,pack,task){
  const model=scene.arc82||ARCANA_QUESTION_MODEL.parse(scene.question),state=model.state,goal=task?.goal||model.requests[0]?.goal;
  if(scene.boundary||scene.abuse||scene.urgent||scene.medical||['health','finances'].includes(scene.domain)||scene.facts.known)return null;
  if(state.sent===true&&state.received===false)return '이미 전한 내용을 반복해서 보내기보다, 응답을 기다리는 동안 내 일상을 이어 가고 언제까지 기다릴 수 있을지 정해 보세요.';
- if(state.waiting&&(state.resultWaiting||state.assessmentCompleted===true))return '공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.';
+ if(state.received===false&&state.replyWaiting)return '아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다.';
+ if(state.waiting&&(state.resultWaiting||state.assessmentCompleted===true))return '공식 결과를 확인할 경로와 시간을 정하고, '+(state.assessmentCompleted===true||state.submitted===true?'이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요.':'확인된 사실과 아직 모르는 결과를 나누어 보세요.')+' 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.';
  if(goal==='cope'||task?.kind==='emotion'||scene.intent==='emotion'){
   if(state.received===true)return '이미 받은 답의 내용과 그 뒤에도 남아 있는 마음을 나누어 적어 보세요. 답을 다시 확인받는 일보다 지금 필요한 휴식이나 지지를 먼저 살펴볼 수 있습니다.';
   if(task?.kind==='emotion'&&model.requests.length>1)return '지금 가장 큰 감정을 한 문장으로 적고, 바로 바꿀 수 있는 일과 잠시 내려놓을 걱정을 나누어 보세요. 쉬는 시간이나 도움을 청할 사람도 정해 볼 수 있습니다.';
@@ -39,6 +42,7 @@ function arc82Action(scene,pack,task){
  if(goal==='finish'&&state.submitted!==true)return '이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다.';
  if(goal==='communicate'&&(model.requests.length>1||scene.domain==='general'))return '전달할 결론과 그 이유 한 가지를 짧게 정리해 보세요. 내 선택을 설명하는 부분과 상대의 의견을 들어야 할 부분을 나누고, 상대가 답할 여지도 남겨 두세요.';
  if(goal==='prepare'&&model.requests.length>1)return '시작할 때 필요한 조건·진행 순서·확인할 일정을 적어 보세요. 이미 준비된 것과 한 가지 더 알아볼 것을 나누고, 첫날 해볼 작은 단계부터 정해 보세요.';
+ if(goal==='implement')return '결정을 내린 뒤 그 안에서 이번 주에 마칠 작은 일 하나를 정하고, 언제 할지와 끝났다고 볼 기준을 적어 보세요. 필요한 사람이나 준비물이 있다면 먼저 확인해 둘 수 있습니다.';
  if(goal==='improve'&&scene.domain==='general')return '사용하는 사람이 기대한 것과 실제로 불편했던 지점을 함께 확인해 보세요. 한 가지를 바꾼 작은 안을 만들어 같은 상황에서 다시 사용해 보고 달라진 점을 적어 보세요.';
  return null;
 }

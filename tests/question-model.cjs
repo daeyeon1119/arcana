@@ -40,4 +40,13 @@ for(const [q,kinds]of [
  ['“언제 합격할까?”라고만 생각했어요. 지금 무엇을 준비할까요?',['action']]
 ])check(q,()=>assert.deepEqual(parse(q).requests.map(r=>r.kind),kinds));
 for(const q of facts.map(([q])=>q))check('evidence spans '+q,()=>{const r=parse(q);for(const event of r.events)assert.equal(r.question.slice(event.start,event.end),event.text);});
+for(const noun of ['시험','면접','심사','평가'])for(const time of ['내일','다음 주'])check('upcoming '+noun+time,()=>{const r=parse(noun+'은 '+time+' 볼 예정이에요. 아직 결과는 모르는데 무엇을 준비할까요?');assert(r.state.assessmentUpcoming);assert.equal(r.state.waiting,false);});
+check('the first reply predicate determines its direction',()=>{const r=parse('민수는 답장을 보냈다고 했지만 저는 아직 받은 내용이 없어요.');assert.notEqual(r.state.received,true);assert.equal(r.events.find(e=>e.kind==='reply').predicate,'보냈');});
+check('completed assessment can still be awaiting a result',()=>{assert(parse('면접은 끝났어요. 결과를 기다립니다.').state.waiting);});
+check('an explicitly missing receipt may inherit the previous reply object',()=>{assert.equal(parse('민수는 답장을 보냈다고 했지만 저는 아직 받은 내용이 없어요.').state.received,false);});
+check('a missing object is not invented without a reply topic',()=>{assert.equal(parse('받은 내용이 없어요.').state.received,null);});
+check('my completed reply is outgoing contact, not an incoming answer',()=>{const state=parse('제가 동생에게 답장했어요. 동생은 아직 대답하지 않았어요.').state;assert.equal(state.sent,true);assert.equal(state.received,false);});
+check('reported publication is not a personally verified result',()=>{assert.notEqual(parse('결과가 나왔다는 말을 들었어요.').state.resultKnown,true);});
+check('explicitly unverified content keeps a heard result unknown',()=>{assert.equal(parse('결과가 나왔다는 말을 들었지만 아직 공식 내용을 확인하지 않았어요.').state.resultKnown,false);});
+check('a present flow is not automatically a future forecast',()=>{assert.equal(parse('지금 어떤 흐름을 살아가는지 카드 상징으로 알아보고 싶어요.').requests[0].kind,'open');assert.equal(parse('앞으로 어떤 흐름이 될까요?').requests[0].kind,'forecast');});
 fs.mkdirSync('test-results/question-model',{recursive:true});fs.writeFileSync('test-results/question-model/unit-summary.json',JSON.stringify({developmentChecks:checks,passed:checks,note:'Authored development/property checks. Not independent accuracy or professional evaluation.'},null,2));console.log('Question model development checks: '+checks+' passed');

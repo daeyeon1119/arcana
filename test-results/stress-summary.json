@@ -1,6 +1,6 @@
 {
   "seed": 790026,
-  "appSHA256": "cbb404f1aaac27551653d281b885c624c5313cedf86c35a9d2d004795506339a",
+  "appSHA256": "074f1b9bc92ecb018d79c07c91152ad81c43b1beedb5a807988f008f2aa0a92c",
   "scenarioCount": 128,
   "readingCount": 1024,
   "passed": 1024,
@@ -628,7 +628,7 @@
     "note": "Legacy 48 prompts. One known regression (까닭 misread as action) was used for this follow-up fix; final scores are regression data, not independent accuracy.",
     "count": 48,
     "before": 34,
-    "after": 40,
+    "after": 41,
     "results": [
       {
         "question": "언젠가 부모님과의 거리가 다시 가까워질까요?",
@@ -910,7 +910,7 @@
         "question": "지금 어떤 흐름을 살아가는지 카드 상징으로 알아보고 싶어요.",
         "expected": "open",
         "before": "open",
-        "after": "forecast"
+        "after": "open"
       },
       {
         "question": "한 해를 돌아보는 가벼운 리딩을 보고 싶습니다.",
@@ -920,14 +920,14 @@
       }
     ],
     "improved": 7,
-    "regressed": 1
+    "regressed": 0
   },
   "failures": [],
   "latencyMs": {
     "note": "Single local generation, excluding browser startup, UI animation and baseline comparison.",
-    "p50": 1.5,
-    "p95": 3,
-    "max": 20.2,
-    "total": 1601.9
+    "p50": 1.4,
+    "p95": 3.5,
+    "max": 37.3,
+    "total": 1751.6
   }
 }

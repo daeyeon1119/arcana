@@ -4248,9 +4248,9 @@
         "replyUnknown": false
       },
       "boundary": false,
-      "direct": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
+      "direct": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
       "actions": [
-        "공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요."
+        "공식 결과를 확인할 경로와 시간을 정하고, 이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요."
       ],
       "sections": [
         {
@@ -4300,11 +4300,13 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
               "text": "시험은 어제 끝났고 아직 ",
               "start": 2,
-              "end": 16
+              "end": 16,
+              "upcoming": false
             },
             {
               "kind": "result",
@@ -4312,6 +4314,7 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": false,
               "text": "성적은 공개 전이에요",
@@ -4328,7 +4331,9 @@
             "resultKnown": false,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": true,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": true,
@@ -4354,7 +4359,7 @@
               "start": 29,
               "end": 39
             },
-            "text": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
+            "text": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
             "refs": [
               1,
               2
@@ -4414,9 +4419,9 @@
         "replyUnknown": false
       },
       "boundary": false,
-      "direct": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
+      "direct": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 확인된 사실과 아직 모르는 결과를 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
       "actions": [
-        "공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요."
+        "공식 결과를 확인할 경로와 시간을 정하고, 확인된 사실과 아직 모르는 결과를 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요."
       ],
       "sections": [
         {
@@ -4466,6 +4471,7 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": false,
               "text": "발표를 기다리는 중입니다",
@@ -4482,7 +4488,9 @@
             "resultKnown": false,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": true,
@@ -4508,7 +4516,7 @@
               "start": 24,
               "end": 38
             },
-            "text": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
+            "text": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 확인된 사실과 아직 모르는 결과를 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
             "refs": [
               1,
               2
@@ -4568,9 +4576,9 @@
         "replyUnknown": false
       },
       "boundary": false,
-      "direct": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
+      "direct": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
       "actions": [
-        "공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요."
+        "공식 결과를 확인할 경로와 시간을 정하고, 이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요."
       ],
       "sections": [
         {
@@ -4620,11 +4628,12 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
-              "text": "답안은 제출했지만 ",
+              "text": "답안은 제출했지만",
               "start": 3,
-              "end": 13
+              "end": 12
             },
             {
               "kind": "result",
@@ -4632,6 +4641,7 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "negated",
               "completed": false,
               "text": "채점 결과는 모릅니다",
@@ -4648,7 +4658,9 @@
             "resultKnown": false,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": true,
             "replyWaiting": false,
             "resultWaiting": true,
@@ -4674,7 +4686,7 @@
               "start": 26,
               "end": 46
             },
-            "text": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 끝난 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
+            "text": "‘현재’에 놓인 컵 기사 역방향의 주제는 ‘이상화된 약속’입니다. ‘미래’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
             "refs": [
               1,
               2
@@ -4795,7 +4807,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -4936,6 +4950,7 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "current",
               "status": "asserted",
               "completed": true,
               "text": "불합격으로 확정됐어요",
@@ -4952,7 +4967,9 @@
             "resultKnown": true,
             "resultPublished": true,
             "outcome": "failed",
+            "outcomeScope": "current",
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -5092,6 +5109,7 @@
               "actor": "other",
               "actorEvidence": "회사가",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
               "text": "탈락을 통보했어요",
@@ -5108,7 +5126,9 @@
             "resultKnown": true,
             "resultPublished": true,
             "outcome": "failed",
+            "outcomeScope": "unspecified",
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -5236,8 +5256,8 @@
             {
               "kind": "emotion",
               "goal": "cope",
-              "text": "친구가 제 사과를 받아 주고 답장도 했는데 저는 여전히 민망하고 불안해요",
-              "start": 0,
+              "text": "저는 여전히 민망하고 불안해요",
+              "start": 24,
               "end": 40
             }
           ],
@@ -5248,12 +5268,14 @@
               "actor": "other",
               "actorEvidence": "친구가",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": false,
               "text": "사과를 받아 주고 ",
               "start": 6,
               "end": 16,
-              "direction": "receive"
+              "direction": "receive",
+              "predicate": "받"
             },
             {
               "kind": "reply",
@@ -5261,12 +5283,14 @@
               "actor": "other",
               "actorEvidence": "친구가",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
-              "text": "답장도 했는데 저는 여전히 민망하고 불안해요",
+              "text": "답장도 했는데",
               "start": 16,
-              "end": 40,
+              "end": 23,
               "direction": "make",
+              "predicate": "했",
               "accepting": false,
               "waiting": false,
               "benefactive": false
@@ -5278,7 +5302,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -5300,8 +5326,8 @@
             "request": {
               "kind": "emotion",
               "goal": "cope",
-              "text": "친구가 제 사과를 받아 주고 답장도 했는데 저는 여전히 민망하고 불안해요",
-              "start": 0,
+              "text": "저는 여전히 민망하고 불안해요",
+              "start": 24,
               "end": 40
             },
             "text": "이미 받은 답의 내용과 그 뒤에도 남아 있는 마음을 나누어 적어 보세요. 답을 다시 확인받는 일보다 지금 필요한 휴식이나 지지를 먼저 살펴볼 수 있습니다. ‘미래’에 놓인 악마의 주제는 ‘집착의 자각’입니다.",
@@ -5422,12 +5448,14 @@
                 "incoming": false,
                 "evidence": "친구한테"
               },
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
               "text": "회신을 받았어요",
               "start": 21,
               "end": 29,
               "direction": "receive",
+              "predicate": "받았",
               "accepting": true,
               "waiting": false,
               "benefactive": false
@@ -5439,7 +5467,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -5583,29 +5613,29 @@
                 "incoming": false,
                 "evidence": "친구에게"
               },
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
-              "text": "사과했더니 괜찮다고 ",
+              "text": "사과했더니",
               "start": 5,
-              "end": 16,
-              "direction": "send"
+              "end": 10,
+              "direction": "send",
+              "predicate": "했"
             },
             {
               "kind": "reply",
               "object": "답",
               "actor": "unspecified",
               "actorEvidence": "",
-              "recipient": {
-                "actor": "other",
-                "incoming": false,
-                "evidence": "친구에게"
-              },
+              "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
               "text": "답해 줬어요",
               "start": 16,
               "end": 22,
               "direction": "make",
+              "predicate": "해",
               "accepting": false,
               "waiting": false,
               "benefactive": true
@@ -5617,7 +5647,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -5765,12 +5797,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "negated",
               "completed": true,
               "text": "메시지를 안 보냈어요",
               "start": 13,
               "end": 24,
-              "direction": "send"
+              "direction": "send",
+              "predicate": "보냈"
             }
           ],
           "state": {
@@ -5779,7 +5813,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -5929,12 +5965,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "negated",
               "completed": false,
               "text": "고백하지 않았습니다",
               "start": 10,
               "end": 20,
-              "direction": "send"
+              "direction": "send",
+              "predicate": "하"
             }
           ],
           "state": {
@@ -5943,7 +5981,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -6093,12 +6133,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "negated",
               "completed": false,
               "text": "연락은 아직 하지 않았어요",
               "start": 11,
               "end": 25,
-              "direction": "send"
+              "direction": "send",
+              "predicate": "하"
             }
           ],
           "state": {
@@ -6107,7 +6149,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -6239,12 +6283,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
               "text": "문자를 보냈는데 ",
               "start": 10,
               "end": 19,
-              "direction": "send"
+              "direction": "send",
+              "predicate": "보냈"
             },
             {
               "kind": "reply",
@@ -6252,12 +6298,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "negated",
               "completed": false,
               "text": "답장은 없어요",
               "start": 19,
               "end": 26,
               "direction": "make",
+              "predicate": null,
               "accepting": false,
               "waiting": true,
               "benefactive": false
@@ -6269,7 +6317,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": true,
             "resultWaiting": false,
@@ -6405,12 +6455,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
-              "text": "고백은 이미 했고 ",
+              "text": "고백은 이미 했고",
               "start": 0,
-              "end": 10,
-              "direction": "send"
+              "end": 9,
+              "direction": "send",
+              "predicate": "했"
             },
             {
               "kind": "reply",
@@ -6418,12 +6470,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": false,
               "text": "대답을 기다립니다",
               "start": 10,
               "end": 19,
               "direction": "make",
+              "predicate": null,
               "accepting": false,
               "waiting": true,
               "benefactive": false
@@ -6435,7 +6489,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": true,
             "resultWaiting": false,
@@ -6571,12 +6627,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
-              "text": "연락을 전했지만 ",
+              "text": "연락을 전했지만",
               "start": 0,
-              "end": 9,
-              "direction": "send"
+              "end": 8,
+              "direction": "send",
+              "predicate": "전했"
             },
             {
               "kind": "reply",
@@ -6584,12 +6642,14 @@
               "actor": "unspecified",
               "actorEvidence": "",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "negated",
               "completed": true,
               "text": "회신을 못 받았습니다",
               "start": 9,
               "end": 20,
               "direction": "receive",
+              "predicate": "받았",
               "accepting": true,
               "waiting": true,
               "benefactive": false
@@ -6601,7 +6661,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": true,
             "resultWaiting": false,
@@ -6737,12 +6799,14 @@
               "actor": "other",
               "actorEvidence": "상대가",
               "recipient": null,
+              "timeScope": "unspecified",
               "status": "asserted",
               "completed": true,
               "text": "연락하지 말라고 분명히 말했어요",
               "start": 4,
               "end": 21,
-              "direction": "send"
+              "direction": "send",
+              "predicate": "하"
             }
           ],
           "state": {
@@ -6751,7 +6815,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -6883,12 +6949,14 @@
               "actor": "other",
               "actorEvidence": "친구가",
               "recipient": null,
-              "status": "asserted",
+              "timeScope": "unspecified",
+              "status": "reported",
               "completed": true,
               "text": "연락을 원치 않는다고 했어요",
               "start": 7,
               "end": 22,
-              "direction": "send"
+              "direction": "send",
+              "predicate": "했"
             }
           ],
           "state": {
@@ -6897,7 +6965,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -7029,7 +7099,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -7161,7 +7233,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -7286,7 +7360,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -7359,9 +7435,9 @@
         "replyUnknown": false
       },
       "boundary": false,
-      "direct": "상대가 실제로 한 말과 내가 요청할 내용을 구분한 뒤, 바꾸고 싶은 상황 한 가지를 구체적으로 말해 보세요. ‘미래’에 놓인 컵 여왕 역방향의 주제는 ‘흐려진 감정 경계’입니다.",
+      "direct": "할 일의 마감과 예상 소요 시간을 적고, 실제로 가능한 시간과 비교해 보세요. 먼저 할 일과 미룰 일을 정한 뒤 영향을 받는 사람과 일정을 맞춰 보세요. ‘미래’에 놓인 컵 여왕 역방향의 주제는 ‘흐려진 감정 경계’입니다.",
       "actions": [
-        "상대가 실제로 한 말과 내가 요청할 내용을 구분한 뒤, 바꾸고 싶은 상황 한 가지를 구체적으로 말해 보세요."
+        "할 일의 마감과 예상 소요 시간을 적고, 실제로 가능한 시간과 비교해 보세요. 먼저 할 일과 미룰 일을 정한 뒤 영향을 받는 사람과 일정을 맞춰 보세요."
       ],
       "sections": [
         {
@@ -7395,7 +7471,15 @@
           "version": 82,
           "question": "팀에서 제게 맡긴 일이 감당할 양을 넘어요. 업무를 줄이는 이야기를 어떻게 꺼낼까요?",
           "evidenceQuestion": "팀에서 제게 맡긴 일이 감당할 양을 넘어요. 업무를 줄이는 이야기를 어떻게 꺼낼까요?",
-          "requests": [],
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "prioritize",
+              "text": "업무를 줄이는 이야기를 어떻게 꺼낼까요",
+              "start": 25,
+              "end": 46
+            }
+          ],
           "events": [],
           "state": {
             "sent": null,
@@ -7403,7 +7487,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -7421,7 +7507,21 @@
           ]
         },
         "manualFocus": false,
-        "answers": [],
+        "answers": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prioritize",
+              "text": "업무를 줄이는 이야기를 어떻게 꺼낼까요",
+              "start": 25,
+              "end": 46
+            },
+            "text": "할 일의 마감과 예상 소요 시간을 적고, 실제로 가능한 시간과 비교해 보세요. 먼저 할 일과 미룰 일을 정한 뒤 영향을 받는 사람과 일정을 맞춰 보세요. ‘미래’에 놓인 컵 여왕 역방향의 주제는 ‘흐려진 감정 경계’입니다.",
+            "refs": [
+              2
+            ]
+          }
+        ],
         "needsContext": false
       },
       "intentMatch": true,
@@ -7523,7 +7623,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -7657,7 +7759,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -7730,9 +7834,9 @@
         "replyUnknown": false
       },
       "boundary": false,
-      "direct": "초고 한 장면을 보여주고 구체적인 피드백을 받아 보세요. ‘미래’에 놓인 펜타클 6의 주제는 ‘주고받는 균형’입니다.",
+      "direct": "이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다. ‘미래’에 놓인 펜타클 6의 주제는 ‘주고받는 균형’입니다.",
       "actions": [
-        "초고 한 장면을 보여주고 구체적인 피드백을 받아 보세요."
+        "이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다."
       ],
       "sections": [
         {
@@ -7775,7 +7879,15 @@
           "version": 82,
           "question": "소설의 표현을 다듬느라 끝을 못 내요. 이번 원고에서 무엇을 남기고 마칠까요?",
           "evidenceQuestion": "소설의 표현을 다듬느라 끝을 못 내요. 이번 원고에서 무엇을 남기고 마칠까요?",
-          "requests": [],
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "finish",
+              "text": "이번 원고에서 무엇을 남기고 마칠까요",
+              "start": 22,
+              "end": 42
+            }
+          ],
           "events": [],
           "state": {
             "sent": null,
@@ -7783,7 +7895,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -7801,7 +7915,21 @@
           ]
         },
         "manualFocus": false,
-        "answers": [],
+        "answers": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "finish",
+              "text": "이번 원고에서 무엇을 남기고 마칠까요",
+              "start": 22,
+              "end": 42
+            },
+            "text": "이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다. ‘미래’에 놓인 펜타클 6의 주제는 ‘주고받는 균형’입니다.",
+            "refs": [
+              2
+            ]
+          }
+        ],
         "needsContext": false
       },
       "intentMatch": true,
@@ -7903,7 +8031,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -8037,7 +8167,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -8171,7 +8303,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -8305,7 +8439,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -8440,7 +8576,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -8575,7 +8713,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -8710,7 +8850,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -8845,7 +8987,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -8980,7 +9124,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -9115,7 +9261,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -9249,7 +9397,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -9383,7 +9533,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -9526,7 +9678,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -9670,7 +9824,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -9814,7 +9970,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -9949,7 +10107,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -10084,7 +10244,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -10219,7 +10381,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -10345,7 +10509,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -10470,7 +10636,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -10595,7 +10763,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -10720,7 +10890,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -10845,7 +11017,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -10970,7 +11144,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -11095,7 +11271,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -11206,7 +11384,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -11309,7 +11489,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -11436,7 +11618,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -11590,7 +11774,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -11676,9 +11862,10 @@
         "replyUnknown": false
       },
       "boundary": false,
-      "direct": "‘현재’에 놓인 펜타클 2의 주제는 ‘움직이는 균형’입니다. 작업의 목적과 준비할 시간, 피드백을 얻을 방법을 같은 기준으로 비교해 보세요.\n\n문제가 생기는 동작을 재현하고 기대한 결과와 실제 결과를 적은 뒤, 한 부분을 바꾸고 같은 동작을 다시 확인해 보세요.",
+      "direct": "‘현재’에 놓인 펜타클 2의 주제는 ‘움직이는 균형’입니다. 작업의 목적과 준비할 시간, 피드백을 얻을 방법을 같은 기준으로 비교해 보세요.\n\n결정을 내린 뒤 그 안에서 이번 주에 마칠 작은 일 하나를 정하고, 언제 할지와 끝났다고 볼 기준을 적어 보세요. 필요한 사람이나 준비물이 있다면 먼저 확인해 둘 수 있습니다.",
       "actions": [
-        "문제가 생기는 동작을 재현하고 기대한 결과와 실제 결과를 적은 뒤, 한 부분을 바꾸고 같은 동작을 다시 확인해 보세요."
+        "문제가 생기는 동작을 재현하고 기대한 결과와 실제 결과를 적은 뒤, 한 부분을 바꾸고 같은 동작을 다시 확인해 보세요.",
+        "결정을 내린 뒤 그 안에서 이번 주에 마칠 작은 일 하나를 정하고, 언제 할지와 끝났다고 볼 기준을 적어 보세요. 필요한 사람이나 준비물이 있다면 먼저 확인해 둘 수 있습니다."
       ],
       "sections": [
         {
@@ -11707,7 +11894,7 @@
         },
         {
           "title": "함께 요청한 실천 방법",
-          "body": "문제가 생기는 동작을 재현하고 기대한 결과와 실제 결과를 적은 뒤, 한 부분을 바꾸고 같은 동작을 다시 확인해 보세요. ‘미래’에 놓인 바보 역방향의 주제는 ‘준비 없는 도약’입니다.",
+          "body": "결정을 내린 뒤 그 안에서 이번 주에 마칠 작은 일 하나를 정하고, 언제 할지와 끝났다고 볼 기준을 적어 보세요. 필요한 사람이나 준비물이 있다면 먼저 확인해 둘 수 있습니다. ‘미래’에 놓인 바보 역방향의 주제는 ‘준비 없는 도약’입니다.",
           "refs": [
             2
           ],
@@ -11730,7 +11917,7 @@
             },
             {
               "kind": "action",
-              "goal": "action",
+              "goal": "implement",
               "text": "결정 후 첫 행동도 알려 주세요",
               "start": 26,
               "end": 43
@@ -11743,7 +11930,9 @@
             "resultKnown": null,
             "resultPublished": null,
             "outcome": null,
+            "outcomeScope": null,
             "assessmentCompleted": null,
+            "assessmentUpcoming": false,
             "submitted": null,
             "replyWaiting": false,
             "resultWaiting": false,
@@ -11778,12 +11967,12 @@
           {
             "request": {
               "kind": "action",
-              "goal": "action",
+              "goal": "implement",
               "text": "결정 후 첫 행동도 알려 주세요",
               "start": 26,
               "end": 43
             },
-            "text": "문제가 생기는 동작을 재현하고 기대한 결과와 실제 결과를 적은 뒤, 한 부분을 바꾸고 같은 동작을 다시 확인해 보세요. ‘미래’에 놓인 바보 역방향의 주제는 ‘준비 없는 도약’입니다.",
+            "text": "결정을 내린 뒤 그 안에서 이번 주에 마칠 작은 일 하나를 정하고, 언제 할지와 끝났다고 볼 기준을 적어 보세요. 필요한 사람이나 준비물이 있다면 먼저 확인해 둘 수 있습니다. ‘미래’에 놓인 바보 역방향의 주제는 ‘준비 없는 도약’입니다.",
             "refs": [
               2
             ]

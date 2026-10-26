@@ -19,7 +19,7 @@
     "일상·취미"
   ],
   "errors": [],
-  "intentMatches": 319,
+  "intentMatches": 320,
   "domainMatches": 303,
   "qualityChecks": [
     {
@@ -71,5 +71,5 @@
       "ok": true
     }
   ],
-  "appSHA256": "cbb404f1aaac27551653d281b885c624c5313cedf86c35a9d2d004795506339a"
+  "appSHA256": "074f1b9bc92ecb018d79c07c91152ad81c43b1beedb5a807988f008f2aa0a92c"
 }
