@@ -1,6 +1,6 @@
 {
   "seed": 790026,
-  "appSHA256": "7b6a8293f68f568fb07962911e51748f10583b1134e59241c6504c6d7332aa67",
+  "appSHA256": "cbb404f1aaac27551653d281b885c624c5313cedf86c35a9d2d004795506339a",
   "scenarioCount": 128,
   "readingCount": 1024,
   "passed": 1024,
@@ -35,16 +35,16 @@
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "one",
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "three",
@@ -83,7 +83,7 @@
         "index": 2,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -91,15 +91,15 @@
         "index": 2,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "five",
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -107,7 +107,7 @@
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -147,7 +147,7 @@
         "index": 3,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -155,7 +155,7 @@
         "index": 3,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -163,23 +163,23 @@
         "index": 4,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "five",
         "index": 4,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "relationship5",
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -187,7 +187,7 @@
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -227,7 +227,7 @@
         "index": 3,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -235,7 +235,7 @@
         "index": 3,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -243,16 +243,16 @@
         "index": 4,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "relationship5",
         "index": 4,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "choice5",
@@ -275,7 +275,7 @@
         "index": 1,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -283,7 +283,7 @@
         "index": 1,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -291,7 +291,7 @@
         "index": 2,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -299,7 +299,7 @@
         "index": 2,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -323,16 +323,16 @@
         "index": 4,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "choice5",
         "index": 4,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "waiting3",
@@ -371,7 +371,7 @@
         "index": 2,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -379,15 +379,15 @@
         "index": 2,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "career5",
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -395,7 +395,7 @@
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -435,7 +435,7 @@
         "index": 3,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -443,7 +443,7 @@
         "index": 3,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -451,23 +451,23 @@
         "index": 4,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "career5",
         "index": 4,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "celtic",
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -475,7 +475,7 @@
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -483,7 +483,7 @@
         "index": 1,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -491,7 +491,7 @@
         "index": 1,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
+        "replyChanged": false,
         "actionChanged": false
       },
       {
@@ -611,16 +611,16 @@
         "index": 9,
         "mode": "card",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       },
       {
         "spread": "celtic",
         "index": 9,
         "mode": "direction",
         "changed": true,
-        "replyChanged": true,
-        "actionChanged": true
+        "replyChanged": false,
+        "actionChanged": false
       }
     ]
   },
@@ -628,7 +628,7 @@
     "note": "Legacy 48 prompts. One known regression (까닭 misread as action) was used for this follow-up fix; final scores are regression data, not independent accuracy.",
     "count": 48,
     "before": 34,
-    "after": 39,
+    "after": 40,
     "results": [
       {
         "question": "언젠가 부모님과의 거리가 다시 가까워질까요?",
@@ -712,7 +712,7 @@
         "question": "생활비를 줄이려면 어디서부터 바꿔야 할까요?",
         "expected": "action",
         "before": "open",
-        "after": "open"
+        "after": "action"
       },
       {
         "question": "기분이 가라앉을 때 우선 무엇을 해보면 좋을까요?",
@@ -826,7 +826,7 @@
         "question": "한 달째 결과를 기다리며 너무 긴장하고 있어요.",
         "expected": "emotion",
         "before": "open",
-        "after": "open"
+        "after": "emotion"
       },
       {
         "question": "오래된 약속이 깨져서 속상하고 마음이 공허합니다.",
@@ -910,7 +910,7 @@
         "question": "지금 어떤 흐름을 살아가는지 카드 상징으로 알아보고 싶어요.",
         "expected": "open",
         "before": "open",
-        "after": "open"
+        "after": "forecast"
       },
       {
         "question": "한 해를 돌아보는 가벼운 리딩을 보고 싶습니다.",
@@ -919,15 +919,15 @@
         "after": "open"
       }
     ],
-    "improved": 5,
-    "regressed": 0
+    "improved": 7,
+    "regressed": 1
   },
   "failures": [],
   "latencyMs": {
     "note": "Single local generation, excluding browser startup, UI animation and baseline comparison.",
-    "p50": 0.8,
-    "p95": 1.8,
-    "max": 27.8,
-    "total": 978
+    "p50": 1.5,
+    "p95": 3,
+    "max": 20.2,
+    "total": 1601.9
   }
 }

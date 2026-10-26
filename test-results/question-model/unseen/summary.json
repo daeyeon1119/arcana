@@ -1,0 +1,122 @@
+{
+  "appSHA256": "cbb404f1aaac27551653d281b885c624c5313cedf86c35a9d2d004795506339a",
+  "fixtureSHA256": "be27460d7189a187d12c5f7a7128d60946582eaa165644dc58fa1db8663cd259",
+  "seed": 820024,
+  "note": "Written after freezing the v82 candidate. First run only; do not tune the candidate to these outputs. Authored diagnostic, not an independent expert benchmark.",
+  "questions": 24,
+  "readingsPerVersion": 192,
+  "errors": [],
+  "before": {
+    "intent": {
+      "passed": 16,
+      "total": 20
+    },
+    "facts": {
+      "passed": 9,
+      "total": 12
+    },
+    "requests": {
+      "passed": 0,
+      "total": 3
+    },
+    "clarify": {
+      "passed": 1,
+      "total": 2
+    }
+  },
+  "after": {
+    "intent": {
+      "passed": 17,
+      "total": 20
+    },
+    "facts": {
+      "passed": 9,
+      "total": 12
+    },
+    "requests": {
+      "passed": 3,
+      "total": 3
+    },
+    "clarify": {
+      "passed": 1,
+      "total": 2
+    }
+  },
+  "failures": [
+    {
+      "id": "u02",
+      "question": "민수는 답장을 보냈다고 했지만 저는 아직 받은 내용이 없어요. 지금 어떤 태도가 도움이 될까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "replied",
+          "expected": false,
+          "actual": true,
+          "ok": false
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u06",
+      "question": "면접은 다음 주에 볼 예정이고 아직 시작하지 않았어요. 당연히 결과도 모르는데 지금 무엇을 준비할까요?",
+      "intent": true,
+      "facts": [
+        {
+          "key": "known",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        },
+        {
+          "key": "waiting",
+          "expected": false,
+          "actual": true,
+          "ok": false
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u07",
+      "question": "지난 평가에서는 탈락했지만 다음 평가까지 시간이 남았어요. 이번에는 통과할 수 있을까요?",
+      "intent": true,
+      "facts": [
+        {
+          "key": "known",
+          "expected": false,
+          "actual": true,
+          "ok": false
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u12",
+      "question": "낭독회 대본을 계속 고치다 끝내지 못했어요. 어느 정도면 이번 수정을 마쳐도 될까요?",
+      "intent": false,
+      "facts": [],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u17",
+      "question": "회사에서 왜 지쳤는지보다 내일부터 업무를 조정할 방법을 먼저 보고 싶어요.",
+      "intent": false,
+      "facts": [],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u19",
+      "question": "그 사람과 그 일을 어떻게 해야 할지 모르겠어요.",
+      "intent": null,
+      "facts": [],
+      "requests": null,
+      "clarify": false
+    }
+  ]
+}
