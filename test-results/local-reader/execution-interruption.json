@@ -1,0 +1,9 @@
+{
+  "firstRun":{"session":19203,"exitCode":1,"recordedCases":7,"answersReceived":6,"failedCase":"n04","error":"fetch failed","elapsedMs":303805},
+  "stagedPilot":{"session":79009,"exitCode":1,"failedCase":"d01","questionPlanReceived":true,"readingReceived":false,"error":"fetch failed","elapsedMs":333550,"planMs":89095},
+  "observed":"Two diagnostics shared one serial CPU inference slot. The first request failed after about 304 seconds while the server was still generating. The owning diagnostic then terminated its own server; the pilot also failed. Both tool process handles reported terminal exit code 1. No llama-server process remained.",
+  "inference":"The timing is consistent with the default 300-second Undici header deadline. The original catch recorded only fetch failed, not the underlying error code, so this root cause is an inference, not a captured exception code.",
+  "reference":"https://github.com/nodejs/undici/blob/main/docs/docs/api/Client.md",
+  "correction":"Use loopback-only node:http with an explicit total deadline and run remaining model evaluations sequentially. Preserve the first failed records. Retry failed cases in a separate run directory, without changing the model, prompt, question or cards.",
+  "qualityConclusion":"No reading was returned for n04 or the staged d01 pilot. These are execution failures, not evidence of reading quality. The staged question plan was returned and needs semantic review."
+}

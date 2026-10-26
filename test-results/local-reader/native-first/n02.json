@@ -1,0 +1,694 @@
+{
+  "id": "n02",
+  "kind": "fresh",
+  "question": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?",
+  "spread": "relationship5",
+  "cards": [
+    [
+      "cu02",
+      false
+    ],
+    [
+      "pe06",
+      false
+    ],
+    [
+      "wa10",
+      true
+    ],
+    [
+      "ar14",
+      false
+    ],
+    [
+      "ar04",
+      false
+    ]
+  ],
+  "review": "이미 얻은 동의를 보존하며 남은 시간·역할을 다루는가. 다시 설득할 것을 권하지 않는가.",
+  "packet": {
+    "version": 1,
+    "question": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?",
+    "spread": "관계의 거리",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "cu02",
+        "name": "컵 2",
+        "orientation": "정방향",
+        "position": "지금의 거리감",
+        "positionMeaning": "현재 관계를 어떻게 느끼는가",
+        "meaning": "동등한 마음과 신뢰에 기초한 관계가 형성됩니다."
+      },
+      {
+        "ref": "c1",
+        "id": "pe06",
+        "name": "펜타클 6",
+        "orientation": "정방향",
+        "position": "나의 기대",
+        "positionMeaning": "관계에 바라는 것",
+        "meaning": "주고받는 자원과 지원의 균형이 중요해집니다."
+      },
+      {
+        "ref": "c2",
+        "id": "wa10",
+        "name": "완드 10",
+        "orientation": "역방향",
+        "position": "확인해야 할 차이",
+        "positionMeaning": "추측과 실제 소통의 간극",
+        "meaning": "짐을 내려놓지 못하거나 책임 배분이 어려워집니다."
+      },
+      {
+        "ref": "c3",
+        "id": "ar14",
+        "name": "절제",
+        "orientation": "정방향",
+        "position": "다시 연결할 자원",
+        "positionMeaning": "다시 교류할 때 활용할 자원",
+        "meaning": "속도와 감정을 조절해 서로 다른 요소를 조화시킵니다."
+      },
+      {
+        "ref": "c4",
+        "id": "ar04",
+        "name": "황제",
+        "orientation": "정방향",
+        "position": "내가 취할 행동",
+        "positionMeaning": "관계에서 스스로 선택할 태도",
+        "meaning": "질서와 책임, 장기적인 구조가 안정감을 만듭니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "family"
+    },
+    "headline": "지금 선택할 수 있는 한 걸음",
+    "direct": "함께 해야 할 일을 적고, 각 일의 담당자·마감·예상 소요 시간·완료 기준을 맞춰 보세요. 겹치는 일과 빠지는 일을 먼저 확인하면 나눌 몫을 구체적으로 정할 수 있습니다. ‘지금의 거리감’의 컵 2 정방향은 ‘상호적인 교류’를 보여 줍니다. ‘확인해야 할 차이’의 완드 10 역방향은 ‘짐을 나눌 필요’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+    "sections": [
+      {
+        "title": "지금의 거리감",
+        "body": "‘지금의 거리감’의 컵 2 정방향은 ‘상호적인 교류’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "나의 기대",
+        "body": "‘나의 기대’의 펜타클 6 정방향은 ‘주고받는 균형’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+        "refs": [
+          1
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "확인해야 할 차이",
+        "body": "‘확인해야 할 차이’의 완드 10 역방향은 ‘짐을 나눌 필요’를 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요. ‘짐을 나눌 필요’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+        "refs": [
+          2
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "다시 연결할 자원",
+        "body": "‘다시 연결할 자원’의 절제 정방향은 ‘적절한 균형’을 보여 줍니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+        "refs": [
+          3
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "내가 취할 행동",
+        "body": "‘내가 취할 행동’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요.",
+        "refs": [
+          4
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "카드가 만드는 중심 흐름",
+        "body": "‘지금의 거리감’의 컵 2 정방향은 ‘상호적인 교류’를 보여 줍니다. ‘확인해야 할 차이’의 완드 10 역방향은 ‘짐을 나눌 필요’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+        "refs": [
+          0,
+          2
+        ],
+        "kind": "relational"
+      },
+      {
+        "title": "제약과 실천을 연결하기",
+        "body": "‘확인해야 할 차이’의 완드 10 역방향은 ‘짐을 나눌 필요’를 보여 줍니다. ‘내가 취할 행동’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+        "refs": [
+          2,
+          4
+        ],
+        "kind": "relational"
+      },
+      {
+        "title": "자원을 활용하는 방법",
+        "body": "‘다시 연결할 자원’의 절제 정방향은 ‘적절한 균형’을 보여 줍니다. ‘내가 취할 행동’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요.",
+        "refs": [
+          3,
+          4
+        ],
+        "kind": "relational"
+      }
+    ],
+    "actions": [
+      "함께 해야 할 일을 적고, 각 일의 담당자·마감·예상 소요 시간·완료 기준을 맞춰 보세요. 겹치는 일과 빠지는 일을 먼저 확인하면 나눌 몫을 구체적으로 정할 수 있습니다."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "family",
+        "intent": "action",
+        "phase": "active",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?",
+        "explicit": {
+          "health": false,
+          "finances": false,
+          "project": false,
+          "relationship": false,
+          "family": true,
+          "career": false,
+          "preparation": false,
+          "stress": false,
+          "decision": false
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?",
+          "evidenceQuestion": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "coordinate",
+              "text": "첫 합의를 어떻게 구체화할까요",
+              "start": 50,
+              "end": 66
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "컵 2",
+          "role": "now",
+          "sections": [
+            0,
+            2
+          ]
+        },
+        {
+          "index": 1,
+          "name": "펜타클 6",
+          "role": "goal",
+          "sections": [
+            1
+          ]
+        },
+        {
+          "index": 2,
+          "name": "완드 10",
+          "role": "obstacle",
+          "sections": [
+            2,
+            3
+          ]
+        },
+        {
+          "index": 3,
+          "name": "절제",
+          "role": "resource",
+          "sections": [
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "name": "황제",
+          "role": "advice",
+          "sections": [
+            5
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": false,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "action",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 0,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "grammar",
+        "question": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?"
+      },
+      "domain": "family",
+      "phase": "active",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [
+        {
+          "type": "tension",
+          "indices": [
+            0,
+            2
+          ],
+          "left": "컵 2",
+          "right": "완드 10",
+          "roles": [
+            "now",
+            "obstacle"
+          ],
+          "meanings": [
+            "상호적인 교류",
+            "짐을 나눌 필요"
+          ],
+          "weight": 21
+        },
+        {
+          "type": "tension",
+          "indices": [
+            0,
+            3
+          ],
+          "left": "컵 2",
+          "right": "절제",
+          "roles": [
+            "now",
+            "resource"
+          ],
+          "meanings": [
+            "상호적인 교류",
+            "적절한 균형"
+          ],
+          "weight": 19
+        },
+        {
+          "type": "tension",
+          "indices": [
+            1,
+            2
+          ],
+          "left": "펜타클 6",
+          "right": "완드 10",
+          "roles": [
+            "goal",
+            "obstacle"
+          ],
+          "meanings": [
+            "주고받는 균형",
+            "짐을 나눌 필요"
+          ],
+          "weight": 18
+        },
+        {
+          "type": "complement",
+          "indices": [
+            0,
+            4
+          ],
+          "left": "컵 2",
+          "right": "황제",
+          "roles": [
+            "now",
+            "advice"
+          ],
+          "meanings": [
+            "상호적인 교류",
+            "책임 있는 질서"
+          ],
+          "weight": 16
+        }
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "cu02",
+          "reverse": false,
+          "role": "now",
+          "meaning": "상호적인 교류"
+        },
+        {
+          "index": 1,
+          "id": "pe06",
+          "reverse": false,
+          "role": "goal",
+          "meaning": "주고받는 균형"
+        },
+        {
+          "index": 2,
+          "id": "wa10",
+          "reverse": true,
+          "role": "obstacle",
+          "meaning": "짐을 나눌 필요"
+        },
+        {
+          "index": 3,
+          "id": "ar14",
+          "reverse": false,
+          "role": "resource",
+          "meaning": "적절한 균형"
+        },
+        {
+          "index": 4,
+          "id": "ar04",
+          "reverse": false,
+          "role": "advice",
+          "meaning": "책임 있는 질서"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": true,
+      "relations": [
+        {
+          "refs": [
+            0,
+            2
+          ],
+          "kind": "complement",
+          "semanticKind": "complement",
+          "axis": "capacity",
+          "shared": [],
+          "leftMotifs": [
+            "connection",
+            "exchange"
+          ],
+          "rightMotifs": [
+            "overload",
+            "support"
+          ],
+          "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        },
+        {
+          "refs": [
+            2,
+            4
+          ],
+          "kind": "complement",
+          "semanticKind": "complement",
+          "axis": "capacity",
+          "shared": [],
+          "leftMotifs": [
+            "overload",
+            "support"
+          ],
+          "rightMotifs": [
+            "structure",
+            "bounds"
+          ],
+          "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        },
+        {
+          "refs": [
+            3,
+            4
+          ],
+          "kind": "tension",
+          "semanticKind": "tension",
+          "axis": "framework",
+          "shared": [],
+          "leftMotifs": [
+            "balance",
+            "flexibility"
+          ],
+          "rightMotifs": [
+            "structure",
+            "bounds"
+          ],
+          "insight": "안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요.",
+          "positional": ""
+        }
+      ],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "cu02",
+          "reverse": false,
+          "motifs": [
+            "connection",
+            "exchange"
+          ]
+        },
+        {
+          "index": 1,
+          "id": "pe06",
+          "reverse": false,
+          "motifs": [
+            "exchange",
+            "support"
+          ]
+        },
+        {
+          "index": 2,
+          "id": "wa10",
+          "reverse": true,
+          "motifs": [
+            "overload",
+            "support"
+          ]
+        },
+        {
+          "index": 3,
+          "id": "ar14",
+          "reverse": false,
+          "motifs": [
+            "balance",
+            "flexibility"
+          ]
+        },
+        {
+          "index": 4,
+          "id": "ar04",
+          "reverse": false,
+          "motifs": [
+            "structure",
+            "bounds"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?",
+        "evidenceQuestion": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "coordinate",
+            "text": "첫 합의를 어떻게 구체화할까요",
+            "start": 50,
+            "end": 66
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "coordinate",
+            "text": "첫 합의를 어떻게 구체화할까요",
+            "start": 50,
+            "end": 66
+          },
+          "text": "함께 해야 할 일을 적고, 각 일의 담당자·마감·예상 소요 시간·완료 기준을 맞춰 보세요. 겹치는 일과 빠지는 일을 먼저 확인하면 나눌 몫을 구체적으로 정할 수 있습니다. ‘지금의 거리감’의 컵 2 정방향은 ‘상호적인 교류’를 보여 줍니다. ‘확인해야 할 차이’의 완드 10 역방향은 ‘짐을 나눌 필요’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+          "refs": [
+            0,
+            2
+          ]
+        }
+      ],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?\",\n      \"text\": \"첫 합의는 '정기적인 분담 시간을 정하고, 그 시간에 냉장고 정리를 함께 해보자'로 구체화할 수 있습니다. 이는 상호 신뢰와 책임감을 바탕으로 관계를 강화하는 방법입니다.\",\n      \"refs\": [\"c0\", \"c1\", \"c2\", \"c3\", \"c4\"]\n    }\n  ],\n  \"synthesis\": {\n    \"text\": \"관계의 거리와 책임 배분의 간극이 동시에 존재하는 상황에서, 상호 신뢰와 자원의 균형을 바탕으로 구체적인 계획을 수립하는 것이 중요합니다. 이는 관계의 안정과 조화를 이끌어냅니다.\",\n    \"refs\": [\"c0\", \"c1\", \"c2\", \"c3\", \"c4\"]\n  },\n  \"cards\": {\n    \"c0\": \"컵 2(정방향) - 현재 관계를 어떻게 느끼는가: 동등한 마음과 신뢰에 기초한 관계가 형성됩니다.\",\n    \"c1\": \"펜타클 6(정방향) - 관계에 바라는 것: 주고받는 자원과 지원의 균형이 중요해집니다.\",\n    \"c2\": \"완드 10(역방향) - 확인해야 할 차이: 짐을 내려놓지 못하거나 책임 배분이 어려워집니다.\",\n    \"c3\": \"절제(정방향) - 다시 연결할 자원: 속도와 감정을 조절해 서로 다른 요소를 조화시킵니다.\",\n    \"c4\": \"황제(정방향) - 내가 취할 행동: 질서와 책임, 장기적인 구조가 안정감을 만듭니다.\"\n  },\n  \"actions\": [\n    {\n      \"text\": \"공용 냉장고 정리에 대한 일정을 정리하고, 이를 함께 공유하는 일정표를 만드세요.\",\n      \"refs\": [\"c4\"]\n    },\n    {\n      \"text\": \"정기적인 분담 시간을 정하고, 이를 서로 확인하는 방법을 협의해보세요.\",\n      \"refs\": [\"c1\", \"c2\"]\n    }\n  ],\n  \"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "같은 집에 사는 친구가 공용 냉장고 정리 제안에 동의했고 분담 시간만 아직 못 정했어요. 첫 합의를 어떻게 구체화할까요?",
+        "text": "첫 합의는 '정기적인 분담 시간을 정하고, 그 시간에 냉장고 정리를 함께 해보자'로 구체화할 수 있습니다. 이는 상호 신뢰와 책임감을 바탕으로 관계를 강화하는 방법입니다.",
+        "refs": [
+          "c0",
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "관계의 거리와 책임 배분의 간극이 동시에 존재하는 상황에서, 상호 신뢰와 자원의 균형을 바탕으로 구체적인 계획을 수립하는 것이 중요합니다. 이는 관계의 안정과 조화를 이끌어냅니다.",
+      "refs": [
+        "c0",
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    },
+    "cards": {
+      "c0": "컵 2(정방향) - 현재 관계를 어떻게 느끼는가: 동등한 마음과 신뢰에 기초한 관계가 형성됩니다.",
+      "c1": "펜타클 6(정방향) - 관계에 바라는 것: 주고받는 자원과 지원의 균형이 중요해집니다.",
+      "c2": "완드 10(역방향) - 확인해야 할 차이: 짐을 내려놓지 못하거나 책임 배분이 어려워집니다.",
+      "c3": "절제(정방향) - 다시 연결할 자원: 속도와 감정을 조절해 서로 다른 요소를 조화시킵니다.",
+      "c4": "황제(정방향) - 내가 취할 행동: 질서와 책임, 장기적인 구조가 안정감을 만듭니다."
+    },
+    "actions": [
+      {
+        "text": "공용 냉장고 정리에 대한 일정을 정리하고, 이를 함께 공유하는 일정표를 만드세요.",
+        "refs": [
+          "c4"
+        ]
+      },
+      {
+        "text": "정기적인 분담 시간을 정하고, 이를 서로 확인하는 방법을 협의해보세요.",
+        "refs": [
+          "c1",
+          "c2"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 580,
+    "prompt_tokens": 962,
+    "total_tokens": 1542,
+    "prompt_tokens_details": {
+      "cached_tokens": 550
+    }
+  },
+  "timings": {
+    "cache_n": 550,
+    "prompt_n": 412,
+    "prompt_ms": 23229.459,
+    "prompt_per_token_ms": 56.38218203883495,
+    "prompt_per_second": 17.73609966551524,
+    "predicted_n": 580,
+    "predicted_ms": 180379.741,
+    "predicted_per_token_ms": 311.53668566493957,
+    "predicted_per_second": 3.2098948406850187
+  },
+  "elapsedMs": 203800
+}
