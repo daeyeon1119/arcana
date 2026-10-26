@@ -1,0 +1,680 @@
+{
+  "id": "n05",
+  "kind": "fresh",
+  "question": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?",
+  "spread": "career5",
+  "cards": [
+    [
+      "ar01",
+      false
+    ],
+    [
+      "wa02",
+      false
+    ],
+    [
+      "pe05",
+      true
+    ],
+    [
+      "pe03",
+      false
+    ],
+    [
+      "pe01",
+      false
+    ]
+  ],
+  "review": "아직 제출 전인 사실을 지키는가. 완료 뒤 결과를 기다리는 상황으로 바꾸지 않는가.",
+  "packet": {
+    "version": 1,
+    "question": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?",
+    "spread": "진로의 갈림길",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "ar01",
+        "name": "마법사",
+        "orientation": "정방향",
+        "position": "지금 가진 역량",
+        "positionMeaning": "출발점과 강점",
+        "meaning": "의지와 기술을 실제 행동으로 연결할 자원이 충분합니다."
+      },
+      {
+        "ref": "c1",
+        "id": "wa02",
+        "name": "완드 2",
+        "orientation": "정방향",
+        "position": "나의 동기",
+        "positionMeaning": "왜 이 방향을 고민하는가",
+        "meaning": "목표의 범위를 넓히고 선택지를 계획합니다."
+      },
+      {
+        "ref": "c2",
+        "id": "pe05",
+        "name": "펜타클 5",
+        "orientation": "역방향",
+        "position": "현실의 제약",
+        "positionMeaning": "검토해야 할 비용과 장애",
+        "meaning": "어려움에서 벗어나거나 지원을 받아들일 때입니다."
+      },
+      {
+        "ref": "c3",
+        "id": "pe03",
+        "name": "펜타클 3",
+        "orientation": "정방향",
+        "position": "도움이 될 자원",
+        "positionMeaning": "준비와 조언의 통로",
+        "meaning": "숙련된 기술과 협력으로 완성도를 높입니다."
+      },
+      {
+        "ref": "c4",
+        "id": "pe01",
+        "name": "펜타클 에이스",
+        "orientation": "정방향",
+        "position": "실행의 첫 단계",
+        "positionMeaning": "다음 행동을 검증하는 방법",
+        "meaning": "구체적인 기회와 물질적 토대가 마련됩니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "preparation"
+    },
+    "headline": "지금 선택할 수 있는 한 걸음",
+    "direct": "취약한 문제 유형 하나를 골라 실제로 풀어 보세요. ‘도움이 될 자원’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. ‘실행의 첫 단계’의 펜타클 에이스 정방향은 ‘손에 잡히는 기회’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+    "sections": [
+      {
+        "title": "지금 가진 역량",
+        "body": "‘지금 가진 역량’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "나의 동기",
+        "body": "‘나의 동기’의 완드 2 정방향은 ‘넓어지는 계획’을 보여 줍니다. 크게 세운 방향을 확인 가능한 다음 단계로 나누어 보세요.",
+        "refs": [
+          1
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "현실의 제약",
+        "body": "‘현실의 제약’의 펜타클 5 역방향은 ‘도움의 통로 발견’을 보여 줍니다. 혼자 해야 한다고 여긴 일 가운데 도움을 받을 수 있는 부분을 찾아보세요. ‘도움의 통로 발견’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+        "refs": [
+          2
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "도움이 될 자원",
+        "body": "‘도움이 될 자원’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+        "refs": [
+          3
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "실행의 첫 단계",
+        "body": "‘실행의 첫 단계’의 펜타클 에이스 정방향은 ‘손에 잡히는 기회’를 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요.",
+        "refs": [
+          4
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "카드가 만드는 중심 흐름",
+        "body": "‘도움이 될 자원’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. ‘실행의 첫 단계’의 펜타클 에이스 정방향은 ‘손에 잡히는 기회’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "refs": [
+          3,
+          4
+        ],
+        "kind": "relational"
+      }
+    ],
+    "actions": [
+      "취약한 문제 유형 하나를 골라 실제로 풀어 보세요."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "preparation",
+        "intent": "action",
+        "phase": "active",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?",
+        "explicit": {
+          "health": false,
+          "finances": false,
+          "project": false,
+          "relationship": false,
+          "family": false,
+          "career": false,
+          "preparation": true,
+          "stress": false,
+          "decision": false
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?",
+          "evidenceQuestion": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요",
+              "start": 20,
+              "end": 51
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "마법사",
+          "role": "self",
+          "sections": [
+            0,
+            2
+          ]
+        },
+        {
+          "index": 1,
+          "name": "완드 2",
+          "role": "goal",
+          "sections": [
+            1
+          ]
+        },
+        {
+          "index": 2,
+          "name": "펜타클 5",
+          "role": "obstacle",
+          "sections": [
+            2,
+            3
+          ]
+        },
+        {
+          "index": 3,
+          "name": "펜타클 3",
+          "role": "resource",
+          "sections": [
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "name": "펜타클 에이스",
+          "role": "advice",
+          "sections": [
+            2,
+            5
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": false,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "action",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 0,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "grammar",
+        "question": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?"
+      },
+      "domain": "preparation",
+      "phase": "active",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [
+        {
+          "type": "reinforce",
+          "indices": [
+            0,
+            4
+          ],
+          "left": "마법사",
+          "right": "펜타클 에이스",
+          "roles": [
+            "self",
+            "advice"
+          ],
+          "meanings": [
+            "기술을 행동으로 옮김",
+            "손에 잡히는 기회"
+          ],
+          "weight": 17
+        },
+        {
+          "type": "constraint",
+          "indices": [
+            2,
+            4
+          ],
+          "left": "펜타클 5",
+          "right": "펜타클 에이스",
+          "roles": [
+            "obstacle",
+            "advice"
+          ],
+          "meanings": [
+            "도움의 통로 발견",
+            "손에 잡히는 기회"
+          ],
+          "weight": 16
+        },
+        {
+          "type": "constraint",
+          "indices": [
+            2,
+            3
+          ],
+          "left": "펜타클 5",
+          "right": "펜타클 3",
+          "roles": [
+            "obstacle",
+            "resource"
+          ],
+          "meanings": [
+            "도움의 통로 발견",
+            "협력 속의 숙련"
+          ],
+          "weight": 14
+        },
+        {
+          "type": "complement",
+          "indices": [
+            3,
+            4
+          ],
+          "left": "펜타클 3",
+          "right": "펜타클 에이스",
+          "roles": [
+            "resource",
+            "advice"
+          ],
+          "meanings": [
+            "협력 속의 숙련",
+            "손에 잡히는 기회"
+          ],
+          "weight": 14
+        }
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "ar01",
+          "reverse": false,
+          "role": "self",
+          "meaning": "기술을 행동으로 옮김"
+        },
+        {
+          "index": 1,
+          "id": "wa02",
+          "reverse": false,
+          "role": "goal",
+          "meaning": "넓어지는 계획"
+        },
+        {
+          "index": 2,
+          "id": "pe05",
+          "reverse": true,
+          "role": "obstacle",
+          "meaning": "도움의 통로 발견"
+        },
+        {
+          "index": 3,
+          "id": "pe03",
+          "reverse": false,
+          "role": "resource",
+          "meaning": "협력 속의 숙련"
+        },
+        {
+          "index": 4,
+          "id": "pe01",
+          "reverse": false,
+          "role": "advice",
+          "meaning": "손에 잡히는 기회"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": true,
+      "relations": [
+        {
+          "refs": [
+            3,
+            4
+          ],
+          "kind": "complement",
+          "semanticKind": "complement",
+          "axis": "readiness",
+          "shared": [],
+          "leftMotifs": [
+            "skill",
+            "support"
+          ],
+          "rightMotifs": [
+            "start",
+            "resources"
+          ],
+          "insight": "움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+          "positional": ""
+        },
+        {
+          "refs": [
+            0,
+            2
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "agency",
+            "skill"
+          ],
+          "rightMotifs": [
+            "support",
+            "recovery"
+          ],
+          "insight": "‘기술을 행동으로 옮김’과 ‘도움의 통로 발견’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘이미 가진 도구를 실제로 활용함’, 다른 쪽에서는 ‘어려움을 인정하고 지원을 받음’을 살펴봅니다.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        },
+        {
+          "refs": [
+            2,
+            4
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "support",
+            "recovery"
+          ],
+          "rightMotifs": [
+            "start",
+            "resources"
+          ],
+          "insight": "‘도움의 통로 발견’과 ‘손에 잡히는 기회’는 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘어려움을 인정하고 지원을 받음’, 다른 쪽에서는 ‘작게 시작할 자원이나 조건’을 살펴봅니다.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        }
+      ],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "ar01",
+          "reverse": false,
+          "motifs": [
+            "agency",
+            "skill"
+          ]
+        },
+        {
+          "index": 1,
+          "id": "wa02",
+          "reverse": false,
+          "motifs": [
+            "plan",
+            "explore"
+          ]
+        },
+        {
+          "index": 2,
+          "id": "pe05",
+          "reverse": true,
+          "motifs": [
+            "support",
+            "recovery"
+          ]
+        },
+        {
+          "index": 3,
+          "id": "pe03",
+          "reverse": false,
+          "motifs": [
+            "skill",
+            "support"
+          ]
+        },
+        {
+          "index": 4,
+          "id": "pe01",
+          "reverse": false,
+          "motifs": [
+            "start",
+            "resources"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?",
+        "evidenceQuestion": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "prepare",
+            "text": "아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요",
+            "start": 20,
+            "end": 51
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "prepare",
+            "text": "아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요",
+            "start": 20,
+            "end": 51
+          },
+          "text": "취약한 문제 유형 하나를 골라 실제로 풀어 보세요. ‘도움이 될 자원’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. ‘실행의 첫 단계’의 펜타클 에이스 정방향은 ‘손에 잡히는 기회’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+          "refs": [
+            3,
+            4
+          ]
+        }
+      ],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?\",\n      \"text\": \"장학금 신청을 위해 서류를 준비하는 데 있어, 현재의 상황과 목표를 바탕으로 체계적인 준비 순서를 계획할 수 있습니다. 먼저, 목표를 명확히 하고, 필요한 서류를 정리한 후, 단계적으로 준비할 수 있는 방법을 고민해보세요.\",\n      \"refs\": [\"c0\", \"c1\", \"c2\", \"c3\", \"c4\"]\n    }\n  ],\n  \"synthesis\": {\n    \"text\": \"현재의 상황과 목표를 바탕으로, 준비 과정을 체계적으로 계획할 수 있습니다. 도움이 될 자원과 제약을 고려해, 실행의 첫 단계를 명확히 하세요.\",\n    \"refs\": [\"c0\", \"c1\", \"c2\", \"c3\", \"c4\"]\n  },\n  \"cards\": {\n    \"c0\": \"마법사(정방향) - 현재의 역량과 강점을 활용해, 준비 과정의 출발점과 기반이 됩니다.\",\n    \"c1\": \"완드 2(정방향) - 목표를 넓히고, 선택지를 계획하는 데 도움이 됩니다.\",\n    \"c2\": \"펜타클 5(역방향) - 준비 과정에서 마주할 어려움과 제약을 검토하고, 이를 극복하는 데 주의를 기해야 합니다.\",\n    \"c3\": \"펜타클 3(정방향) - 준비 과정에서 도움이 될 자원과 조언을 통해 완성도를 높일 수 있습니다.\",\n    \"c4\": \"펜타클 에이스(정방향) - 준비 과정의 첫 단계를 실행할 수 있는 기회와 물질적 토대가 마련됩니다.\"\n  },\n  \"actions\": [\n    {\n      \"text\": \"가장 중요한 서류를 먼저 정리하고, 필요한 정보를 수집해보세요.\",\n      \"refs\": [\"c0\", \"c1\", \"c2\", \"c3\", \"c4\"]\n    },\n    {\n      \"text\": \"준비 과정에서 마주할 어려움을 미리 예상하고, 이를 극복할 수 있는 계획을 세우세요.\",\n      \"refs\": [\"c2\"]\n    }\n  ],\n  \"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "장학금 신청은 다음 달에 시작돼요. 아직 서류를 낸 적은 없는데 준비 순서를 어떻게 잡을까요?",
+        "text": "장학금 신청을 위해 서류를 준비하는 데 있어, 현재의 상황과 목표를 바탕으로 체계적인 준비 순서를 계획할 수 있습니다. 먼저, 목표를 명확히 하고, 필요한 서류를 정리한 후, 단계적으로 준비할 수 있는 방법을 고민해보세요.",
+        "refs": [
+          "c0",
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "현재의 상황과 목표를 바탕으로, 준비 과정을 체계적으로 계획할 수 있습니다. 도움이 될 자원과 제약을 고려해, 실행의 첫 단계를 명확히 하세요.",
+      "refs": [
+        "c0",
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    },
+    "cards": {
+      "c0": "마법사(정방향) - 현재의 역량과 강점을 활용해, 준비 과정의 출발점과 기반이 됩니다.",
+      "c1": "완드 2(정방향) - 목표를 넓히고, 선택지를 계획하는 데 도움이 됩니다.",
+      "c2": "펜타클 5(역방향) - 준비 과정에서 마주할 어려움과 제약을 검토하고, 이를 극복하는 데 주의를 기해야 합니다.",
+      "c3": "펜타클 3(정방향) - 준비 과정에서 도움이 될 자원과 조언을 통해 완성도를 높일 수 있습니다.",
+      "c4": "펜타클 에이스(정방향) - 준비 과정의 첫 단계를 실행할 수 있는 기회와 물질적 토대가 마련됩니다."
+    },
+    "actions": [
+      {
+        "text": "가장 중요한 서류를 먼저 정리하고, 필요한 정보를 수집해보세요.",
+        "refs": [
+          "c0",
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ]
+      },
+      {
+        "text": "준비 과정에서 마주할 어려움을 미리 예상하고, 이를 극복할 수 있는 계획을 세우세요.",
+        "refs": [
+          "c2"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 590,
+    "prompt_tokens": 952,
+    "total_tokens": 1542,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 952,
+    "prompt_ms": 49287.445,
+    "prompt_per_token_ms": 51.7725262605042,
+    "prompt_per_second": 19.3152637553032,
+    "predicted_n": 590,
+    "predicted_ms": 161529.432,
+    "predicted_per_token_ms": 274.24351782682515,
+    "predicted_per_second": 3.646394299213533
+  },
+  "elapsedMs": 210851
+}

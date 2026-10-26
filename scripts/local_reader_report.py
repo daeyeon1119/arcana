@@ -10,6 +10,8 @@ folder = root / 'test-results/local-reader' / ('native-staged-first' if staged e
 fixture = json.loads((root / 'tests/local-reader-first.json').read_text(encoding='utf-8'))
 notes_path = folder / 'review-notes.json'
 notes = json.loads(notes_path.read_text(encoding='utf-8')) if notes_path.exists() else {}
+target_path = root / 'test-results/local-reader/editorial-targets.json'
+targets = json.loads(target_path.read_text(encoding='utf-8'))['targets'] if target_path.exists() else {}
 esc = lambda value: html.escape(str(value))
 blocks, complete, reviewed, answers, execution_failures = [], 0, 0, 0, 0
 for case in fixture['cases']:
@@ -32,10 +34,12 @@ for case in fixture['cases']:
     valid = '구조 검사 통과' if row['validation']['ok'] else '구조 검사 실패: ' + ', '.join(row['validation']['issues'])
     review = esc(note['comment']) if note else '실제 문장 검토 전입니다. 구조 검사 통과를 의미·품질의 통과로 읽지 마세요.'
     plan = '' if not staged else '<h4>카드 없이 분석한 질문</h4><pre>' + esc(json.dumps(row.get('questionPlan'), ensure_ascii=False, indent=2)) + '</pre>'
+    target = targets.get(case['id'])
+    target_html = '' if not target else '<details><summary>저자의 편집 목표 예시 · 모델 출력이나 외부 전문가 답변이 아닙니다</summary><p>' + esc(target['focus']) + '</p><p>' + esc(target['answer']) + '</p><h4>실천</h4><p>' + esc(target['action']) + '</p><small>' + esc(target['limits']) + '</small></details>'
     blocks.append(f'''<article data-kind="{esc(case['kind'])}"><small>{esc(case['id'])} · {esc(case['kind'])} · {row['elapsedMs']/1000:.1f}초 · {esc(valid)}</small>
 <h2>{esc(case['question'])}</h2><p class="cards">{cards}</p><p class="memo">검토할 점: {esc(case['review'])}<br>실제 검토: {review}</p>
 <div class="compare"><section><h3>기존 v82 실제 답변</h3><p>{esc(baseline)}</p></section><section><h3>무료 로컬 모델의 실제 답변</h3>{requests}<h4>전체 흐름</h4><p>{esc(parsed.get('synthesis', {}).get('text', '출력 없음'))}</p><h4>실천</h4><p>{actions}</p></section></div>
-<details><summary>전체 카드 설명 · 미확인 정보 · 원본 JSON</summary>{plan}{details}<h4>더 알아볼 점</h4><p>{esc(chr(10).join(parsed.get('unknowns', [])))}</p><pre>{esc(row['raw'])}</pre></details></article>''')
+<details><summary>전체 카드 설명 · 미확인 정보 · 원본 JSON</summary>{plan}{details}<h4>더 알아볼 점</h4><p>{esc(chr(10).join(parsed.get('unknowns', [])))}</p><pre>{esc(row['raw'])}</pre></details>{target_html}</article>''')
 
 evaluation_note = '기존 15개 진단 질문을 두 단계 후보로 재사용합니다. 첫 후보의 새 상황 12개도 여기서는 재사용 진단 자료입니다.' if staged else '알려진 개발 질문 3개와 프롬프트 고정 뒤 작성한 새 상황 12개를 구분합니다.'
 title = '무료 로컬 해석 모델 · 두 단계 후보 진단' if staged else '무료 로컬 해석 모델 · 첫 실제 진단'
