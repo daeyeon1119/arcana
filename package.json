@@ -11,12 +11,21 @@
     "test:mat": "node scripts/mat.cjs after",
     "test:editorial": "node scripts/editorial.cjs v82",
     "test:question-model": "node tests/question-model.cjs",
+    "test:local-contract": "node tests/local-reader-core.cjs",
+    "test:local-planner": "node tests/local-reader-planner.cjs",
+    "test:local-transport": "node tests/local-model-http.cjs",
+    "diagnose:local-native": "node scripts/local-reader-native.cjs",
+    "diagnose:local-staged": "node scripts/local-reader-native.cjs --staged",
+    "diagnose:local-browser": "node scripts/local-reader-diagnostic.cjs",
+    "report:local-reader": "python scripts/local_reader_report.py",
+    "report:blind-review": "python scripts/local_blind_review.py",
+    "test:blind-review": "npm run report:blind-review && node scripts/local-blind-check.cjs",
     "test:question-regression": "node scripts/question-unseen.cjs regression",
     "test:synthesis": "node scripts/synthesis.cjs v82",
     "diagnose:generalization": "node scripts/context.cjs",
     "report:synthesis": "python scripts/synthesis_report.py",
     "report:questions": "python scripts/question_report.py",
-    "test": "npm run test:question-model && npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
+    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-transport && npm run test:blind-review && npm run test:question-model && npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
   },
   "devDependencies": {
     "playwright": "1.62.1"

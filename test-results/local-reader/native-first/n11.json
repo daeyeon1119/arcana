@@ -1,0 +1,908 @@
+{
+  "id": "n11",
+  "kind": "fresh",
+  "question": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?",
+  "spread": "celtic",
+  "cards": [
+    [
+      "wa08",
+      false
+    ],
+    [
+      "ar19",
+      false
+    ],
+    [
+      "ar05",
+      false
+    ],
+    [
+      "ar07",
+      true
+    ],
+    [
+      "pe03",
+      false
+    ],
+    [
+      "ar14",
+      false
+    ],
+    [
+      "ar09",
+      false
+    ],
+    [
+      "cu03",
+      false
+    ],
+    [
+      "sw08",
+      true
+    ],
+    [
+      "pe08",
+      false
+    ]
+  ],
+  "review": "10장·밝은 장애물 카드·미래·주변 환경을 실제 상황과 연결하는가. 밝은 카드를 무조건 부정하지 않고 주변 속마음을 사실로 만들지 않는가.",
+  "packet": {
+    "version": 1,
+    "question": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?",
+    "spread": "켈틱 크로스",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "wa08",
+        "name": "완드 8",
+        "orientation": "정방향",
+        "position": "현재 상황",
+        "positionMeaning": "현재를 대표하는 기운",
+        "meaning": "빠른 진행과 연락, 변화의 속도가 빨라집니다."
+      },
+      {
+        "ref": "c1",
+        "id": "ar19",
+        "name": "태양",
+        "orientation": "정방향",
+        "position": "가로지르는 도전",
+        "positionMeaning": "현재를 가로막거나 자극하는 요인",
+        "meaning": "명료함과 활력, 성취를 나눌 수 있는 시기입니다."
+      },
+      {
+        "ref": "c2",
+        "id": "ar05",
+        "name": "교황",
+        "orientation": "정방향",
+        "position": "의식적인 목표",
+        "positionMeaning": "스스로 바라거나 의식하는 것",
+        "meaning": "검증된 지식과 전통, 멘토의 조언이 도움이 됩니다."
+      },
+      {
+        "ref": "c3",
+        "id": "ar07",
+        "name": "전차",
+        "orientation": "역방향",
+        "position": "무의식·기반",
+        "positionMeaning": "깊은 곳에서 작용하는 토대",
+        "meaning": "조급한 추진이나 방향 상실로 에너지가 낭비됩니다."
+      },
+      {
+        "ref": "c4",
+        "id": "pe03",
+        "name": "펜타클 3",
+        "orientation": "정방향",
+        "position": "지나온 영향",
+        "positionMeaning": "이미 형성되어 온 과거",
+        "meaning": "숙련된 기술과 협력으로 완성도를 높입니다."
+      },
+      {
+        "ref": "c5",
+        "id": "ar14",
+        "name": "절제",
+        "orientation": "정방향",
+        "position": "가까운 흐름",
+        "positionMeaning": "머지않아 나타날 가능성",
+        "meaning": "속도와 감정을 조절해 서로 다른 요소를 조화시킵니다."
+      },
+      {
+        "ref": "c6",
+        "id": "ar09",
+        "name": "은둔자",
+        "orientation": "정방향",
+        "position": "나 자신의 위치",
+        "positionMeaning": "질문에 임하는 내 태도",
+        "meaning": "혼자만의 탐색과 성찰에서 답의 실마리를 얻습니다."
+      },
+      {
+        "ref": "c7",
+        "id": "cu03",
+        "name": "컵 3",
+        "orientation": "정방향",
+        "position": "주변 환경",
+        "positionMeaning": "관계와 외부 상황의 영향",
+        "meaning": "우정과 축하, 함께하는 기쁨을 나눕니다."
+      },
+      {
+        "ref": "c8",
+        "id": "sw08",
+        "name": "소드 8",
+        "orientation": "역방향",
+        "position": "희망과 두려움",
+        "positionMeaning": "동시에 품은 기대와 불안",
+        "meaning": "스스로 만든 한계를 인식하고 벗어날 여지가 있습니다."
+      },
+      {
+        "ref": "c9",
+        "id": "pe08",
+        "name": "펜타클 8",
+        "orientation": "정방향",
+        "position": "가능한 귀결",
+        "positionMeaning": "현재 방향에 따른 잠정적인 결과",
+        "meaning": "반복적인 연습과 장인정신이 실력으로 이어집니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "general"
+    },
+    "headline": "질문을 바라보는 핵심 관점",
+    "direct": "‘현재 상황’의 완드 8 정방향은 ‘빠른 전개’를 보여 줍니다. ‘가로지르는 도전’의 태양 정방향은 ‘드러나는 명료함’을 보여 줍니다. 추진력을 방향과 사실 확인에 연결하는 조합입니다. 힘을 더 쓰기 전에 무엇을 확인하면 다음 행동이 분명해질지 살펴보세요. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
+    "sections": [
+      {
+        "title": "현재 상황",
+        "body": "‘현재 상황’의 완드 8 정방향은 ‘빠른 전개’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "가로지르는 도전",
+        "body": "‘가로지르는 도전’의 태양 정방향은 ‘드러나는 명료함’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요. ‘드러나는 명료함’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+        "refs": [
+          1
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "의식적인 목표",
+        "body": "‘의식적인 목표’의 교황 정방향은 ‘검증된 조언’을 보여 줍니다. 혼자 해야 한다고 여긴 일 가운데 도움을 받을 수 있는 부분을 찾아보세요.",
+        "refs": [
+          2
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "무의식·기반",
+        "body": "‘무의식·기반’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+        "refs": [
+          3
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "지나온 영향",
+        "body": "‘지나온 영향’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+        "refs": [
+          4
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "가까운 흐름",
+        "body": "‘가까운 흐름’의 절제 정방향은 ‘적절한 균형’을 보여 줍니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+        "refs": [
+          5
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "나 자신의 위치",
+        "body": "‘나 자신의 위치’의 은둔자 정방향은 ‘혼자만의 성찰’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+        "refs": [
+          6
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "주변 환경",
+        "body": "‘주변 환경’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+        "refs": [
+          7
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "희망과 두려움",
+        "body": "‘희망과 두려움’의 소드 8 역방향은 ‘제약의 재해석’을 보여 줍니다. 익숙한 기대와 별개로 스스로 지키고 싶은 기준을 적어 보세요.",
+        "refs": [
+          8
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "가능한 귀결",
+        "body": "‘가능한 귀결’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+        "refs": [
+          9
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "카드가 만드는 중심 흐름",
+        "body": "‘현재 상황’의 완드 8 정방향은 ‘빠른 전개’를 보여 줍니다. ‘가로지르는 도전’의 태양 정방향은 ‘드러나는 명료함’을 보여 줍니다. 추진력을 방향과 사실 확인에 연결하는 조합입니다. 힘을 더 쓰기 전에 무엇을 확인하면 다음 행동이 분명해질지 살펴보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+        "refs": [
+          0,
+          1
+        ],
+        "kind": "relational"
+      },
+      {
+        "title": "바라는 것과 그 배경",
+        "body": "‘의식적인 목표’의 교황 정방향은 ‘검증된 조언’을 보여 줍니다. ‘무의식·기반’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "refs": [
+          2,
+          3
+        ],
+        "kind": "relational"
+      }
+    ],
+    "actions": [
+      "상대가 이야기하는 내용에서 가벼운 질문 하나를 골라 시작하고, 반응을 보며 대화를 이어가 보세요."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "general",
+        "intent": "open",
+        "phase": "active",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?",
+        "explicit": {
+          "health": false,
+          "finances": false,
+          "project": false,
+          "relationship": false,
+          "family": true,
+          "career": false,
+          "preparation": false,
+          "stress": false,
+          "decision": false
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?",
+          "evidenceQuestion": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?",
+          "requests": [
+            {
+              "kind": "open",
+              "goal": "open",
+              "text": "저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요",
+              "start": 35,
+              "end": 63
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "완드 8",
+          "role": "now",
+          "sections": [
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "태양",
+          "role": "obstacle",
+          "sections": [
+            0
+          ]
+        },
+        {
+          "index": 2,
+          "name": "교황",
+          "role": "goal",
+          "sections": [
+            1
+          ]
+        },
+        {
+          "index": 3,
+          "name": "전차",
+          "role": "root",
+          "sections": [
+            1
+          ]
+        },
+        {
+          "index": 4,
+          "name": "펜타클 3",
+          "role": "past",
+          "sections": [
+            2
+          ]
+        },
+        {
+          "index": 5,
+          "name": "절제",
+          "role": "future",
+          "sections": [
+            3
+          ]
+        },
+        {
+          "index": 6,
+          "name": "은둔자",
+          "role": "self",
+          "sections": [
+            4
+          ]
+        },
+        {
+          "index": 7,
+          "name": "컵 3",
+          "role": "environment",
+          "sections": [
+            5
+          ]
+        },
+        {
+          "index": 8,
+          "name": "소드 8",
+          "role": "fear",
+          "sections": [
+            6
+          ]
+        },
+        {
+          "index": 9,
+          "name": "펜타클 8",
+          "role": "outcome",
+          "sections": [
+            7
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": false,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "open",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 0,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "grammar",
+        "question": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?"
+      },
+      "domain": "general",
+      "phase": "active",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [
+        {
+          "type": "reinforce",
+          "indices": [
+            0,
+            1
+          ],
+          "left": "완드 8",
+          "right": "태양",
+          "roles": [
+            "now",
+            "obstacle"
+          ],
+          "meanings": [
+            "빠른 전개",
+            "드러나는 명료함"
+          ],
+          "weight": 20
+        },
+        {
+          "type": "tension",
+          "indices": [
+            1,
+            5
+          ],
+          "left": "태양",
+          "right": "절제",
+          "roles": [
+            "obstacle",
+            "future"
+          ],
+          "meanings": [
+            "드러나는 명료함",
+            "적절한 균형"
+          ],
+          "weight": 20
+        },
+        {
+          "type": "tension",
+          "indices": [
+            0,
+            3
+          ],
+          "left": "완드 8",
+          "right": "전차",
+          "roles": [
+            "now",
+            "root"
+          ],
+          "meanings": [
+            "빠른 전개",
+            "방향을 잃은 속도"
+          ],
+          "weight": 19
+        },
+        {
+          "type": "tension",
+          "indices": [
+            1,
+            3
+          ],
+          "left": "태양",
+          "right": "전차",
+          "roles": [
+            "obstacle",
+            "root"
+          ],
+          "meanings": [
+            "드러나는 명료함",
+            "방향을 잃은 속도"
+          ],
+          "weight": 19
+        }
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "wa08",
+          "reverse": false,
+          "role": "now",
+          "meaning": "빠른 전개"
+        },
+        {
+          "index": 1,
+          "id": "ar19",
+          "reverse": false,
+          "role": "obstacle",
+          "meaning": "드러나는 명료함"
+        },
+        {
+          "index": 2,
+          "id": "ar05",
+          "reverse": false,
+          "role": "goal",
+          "meaning": "검증된 조언"
+        },
+        {
+          "index": 3,
+          "id": "ar07",
+          "reverse": true,
+          "role": "root",
+          "meaning": "방향을 잃은 속도"
+        },
+        {
+          "index": 4,
+          "id": "pe03",
+          "reverse": false,
+          "role": "past",
+          "meaning": "협력 속의 숙련"
+        },
+        {
+          "index": 5,
+          "id": "ar14",
+          "reverse": false,
+          "role": "future",
+          "meaning": "적절한 균형"
+        },
+        {
+          "index": 6,
+          "id": "ar09",
+          "reverse": false,
+          "role": "self",
+          "meaning": "혼자만의 성찰"
+        },
+        {
+          "index": 7,
+          "id": "cu03",
+          "reverse": false,
+          "role": "environment",
+          "meaning": "함께하는 기쁨"
+        },
+        {
+          "index": 8,
+          "id": "sw08",
+          "reverse": true,
+          "role": "fear",
+          "meaning": "제약의 재해석"
+        },
+        {
+          "index": 9,
+          "id": "pe08",
+          "reverse": false,
+          "role": "outcome",
+          "meaning": "반복된 연습"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": true,
+      "relations": [
+        {
+          "refs": [
+            0,
+            1
+          ],
+          "kind": "complement",
+          "semanticKind": "complement",
+          "axis": "focus",
+          "shared": [],
+          "leftMotifs": [
+            "speed",
+            "expression"
+          ],
+          "rightMotifs": [
+            "clarity",
+            "joy"
+          ],
+          "insight": "추진력을 방향과 사실 확인에 연결하는 조합입니다. 힘을 더 쓰기 전에 무엇을 확인하면 다음 행동이 분명해질지 살펴보세요.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        },
+        {
+          "refs": [
+            2,
+            3
+          ],
+          "kind": "complement",
+          "semanticKind": "complement",
+          "axis": "readiness",
+          "shared": [],
+          "leftMotifs": [
+            "support",
+            "skill"
+          ],
+          "rightMotifs": [
+            "speed",
+            "dispersion"
+          ],
+          "insight": "움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+          "positional": ""
+        },
+        {
+          "refs": [
+            6,
+            9
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "pause",
+            "review"
+          ],
+          "rightMotifs": [
+            "practice",
+            "skill"
+          ],
+          "insight": "‘혼자만의 성찰’과 ‘반복된 연습’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘거리 두기를 통해 답을 찾음’, 다른 쪽에서는 ‘세부 작업에 시간을 쌓음’을 살펴봅니다.",
+          "positional": "이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다."
+        }
+      ],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "wa08",
+          "reverse": false,
+          "motifs": [
+            "speed",
+            "expression"
+          ]
+        },
+        {
+          "index": 1,
+          "id": "ar19",
+          "reverse": false,
+          "motifs": [
+            "clarity",
+            "joy"
+          ]
+        },
+        {
+          "index": 2,
+          "id": "ar05",
+          "reverse": false,
+          "motifs": [
+            "support",
+            "skill"
+          ]
+        },
+        {
+          "index": 3,
+          "id": "ar07",
+          "reverse": true,
+          "motifs": [
+            "speed",
+            "dispersion"
+          ]
+        },
+        {
+          "index": 4,
+          "id": "pe03",
+          "reverse": false,
+          "motifs": [
+            "skill",
+            "support"
+          ]
+        },
+        {
+          "index": 5,
+          "id": "ar14",
+          "reverse": false,
+          "motifs": [
+            "balance",
+            "flexibility"
+          ]
+        },
+        {
+          "index": 6,
+          "id": "ar09",
+          "reverse": false,
+          "motifs": [
+            "pause",
+            "review"
+          ]
+        },
+        {
+          "index": 7,
+          "id": "cu03",
+          "reverse": false,
+          "motifs": [
+            "connection",
+            "support"
+          ]
+        },
+        {
+          "index": 8,
+          "id": "sw08",
+          "reverse": true,
+          "motifs": [
+            "autonomy",
+            "review"
+          ]
+        },
+        {
+          "index": 9,
+          "id": "pe08",
+          "reverse": false,
+          "motifs": [
+            "practice",
+            "skill"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?",
+        "evidenceQuestion": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?",
+        "requests": [
+          {
+            "kind": "open",
+            "goal": "open",
+            "text": "저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요",
+            "start": 35,
+            "end": 63
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [
+        {
+          "request": {
+            "kind": "open",
+            "goal": "open",
+            "text": "저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요",
+            "start": 35,
+            "end": 63
+          },
+          "text": "‘현재 상황’의 완드 8 정방향은 ‘빠른 전개’를 보여 줍니다. ‘가로지르는 도전’의 태양 정방향은 ‘드러나는 명료함’을 보여 줍니다. 추진력을 방향과 사실 확인에 연결하는 조합입니다. 힘을 더 쓰기 전에 무엇을 확인하면 다음 행동이 분명해질지 살펴보세요. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
+          "refs": [
+            0,
+            1
+          ]
+        }
+      ],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?\",\n      \"text\": \"이 상황에서 처음 온 사람들이 설명을 따라가기 어려운 것은, 당신이 서두르는 태도로 인해 설명의 속도와 방향이 제대로 전달되지 않을 수 있습니다. 이에 대한 관점은 '전차'와 '절제'의 의미를 고려해 보세요.\",\n      \"refs\": [\"c3\", \"c5\"]\n    }\n  ],\n  \"synthesis\": {\n    \"text\": \"이 상황은 설명의 속도와 방향, 그리고 그에 따른 반응을 고려해야 합니다. 특히, 설명을 따라가는 사람들의 감정과 태도는 중요한 요소입니다. 이에 대한 조절과 이해가 필요합니다.\",\n    \"refs\": [\"c3\", \"c5\"]\n  },\n  \"cards\": {\n    \"c0\": \"완드 8(정방향) - 현재 상황: 빠른 진행과 연락, 변화의 속도가 빠르다.\",\n    \"c1\": \"태양(정방향) - 가로지르는 도전: 명료함과 활력, 성취를 나눌 수 있는 시기이다.\",\n    \"c2\": \"교황(정방향) - 의식적인 목표: 검증된 지식과 전통, 멘토의 조언이 도움이 됩니다.\",\n    \"c3\": \"전차(역방향) - 무의식·기반: 조급한 추진이나 방향 상실로 에너지가 낭비됩니다.\",\n    \"c4\": \"펜타클 3(정방향) - 지나온 영향: 숙련된 기술과 협력으로 완성도를 높입니다.\",\n    \"c5\": \"절제(정방향) - 가까운 흐름: 속도와 감정을 조절해 서로 다른 요소를 조화시킵니다.\",\n    \"c6\": \"은둔자(정방향) - 나 자신의 위치: 혼자만의 탐색과 성찰에서 답의 실마리를 얻습니다.\",\n    \"c7\": \"컵 3(정방향) - 주변 환경: 우정과 축하, 함께하는 기쁨을 나눕니다.\",\n    \"c8\": \"소드 8(역방향) - 희망과 두려움: 스스로 만든 한계를 인식하고 벗어날 여지가 있습니다.\",\n    \"c9\": \"펜타클 8(정방향) - 가능한 귀결: 반복적인 연습과 장인정신이 실력으로 이어집니다.\"\n  },\n  \"actions\": [\n    {\n      \"text\": \"설명을 전달할 때 속도와 방향을 조절해 보세요. 설명을 따라가는 사람들의 감정과 태도를 고려해 주세요.\",\n      \"refs\": [\"c5\", \"c3\"]\n    },\n    {\n      \"text\": \"설명을 따라가는 사람들의 반응을 주의 깊게 관찰하고, 그들의 감정과 필요를 파악해 주세요.\",\n      \"refs\": [\"c6\", \"c5\"]\n    }\n  ],\n  \"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "동네 수리 모임에 처음 온 사람들이 설명을 따라가기 어렵대요. 저는 서두르는 편인데 어떤 관점을 돌아보면 좋을까요?",
+        "text": "이 상황에서 처음 온 사람들이 설명을 따라가기 어려운 것은, 당신이 서두르는 태도로 인해 설명의 속도와 방향이 제대로 전달되지 않을 수 있습니다. 이에 대한 관점은 '전차'와 '절제'의 의미를 고려해 보세요.",
+        "refs": [
+          "c3",
+          "c5"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "이 상황은 설명의 속도와 방향, 그리고 그에 따른 반응을 고려해야 합니다. 특히, 설명을 따라가는 사람들의 감정과 태도는 중요한 요소입니다. 이에 대한 조절과 이해가 필요합니다.",
+      "refs": [
+        "c3",
+        "c5"
+      ]
+    },
+    "cards": {
+      "c0": "완드 8(정방향) - 현재 상황: 빠른 진행과 연락, 변화의 속도가 빠르다.",
+      "c1": "태양(정방향) - 가로지르는 도전: 명료함과 활력, 성취를 나눌 수 있는 시기이다.",
+      "c2": "교황(정방향) - 의식적인 목표: 검증된 지식과 전통, 멘토의 조언이 도움이 됩니다.",
+      "c3": "전차(역방향) - 무의식·기반: 조급한 추진이나 방향 상실로 에너지가 낭비됩니다.",
+      "c4": "펜타클 3(정방향) - 지나온 영향: 숙련된 기술과 협력으로 완성도를 높입니다.",
+      "c5": "절제(정방향) - 가까운 흐름: 속도와 감정을 조절해 서로 다른 요소를 조화시킵니다.",
+      "c6": "은둔자(정방향) - 나 자신의 위치: 혼자만의 탐색과 성찰에서 답의 실마리를 얻습니다.",
+      "c7": "컵 3(정방향) - 주변 환경: 우정과 축하, 함께하는 기쁨을 나눕니다.",
+      "c8": "소드 8(역방향) - 희망과 두려움: 스스로 만든 한계를 인식하고 벗어날 여지가 있습니다.",
+      "c9": "펜타클 8(정방향) - 가능한 귀결: 반복적인 연습과 장인정신이 실력으로 이어집니다."
+    },
+    "actions": [
+      {
+        "text": "설명을 전달할 때 속도와 방향을 조절해 보세요. 설명을 따라가는 사람들의 감정과 태도를 고려해 주세요.",
+        "refs": [
+          "c5",
+          "c3"
+        ]
+      },
+      {
+        "text": "설명을 따라가는 사람들의 반응을 주의 깊게 관찰하고, 그들의 감정과 필요를 파악해 주세요.",
+        "refs": [
+          "c6",
+          "c5"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 772,
+    "prompt_tokens": 1310,
+    "total_tokens": 2082,
+    "prompt_tokens_details": {
+      "cached_tokens": 550
+    }
+  },
+  "timings": {
+    "cache_n": 550,
+    "prompt_n": 760,
+    "prompt_ms": 45338.53,
+    "prompt_per_token_ms": 59.65596052631579,
+    "prompt_per_second": 16.762784324943926,
+    "predicted_n": 772,
+    "predicted_ms": 288763.281,
+    "predicted_per_token_ms": 374.53084435797666,
+    "predicted_per_second": 2.6700070636751074
+  },
+  "elapsedMs": 334231
+}

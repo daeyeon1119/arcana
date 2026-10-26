@@ -1,0 +1,681 @@
+{
+  "id": "n01",
+  "kind": "fresh",
+  "question": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?",
+  "spread": "five",
+  "cards": [
+    [
+      "ar05",
+      false
+    ],
+    [
+      "ar02",
+      false
+    ],
+    [
+      "wa05",
+      true
+    ],
+    [
+      "cu03",
+      false
+    ],
+    [
+      "pe08",
+      false
+    ]
+  ],
+  "review": "조용한 참여자를 배려하는 구체적인 선택을 주는가. 아이들의 속마음을 단정하지 않는가.",
+  "packet": {
+    "version": 1,
+    "question": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?",
+    "spread": "심층 분석",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "ar05",
+        "name": "교황",
+        "orientation": "정방향",
+        "position": "핵심",
+        "positionMeaning": "질문을 관통하는 핵심 상태",
+        "meaning": "검증된 지식과 전통, 멘토의 조언이 도움이 됩니다."
+      },
+      {
+        "ref": "c1",
+        "id": "ar02",
+        "name": "여사제",
+        "orientation": "정방향",
+        "position": "근원",
+        "positionMeaning": "상황을 만든 밑바탕",
+        "meaning": "아직 드러나지 않은 사실과 직관에 귀 기울일 때입니다."
+      },
+      {
+        "ref": "c2",
+        "id": "wa05",
+        "name": "완드 5",
+        "orientation": "역방향",
+        "position": "장애물",
+        "positionMeaning": "주의하거나 넘어야 할 요소",
+        "meaning": "불필요한 다툼이 길어지거나 경쟁을 회피합니다."
+      },
+      {
+        "ref": "c3",
+        "id": "cu03",
+        "name": "컵 3",
+        "orientation": "정방향",
+        "position": "자원",
+        "positionMeaning": "의지할 수 있는 강점과 기회",
+        "meaning": "우정과 축하, 함께하는 기쁨을 나눕니다."
+      },
+      {
+        "ref": "c4",
+        "id": "pe08",
+        "name": "펜타클 8",
+        "orientation": "정방향",
+        "position": "조언",
+        "positionMeaning": "앞으로 활용할 행동의 방향",
+        "meaning": "반복적인 연습과 장인정신이 실력으로 이어집니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "general"
+    },
+    "headline": "지금 선택할 수 있는 한 걸음",
+    "direct": "사용하는 사람이 기대한 것과 실제로 불편했던 지점을 함께 확인해 보세요. 한 가지를 바꾼 작은 안을 만들어 같은 상황에서 다시 사용해 보고 달라진 점을 적어 보세요. ‘핵심’의 교황 정방향은 ‘검증된 조언’을 보여 줍니다. ‘장애물’의 완드 5 역방향은 ‘소모적인 충돌’을 보여 줍니다. 다른 사람을 이기거나 혼자 버티는 방향보다, 의견과 역할을 확인할 통로가 있는지 살피는 연결입니다. 관계 회복이나 상대의 동의를 보장하는 조합은 아닙니다.",
+    "sections": [
+      {
+        "title": "핵심",
+        "body": "‘핵심’의 교황 정방향은 ‘검증된 조언’을 보여 줍니다. 혼자 해야 한다고 여긴 일 가운데 도움을 받을 수 있는 부분을 찾아보세요.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "근원",
+        "body": "‘근원’의 여사제 정방향은 ‘관찰과 직관’을 보여 줍니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요.",
+        "refs": [
+          1
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "장애물",
+        "body": "‘장애물’의 완드 5 역방향은 ‘소모적인 충돌’을 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. ‘소모적인 충돌’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+        "refs": [
+          2
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "자원",
+        "body": "‘자원’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+        "refs": [
+          3
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "조언",
+        "body": "‘조언’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요.",
+        "refs": [
+          4
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "카드가 만드는 중심 흐름",
+        "body": "‘핵심’의 교황 정방향은 ‘검증된 조언’을 보여 줍니다. ‘장애물’의 완드 5 역방향은 ‘소모적인 충돌’을 보여 줍니다. 다른 사람을 이기거나 혼자 버티는 방향보다, 의견과 역할을 확인할 통로가 있는지 살피는 연결입니다. 관계 회복이나 상대의 동의를 보장하는 조합은 아닙니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+        "refs": [
+          0,
+          2
+        ],
+        "kind": "relational"
+      }
+    ],
+    "actions": [
+      "사용하는 사람이 기대한 것과 실제로 불편했던 지점을 함께 확인해 보세요. 한 가지를 바꾼 작은 안을 만들어 같은 상황에서 다시 사용해 보고 달라진 점을 적어 보세요."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "general",
+        "intent": "action",
+        "phase": "active",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?",
+        "explicit": {
+          "health": false,
+          "finances": false,
+          "project": false,
+          "relationship": false,
+          "family": true,
+          "career": false,
+          "preparation": false,
+          "stress": false,
+          "decision": false
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?",
+          "evidenceQuestion": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "improve",
+              "text": "다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요",
+              "start": 46,
+              "end": 72
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "교황",
+          "role": "now",
+          "sections": [
+            0,
+            2
+          ]
+        },
+        {
+          "index": 1,
+          "name": "여사제",
+          "role": "root",
+          "sections": [
+            1
+          ]
+        },
+        {
+          "index": 2,
+          "name": "완드 5",
+          "role": "obstacle",
+          "sections": [
+            2,
+            3
+          ]
+        },
+        {
+          "index": 3,
+          "name": "컵 3",
+          "role": "resource",
+          "sections": [
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "name": "펜타클 8",
+          "role": "advice",
+          "sections": [
+            5
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": false,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "action",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 0,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "grammar",
+        "question": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?"
+      },
+      "domain": "general",
+      "phase": "active",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [
+        {
+          "type": "tension",
+          "indices": [
+            0,
+            2
+          ],
+          "left": "교황",
+          "right": "완드 5",
+          "roles": [
+            "now",
+            "obstacle"
+          ],
+          "meanings": [
+            "검증된 조언",
+            "소모적인 충돌"
+          ],
+          "weight": 21
+        },
+        {
+          "type": "tension",
+          "indices": [
+            2,
+            4
+          ],
+          "left": "완드 5",
+          "right": "펜타클 8",
+          "roles": [
+            "obstacle",
+            "advice"
+          ],
+          "meanings": [
+            "소모적인 충돌",
+            "반복된 연습"
+          ],
+          "weight": 21
+        },
+        {
+          "type": "tension",
+          "indices": [
+            2,
+            3
+          ],
+          "left": "완드 5",
+          "right": "컵 3",
+          "roles": [
+            "obstacle",
+            "resource"
+          ],
+          "meanings": [
+            "소모적인 충돌",
+            "함께하는 기쁨"
+          ],
+          "weight": 19
+        },
+        {
+          "type": "reinforce",
+          "indices": [
+            0,
+            3
+          ],
+          "left": "교황",
+          "right": "컵 3",
+          "roles": [
+            "now",
+            "resource"
+          ],
+          "meanings": [
+            "검증된 조언",
+            "함께하는 기쁨"
+          ],
+          "weight": 18
+        }
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "ar05",
+          "reverse": false,
+          "role": "now",
+          "meaning": "검증된 조언"
+        },
+        {
+          "index": 1,
+          "id": "ar02",
+          "reverse": false,
+          "role": "root",
+          "meaning": "관찰과 직관"
+        },
+        {
+          "index": 2,
+          "id": "wa05",
+          "reverse": true,
+          "role": "obstacle",
+          "meaning": "소모적인 충돌"
+        },
+        {
+          "index": 3,
+          "id": "cu03",
+          "reverse": false,
+          "role": "resource",
+          "meaning": "함께하는 기쁨"
+        },
+        {
+          "index": 4,
+          "id": "pe08",
+          "reverse": false,
+          "role": "advice",
+          "meaning": "반복된 연습"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": true,
+      "relations": [
+        {
+          "refs": [
+            0,
+            2
+          ],
+          "kind": "complement",
+          "semanticKind": "complement",
+          "axis": "repair",
+          "shared": [],
+          "leftMotifs": [
+            "support",
+            "skill"
+          ],
+          "rightMotifs": [
+            "conflict",
+            "avoidance"
+          ],
+          "insight": "다른 사람을 이기거나 혼자 버티는 방향보다, 의견과 역할을 확인할 통로가 있는지 살피는 연결입니다. 관계 회복이나 상대의 동의를 보장하는 조합은 아닙니다.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        },
+        {
+          "refs": [
+            2,
+            4
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "conflict",
+            "avoidance"
+          ],
+          "rightMotifs": [
+            "practice",
+            "skill"
+          ],
+          "insight": "‘소모적인 충돌’과 ‘반복된 연습’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘갈등을 피하거나 계속 키움’, 다른 쪽에서는 ‘세부 작업에 시간을 쌓음’을 살펴봅니다.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        },
+        {
+          "refs": [
+            3,
+            4
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "connection",
+            "support"
+          ],
+          "rightMotifs": [
+            "practice",
+            "skill"
+          ],
+          "insight": "‘함께하는 기쁨’과 ‘반복된 연습’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘친구와 공동체의 정서적 지지’, 다른 쪽에서는 ‘세부 작업에 시간을 쌓음’을 살펴봅니다.",
+          "positional": ""
+        }
+      ],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "ar05",
+          "reverse": false,
+          "motifs": [
+            "support",
+            "skill"
+          ]
+        },
+        {
+          "index": 1,
+          "id": "ar02",
+          "reverse": false,
+          "motifs": [
+            "intuition",
+            "uncertain"
+          ]
+        },
+        {
+          "index": 2,
+          "id": "wa05",
+          "reverse": true,
+          "motifs": [
+            "conflict",
+            "avoidance"
+          ]
+        },
+        {
+          "index": 3,
+          "id": "cu03",
+          "reverse": false,
+          "motifs": [
+            "connection",
+            "support"
+          ]
+        },
+        {
+          "index": 4,
+          "id": "pe08",
+          "reverse": false,
+          "motifs": [
+            "practice",
+            "skill"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?",
+        "evidenceQuestion": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "improve",
+            "text": "다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요",
+            "start": 46,
+            "end": 72
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "improve",
+            "text": "다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요",
+            "start": 46,
+            "end": 72
+          },
+          "text": "사용하는 사람이 기대한 것과 실제로 불편했던 지점을 함께 확인해 보세요. 한 가지를 바꾼 작은 안을 만들어 같은 상황에서 다시 사용해 보고 달라진 점을 적어 보세요. ‘핵심’의 교황 정방향은 ‘검증된 조언’을 보여 줍니다. ‘장애물’의 완드 5 역방향은 ‘소모적인 충돌’을 보여 줍니다. 다른 사람을 이기거나 혼자 버티는 방향보다, 의견과 역할을 확인할 통로가 있는지 살피는 연결입니다. 관계 회복이나 상대의 동의를 보장하는 조합은 아닙니다.",
+          "refs": [
+            0,
+            2
+          ]
+        }
+      ],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?\",\n      \"text\": \"다음 모임에서 조용한 아이들의 의견을 놓치지 않도록 하기 위해, 모임의 진행 방식을 조정할 필요가 있습니다. 특히, 아이들의 의견을 듣기 위해 질문을 더 개방적으로 했거나, 작은 그룹으로 나누어 논의할 수 있는 방식을 도입하는 것이 좋습니다.\",\n      \"refs\": [\"c0\", \"c1\", \"c2\", \"c3\", \"c4\"]\n    }\n  ],\n  \"synthesis\": {\n    \"text\": \"교황 카드는 지식과 멘토의 조언이 도움이 되며, 여사제는 직관과 미스터리한 상황을 반영합니다. 완드 5는 경쟁을 피하고, 컵 3은 기회와 우정을 나누는 것을 의미하며, 펜타클 8은 반복적인 연습과 성장이 필요합니다. 이 카드들은 모임의 진행 방식을 조정하고, 아이들의 의견을 듣기 위한 조언을 제공합니다.\",\n    \"refs\": [\"c0\", \"c1\", \"c2\", \"c3\", \"c4\"]\n  },\n  \"cards\": {\n    \"c0\": \"교황: 검증된 지식과 전통, 멘토의 조언이 도움이 됩니다.\",\n    \"c1\": \"여사제: 아직 드러나지 않은 사실과 직관에 귀 기울일 때입니다.\",\n    \"c2\": \"완드 5: 불필요한 다툼이 길어지거나 경쟁을 회피합니다.\",\n    \"c3\": \"컵 3: 우정과 축하, 함께하는 기쁨을 나눕니다.\",\n    \"c4\": \"펜타클 8: 반복적인 연습과 장인정신이 실력으로 이어집니다.\"\n  },\n  \"actions\": [\n    {\n      \"text\": \"모임의 진행 방식을 조정하여 조용한 아이들의 의견을 듣도록 하세요. 예를 들어, 작은 그룹으로 나누어 논의하거나, 개방적인 질문을 통해 아이들의 의견을 듣는 방식을 도입하세요.\",\n      \"refs\": [\"c0\", \"c1\", \"c3\", \"c4\"]\n    },\n    {\n      \"text\": \"모임 전에 아이들의 의견을 듣기 위한 준비를 하세요. 예를 들어, 사전에 아이들이 관심 있는 주제를 물어보거나, 모임 중에 아이들이 말할 수 있는 시간을 주는 방식을 고려하세요.\",\n      \"refs\": [\"c1\", \"c2\", \"c3\", \"c4\"]\n    }\n  ],\n  \"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "도서관에서 어린이 독서 모임을 맡았는데 조용한 아이들의 의견을 놓치는 것 같아요. 다음 모임의 진행 방식을 어떻게 바꾸면 좋을까요?",
+        "text": "다음 모임에서 조용한 아이들의 의견을 놓치지 않도록 하기 위해, 모임의 진행 방식을 조정할 필요가 있습니다. 특히, 아이들의 의견을 듣기 위해 질문을 더 개방적으로 했거나, 작은 그룹으로 나누어 논의할 수 있는 방식을 도입하는 것이 좋습니다.",
+        "refs": [
+          "c0",
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "교황 카드는 지식과 멘토의 조언이 도움이 되며, 여사제는 직관과 미스터리한 상황을 반영합니다. 완드 5는 경쟁을 피하고, 컵 3은 기회와 우정을 나누는 것을 의미하며, 펜타클 8은 반복적인 연습과 성장이 필요합니다. 이 카드들은 모임의 진행 방식을 조정하고, 아이들의 의견을 듣기 위한 조언을 제공합니다.",
+      "refs": [
+        "c0",
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    },
+    "cards": {
+      "c0": "교황: 검증된 지식과 전통, 멘토의 조언이 도움이 됩니다.",
+      "c1": "여사제: 아직 드러나지 않은 사실과 직관에 귀 기울일 때입니다.",
+      "c2": "완드 5: 불필요한 다툼이 길어지거나 경쟁을 회피합니다.",
+      "c3": "컵 3: 우정과 축하, 함께하는 기쁨을 나눕니다.",
+      "c4": "펜타클 8: 반복적인 연습과 장인정신이 실력으로 이어집니다."
+    },
+    "actions": [
+      {
+        "text": "모임의 진행 방식을 조정하여 조용한 아이들의 의견을 듣도록 하세요. 예를 들어, 작은 그룹으로 나누어 논의하거나, 개방적인 질문을 통해 아이들의 의견을 듣는 방식을 도입하세요.",
+        "refs": [
+          "c0",
+          "c1",
+          "c3",
+          "c4"
+        ]
+      },
+      {
+        "text": "모임 전에 아이들의 의견을 듣기 위한 준비를 하세요. 예를 들어, 사전에 아이들이 관심 있는 주제를 물어보거나, 모임 중에 아이들이 말할 수 있는 시간을 주는 방식을 고려하세요.",
+        "refs": [
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 682,
+    "prompt_tokens": 953,
+    "total_tokens": 1635,
+    "prompt_tokens_details": {
+      "cached_tokens": 550
+    }
+  },
+  "timings": {
+    "cache_n": 550,
+    "prompt_n": 403,
+    "prompt_ms": 28834.242,
+    "prompt_per_token_ms": 71.5489875930521,
+    "prompt_per_second": 13.976438152943297,
+    "predicted_n": 682,
+    "predicted_ms": 214049.98,
+    "predicted_per_token_ms": 314.31715124816446,
+    "predicted_per_second": 3.181499946881565
+  },
+  "elapsedMs": 243060
+}

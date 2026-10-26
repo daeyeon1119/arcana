@@ -1,0 +1,542 @@
+{
+  "id": "n10",
+  "kind": "fresh",
+  "question": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.",
+  "spread": "three",
+  "cards": [
+    [
+      "cu05",
+      true
+    ],
+    [
+      "ar01",
+      false
+    ],
+    [
+      "pe08",
+      false
+    ]
+  ],
+  "review": "지난 결과를 이번 확정 결과로 바꾸지 않는가. 아직 제출 전인 단계를 보존하는가.",
+  "packet": {
+    "version": 1,
+    "question": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.",
+    "spread": "과거 · 현재 · 미래",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "cu05",
+        "name": "컵 5",
+        "orientation": "역방향",
+        "position": "과거",
+        "positionMeaning": "지금 상황을 형성한 배경",
+        "meaning": "후회를 받아들이고 회복의 방향으로 돌아섭니다."
+      },
+      {
+        "ref": "c1",
+        "id": "ar01",
+        "name": "마법사",
+        "orientation": "정방향",
+        "position": "현재",
+        "positionMeaning": "현재 가장 중요하게 작용하는 흐름",
+        "meaning": "의지와 기술을 실제 행동으로 연결할 자원이 충분합니다."
+      },
+      {
+        "ref": "c2",
+        "id": "pe08",
+        "name": "펜타클 8",
+        "orientation": "정방향",
+        "position": "미래",
+        "positionMeaning": "지금 방향이 이어질 때의 가능성",
+        "meaning": "반복적인 연습과 장인정신이 실력으로 이어집니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "project"
+    },
+    "headline": "지금 선택할 수 있는 한 걸음",
+    "direct": "짧은 장면 하나를 완성하고 등장인물의 선택이 분명한지 읽어 보세요. ‘현재’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. ‘미래’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+    "sections": [
+      {
+        "title": "과거",
+        "body": "‘과거’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "현재",
+        "body": "‘현재’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+        "refs": [
+          1
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "미래",
+        "body": "‘미래’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+        "refs": [
+          2
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "카드가 만드는 중심 흐름",
+        "body": "‘현재’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. ‘미래’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+        "refs": [
+          1,
+          2
+        ],
+        "kind": "relational"
+      }
+    ],
+    "actions": [
+      "짧은 장면 하나를 완성하고 등장인물의 선택이 분명한지 읽어 보세요."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "project",
+        "intent": "action",
+        "phase": "pending",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": true,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.",
+        "explicit": {
+          "health": false,
+          "finances": false,
+          "project": true,
+          "relationship": false,
+          "family": false,
+          "career": false,
+          "preparation": true,
+          "stress": false,
+          "decision": false
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.",
+          "evidenceQuestion": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.",
+          "requests": [],
+          "events": [
+            {
+              "kind": "submission",
+              "object": "작품",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "current",
+              "status": "asserted",
+              "completed": false,
+              "text": "작품은 아직 접수 전이에요",
+              "start": 19,
+              "end": 33
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "컵 5",
+          "role": "past",
+          "sections": [
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "마법사",
+          "role": "now",
+          "sections": [
+            1,
+            3
+          ]
+        },
+        {
+          "index": 2,
+          "name": "펜타클 8",
+          "role": "future",
+          "sections": [
+            2,
+            3
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": false,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [
+        "아직 답이나 결과를 기다리는 단계입니다."
+      ],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "action",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 0,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "rule",
+        "question": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요."
+      },
+      "domain": "project",
+      "phase": "pending",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": true,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [
+        {
+          "type": "transition",
+          "indices": [
+            1,
+            2
+          ],
+          "left": "마법사",
+          "right": "펜타클 8",
+          "roles": [
+            "now",
+            "future"
+          ],
+          "meanings": [
+            "기술을 행동으로 옮김",
+            "반복된 연습"
+          ],
+          "weight": 15
+        },
+        {
+          "type": "transition",
+          "indices": [
+            0,
+            1
+          ],
+          "left": "컵 5",
+          "right": "마법사",
+          "roles": [
+            "past",
+            "now"
+          ],
+          "meanings": [
+            "후회에서의 회복",
+            "기술을 행동으로 옮김"
+          ],
+          "weight": 13
+        },
+        {
+          "type": "transition",
+          "indices": [
+            0,
+            2
+          ],
+          "left": "컵 5",
+          "right": "펜타클 8",
+          "roles": [
+            "past",
+            "future"
+          ],
+          "meanings": [
+            "후회에서의 회복",
+            "반복된 연습"
+          ],
+          "weight": 12
+        }
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "cu05",
+          "reverse": true,
+          "role": "past",
+          "meaning": "후회에서의 회복"
+        },
+        {
+          "index": 1,
+          "id": "ar01",
+          "reverse": false,
+          "role": "now",
+          "meaning": "기술을 행동으로 옮김"
+        },
+        {
+          "index": 2,
+          "id": "pe08",
+          "reverse": false,
+          "role": "future",
+          "meaning": "반복된 연습"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": true,
+      "relations": [
+        {
+          "refs": [
+            1,
+            2
+          ],
+          "kind": "complement",
+          "semanticKind": "complement",
+          "axis": "readiness",
+          "shared": [
+            "skill"
+          ],
+          "leftMotifs": [
+            "agency",
+            "skill"
+          ],
+          "rightMotifs": [
+            "practice",
+            "skill"
+          ],
+          "insight": "움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+          "positional": "이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다."
+        },
+        {
+          "refs": [
+            0,
+            1
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "recovery",
+            "transition"
+          ],
+          "rightMotifs": [
+            "agency",
+            "skill"
+          ],
+          "insight": "‘후회에서의 회복’과 ‘기술을 행동으로 옮김’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘상실을 인정하고 시야를 넓힘’, 다른 쪽에서는 ‘이미 가진 도구를 실제로 활용함’을 살펴봅니다.",
+          "positional": ""
+        }
+      ],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "cu05",
+          "reverse": true,
+          "motifs": [
+            "recovery",
+            "transition"
+          ]
+        },
+        {
+          "index": 1,
+          "id": "ar01",
+          "reverse": false,
+          "motifs": [
+            "agency",
+            "skill"
+          ]
+        },
+        {
+          "index": 2,
+          "id": "pe08",
+          "reverse": false,
+          "motifs": [
+            "practice",
+            "skill"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.",
+        "evidenceQuestion": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.",
+        "requests": [],
+        "events": [
+          {
+            "kind": "submission",
+            "object": "작품",
+            "actor": "unspecified",
+            "actorEvidence": "",
+            "recipient": null,
+            "timeScope": "current",
+            "status": "asserted",
+            "completed": false,
+            "text": "작품은 아직 접수 전이에요",
+            "start": 19,
+            "end": 33
+          }
+        ],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.\",\n      \"text\": \"이번 작품 제출을 위해 이전의 결과를 버리고, 현재의 기회를 활용해 준비하는 태도가 필요합니다.\",\n      \"refs\": [\"c0\", \"c1\", \"c2\"]\n    }\n  ],\n  \"synthesis\": {\n    \"text\": \"과거의 실패를 받아들이고, 현재의 기회를 활용해 장기적인 준비를 하며, 미래의 성과를 위한 연습과 정신을 기르는 것이 중요합니다.\",\n    \"refs\": [\"c0\", \"c1\", \"c2\"]\n  },\n  \"cards\": {\n    \"c0\": \"컵 5(역방향) - 지나간 실패를 받아들이고, 회복의 방향으로 돌아섭니다.\",\n    \"c1\": \"마법사(정방향) - 현재의 기회를 활용해 의지와 기술을 실제 행동으로 연결할 수 있습니다.\",\n    \"c2\": \"펜타클 8(정방향) - 반복적인 연습과 장인정신을 통해 실력이 성장할 수 있습니다.\"\n  },\n  \"actions\": [\n    {\n      \"text\": \"이번 작품에 대한 준비를 시작해보세요. 이전의 실패를 배우는 기회로 삼으세요.\",\n      \"refs\": [\"c0\"]\n    },\n    {\n      \"text\": \"현재의 기회를 활용해 작품을 철저하게 준비해보세요. 마법사의 힘을 빌려 실천에 집중하세요.\",\n      \"refs\": [\"c1\"]\n    }\n  ],\n  \"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "지난 공모전에서는 떨어졌지만 이번 작품은 아직 접수 전이에요. 이전 결과에 매이지 않고 이번 제출을 준비할 태도를 보고 싶어요.",
+        "text": "이번 작품 제출을 위해 이전의 결과를 버리고, 현재의 기회를 활용해 준비하는 태도가 필요합니다.",
+        "refs": [
+          "c0",
+          "c1",
+          "c2"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "과거의 실패를 받아들이고, 현재의 기회를 활용해 장기적인 준비를 하며, 미래의 성과를 위한 연습과 정신을 기르는 것이 중요합니다.",
+      "refs": [
+        "c0",
+        "c1",
+        "c2"
+      ]
+    },
+    "cards": {
+      "c0": "컵 5(역방향) - 지나간 실패를 받아들이고, 회복의 방향으로 돌아섭니다.",
+      "c1": "마법사(정방향) - 현재의 기회를 활용해 의지와 기술을 실제 행동으로 연결할 수 있습니다.",
+      "c2": "펜타클 8(정방향) - 반복적인 연습과 장인정신을 통해 실력이 성장할 수 있습니다."
+    },
+    "actions": [
+      {
+        "text": "이번 작품에 대한 준비를 시작해보세요. 이전의 실패를 배우는 기회로 삼으세요.",
+        "refs": [
+          "c0"
+        ]
+      },
+      {
+        "text": "현재의 기회를 활용해 작품을 철저하게 준비해보세요. 마법사의 힘을 빌려 실천에 집중하세요.",
+        "refs": [
+          "c1"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 424,
+    "prompt_tokens": 823,
+    "total_tokens": 1247,
+    "prompt_tokens_details": {
+      "cached_tokens": 550
+    }
+  },
+  "timings": {
+    "cache_n": 550,
+    "prompt_n": 273,
+    "prompt_ms": 14930.2,
+    "prompt_per_token_ms": 54.68937728937729,
+    "prompt_per_second": 18.285086602992592,
+    "predicted_n": 424,
+    "predicted_ms": 128138.549,
+    "predicted_per_token_ms": 302.928011820331,
+    "predicted_per_second": 3.30111432743007
+  },
+  "elapsedMs": 143220
+}

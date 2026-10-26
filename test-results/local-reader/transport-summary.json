@@ -1,0 +1,30 @@
+{
+  "total": 6,
+  "checks": [
+    {
+      "name": "real loopback POST preserves Korean JSON",
+      "ok": true
+    },
+    {
+      "name": "reject remote destinations before a request",
+      "ok": true
+    },
+    {
+      "name": "local redirects cannot forward a question to a cloud service",
+      "ok": true
+    },
+    {
+      "name": "invalid API JSON rejected",
+      "ok": true
+    },
+    {
+      "name": "oversized local response rejected",
+      "ok": true
+    },
+    {
+      "name": "total deadline includes waiting for response headers",
+      "ok": true
+    }
+  ],
+  "note": "Actual local HTTP integration checks with a test server. No test response is presented as model or quality evidence."
+}

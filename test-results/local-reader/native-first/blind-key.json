@@ -1,0 +1,126 @@
+{
+  "note": "Source key only. No human or expert review has been performed by this generator. Ratings must refer to the per-case fingerprint.",
+  "seed": "arcana-local-first-review-2026-10-27",
+  "cases": [
+    {
+      "id": "d01",
+      "fingerprint": "40601ad7f702e39dcbc24c97ca32d56c6280e603b9d5e04b09db61d42a408310",
+      "sources": {
+        "A": "Qwen3-4B-local-single-stage",
+        "B": "v82-rule-engine"
+      }
+    },
+    {
+      "id": "d02",
+      "fingerprint": "b4bdde65788e0d4119a3ae53ae10b7a3fb088a768ba767a30e11e48ce624ea7b",
+      "sources": {
+        "A": "Qwen3-4B-local-single-stage",
+        "B": "v82-rule-engine"
+      }
+    },
+    {
+      "id": "d03",
+      "fingerprint": "571f2fbc967d4bd72b30ae66c8cd74cc8779aa4acbc6f323a77469f48c0b9873",
+      "sources": {
+        "A": "Qwen3-4B-local-single-stage",
+        "B": "v82-rule-engine"
+      }
+    },
+    {
+      "id": "n01",
+      "fingerprint": "cd35eeae5e73907f51bf5516a0c5eb6a6d99e37560bf8a08a610e7f7f22c3565",
+      "sources": {
+        "A": "v82-rule-engine",
+        "B": "Qwen3-4B-local-single-stage"
+      }
+    },
+    {
+      "id": "n02",
+      "fingerprint": "be16ce2e31ea3722feb53f7506b951af433313508915cc9042055a60648f221f",
+      "sources": {
+        "A": "v82-rule-engine",
+        "B": "Qwen3-4B-local-single-stage"
+      }
+    },
+    {
+      "id": "n03",
+      "fingerprint": "230c7cb2b9389ab399596d17b407da6d384963d1b86d078d103d52b04994dfb4",
+      "sources": {
+        "A": "v82-rule-engine",
+        "B": "Qwen3-4B-local-single-stage"
+      }
+    },
+    {
+      "id": "n04",
+      "fingerprint": "ce46e95324033cff1e7bd71b55720a7b7e5fe1b4fe6a2e137f36b3e4fe22c26f",
+      "sources": {
+        "A": "Qwen3-4B-local-single-stage",
+        "B": "v82-rule-engine"
+      }
+    },
+    {
+      "id": "n05",
+      "fingerprint": "10fe4f2c50f67cfdd434318b0a8e4369417dc7cae49499d3f289a1825c93d51e",
+      "sources": {
+        "A": "v82-rule-engine",
+        "B": "Qwen3-4B-local-single-stage"
+      }
+    },
+    {
+      "id": "n06",
+      "fingerprint": "27b6a5de7b2ba6ba76f62e0e42f0a9abf574c7ff2f6f4af7ff56f2009ed610fd",
+      "sources": {
+        "A": "v82-rule-engine",
+        "B": "Qwen3-4B-local-single-stage"
+      }
+    },
+    {
+      "id": "n07",
+      "fingerprint": "97c91d9bf4bf17ab8cedf7fbf9f33cb0f789f3602a41bc6835824b9245f78331",
+      "sources": {
+        "A": "Qwen3-4B-local-single-stage",
+        "B": "v82-rule-engine"
+      }
+    },
+    {
+      "id": "n08",
+      "fingerprint": "1644488e78a07c751fad95744308356db89b0d454c9497538b64de78b930dd1f",
+      "sources": {
+        "A": "v82-rule-engine",
+        "B": "Qwen3-4B-local-single-stage"
+      }
+    },
+    {
+      "id": "n09",
+      "fingerprint": "8faaad43d56d5246f3c8b959f7508122085ba42f448ea891290cec4a791ade74",
+      "sources": {
+        "A": "Qwen3-4B-local-single-stage",
+        "B": "v82-rule-engine"
+      }
+    },
+    {
+      "id": "n10",
+      "fingerprint": "b21f0d10e550962d96f6bbfbf6ba32e49e575340ad3bf57935ef788a09ccdd03",
+      "sources": {
+        "A": "v82-rule-engine",
+        "B": "Qwen3-4B-local-single-stage"
+      }
+    },
+    {
+      "id": "n11",
+      "fingerprint": "7b851d64cbdcaf387628ddc76a1b00b385b192d198a7f95e04dce00b460a15d1",
+      "sources": {
+        "A": "v82-rule-engine",
+        "B": "Qwen3-4B-local-single-stage"
+      }
+    },
+    {
+      "id": "n12",
+      "fingerprint": "e132a3642842ebb0e580796092f792abac8b9d610f1b5a67a359a78c15f9b7ab",
+      "sources": {
+        "A": "Qwen3-4B-local-single-stage",
+        "B": "v82-rule-engine"
+      }
+    }
+  ]
+}

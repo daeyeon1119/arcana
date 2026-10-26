@@ -1,0 +1,9 @@
+{
+  "model": "Qwen3-4B-q4f16_1-MLC",
+  "runtime": "@mlc-ai/web-llm@0.2.86",
+  "profile": "Playwright temporary context",
+  "stage": "model download",
+  "result": "QuotaExceededError after 774 MB, 35% of weights fetched",
+  "generatedAnswers": 0,
+  "note": "No quality conclusion. Retrying with a persistent browser profile, stable origin and storage estimate."
+}

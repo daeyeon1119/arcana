@@ -1,0 +1,42 @@
+{
+  "record": {
+    "model": "https://huggingface.co/mlc-ai/Qwen3-4B-q4f16_1-MLC",
+    "model_id": "Qwen3-4B-q4f16_1-MLC",
+    "model_lib": "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/v0_2_86/base/Qwen3-4B-q4f16_1_cs1k-webgpu.wasm",
+    "vram_required_MB": 3431.59,
+    "low_resource_required": true,
+    "overrides": {
+      "context_window_size": 4096
+    }
+  },
+  "response": {
+    "id": "5021f7b8-9277-4130-ae33-6c900f670012",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "<think>\n\n</think>\n\n진료 전에 궁금한 점을 적어보세요. 간단하게 정리해 두면 긴장할 때도 빠르게 찾을 수 있어요.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "model": "Qwen3-4B-q4f16_1-MLC",
+    "object": "chat.completion",
+    "created": 1793025004,
+    "usage": {
+      "completion_tokens": 43,
+      "prompt_tokens": 71,
+      "total_tokens": 114,
+      "extra": {
+        "e2e_latency_s": 145.359,
+        "prefill_tokens_per_s": 0.9479913265471125,
+        "decode_tokens_per_s": 0.5963740458030915,
+        "time_to_first_token_s": 74.89519999998808,
+        "time_per_output_token_s": 1.6767999999956005
+      }
+    }
+  },
+  "elapsedMs": 145350.90000000596
+}

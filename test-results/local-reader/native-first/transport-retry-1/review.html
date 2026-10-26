@@ -1,0 +1,37 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>무료 로컬 해석 모델 · 첫 실제 진단</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f5f2e9;color:#253d32;font:16px/1.85 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:24px}h1{font-size:28px}h2{font-size:20px}h3,h4{margin:12px 0 8px}p{white-space:pre-wrap;margin:8px 0}article{background:#fffdf7;border:1px solid #d5ccba;border-radius:12px;padding:22px;margin:22px 0}small{color:#5c7164}.cards,.memo{font-size:14px;padding:14px;background:#f1f1e5;border-radius:8px}.compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}select{font:inherit;min-height:44px;padding:8px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}summary{cursor:pointer}@media(max-width:700px){main{padding:12px}article{padding:16px}.compare{grid-template-columns:1fr}}</style><main>
+<h1>무료 로컬 해석 모델 · 첫 실제 진단</h1><p>실행 기록 1/1개 · 답변 생성 1개 · 실행 오류 0개 · 실제 문장 검토 1개. Qwen3-4B-Q4_K_M과 llama.cpp CPU를 이 기기에서 실행했습니다. 유료 API를 쓰거나 질문을 외부 추론 서버로 보내지 않습니다.</p>
+<p>질문·프롬프트·카드·원본 출력을 보존합니다. 알려진 개발 질문 3개와 프롬프트 고정 뒤 작성한 새 상황 12개를 구분합니다. 이 화면은 통신 장애 뒤 선택한 질문을 다시 실행한 별도 기록이며 원래 실패를 대체하지 않습니다. 저자가 수행한 진단이며 전문가와의 독립 비교가 아닙니다. JSON 형태·원문 인용·카드 참조 검사는 답변의 의미나 품질을 보증하지 않습니다.</p>
+<select id="filter" aria-label="평가 자료 구분"><option value="all">전체 자료</option><option value="fresh">새 상황 12개</option><option value="development">알려진 개발 질문 3개</option></select>
+<article data-kind="fresh"><small>n04 · fresh · 204.0초 · 구조 검사 통과</small>
+<h2>마을 사진전을 열었고 평가는 아직 모으지 않았어요. 잘됐다는 말을 듣고 싶은 마음과 별개로 이번 경험에서 배울 질문을 정하고 싶어요.</h2><p class="cards">c0 · 과거 · 완드 6 역방향 · 외부 인정에 집착하거나 기대한 평가가 늦어집니다.<br>c1 · 현재 · 심판 정방향 · 지난 경험을 평가하고 새로운 부름에 응답합니다.<br>c2 · 미래 · 펜타클 7 정방향 · 당장의 결과보다 축적된 노력의 성숙을 기다립니다.</p><p class="memo">검토할 점: 열린 전시와 아직 없는 평가를 구분하는가. 성공·실패 예측 대신 성찰 질문을 돕는가.<br>실제 검토: 통신 오류 뒤 같은 입력으로 처음 완성된 답변입니다. 실제로는 평가를 아직 모으지 않았는데, 평가가 늦어지는 상황으로 바꾸어 외부 응답을 기다리는 태도를 조언합니다. 경험에서 배울 질문을 정해 달라는 요청에 ‘어떤 교훈을 얻을 수 있는가’라는 일반적인 질문 하나만 되풀이하고, 현재 자리의 심판도 전체 해석에 활용하지 못했습니다. ‘현재의 평가가 아직 모으지 않았다는’은 문법도 어색합니다. 실행 장애는 복구됐지만 의미 품질은 부족합니다.</p>
+<div class="compare"><section><h3>기존 v82 실제 답변</h3><p>‘현재’의 심판 정방향은 ‘지난 선택의 재평가’를 보여 줍니다. ‘미래’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?</p></section><section><h3>무료 로컬 모델의 실제 답변</h3><h4>요청 원문: 마을 사진전을 열었고 평가는 아직 모으지 않았어요. 잘됐다는 말을 듣고 싶은 마음과 별개로 이번 경험에서 배울 질문을 정하고 싶어요.</h4><p>이번 사진전 경험에서 배울 질문은 &#x27;이번 경험에서 어떤 교훈을 얻을 수 있는가?&#x27;입니다. 현재의 평가가 아직 모으지 않았다는 점에서, 이는 외부의 인정을 기다리는 태도와 관련이 있습니다. 향후의 성과는 축적된 노력의 결과일 수 있으므로, 이 경험을 통해 자신의 노력과 기대를 어떻게 연결할 수 있는지 고민하는 것이 중요합니다.</p><small>c0, c2</small><h4>전체 흐름</h4><p>이번 경험은 외부의 평가를 기다리는 태도와, 축적된 노력의 결과를 기다리는 태도 사이에서 이중적인 긴장이 생기고 있습니다. 이는 현재의 평가가 아직 모으지 않았다는 점에서, 향후의 성과를 기다리는 태도로 이어질 수 있습니다.</p><h4>실천</h4><p>이번 경험에서 어떤 교훈을 얻을 수 있는지 고민해보세요.<br>현재의 평가가 늦어지는 상황에서, 자신의 노력과 기대를 어떻게 연결할 수 있는지 반성해보세요.</p></section></div>
+<details><summary>전체 카드 설명 · 미확인 정보 · 원본 JSON</summary><h4>과거 · 완드 6 역방향</h4><p>완드 6(역방향) - 외부 인정에 집착하거나 기대한 평가가 늦어집니다.</p><h4>현재 · 심판 정방향</h4><p>심판(정방향) - 지난 경험을 평가하고 새로운 부름에 응답합니다.</p><h4>미래 · 펜타클 7 정방향</h4><p>펜타클 7(정방향) - 당장의 결과보다 축적된 노력의 성숙을 기다립니다.</p><h4>더 알아볼 점</h4><p></p><pre>{
+  &quot;requests&quot;: [
+    {
+      &quot;source&quot;: &quot;마을 사진전을 열었고 평가는 아직 모으지 않았어요. 잘됐다는 말을 듣고 싶은 마음과 별개로 이번 경험에서 배울 질문을 정하고 싶어요.&quot;,
+      &quot;text&quot;: &quot;이번 사진전 경험에서 배울 질문은 &#x27;이번 경험에서 어떤 교훈을 얻을 수 있는가?&#x27;입니다. 현재의 평가가 아직 모으지 않았다는 점에서, 이는 외부의 인정을 기다리는 태도와 관련이 있습니다. 향후의 성과는 축적된 노력의 결과일 수 있으므로, 이 경험을 통해 자신의 노력과 기대를 어떻게 연결할 수 있는지 고민하는 것이 중요합니다.&quot;,
+      &quot;refs&quot;: [&quot;c0&quot;, &quot;c2&quot;]
+    }
+  ],
+  &quot;synthesis&quot;: {
+    &quot;text&quot;: &quot;이번 경험은 외부의 평가를 기다리는 태도와, 축적된 노력의 결과를 기다리는 태도 사이에서 이중적인 긴장이 생기고 있습니다. 이는 현재의 평가가 아직 모으지 않았다는 점에서, 향후의 성과를 기다리는 태도로 이어질 수 있습니다.&quot;,
+    &quot;refs&quot;: [&quot;c0&quot;, &quot;c2&quot;]
+  },
+  &quot;cards&quot;: {
+    &quot;c0&quot;: &quot;완드 6(역방향) - 외부 인정에 집착하거나 기대한 평가가 늦어집니다.&quot;,
+    &quot;c1&quot;: &quot;심판(정방향) - 지난 경험을 평가하고 새로운 부름에 응답합니다.&quot;,
+    &quot;c2&quot;: &quot;펜타클 7(정방향) - 당장의 결과보다 축적된 노력의 성숙을 기다립니다.&quot;
+  },
+  &quot;actions&quot;: [
+    {
+      &quot;text&quot;: &quot;이번 경험에서 어떤 교훈을 얻을 수 있는지 고민해보세요.&quot;,
+      &quot;refs&quot;: [&quot;c0&quot;, &quot;c2&quot;]
+    },
+    {
+      &quot;text&quot;: &quot;현재의 평가가 늦어지는 상황에서, 자신의 노력과 기대를 어떻게 연결할 수 있는지 반성해보세요.&quot;,
+      &quot;refs&quot;: [&quot;c0&quot;, &quot;c2&quot;]
+    }
+  ],
+  &quot;unknowns&quot;: []
+}</pre></details></article><script>document.getElementById('filter').onchange=e=>document.querySelectorAll('article[data-kind]').forEach(a=>a.hidden=e.target.value!=='all'&&a.dataset.kind!==e.target.value);</script></main></html>

@@ -1,0 +1,8 @@
+{
+  "loadMs": 92,
+  "args": null,
+  "buildInfo": "b11900-74b104c9b",
+  "totalSlots": 1,
+  "modelPath": "Qwen3-4B-Q4_K_M.gguf",
+  "endpoint": "Reused own pinned 127.0.0.1 diagnostic server; owner closes it"
+}

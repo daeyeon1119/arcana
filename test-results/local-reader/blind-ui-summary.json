@@ -1,0 +1,66 @@
+{
+  "checks": [
+    {
+      "name": "every fixed case remains visible, including pending and failed runs",
+      "ok": true
+    },
+    {
+      "name": "source names are not visible in the answer panels",
+      "ok": true
+    },
+    {
+      "name": "unrated scores start empty",
+      "ok": true
+    },
+    {
+      "name": "all embedded cards are exact original JPEGs",
+      "ok": true
+    },
+    {
+      "name": "export retains an explicit zero and leaves all other axes unrated",
+      "ok": true
+    },
+    {
+      "name": "review fingerprint binds to the exact compared answers",
+      "ok": true
+    },
+    {
+      "name": "source mapping is excluded from the reviewer export",
+      "ok": true
+    },
+    {
+      "name": "same comparison restores the local draft",
+      "ok": true
+    },
+    {
+      "name": "an unavailable answer has no score controls",
+      "ok": true
+    },
+    {
+      "name": "review layout stays inside 360px",
+      "ok": true
+    },
+    {
+      "name": "review layout stays inside 390px",
+      "ok": true
+    },
+    {
+      "name": "review layout stays inside 1440px",
+      "ok": true
+    },
+    {
+      "name": "mobile answer tabs switch without changing cards",
+      "ok": true
+    },
+    {
+      "name": "no page errors or external requests",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": 0,
+  "caseCount": 15,
+  "recordCount": 15,
+  "pairedCount": 14,
+  "note": "UI behavior tests use explicitly labeled test-only ratings in an isolated browser. They are not human or expert reviews and no reviewer export is committed."
+}

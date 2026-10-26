@@ -1,0 +1,665 @@
+{
+  "id": "n09",
+  "kind": "fresh",
+  "question": "처음 맡은 온라인 강의가 끝났고 다음 강의는 한 달 뒤예요. 개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.",
+  "spread": "five",
+  "cards": [
+    [
+      "wa09",
+      true
+    ],
+    [
+      "pe08",
+      false
+    ],
+    [
+      "sw09",
+      false
+    ],
+    [
+      "cu03",
+      false
+    ],
+    [
+      "ar14",
+      false
+    ]
+  ],
+  "review": "완료된 강의와 다음 준비를 구분하며 개선과 감정 돌봄 두 요구를 모두 답하는가.",
+  "packet": {
+    "version": 1,
+    "question": "처음 맡은 온라인 강의가 끝났고 다음 강의는 한 달 뒤예요. 개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.",
+    "spread": "심층 분석",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "wa09",
+        "name": "완드 9",
+        "orientation": "역방향",
+        "position": "핵심",
+        "positionMeaning": "질문을 관통하는 핵심 상태",
+        "meaning": "오랜 경계가 불신이나 번아웃으로 이어집니다."
+      },
+      {
+        "ref": "c1",
+        "id": "pe08",
+        "name": "펜타클 8",
+        "orientation": "정방향",
+        "position": "근원",
+        "positionMeaning": "상황을 만든 밑바탕",
+        "meaning": "반복적인 연습과 장인정신이 실력으로 이어집니다."
+      },
+      {
+        "ref": "c2",
+        "id": "sw09",
+        "name": "소드 9",
+        "orientation": "정방향",
+        "position": "장애물",
+        "positionMeaning": "주의하거나 넘어야 할 요소",
+        "meaning": "걱정과 후회가 생각을 과도하게 점유합니다."
+      },
+      {
+        "ref": "c3",
+        "id": "cu03",
+        "name": "컵 3",
+        "orientation": "정방향",
+        "position": "자원",
+        "positionMeaning": "의지할 수 있는 강점과 기회",
+        "meaning": "우정과 축하, 함께하는 기쁨을 나눕니다."
+      },
+      {
+        "ref": "c4",
+        "id": "ar14",
+        "name": "절제",
+        "orientation": "정방향",
+        "position": "조언",
+        "positionMeaning": "앞으로 활용할 행동의 방향",
+        "meaning": "속도와 감정을 조절해 서로 다른 요소를 조화시킵니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "preparation"
+    },
+    "headline": "지금 선택할 수 있는 한 걸음",
+    "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘조언’에 놓인 절제의 주제는 ‘적절한 균형’입니다.",
+    "sections": [
+      {
+        "title": "핵심",
+        "body": "‘핵심’의 완드 9 역방향은 ‘경계로 인한 소진’을 보여 줍니다. 계속 버티는 방식이 회복할 여지를 남기는지 점검해 보세요.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "근원",
+        "body": "‘근원’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요.",
+        "refs": [
+          1
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "장애물",
+        "body": "‘장애물’의 소드 9 정방향은 ‘반복되는 걱정’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. ‘반복되는 걱정’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+        "refs": [
+          2
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "자원",
+        "body": "‘자원’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+        "refs": [
+          3
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "조언",
+        "body": "‘조언’의 절제 정방향은 ‘적절한 균형’을 보여 줍니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요.",
+        "refs": [
+          4
+        ],
+        "kind": "card"
+      }
+    ],
+    "actions": [
+      "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "preparation",
+        "intent": "action",
+        "phase": "active",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "처음 맡은 온라인 강의가 끝났고 다음 강의는 한 달 뒤예요. 개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.",
+        "explicit": {
+          "health": false,
+          "finances": false,
+          "project": false,
+          "relationship": false,
+          "family": false,
+          "career": false,
+          "preparation": false,
+          "stress": true,
+          "decision": false
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "처음 맡은 온라인 강의가 끝났고 다음 강의는 한 달 뒤예요. 개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.",
+          "evidenceQuestion": "처음 맡은 온라인 강의가 끝났고 다음 강의는 한 달 뒤예요. 개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "improve",
+              "text": "개선할 점을 고르는 방법",
+              "start": 34,
+              "end": 47
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "완드 9",
+          "role": "now",
+          "sections": [
+            0,
+            2
+          ]
+        },
+        {
+          "index": 1,
+          "name": "펜타클 8",
+          "role": "root",
+          "sections": [
+            1
+          ]
+        },
+        {
+          "index": 2,
+          "name": "소드 9",
+          "role": "obstacle",
+          "sections": [
+            2,
+            3
+          ]
+        },
+        {
+          "index": 3,
+          "name": "컵 3",
+          "role": "resource",
+          "sections": [
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "name": "절제",
+          "role": "advice",
+          "sections": [
+            5
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": false,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "action",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 8,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [
+            "방법을"
+          ],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "grammar",
+        "question": "처음 맡은 온라인 강의가 끝났고 다음 강의는 한 달 뒤예요. 개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요."
+      },
+      "domain": "preparation",
+      "phase": "active",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [
+        {
+          "type": "tension",
+          "indices": [
+            0,
+            2
+          ],
+          "left": "완드 9",
+          "right": "소드 9",
+          "roles": [
+            "now",
+            "obstacle"
+          ],
+          "meanings": [
+            "경계로 인한 소진",
+            "반복되는 걱정"
+          ],
+          "weight": 21
+        },
+        {
+          "type": "tension",
+          "indices": [
+            0,
+            4
+          ],
+          "left": "완드 9",
+          "right": "절제",
+          "roles": [
+            "now",
+            "advice"
+          ],
+          "meanings": [
+            "경계로 인한 소진",
+            "적절한 균형"
+          ],
+          "weight": 21
+        },
+        {
+          "type": "reinforce",
+          "indices": [
+            2,
+            4
+          ],
+          "left": "소드 9",
+          "right": "절제",
+          "roles": [
+            "obstacle",
+            "advice"
+          ],
+          "meanings": [
+            "반복되는 걱정",
+            "적절한 균형"
+          ],
+          "weight": 20
+        },
+        {
+          "type": "tension",
+          "indices": [
+            1,
+            2
+          ],
+          "left": "펜타클 8",
+          "right": "소드 9",
+          "roles": [
+            "root",
+            "obstacle"
+          ],
+          "meanings": [
+            "반복된 연습",
+            "반복되는 걱정"
+          ],
+          "weight": 19
+        }
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "wa09",
+          "reverse": true,
+          "role": "now",
+          "meaning": "경계로 인한 소진"
+        },
+        {
+          "index": 1,
+          "id": "pe08",
+          "reverse": false,
+          "role": "root",
+          "meaning": "반복된 연습"
+        },
+        {
+          "index": 2,
+          "id": "sw09",
+          "reverse": false,
+          "role": "obstacle",
+          "meaning": "반복되는 걱정"
+        },
+        {
+          "index": 3,
+          "id": "cu03",
+          "reverse": false,
+          "role": "resource",
+          "meaning": "함께하는 기쁨"
+        },
+        {
+          "index": 4,
+          "id": "ar14",
+          "reverse": false,
+          "role": "advice",
+          "meaning": "적절한 균형"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": false,
+      "relations": [
+        {
+          "refs": [
+            0,
+            2
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "depleted",
+            "bounds"
+          ],
+          "rightMotifs": [
+            "doubt",
+            "uncertain"
+          ],
+          "insight": "‘경계로 인한 소진’과 ‘반복되는 걱정’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘오래 긴장해 회복할 힘이 부족함’, 다른 쪽에서는 ‘확인되지 않은 가능성을 되짚음’을 살펴봅니다.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        },
+        {
+          "refs": [
+            2,
+            4
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "doubt",
+            "uncertain"
+          ],
+          "rightMotifs": [
+            "balance",
+            "flexibility"
+          ],
+          "insight": "‘반복되는 걱정’과 ‘적절한 균형’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘확인되지 않은 가능성을 되짚음’, 다른 쪽에서는 ‘서로 다른 요구를 천천히 조율함’을 살펴봅니다.",
+          "positional": "제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요."
+        },
+        {
+          "refs": [
+            3,
+            4
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "connection",
+            "support"
+          ],
+          "rightMotifs": [
+            "balance",
+            "flexibility"
+          ],
+          "insight": "‘함께하는 기쁨’과 ‘적절한 균형’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘친구와 공동체의 정서적 지지’, 다른 쪽에서는 ‘서로 다른 요구를 천천히 조율함’을 살펴봅니다.",
+          "positional": ""
+        }
+      ],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "wa09",
+          "reverse": true,
+          "motifs": [
+            "depleted",
+            "bounds"
+          ]
+        },
+        {
+          "index": 1,
+          "id": "pe08",
+          "reverse": false,
+          "motifs": [
+            "practice",
+            "skill"
+          ]
+        },
+        {
+          "index": 2,
+          "id": "sw09",
+          "reverse": false,
+          "motifs": [
+            "doubt",
+            "uncertain"
+          ]
+        },
+        {
+          "index": 3,
+          "id": "cu03",
+          "reverse": false,
+          "motifs": [
+            "connection",
+            "support"
+          ]
+        },
+        {
+          "index": 4,
+          "id": "ar14",
+          "reverse": false,
+          "motifs": [
+            "balance",
+            "flexibility"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "처음 맡은 온라인 강의가 끝났고 다음 강의는 한 달 뒤예요. 개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.",
+        "evidenceQuestion": "처음 맡은 온라인 강의가 끝났고 다음 강의는 한 달 뒤예요. 개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "improve",
+            "text": "개선할 점을 고르는 방법",
+            "start": 34,
+            "end": 47
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "improve",
+            "text": "개선할 점을 고르는 방법",
+            "start": 34,
+            "end": 47
+          },
+          "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘조언’에 놓인 절제의 주제는 ‘적절한 균형’입니다.",
+          "refs": [
+            4
+          ]
+        }
+      ],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.\",\n      \"text\": \"개선할 점을 고르는 방법은 '완드 9'의 역방향 상태를 고려하여, 강의의 내용을 반복적으로 검토하고 피드백을 수렴하는 것이 좋습니다. 수업 뒤 긴장을 줄이기 위해서는 '컵 3'의 정방향 상태를 활용하여, 학습 후 친구나 동료와의 소통을 통해 감정을 나누고, '절제'의 조언을 따라 속도와 감정을 조절하는 것이 도움이 됩니다.\",\n      \"refs\": [\"c0\", \"c3\", \"c4\"]\n    }\n  ],\n  \"synthesis\": {\n    \"text\": \"강의 개선과 긴장 완화를 위해, 학습의 반복과 감정 조절이 중요한 역할을 합니다. 학습 후의 소통과 감정 나누기로 긴장을 줄이고, 학습 내용의 피드백을 통해 개선을 이끌어낼 수 있습니다.\",\n    \"refs\": [\"c0\", \"c3\", \"c4\"]\n  },\n  \"cards\": {\n    \"c0\": \"완드 9(역방향): 오랜 경계가 불신이나 번아웃으로 이어집니다.\",\n    \"c1\": \"펜타클 8(정방향): 반복적인 연습과 장인정신이 실력으로 이어집니다.\",\n    \"c2\": \"소드 9(정방향): 걱정과 후회가 생각을 과도하게 점유합니다.\",\n    \"c3\": \"컵 3(정방향): 우정과 축하, 함께하는 기쁨을 나눕니다.\",\n    \"c4\": \"절제(정방향): 속도와 감정을 조절해 서로 다른 요소를 조화시킵니다.\"\n  },\n  \"actions\": [\n    {\n      \"text\": \"강의 내용을 반복적으로 검토하고 피드백을 수렴하여 개선점을 파악하세요.\",\n      \"refs\": [\"c0\", \"c1\"]\n    },\n    {\n      \"text\": \"학습 후 친구나 동료와 소통하며 감정을 나누고, 속도와 감정을 조절하는 데 주의하세요.\",\n      \"refs\": [\"c3\", \"c4\"]\n    }\n  ],\n  \"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "개선할 점을 고르는 방법과 수업 뒤 남은 긴장을 돌볼 방법을 각각 알려 주세요.",
+        "text": "개선할 점을 고르는 방법은 '완드 9'의 역방향 상태를 고려하여, 강의의 내용을 반복적으로 검토하고 피드백을 수렴하는 것이 좋습니다. 수업 뒤 긴장을 줄이기 위해서는 '컵 3'의 정방향 상태를 활용하여, 학습 후 친구나 동료와의 소통을 통해 감정을 나누고, '절제'의 조언을 따라 속도와 감정을 조절하는 것이 도움이 됩니다.",
+        "refs": [
+          "c0",
+          "c3",
+          "c4"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "강의 개선과 긴장 완화를 위해, 학습의 반복과 감정 조절이 중요한 역할을 합니다. 학습 후의 소통과 감정 나누기로 긴장을 줄이고, 학습 내용의 피드백을 통해 개선을 이끌어낼 수 있습니다.",
+      "refs": [
+        "c0",
+        "c3",
+        "c4"
+      ]
+    },
+    "cards": {
+      "c0": "완드 9(역방향): 오랜 경계가 불신이나 번아웃으로 이어집니다.",
+      "c1": "펜타클 8(정방향): 반복적인 연습과 장인정신이 실력으로 이어집니다.",
+      "c2": "소드 9(정방향): 걱정과 후회가 생각을 과도하게 점유합니다.",
+      "c3": "컵 3(정방향): 우정과 축하, 함께하는 기쁨을 나눕니다.",
+      "c4": "절제(정방향): 속도와 감정을 조절해 서로 다른 요소를 조화시킵니다."
+    },
+    "actions": [
+      {
+        "text": "강의 내용을 반복적으로 검토하고 피드백을 수렴하여 개선점을 파악하세요.",
+        "refs": [
+          "c0",
+          "c1"
+        ]
+      },
+      {
+        "text": "학습 후 친구나 동료와 소통하며 감정을 나누고, 속도와 감정을 조절하는 데 주의하세요.",
+        "refs": [
+          "c3",
+          "c4"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 587,
+    "prompt_tokens": 954,
+    "total_tokens": 1541,
+    "prompt_tokens_details": {
+      "cached_tokens": 550
+    }
+  },
+  "timings": {
+    "cache_n": 550,
+    "prompt_n": 404,
+    "prompt_ms": 21397.444,
+    "prompt_per_token_ms": 52.963970297029704,
+    "prompt_per_second": 18.88075977672847,
+    "predicted_n": 587,
+    "predicted_ms": 190267.746,
+    "predicted_per_token_ms": 324.6889863481229,
+    "predicted_per_second": 3.0798704053602437
+  },
+  "elapsedMs": 211692
+}
