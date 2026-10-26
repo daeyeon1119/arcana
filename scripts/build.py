@@ -6,8 +6,8 @@ import json
 import re
 root = Path(__file__).resolve().parents[1]
 base = (root / 'ARCANA_tarot_v78_source/html/ARCANA_tarot_v78.html').read_text(encoding='utf-8')
-css = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.css','src/card-mat.css'])
-js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/card-mat.js'])
+css = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.css','src/card-mat.css','src/question-context.css'])
+js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/question-model.js','src/reading-context.js','src/card-mat.js'])
 manifest = json.loads((root / 'assets/rws/manifest.json').read_text(encoding='utf-8'))
 art = {}
 for card in manifest['cards']:
@@ -35,8 +35,8 @@ base = base[:card_script.start()] + replacement + base[card_script.end():]
 assert 'a22OfflineCard' not in base and 'arcanaArtPlaceholder' not in base
 assert 'if(f.noConflict)' not in js, 'Unresolved placeholder'
 assert '</script' not in js.lower()
-bundle = f'\n<!-- ARCANA v81 maintained enhancement -->\n<style>\n{css}\n</style>\n<script>\n{js}\n</script>\n'
-base = base.replace('ARCANA 78.0 |', 'ARCANA 81.0 |', 1)
+bundle = f'\n<!-- ARCANA v82 maintained enhancement -->\n<style>\n{css}\n</style>\n<script>\n{js}\n</script>\n'
+base = base.replace('ARCANA 78.0 |', 'ARCANA 82.0 |', 1)
 assert base.count('</body>') == 1
 (root / 'index.html').write_text(base.replace('</body>', bundle+'</body>'), encoding='utf-8', newline='\n')
-print(f'Built index.html (ARCANA 81), 78 original JPEGs embedded ({sum(c["bytes"] for c in manifest["cards"]):,} source bytes)')
+print(f'Built index.html (ARCANA 82), 78 original JPEGs embedded ({sum(c["bytes"] for c in manifest["cards"]):,} source bytes)')

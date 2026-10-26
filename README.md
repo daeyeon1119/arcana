@@ -30,9 +30,15 @@
 
 특정 질문에서만 좋은 답변을 내는 것을 목표 달성으로 인정하지 않습니다. 구현 고정 뒤 새 표현 54개 × 배열 8종으로 검토했고, 받은 답·결과 대기·복합 요구 등에서 실패가 남았습니다. [첫 평가와 실패 사례](test-results/generalization-v81/review.html)를 보존했으며, 이후 이를 보고 수정한 결과는 회귀 자료로 구분합니다. 전문 해석가 수준을 달성했다는 뜻이 아닙니다.
 
+## v82 · 질문의 근거와 복합 요청
+
+질문에서 요청·사건·주체·발신/수신·부정·계획·전언·시간 범위를 따로 읽는 구조를 추가했습니다. 비교와 결정 후 행동처럼 함께 요청한 관점을 나누어 답하고, 상황을 알 수 없는 질문에는 추첨 전에 한두 문장의 보충 상황을 묻습니다. 빈 질문의 오늘의 성찰은 유지합니다.
+
+[실제 답변 78개와 최초 실패](test-results/question-model/review.html), [개선·검증·남은 한계](docs/REVIEW_v82.md)를 확인할 수 있습니다. 기존 실패 54개와 새 상황 24개를 구분했고, 처음 실패한 후보는 커밋 `4547802`에 보존했습니다. 수정 후 재검사는 회귀 자료이며 전문 해석가와의 독립 검증은 아닙니다.
+
 ## 소스와 빌드
 
-`src/arcana79.js`, `src/reading-polish.js`, `src/reading-synthesis.js`, `src/card-mat.js` 및 해당 CSS, `src/original-art.js`가 유지보수 소스입니다. `scripts/build.py`가 저장소의 v78 원본 및 `assets/rws/`의 JPEG를 합쳐 단일 파일 `index.html`을 만듭니다. 빌드할 때 이미지 SHA-256을 검사하고 과거 일러스트 생성·선택 코드는 제거합니다. 과거 버전은 재현용으로 보존합니다.
+`src/arcana79.js`, `src/reading-polish.js`, `src/reading-synthesis.js`, `src/question-model.js`, `src/reading-context.js`, `src/card-mat.js` 및 해당 CSS, `src/original-art.js`가 유지보수 소스입니다. `scripts/build.py`가 저장소의 v78 원본 및 `assets/rws/`의 JPEG를 합쳐 단일 파일 `index.html`을 만듭니다. 질문 모델은 카드·DOM과 독립된 문법 파서이며 범용 언어모델이 아닙니다. 빌드할 때 이미지 SHA-256을 검사하고 과거 일러스트 생성·선택 코드는 제거합니다. 과거 버전은 재현용으로 보존합니다.
 
 ```sh
 python scripts/build.py
@@ -48,7 +54,9 @@ npx playwright install chromium
 npm test
 ```
 
-v81 새 표현 진단의 최종 회귀 재실행은 `npm run diagnose:generalization`입니다. Git 기록의 v80 원본을 로컬에 재현하며 외부 요청은 하지 않습니다. 알려진 실패를 포함한 점수를 기록하므로 종료 코드 0이 모든 답변의 품질을 뜻하지는 않습니다. 최초 고정 평가 재현은 커밋 `8c611c6`에서 `node scripts/generalization.cjs`로 합니다. 해당 과거 소스는 LF 줄바꿈으로 체크아웃해야 합니다. 현재 평가기는 질문 JSON의 CRLF를 LF로 통일해 해시를 계산하므로 Windows에서도 같은 질문 내용을 재현합니다. 앱·원본 이미지의 정확한 바이너리 해시는 유지하며 첫 실패는 덮어쓰지 않습니다.
+현재 `npm run diagnose:generalization`은 알려진 v81 실패 54개를 v82에서 회귀 검사합니다. `npm run test:question-regression`은 v82 첫 평가 이후 회귀 자료가 된 24개를 재검사합니다. Git 기록의 이전 앱을 로컬에 재현하며 질문·카드를 외부로 전송하지 않습니다. 과거 버전이 없는 얕은 복제본에서는 Git 기록을 먼저 받아야 합니다.
+
+검사 종료 코드 0이 모든 답변의 품질을 뜻하지는 않습니다. v81 첫 고정 평가는 커밋 `8c611c6`, v82 첫 고정 평가는 `4547802`에서 재현합니다. 최초 평가의 앱·질문 해시와 실패를 덮어쓰지 않습니다. 질문 JSON의 줄바꿈은 LF로 통일해 해시를 계산하며 앱·원본 이미지는 정확한 바이너리 해시를 유지합니다.
 
 설치된 브라우저를 사용하려면 `ARCANA_BROWSER`를 실행 파일 경로로 지정하세요. 기존 Playwright 패키지를 재사용하는 환경에서는 `ARCANA_NODE_MODULES`를 해당 `node_modules` 경로로 지정할 수 있습니다. 테스트는 임시 포트의 로컬 서버를 자체 실행하고 외부 HTTPS 요청을 차단합니다.
 

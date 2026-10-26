@@ -1,0 +1,119 @@
+{
+  "note": "54 known v81 questions, replayed as development/regression data. Classification scores do not measure professional quality.",
+  "appSHA256": "074f1b9bc92ecb018d79c07c91152ad81c43b1beedb5a807988f008f2aa0a92c",
+  "questions": 54,
+  "readingsPerVersion": 432,
+  "before": {
+    "intent": {
+      "passed": 43,
+      "total": 48
+    },
+    "domain": {
+      "passed": 29,
+      "total": 33
+    },
+    "facts": {
+      "passed": 19,
+      "total": 24
+    }
+  },
+  "after": {
+    "intent": {
+      "passed": 48,
+      "total": 48
+    },
+    "domain": {
+      "passed": 31,
+      "total": 33
+    },
+    "facts": {
+      "passed": 24,
+      "total": 24
+    }
+  },
+  "checks": [
+    {
+      "name": "all 432 readings preserve every card in detailed evidence",
+      "ok": true
+    },
+    {
+      "name": "all event spans point to literal source text",
+      "ok": true
+    },
+    {
+      "name": "known missing-context cases ask for context",
+      "ok": true
+    },
+    {
+      "name": "both requests remain visible in compound cases",
+      "ok": true
+    },
+    {
+      "name": "received reply is preserved across the old paraphrases",
+      "ok": true
+    },
+    {
+      "name": "waiting for results does not advise submitting the same work again",
+      "ok": true
+    },
+    {
+      "name": "sent and unsent remain distinct",
+      "ok": true
+    },
+    {
+      "name": "no page errors",
+      "ok": true
+    },
+    {
+      "name": "unclear question does not start a draw",
+      "ok": true
+    },
+    {
+      "name": "changing the base question clears stale context",
+      "ok": true
+    },
+    {
+      "name": "empty context stays pending",
+      "ok": true
+    },
+    {
+      "name": "context is added before the draw",
+      "ok": true
+    },
+    {
+      "name": "compound request renders both comparison and communication",
+      "ok": true
+    },
+    {
+      "name": "compound export uses the visible answer",
+      "ok": true
+    },
+    {
+      "name": "engine version is saved as 82",
+      "ok": true
+    },
+    {
+      "name": "saved reading retains both requests",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "failures": [
+    {
+      "group": "sent",
+      "variant": 2,
+      "question": "연락을 전했지만 회신을 못 받았습니다. 이 상황에서 제가 지킬 태도는 무엇인가요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    },
+    {
+      "group": "accessibility",
+      "variant": 0,
+      "question": "보드게임 규칙을 색만으로 구분해 만들었어요. 여러 사람이 편하게 쓰도록 어떻게 보완할까요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    }
+  ]
+}

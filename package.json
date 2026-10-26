@@ -1,6 +1,6 @@
 {
   "name": "arcana-tarot",
-  "version": "81.0.0",
+  "version": "82.0.0",
   "private": true,
   "description": "Offline Korean tarot reflection app and reproducible reading checks",
   "scripts": {
@@ -9,11 +9,14 @@
     "test:ui": "node scripts/ui.cjs",
     "test:images": "node scripts/images.cjs",
     "test:mat": "node scripts/mat.cjs after",
-    "test:editorial": "node scripts/editorial.cjs v81",
-    "test:synthesis": "node scripts/synthesis.cjs after",
-    "diagnose:generalization": "node scripts/generalization.cjs regression-final",
+    "test:editorial": "node scripts/editorial.cjs v82",
+    "test:question-model": "node tests/question-model.cjs",
+    "test:question-regression": "node scripts/question-unseen.cjs regression",
+    "test:synthesis": "node scripts/synthesis.cjs v82",
+    "diagnose:generalization": "node scripts/context.cjs",
     "report:synthesis": "python scripts/synthesis_report.py",
-    "test": "npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:editorial && npm run test:synthesis"
+    "report:questions": "python scripts/question_report.py",
+    "test": "npm run test:question-model && npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
   },
   "devDependencies": {
     "playwright": "1.62.1"

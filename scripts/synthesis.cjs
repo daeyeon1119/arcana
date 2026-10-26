@@ -12,7 +12,7 @@ const pools=[['ar07','ar12','sw01','wa10','pe03','ar18','cu02','ar13','ar14','pe
  const checks=[];const check=(name,ok)=>{checks.push({name,ok});assert(ok,name);};
  check('24 fixed new questions / 72 exact card combinations',cases.length===24&&readings.length===72);
  check('no browser runtime errors',pageErrors.length===0);
- if(phase==='after'){
+ if(phase!=='before'){
   const before=JSON.parse(fs.readFileSync('test-results/synthesis/before-readings.json','utf8'));
   check('before/after use identical questions, positions and orientations',readings.every((r,i)=>r.question===before[i].question&&r.spread===before[i].spread&&JSON.stringify(r.cards)===JSON.stringify(before[i].cards)));
   check('every drawn card remains in detailed evidence',readings.every(r=>new Set(r.sections.flatMap(s=>s.refs)).size===r.cards.length));
