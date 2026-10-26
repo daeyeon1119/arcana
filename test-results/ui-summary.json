@@ -1,0 +1,30 @@
+{
+  "checks": [
+    "no horizontal overflow 360",
+    "no horizontal overflow 390",
+    "no horizontal overflow 768",
+    "no horizontal overflow 1440",
+    "four visible spread choices",
+    "current parser in auto spread / manual override",
+    "question examples / count",
+    "automatic relationship spread",
+    "mobile draw / reveal / same answer in export / upright only",
+    "follow-up uses current cards and appears in export",
+    "saved reading / manual intent / follow-up retained",
+    "backup merge / invalid records / malformed storage / isolated follow-up logs",
+    "editing question invalidates old draw",
+    "draw/reveal one 1",
+    "draw/reveal three 3",
+    "draw/reveal five 5",
+    "draw/reveal relationship5 5",
+    "draw/reveal choice5 5",
+    "draw/reveal waiting3 3",
+    "draw/reveal career5 5",
+    "draw/reveal celtic 10",
+    "card dialog keyboard trap / Escape",
+    "invalid inputs / next attempt / manual domain / empty question",
+    "no browser page errors / external requests blocked"
+  ],
+  "errors": [],
+  "browser": "156.0.4314.42"
+}

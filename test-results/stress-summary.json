@@ -1,0 +1,931 @@
+{
+  "seed": 790026,
+  "appSHA256": "cac2c9980dffc160bc0f7ad69966e7c91fa2460fdb045eb54a58bf641723fcfe",
+  "scenarioCount": 128,
+  "readingCount": 1024,
+  "passed": 1024,
+  "failed": 0,
+  "pageErrors": [],
+  "coverage": {
+    "uniqueCards": 78,
+    "cardOrientations": 156,
+    "spreads": 8
+  },
+  "classification": {
+    "before": {
+      "intent": 102,
+      "domain": 112,
+      "facts": 17
+    },
+    "after": {
+      "intent": 128,
+      "domain": 128,
+      "facts": 26
+    },
+    "denominator": 128,
+    "factDenominator": 26
+  },
+  "confusions": [],
+  "sensitivity": {
+    "total": 74,
+    "passed": 74,
+    "details": [
+      {
+        "spread": "one",
+        "index": 0,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "one",
+        "index": 0,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "three",
+        "index": 0,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "three",
+        "index": 0,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "three",
+        "index": 1,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "three",
+        "index": 1,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "three",
+        "index": 2,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "three",
+        "index": 2,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "five",
+        "index": 0,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "five",
+        "index": 0,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "five",
+        "index": 1,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "five",
+        "index": 1,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "five",
+        "index": 2,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "five",
+        "index": 2,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "five",
+        "index": 3,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "five",
+        "index": 3,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "five",
+        "index": 4,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "five",
+        "index": 4,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "relationship5",
+        "index": 0,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "relationship5",
+        "index": 0,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "relationship5",
+        "index": 1,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "relationship5",
+        "index": 1,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "relationship5",
+        "index": 2,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "relationship5",
+        "index": 2,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "relationship5",
+        "index": 3,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "relationship5",
+        "index": 3,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "relationship5",
+        "index": 4,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "relationship5",
+        "index": 4,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "choice5",
+        "index": 0,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "choice5",
+        "index": 0,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "choice5",
+        "index": 1,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "choice5",
+        "index": 1,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "choice5",
+        "index": 2,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "choice5",
+        "index": 2,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "choice5",
+        "index": 3,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "choice5",
+        "index": 3,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "choice5",
+        "index": 4,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "choice5",
+        "index": 4,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "waiting3",
+        "index": 0,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "waiting3",
+        "index": 0,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "waiting3",
+        "index": 1,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "waiting3",
+        "index": 1,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "waiting3",
+        "index": 2,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "waiting3",
+        "index": 2,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "career5",
+        "index": 0,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "career5",
+        "index": 0,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "career5",
+        "index": 1,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "career5",
+        "index": 1,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "career5",
+        "index": 2,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "career5",
+        "index": 2,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "career5",
+        "index": 3,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "career5",
+        "index": 3,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "career5",
+        "index": 4,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "career5",
+        "index": 4,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "celtic",
+        "index": 0,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 0,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 1,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 1,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 2,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 2,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 3,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 3,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 4,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 4,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 5,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 5,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 6,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 6,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 7,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 7,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 8,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 8,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": false,
+        "actionChanged": false
+      },
+      {
+        "spread": "celtic",
+        "index": 9,
+        "mode": "card",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      },
+      {
+        "spread": "celtic",
+        "index": 9,
+        "mode": "direction",
+        "changed": true,
+        "replyChanged": true,
+        "actionChanged": true
+      }
+    ]
+  },
+  "holdout": {
+    "note": "Legacy 48 prompts; no tuning based on these results in this change.",
+    "count": 48,
+    "before": 34,
+    "after": 36,
+    "results": [
+      {
+        "question": "언젠가 부모님과의 거리가 다시 가까워질까요?",
+        "expected": "forecast",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "다음 분기에 만들 제품이 시장에서 자리를 잡을 수 있을까요?",
+        "expected": "forecast",
+        "before": "forecast",
+        "after": "forecast"
+      },
+      {
+        "question": "새로 낸 원고에 출판사에서 답변을 줄까요?",
+        "expected": "forecast",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "제가 바라던 방향으로 일이 흘러갈 가능성이 있을까요?",
+        "expected": "forecast",
+        "before": "forecast",
+        "after": "forecast"
+      },
+      {
+        "question": "이번 프로젝트는 마지막까지 잘 마무리될까요?",
+        "expected": "forecast",
+        "before": "forecast",
+        "after": "forecast"
+      },
+      {
+        "question": "작년부터 준비한 전시가 사람들에게 알려질까요?",
+        "expected": "forecast",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "올해 남은 기간에는 관계가 조금 더 안정될까요?",
+        "expected": "forecast",
+        "before": "forecast",
+        "after": "forecast"
+      },
+      {
+        "question": "가족과의 오해가 풀리는 날이 올까요?",
+        "expected": "forecast",
+        "before": "forecast",
+        "after": "forecast"
+      },
+      {
+        "question": "어제 친구에게 문자를 남겼는데 추가 연락은 어떻게 하면 좋을까요?",
+        "expected": "action",
+        "before": "action",
+        "after": "action"
+      },
+      {
+        "question": "업무에서 실수했을 때 어떻게 수습해야 하나요?",
+        "expected": "action",
+        "before": "open",
+        "after": "action"
+      },
+      {
+        "question": "중요한 결정을 앞두고 가장 먼저 점검할 것은 무엇인가요?",
+        "expected": "action",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "새 원고를 완성했는데 그다음에 어떤 절차를 밟아야 할까요?",
+        "expected": "action",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "지금은 관계를 회복하려는 노력을 계속해야 할까요?",
+        "expected": "action",
+        "before": "action",
+        "after": "action"
+      },
+      {
+        "question": "생활비를 줄이려면 어디서부터 바꿔야 할까요?",
+        "expected": "action",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "기분이 가라앉을 때 우선 무엇을 해보면 좋을까요?",
+        "expected": "action",
+        "before": "action",
+        "after": "action"
+      },
+      {
+        "question": "이메일을 보내기 전에 표현을 다듬어야 할까요?",
+        "expected": "action",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "갑자기 동료와 대화가 줄어든 이유는 무엇일까요?",
+        "expected": "cause",
+        "before": "cause",
+        "after": "cause"
+      },
+      {
+        "question": "항상 마무리 단계에서 계획이 틀어지는 건 왜일까요?",
+        "expected": "cause",
+        "before": "cause",
+        "after": "cause"
+      },
+      {
+        "question": "최근 일에 대한 의욕이 떨어진 까닭은 뭘까요?",
+        "expected": "cause",
+        "before": "cause",
+        "after": "action"
+      },
+      {
+        "question": "작은 지적에도 유독 민감하게 반응하는 원인이 궁금해요.",
+        "expected": "cause",
+        "before": "open",
+        "after": "cause"
+      },
+      {
+        "question": "왜 저는 중요한 순간마다 스스로를 의심할까요?",
+        "expected": "cause",
+        "before": "cause",
+        "after": "cause"
+      },
+      {
+        "question": "친구가 예전만큼 시간을 내지 않는 배경이 뭘까요?",
+        "expected": "cause",
+        "before": "cause",
+        "after": "cause"
+      },
+      {
+        "question": "새 환경에 적응하는 일이 이렇게 어려운 이유를 알고 싶어요.",
+        "expected": "cause",
+        "before": "cause",
+        "after": "cause"
+      },
+      {
+        "question": "연락이 뜸해지면서 관계가 변한 원인은 어디에 있을까요?",
+        "expected": "cause",
+        "before": "cause",
+        "after": "cause"
+      },
+      {
+        "question": "지금 직장에서 승진을 노릴지 다른 회사로 옮길지 고민입니다.",
+        "expected": "compare",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "두 개의 프로젝트 가운데 어느 쪽을 먼저 진행할까요?",
+        "expected": "compare",
+        "before": "compare",
+        "after": "compare"
+      },
+      {
+        "question": "소설을 온라인에 연재하는 것과 공모전에 출품하는 것 중 무엇이 나을까요?",
+        "expected": "compare",
+        "before": "compare",
+        "after": "compare"
+      },
+      {
+        "question": "친구에게 직접 만나서 말하는 편과 글로 전하는 편을 비교해 주세요.",
+        "expected": "compare",
+        "before": "compare",
+        "after": "compare"
+      },
+      {
+        "question": "저축을 우선할지 학원에 투자할지 선택하기 어렵습니다.",
+        "expected": "compare",
+        "before": "compare",
+        "after": "compare"
+      },
+      {
+        "question": "이사할까요 아니면 계약을 연장하는 게 더 좋을까요?",
+        "expected": "compare",
+        "before": "compare",
+        "after": "compare"
+      },
+      {
+        "question": "관계를 유지하는 길과 잠시 거리를 두는 길 중 고민입니다.",
+        "expected": "compare",
+        "before": "compare",
+        "after": "compare"
+      },
+      {
+        "question": "지금 결정을 내리는 것과 다음 달까지 유보하는 것 사이에서 고민이에요.",
+        "expected": "compare",
+        "before": "compare",
+        "after": "compare"
+      },
+      {
+        "question": "한 달째 결과를 기다리며 너무 긴장하고 있어요.",
+        "expected": "emotion",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "오래된 약속이 깨져서 속상하고 마음이 공허합니다.",
+        "expected": "emotion",
+        "before": "emotion",
+        "after": "emotion"
+      },
+      {
+        "question": "내가 한 말을 계속 떠올리며 스스로를 괴롭히고 있습니다.",
+        "expected": "emotion",
+        "before": "emotion",
+        "after": "emotion"
+      },
+      {
+        "question": "나를 믿어주는 사람이 없어 외롭다는 생각이 듭니다.",
+        "expected": "emotion",
+        "before": "emotion",
+        "after": "emotion"
+      },
+      {
+        "question": "최근에는 작은 소리에도 깜짝 놀라고 겁이 나요.",
+        "expected": "emotion",
+        "before": "emotion",
+        "after": "emotion"
+      },
+      {
+        "question": "시간이 갈수록 마음이 불안하고 편안해지지 않아요.",
+        "expected": "emotion",
+        "before": "open",
+        "after": "emotion"
+      },
+      {
+        "question": "실패한 경험 때문에 새 도전이 너무 무섭습니다.",
+        "expected": "emotion",
+        "before": "emotion",
+        "after": "emotion"
+      },
+      {
+        "question": "기다리는 시간이 길어지면서 마음이 지치고 무거워요.",
+        "expected": "emotion",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "이 카드 배열에서 전반적으로 어떤 메시지를 읽을 수 있을까요?",
+        "expected": "open",
+        "before": "forecast",
+        "after": "forecast"
+      },
+      {
+        "question": "지금 삶을 상징적으로 돌아볼 수 있는 리딩을 부탁합니다.",
+        "expected": "open",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "최근 제게 중요한 가치가 무엇인지 폭넓게 살펴보고 싶어요.",
+        "expected": "open",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "특정 사건을 묻기보다는 오늘의 마음가짐을 돌아보고 싶습니다.",
+        "expected": "open",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "전체적인 분위기를 살펴보는 타로를 해주세요.",
+        "expected": "open",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "저의 현재 삶에 대해 자유롭게 해석해 주세요.",
+        "expected": "open",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "지금 어떤 흐름을 살아가는지 카드 상징으로 알아보고 싶어요.",
+        "expected": "open",
+        "before": "open",
+        "after": "open"
+      },
+      {
+        "question": "한 해를 돌아보는 가벼운 리딩을 보고 싶습니다.",
+        "expected": "open",
+        "before": "open",
+        "after": "open"
+      }
+    ]
+  },
+  "failures": [],
+  "latencyMs": {
+    "note": "Single local generation, excluding browser startup, UI animation and baseline comparison.",
+    "p50": 0.8,
+    "p95": 1.8,
+    "max": 19.6,
+    "total": 1019
+  }
+}
