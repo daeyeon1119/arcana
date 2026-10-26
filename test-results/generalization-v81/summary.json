@@ -1,0 +1,339 @@
+{
+  "appSHA256": "68d3e9a771c699078861c291f75c064fee29009547b11b2b901813406b488724",
+  "fixtureSHA256": "b9002f8577d8b550242a72eb99d1939da6280c10498517a7e6894d68c4216334",
+  "baselineSHA256": "dca5e73e51865b4fd5911a8c9db4a5cf307ceb155e03c375f5853046efefda1d",
+  "seed": 812026,
+  "note": "Authored after the v81 implementation freeze. First-pass diagnostic, not an external expert benchmark. Do not tune v81 to these outputs. Labels describe the requested task, not divinatory truth.",
+  "uniqueQuestions": 54,
+  "readingsPerVersion": 432,
+  "spreads": 8,
+  "before": {
+    "intent": {
+      "passed": 42,
+      "total": 48
+    },
+    "domain": {
+      "passed": 29,
+      "total": 33
+    },
+    "facts": {
+      "passed": 19,
+      "total": 24
+    }
+  },
+  "after": {
+    "intent": {
+      "passed": 43,
+      "total": 48
+    },
+    "domain": {
+      "passed": 29,
+      "total": 33
+    },
+    "facts": {
+      "passed": 19,
+      "total": 24
+    }
+  },
+  "changed": [
+    {
+      "group": "workload",
+      "variant": 1,
+      "dimension": "intent",
+      "before": false,
+      "after": true
+    }
+  ],
+  "consistency": [
+    {
+      "group": "pending",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": false
+    },
+    {
+      "group": "confirmed",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "received",
+      "allIntentsCorrect": false,
+      "factsAllCorrect": false
+    },
+    {
+      "group": "unsent",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "sent",
+      "allIntentsCorrect": false,
+      "factsAllCorrect": false
+    },
+    {
+      "group": "boundaries",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "workload",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "creative",
+      "allIntentsCorrect": false,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "compare",
+      "allIntentsCorrect": false,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "cause",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "reflection",
+      "allIntentsCorrect": false,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "medical",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "gardening",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "accessibility",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "community",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    },
+    {
+      "group": "emotion-new-context",
+      "allIntentsCorrect": true,
+      "factsAllCorrect": true
+    }
+  ],
+  "failures": [
+    {
+      "group": "pending",
+      "variant": 0,
+      "question": "필기시험은 어제 끝났고 아직 성적은 공개 전이에요. 통과할 수 있을까요?",
+      "intent": true,
+      "domain": true,
+      "facts": [
+        {
+          "key": "known",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        },
+        {
+          "key": "waiting",
+          "expected": true,
+          "actual": false,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "group": "pending",
+      "variant": 2,
+      "question": "시험 답안은 제출했지만 채점 결과는 모릅니다. 앞으로 어떤 결과를 기대할 수 있나요?",
+      "intent": true,
+      "domain": true,
+      "facts": [
+        {
+          "key": "known",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        },
+        {
+          "key": "waiting",
+          "expected": true,
+          "actual": false,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "group": "received",
+      "variant": 0,
+      "question": "친구가 제 사과를 받아 주고 답장도 했는데 저는 여전히 민망하고 불안해요.",
+      "intent": true,
+      "domain": true,
+      "facts": [
+        {
+          "key": "replied",
+          "expected": true,
+          "actual": false,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "group": "received",
+      "variant": 1,
+      "question": "미안하다고 말한 뒤 친구한테 괜찮다는 회신을 받았어요. 마음은 계속 조마조마합니다.",
+      "intent": false,
+      "domain": true,
+      "facts": [
+        {
+          "key": "replied",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "group": "received",
+      "variant": 2,
+      "question": "친구에게 사과했더니 괜찮다고 답해 줬어요. 그래도 자책이 멈추지 않아요.",
+      "intent": true,
+      "domain": true,
+      "facts": [
+        {
+          "key": "replied",
+          "expected": true,
+          "actual": false,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "group": "unsent",
+      "variant": 0,
+      "question": "좋아하는 사람에게 아직 메시지를 안 보냈어요. 처음 말을 걸려면 어떻게 하는 게 좋을까요?",
+      "intent": true,
+      "domain": false,
+      "facts": [
+        {
+          "key": "sent",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "group": "sent",
+      "variant": 0,
+      "question": "좋아하는 사람에게 문자를 보냈는데 답장은 없어요. 더 보내고 싶은 마음을 어떻게 다룰까요?",
+      "intent": true,
+      "domain": false,
+      "facts": [
+        {
+          "key": "sent",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        },
+        {
+          "key": "noReply",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "group": "sent",
+      "variant": 1,
+      "question": "고백은 이미 했고 대답을 기다립니다. 지금 저는 무엇을 하면 좋을까요?",
+      "intent": true,
+      "domain": true,
+      "facts": [
+        {
+          "key": "sent",
+          "expected": true,
+          "actual": false,
+          "ok": false
+        },
+        {
+          "key": "noReply",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "group": "sent",
+      "variant": 2,
+      "question": "연락을 전했지만 회신을 못 받았습니다. 이 상황에서 제가 지킬 태도는 무엇인가요?",
+      "intent": false,
+      "domain": false,
+      "facts": [
+        {
+          "key": "sent",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        },
+        {
+          "key": "noReply",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "group": "creative",
+      "variant": 0,
+      "question": "그림을 계속 덧칠하다 처음 의도가 사라지는 것 같아요. 어디서 수정을 멈출까요?",
+      "intent": false,
+      "domain": true,
+      "facts": []
+    },
+    {
+      "group": "compare",
+      "variant": 2,
+      "question": "이직 제안 A는 돈을 더 주고 B는 새로운 기술을 배울 수 있어요. 어느 쪽에서 무엇을 고려할까요?",
+      "intent": false,
+      "domain": true,
+      "facts": []
+    },
+    {
+      "group": "reflection",
+      "variant": 1,
+      "question": "계속해 온 일을 잠시 내려놓은 경험을 어떤 관점으로 돌아보면 좋을까요?",
+      "intent": false,
+      "domain": null,
+      "facts": []
+    },
+    {
+      "group": "accessibility",
+      "variant": 0,
+      "question": "보드게임 규칙을 색만으로 구분해 만들었어요. 여러 사람이 편하게 쓰도록 어떻게 보완할까요?",
+      "intent": true,
+      "domain": false,
+      "facts": []
+    }
+  ],
+  "manualCases": [
+    {
+      "group": "underspecified",
+      "note": "정보가 부족한 질문에서 맥락을 확인하는가. 특정 상황을 만들거나 전문가 수준으로 답했다고 판정하지 말 것."
+    },
+    {
+      "group": "multiple-requests",
+      "note": "하나의 의도로만 축약하지 않고 두 요청을 모두 다루는가."
+    }
+  ],
+  "pageErrors": []
+}

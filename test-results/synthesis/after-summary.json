@@ -1,0 +1,93 @@
+{
+  "phase": "after",
+  "questions": 24,
+  "readings": 72,
+  "checks": [
+    {
+      "name": "24 fixed new questions / 72 exact card combinations",
+      "ok": true
+    },
+    {
+      "name": "no browser runtime errors",
+      "ok": true
+    },
+    {
+      "name": "before/after use identical questions, positions and orientations",
+      "ok": true
+    },
+    {
+      "name": "every drawn card remains in detailed evidence",
+      "ok": true
+    },
+    {
+      "name": "no ungrounded repeated-theme shortcut",
+      "ok": true
+    },
+    {
+      "name": "same report generated twice",
+      "ok": true
+    },
+    {
+      "name": "all 78 cards / 156 orientations have named motifs",
+      "ok": true
+    },
+    {
+      "name": "speed and pause produce a specific pacing tension",
+      "ok": true
+    },
+    {
+      "name": "uncertainty and evidence produce a specific checking connection",
+      "ok": true
+    },
+    {
+      "name": "same old action tag does not imply a shared theme",
+      "ok": true
+    },
+    {
+      "name": "reversal can express recovery and available help",
+      "ok": true
+    },
+    {
+      "name": "swapping A and B preserves positional ownership",
+      "ok": true
+    },
+    {
+      "name": "alternative routes are compared without claiming they act together",
+      "ok": true
+    },
+    {
+      "name": "comparison task survives all eight spread layouts",
+      "ok": true
+    },
+    {
+      "name": "positive obstacle card retains its actual meaning",
+      "ok": true
+    },
+    {
+      "name": "one card does not invent a pair",
+      "ok": true
+    },
+    {
+      "name": "unlinked multiple cards are not described as a single card",
+      "ok": true
+    },
+    {
+      "name": "new reply wording preserves the received answer",
+      "ok": true
+    },
+    {
+      "name": "criteria requests remain action rather than forecast",
+      "ok": true
+    },
+    {
+      "name": "relationship synthesis does not invent a work task",
+      "ok": true
+    },
+    {
+      "name": "shared living cost discussion receives agreement advice",
+      "ok": true
+    }
+  ],
+  "pageErrors": [],
+  "appSHA256": "7b6a8293f68f568fb07962911e51748f10583b1134e59241c6504c6d7332aa67"
+}
