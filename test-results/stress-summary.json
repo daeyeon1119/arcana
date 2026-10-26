@@ -1,6 +1,6 @@
 {
   "seed": 790026,
-  "appSHA256": "523eb25cdb54c4c993cb8385a5a878ab8255682ff31574ead923d36c6816eadc",
+  "appSHA256": "dca5e73e51865b4fd5911a8c9db4a5cf307ceb155e03c375f5853046efefda1d",
   "scenarioCount": 128,
   "readingCount": 1024,
   "passed": 1024,
@@ -84,7 +84,7 @@
         "mode": "card",
         "changed": true,
         "replyChanged": true,
-        "actionChanged": true
+        "actionChanged": false
       },
       {
         "spread": "three",
@@ -372,7 +372,7 @@
         "mode": "card",
         "changed": true,
         "replyChanged": true,
-        "actionChanged": true
+        "actionChanged": false
       },
       {
         "spread": "waiting3",
@@ -628,7 +628,7 @@
     "note": "Legacy 48 prompts. One known regression (까닭 misread as action) was used for this follow-up fix; final scores are regression data, not independent accuracy.",
     "count": 48,
     "before": 34,
-    "after": 37,
+    "after": 39,
     "results": [
       {
         "question": "언젠가 부모님과의 거리가 다시 가까워질까요?",
@@ -700,7 +700,7 @@
         "question": "새 원고를 완성했는데 그다음에 어떤 절차를 밟아야 할까요?",
         "expected": "action",
         "before": "open",
-        "after": "open"
+        "after": "action"
       },
       {
         "question": "지금은 관계를 회복하려는 노력을 계속해야 할까요?",
@@ -778,7 +778,7 @@
         "question": "지금 직장에서 승진을 노릴지 다른 회사로 옮길지 고민입니다.",
         "expected": "compare",
         "before": "open",
-        "after": "open"
+        "after": "compare"
       },
       {
         "question": "두 개의 프로젝트 가운데 어느 쪽을 먼저 진행할까요?",
@@ -919,15 +919,15 @@
         "after": "open"
       }
     ],
-    "improved": 3,
+    "improved": 5,
     "regressed": 0
   },
   "failures": [],
   "latencyMs": {
     "note": "Single local generation, excluding browser startup, UI animation and baseline comparison.",
-    "p50": 0.8,
-    "p95": 1.7,
-    "max": 15,
-    "total": 970.1
+    "p50": 1.5,
+    "p95": 2.8,
+    "max": 38.2,
+    "total": 1739.3
   }
 }

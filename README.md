@@ -18,9 +18,15 @@
 - 손상된 기록, 잘못된 카드, 중복 카드, 잘못된 백업을 검사합니다.
 - 카드 원본 78장의 JPEG 바이트·해시·크기·출처를 검증하며, 과거 ‘내장 일러스트’ 설정과 생성형 대체 경로를 제거했습니다.
 
+## v80 · 실제 답변 검토와 매트
+
+내용이 다른 새 질문 **320개**로 실제 답변을 생성하고 읽으며, 주체·답장·이미 끝낸 일·잘못된 분야의 조언과 반복 문장을 보완했습니다. [전체 수정 전후 답변](test-results/editorial/review.html)과 [v80 검토 보고서](docs/REVIEW_v80.md)를 확인할 수 있습니다. 개발에 사용한 회귀 자료이며 전문가 동등성 검증은 아닙니다.
+
+카드 매트의 고정된 빈 행·열을 줄이고 화면 너비에 맞게 배치합니다. 펼친 카드 아래의 중복 이름은 제거하고 자리 이름만 남겼습니다. [화면 비교](test-results/mat/)와 [지속 개선 품질 기준](docs/READING_QUALITY.md)을 포함합니다.
+
 ## 소스와 빌드
 
-`src/arcana79.js`, `src/arcana79.css`, `src/original-art.js`가 유지보수 소스입니다. `scripts/build.py`가 저장소의 v78 원본 및 `assets/rws/`의 JPEG를 합쳐 단일 파일 `index.html`을 만듭니다. 빌드할 때 이미지 SHA-256을 검사하고 과거 일러스트 생성·선택 코드는 제거합니다. 과거 버전은 재현용으로 보존합니다.
+`src/arcana79.js`, `src/reading-polish.js`, `src/card-mat.js` 및 해당 CSS, `src/original-art.js`가 유지보수 소스입니다. `scripts/build.py`가 저장소의 v78 원본 및 `assets/rws/`의 JPEG를 합쳐 단일 파일 `index.html`을 만듭니다. 빌드할 때 이미지 SHA-256을 검사하고 과거 일러스트 생성·선택 코드는 제거합니다. 과거 버전은 재현용으로 보존합니다.
 
 ```sh
 python scripts/build.py
