@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "case": "empty_question",
+      "hint": "질문을 먼저 입력하면 적합한 배열을 바로 선택해 드립니다.",
+      "selected": "three"
+    },
+    {
+      "case": "친구와 멀어졌는데 어떻게 지낼까요?",
+      "selected": "relationship5",
+      "label": "현재 배열: 관계의 거리 · 5장"
+    },
+    {
+      "case": "시험 결과를 기다리면서 너무 불안합니다",
+      "selected": "waiting3",
+      "label": "현재 배열: 기다림의 시간 · 3장"
+    },
+    {
+      "case": "A와 B 중 어디에 지원하는 것이 나을까요?",
+      "selected": "choice5",
+      "label": "현재 배열: 두 갈래의 선택 · 5장"
+    },
+    {
+      "case": "커리어 전환을 고민하고 있어요",
+      "selected": "career5",
+      "label": "현재 배열: 진로의 갈림길 · 5장"
+    },
+    {
+      "case": "소설 문장을 어떻게 수정할까요?",
+      "selected": "five",
+      "label": "현재 배열: 심층 분석 · 5장"
+    },
+    {
+      "case": "요즘 내 마음이 어떤 상태일까요?",
+      "selected": "three",
+      "label": "현재 배열: 과거 · 현재 · 미래 · 3장"
+    },
+    {
+      "case": "manual_override",
+      "selected": "three",
+      "pressed": "true"
+    }
+  ],
+  "page_errors": []
+}

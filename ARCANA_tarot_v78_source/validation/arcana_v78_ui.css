@@ -1,0 +1,11 @@
+/* A single, explicit auto-pick control replaces the duplicate specialized-spread grid. */
+#specialSpreads[hidden],#v12Recommendation{display:none!important}
+.arc78-spread-helper{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:17px;padding:15px 17px;border:1px solid #e4dccb;border-radius:11px;background:#f8f5ed}
+.arc78-spread-pick{border:1px solid #536b58;border-radius:9px;background:#fffdf7;color:#273e2d;font-size:12px;font-weight:700;padding:11px 16px;min-height:42px;cursor:pointer;transition:background .17s,border-color .17s}
+.arc78-spread-pick:hover,.arc78-spread-pick:focus-visible{background:#eaf0e6;border-color:#315c40}
+.arc78-spread-pick.applied{background:#e6eee5;border-color:#536b58}
+.arc78-spread-helper-text{display:flex;flex:1;flex-direction:column;gap:3px;min-width:170px}
+.arc78-spread-helper-text strong{font-size:12px;color:#273d30;font-weight:650}
+.arc78-spread-helper-text small{font-size:11px;color:#69786a;line-height:1.55}
+.arc78-spread-helper-status{font-size:11px;color:#516953;margin-top:7px;width:100%;line-height:1.65}
+@media(max-width:680px){.arc78-spread-helper{padding:13px;gap:10px}.arc78-spread-pick{width:100%}.arc78-spread-helper-text{min-width:0}}

@@ -1,0 +1,535 @@
+{
+  "adversarial": [
+    {
+      "name": "이미 연락",
+      "question": "친구에게 이미 연락했는데 답장이 없어요. 어떻게 하는 게 좋을까요?",
+      "actual": {
+        "intent": "action",
+        "domain": "family",
+        "sent": true,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "아직 연락 전",
+      "question": "아직 친구에게 연락하지 않았어요. 먼저 연락해야 할까요?",
+      "actual": {
+        "intent": "action",
+        "domain": "family",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "합격 여부 대기",
+      "question": "시험 결과가 아직 발표되지 않았어요. 합격할까요?",
+      "actual": {
+        "intent": "forecast",
+        "domain": "preparation",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "확정 불합격",
+      "question": "시험에서 최종 불합격했어요. 이제 무엇을 해야 하나요?",
+      "actual": {
+        "intent": "action",
+        "domain": "preparation",
+        "sent": false,
+        "known": true
+      },
+      "errors": []
+    },
+    {
+      "name": "원인",
+      "question": "친구가 갑자기 멀어진 이유는 뭘까요?",
+      "actual": {
+        "intent": "cause",
+        "domain": "family",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "비교",
+      "question": "직장 A와 B 중 어느 쪽이 나을까요?",
+      "actual": {
+        "intent": "compare",
+        "domain": "career",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "행동",
+      "question": "주식을 계속 보유해야 할까요?",
+      "actual": {
+        "intent": "action",
+        "domain": "finances",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "전망",
+      "question": "다시 만날 수 있을까요?",
+      "actual": {
+        "intent": "forecast",
+        "domain": "general",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "감정",
+      "question": "결과가 불안해서 잠을 못 자겠어요.",
+      "actual": {
+        "intent": "emotion",
+        "domain": "stress",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "개선",
+      "question": "소설 원고의 완성도를 어떻게 개선할까요?",
+      "actual": {
+        "intent": "action",
+        "domain": "project",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "의학 검사",
+      "question": "내시경 검사 결과가 아직 안 나와서 걱정이에요.",
+      "actual": {
+        "intent": "open",
+        "domain": "health",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    },
+    {
+      "name": "투자 분류",
+      "question": "퇴직연금을 이전하는 게 나을까요?",
+      "actual": {
+        "intent": "action",
+        "domain": "finances",
+        "sent": false,
+        "known": false
+      },
+      "errors": []
+    }
+  ],
+  "cases": [
+    {
+      "spread": "one",
+      "intent": "action",
+      "headline": "지금 할 행동에 대한 답",
+      "direct": "지금 할 수 있는 일은 분명합니다. 상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요. 이러한 제안은 태양의 ‘지연된 기쁨’이라는 상징과 연결됩니다.",
+      "action": "상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요.",
+      "sections": 1,
+      "grounding": [
+        {
+          "type": "core",
+          "text": "지연된 기쁨",
+          "refs": [
+            0
+          ],
+          "warrant": [
+            "지연된 기쁨"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "action",
+          "text": "지연된 기쁨",
+          "refs": [
+            0
+          ],
+          "warrant": [
+            "지연된 기쁨"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        }
+      ],
+      "errors": [],
+      "champion": false
+    },
+    {
+      "spread": "three",
+      "intent": "action",
+      "headline": "지금 할 행동에 대한 답",
+      "direct": "지금 할 수 있는 일은 분명합니다. 답을 재촉하지 말고 스스로 감당할 수 있는 기다림의 시간을 정해 보세요. 이러한 제안은 소드 4의 ‘필요한 휴식’이라는 상징과 연결됩니다.",
+      "action": "답을 재촉하지 말고 스스로 감당할 수 있는 기다림의 시간을 정해 보세요.",
+      "sections": 4,
+      "grounding": [
+        {
+          "type": "core",
+          "text": "과거의 온기",
+          "refs": [
+            1
+          ],
+          "warrant": [
+            "과거의 온기"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "action",
+          "text": "필요한 휴식",
+          "refs": [
+            2
+          ],
+          "warrant": [
+            "필요한 휴식"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "trend",
+          "text": "필요한 휴식",
+          "refs": [
+            2
+          ],
+          "warrant": [
+            "필요한 휴식"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        }
+      ],
+      "errors": [],
+      "champion": false
+    },
+    {
+      "spread": "five",
+      "intent": "action",
+      "headline": "지금 할 행동에 대한 답",
+      "direct": "지금 할 수 있는 일은 분명합니다. 상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요. 이러한 제안은 펜타클 7의 ‘성과에 대한 조급함’이라는 상징과 연결됩니다. 다만 소드 4의 ‘필요한 휴식’도 함께 고려해야 합니다.",
+      "action": "상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요.",
+      "sections": 6,
+      "grounding": [
+        {
+          "type": "core",
+          "text": "지연된 기쁨",
+          "refs": [
+            0
+          ],
+          "warrant": [
+            "지연된 기쁨"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "action",
+          "text": "성과에 대한 조급함",
+          "refs": [
+            4
+          ],
+          "warrant": [
+            "성과에 대한 조급함"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "constraint",
+          "text": "필요한 휴식",
+          "refs": [
+            2
+          ],
+          "warrant": [
+            "필요한 휴식"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        }
+      ],
+      "errors": [],
+      "champion": false
+    },
+    {
+      "spread": "relationship5",
+      "intent": "action",
+      "headline": "지금 할 행동에 대한 답",
+      "direct": "지금 할 수 있는 일은 분명합니다. 상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요. 이러한 제안은 펜타클 7의 ‘성과에 대한 조급함’이라는 상징과 연결됩니다. 다만 소드 4의 ‘필요한 휴식’도 함께 고려해야 합니다.",
+      "action": "상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요.",
+      "sections": 6,
+      "grounding": [
+        {
+          "type": "core",
+          "text": "지연된 기쁨",
+          "refs": [
+            0
+          ],
+          "warrant": [
+            "지연된 기쁨"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "action",
+          "text": "성과에 대한 조급함",
+          "refs": [
+            4
+          ],
+          "warrant": [
+            "성과에 대한 조급함"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "constraint",
+          "text": "필요한 휴식",
+          "refs": [
+            2
+          ],
+          "warrant": [
+            "필요한 휴식"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        }
+      ],
+      "errors": [],
+      "champion": false
+    },
+    {
+      "spread": "choice5",
+      "intent": "action",
+      "headline": "지금 할 행동에 대한 답",
+      "direct": "지금 할 수 있는 일은 분명합니다. 상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요. 이러한 제안은 펜타클 7의 ‘성과에 대한 조급함’이라는 상징과 연결됩니다. 다만 힘의 ‘부드러운 인내’도 함께 고려해야 합니다.",
+      "action": "상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요.",
+      "sections": 6,
+      "grounding": [
+        {
+          "type": "core",
+          "text": "지연된 기쁨",
+          "refs": [
+            0
+          ],
+          "warrant": [
+            "지연된 기쁨"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "action",
+          "text": "성과에 대한 조급함",
+          "refs": [
+            4
+          ],
+          "warrant": [
+            "성과에 대한 조급함"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "constraint",
+          "text": "부드러운 인내",
+          "refs": [
+            3
+          ],
+          "warrant": [
+            "부드러운 인내"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "trend",
+          "text": "필요한 휴식",
+          "refs": [
+            2
+          ],
+          "warrant": [
+            "필요한 휴식"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        }
+      ],
+      "errors": [],
+      "champion": false
+    },
+    {
+      "spread": "waiting3",
+      "intent": "action",
+      "headline": "지금 할 행동에 대한 답",
+      "direct": "지금 할 수 있는 일은 분명합니다. 답을 재촉하지 말고 스스로 감당할 수 있는 기다림의 시간을 정해 보세요. 이러한 제안은 소드 4의 ‘필요한 휴식’이라는 상징과 연결됩니다. 다만 태양의 ‘지연된 기쁨’도 함께 고려해야 합니다.",
+      "action": "답을 재촉하지 말고 스스로 감당할 수 있는 기다림의 시간을 정해 보세요.",
+      "sections": 4,
+      "grounding": [
+        {
+          "type": "core",
+          "text": "과거의 온기",
+          "refs": [
+            1
+          ],
+          "warrant": [
+            "과거의 온기"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "action",
+          "text": "필요한 휴식",
+          "refs": [
+            2
+          ],
+          "warrant": [
+            "필요한 휴식"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "constraint",
+          "text": "지연된 기쁨",
+          "refs": [
+            0
+          ],
+          "warrant": [
+            "지연된 기쁨"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        }
+      ],
+      "errors": [],
+      "champion": false
+    },
+    {
+      "spread": "career5",
+      "intent": "action",
+      "headline": "지금 할 행동에 대한 답",
+      "direct": "지금 할 수 있는 일은 분명합니다. 상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요. 이러한 제안은 펜타클 7의 ‘성과에 대한 조급함’이라는 상징과 연결됩니다. 다만 소드 4의 ‘필요한 휴식’도 함께 고려해야 합니다.",
+      "action": "상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요.",
+      "sections": 6,
+      "grounding": [
+        {
+          "type": "core",
+          "text": "지연된 기쁨",
+          "refs": [
+            0
+          ],
+          "warrant": [
+            "지연된 기쁨"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "action",
+          "text": "성과에 대한 조급함",
+          "refs": [
+            4
+          ],
+          "warrant": [
+            "성과에 대한 조급함"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "constraint",
+          "text": "필요한 휴식",
+          "refs": [
+            2
+          ],
+          "warrant": [
+            "필요한 휴식"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        }
+      ],
+      "errors": [],
+      "champion": false
+    },
+    {
+      "spread": "celtic",
+      "intent": "action",
+      "headline": "지금 할 행동에 대한 답",
+      "direct": "지금 할 수 있는 일은 분명합니다. 상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요. 이러한 제안은 달의 ‘불확실한 감정’이라는 상징과 연결됩니다. 다만 컵 6의 ‘과거의 온기’도 함께 고려해야 합니다.",
+      "action": "상대가 실제로 한 말과 아직 확인되지 않은 추측을 구별해 보세요.",
+      "sections": 8,
+      "grounding": [
+        {
+          "type": "core",
+          "text": "지연된 기쁨",
+          "refs": [
+            0
+          ],
+          "warrant": [
+            "지연된 기쁨"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "action",
+          "text": "불확실한 감정",
+          "refs": [
+            9
+          ],
+          "warrant": [
+            "불확실한 감정"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "constraint",
+          "text": "과거의 온기",
+          "refs": [
+            1
+          ],
+          "warrant": [
+            "과거의 온기"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        },
+        {
+          "type": "trend",
+          "text": "불확실한 감정",
+          "refs": [
+            9
+          ],
+          "warrant": [
+            "불확실한 감정"
+          ],
+          "verified": true,
+          "verdict": "supported"
+        }
+      ],
+      "errors": [],
+      "champion": false
+    }
+  ],
+  "cards": 78
+}

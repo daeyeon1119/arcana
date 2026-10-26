@@ -1,0 +1,752 @@
+[
+  {
+    "question": "요즘 올해 안에 다시 만날 기회가 생길까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 상대에게서 먼저 연락이 올 가능성이 있을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 신청해 둔 공모전 결과는 잘 나올까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 면접에 합격할 확률이 높을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 새로 시작한 사업은 앞으로 성장할까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 친구와의 관계가 예전처럼 돌아올까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 지금 하는 공부가 좋은 성과로 이어질까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 지금 이 관계가 오래갈까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 한동안 막혔던 작업이 풀릴까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 올겨울에 원하는 곳으로 이직할 수 있을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 지금 가진 주식을 모두 팔아야 하나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 문자를 보내고 답이 없는데 다음에는 뭘 해야 하죠?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 새 직무로 옮기기 위해 무엇부터 준비해야 하나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 완성한 시나리오를 어디에 제출하면 좋을까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 자존감이 무너졌을 때 어떻게 다시 일어설 수 있나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 매달 저축액을 더 늘려도 될까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 친구에게 아직 사과하지 못했습니다. 사과하는 편이 나을까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 작업이 자꾸 막힙니다. 어디부터 손볼까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 이미 시험에 낙방했습니다. 재도전 준비를 어떻게 할까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 내일 중요한 발표가 있는데 어떤 점을 신경 써야 할까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 별다른 싸움 없이 사이가 서먹해진 까닭은 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 지난번 프로젝트가 실패한 근본 원인이 궁금해요.",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 공부를 오래 해도 성과가 없는 이유가 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 내가 자꾸 결정을 미루는 건 왜 그럴까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 요즘 친구와 말이 잘 안 통하는 이유는 무엇인가요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 이미 취업에 실패했습니다. 무엇 때문에 그런 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 관계에서 같은 문제가 계속 반복되는 까닭이 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 최근 선택을 후회하는 감정은 어디에서 오는 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 왜 항상 일을 끝까지 마무리하지 못할까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 왜 자꾸 예전 관계가 생각나는 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 해외로 떠나는 편과 지금 사는 곳에 남는 편 중 무엇이 좋을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 두 회사의 제안 중 어느 쪽이 저에게 어울리나요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 친구 관계를 유지할지 정리할지 고민입니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 현금을 보유하는 것과 ETF를 매수하는 것 중 무엇이 나을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 지원 학교를 바꿀지 그대로 갈지 선택해야 합니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 독립 출판과 출판사 투고 중 어디가 좋을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 직접 고백하기와 기다리기 중 어느 쪽이 낫나요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 이전 회사로 돌아갈지 새로운 회사에 남을지 고민이에요.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 지금 치료 계획을 유지할지 다른 의사의 의견을 들을지 고민됩니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 플루트 연주를 계속할지 작곡 공부를 시작할지 고민이에요.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 발표가 다가올수록 마음이 조급하고 잠도 제대로 못 자겠어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 큰 결정을 앞두고 계속 겁이 납니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 아무 일도 없는데 미래 생각만 하면 불안합니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 사소한 실수만 해도 스스로를 너무 심하게 탓해요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 요즘 아무것도 하고 싶지 않고 마음이 무겁습니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 연락을 기다리는 일이 이렇게 고통스러울 줄 몰랐어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 시험 결과가 두려워서 자꾸 나쁜 상상을 하게 됩니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 오래된 관계가 끝난 뒤 공허해서 힘들어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 새 환경에 적응하려니까 너무 외롭습니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "요즘 일상은 괜찮은데 알 수 없는 초조함이 계속돼요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 올해 안에 다시 만날 기회가 생길까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 상대에게서 먼저 연락이 올 가능성이 있을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 신청해 둔 공모전 결과는 잘 나올까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 면접에 합격할 확률이 높을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 새로 시작한 사업은 앞으로 성장할까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 친구와의 관계가 예전처럼 돌아올까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 지금 하는 공부가 좋은 성과로 이어질까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 지금 이 관계가 오래갈까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 한동안 막혔던 작업이 풀릴까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 올겨울에 원하는 곳으로 이직할 수 있을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 지금 가진 주식을 모두 팔아야 하나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 문자를 보내고 답이 없는데 다음에는 뭘 해야 하죠?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 새 직무로 옮기기 위해 무엇부터 준비해야 하나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 완성한 시나리오를 어디에 제출하면 좋을까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 자존감이 무너졌을 때 어떻게 다시 일어설 수 있나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 매달 저축액을 더 늘려도 될까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 친구에게 아직 사과하지 못했습니다. 사과하는 편이 나을까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 작업이 자꾸 막힙니다. 어디부터 손볼까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 이미 시험에 낙방했습니다. 재도전 준비를 어떻게 할까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 내일 중요한 발표가 있는데 어떤 점을 신경 써야 할까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 별다른 싸움 없이 사이가 서먹해진 까닭은 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 지난번 프로젝트가 실패한 근본 원인이 궁금해요.",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 공부를 오래 해도 성과가 없는 이유가 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 내가 자꾸 결정을 미루는 건 왜 그럴까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 요즘 친구와 말이 잘 안 통하는 이유는 무엇인가요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 이미 취업에 실패했습니다. 무엇 때문에 그런 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 관계에서 같은 문제가 계속 반복되는 까닭이 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 최근 선택을 후회하는 감정은 어디에서 오는 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 왜 항상 일을 끝까지 마무리하지 못할까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 왜 자꾸 예전 관계가 생각나는 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 해외로 떠나는 편과 지금 사는 곳에 남는 편 중 무엇이 좋을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 두 회사의 제안 중 어느 쪽이 저에게 어울리나요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 친구 관계를 유지할지 정리할지 고민입니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 현금을 보유하는 것과 ETF를 매수하는 것 중 무엇이 나을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 지원 학교를 바꿀지 그대로 갈지 선택해야 합니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 독립 출판과 출판사 투고 중 어디가 좋을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 직접 고백하기와 기다리기 중 어느 쪽이 낫나요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 이전 회사로 돌아갈지 새로운 회사에 남을지 고민이에요.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 지금 치료 계획을 유지할지 다른 의사의 의견을 들을지 고민됩니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 플루트 연주를 계속할지 작곡 공부를 시작할지 고민이에요.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 발표가 다가올수록 마음이 조급하고 잠도 제대로 못 자겠어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 큰 결정을 앞두고 계속 겁이 납니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 아무 일도 없는데 미래 생각만 하면 불안합니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 사소한 실수만 해도 스스로를 너무 심하게 탓해요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 요즘 아무것도 하고 싶지 않고 마음이 무겁습니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 연락을 기다리는 일이 이렇게 고통스러울 줄 몰랐어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 시험 결과가 두려워서 자꾸 나쁜 상상을 하게 됩니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 오래된 관계가 끝난 뒤 공허해서 힘들어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 새 환경에 적응하려니까 너무 외롭습니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "제 상황을 설명하면, 일상은 괜찮은데 알 수 없는 초조함이 계속돼요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 올해 안에 다시 만날 기회가 생길까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 상대에게서 먼저 연락이 올 가능성이 있을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 신청해 둔 공모전 결과는 잘 나올까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 면접에 합격할 확률이 높을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 새로 시작한 사업은 앞으로 성장할까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 친구와의 관계가 예전처럼 돌아올까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 지금 하는 공부가 좋은 성과로 이어질까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 지금 이 관계가 오래갈까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 한동안 막혔던 작업이 풀릴까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 올겨울에 원하는 곳으로 이직할 수 있을까요?",
+    "expected": "forecast",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 지금 가진 주식을 모두 팔아야 하나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 문자를 보내고 답이 없는데 다음에는 뭘 해야 하죠?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 새 직무로 옮기기 위해 무엇부터 준비해야 하나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 완성한 시나리오를 어디에 제출하면 좋을까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 자존감이 무너졌을 때 어떻게 다시 일어설 수 있나요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 매달 저축액을 더 늘려도 될까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 친구에게 아직 사과하지 못했습니다. 사과하는 편이 나을까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 작업이 자꾸 막힙니다. 어디부터 손볼까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 이미 시험에 낙방했습니다. 재도전 준비를 어떻게 할까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 내일 중요한 발표가 있는데 어떤 점을 신경 써야 할까요?",
+    "expected": "action",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 별다른 싸움 없이 사이가 서먹해진 까닭은 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 지난번 프로젝트가 실패한 근본 원인이 궁금해요.",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 공부를 오래 해도 성과가 없는 이유가 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 내가 자꾸 결정을 미루는 건 왜 그럴까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 요즘 친구와 말이 잘 안 통하는 이유는 무엇인가요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 이미 취업에 실패했습니다. 무엇 때문에 그런 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 관계에서 같은 문제가 계속 반복되는 까닭이 뭘까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 최근 선택을 후회하는 감정은 어디에서 오는 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 왜 항상 일을 끝까지 마무리하지 못할까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 왜 자꾸 예전 관계가 생각나는 걸까요?",
+    "expected": "cause",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 해외로 떠나는 편과 지금 사는 곳에 남는 편 중 무엇이 좋을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 두 회사의 제안 중 어느 쪽이 저에게 어울리나요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 친구 관계를 유지할지 정리할지 고민입니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 현금을 보유하는 것과 ETF를 매수하는 것 중 무엇이 나을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 지원 학교를 바꿀지 그대로 갈지 선택해야 합니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 독립 출판과 출판사 투고 중 어디가 좋을까요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 직접 고백하기와 기다리기 중 어느 쪽이 낫나요?",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 이전 회사로 돌아갈지 새로운 회사에 남을지 고민이에요.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 지금 치료 계획을 유지할지 다른 의사의 의견을 들을지 고민됩니다.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 플루트 연주를 계속할지 작곡 공부를 시작할지 고민이에요.",
+    "expected": "compare",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 발표가 다가올수록 마음이 조급하고 잠도 제대로 못 자겠어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 큰 결정을 앞두고 계속 겁이 납니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 아무 일도 없는데 미래 생각만 하면 불안합니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 사소한 실수만 해도 스스로를 너무 심하게 탓해요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 요즘 아무것도 하고 싶지 않고 마음이 무겁습니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 연락을 기다리는 일이 이렇게 고통스러울 줄 몰랐어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 시험 결과가 두려워서 자꾸 나쁜 상상을 하게 됩니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 오래된 관계가 끝난 뒤 공허해서 힘들어요.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 새 환경에 적응하려니까 너무 외롭습니다.",
+    "expected": "emotion",
+    "group": "variant"
+  },
+  {
+    "question": "가능하면 상징적으로 답해주세요. 일상은 괜찮은데 알 수 없는 초조함이 계속돼요.",
+    "expected": "emotion",
+    "group": "variant"
+  }
+]
