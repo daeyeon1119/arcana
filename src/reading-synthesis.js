@@ -197,7 +197,8 @@ arc79CreateReport=function(q,spread,cards,override='auto'){
  // Without a semantic link the individual cards carry the evidence; do not add filler pairs.
  r.sections=[...single,...relations.filter(link=>link.kind!=='distinct').map((link,i)=>({title:relationTitle(link,i),body:link.body,refs:link.refs,kind:'relational'}))];
  const protectedReading=scene.medical||['health','finances'].includes(scene.domain)||scene.boundary||scene.abuse||scene.urgent||scene.facts.known;
- if(!protectedReading&&relations.length&&relations[0].kind!=='distinct'){
+ const useDirectSynthesis=!protectedReading&&relations.length>0&&relations[0].kind!=='distinct'&&(intent.primary!=='compare'||spread==='choice5');
+ if(useDirectSynthesis){
   const first=relations[0];
   // Avoid replacing a specific answer with a long list of card names. Put the connection after it.
   if(['action','emotion'].includes(intent.primary)){
@@ -208,7 +209,7 @@ arc79CreateReport=function(q,spread,cards,override='auto'){
   else if(intent.primary==='cause')r.direct=(scene.facts.noConflict?'다툰 적이 없다는 점을 전제로 읽었습니다. ':'')+first.core+' 이 연결은 상황을 돌아볼 가설이며, 실제 이유는 관찰한 사실과 대화로 확인해야 합니다.';
   else if(intent.primary==='open')r.direct=first.core+' 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?';
  }
- r.arc81={version:81,profileSource:'ARC58_ATOMS editorial motifs',directSynthesisUsed:!protectedReading&&relations.length>0&&relations[0].kind!=='distinct',relations:relations.map(({key,body,core,...x})=>x),cardMotifs:pack.list.map(a=>({index:a.index,id:a.id,reverse:a.reverse,motifs:arc81Profile(a)}))};
+ r.arc81={version:81,profileSource:'ARC58_ATOMS editorial motifs',directSynthesisUsed:useDirectSynthesis,relations:relations.map(({key,body,core,...x})=>x),cardMotifs:pack.list.map(a=>({index:a.index,id:a.id,reverse:a.reverse,motifs:arc81Profile(a)}))};
  return r;
 };
 $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistoryId)return;const records=storedRecords(),record=records.find(r=>r.id===currentHistoryId);if(record){record.engineVersion=81;setStoredRecords(records);}});

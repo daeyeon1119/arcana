@@ -29,6 +29,8 @@ const pools=[['ar07','ar12','sw01','wa10','pe03','ar18','cu02','ar13','ar14','pe
    const a=__arcana79Build('두 선택을 비교해 주세요.','choice5',choices),swapped=choices.map(c=>({...c}));[swapped[1],swapped[2]]=[swapped[2],swapped[1]];
    const b=__arcana79Build('두 선택을 비교해 주세요.','choice5',swapped);
    const obstacle=__arcana79Build('무엇부터 할까요?','five',[{id:'ar18',rev:false},{id:'ar07',rev:false},{id:'ar19',rev:false},{id:'pe03',rev:false},{id:'sw01',rev:false}]);
+   const previous={spread:selectedSpread,cards:drawn,question:$('question').value};let unlinked;
+   try{selectedSpread='three';drawn=[{id:'ar03',rev:false},{id:'wa02',rev:false},{id:'sw03',rev:false}];$('question').value='지금 돌아볼 관점은 무엇인가요?';unlinked=v10AnswerFollowup('카드가 서로 충돌하나요?');}finally{selectedSpread=previous.spread;drawn=previous.cards;$('question').value=previous.question;}
    return {
     'all 78 cards / 156 orientations have named motifs':CARDS.every(c=>[false,true].every(rev=>arc81Profile(atom(c.id,rev)).length>=2&&arc81Profile(atom(c.id,rev)).every(k=>Object.hasOwn(ARC81_MOTIFS,k)))),
     'speed and pause produce a specific pacing tension':pace.kind==='tension'&&pace.axis==='pace'&&pace.body.includes('전차 정방향')&&pace.body.includes('매달린 사람 정방향'),
@@ -37,8 +39,10 @@ const pools=[['ar07','ar12','sw01','wa10','pe03','ar18','cu02','ar13','ar14','pe
     'reversal can express recovery and available help':arc81Profile(atom('pe05',true)).includes('recovery')&&reversedAid.body.includes('역방향')&&!reversedAid.body.includes('나쁜 결과'),
     'swapping A and B preserves positional ownership':a.direct.includes('‘A의 성격’의 달')&&b.direct.includes('‘A의 성격’의 소드 에이스')&&a.direct!==b.direct,
     'alternative routes are compared without claiming they act together':a.arc81.relations[0].kind==='alternatives'&&a.direct.includes('A를 살필 때는')&&a.direct.includes('B를 살필 때는'),
+    'comparison task survives all eight spread layouts':Object.keys(SPREADS).every(spread=>{const cards=CARDS.slice(0,SPREADS[spread].slots.length).map(c=>({id:c.id,rev:false})),r=__arcana79Build('두 직장의 조건을 비교해 주세요.',spread,cards);return r.arc79.intent.primary==='compare'&&r.direct.includes('비교')&&(spread==='choice5'?r.direct.includes('A를 살필 때는'):!r.arc81.directSynthesisUsed);}),
     'positive obstacle card retains its actual meaning':obstacle.sections.find(s=>s.refs.length===1&&s.refs[0]===2).body.includes('드러나는 명료함')&&!obstacle.sections.find(s=>s.refs.length===1&&s.refs[0]===2).body.includes('실패'),
     'one card does not invent a pair':__arcana79Build('오늘 돌아볼 관점은 무엇일까요?','one',[{id:'ar18',rev:false}]).arc81.relations.length===0,
+    'unlinked multiple cards are not described as a single card':unlinked.category==='conflict'&&!unlinked.answer.includes('한 장에서는')&&unlinked.answer.includes('카드별 근거'),
     'new reply wording preserves the received answer':arc79Scene('이미 사과했고 친구도 괜찮다고 답했어요. 불안해요.').scene.facts.replied===true,
     'criteria requests remain action rather than forecast':arc79Scene('피드백을 어떤 기준으로 받아들일까요?').intent.primary==='action'
    };

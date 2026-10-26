@@ -151,7 +151,8 @@ v10AnswerFollowup=function(q){
  let a=category==='warning'?pack.limit||pack.main:category==='resource'?pack.list.find(a=>a.role==='resource')||pack.main:category==='action'?pack.advice:category==='future'?pack.trend||pack.main:pack.main;
  const section=report.sections.find(s=>s.refs.includes(a.index));
  const future=['health','finances'].includes(report.arc79.domain)||report.arc79.facts.known?report.direct:(section?.body||report.direct);
- const answer=category==='action'?report.actions.join(' '):category==='conflict'?(report.sections.find(s=>s.kind==='relational')?.body||'한 장에서는 카드 사이의 대립을 비교할 수 없습니다. '+report.direct):category==='future'?future+' '+report.footer:(section?.body||report.direct);
+ const unlinked=pack.list.length===1?'한 장에서는 카드 사이의 대립을 비교할 수 없습니다. ':'현재 배열에서는 카드별 근거를 나누어 읽습니다. 뚜렷한 공통 주제나 대립을 단정하지 않아도 됩니다. ';
+ const answer=category==='action'?report.actions.join(' '):category==='conflict'?(report.sections.find(s=>s.kind==='relational')?.body||unlinked+report.direct):category==='future'?future+' '+report.footer:(section?.body||report.direct);
  return {category,question:q,answer,ref:`${a.name} ${a.reverse?'역방향':'정방향'}`};
 };
 
@@ -240,7 +241,7 @@ renderReport=function(){
  $('practicalSteps').innerHTML=report.actions.map(a=>`<li>${htmlSafe(a)}</li>`).join('');
  $('summary').textContent=report.direct;
  $('storyChapters').innerHTML=report.sections.map(s=>`<article class="story-chapter"><h3>${htmlSafe(s.title)}</h3><p>${htmlSafe(s.body)}</p></article>`).join('');
- $('connections').textContent=report.sections.find(s=>s.kind==='relational')?.body||'한 장의 상징을 질문과 연결해 읽습니다.';
+ $('connections').textContent=report.sections.find(s=>s.kind==='relational')?.body||(drawn.length===1?'한 장의 상징을 질문과 연결해 읽습니다.':'각 카드의 관점을 나누어 읽고, 실제 질문과 맞닿는 부분을 살펴보세요.');
  $('actionQuestions').textContent='지금 확인된 사실은 무엇이며, 내가 선택할 수 있는 작은 행동은 무엇인가요?';
  $('cardReads').innerHTML=drawn.map((d,i)=>`<article class="card-reading"><div><img alt="${htmlSafe(orName(d))}" data-card-id="${d.id}" class="${d.rev?'rev':''}" src="${readCard(d).img}" onerror="arcanaImageError(this)"></div><div><div class="mini-title">${htmlSafe(SPREADS[selectedSpread].slots[i][0])}</div><h4>${htmlSafe(orName(d))}</h4><p>${htmlSafe(cardMeaning(d))}</p><p>${htmlSafe(report.sections.find(s=>s.refs.includes(i))?.body||'')}</p></div></article>`).join('');
  $('v10Alignment').textContent='각 카드의 자리와 정·역방향을 함께 읽었습니다. 카드 수는 예측의 정확도를 뜻하지 않습니다.';

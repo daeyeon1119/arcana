@@ -24,9 +24,15 @@
 
 카드 매트의 고정된 빈 행·열을 줄이고 화면 너비에 맞게 배치합니다. 펼친 카드 아래의 중복 이름은 제거하고 자리 이름만 남겼습니다. [화면 비교](test-results/mat/)와 [지속 개선 품질 기준](docs/READING_QUALITY.md)을 포함합니다.
 
+## v81 · 카드 연결과 일반화
+
+78장의 정·역방향 세부 주제와 배열 역할을 바탕으로 카드 사이의 긴장·보완·공통 관점을 연결합니다. A·B 비교와 일반 배열의 시간 흐름을 구분합니다. [72개 개발 출력](test-results/synthesis/review.html)과 [개선 보고서](docs/REVIEW_v81.md)를 포함합니다.
+
+특정 질문에서만 좋은 답변을 내는 것을 목표 달성으로 인정하지 않습니다. 구현 고정 뒤 새 표현 54개 × 배열 8종으로 검토했고, 받은 답·결과 대기·복합 요구 등에서 실패가 남았습니다. [첫 평가와 실패 사례](test-results/generalization-v81/review.html)를 보존했으며, 이후 이를 보고 수정한 결과는 회귀 자료로 구분합니다. 전문 해석가 수준을 달성했다는 뜻이 아닙니다.
+
 ## 소스와 빌드
 
-`src/arcana79.js`, `src/reading-polish.js`, `src/card-mat.js` 및 해당 CSS, `src/original-art.js`가 유지보수 소스입니다. `scripts/build.py`가 저장소의 v78 원본 및 `assets/rws/`의 JPEG를 합쳐 단일 파일 `index.html`을 만듭니다. 빌드할 때 이미지 SHA-256을 검사하고 과거 일러스트 생성·선택 코드는 제거합니다. 과거 버전은 재현용으로 보존합니다.
+`src/arcana79.js`, `src/reading-polish.js`, `src/reading-synthesis.js`, `src/card-mat.js` 및 해당 CSS, `src/original-art.js`가 유지보수 소스입니다. `scripts/build.py`가 저장소의 v78 원본 및 `assets/rws/`의 JPEG를 합쳐 단일 파일 `index.html`을 만듭니다. 빌드할 때 이미지 SHA-256을 검사하고 과거 일러스트 생성·선택 코드는 제거합니다. 과거 버전은 재현용으로 보존합니다.
 
 ```sh
 python scripts/build.py
@@ -41,6 +47,8 @@ npm install
 npx playwright install chromium
 npm test
 ```
+
+v81 새 표현 진단의 최종 회귀 재실행은 `npm run diagnose:generalization`입니다. Git 기록의 v80 원본을 로컬에 재현하며 외부 요청은 하지 않습니다. 알려진 실패를 포함한 점수를 기록하므로 종료 코드 0이 모든 답변의 품질을 뜻하지는 않습니다. 최초 고정 평가 재현은 커밋 `8c611c6`에서 `node scripts/generalization.cjs`로 합니다. 앱·질문 해시를 고정하여 첫 실패를 덮어쓰지 않습니다.
 
 설치된 브라우저를 사용하려면 `ARCANA_BROWSER`를 실행 파일 경로로 지정하세요. 기존 Playwright 패키지를 재사용하는 환경에서는 `ARCANA_NODE_MODULES`를 해당 `node_modules` 경로로 지정할 수 있습니다. 테스트는 임시 포트의 로컬 서버를 자체 실행하고 외부 HTTPS 요청을 차단합니다.
 

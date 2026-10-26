@@ -11,6 +11,8 @@
     "test:mat": "node scripts/mat.cjs after",
     "test:editorial": "node scripts/editorial.cjs v81",
     "test:synthesis": "node scripts/synthesis.cjs after",
+    "diagnose:generalization": "node scripts/generalization.cjs regression-final",
+    "report:synthesis": "python scripts/synthesis_report.py",
     "test": "npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:editorial && npm run test:synthesis"
   },
   "devDependencies": {
