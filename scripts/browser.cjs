@@ -13,11 +13,11 @@ module.exports = async () => {
     catch{res.writeHead(404).end();}
   });
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
-  const options = {headless:true};
+  const options = {headless:true,timeout:45000};
   if (process.env.ARCANA_BROWSER) options.executablePath = process.env.ARCANA_BROWSER;
   const browser=await playwright.chromium.launch(options).catch(e=>{server.close();throw e});
   browser.appURL='http://127.0.0.1:'+server.address().port;
   const close=browser.close.bind(browser);
-  browser.close=async()=>{await close();await new Promise(resolve=>server.close(resolve));};
+  browser.close=async()=>{await close();server.closeAllConnections();await new Promise(resolve=>server.close(resolve));};
   return browser;
 };

@@ -1,0 +1,17 @@
+.reading-stage.v17-stage{overflow:visible;padding:14px 0 18px}
+:is(.v17-board-grid,.v17-overview-grid)[data-layout]{--mat-gap:12px;--mat-card-max:128px;display:grid;grid-template-columns:repeat(var(--mat-columns,3),minmax(0,1fr));grid-template-rows:none;grid-auto-rows:auto;gap:var(--mat-gap);align-items:start;justify-items:center;width:100%;max-width:calc(var(--mat-columns,3)*var(--mat-card-max) + (var(--mat-columns,3) - 1)*var(--mat-gap));min-height:0;margin:0 auto;padding:0}
+:is(.v17-board-grid,.v17-overview-grid)[data-layout=celtic]{--mat-card-max:102px;--mat-gap:12px}
+:is(.v17-board-grid,.v17-overview-grid)[data-layout=choice5]{--mat-card-max:116px}
+.v17-board-grid[data-layout] .drawn{width:100%;max-width:none;min-width:0;margin:0}
+.v17-board-grid[data-layout] .drawn .draw-card{width:100%;margin:0;aspect-ratio:0.58}
+.v17-board-grid .drawn-position{font-size:11px;line-height:1.4;margin-top:7px;min-height:30px;overflow-wrap:anywhere}
+#readingCards .drawn-name{display:none!important}
+.v17-board-grid[data-layout=celtic]>.drawn:nth-child(2) .drawn-position{visibility:hidden}
+.v17-overview-scroll{overflow:visible;padding:4px 0}
+.v17-overview-grid[data-layout] .v17-overview-card{width:100%;max-width:none;padding:0;gap:6px;min-width:0}
+.v17-overview-grid[data-layout] .v17-overview-card img{width:100%;height:auto;aspect-ratio:0.58;border:1px solid #d1c09f}
+.v17-overview-grid .v17-overview-card b{min-height:30px;font-size:11px;line-height:1.4;overflow-wrap:anywhere}
+.v17-overview-grid .v17-overview-card small{display:none!important}
+.v17-overview-grid[data-layout=celtic]>.v17-overview-card:nth-child(2) b{visibility:hidden}
+.v17-board-grid .drawn-position,.v17-overview-grid .v17-overview-card b{word-break:keep-all;overflow-wrap:normal}
+@media(max-width:640px){:is(.v17-board-grid,.v17-overview-grid)[data-layout]{--mat-gap:8px;--mat-card-max:104px}.v17-board-grid .drawn-position,.v17-overview-grid .v17-overview-card b{font-size:10px;min-height:28px}:is(.v17-board-grid,.v17-overview-grid)[data-layout=celtic]{--mat-gap:6px;--mat-card-max:88px}.v17-overview{padding:16px 12px}.reading-stage.v17-stage{padding:12px 0 14px}}

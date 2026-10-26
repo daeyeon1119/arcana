@@ -1,0 +1,321 @@
+category	question	intent	domain
+이직·진로	연봉은 오르지만 출퇴근이 길어지는 이직 제안을 받았어요. 무엇을 먼저 따져볼까요?	action	career
+이직·진로	경력이 짧은데 원하는 직무에 지원하면 면접 기회가 올까요?	forecast	career
+이직·진로	이직 서류를 낼 때마다 마지막 순간에 망설이는 이유가 뭘까요?	cause	career
+이직·진로	안정적인 공기업과 관심 있는 스타트업 중 어디가 저에게 맞을까요?	compare	career
+이직·진로	퇴사 날짜는 정했는데 갑자기 무서워졌어요.	emotion	career
+이직·진로	직무를 바꾸려면 제 경력에서 어떤 경험을 먼저 정리해야 하나요?	action	career
+이직·진로	회사에 남는 쪽과 대학원에 가는 쪽의 차이를 보고 싶어요.	compare	career
+이직·진로	제 커리어에서 반복되는 패턴을 돌아보고 싶습니다.	open	career
+이직·진로	면접관이 제 경력 공백을 물으면 어떻게 설명하면 좋을까요?	action	career
+이직·진로	이미 입사 제안을 수락했어요. 첫 출근 전에는 무엇을 준비할까요?	action	career
+이직·진로	연봉 협상을 앞두고 어떤 기준을 세워야 할까요?	action	career
+이직·진로	불합격 통보를 받았는데 제가 부족한 사람처럼 느껴져요.	emotion	career
+이직·진로	이직 준비를 시작할지 지금 맡은 일을 마무리할지 고민돼요.	compare	career
+이직·진로	지원한 회사에서 아직 연락이 없어요. 채용이 끝난 걸까요?	forecast	career
+이직·진로	좋아하는 일을 찾지 못했다는 이유로 지금 직장을 그만둬도 될까요?	action	career
+이직·진로	직장에 대한 기대가 자꾸 낮아지는 까닭이 궁금합니다.	cause	career
+이직·진로	동종 업계로 갈 때와 완전히 다른 직무로 갈 때를 비교해 주세요.	compare	career
+이직·진로	지금 가진 경력을 어떻게 새 직무의 강점으로 설명할까요?	action	career
+이직·진로	면접 기회는 잡았는데 자신감이 너무 떨어졌어요.	emotion	career
+이직·진로	앞으로도 이 분야에서 일을 계속할 수 있을까요?	forecast	career
+직장·협업	상사가 업무를 한꺼번에 넘겨요. 우선순위를 어떻게 협의할까요?	action	career
+직장·협업	동료가 제 의견을 자주 끊는 이유는 무엇일까요?	cause	career
+직장·협업	새 팀에서 제 의견이 받아들여질 가능성이 있을까요?	forecast	career
+직장·협업	발표를 직접 맡을지 동료에게 넘길지 비교하고 싶어요.	compare	career
+직장·협업	직장 동료 앞에서 실수한 뒤 계속 그 장면만 떠올라요.	emotion	career
+직장·협업	팀장에게 업무량이 많다고 말할 때 어떤 표현부터 쓰면 좋을까요?	action	career
+직장·협업	직장 회의에서 말을 아끼게 되는 제 태도를 돌아보고 싶어요.	open	career
+직장·협업	승진 심사는 끝났고 발표만 남았어요. 지금 뭘 해야 할까요?	action	career
+직장·협업	동료와 다툰 적이 없는데 요즘 대화가 줄어든 배경이 뭘까요?	cause	career
+직장·협업	직장 내 프로젝트를 혼자 이끌지 둘이 나눠 맡을지 고민이에요.	compare	career
+직장·협업	업무 피드백을 받으면 방어적으로 반응해요. 어떻게 바꿀까요?	action	career
+직장·협업	새로 온 상사와 관계가 좋아질까요?	forecast	career
+직장·협업	업무를 잘해도 인정받지 못한 것 같아 허탈합니다.	emotion	career
+직장·협업	동료의 실수를 대신 처리하는 일을 어디까지 받아줘야 할까요?	action	career
+직장·협업	직장에서 내가 중요하게 여기는 가치를 살펴보고 싶어요.	open	career
+직장·협업	직장 동료가 사과했어요. 저는 어떤 식으로 답하면 좋을까요?	action	career
+직장·협업	업무 인수인계가 계속 어긋나는 원인을 알고 싶어요.	cause	career
+직장·협업	지금 팀에 남을지 부서 이동을 신청할지 고민입니다.	compare	career
+직장·협업	중요한 발표가 끝났는데도 긴장이 풀리지 않아요.	emotion	career
+직장·협업	팀의 신뢰를 회복하려면 이번 주에 무엇부터 할까요?	action	career
+연애	소개팅 후 서로 한 번씩 연락했어요. 다음 약속을 제안해도 될까요?	action	relationship
+연애	연인이 대답을 짧게 하는 이유가 궁금해요.	cause	relationship
+연애	장거리 연애가 앞으로도 이어질 수 있을까요?	forecast	relationship
+연애	연인과 당분간 거리를 둘지 바로 대화할지 고민이에요.	compare	relationship
+연애	짝사랑하는 사람을 만나고 오면 기쁘다가도 허전해요.	emotion	relationship
+연애	고백은 아직 하지 않았어요. 마음을 전하기 전에 뭘 생각해 봐야 할까요?	action	relationship
+연애	이별 후 제가 관계에서 배운 것을 돌아보고 싶어요.	open	relationship
+연애	연인에게 메시지를 보냈는데 사흘째 답이 없어요. 더 보내야 할까요?	action	relationship
+연애	연애를 시작하면 제 일정을 전부 맞추게 되는 까닭이 뭘까요?	cause	relationship
+연애	다시 만나는 것과 관계를 마무리하는 것을 비교해 보고 싶어요.	compare	relationship
+연애	연인이 혼자 있고 싶다고 했어요. 어떻게 존중해 주면 좋을까요?	action	relationship
+연애	연인과의 결혼 이야기가 구체적으로 이어질까요?	forecast	relationship
+연애	연인의 마음을 확인하지 못하면 너무 불안해져요.	emotion	relationship
+연애	소개팅 상대가 연락하지 말라고 했어요. 다시 설득해도 될까요?	action	relationship
+연애	이번 연애에서 제가 원하는 소통 방식이 무엇인지 알고 싶어요.	open	relationship
+연애	헤어진 연인이 먼저 안부를 물었어요. 어떻게 답할까요?	action	relationship
+연애	데이트 뒤에 상대를 시험하듯 행동하는 이유는 뭘까요?	cause	relationship
+연애	주말을 연인과 보낼지 혼자 쉬며 보낼지 비교해 주세요.	compare	relationship
+연애	이별을 선택했는데 마음이 흔들려서 힘들어요.	emotion	relationship
+연애	연인과 돈을 쓰는 기준을 어떻게 대화하면 좋을까요?	action	relationship
+친구	오래된 친구와 약속이 자꾸 취소돼요. 어떻게 말을 꺼낼까요?	action	family
+친구	친구들과 함께 있어도 겉도는 느낌이 드는 이유가 뭘까요?	cause	family
+친구	새로운 모임에서 편한 친구를 만날 수 있을까요?	forecast	family
+친구	친구에게 서운함을 말할지 조금 더 지켜볼지 고민이에요.	compare	family
+친구	친구의 좋은 소식을 들었는데 질투가 나서 자책해요.	emotion	family
+친구	친구에게 이미 사과했는데 아직 회신이 없어요. 이제 어떻게 할까요?	action	family
+친구	오랜 친구와의 관계에서 제가 중요하게 여기는 것을 돌아보고 싶어요.	open	family
+친구	친구가 보내 준 긴 답장을 읽었어요. 어떤 태도로 답하면 좋을까요?	action	family
+친구	다툰 적은 없는데 친구와 연락하는 게 어색해진 까닭이 뭘까요?	cause	family
+친구	친구와 같이 여행할지 각자 쉬는 시간을 가질지 비교하고 싶어요.	compare	family
+친구	빌려 간 물건을 돌려달라고 친구에게 어떻게 말할까요?	action	family
+친구	친구와 예전처럼 편하게 대화할 날이 올까요?	forecast	family
+친구	친구 모임에서 제외됐다는 생각에 자꾸 속상해요.	emotion	family
+친구	친구가 차단했는데 다른 사람을 통해 연락해도 될까요?	action	family
+친구	내가 친구에게 기대하는 역할을 다시 생각해 보고 싶어요.	open	family
+친구	새 모임에서 먼저 말을 걸 때 무엇을 조심하면 좋을까요?	action	family
+친구	친구에게 부탁을 거절하지 못하는 원인이 궁금해요.	cause	family
+친구	친구와 공동 작업을 할지 혼자 진행할지 고민입니다.	compare	family
+친구	친구에게 솔직히 말했다가 멀어질까 두려워요.	emotion	family
+친구	친구와 연락 간격을 어떻게 맞춰 가면 좋을까요?	action	family
+가족	부모님이 제 진로를 반대해요. 어떤 말부터 꺼내야 할까요?	action	family
+가족	동생에게 유난히 예민하게 반응하는 이유가 뭘까요?	cause	family
+가족	부모님과의 대화가 앞으로는 편해질까요?	forecast	family
+가족	가족과 함께 살지 가까운 곳에서 따로 살지 고민이에요.	compare	family
+가족	부모님께 실망을 드린 것 같아 마음이 무거워요.	emotion	family
+가족	자녀가 대화를 피할 때 어떻게 다가가면 좋을까요?	action	family
+가족	가족 안에서 제가 늘 맡아 온 역할을 돌아보고 싶어요.	open	family
+가족	엄마에게 이미 제 생각을 말했어요. 다음에는 무엇을 할까요?	action	family
+가족	가족 모임이 다가오면 긴장하는 까닭이 궁금해요.	cause	family
+가족	부모님께 바로 말씀드릴지 계획을 더 정리한 뒤 말씀드릴지 비교해 주세요.	compare	family
+가족	가족의 부탁을 거절할 때 어떻게 경계를 세울까요?	action	family
+가족	동생과 멀어진 관계가 다시 가까워질 수 있을까요?	forecast	family
+가족	자녀와 다툰 뒤 미안해서 아무 말도 못 하겠어요.	emotion	family
+가족	가족이 저를 협박해요. 어떻게 대처해야 할까요?	action	family
+가족	부모님의 기대와 제 바람을 나누어 생각해 보고 싶어요.	open	family
+가족	아빠와 의견이 다를 때 어떤 질문을 해보면 좋을까요?	action	family
+가족	형제와 책임을 나누는 대화가 자꾸 어긋나는 원인은 뭘까요?	cause	family
+가족	가족 행사에 참석할지 이번에는 쉬겠다고 할지 고민입니다.	compare	family
+가족	가족을 챙기느라 제 시간이 없어 지쳤어요.	emotion	family
+가족	독립 계획을 부모님께 어떻게 설명하면 좋을까요?	action	family
+시험	시험이 일주일 남았어요. 공부량을 어떻게 조절할까요?	action	preparation
+시험	시험장에서 아는 문제도 자꾸 틀리는 이유가 뭘까요?	cause	preparation
+시험	이번 자격증 시험에서 합격할 가능성이 있을까요?	forecast	preparation
+시험	기출문제를 더 풀지 틀린 문제를 정리할지 비교해 주세요.	compare	preparation
+시험	시험이 다가오니 불안해서 손에 아무것도 잡히지 않아요.	emotion	preparation
+시험	이미 시험을 치렀고 결과만 남았어요. 오늘은 무엇을 하면 좋을까요?	action	preparation
+시험	이번 시험을 준비하며 제가 배운 태도를 돌아보고 싶어요.	open	preparation
+시험	시험에서 불합격 통보를 받았어요. 재도전 계획은 어떻게 세울까요?	action	preparation
+시험	공부 계획을 크게 잡았다가 포기하는 까닭이 뭘까요?	cause	preparation
+시험	시험을 다시 볼지 다른 자격증을 준비할지 고민입니다.	compare	preparation
+시험	시험 공부를 시작할 때 가장 취약한 부분을 어떻게 찾을까요?	action	preparation
+시험	아직 발표 전인데 떨어진 것 같아요. 실제 결과는 어떨까요?	forecast	preparation
+시험	합격한 친구와 비교하느라 너무 위축돼요.	emotion	preparation
+시험	지난 시험은 떨어졌어요. 다음 시험에 대비해 뭘 바꿀까요?	action	preparation
+시험	시험 점수와 제 가치를 자꾸 연결하는 마음을 돌아보고 싶어요.	open	preparation
+시험	공부하다 지칠 때 쉬는 시간을 어떻게 정할까요?	action	preparation
+시험	모의고사 성적이 들쭉날쭉한 원인이 궁금해요.	cause	preparation
+시험	시험 전날 새 내용을 볼지 익숙한 내용만 복습할지 비교해 주세요.	compare	preparation
+시험	시험에 합격했는데도 기쁘지 않아 당황스러워요.	emotion	preparation
+시험	자격증 실기 시험을 앞두고 무엇을 확인할까요?	action	preparation
+학습	영어 공부를 꾸준히 하려면 어떤 방식을 골라야 할까요?	action	preparation
+학습	공부를 시작하기 전부터 피곤해지는 이유는 뭘까요?	cause	preparation
+학습	올해 안에 공부 습관을 안정적으로 만들 수 있을까요?	forecast	preparation
+학습	혼자 공부할지 스터디에 들어갈지 고민입니다.	compare	preparation
+학습	공부 속도가 느리다는 생각에 자꾸 자책합니다.	emotion	preparation
+학습	수업 내용을 이해하지 못했을 때 어디부터 다시 볼까요?	action	preparation
+학습	새로운 것을 배우는 과정에서 제 태도를 돌아보고 싶어요.	open	preparation
+학습	과제를 제출했는데 피드백이 없어요. 다음 공부는 어떻게 이어갈까요?	action	preparation
+학습	공부 방법을 자꾸 바꾸는 까닭이 궁금해요.	cause	preparation
+학습	과제 완성도를 높일지 제출 시간을 앞당길지 비교하고 싶어요.	compare	preparation
+학습	학습 계획을 작게 나누려면 무엇부터 정해야 할까요?	action	preparation
+학습	새로 시작한 공부가 제 진로에 도움이 될까요?	forecast	preparation
+학습	공부를 쉬면 뒤처질 것 같아 쉬지 못하겠어요.	emotion	preparation
+학습	과제에 대한 비판을 받았어요. 어떻게 받아들이면 좋을까요?	action	preparation
+학습	성적 외에 제 성장을 어떤 관점으로 볼 수 있을까요?	open	preparation
+학습	시험 공부와 운동 시간을 어떻게 조율할까요?	action	preparation
+학습	배운 내용을 설명하려 하면 말문이 막히는 원인은 뭘까요?	cause	preparation
+학습	학원 수업과 온라인 공부 중 어느 쪽이 더 맞을까요?	compare	preparation
+학습	오랫동안 공부했는데 결과가 없어 허탈해요.	emotion	preparation
+학습	공부 목표를 다시 정할 때 어떤 기준을 잡을까요?	action	preparation
+창작	소설의 첫 장면을 썼는데 계속 고치게 돼요. 어떻게 멈출까요?	action	project
+창작	작품을 완성하기 직전에 흥미가 줄어드는 이유가 뭘까요?	cause	project
+창작	이번에 쓴 원고가 독자에게 공감을 얻을 수 있을까요?	forecast	project
+창작	원고를 공모전에 낼지 독립 출판할지 비교하고 싶어요.	compare	project
+창작	그림을 공개한 뒤 반응이 없어 속상해요.	emotion	project
+창작	소설 속 인물의 동기가 약해요. 어떤 점부터 손볼까요?	action	project
+창작	작곡하며 제가 중요하게 여기는 감정을 돌아보고 싶어요.	open	project
+창작	원고를 출판사에 보냈어요. 답을 기다리는 동안 뭘 할까요?	action	project
+창작	다른 사람 작품을 보면 제 작업이 싫어지는 까닭이 뭘까요?	cause	project
+창작	새 작품을 시작할지 미완성 원고를 마무리할지 고민이에요.	compare	project
+창작	작곡의 멜로디가 반복될 때 어떻게 접근을 바꿀까요?	action	project
+창작	이번 전시가 제 창작 방향을 넓혀 줄까요?	forecast	project
+창작	소설을 쓰다가 제가 하고 싶은 말이 없는 것 같아 공허해요.	emotion	project
+창작	독자가 원고를 어렵다고 했어요. 어떻게 피드백을 나누어 볼까요?	action	project
+창작	창작을 계속하는 제 이유를 돌아보고 싶어요.	open	project
+창작	영상의 앞부분이 지루해요. 어떤 장면부터 편집할까요?	action	project
+창작	작품 평가를 받을 때마다 위축되는 원인이 궁금해요.	cause	project
+창작	작곡을 혼자 완성할지 다른 연주자와 협업할지 비교해 주세요.	compare	project
+창작	작품을 끝냈는데 다음 것을 시작할 힘이 없어요.	emotion	project
+창작	소설 문장과 전체 구조 중 무엇을 먼저 점검할까요?	action	project
+앱·개발	앱 가입 화면에서 사용자가 자꾸 나가요. 어디부터 확인할까요?	action	project
+앱·개발	코드 오류를 고쳐도 같은 문제가 돌아오는 이유는 뭘까요?	cause	project
+앱·개발	지금 만든 앱을 꾸준히 운영할 수 있을까요?	forecast	project
+앱·개발	새 기능을 만들지 기존 오류를 먼저 고칠지 비교해 주세요.	compare	project
+앱·개발	앱을 배포한 뒤 오류가 나서 너무 당황했어요.	emotion	project
+앱·개발	웹사이트가 휴대폰에서 불편해요. 어떤 사용 흐름부터 볼까요?	action	project
+앱·개발	개발 과정에서 제가 완벽을 고집하는 태도를 돌아보고 싶어요.	open	project
+앱·개발	앱 수정안을 이미 배포했어요. 다음에는 무엇을 확인할까요?	action	project
+앱·개발	코드를 남에게 보여 주는 일이 어려운 까닭이 뭘까요?	cause	project
+앱·개발	앱 화면 A와 B 중 어느 쪽을 선택할지 고민이에요.	compare	project
+앱·개발	개발 프로젝트의 범위를 줄이려면 어떤 기준이 필요할까요?	action	project
+앱·개발	사용자가 이 웹사이트를 편하게 느낄까요?	forecast	project
+앱·개발	앱 개발이 늘 계획보다 늦어져서 지쳤어요.	emotion	project
+앱·개발	웹페이지의 버튼이 작다는 피드백을 받았어요. 어떻게 고칠까요?	action	project
+앱·개발	개발을 통해 제가 얻고 싶은 경험을 돌아보고 싶어요.	open	project
+앱·개발	앱에서 받은 질문에 엉뚱한 답변이 나와요. 무엇부터 검토할까요?	action	project
+앱·개발	프로젝트를 시작할 때 기능을 너무 많이 넣는 원인은 뭘까요?	cause	project
+앱·개발	개발 외주를 맡길지 직접 배울지 비교하고 싶어요.	compare	project
+앱·개발	동료의 코드가 제 것보다 좋아 보여서 위축돼요.	emotion	project
+앱·개발	앱 테스트를 마쳤어요. 배포 전 마지막으로 무엇을 볼까요?	action	project
+금전	생활비가 늘었어요. 저축액을 어떻게 조절하면 좋을까요?	action	finances
+금전	주식 손실 뒤에 더 큰 금액을 넣고 싶어지는 이유가 뭘까요?	cause	finances
+금전	이번 투자로 손실을 회복할 수 있을까요?	forecast	finances
+금전	대출을 먼저 갚을지 비상금을 만들지 비교하고 싶어요.	compare	finances
+금전	카드값을 확인할 때마다 너무 불안해요.	emotion	finances
+금전	전세 계약서를 받았어요. 어떤 조건부터 확인할까요?	action	finances
+금전	돈을 쓸 때 제가 중요하게 여기는 기준을 돌아보고 싶어요.	open	finances
+금전	주식을 이미 팔았는데 계속 가격을 확인해요. 어떻게 정리할까요?	action	finances
+금전	저축 계획을 세워도 지키지 못하는 까닭이 궁금해요.	cause	finances
+금전	고정금리 대출과 변동금리 대출 중 어느 쪽을 비교해 볼까요?	compare	finances
+금전	퇴직연금 상품의 수수료를 어떻게 비교해야 할까요?	action	finances
+금전	코인 가격이 다음 달에는 오를까요?	forecast	finances
+금전	투자한 돈을 잃었다는 생각에 자꾸 자책해요.	emotion	finances
+금전	월세를 줄이려고 이사를 생각해요. 무엇을 계산할까요?	action	finances
+금전	부모님에게 돈을 빌리는 일에 대한 제 마음을 돌아보고 싶어요.	open	finances
+금전	대출 상환일이 부담스러워요. 먼저 어떤 자료를 정리할까요?	action	finances
+금전	주식 매수 결정을 서두르는 원인이 궁금합니다.	cause	finances
+금전	전세를 유지할지 월세로 옮길지 비교해 주세요.	compare	finances
+금전	저축이 남들보다 적은 것 같아 초조해요.	emotion	finances
+금전	소득이 일정하지 않을 때 생활비 기준을 어떻게 정할까요?	action	finances
+건강	검사 결과를 들으러 갈 때 어떤 질문을 준비할까요?	action	health
+건강	두통이 반복되는 이유를 카드로 알 수 있을까요?	cause	health
+건강	치료를 시작하면 지금 증상이 나아질까요?	forecast	health
+건강	치료 방법 두 가지를 설명받았어요. 어떤 기준으로 비교할까요?	compare	health
+건강	건강 검진에서 재검 안내를 받아 너무 무서워요.	emotion	health
+건강	약을 먹고 불편한 점이 있어요. 어떻게 기록해 가면 좋을까요?	action	health
+건강	건강을 걱정할 때 제 마음이 어떻게 움직이는지 돌아보고 싶어요.	open	health
+건강	검사 결과가 아직 안 나왔어요. 기다리는 동안 뭘 할까요?	action	health
+건강	배가 아픈 원인을 타로로 짐작할 수 있을까요?	cause	health
+건강	병원 A와 B의 설명을 받았어요. 치료 계획을 어떻게 비교할까요?	compare	health
+건강	처방받은 약을 그만 먹어도 될까요?	action	health
+건강	검사에서 큰 병이 나올 가능성이 있을까요?	forecast	health
+건강	통증이 있을 때마다 최악의 경우를 상상해서 불안해요.	emotion	health
+건강	가슴 통증과 호흡곤란이 있어요. 무엇부터 해야 하나요?	action	health
+건강	진단 이후 달라진 생활을 받아들이는 마음을 돌아보고 싶어요.	open	health
+건강	내시경 검사 준비 안내를 받았어요. 헷갈리는 점은 어떻게 확인할까요?	action	health
+건강	병원에 가는 일을 자꾸 미루는 까닭이 궁금해요.	cause	health
+건강	두 가지 치료 일정 중 어느 쪽을 택할지 의료진과 어떻게 상의할까요?	compare	health
+건강	치료가 오래 걸려서 마음이 지쳐요.	emotion	health
+건강	의료진에게 증상을 설명할 때 무엇을 빠뜨리지 말아야 할까요?	action	health
+선택	지금 이사할지 계약이 끝날 때까지 기다릴지 고민이에요.	compare	decision
+선택	여러 선택지 앞에서 결정을 미루는 이유가 뭘까요?	cause	decision
+선택	새 동네에 가면 생활에 잘 적응할 수 있을까요?	forecast	general
+선택	혼자 여행할지 친구와 갈지 비교해 보고 싶어요.	compare	family
+선택	어느 쪽을 골라도 후회할 것 같아 두려워요.	emotion	decision
+선택	결정을 내리기 전에 어떤 기준을 써두면 좋을까요?	action	decision
+선택	제가 선택할 때 놓치기 쉬운 가치를 돌아보고 싶어요.	open	decision
+선택	이미 결정을 내렸는데 다시 흔들려요. 어떻게 정리할까요?	action	decision
+선택	남의 의견을 들으면 제 선택을 믿지 못하는 까닭이 뭘까요?	cause	decision
+선택	익숙한 곳에 남는 것과 새로운 곳으로 옮기는 것을 비교해 주세요.	compare	decision
+선택	두 제안의 장단점을 어떻게 같은 기준으로 적을까요?	action	decision
+선택	올해 안에 독립할 수 있을까요?	forecast	general
+선택	결정을 못 하는 제가 한심하게 느껴져요.	emotion	decision
+선택	친구가 권한 선택과 제가 원하는 선택이 달라요. 어떻게 말할까요?	action	family
+선택	지난 선택에서 배운 것을 돌아보고 싶어요.	open	decision
+선택	미루던 결정을 작은 실험으로 확인하려면 무엇을 할까요?	action	decision
+선택	선택 뒤에 다른 가능성만 떠올리는 원인이 뭘까요?	cause	decision
+선택	지금 신청할지 다음 기회를 기다릴지 비교하고 싶어요.	compare	decision
+선택	큰 선택을 앞두고 마음이 복잡해서 잠이 안 와요.	emotion	decision
+선택	되돌릴 수 있는 선택인지 어떻게 점검할까요?	action	decision
+감정	막연한 불안이 올라올 때 오늘 무엇을 해볼까요?	action	stress
+감정	잘 쉬어도 죄책감이 드는 이유가 궁금해요.	cause	stress
+감정	지금의 무기력에서 조금씩 벗어날 수 있을까요?	forecast	stress
+감정	혼자 쉬는 것과 믿는 사람을 만나는 것 중 무엇이 나을까요?	compare	general
+감정	다른 사람과 비교하느라 제 모습이 초라하게 느껴져요.	emotion	stress
+감정	마음이 복잡해서 생각이 엉킬 때 어떻게 정리할까요?	action	stress
+감정	최근 자주 느끼는 감정을 돌아보고 싶어요.	open	stress
+감정	상담을 신청했어요. 첫 상담에서 무엇을 이야기할까요?	action	stress
+감정	누군가 칭찬해도 믿기 어려운 까닭이 뭘까요?	cause	stress
+감정	이번 주 약속을 줄일지 그대로 나갈지 고민입니다.	compare	general
+감정	자책하는 말을 줄이려면 어떤 표현부터 바꿀까요?	action	stress
+감정	시간이 지나면 지금의 외로움이 덜해질까요?	forecast	stress
+감정	오늘은 아무 일도 없었는데 눈물이 나요.	emotion	stress
+감정	걱정을 적어 놓고도 계속 확인해요. 어떻게 다룰까요?	action	stress
+감정	제가 나를 대하는 태도를 살펴보고 싶어요.	open	stress
+감정	기분이 가라앉은 날 작은 목표를 어떻게 세울까요?	action	stress
+감정	괜찮다고 말하면서도 서운해지는 원인이 궁금해요.	cause	stress
+감정	당장 답을 정할지 마음이 가라앉을 때까지 기다릴지 비교해 주세요.	compare	general
+감정	좋아하던 활동도 하고 싶지 않아 답답해요.	emotion	stress
+감정	도움을 청하고 싶은데 무슨 말부터 해야 할까요?	action	stress
+사업·프리랜서	프리랜서 일을 시작하려고 해요. 첫 고객을 만나기 전에 뭘 정할까요?	action	career
+사업·프리랜서	고객의 수정 요청을 계속 받아주는 이유가 뭘까요?	cause	career
+사업·프리랜서	지금 준비하는 작은 사업을 이어갈 수 있을까요?	forecast	career
+사업·프리랜서	직장과 프리랜서 일을 병행할지 하나에 집중할지 비교해 주세요.	compare	career
+사업·프리랜서	프리랜서 일이 끊길까 봐 늘 불안해요.	emotion	career
+사업·프리랜서	고객과 업무 범위를 어떻게 분명하게 합의할까요?	action	career
+사업·프리랜서	일을 맡을 때 제가 지키고 싶은 기준을 돌아보고 싶어요.	open	career
+사업·프리랜서	고객에게 제안서를 보냈어요. 답을 기다리며 무엇을 할까요?	action	career
+사업·프리랜서	사업 계획을 세울 때 비용을 작게 잡는 까닭이 궁금해요.	cause	career
+사업·프리랜서	고객 두 곳의 일을 동시에 맡을지 한 곳만 맡을지 고민이에요.	compare	career
+사업·프리랜서	프리랜서 단가를 조정하려면 어떤 근거를 준비할까요?	action	career
+사업·프리랜서	새 서비스에 고객의 관심이 생길까요?	forecast	career
+사업·프리랜서	고객이 제안을 거절해서 제 능력이 의심돼요.	emotion	career
+사업·프리랜서	프리랜서 대금이 늦어질 때 어떤 내용을 먼저 확인할까요?	action	career
+사업·프리랜서	사업을 통해 얻고 싶은 삶의 모습을 돌아보고 싶어요.	open	career
+사업·프리랜서	고객 피드백을 다음 제안에 어떻게 반영할까요?	action	career
+사업·프리랜서	프리랜서 일을 마친 뒤에도 긴장이 남는 원인은 뭘까요?	cause	career
+사업·프리랜서	직접 고객을 찾을지 플랫폼을 이용할지 비교하고 싶어요.	compare	career
+사업·프리랜서	일이 많아도 사업이 잘되고 있다는 느낌이 없어서 허탈해요.	emotion	career
+사업·프리랜서	다음 고객을 만나기 전에 업무 일정을 어떻게 나눌까요?	action	career
+결과·기다림	면접은 끝났고 불합격이 걱정돼요. 발표 전 오늘을 어떻게 보낼까요?	action	career
+결과·기다림	답변을 기다릴 때 휴대폰을 계속 확인하는 이유가 뭘까요?	cause	waiting
+결과·기다림	제출한 원고에 좋은 답이 올까요?	forecast	project
+결과·기다림	결과를 기다리며 다른 지원을 할지 잠시 쉴지 비교하고 싶어요.	compare	career
+결과·기다림	검사 결과가 나오기 전이라 마음이 계속 떨려요.	emotion	health
+결과·기다림	친구에게 문자만 적어 두고 아직 보내지 않았어요. 어떻게 정할까요?	action	family
+결과·기다림	기다림을 견디는 제 방식을 돌아보고 싶어요.	open	waiting
+결과·기다림	합격 통보를 받았어요. 다음 절차를 어떻게 챙길까요?	action	preparation
+결과·기다림	불합격할 거라고 미리 결론 내리는 까닭이 뭘까요?	cause	preparation
+결과·기다림	발표 전 계획 A와 계획 B를 어떻게 비교하면 좋을까요?	compare	waiting
+결과·기다림	연인에게 이미 연락했고 답장도 받았어요. 다음 대화는 어떻게 할까요?	action	relationship
+결과·기다림	이직 결과가 아직 안 나왔어요. 제가 붙을까요?	forecast	career
+결과·기다림	작품 심사 발표가 미뤄져서 초조하고 속상해요.	emotion	project
+결과·기다림	지난 시험은 불합격했어요. 다음 시험 준비는 어떻게 바꿀까요?	action	preparation
+결과·기다림	결과와 별개로 제가 쏟은 노력을 돌아보고 싶어요.	open	waiting
+결과·기다림	공식 발표 일정이 바뀌었어요. 확인하는 습관을 어떻게 조절할까요?	action	waiting
+결과·기다림	친구의 답이 늦어지면 거절이라고 느끼는 원인은 뭘까요?	cause	family
+결과·기다림	연락을 더 보낼지 기다릴지 비교해 주세요. 저는 이미 한 번 보냈어요.	compare	relationship
+결과·기다림	면접 결과가 나왔는데 탈락했어요. 아무것도 하기 싫습니다.	emotion	career
+결과·기다림	아직 합격한 것은 아니에요. 결과를 기다리는 시간을 어떻게 나눌까요?	action	preparation
+일상·취미	새 운동을 시작하려면 일정을 어떻게 작게 잡을까요?	action	general
+일상·취미	취미를 시작해도 금방 그만두는 이유가 뭘까요?	cause	general
+일상·취미	새 동호회에 가면 즐겁게 지낼 수 있을까요?	forecast	general
+일상·취미	주말에 여행을 갈지 집에서 쉬며 보낼지 비교해 주세요.	compare	general
+일상·취미	쉬는 날에도 뭔가 해야 할 것 같아 마음이 불편해요.	emotion	stress
+일상·취미	하루 계획이 자꾸 밀려요. 무엇부터 줄이면 좋을까요?	action	general
+일상·취미	요즘 제 일상에서 힘이 되는 것을 돌아보고 싶어요.	open	general
+일상·취미	집 정리를 시작하려는데 어디부터 손대면 좋을까요?	action	general
+일상·취미	혼자 시간을 보내는 것이 어색한 까닭이 궁금해요.	cause	general
+일상·취미	모임에 나갈지 이번에는 혼자 보낼지 고민이에요.	compare	general
+일상·취미	운동을 꾸준히 하려면 어떤 기준으로 목표를 정할까요?	action	general
+일상·취미	지금 시작한 새로운 습관이 오래갈까요?	forecast	general
+일상·취미	취미를 쉬고 있는데 다시 시작할 자신이 없어요.	emotion	stress
+일상·취미	휴대폰을 보는 시간을 줄이려면 어떤 장면부터 살펴볼까요?	action	general
+일상·취미	잘 보내는 하루가 무엇인지 제 기준을 돌아보고 싶어요.	open	general
+일상·취미	혼자 여행을 준비할 때 무엇부터 점검할까요?	action	general
+일상·취미	계획을 지키지 못하면 하루 전체를 포기하는 원인은 뭘까요?	cause	general
+일상·취미	아침 시간을 활용할지 저녁 시간을 비울지 비교하고 싶어요.	compare	general
+일상·취미	주말이 끝나면 아무것도 하지 못한 것 같아 허탈해요.	emotion	stress
+일상·취미	오늘 저를 위해 할 수 있는 작은 일을 어떻게 고를까요?	action	general
