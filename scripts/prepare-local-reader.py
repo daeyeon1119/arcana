@@ -5,11 +5,18 @@ import json
 import time
 import urllib.request
 import zipfile
+import argparse
 
 root = Path(__file__).resolve().parents[1]
 target = root / '.cache/local-reader'
 target.mkdir(parents=True, exist_ok=True)
 manifest = json.loads((root / 'scripts/local-reader-resources.json').read_text(encoding='utf-8'))
+profiles = json.loads((root / 'scripts/local-reader-profiles.json').read_text(encoding='utf-8'))
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--profile', default='qwen3-4b', choices=profiles.keys())
+args = parser.parse_args()
+if profiles[args.profile].get('model'):
+    manifest['model'] = profiles[args.profile]['model']
 
 def digest(path):
     result = hashlib.sha256()
