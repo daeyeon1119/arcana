@@ -1,0 +1,129 @@
+question	intent	domain	facts
+이직을 준비할 때 이번 주에 무엇부터 해야 할까요?	action	career
+지금 회사에 남을지 이직할지 비교하고 싶어요.	compare	career
+이번 면접에서 좋은 결과를 받을 수 있을까요?	forecast	career	known=false
+상사가 내 제안을 거절한 이유는 무엇일까요?	cause	career
+직장 생활이 너무 지쳐요.	emotion	career
+새 직장에서 적응하려면 어떤 준비가 필요할까요?	action	career
+퇴사할까요?	action	career
+직장 A와 B 중 어느 쪽이 나을까요?	compare	career
+면접 결과를 아직 기다려요. 불합격일까 두렵습니다.	emotion	career	known=false
+회사 면접에서 최종 불합격했어요. 무엇부터 해야 하나요?	action	career	known=true
+업무가 반복해서 늦어지는 원인은 뭘까요?	cause	career
+커리어 전환에 어떤 조언을 해줄 수 있나요?	action	career
+이번 회사에서 성장할 수 있을까요?	forecast	career
+부서 이동과 이직 중 어느 쪽이 나을까요?	compare	career
+직장에 대한 제 마음을 돌아보고 싶어요.	open	career
+병원 채용 면접을 어떻게 준비해야 할까요?	action	career
+연인에게 이미 연락했는데 답장이 없어요. 어떻게 해야 할까요?	action	relationship	sent=true;replied=false
+아직 고백하지 않았어요. 연인에게 어떻게 마음을 전할까요?	action	relationship	sent=false
+헤어진 연인과 재회할 수 있을까요?	forecast	relationship
+짝사랑 상대가 나를 피하는 이유는 뭘까요?	cause	relationship
+연애 때문에 마음이 공허해요.	emotion	relationship
+연인과 계속 만날지 헤어질지 고민이에요.	compare	relationship
+연인이 연락하지 말라고 했어요. 다시 연락해도 될까요?	action	relationship	boundary
+연인이 나를 때렸어요. 관계를 어떻게 해야 할까요?	action	relationship	abuse
+짝사랑하는 사람에게 문자를 보낼까요?	action	relationship	sent=false
+상대방의 답장을 받았어요. 어떻게 대답해야 할까요?	action	relationship	replied=true
+애인과 싸운 적은 없는데 멀어진 이유가 뭘까요?	cause	relationship	noConflict=true
+그 사람은 어떤 마음일까요?	forecast	relationship
+연애를 시작할지 혼자 지낼지 비교하고 싶어요.	compare	relationship
+이별 뒤에 자꾸 자책하게 됩니다.	emotion	relationship
+전남친과의 관계에서 무엇을 배울 수 있을까요?	open	relationship
+데이트가 끝난 뒤 너무 허전해요.	emotion	relationship
+친구와 소원해졌어요. 어떻게 대화를 시작하면 좋을까요?	action	family
+부모님과 멀어진 이유가 궁금해요.	cause	family
+동생과의 관계가 좋아질까요?	forecast	family
+친구에게 사과했는데 답장이 오지 않아요. 뭘 해야 할까요?	action	family	sent=true;replied=false
+친구에게 아직 문자를 안 보냈어요. 먼저 연락할까요?	action	family	sent=false
+부모님과 함께 살지 독립할지 고민입니다.	compare	family
+가족과 다툰 적이 없는데 왜 어색할까요?	cause	family	noConflict=true
+친구의 답장을 방금 받았어요. 어떻게 답할까요?	action	family	replied=true
+친구에게 차단당했어요. 다른 계정으로 연락해도 될까요?	action	family	boundary
+부모님의 기대가 무거워서 마음이 답답해요.	emotion	family
+자녀와 대화할 때 어떤 점을 바꾸면 좋을까요?	action	family
+친구 A와 B 중 누구와 여행을 가는 게 나을까요?	compare	family
+친구가 돌아올까요?	forecast	family
+엄마와의 관계를 돌아보고 싶습니다.	open	family
+가족에게 아무 말도 못 해서 속상해요.	emotion	family
+아빠와 대화가 끊긴 배경이 뭘까요?	cause	family
+시험 결과가 아직 안 나왔어요. 합격할까요?	forecast	preparation	known=false
+불합격할까 걱정되지만 시험 결과는 아직 발표되지 않았어요.	emotion	preparation	known=false
+시험에서 불합격했어요. 이제 무엇을 해야 할까요?	action	preparation	known=true
+자격증 시험에 합격했어요. 다음 준비는 어떻게 할까요?	action	preparation	known=true
+공부에 집중하지 못하는 원인이 뭘까요?	cause	preparation
+수능 준비는 어디부터 시작해야 하나요?	action	preparation
+공부 시간을 늘릴지 쉬는 시간을 늘릴지 비교해주세요.	compare	preparation
+과제 제출 전 무엇을 점검하면 좋을까요?	action	preparation
+시험이 불안해서 잠을 못 자요.	emotion	preparation
+다음 시험에서 성적이 좋아질까요?	forecast	preparation	known=false
+입시 학원 A와 B 중 어느 곳이 나을까요?	compare	preparation
+시험에서 탈락했다는 통보를 받았어요. 어떻게 회복할까요?	action	preparation	known=true
+불합격이라는 말을 들은 건 아니에요. 시험 결과를 기다려요.	open	preparation	known=false
+시험 준비를 하며 내 태도를 돌아보고 싶어요.	open	preparation
+공부 계획이 무너지는 이유는 무엇인가요?	cause	preparation
+합격 가능성이 있을까요?	forecast	preparation	known=false
+소설 원고를 어떻게 고치면 좋을까요?	action	project
+완성한 원고를 출판할지 공모전에 낼지 고민이에요.	compare	project
+이번 프로젝트가 성공할 수 있을까요?	forecast	project
+작곡하다가 계속 막히는 이유는 뭘까요?	cause	project
+작품을 완성했지만 너무 허전해요.	emotion	project
+앱 개발에서 무엇부터 점검해야 하나요?	action	project
+웹사이트 A와 B 디자인 중 어느 쪽이 좋을까요?	compare	project
+영상 편집은 어디부터 손볼까요?	action	project
+집필한 소설에 대해 독자의 반응이 올까요?	forecast	project
+프로젝트를 미루게 되는 배경이 뭘까요?	cause	project
+그림에 대한 제 마음을 돌아보고 싶어요.	open	project
+새 앱을 배포해도 될까요?	action	project
+코드 오류를 고칠 때 어떤 점을 보완할까요?	action	project
+작곡이 안 풀려서 자책해요.	emotion	project
+프로젝트를 계속할지 그만둘지 비교해 주세요.	compare	project
+웹페이지 개발을 시작하려면 어떤 준비가 필요할까요?	action	project
+주식을 계속 보유해야 할까요?	action	finances
+이번 코인이 오를까요?	forecast	finances
+투자에서 손실을 반복하는 이유가 뭘까요?	cause	finances
+저축과 대출 상환 중 어느 쪽이 나을까요?	compare	finances
+투자 손실이 걱정돼요.	emotion	finances
+퇴직연금을 이전해도 될까요?	action	finances
+전세 보증금 계약 전에 무엇을 확인해야 할까요?	action	finances
+비트코인 매수를 시작할까요?	action	finances
+이번 투자가 수익을 낼 가능성이 있을까요?	forecast	finances
+적금 A와 B 중 어느 쪽이 나을까요?	compare	finances
+월세 지출을 어떻게 줄일까요?	action	finances
+돈과 저축에 대한 제 태도를 돌아보고 싶어요.	open	finances
+대출 때문에 마음이 무거워요.	emotion	finances
+주식 매도를 자꾸 미루는 원인은 뭘까요?	cause	finances
+전세와 월세 중 어느 것이 나을까요?	compare	finances
+투자할 때 손실 위험을 어떻게 관리할까요?	action	finances
+건강 검사 결과가 아직 안 나왔어요. 큰 병일까요?	forecast	health	known=false
+복용 중인 약을 끊어도 될까요?	action	health
+가슴 통증이 있고 숨을 못 쉬겠어요. 어떻게 해야 하나요?	action	health	urgent
+치료 방법 A와 B 중 어느 쪽이 나을까요?	compare	health
+진단을 받고 너무 두려워요.	emotion	health
+계속 복통이 생기는 이유가 뭘까요?	cause	health
+임신했는지 카드로 알 수 있을까요?	forecast	health
+내시경 검사 전에 어떤 준비가 필요할까요?	action	health
+검사 결과를 기다리며 불안해요.	emotion	health	known=false
+진료 때 무엇을 물어봐야 할까요?	action	health
+치료를 받으면 회복될까요?	forecast	health
+처방약 때문에 걱정돼요.	emotion	health
+진단 결과를 어떻게 이해해야 할까요?	action	health
+건강 증상이 반복되는 원인은 뭘까요?	cause	health
+검사 결과와 제 감정을 돌아보고 싶어요.	open	health
+검사 결과를 확인할 때 어떤 점을 물어보면 좋을까요?	action	health
+요즘 제 삶에서 무엇이 중요한가요?	open	general
+오늘을 어떻게 보내면 좋을까요?	action	general
+자존감이 낮아져서 너무 힘들어요.	emotion	stress
+무기력이 반복되는 원인은 뭘까요?	cause	stress
+불안한 마음을 어떻게 다스릴까요?	action	stress
+이사할지 지금 집에 남을지 비교하고 싶어요.	compare	decision
+앞으로 일이 잘 풀릴까요?	forecast	general
+아무것도 하고 싶지 않고 마음이 공허해요.	emotion	stress
+선택 A와 B 중 어느 쪽이 나을까요?	compare	decision
+자책을 줄일 방법을 알려주세요.	action	stress
+오늘의 나를 돌아보고 싶어요.	open	general
+왜 같은 선택을 반복할까요?	cause	decision
+새로운 시작을 해도 될까요?	action	general
+앞으로 제 삶이 좋아질까요?	forecast	general
+미래가 불안해요. 지금 할 행동을 알려주세요.	action	stress
+요즘 너무 외로워요.	emotion	stress
