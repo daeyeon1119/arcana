@@ -1,0 +1,71 @@
+{
+  "total": 16,
+  "checks": [
+    {
+      "name": "question analysis is independent of all card identities and meanings",
+      "ok": true
+    },
+    {
+      "name": "question analysis carries the original request rather than an inferred domain",
+      "ok": true
+    },
+    {
+      "name": "literal compound request plan accepted",
+      "ok": true
+    },
+    {
+      "name": "reject made-up request",
+      "ok": true
+    },
+    {
+      "name": "reject made-up context",
+      "ok": true
+    },
+    {
+      "name": "reject unknown modality",
+      "ok": true
+    },
+    {
+      "name": "reject missing purpose",
+      "ok": true
+    },
+    {
+      "name": "reject duplicate request",
+      "ok": true
+    },
+    {
+      "name": "reject wrong clarification type",
+      "ok": true
+    },
+    {
+      "name": "reject unexpected top-level claim",
+      "ok": true
+    },
+    {
+      "name": "reject wrong requests type",
+      "ok": true
+    },
+    {
+      "name": "reject wrong stated type",
+      "ok": true
+    },
+    {
+      "name": "malformed plans are rejected without crashing the validator",
+      "ok": true
+    },
+    {
+      "name": "reading sees raw question and oriented symbols, no old canned answer",
+      "ok": true
+    },
+    {
+      "name": "original uncertainty remains visible even if model classifies it badly",
+      "ok": true
+    },
+    {
+      "name": "schema has no fixed question-domain vocabulary",
+      "ok": true
+    }
+  ],
+  "sourceSHA256": "c8c16fafb757003250f5b016fbf16ec7d1939acf2602db0d0cf0e2b484148dcb",
+  "note": "Development protocol and source-preservation checks, not semantic accuracy or expert quality. No model output mocked as an actual answer."
+}

@@ -3,7 +3,8 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const {spawn}=require('node:child_process'),net=require('node:net'),core=require('../src/local-reader-core.js');
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex'),canonical=p=>fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n');
 const resources=JSON.parse(fs.readFileSync('scripts/local-reader-resources.json','utf8')),fixture=JSON.parse(fs.readFileSync('tests/local-reader-first.json','utf8'));
-const folder='test-results/local-reader/native-first',cache=path.resolve('.cache/local-reader');
+const staged=process.argv.includes('--staged'),planner=staged?require('../src/local-reader-planner.js'):null;
+const folder='test-results/local-reader/'+(staged?'native-staged-first':'native-first'),cache=path.resolve('.cache/local-reader');
 async function fileHash(file){const h=crypto.createHash('sha256');for await(const chunk of fs.createReadStream(file))h.update(chunk);return h.digest('hex');}
 (async()=>{
  if(process.env.ARCANA_MODEL_DIAGNOSTIC!=='1')throw Error('Explicitly set ARCANA_MODEL_DIAGNOSTIC=1 for free local inference.');
@@ -14,6 +15,7 @@ async function fileHash(file){const h=crypto.createHash('sha256');for await(cons
  const executable=path.join(cache,'runtime',binaries[0]);
  fs.mkdirSync(folder,{recursive:true});
  const freeze={appSHA256:hash(fs.readFileSync('index.html')),contractSHA256:hash(canonical('src/local-reader-core.js')),fixtureSHA256:hash(canonical('tests/local-reader-first.json')),runtime:resources.runtime,model:resources.model,temperature:0.4,top_p:0.9,max_tokens:1800,seed:830027,context:8192,threads:4};
+ if(staged)Object.assign(freeze,{plannerSHA256:hash(canonical('src/local-reader-planner.js')),planTemperature:0.2,planMaxTokens:600,stages:['question-without-cards','grounded-reading']});
  if(fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.parse(fs.readFileSync(folder+'/freeze.json','utf8')),freeze,'Preserve first outputs; use another directory for another candidate.');
  else fs.writeFileSync(folder+'/freeze.json',JSON.stringify(freeze,null,2));
  let packets;
@@ -32,13 +34,19 @@ async function fileHash(file){const h=crypto.createHash('sha256');for await(cons
   if(!ready)throw Error('Local model did not become ready.');
   const version=await (await fetch(endpoint+'/props')).json();fs.writeFileSync(folder+'/runtime.json',JSON.stringify({loadMs:Date.now()-loadStarted,args:args.map(x=>x===modelPath?resources.model.filename:x),buildInfo:version.build_info||null,totalSlots:version.total_slots||null,modelPath:resources.model.filename,endpoint:'127.0.0.1 random port; this process only'},null,2));
   const limit=Number(process.argv.find(x=>x.startsWith('--limit='))?.slice(8)||fixture.cases.length);
+  const complete=async(messages,schema,options={})=>{const r=await fetch(endpoint+'/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'local',messages,temperature:freeze.temperature,top_p:freeze.top_p,max_tokens:freeze.max_tokens,seed:freeze.seed,response_format:{type:'json_object',schema},chat_template_kwargs:{enable_thinking:false},...options}),signal:AbortSignal.timeout(900000)});if(!r.ok)throw Error('Local response '+r.status+': '+(await r.text()).slice(0,700));return r.json();};
   for(const c of fixture.cases.slice(0,limit)){
    const outputPath=folder+'/'+c.id+'.json';if(fs.existsSync(outputPath)){results.push(JSON.parse(fs.readFileSync(outputPath,'utf8')));continue;}
    const stored=packets.find(x=>x.id===c.id),packet=core.packet(stored.input),started=Date.now();console.log('Generating '+c.id+' ('+c.spread+') on local CPU');
-   let response,error;try{const r=await fetch(endpoint+'/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'local',messages:core.messages(packet),temperature:freeze.temperature,top_p:freeze.top_p,max_tokens:freeze.max_tokens,seed:freeze.seed,response_format:{type:'json_object',schema:core.schema(packet)},chat_template_kwargs:{enable_thinking:false}}),signal:AbortSignal.timeout(900000)});if(!r.ok)throw Error('Local response '+r.status+': '+(await r.text()).slice(0,700));response=await r.json();}catch(e){error=String(e.message||e);}
+   let response,error,planResponse,questionPlan,planValidation,planMs;
+   try{
+    if(staged){const planStarted=Date.now();planResponse=await complete(planner.planMessages(packet),planner.planSchema(),{temperature:freeze.planTemperature,max_tokens:freeze.planMaxTokens});planMs=Date.now()-planStarted;try{questionPlan=JSON.parse(planResponse.choices?.[0]?.message?.content||'');}catch{}planValidation=planner.validatePlan(packet,questionPlan);}
+    if(!staged||planValidation.ok)response=await complete(staged?planner.readingMessages(packet,questionPlan):core.messages(packet),core.schema(packet));
+   }catch(e){error=String(e.message||e);}
    const raw=response?.choices?.[0]?.message?.content||'';let parsed,parseError;try{parsed=JSON.parse(raw);}catch(e){parseError=e.message;}
    const validation=parsed?core.validate(packet,parsed):{ok:false,issues:['invalid-or-empty-json']};
    const result={...c,packet,baseline:stored.baseline,raw,parsed,parseError,error,validation,finishReason:response?.choices?.[0]?.finish_reason,usage:response?.usage,timings:response?.timings,elapsedMs:Date.now()-started};
+   if(staged)Object.assign(result,{questionPlan,planValidation,planRaw:planResponse?.choices?.[0]?.message?.content,planUsage:planResponse?.usage,planMs});
    fs.writeFileSync(outputPath,JSON.stringify(result,null,2));results.push(result);console.log(JSON.stringify({id:c.id,valid:validation.ok,issues:validation.issues,finishReason:result.finishReason,elapsedMs:result.elapsedMs}));
    fs.writeFileSync(folder+'/progress.json',JSON.stringify({completed:results.length,total:fixture.cases.length,last:c.id,terminal:false},null,2));if(error)throw Error(error);
   }
