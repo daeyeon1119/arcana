@@ -18,7 +18,9 @@ const folder='test-results/generalization-v81'+(regression?'/'+replay:'');
  },fixture.groups);};
  if(!fs.existsSync('.cache/v80.html')){fs.mkdirSync('.cache',{recursive:true});fs.writeFileSync('.cache/v80.html',require('node:child_process').execFileSync('git',['show','6ca8f8c:index.html'],{maxBuffer:40*1024*1024}));}
  assert.equal(hash(fs.readFileSync('.cache/v80.html')),'dca5e73e51865b4fd5911a8c9db4a5cf307ceb155e03c375f5853046efefda1d');
- const appSHA256=hash(fs.readFileSync('index.html')),fixtureSHA256=hash(fs.readFileSync('tests/generalization-v81.json'));
+ // Git may check out text as CRLF on Windows. Freeze content with canonical LF;
+ // the standalone app and source JPEGs retain their exact binary hashes.
+ const appSHA256=hash(fs.readFileSync('index.html')),fixtureSHA256=hash(Buffer.from(fs.readFileSync('tests/generalization-v81.json','utf8').replace(/\r\n/g,'\n'),'utf8'));
  const freezePath=folder+'/freeze.json';const freeze={appSHA256,fixtureSHA256,baselineSHA256:hash(fs.readFileSync('.cache/v80.html')),seed:812026};
  if(fs.existsSync(freezePath))assert.deepEqual(JSON.parse(fs.readFileSync(freezePath,'utf8')),freeze,'Frozen evaluation changed; create a new version rather than overwrite the first pass.');else fs.writeFileSync(freezePath,JSON.stringify(freeze,null,2));
  const before=await evaluate('/.cache/v80.html'),after=await evaluate('/');

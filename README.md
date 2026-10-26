@@ -48,7 +48,7 @@ npx playwright install chromium
 npm test
 ```
 
-v81 새 표현 진단의 최종 회귀 재실행은 `npm run diagnose:generalization`입니다. Git 기록의 v80 원본을 로컬에 재현하며 외부 요청은 하지 않습니다. 알려진 실패를 포함한 점수를 기록하므로 종료 코드 0이 모든 답변의 품질을 뜻하지는 않습니다. 최초 고정 평가 재현은 커밋 `8c611c6`에서 `node scripts/generalization.cjs`로 합니다. 앱·질문 해시를 고정하여 첫 실패를 덮어쓰지 않습니다.
+v81 새 표현 진단의 최종 회귀 재실행은 `npm run diagnose:generalization`입니다. Git 기록의 v80 원본을 로컬에 재현하며 외부 요청은 하지 않습니다. 알려진 실패를 포함한 점수를 기록하므로 종료 코드 0이 모든 답변의 품질을 뜻하지는 않습니다. 최초 고정 평가 재현은 커밋 `8c611c6`에서 `node scripts/generalization.cjs`로 합니다. 해당 과거 소스는 LF 줄바꿈으로 체크아웃해야 합니다. 현재 평가기는 질문 JSON의 CRLF를 LF로 통일해 해시를 계산하므로 Windows에서도 같은 질문 내용을 재현합니다. 앱·원본 이미지의 정확한 바이너리 해시는 유지하며 첫 실패는 덮어쓰지 않습니다.
 
 설치된 브라우저를 사용하려면 `ARCANA_BROWSER`를 실행 파일 경로로 지정하세요. 기존 Playwright 패키지를 재사용하는 환경에서는 `ARCANA_NODE_MODULES`를 해당 `node_modules` 경로로 지정할 수 있습니다. 테스트는 임시 포트의 로컬 서버를 자체 실행하고 외부 HTTPS 요청을 차단합니다.
 
