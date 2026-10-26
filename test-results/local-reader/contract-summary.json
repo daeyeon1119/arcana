@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "name": "raw question and every card identity/direction/position are preserved",
+      "ok": true
+    },
+    {
+      "name": "model sees no guessed domain, event facts or previous canned answer",
+      "ok": true
+    },
+    {
+      "name": "manual focus and topic stay explicit",
+      "ok": true
+    },
+    {
+      "name": "each card change and direction change invalidates the packet key",
+      "ok": true
+    },
+    {
+      "name": "same packet is stable across caller mutation",
+      "ok": true
+    },
+    {
+      "name": "valid grounded structure is accepted",
+      "ok": true
+    },
+    {
+      "name": "reject invented request source",
+      "ok": true
+    },
+    {
+      "name": "reject wrong card reference",
+      "ok": true
+    },
+    {
+      "name": "reject duplicate card reference",
+      "ok": true
+    },
+    {
+      "name": "reject missing card",
+      "ok": true
+    },
+    {
+      "name": "reject extra card",
+      "ok": true
+    },
+    {
+      "name": "reject empty action",
+      "ok": true
+    },
+    {
+      "name": "reject empty request",
+      "ok": true
+    },
+    {
+      "name": "reject duplicate requests",
+      "ok": true
+    },
+    {
+      "name": "reject bad root field",
+      "ok": true
+    },
+    {
+      "name": "reject invalid request type",
+      "ok": true
+    },
+    {
+      "name": "reject invalid action type",
+      "ok": true
+    },
+    {
+      "name": "reject null card output",
+      "ok": true
+    },
+    {
+      "name": "reject English-only text",
+      "ok": true
+    },
+    {
+      "name": "reject malformed text",
+      "ok": true
+    },
+    {
+      "name": "reject overlong text",
+      "ok": true
+    },
+    {
+      "name": "reject overlong unknowns",
+      "ok": true
+    },
+    {
+      "name": "arbitrary malformed roots do not throw",
+      "ok": true
+    },
+    {
+      "name": "empty question remains daily reflection",
+      "ok": true
+    },
+    {
+      "name": "wrong card counts, duplicates and incomplete orientation are rejected",
+      "ok": true
+    },
+    {
+      "name": "report derives literal card names and orientation from the packet",
+      "ok": true
+    },
+    {
+      "name": "schema binds card output keys and allowed references",
+      "ok": true
+    },
+    {
+      "name": "semantic contradiction is outside structural validator coverage",
+      "ok": true
+    }
+  ],
+  "total": 28,
+  "sourceSHA256": "2e674b42cf7731226ff99e6618a2735f16c8214a112e13f85cc215ff93e4ae6b",
+  "note": "Development protocol checks. Passing does not prove semantic truth or reading quality."
+}

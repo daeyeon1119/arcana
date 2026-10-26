@@ -12,10 +12,12 @@ module.exports = async () => {
     try{res.setHeader('Content-Type',file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.jpg')?'image/jpeg':'application/octet-stream');res.end(fs.readFileSync(file));}
     catch{res.writeHead(404).end();}
   });
-  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  // Stable origin and persistent cache only for real multi-GB model diagnostics.
+  const modelDiagnostic=process.env.ARCANA_MODEL_DIAGNOSTIC==='1';
+  await new Promise(resolve=>server.listen(modelDiagnostic?8372:0,'127.0.0.1',resolve));
   const options = {headless:true,timeout:45000};
   if (process.env.ARCANA_BROWSER) options.executablePath = process.env.ARCANA_BROWSER;
-  const browser=await playwright.chromium.launch(options).catch(e=>{server.close();throw e});
+  const browser=await (modelDiagnostic?playwright.chromium.launchPersistentContext(path.join(root,'.cache/local-reader-browser'),options):playwright.chromium.launch(options)).catch(e=>{server.close();throw e});
   browser.appURL='http://127.0.0.1:'+server.address().port;
   const close=browser.close.bind(browser);
   browser.close=async()=>{await close();server.closeAllConnections();await new Promise(resolve=>server.close(resolve));};
