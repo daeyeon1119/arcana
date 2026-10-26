@@ -1,0 +1,656 @@
+{
+  "id": "n07",
+  "kind": "fresh",
+  "question": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.",
+  "spread": "choice5",
+  "cards": [
+    [
+      "cu09",
+      false
+    ],
+    [
+      "ar09",
+      false
+    ],
+    [
+      "pe03",
+      false
+    ],
+    [
+      "wa10",
+      true
+    ],
+    [
+      "wa11",
+      false
+    ]
+  ],
+  "review": "두 안의 소유권을 지키는가. 수익 예측을 요구한 것으로 바꾸지 않는가.",
+  "packet": {
+    "version": 1,
+    "question": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.",
+    "spread": "두 갈래의 선택",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "cu09",
+        "name": "컵 9",
+        "orientation": "정방향",
+        "position": "선택의 핵심",
+        "positionMeaning": "선택을 어렵게 하는 핵심",
+        "meaning": "개인적인 만족과 정서적 충족을 누립니다."
+      },
+      {
+        "ref": "c1",
+        "id": "ar09",
+        "name": "은둔자",
+        "orientation": "정방향",
+        "position": "A의 성격",
+        "positionMeaning": "첫 번째 선택을 살펴볼 상징",
+        "meaning": "혼자만의 탐색과 성찰에서 답의 실마리를 얻습니다."
+      },
+      {
+        "ref": "c2",
+        "id": "pe03",
+        "name": "펜타클 3",
+        "orientation": "정방향",
+        "position": "B의 성격",
+        "positionMeaning": "두 번째 선택을 살펴볼 상징",
+        "meaning": "숙련된 기술과 협력으로 완성도를 높입니다."
+      },
+      {
+        "ref": "c3",
+        "id": "wa10",
+        "name": "완드 10",
+        "orientation": "역방향",
+        "position": "선택의 기준",
+        "positionMeaning": "둘을 공정하게 비교할 기준",
+        "meaning": "짐을 내려놓지 못하거나 책임 배분이 어려워집니다."
+      },
+      {
+        "ref": "c4",
+        "id": "wa11",
+        "name": "완드 시종",
+        "orientation": "정방향",
+        "position": "다음 한 걸음",
+        "positionMeaning": "확정 전 할 작은 검증",
+        "meaning": "흥미로운 소식과 탐험하려는 의욕이 생깁니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "general"
+    },
+    "headline": "질문을 바라보는 핵심 관점",
+    "direct": "‘A의 성격’의 은둔자 정방향은 ‘혼자만의 성찰’을 보여 줍니다. ‘B의 성격’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. A를 살필 때는 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. B를 살필 때는 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
+    "sections": [
+      {
+        "title": "선택의 핵심",
+        "body": "‘선택의 핵심’의 컵 9 정방향은 ‘개인적인 만족’을 보여 줍니다. 좋아 보이는 모습과 스스로 편안하게 느끼는 상태가 같은지 돌아보세요.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "A의 성격",
+        "body": "‘A의 성격’의 은둔자 정방향은 ‘혼자만의 성찰’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+        "refs": [
+          1
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "B의 성격",
+        "body": "‘B의 성격’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+        "refs": [
+          2
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "선택의 기준",
+        "body": "‘선택의 기준’의 완드 10 역방향은 ‘짐을 나눌 필요’를 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+        "refs": [
+          3
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "다음 한 걸음",
+        "body": "‘다음 한 걸음’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요.",
+        "refs": [
+          4
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "두 선택을 함께 읽으면",
+        "body": "‘A의 성격’의 은둔자 정방향은 ‘혼자만의 성찰’을 보여 줍니다. ‘B의 성격’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. A를 살필 때는 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. B를 살필 때는 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 질문에 두 안을 적었다면 A와 B를 적은 순서로 읽어 보세요. 두 경로에서 실제로 감당할 조건을 같은 기준으로 비교해 보세요.",
+        "refs": [
+          1,
+          2
+        ],
+        "kind": "relational"
+      }
+    ],
+    "actions": [
+      "바쁜 날에도 이어갈 수 있는 작은 분량과 시간을 정하고, 실제로 지킬 수 있는지 한 번 해보세요."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "general",
+        "intent": "open",
+        "phase": "active",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.",
+        "explicit": {
+          "health": false,
+          "finances": false,
+          "project": false,
+          "relationship": false,
+          "family": false,
+          "career": false,
+          "preparation": false,
+          "stress": false,
+          "decision": false
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.",
+          "evidenceQuestion": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.",
+          "requests": [
+            {
+              "kind": "open",
+              "goal": "open",
+              "text": "이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요",
+              "start": 37,
+              "end": 73
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "컵 9",
+          "role": "message",
+          "sections": [
+            0,
+            2
+          ]
+        },
+        {
+          "index": 1,
+          "name": "은둔자",
+          "role": "optionA",
+          "sections": [
+            1,
+            2
+          ]
+        },
+        {
+          "index": 2,
+          "name": "펜타클 3",
+          "role": "optionB",
+          "sections": [
+            2,
+            3
+          ]
+        },
+        {
+          "index": 3,
+          "name": "완드 10",
+          "role": "criteria",
+          "sections": [
+            2,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "name": "완드 시종",
+          "role": "advice",
+          "sections": [
+            5
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": false,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "open",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 0,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "grammar",
+        "question": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요."
+      },
+      "domain": "general",
+      "phase": "active",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [
+        {
+          "type": "alternatives",
+          "indices": [
+            1,
+            2
+          ],
+          "left": "은둔자",
+          "right": "펜타클 3",
+          "roles": [
+            "optionA",
+            "optionB"
+          ],
+          "meanings": [
+            "혼자만의 성찰",
+            "협력 속의 숙련"
+          ],
+          "weight": 23
+        },
+        {
+          "type": "tension",
+          "indices": [
+            0,
+            1
+          ],
+          "left": "컵 9",
+          "right": "은둔자",
+          "roles": [
+            "message",
+            "optionA"
+          ],
+          "meanings": [
+            "개인적인 만족",
+            "혼자만의 성찰"
+          ],
+          "weight": 20
+        },
+        {
+          "type": "tension",
+          "indices": [
+            0,
+            3
+          ],
+          "left": "컵 9",
+          "right": "완드 10",
+          "roles": [
+            "message",
+            "criteria"
+          ],
+          "meanings": [
+            "개인적인 만족",
+            "짐을 나눌 필요"
+          ],
+          "weight": 20
+        },
+        {
+          "type": "tension",
+          "indices": [
+            1,
+            4
+          ],
+          "left": "은둔자",
+          "right": "완드 시종",
+          "roles": [
+            "optionA",
+            "advice"
+          ],
+          "meanings": [
+            "혼자만의 성찰",
+            "탐험하는 초심"
+          ],
+          "weight": 20
+        }
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "cu09",
+          "reverse": false,
+          "role": "message",
+          "meaning": "개인적인 만족"
+        },
+        {
+          "index": 1,
+          "id": "ar09",
+          "reverse": false,
+          "role": "optionA",
+          "meaning": "혼자만의 성찰"
+        },
+        {
+          "index": 2,
+          "id": "pe03",
+          "reverse": false,
+          "role": "optionB",
+          "meaning": "협력 속의 숙련"
+        },
+        {
+          "index": 3,
+          "id": "wa10",
+          "reverse": true,
+          "role": "criteria",
+          "meaning": "짐을 나눌 필요"
+        },
+        {
+          "index": 4,
+          "id": "wa11",
+          "reverse": false,
+          "role": "advice",
+          "meaning": "탐험하는 초심"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": true,
+      "relations": [
+        {
+          "refs": [
+            1,
+            2
+          ],
+          "kind": "alternatives",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "pause",
+            "review"
+          ],
+          "rightMotifs": [
+            "skill",
+            "support"
+          ],
+          "insight": "A를 살필 때는 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. B를 살필 때는 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+          "positional": "질문에 두 안을 적었다면 A와 B를 적은 순서로 읽어 보세요. 두 경로에서 실제로 감당할 조건을 같은 기준으로 비교해 보세요."
+        },
+        {
+          "refs": [
+            3,
+            4
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "overload",
+            "support"
+          ],
+          "rightMotifs": [
+            "start",
+            "explore"
+          ],
+          "insight": "‘짐을 나눌 필요’와 ‘탐험하는 초심’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘모든 책임을 혼자 해결하려 함’, 다른 쪽에서는 ‘새로운 관심을 시험해 봄’을 살펴봅니다.",
+          "positional": ""
+        }
+      ],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "cu09",
+          "reverse": false,
+          "motifs": [
+            "joy",
+            "values"
+          ]
+        },
+        {
+          "index": 1,
+          "id": "ar09",
+          "reverse": false,
+          "motifs": [
+            "pause",
+            "review"
+          ]
+        },
+        {
+          "index": 2,
+          "id": "pe03",
+          "reverse": false,
+          "motifs": [
+            "skill",
+            "support"
+          ]
+        },
+        {
+          "index": 3,
+          "id": "wa10",
+          "reverse": true,
+          "motifs": [
+            "overload",
+            "support"
+          ]
+        },
+        {
+          "index": 4,
+          "id": "wa11",
+          "reverse": false,
+          "motifs": [
+            "start",
+            "explore"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.",
+        "evidenceQuestion": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.",
+        "requests": [
+          {
+            "kind": "open",
+            "goal": "open",
+            "text": "이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요",
+            "start": 37,
+            "end": 73
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [
+        {
+          "request": {
+            "kind": "open",
+            "goal": "open",
+            "text": "이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요",
+            "start": 37,
+            "end": 73
+          },
+          "text": "‘A의 성격’의 은둔자 정방향은 ‘혼자만의 성찰’을 보여 줍니다. ‘B의 성격’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. A를 살필 때는 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. B를 살필 때는 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
+          "refs": [
+            1,
+            2
+          ]
+        }
+      ],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.\",\n      \"text\": \"가죽 공예를 취미로 지속할지, 작은 주문을 받아보는 선택을 비교해 주세요. 두 가지 선택의 주요 차이점은 '즐거움'과 '부담'입니다. '은둔자' 카드는 당신의 성격을 반영해, 혼자만의 탐색과 성찰에서 답을 얻을 수 있음을 보여줍니다. '펜타클 3'은 숙련된 기술과 협력으로 완성도를 높일 수 있음을 의미합니다. '완드 10'은 선택의 기준으로, 짐을 내려놓지 못하거나 책임을 배분하는 어려움을 나타냅니다. '완드 시종'은 확정 전에 작은 검증을 통해 흥미로운 소식과 탐험의 의욕을 불러일으킬 수 있음을 나타냅니다.\",\n      \"refs\": [\"c1\", \"c2\", \"c3\", \"c4\"]\n    }\n  ],\n  \"synthesis\": {\n    \"text\": \"두 가지 선택은 모두 당신의 성향과 책임감을 반영합니다. '은둔자'와 '펜타클 3'은 각각의 성격과 기술을 반영해, 당신이 선택할 수 있는 방향을 보여줍니다. '완드 10'은 선택의 기준이 되고, '완드 시종'은 확정 전에 작은 검증을 통해 흥미를 높일 수 있음을 나타냅니다.\",\n    \"refs\": [\"c1\", \"c2\", \"c3\", \"c4\"]\n  },\n  \"cards\": {\n    \"c0\": \"컵 9(정방향, 선택의 핵심): 선택을 어렵게 하는 핵심을 나타냅니다. 개인적인 만족과 정서적 충족을 누립니다.\",\n    \"c1\": \"은둔자(정방향, A의 성격): 혼자만의 탐색과 성찰에서 답의 실마리를 얻습니다.\",\n    \"c2\": \"펜타클 3(정방향, B의 성격): 숙련된 기술과 협력으로 완성도를 높입니다.\",\n    \"c3\": \"완드 10(역방향, 선택의 기준): 짐을 내려놓지 못하거나 책임 배분이 어려워집니다.\",\n    \"c4\": \"완드 시종(정방향, 다음 한 걸음): 확정 전 할 작은 검증. 흥미로운 소식과 탐험하려는 의욕이 생깁니다.\"\n  },\n  \"actions\": [\n    {\n      \"text\": \"가죽 공예를 지속할 경우, 자신의 성향과 기술을 더 깊이 탐색해보는 것이 좋습니다.\",\n      \"refs\": [\"c1\", \"c2\"]\n    },\n    {\n      \"text\": \"작은 주문을 받아보는 경우, 책임을 분담하거나 짐을 줄이는 방안을 고려해보세요.\",\n      \"refs\": [\"c3\"]\n    }\n  ],\n  \"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "가죽 공예를 취미로 남길지 작은 주문을 받아 볼지 비교해 주세요. 이득을 예측하기보다 제가 지키려는 즐거움과 부담을 살펴보고 싶어요.",
+        "text": "가죽 공예를 취미로 지속할지, 작은 주문을 받아보는 선택을 비교해 주세요. 두 가지 선택의 주요 차이점은 '즐거움'과 '부담'입니다. '은둔자' 카드는 당신의 성격을 반영해, 혼자만의 탐색과 성찰에서 답을 얻을 수 있음을 보여줍니다. '펜타클 3'은 숙련된 기술과 협력으로 완성도를 높일 수 있음을 의미합니다. '완드 10'은 선택의 기준으로, 짐을 내려놓지 못하거나 책임을 배분하는 어려움을 나타냅니다. '완드 시종'은 확정 전에 작은 검증을 통해 흥미로운 소식과 탐험의 의욕을 불러일으킬 수 있음을 나타냅니다.",
+        "refs": [
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "두 가지 선택은 모두 당신의 성향과 책임감을 반영합니다. '은둔자'와 '펜타클 3'은 각각의 성격과 기술을 반영해, 당신이 선택할 수 있는 방향을 보여줍니다. '완드 10'은 선택의 기준이 되고, '완드 시종'은 확정 전에 작은 검증을 통해 흥미를 높일 수 있음을 나타냅니다.",
+      "refs": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    },
+    "cards": {
+      "c0": "컵 9(정방향, 선택의 핵심): 선택을 어렵게 하는 핵심을 나타냅니다. 개인적인 만족과 정서적 충족을 누립니다.",
+      "c1": "은둔자(정방향, A의 성격): 혼자만의 탐색과 성찰에서 답의 실마리를 얻습니다.",
+      "c2": "펜타클 3(정방향, B의 성격): 숙련된 기술과 협력으로 완성도를 높입니다.",
+      "c3": "완드 10(역방향, 선택의 기준): 짐을 내려놓지 못하거나 책임 배분이 어려워집니다.",
+      "c4": "완드 시종(정방향, 다음 한 걸음): 확정 전 할 작은 검증. 흥미로운 소식과 탐험하려는 의욕이 생깁니다."
+    },
+    "actions": [
+      {
+        "text": "가죽 공예를 지속할 경우, 자신의 성향과 기술을 더 깊이 탐색해보는 것이 좋습니다.",
+        "refs": [
+          "c1",
+          "c2"
+        ]
+      },
+      {
+        "text": "작은 주문을 받아보는 경우, 책임을 분담하거나 짐을 줄이는 방안을 고려해보세요.",
+        "refs": [
+          "c3"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 782,
+    "prompt_tokens": 969,
+    "total_tokens": 1751,
+    "prompt_tokens_details": {
+      "cached_tokens": 550
+    }
+  },
+  "timings": {
+    "cache_n": 550,
+    "prompt_n": 419,
+    "prompt_ms": 22649.775,
+    "prompt_per_token_ms": 54.05674224343676,
+    "prompt_per_second": 18.49908001293611,
+    "predicted_n": 782,
+    "predicted_ms": 279407.524,
+    "predicted_per_token_ms": 357.7561126760563,
+    "predicted_per_second": 2.7952003182276512
+  },
+  "elapsedMs": 302199
+}

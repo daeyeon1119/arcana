@@ -1,0 +1,337 @@
+{
+  "id": "n08",
+  "kind": "fresh",
+  "question": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.",
+  "spread": "one",
+  "cards": [
+    [
+      "cu06",
+      false
+    ]
+  ],
+  "review": "감정 돌봄 요구를 따르는가. 사망·상실 사건을 없는데 만들어 내지 않는가. 한 장에서 카드 간 관계를 발명하지 않는가.",
+  "packet": {
+    "version": 1,
+    "question": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.",
+    "spread": "한 장의 메시지",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "cu06",
+        "name": "컵 6",
+        "orientation": "정방향",
+        "position": "핵심 메시지",
+        "positionMeaning": "지금 질문의 중심에 놓인 상징",
+        "meaning": "과거의 따뜻한 기억과 순수한 교류가 찾아옵니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "decision"
+    },
+    "headline": "선택을 같은 기준에서 비교하기",
+    "direct": "‘핵심 메시지’에 놓인 컵 6의 주제는 ‘과거의 온기’입니다. 각 선택에 필요한 시간과 부담, 되돌릴 수 있는 정도를 같은 기준으로 비교해 보세요.",
+    "sections": [
+      {
+        "title": "핵심 메시지",
+        "body": "‘핵심 메시지’의 컵 6 정방향은 ‘과거의 온기’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      }
+    ],
+    "actions": [
+      "두 선택을 같은 기준으로 적고, 되돌릴 수 있는 작은 확인부터 해보세요. 아직 모르는 조건은 추측으로 채우지 않아도 됩니다."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "decision",
+        "intent": "compare",
+        "phase": "active",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.",
+        "explicit": {
+          "health": false,
+          "finances": false,
+          "project": false,
+          "relationship": false,
+          "family": false,
+          "career": false,
+          "preparation": false,
+          "stress": false,
+          "decision": true
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.",
+          "evidenceQuestion": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.",
+          "requests": [
+            {
+              "kind": "compare",
+              "goal": "compare",
+              "text": "버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요",
+              "start": 30,
+              "end": 69
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "컵 6",
+          "role": "message",
+          "sections": [
+            0
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": false,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "compare",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 0,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "grammar",
+        "question": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요."
+      },
+      "domain": "decision",
+      "phase": "active",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "cu06",
+          "reverse": false,
+          "role": "message",
+          "meaning": "과거의 온기"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": false,
+      "relations": [],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "cu06",
+          "reverse": false,
+          "motifs": [
+            "connection",
+            "review"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.",
+        "evidenceQuestion": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.",
+        "requests": [
+          {
+            "kind": "compare",
+            "goal": "compare",
+            "text": "버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요",
+            "start": 30,
+            "end": 69
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [
+        {
+          "request": {
+            "kind": "compare",
+            "goal": "compare",
+            "text": "버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요",
+            "start": 30,
+            "end": 69
+          },
+          "text": "‘핵심 메시지’에 놓인 컵 6의 주제는 ‘과거의 온기’입니다. 각 선택에 필요한 시간과 부담, 되돌릴 수 있는 정도를 같은 기준으로 비교해 보세요.",
+          "refs": [
+            0
+          ]
+        }
+      ],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.\",\n      \"text\": \"이 감정은 과거의 따뜻한 기억과 순수한 교류가 당신에게 전달하고 있는 메시지입니다. 지금 이 감정을 받아들일 수 있는 방식은, 그 편지를 정리하는 과정에서 내면의 감정을 정리하는 것입니다.\",\n      \"refs\": [\"c0\"]\n    }\n  ],\n  \"synthesis\": {\n    \"text\": \"이 상황은 과거의 따뜻한 기억이 현재의 감정을 이끌고 있는 것으로 보입니다. 그 기억을 받아들여 내면의 평화를 찾는 것이 중요합니다.\",\n    \"refs\": [\"c0\"]\n  },\n  \"cards\": {\n    \"c0\": \"컵 6(정방향) - 지금 질문의 중심에 놓인 상징: 과거의 따뜻한 기억과 순수한 교류가 찾아옵니다.\"\n  },\n  \"actions\": [\n    {\n      \"text\": \"편지를 정리하는 과정에서 내면의 감정을 정리해보세요.\",\n      \"refs\": [\"c0\"]\n    },\n    {\n      \"text\": \"이 감정이 당신에게 전달하는 메시지를 적어보세요.\",\n      \"refs\": [\"c0\"]\n    }\n  ],\n  \"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "할머니의 오래된 편지를 정리하다 마음이 무거워졌어요. 버릴지 말지 결정하기보다 지금 이 감정을 어떻게 받아들일지 알고 싶어요.",
+        "text": "이 감정은 과거의 따뜻한 기억과 순수한 교류가 당신에게 전달하고 있는 메시지입니다. 지금 이 감정을 받아들일 수 있는 방식은, 그 편지를 정리하는 과정에서 내면의 감정을 정리하는 것입니다.",
+        "refs": [
+          "c0"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "이 상황은 과거의 따뜻한 기억이 현재의 감정을 이끌고 있는 것으로 보입니다. 그 기억을 받아들여 내면의 평화를 찾는 것이 중요합니다.",
+      "refs": [
+        "c0"
+      ]
+    },
+    "cards": {
+      "c0": "컵 6(정방향) - 지금 질문의 중심에 놓인 상징: 과거의 따뜻한 기억과 순수한 교류가 찾아옵니다."
+    },
+    "actions": [
+      {
+        "text": "편지를 정리하는 과정에서 내면의 감정을 정리해보세요.",
+        "refs": [
+          "c0"
+        ]
+      },
+      {
+        "text": "이 감정이 당신에게 전달하는 메시지를 적어보세요.",
+        "refs": [
+          "c0"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 350,
+    "prompt_tokens": 693,
+    "total_tokens": 1043,
+    "prompt_tokens_details": {
+      "cached_tokens": 550
+    }
+  },
+  "timings": {
+    "cache_n": 550,
+    "prompt_n": 143,
+    "prompt_ms": 7875.498,
+    "prompt_per_token_ms": 55.073412587412584,
+    "prompt_per_second": 18.157581907836178,
+    "predicted_n": 350,
+    "predicted_ms": 89650.507,
+    "predicted_per_token_ms": 256.8782435530086,
+    "predicted_per_second": 3.8928948834611727
+  },
+  "elapsedMs": 97700
+}
