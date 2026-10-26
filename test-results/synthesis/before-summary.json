@@ -1,0 +1,17 @@
+{
+  "phase": "before",
+  "questions": 24,
+  "readings": 72,
+  "checks": [
+    {
+      "name": "24 fixed new questions / 72 exact card combinations",
+      "ok": true
+    },
+    {
+      "name": "no browser runtime errors",
+      "ok": true
+    }
+  ],
+  "pageErrors": [],
+  "appSHA256": "dca5e73e51865b4fd5911a8c9db4a5cf307ceb155e03c375f5853046efefda1d"
+}

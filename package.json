@@ -1,6 +1,6 @@
 {
   "name": "arcana-tarot",
-  "version": "80.0.0",
+  "version": "81.0.0",
   "private": true,
   "description": "Offline Korean tarot reflection app and reproducible reading checks",
   "scripts": {
@@ -9,8 +9,9 @@
     "test:ui": "node scripts/ui.cjs",
     "test:images": "node scripts/images.cjs",
     "test:mat": "node scripts/mat.cjs after",
-    "test:editorial": "node scripts/editorial.cjs after && python scripts/editorial_report.py",
-    "test": "npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:editorial"
+    "test:editorial": "node scripts/editorial.cjs v81",
+    "test:synthesis": "node scripts/synthesis.cjs after",
+    "test": "npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:editorial && npm run test:synthesis"
   },
   "devDependencies": {
     "playwright": "1.62.1"

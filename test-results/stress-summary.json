@@ -1,6 +1,6 @@
 {
   "seed": 790026,
-  "appSHA256": "dca5e73e51865b4fd5911a8c9db4a5cf307ceb155e03c375f5853046efefda1d",
+  "appSHA256": "68d3e9a771c699078861c291f75c064fee29009547b11b2b901813406b488724",
   "scenarioCount": 128,
   "readingCount": 1024,
   "passed": 1024,
@@ -99,7 +99,7 @@
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -107,7 +107,7 @@
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -147,7 +147,7 @@
         "index": 3,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -155,7 +155,7 @@
         "index": 3,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -179,7 +179,7 @@
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -187,7 +187,7 @@
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -227,7 +227,7 @@
         "index": 3,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -235,7 +235,7 @@
         "index": 3,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -275,7 +275,7 @@
         "index": 1,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -283,7 +283,7 @@
         "index": 1,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -291,7 +291,7 @@
         "index": 2,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -299,7 +299,7 @@
         "index": 2,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -387,7 +387,7 @@
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -395,7 +395,7 @@
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -435,7 +435,7 @@
         "index": 3,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -443,7 +443,7 @@
         "index": 3,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -467,7 +467,7 @@
         "index": 0,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -475,7 +475,7 @@
         "index": 0,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -483,7 +483,7 @@
         "index": 1,
         "mode": "card",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -491,7 +491,7 @@
         "index": 1,
         "mode": "direction",
         "changed": true,
-        "replyChanged": false,
+        "replyChanged": true,
         "actionChanged": false
       },
       {
@@ -925,9 +925,9 @@
   "failures": [],
   "latencyMs": {
     "note": "Single local generation, excluding browser startup, UI animation and baseline comparison.",
-    "p50": 1.5,
-    "p95": 2.8,
-    "max": 38.2,
-    "total": 1739.3
+    "p50": 1.1,
+    "p95": 2.5,
+    "max": 25.2,
+    "total": 1335.5
   }
 }

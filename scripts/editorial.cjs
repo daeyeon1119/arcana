@@ -6,7 +6,7 @@ if(cases.length!==320||new Set(cases.map(c=>c.question)).size!==320)throw Error(
  const p=await b.newPage({reducedMotion:'reduce'}),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.route('https://**/*',r=>r.abort());await p.goto(b.appURL,{waitUntil:'domcontentloaded',timeout:60000});
  const readings=await p.evaluate(cases=>{arc79ForcedIntent='auto';let seed=80320;const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/2**32;};const spreads=['three','five','relationship5','career5','choice5','waiting3','celtic','one'];return cases.map((c,i)=>{const spread=spreads[i%8],pool=CARDS.map(c=>c.id);for(let j=pool.length-1;j>0;j--){const k=Math.floor(rand()*(j+1));[pool[j],pool[k]]=[pool[k],pool[j]];}const cards=pool.slice(0,SPREADS[spread].slots.length).map(id=>({id,rev:rand()<.5}));try{const r=__arcana79Build(c.question,spread,cards);return {...c,spread,cards,actualIntent:r.arc79.intent.primary,actualDomain:r.arc79.domain,headline:r.headline,direct:r.direct,actions:r.actions,sections:r.sections,facts:r.arc79.facts};}catch(e){return {...c,error:e.message};}});},cases);
  const qualityChecks=[];
- if(phase==='after'){
+ if(phase!=='before'){
   const find=id=>readings.find(r=>r.id===id),check=(name,ok)=>{qualityChecks.push({name,ok});if(!ok)errors.push('Editorial regression: '+name);};
   check('no foreign placeholder / broken text',readings.every(r=>!/[\u3040-\u30ff]|undefined|NaN|\[object Object\]|은는|을를/.test([r.direct,...(r.actions||[])].join(' '))));
   check('colleague apology is not an outgoing message',find(36).facts.sent===false&&!find(36).direct.includes('아직 답을 받지 못한'));
