@@ -1,0 +1,12 @@
+{
+  "engineFreezeCommit":"860e8ee",
+  "fixtureCommit":"ef1a29e",
+  "actualQuestions":32,
+  "actualReadingsPerVersion":256,
+  "primaryAnswersRead":{"spread":"five","questionIds":"n01–n32","count":32},
+  "detailedSectionsRead":{"spread":"celtic","questionIds":["n05","n09","n21","n25"],"cardSections":40,"includesAvailableSynthesis":true},
+  "reviewer":"implementation author",
+  "independentExpertReview":false,
+  "qualityScore":null,
+  "note":"First actual outputs remain immutable. Routing checks are insufficient: target mismatch, absent participants, quoted-content editing, omitted compound request, stage mismatch and missing-choice clarification were found by reading. Any fixes using these questions make subsequent runs regression evidence. Not every sentence of all 256 readings has been manually read."
+}
