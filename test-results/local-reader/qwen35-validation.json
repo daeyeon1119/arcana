@@ -1,0 +1,40 @@
+{
+  "appSHA256": "074f1b9bc92ecb018d79c07c91152ad81c43b1beedb5a807988f008f2aa0a92c",
+  "applicationEngine": "v82; unchanged",
+  "command": "npm test",
+  "exitCode": 0,
+  "environment": "Windows, Node.js and Microsoft Edge; no model download or inference in npm test",
+  "additionalChecksAfterFinalConfigurationEdits": {
+    "command": "node tests/local-reader-config.cjs; python tests/local-reader-report.py",
+    "configurationChecks": 17,
+    "reportIntegrityChecks": 7,
+    "passed": true
+  },
+  "regressionChecks": {
+    "contract": 28,
+    "planner": 16,
+    "loopbackTransport": 6,
+    "blindReviewUI": 14,
+    "questionModel": 229,
+    "readingCombinations": 1024,
+    "cardSensitivity": 74,
+    "ui": 25,
+    "originalImageChecks": 7,
+    "matLayoutsWithoutOverflow": 32,
+    "editorialChecks": 12,
+    "synthesisChecks": 21,
+    "contextChecks": 16,
+    "questionRegressionChecks": 5
+  },
+  "knownContextDiagnosticMismatches": 2,
+  "knownContextNote": "The v82 context diagnostic still records two domain mismatches. Passing the command does not mean every question is understood correctly. No production reading logic changed in this candidate study.",
+  "actualModelAnswers": {
+    "singleStage": 3,
+    "twoStage": 1,
+    "authorReviewed": 4,
+    "acceptedForApplication": 0,
+    "independentProfessionalReviews": 0,
+    "separateNewQuestionsNotExecuted": 14
+  },
+  "note": "Technical regression and study bookkeeping, not generalization or professional-quality evidence. First generated model answers and review notes are stored separately and unchanged."
+}

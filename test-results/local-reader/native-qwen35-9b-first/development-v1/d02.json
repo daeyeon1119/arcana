@@ -1,0 +1,542 @@
+{
+  "id": "d02",
+  "kind": "development",
+  "question": "진료 때 긴장하면 궁금했던 말을 잊어요. 다음 진료를 위해 질문을 어떻게 준비할까요?",
+  "spread": "three",
+  "cards": [
+    [
+      "sw04",
+      false
+    ],
+    [
+      "ar02",
+      true
+    ],
+    [
+      "sw01",
+      false
+    ]
+  ],
+  "review": "진료 대화 준비를 구체적으로 돕는가. 진단 주의문으로 요구를 대체하지 않는가.",
+  "packet": {
+    "version": 1,
+    "question": "진료 때 긴장하면 궁금했던 말을 잊어요. 다음 진료를 위해 질문을 어떻게 준비할까요?",
+    "spread": "과거 · 현재 · 미래",
+    "focus": null,
+    "topic": null,
+    "cards": [
+      {
+        "ref": "c0",
+        "id": "sw04",
+        "name": "소드 4",
+        "orientation": "정방향",
+        "position": "과거",
+        "positionMeaning": "지금 상황을 형성한 배경",
+        "meaning": "멈춤과 휴식을 통해 생각을 회복해야 합니다."
+      },
+      {
+        "ref": "c1",
+        "id": "ar02",
+        "name": "여사제",
+        "orientation": "역방향",
+        "position": "현재",
+        "positionMeaning": "현재 가장 중요하게 작용하는 흐름",
+        "meaning": "직관을 외면하거나 비밀 때문에 판단이 흐려질 수 있습니다."
+      },
+      {
+        "ref": "c2",
+        "id": "sw01",
+        "name": "소드 에이스",
+        "orientation": "정방향",
+        "position": "미래",
+        "positionMeaning": "지금 방향이 이어질 때의 가능성",
+        "meaning": "진실을 명확히 보고 새로운 결론을 내릴 때입니다."
+      }
+    ]
+  },
+  "baseline": {
+    "ctx": {
+      "key": "health"
+    },
+    "headline": "건강은 진료와 검사로 확인하기",
+    "direct": "카드로 진단·치료 여부나 검사 결과를 판단할 수 없습니다. 검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요. 걱정을 돌아보는 상징은 여사제 역방향의 ‘직관에 대한 불신’입니다.",
+    "sections": [
+      {
+        "title": "과거",
+        "body": "‘과거’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+        "refs": [
+          0
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "현재",
+        "body": "‘현재’의 여사제 역방향은 ‘직관에 대한 불신’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+        "refs": [
+          1
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "미래",
+        "body": "‘미래’의 소드 에이스 정방향은 ‘선명한 사실 확인’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+        "refs": [
+          2
+        ],
+        "kind": "card"
+      },
+      {
+        "title": "카드가 만드는 중심 흐름",
+        "body": "‘현재’의 여사제 역방향은 ‘직관에 대한 불신’을 보여 줍니다. ‘미래’의 소드 에이스 정방향은 ‘선명한 사실 확인’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+        "refs": [
+          1,
+          2
+        ],
+        "kind": "relational"
+      }
+    ],
+    "actions": [
+      "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요."
+    ],
+    "footer": "타로는 상징을 통한 성찰입니다. 실제 미래·타인의 마음·검사 결과를 확인하는 수단이 아닙니다.",
+    "layoutLabel": "THE READING · 질문에 대한 답변",
+    "arc72": {
+      "scene": {
+        "domain": "health",
+        "intent": "action",
+        "phase": "active",
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "question": "진료 때 긴장하면 궁금했던 말을 잊어요. 다음 진료를 위해 질문을 어떻게 준비할까요?",
+        "explicit": {
+          "health": true,
+          "finances": false,
+          "project": false,
+          "relationship": false,
+          "family": false,
+          "career": false,
+          "preparation": true,
+          "stress": true,
+          "decision": false
+        },
+        "medical": false,
+        "urgent": false,
+        "boundary": false,
+        "abuse": false,
+        "arc82": {
+          "version": 82,
+          "question": "진료 때 긴장하면 궁금했던 말을 잊어요. 다음 진료를 위해 질문을 어떻게 준비할까요?",
+          "evidenceQuestion": "진료 때 긴장하면 궁금했던 말을 잊어요. 다음 진료를 위해 질문을 어떻게 준비할까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "다음 진료를 위해 질문을 어떻게 준비할까요",
+              "start": 23,
+              "end": 46
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        }
+      },
+      "influence": [
+        {
+          "index": 0,
+          "name": "소드 4",
+          "role": "past",
+          "sections": [
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "여사제",
+          "role": "now",
+          "sections": [
+            1,
+            3
+          ]
+        },
+        {
+          "index": 2,
+          "name": "소드 에이스",
+          "role": "future",
+          "sections": [
+            2,
+            3
+          ]
+        }
+      ],
+      "rules": {
+        "noFirstContact": false,
+        "knownOutcome": false,
+        "noInventedConflict": false,
+        "medical": true,
+        "financial": false,
+        "symbolicOnly": true
+      },
+      "stated": [],
+      "audit": []
+    },
+    "arc79": {
+      "version": 79,
+      "intent": {
+        "primary": "action",
+        "secondary": null,
+        "scores": {
+          "forecast": 0,
+          "action": 10,
+          "cause": 0,
+          "compare": 0,
+          "emotion": 0,
+          "open": 1
+        },
+        "evidence": {
+          "compare": [],
+          "cause": [],
+          "action": [
+            "어떻게 준비"
+          ],
+          "forecast": [],
+          "emotion": []
+        },
+        "confidence": "grammar",
+        "question": "진료 때 긴장하면 궁금했던 말을 잊어요. 다음 진료를 위해 질문을 어떻게 준비할까요?"
+      },
+      "domain": "health",
+      "phase": "active",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "override": "auto",
+      "relations": [
+        {
+          "type": "transition",
+          "indices": [
+            1,
+            2
+          ],
+          "left": "여사제",
+          "right": "소드 에이스",
+          "roles": [
+            "now",
+            "future"
+          ],
+          "meanings": [
+            "직관에 대한 불신",
+            "선명한 사실 확인"
+          ],
+          "weight": 15
+        },
+        {
+          "type": "transition",
+          "indices": [
+            0,
+            1
+          ],
+          "left": "소드 4",
+          "right": "여사제",
+          "roles": [
+            "past",
+            "now"
+          ],
+          "meanings": [
+            "필요한 휴식",
+            "직관에 대한 불신"
+          ],
+          "weight": 13
+        },
+        {
+          "type": "transition",
+          "indices": [
+            0,
+            2
+          ],
+          "left": "소드 4",
+          "right": "소드 에이스",
+          "roles": [
+            "past",
+            "future"
+          ],
+          "meanings": [
+            "필요한 휴식",
+            "선명한 사실 확인"
+          ],
+          "weight": 12
+        }
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "id": "sw04",
+          "reverse": false,
+          "role": "past",
+          "meaning": "필요한 휴식"
+        },
+        {
+          "index": 1,
+          "id": "ar02",
+          "reverse": true,
+          "role": "now",
+          "meaning": "직관에 대한 불신"
+        },
+        {
+          "index": 2,
+          "id": "sw01",
+          "reverse": false,
+          "role": "future",
+          "meaning": "선명한 사실 확인"
+        }
+      ],
+      "audit": []
+    },
+    "arc80": {
+      "editorialVersion": 80
+    },
+    "arc81": {
+      "version": 81,
+      "profileSource": "ARC58_ATOMS editorial motifs",
+      "directSynthesisUsed": false,
+      "relations": [
+        {
+          "refs": [
+            1,
+            2
+          ],
+          "kind": "complement",
+          "semanticKind": "complement",
+          "axis": "evidence",
+          "shared": [],
+          "leftMotifs": [
+            "doubt",
+            "uncertain"
+          ],
+          "rightMotifs": [
+            "clarity",
+            "review"
+          ],
+          "insight": "모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다.",
+          "positional": "이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다."
+        },
+        {
+          "refs": [
+            0,
+            1
+          ],
+          "kind": "distinct",
+          "semanticKind": "distinct",
+          "axis": null,
+          "shared": [],
+          "leftMotifs": [
+            "pause",
+            "recovery"
+          ],
+          "rightMotifs": [
+            "doubt",
+            "uncertain"
+          ],
+          "insight": "‘필요한 휴식’과 ‘직관에 대한 불신’은 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘생각을 정리하기 위한 멈춤’, 다른 쪽에서는 ‘모호한 징후에 지나친 의미를 부여함’을 살펴봅니다.",
+          "positional": ""
+        }
+      ],
+      "cardMotifs": [
+        {
+          "index": 0,
+          "id": "sw04",
+          "reverse": false,
+          "motifs": [
+            "pause",
+            "recovery"
+          ]
+        },
+        {
+          "index": 1,
+          "id": "ar02",
+          "reverse": true,
+          "motifs": [
+            "doubt",
+            "uncertain"
+          ]
+        },
+        {
+          "index": 2,
+          "id": "sw01",
+          "reverse": false,
+          "motifs": [
+            "clarity",
+            "review"
+          ]
+        }
+      ]
+    },
+    "arc82": {
+      "version": 82,
+      "model": {
+        "version": 82,
+        "question": "진료 때 긴장하면 궁금했던 말을 잊어요. 다음 진료를 위해 질문을 어떻게 준비할까요?",
+        "evidenceQuestion": "진료 때 긴장하면 궁금했던 말을 잊어요. 다음 진료를 위해 질문을 어떻게 준비할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "prepare",
+            "text": "다음 진료를 위해 질문을 어떻게 준비할까요",
+            "start": 23,
+            "end": 46
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "manualFocus": false,
+      "answers": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "prepare",
+            "text": "다음 진료를 위해 질문을 어떻게 준비할까요",
+            "start": 23,
+            "end": 46
+          },
+          "text": "카드로 진단·치료 여부나 검사 결과를 판단할 수 없습니다. 검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요. 걱정을 돌아보는 상징은 여사제 역방향의 ‘직관에 대한 불신’입니다.",
+          "refs": [
+            1
+          ]
+        }
+      ],
+      "needsContext": false
+    }
+  },
+  "raw": "{\n  \"requests\": [\n    {\n      \"source\": \"다음 진료를 위해 질문을 어떻게 준비할까요?\",\n      \"text\": \"진료 전 긴장으로 인해 중요한 내용을 잊어버리는 상황을 막기 위해, 먼저 충분한 휴식을 취하고 직접적인 질문 대신 핵심 증상에 대한 객관적 기록 (예: 증상 시작 시기, 통증 부위) 을 미리 작성해 두는 것이 효과적입니다.\",\n      \"refs\": [\n        \"c0\",\n        \"c1\",\n        \"c2\"\n      ]\n    }\n  ],\n  \"synthesis\":\n    {\"text\": \"과거의 멈춤이 필요함을 알려주는 소드 4와 현재 직관이 흐려진 여사제 역은, 진료 전 불안으로 인해 생각이 끊기는 상황을 반영합니다. 이러한 긴장을 해소하고 진실을 명확히 하는 소드 에이스가 미래를 제시하므로, 사전에 증상을 정리한 노트를 준비하여 심리적 여유를 만드는 것이 중요합니다.\",\"refs\": [\"c0\", \"c1\", \"c2\"]},\"cards\":\n    {\"c0\": \"과거의 경험에서 멈춤과 휴식이 필요하다는 교훈은, 진료 전 충분한 휴식을 통해 정신을 안정시키는 데 도움이 됩니다.\",\"c1\": \"현재 직관이 흐려진 여사제 역은 긴장으로 인해 질문이 막히는 상황을 보여주므로, 감정보다는 구체적인 증상 사실 위주로 준비해야 합니다.\",\"c2\": \"미래의 소드 에이스는 명확한 진실을 밝힐 수 있음을 암시하며, 미리 정리된 질문 목록을 제시하면 새로운 결론을 도출하는 데 도움이 됩니다.\"},\"actions\":\n    [{\"text\": \"진료 전 10 분간 깊은 숨을 쉬며 휴식 시간을 가지세요.\",\"refs\": [\"c0\"]},{\"text\": \"가장 궁금한 증상 하나와 그 시작 시점을 적은 종이를 진료실에 넣어두세요.\",\"refs\": [\"c2\"]}],\"unknowns\": []\n}",
+  "parsed": {
+    "requests": [
+      {
+        "source": "다음 진료를 위해 질문을 어떻게 준비할까요?",
+        "text": "진료 전 긴장으로 인해 중요한 내용을 잊어버리는 상황을 막기 위해, 먼저 충분한 휴식을 취하고 직접적인 질문 대신 핵심 증상에 대한 객관적 기록 (예: 증상 시작 시기, 통증 부위) 을 미리 작성해 두는 것이 효과적입니다.",
+        "refs": [
+          "c0",
+          "c1",
+          "c2"
+        ]
+      }
+    ],
+    "synthesis": {
+      "text": "과거의 멈춤이 필요함을 알려주는 소드 4와 현재 직관이 흐려진 여사제 역은, 진료 전 불안으로 인해 생각이 끊기는 상황을 반영합니다. 이러한 긴장을 해소하고 진실을 명확히 하는 소드 에이스가 미래를 제시하므로, 사전에 증상을 정리한 노트를 준비하여 심리적 여유를 만드는 것이 중요합니다.",
+      "refs": [
+        "c0",
+        "c1",
+        "c2"
+      ]
+    },
+    "cards": {
+      "c0": "과거의 경험에서 멈춤과 휴식이 필요하다는 교훈은, 진료 전 충분한 휴식을 통해 정신을 안정시키는 데 도움이 됩니다.",
+      "c1": "현재 직관이 흐려진 여사제 역은 긴장으로 인해 질문이 막히는 상황을 보여주므로, 감정보다는 구체적인 증상 사실 위주로 준비해야 합니다.",
+      "c2": "미래의 소드 에이스는 명확한 진실을 밝힐 수 있음을 암시하며, 미리 정리된 질문 목록을 제시하면 새로운 결론을 도출하는 데 도움이 됩니다."
+    },
+    "actions": [
+      {
+        "text": "진료 전 10 분간 깊은 숨을 쉬며 휴식 시간을 가지세요.",
+        "refs": [
+          "c0"
+        ]
+      },
+      {
+        "text": "가장 궁금한 증상 하나와 그 시작 시점을 적은 종이를 진료실에 넣어두세요.",
+        "refs": [
+          "c2"
+        ]
+      }
+    ],
+    "unknowns": []
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  },
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 415,
+    "prompt_tokens": 649,
+    "total_tokens": 1064,
+    "prompt_tokens_details": {
+      "cached_tokens": 422
+    }
+  },
+  "timings": {
+    "cache_n": 422,
+    "prompt_n": 227,
+    "prompt_ms": 22433.9,
+    "prompt_per_token_ms": 98.82775330396477,
+    "prompt_per_second": 10.118615131564285,
+    "predicted_n": 415,
+    "predicted_ms": 154841.65,
+    "predicted_per_token_ms": 374.01364734299517,
+    "predicted_per_second": 2.67369922756571
+  },
+  "elapsedMs": 177609
+}

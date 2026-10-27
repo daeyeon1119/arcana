@@ -3,12 +3,9 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const {spawn}=require('node:child_process'),net=require('node:net'),core=require('../src/local-reader-core.js');
 const postLocalJSON=require('./local-model-http.cjs');
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex'),canonical=p=>fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n');
-const resources=JSON.parse(fs.readFileSync('scripts/local-reader-resources.json','utf8')),fixture=JSON.parse(fs.readFileSync('tests/local-reader-first.json','utf8'));
-const staged=process.argv.includes('--staged'),planner=staged?require('../src/local-reader-planner.js'):null;
-if(process.argv.some(x=>x.startsWith('--reuse=')))throw Error('Shared inference servers are not supported. Run diagnostics sequentially.');
-const runTag=process.argv.find(x=>x.startsWith('--run='))?.slice(6),selectedIds=process.argv.find(x=>x.startsWith('--cases='))?.slice(8).split(',');
-if(runTag&&!/^[a-z0-9][a-z0-9-]{0,50}$/.test(runTag))throw Error('Invalid run directory name');
-const folder='test-results/local-reader/'+(staged?'native-staged-first':'native-first')+(runTag?'/'+runTag:''),cache=path.resolve('.cache/local-reader');
+const configAPI=require('./local-reader-config.cjs'),config=configAPI.setup(process.argv.slice(2));
+const {resources,fixture,fixturePath,profileId,profile,staged,selectedIds,limit,folder,cache}=config,planner=staged?require('../src/local-reader-planner.js'):null;
+if(config.describe){console.log(JSON.stringify({profile:profileId,model:resources.model,folder,fixture:path.relative(process.cwd(),fixturePath),selectedCaseIds:fixture.cases.filter(c=>!selectedIds||selectedIds.includes(c.id)).slice(0,limit).map(c=>c.id),context:profile.context||8192,generation:profile.generation||{temperature:0.4,top_p:0.9},note:'Read-only description. No model starts, downloads or question uploads.'},null,2));process.exit(0);}
 async function fileHash(file){const h=crypto.createHash('sha256');for await(const chunk of fs.createReadStream(file))h.update(chunk);return h.digest('hex');}
 (async()=>{
  if(process.env.ARCANA_MODEL_DIAGNOSTIC!=='1')throw Error('Explicitly set ARCANA_MODEL_DIAGNOSTIC=1 for free local inference.');
@@ -18,9 +15,7 @@ async function fileHash(file){const h=crypto.createHash('sha256');for await(cons
  const binaries=Object.keys(runtimeHashes).filter(p=>path.basename(p)==='llama-server.exe');assert.equal(binaries.length,1);
  const executable=path.join(cache,'runtime',binaries[0]);
  fs.mkdirSync(folder,{recursive:true});
- const freeze={appSHA256:hash(fs.readFileSync('index.html')),contractSHA256:hash(canonical('src/local-reader-core.js')),fixtureSHA256:hash(canonical('tests/local-reader-first.json')),runtime:resources.runtime,model:resources.model,temperature:0.4,top_p:0.9,max_tokens:1800,seed:830027,context:8192,threads:4};
- if(staged)Object.assign(freeze,{plannerSHA256:hash(canonical('src/local-reader-planner.js')),planTemperature:0.2,planMaxTokens:600,stages:['question-without-cards','grounded-reading']});
- if(selectedIds){assert(selectedIds.length&&selectedIds.every(id=>fixture.cases.some(c=>c.id===id)),'Unknown case');freeze.selectedCaseIds=selectedIds;}
+ const freeze=configAPI.freezeFor(config,{app:hash(fs.readFileSync('index.html')),contract:hash(canonical('src/local-reader-core.js')),fixture:hash(canonical(fixturePath)),planner:staged?hash(canonical('src/local-reader-planner.js')):undefined});
  if(fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.parse(fs.readFileSync(folder+'/freeze.json','utf8')),freeze,'Preserve first outputs; use another directory for another candidate.');
  else fs.writeFileSync(folder+'/freeze.json',JSON.stringify(freeze,null,2));
  let packets;
@@ -38,8 +33,7 @@ async function fileHash(file){const h=crypto.createHash('sha256');for await(cons
   while(Date.now()-loadStarted<180000){if(launchError)throw launchError;if(child.exitCode!==null)throw Error('Local model server exited: '+child.exitCode);try{const r=await fetch(endpoint+'/health',{signal:AbortSignal.timeout(1000)});if(r.ok){ready=true;break;}}catch{}await new Promise(r=>setTimeout(r,500));}
   if(!ready)throw Error('Local model did not become ready.');
   const version=await (await fetch(endpoint+'/props')).json();assert.equal(path.resolve(version.model_path),modelPath,'Loopback server must run the verified local model');assert(String(version.build_info).startsWith('b11900-'),'Pinned runtime build required');const runtimeFile=folder+(fs.existsSync(folder+'/runtime.json')?'/runtime-resume-'+Date.now()+'.json':'/runtime.json');fs.writeFileSync(runtimeFile,JSON.stringify({loadMs:Date.now()-loadStarted,args:args.map(x=>x===modelPath?resources.model.filename:x),buildInfo:version.build_info||null,totalSlots:version.total_slots||null,modelPath:resources.model.filename,endpoint:'127.0.0.1 random port; this process only'},null,2));
-  const limit=Number(process.argv.find(x=>x.startsWith('--limit='))?.slice(8)||fixture.cases.length);
-  const complete=(messages,schema,options={})=>postLocalJSON(endpoint+'/v1/chat/completions',{model:'local',messages,temperature:freeze.temperature,top_p:freeze.top_p,max_tokens:freeze.max_tokens,seed:freeze.seed,response_format:{type:'json_object',schema},chat_template_kwargs:{enable_thinking:false},...options});
+  const complete=(messages,schema,options={})=>postLocalJSON(endpoint+'/v1/chat/completions',{model:'local',messages,temperature:freeze.temperature,top_p:freeze.top_p,...(profile.generation||{}),max_tokens:freeze.max_tokens,seed:freeze.seed,response_format:{type:'json_object',schema},chat_template_kwargs:{enable_thinking:false},...options});
   for(const c of fixture.cases.filter(c=>!selectedIds||selectedIds.includes(c.id)).slice(0,limit)){
    const outputPath=folder+'/'+c.id+'.json';if(fs.existsSync(outputPath)){results.push(JSON.parse(fs.readFileSync(outputPath,'utf8')));continue;}
    const stored=packets.find(x=>x.id===c.id),packet=core.packet(stored.input),started=Date.now();console.log('Generating '+c.id+' ('+c.spread+') on local CPU');

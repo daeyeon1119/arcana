@@ -1,0 +1,74 @@
+{
+  "total": 17,
+  "checks": [
+    {
+      "name": "original experiment freeze is preserved byte for byte in its values",
+      "ok": true
+    },
+    {
+      "name": "new model has separate resources, sampler and output folder",
+      "ok": true
+    },
+    {
+      "name": "profile objects cannot mutate the next default load",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --profile=paid-provider",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --profile=__proto__",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --profile=",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --profile=qwen3-4b --profile=qwen35-9b",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --reuse=http://127.0.0.1:8080",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --run=../../outside",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --fixture=package.json",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --cases=missing",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --cases=d01,d01",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --limit=0",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --limit=100000",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --case=d01",
+      "ok": true
+    },
+    {
+      "name": "case limit is frozen so resume cannot silently expand its sample",
+      "ok": true
+    },
+    {
+      "name": "description mode exits without requiring or starting a model",
+      "ok": true
+    }
+  ],
+  "note": "Configuration and reproducibility checks. No model answers generated or evaluated."
+}
