@@ -1,7 +1,7 @@
 /* Actual v82/v83 outputs, with immutable first-run evidence separate from development. */
 const fs=require('node:fs'),crypto=require('node:crypto'),assert=require('node:assert/strict'),zlib=require('node:zlib'),{execFileSync}=require('node:child_process');
-const phase=process.argv[2]||'development';assert(['development','first','regression','fresh'].includes(phase),'Unknown evaluation phase');
-const fixturePath=phase==='development'?'tests/task-policy-dev.json':phase==='fresh'?'tests/task-policy-fresh.json':'tests/task-policy-new.json';
+const phase=process.argv[2]||'development';assert(['development','first','regression','fresh','fresh-regression'].includes(phase),'Unknown evaluation phase');
+const fixturePath=phase==='development'?'tests/task-policy-dev.json':phase.startsWith('fresh')?'tests/task-policy-fresh.json':'tests/task-policy-new.json';
 let fixtureText=fs.readFileSync(fixturePath,'utf8').replace(/\r\n/g,'\n');const fixture=JSON.parse(fixtureText),folder='test-results/task-policy/'+phase;
 if(phase==='regression'){
  const expectations=JSON.parse(fs.readFileSync('tests/task-policy-regression-expectations.json','utf8'));

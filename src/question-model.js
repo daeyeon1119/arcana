@@ -6,7 +6,7 @@
  const REPLY=/(?:답장|회신|답변|대답|(?<!정|오|문)답(?=이|을|도|은|는|해|했|하|할))/g;
  const RESULT=/(?:검사\s*결과|채점\s*결과|결과|성적|점수|발표|합격|불합격|탈락|낙방|선발|승인|당선)/g;
  const ASSESS=/(?:시험|면접|평가|심사)/g;
- const ARTIFACT=/(?:원고|과제|제안서|신청서|지원서|서류|작품|답안)/g;
+ const ARTIFACT=/(?:원고|과제|제안서|신청서|신청|지원서|서류|작품|답안)/g;
  const OTHER='(?:친구|동료|상대(?:방)?|연인|애인|그\\s*사람|엄마|아빠|부모님|자녀|고객|담당자|회사|팀장|상사|동생|형제)';
  const SUBJECT=new RegExp(`(${OTHER}|저|제|나|내)(가|는|은|이|도)(?!게|라고|라)`,'g');
  const RECIPIENT=new RegExp(`(${OTHER}|저|제|나|내)(에게서|한테서|에게|한테|께)`,'g');
@@ -31,7 +31,7 @@
   return {actor:/^(?:저|제|나|내)$/.test(m[1])?'self':'other',incoming:/서$/.test(m[2]),evidence:m[0]};
  }
  function modality(text){
-  if(/(?:면|다면|다면야|경우|가정|라고\s*가정|했으면|았으면|었으면|다면)\b|(?:했|됐|받았|보냈|왔)(?:으면|다면)/.test(text))return 'conditional';
+  if(/(?:면|다면|다면야|경우|가정|라고\s*가정|했으면|았으면|었으면|다면)\b|(?:했|됐|받았|보냈|왔)(?:으면|다면)|(?:했|받았|보냈|왔|제출했|접수됐)을\s*때/.test(text))return 'conditional';
   if(/(?:까\s*봐|을까\s*봐|다고\s*(?:생각|추측|상상)|일지도|인\s*것\s*같|했을까|왔을까|받았을까|보냈을까|꿈에서)|(?:했는지|보냈는지|왔는지|받았는지).{0,8}(?:모르|모릅|알지\s*못)/.test(text))return 'uncertain';
   if(/(?:다는|라는)\s*말|전해\s*들|다고\s*(?:했|하|해|말)/.test(text))return 'reported';
   const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|확인|제출|공개)|(?:하지|보내지|전하지|받지|오지|나오지|읽지|확인하지|제출하지|공개되지)\s*않/.test(text);
@@ -157,7 +157,12 @@
    else if((development||/어떤\s*(?:결과|미래|흐름|가능성|마음)|어떻게\s*(?:될|흘러)|결과.{0,8}기대/.test(t))&&!emotionalStatement&&!/(?:설명|물어|준비|바꿀|해야)/.test(t))emit('forecast',part);
    else if(action){
     const parallel=t.match(/(?:일|행동|준비|기준|방법)과\s*/);
-    if(parallel&&/각각|함께|동시에/.test(t)&&EMOTION.test(t.slice(parallel.index+parallel[0].length))){const end=parallel.index+parallel[0].indexOf('과');emit('action',{...part,text:part.text.slice(0,end),source:part.source.slice(0,end),end:part.start+end});}
+    if(parallel&&/각각|함께|동시에/.test(t)){
+     const end=parallel.index+parallel[0].indexOf('과'),start=parallel.index+parallel[0].length;
+     emit('action',{...part,text:part.text.slice(0,end),source:part.source.slice(0,end),end:part.start+end});
+     const right={...part,text:part.text.slice(start),source:part.source.slice(start),start:part.start+start};
+     if(EMOTION.test(right.text)&&/다룰|다루|돌볼|돌보|추스/.test(right.text))emit('emotion',right,'cope');else emit('action',right);
+    }
     else emit('action',part);
    }
    else if(forecast)emit('forecast',part);

@@ -15,6 +15,7 @@
     "test:question-model": "node tests/question-model.cjs",
     "test:task-policy": "node tests/task-policy.cjs",
     "test:task-reading": "node scripts/task-reading.cjs development",
+    "test:task-regression": "node scripts/task-reading.cjs regression && node scripts/task-reading.cjs fresh-regression",
     "test:local-contract": "node tests/local-reader-core.cjs",
     "test:local-planner": "node tests/local-reader-planner.cjs",
     "test:local-separated": "node tests/local-reader-separated.cjs",
