@@ -38,7 +38,9 @@ const scenarios=fs.readFileSync('tests/scenarios.tsv','utf8').trim().split(/\r?\
      if(/(?:반드시\s*합격|무조건\s*수익|확실히\s*완치|100%\s*성공)/.test(all))issues.push('unfounded-prediction');
      if(fresh.scene.boundary&&!/멈추|경계/.test(r.direct))issues.push('consent-boundary');
      if(fresh.scene.urgent&&!/응급/.test(r.direct))issues.push('urgent-health');
-     if(r.arc79.domain==='health'&&!/진단|진료|응급/.test(r.direct))issues.push('medical-limit');
+     // Preparing questions for a clinician is adequate medical grounding too;
+     // requiring the literal word "diagnosis" would reject that useful support.
+     if(r.arc79.domain==='health'&&!/진단|진료|응급|의료진|약사/.test(r.direct))issues.push('medical-limit');
      const identical=__arcana79Build(c.question,spread,cards);if(JSON.stringify(r)!==JSON.stringify(identical))issues.push('nondeterministic');
     }catch(e){issues.push('runtime: '+e.message);}
     results.push({caseId:`${c.id}-${spread}`,question:c.question,spread,cards,elapsedMs,expected:{intent:c.intent,domain:c.domain},issues,answer:r?{headline:r.headline,direct:r.direct,actions:r.actions,sections:r.sections,intent:r.arc79.intent.primary,domain:r.arc79.domain}:null,before:previous?{direct:previous.direct,action:previous.actions[0]}:null});

@@ -2,7 +2,12 @@
 const fs=require('node:fs'),crypto=require('node:crypto'),assert=require('node:assert/strict'),zlib=require('node:zlib'),{execFileSync}=require('node:child_process');
 const phase=process.argv[2]||'development';assert(['development','first','regression'].includes(phase),'Unknown evaluation phase');
 const fixturePath=phase==='development'?'tests/task-policy-dev.json':'tests/task-policy-new.json';
-const fixtureText=fs.readFileSync(fixturePath,'utf8').replace(/\r\n/g,'\n'),fixture=JSON.parse(fixtureText),folder='test-results/task-policy/'+phase;
+let fixtureText=fs.readFileSync(fixturePath,'utf8').replace(/\r\n/g,'\n');const fixture=JSON.parse(fixtureText),folder='test-results/task-policy/'+phase;
+if(phase==='regression'){
+ const expectations=JSON.parse(fs.readFileSync('tests/task-policy-regression-expectations.json','utf8'));
+ for(const item of fixture.cases){const override=expectations.overrides[item.id];if(override){item.operation=override.operation;item.regressionExpectationReason=override.reason;}}
+ fixture.note+=' '+expectations.note;fixtureText=JSON.stringify(fixture);
+}
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 const baseline=execFileSync('git',['show','56b357c:index.html'],{maxBuffer:40*1024*1024});assert.equal(hash(baseline),'fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb');
 fs.mkdirSync('.cache',{recursive:true});fs.writeFileSync('.cache/task-v82.html',baseline);fs.mkdirSync(folder,{recursive:true});

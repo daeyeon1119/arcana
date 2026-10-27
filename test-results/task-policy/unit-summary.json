@@ -97,6 +97,10 @@
       "ok": true
     },
     {
+      "name": "preparing questions is distinct from sending them while a reply is pending",
+      "ok": true
+    },
+    {
       "name": "received answer is acknowledged without inventing its contents",
       "ok": true
     },
@@ -195,8 +199,56 @@
     {
       "name": "actual bounded question model supplies a usable task: 자료를 어떻게 설명할까요?",
       "ok": true
+    },
+    {
+      "name": "artifact target survives broad family and financial labels: 안내문",
+      "ok": true
+    },
+    {
+      "name": "artifact target survives broad family and financial labels: 회칙 문서",
+      "ok": true
+    },
+    {
+      "name": "artifact target survives broad family and financial labels: 교육 자료",
+      "ok": true
+    },
+    {
+      "name": "an absent participant is not an existing collaborator: 팀원",
+      "ok": true
+    },
+    {
+      "name": "an absent participant is not an existing collaborator: 동료",
+      "ok": true
+    },
+    {
+      "name": "an absent participant is not an existing collaborator: 협업자",
+      "ok": true
+    },
+    {
+      "name": "a financial template needs a financial referent beyond a homonymous loan word",
+      "ok": true
+    },
+    {
+      "name": "a homographic substring inside an unrelated ending does not satisfy the artifact target",
+      "ok": true
+    },
+    {
+      "name": "a recipient job title is not itself a request to change responsibilities",
+      "ok": true
+    },
+    {
+      "name": "a submitted stage requires conditions after receipt rather than new eligibility",
+      "ok": true
+    },
+    {
+      "name": "quoted content checking does not assert the quote as a personal event: 용량을 항상 바꿔도 된다",
+      "ok": true
+    },
+    {
+      "name": "quoted content checking does not assert the quote as a personal event: 수익은 무조건 보장된다",
+      "ok": true
     }
   ],
-  "total": 49,
-  "note": "Authored development/property checks for request routing and factual/safety invariants. Not a first-seen quality benchmark or professional evaluation."
+  "total": 62,
+  "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by the preserved first 32 questions. Not a first-seen quality benchmark or professional evaluation."
 }

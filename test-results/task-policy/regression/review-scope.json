@@ -1,0 +1,26 @@
+{
+  "primaryAnswersRead": {
+    "spread": "five",
+    "questionIds": [
+      "n04",
+      "n05",
+      "n07",
+      "n08",
+      "n09",
+      "n11",
+      "n15",
+      "n17",
+      "n21",
+      "n22",
+      "n24",
+      "n25",
+      "n29",
+      "n32"
+    ],
+    "count": 14
+  },
+  "reviewer": "implementation author",
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "Review focuses on changed 5-card primary answers. First outputs and first notes remain unchanged. General wording, weak application of card motifs, and limited financial verification-state differences remain. Not a claim that all 256 full readings were manually read."
+}
