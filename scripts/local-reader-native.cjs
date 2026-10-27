@@ -4,7 +4,7 @@ const {spawn}=require('node:child_process'),net=require('node:net'),core=require
 const postLocalJSON=require('./local-model-http.cjs');
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex'),canonical=p=>fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n');
 const configAPI=require('./local-reader-config.cjs'),config=configAPI.setup(process.argv.slice(2));
-const {resources,fixture,fixturePath,profileId,profile,staged,selectedIds,limit,folder,cache}=config,planner=staged?require('../src/local-reader-planner.js'):null;
+const {resources,fixture,fixturePath,profileId,profile,staged,separated,selectedIds,limit,folder,cache}=config,planner=staged?require('../src/local-reader-planner.js'):null,separator=separated?require('../src/local-reader-separated.js'):null;
 if(config.describe){console.log(JSON.stringify({profile:profileId,model:resources.model,folder,fixture:path.relative(process.cwd(),fixturePath),selectedCaseIds:fixture.cases.filter(c=>!selectedIds||selectedIds.includes(c.id)).slice(0,limit).map(c=>c.id),context:profile.context||8192,generation:profile.generation||{temperature:0.4,top_p:0.9},note:'Read-only description. No model starts, downloads or question uploads.'},null,2));process.exit(0);}
 async function fileHash(file){const h=crypto.createHash('sha256');for await(const chunk of fs.createReadStream(file))h.update(chunk);return h.digest('hex');}
 (async()=>{
@@ -15,7 +15,7 @@ async function fileHash(file){const h=crypto.createHash('sha256');for await(cons
  const binaries=Object.keys(runtimeHashes).filter(p=>path.basename(p)==='llama-server.exe');assert.equal(binaries.length,1);
  const executable=path.join(cache,'runtime',binaries[0]);
  fs.mkdirSync(folder,{recursive:true});
- const freeze=configAPI.freezeFor(config,{app:hash(fs.readFileSync('index.html')),contract:hash(canonical('src/local-reader-core.js')),fixture:hash(canonical(fixturePath)),planner:staged?hash(canonical('src/local-reader-planner.js')):undefined});
+ const freeze=configAPI.freezeFor(config,{app:hash(fs.readFileSync('index.html')),contract:hash(canonical('src/local-reader-core.js')),fixture:hash(canonical(fixturePath)),planner:staged?hash(canonical('src/local-reader-planner.js')):undefined,separator:separated?hash(canonical('src/local-reader-separated.js')):undefined});
  if(fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.parse(fs.readFileSync(folder+'/freeze.json','utf8')),freeze,'Preserve first outputs; use another directory for another candidate.');
  else fs.writeFileSync(folder+'/freeze.json',JSON.stringify(freeze,null,2));
  let packets;
@@ -37,15 +37,29 @@ async function fileHash(file){const h=crypto.createHash('sha256');for await(cons
   for(const c of fixture.cases.filter(c=>!selectedIds||selectedIds.includes(c.id)).slice(0,limit)){
    const outputPath=folder+'/'+c.id+'.json';if(fs.existsSync(outputPath)){results.push(JSON.parse(fs.readFileSync(outputPath,'utf8')));continue;}
    const stored=packets.find(x=>x.id===c.id),packet=core.packet(stored.input),started=Date.now();console.log('Generating '+c.id+' ('+c.spread+') on local CPU');
-   let response,error,planResponse,questionPlan,planValidation,planMs;
+   let response,error,planResponse,questionPlan,planValidation,planMs,draftRecord;
    try{
+    if(separated){
+     const draftPath=folder+'/'+c.id+'.draft.json';
+     if(fs.existsSync(draftPath)){draftRecord=JSON.parse(fs.readFileSync(draftPath,'utf8'));assert.deepEqual(draftRecord.packet,packet,'Persisted first draft belongs to another packet');}
+     else{
+      const draftStarted=Date.now(),draftResponse=await complete(separator.draftMessages(packet),separator.draftSchema(),{temperature:freeze.draftTemperature,max_tokens:freeze.draftMaxTokens});
+      const draftRaw=draftResponse.choices?.[0]?.message?.content||'';let draft;try{draft=JSON.parse(draftRaw);}catch{}
+      draftRecord={packet,draftRaw,draft,draftValidation:separator.validateDraft(packet,draft),draftUsage:draftResponse.usage,draftMs:Date.now()-draftStarted,draftFinishReason:draftResponse.choices?.[0]?.finish_reason};
+      fs.writeFileSync(draftPath,JSON.stringify(draftRecord,null,2));
+     }
+     console.log(JSON.stringify({id:c.id,stage:'question-help',valid:draftRecord.draftValidation.ok,elapsedMs:draftRecord.draftMs}));
+     if(draftRecord.draftValidation.ok&&draftRecord.draftFinishReason==='stop')response=await complete(separator.symbolicMessages(packet,draftRecord.draft),separator.symbolicSchema(packet));
+    }
     if(staged){const planStarted=Date.now();planResponse=await complete(planner.planMessages(packet),planner.planSchema(),{temperature:freeze.planTemperature,max_tokens:freeze.planMaxTokens});planMs=Date.now()-planStarted;try{questionPlan=JSON.parse(planResponse.choices?.[0]?.message?.content||'');}catch{}planValidation=planner.validatePlan(packet,questionPlan);}
-    if(!staged||planValidation.ok)response=await complete(staged?planner.readingMessages(packet,questionPlan):core.messages(packet),core.schema(packet));
+    if(!separated&&(!staged||planValidation.ok))response=await complete(staged?planner.readingMessages(packet,questionPlan):core.messages(packet),core.schema(packet));
    }catch(e){error=String(e.message||e);}
    const raw=response?.choices?.[0]?.message?.content||'';let parsed,parseError;try{parsed=JSON.parse(raw);}catch(e){parseError=e.message;}
-   const validation=parsed?core.validate(packet,parsed):{ok:false,issues:['invalid-or-empty-json']};
+   let validation=parsed?(separated?separator.validateSymbols(packet,parsed):core.validate(packet,parsed)):{ok:false,issues:['invalid-or-empty-json']};
+   if(separated&&(!draftRecord?.draftValidation.ok||draftRecord.draftFinishReason!=='stop'))validation={ok:false,issues:[...validation.issues,'question-help-incomplete-or-invalid']};
    const result={...c,packet,baseline:stored.baseline,raw,parsed,parseError,error,validation,finishReason:response?.choices?.[0]?.finish_reason,usage:response?.usage,timings:response?.timings,elapsedMs:Date.now()-started};
    if(staged)Object.assign(result,{questionPlan,planValidation,planRaw:planResponse?.choices?.[0]?.message?.content,planUsage:planResponse?.usage,planMs});
+   if(separated){Object.assign(result,draftRecord);if(validation.ok)result.generatedReport=separator.report(packet,draftRecord.draft,parsed);}
    fs.writeFileSync(outputPath,JSON.stringify(result,null,2));results.push(result);console.log(JSON.stringify({id:c.id,valid:validation.ok,issues:validation.issues,finishReason:result.finishReason,elapsedMs:result.elapsedMs}));
    fs.writeFileSync(folder+'/progress.json',JSON.stringify({completed:results.length,total:fixture.cases.length,last:c.id,terminal:false},null,2));if(error)throw Error(error);
   }

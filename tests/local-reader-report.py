@@ -55,4 +55,22 @@ with tempfile.TemporaryDirectory(prefix='report-check-', dir=cache) as directory
     save(output / 'freeze.json', freeze)
     assert run().returncode != 0
     checks.append('unknown frozen case cannot silently produce an empty report')
+    output = temp / 'test-results/local-reader/native-qwen35-9b-separated-first/report-check'
+    output.mkdir(parents=True)
+    freeze['selectedCaseIds'] = ['x01']
+    save(output / 'freeze.json', freeze)
+    command.append('--separated')
+    draft = {'requests': [{'source': 'TEST ONLY', 'answer': 'TEST ONLY 질문 도움'}], 'actions': ['TEST ONLY 실천'], 'unknowns': []}
+    save(output / 'x01.draft.json', {'draftRaw': 'TEST ONLY DRAFT', 'draft': draft})
+    assert run().returncode == 0
+    report = (output / 'review.html').read_text(encoding='utf-8')
+    assert '실행 기록 0/1개' in report and '답변 생성 0개' in report and '초안 수신 1개' in report and '전체 해석 미완료' in report and 'TEST ONLY 질문 도움' in report
+    checks.append('persisted first draft is visible without counting a complete reading')
+    row = {'elapsedMs': 1, 'packet': {'cards': [{'ref': 'c0','position': 'TEST ONLY 위치','name': 'TEST ONLY 카드','orientation': '정방향','meaning': 'TEST ONLY 의미'}]}, 'baseline': {'direct':'TEST ONLY'}, 'raw':'TEST ONLY SYMBOLS', 'draft':draft, 'draftRaw':'TEST ONLY DRAFT', 'parsed':{'synthesis':{'connection':'TEST ONLY 연결','invitation':'TEST ONLY 통합 관점'}, 'cards':{'c0':{'lens':'TEST ONLY 카드 렌즈','invitation':'TEST ONLY 카드 관점'}}}, 'validation':{'ok':False,'issues':['TEST ONLY']}}
+    save(output / 'x01.json', row)
+    save(output / 'review-notes.json', {'x01':{'comment':'TEST ONLY','reviewScope':'question-help-only'}})
+    assert run().returncode == 0
+    report = (output / 'review.html').read_text(encoding='utf-8')
+    assert '답변 생성 1개' in report and '실제 문장 검토 0개' in report and '<p>TEST ONLY 질문 도움</p>' in report and '<p>TEST ONLY 카드 렌즈<br>TEST ONLY 카드 관점</p>' in report
+    checks.append('separated answer/card fields render separately and draft-only review remains partial')
 print(json.dumps({'total': len(checks), 'checks': checks, 'note': 'Synthetic TEST ONLY records; no model or expert evaluation.'}, ensure_ascii=False))

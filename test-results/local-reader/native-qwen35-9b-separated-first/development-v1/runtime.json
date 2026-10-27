@@ -1,0 +1,29 @@
+{
+  "loadMs": 16007,
+  "args": [
+    "-m",
+    "Qwen_Qwen3.5-9B-Q4_K_M.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "49854",
+    "-c",
+    "4096",
+    "-t",
+    "4",
+    "-tb",
+    "4",
+    "-np",
+    "1",
+    "-ngl",
+    "0",
+    "--no-webui",
+    "--jinja",
+    "--reasoning",
+    "off"
+  ],
+  "buildInfo": "b11900-74b104c9b",
+  "totalSlots": 1,
+  "modelPath": "Qwen_Qwen3.5-9B-Q4_K_M.gguf",
+  "endpoint": "127.0.0.1 random port; this process only"
+}

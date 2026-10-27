@@ -1,0 +1,50 @@
+{
+  "appSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "contractSHA256": "2e674b42cf7731226ff99e6618a2735f16c8214a112e13f85cc215ff93e4ae6b",
+  "fixtureSHA256": "6a93853be6db07ecbf8a9b97bb406e7d0c75253e4abe3223f08fc547948693b1",
+  "runtime": {
+    "name": "llama.cpp b11900 Windows x64 CPU",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11900/llama-b11900-bin-win-cpu-x64.zip",
+    "sha256": "d3bbbbb7d1b4979b72052fd73cdeeb5a4d5a4e6a3f52aeb40abd6f116558e323",
+    "bytes": 24228419,
+    "filename": "llama-b11900-bin-win-cpu-x64.zip",
+    "source": "https://github.com/ggml-org/llama.cpp/releases/tag/b11900",
+    "license": "MIT"
+  },
+  "model": {
+    "name": "Qwen3.5-9B-Q4_K_M",
+    "url": "https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF/resolve/182be2fd6c7bc44887d88a91cb03ff009cc9f549/Qwen_Qwen3.5-9B-Q4_K_M.gguf",
+    "sha256": "d784ce9eda1a5a7b51e8f705a9e6310844bf4f173654d115823c775fdea56d43",
+    "bytes": 6169341984,
+    "filename": "Qwen_Qwen3.5-9B-Q4_K_M.gguf",
+    "source": "https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF",
+    "revision": "182be2fd6c7bc44887d88a91cb03ff009cc9f549",
+    "upstream": "https://huggingface.co/Qwen/Qwen3.5-9B",
+    "license": "Apache-2.0"
+  },
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "max_tokens": 1800,
+  "seed": 830027,
+  "context": 4096,
+  "threads": 4,
+  "profile": "qwen35-9b",
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "presence_penalty": 1.5,
+    "repeat_penalty": 1
+  },
+  "separatorSHA256": "65b43fe5a1da1c3d1ea1f92fb041bb2aea3c9583966cb1239bf31694ecbcc4d7",
+  "draftTemperature": 0.2,
+  "draftMaxTokens": 1000,
+  "stages": [
+    "question-help-without-cards",
+    "symbolic-reflection"
+  ],
+  "selectedCaseIds": [
+    "d01"
+  ]
+}

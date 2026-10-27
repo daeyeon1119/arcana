@@ -1,5 +1,5 @@
 {
-  "total": 17,
+  "total": 19,
   "checks": [
     {
       "name": "replaying original experiment inputs preserves its freeze after app updates",
@@ -63,6 +63,14 @@
     },
     {
       "name": "case limit is frozen so resume cannot silently expand its sample",
+      "ok": true
+    },
+    {
+      "name": "separated and planned protocols cannot be mixed",
+      "ok": true
+    },
+    {
+      "name": "separated protocol has its own folder, source hash and stage budgets",
       "ok": true
     },
     {
