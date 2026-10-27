@@ -1,0 +1,107 @@
+{
+  "total": 25,
+  "checks": [
+    {
+      "name": "question help is invariant to card identity, orientation, position and spread",
+      "ok": true
+    },
+    {
+      "name": "question input contains original text and explicit choices without inferred facts",
+      "ok": true
+    },
+    {
+      "name": "valid multi-request draft and symbols are accepted",
+      "ok": true
+    },
+    {
+      "name": "draft rejects invented source before the symbol stage",
+      "ok": true
+    },
+    {
+      "name": "draft rejects invented anchor before the symbol stage",
+      "ok": true
+    },
+    {
+      "name": "draft rejects unknown status before the symbol stage",
+      "ok": true
+    },
+    {
+      "name": "draft rejects missing answer before the symbol stage",
+      "ok": true
+    },
+    {
+      "name": "draft rejects duplicate request before the symbol stage",
+      "ok": true
+    },
+    {
+      "name": "draft rejects unsupported field before the symbol stage",
+      "ok": true
+    },
+    {
+      "name": "draft rejects malformed action before the symbol stage",
+      "ok": true
+    },
+    {
+      "name": "malformed draft values fail without a crash",
+      "ok": true
+    },
+    {
+      "name": "symbol stage sees actual cards and exact fallible draft",
+      "ok": true
+    },
+    {
+      "name": "symbols reject replacement answer",
+      "ok": true
+    },
+    {
+      "name": "symbols reject replacement action",
+      "ok": true
+    },
+    {
+      "name": "symbols reject missing card",
+      "ok": true
+    },
+    {
+      "name": "symbols reject extra card",
+      "ok": true
+    },
+    {
+      "name": "symbols reject wrong reference",
+      "ok": true
+    },
+    {
+      "name": "symbols reject duplicate references",
+      "ok": true
+    },
+    {
+      "name": "symbols reject empty invitation",
+      "ok": true
+    },
+    {
+      "name": "symbols reject invented card identity",
+      "ok": true
+    },
+    {
+      "name": "two different symbol readings cannot change the practical answer or actions",
+      "ok": true
+    },
+    {
+      "name": "practical help is not given fabricated card citations",
+      "ok": true
+    },
+    {
+      "name": "report snapshot cannot be changed by later caller mutation",
+      "ok": true
+    },
+    {
+      "name": "necessary clarification may have no prescribed action",
+      "ok": true
+    },
+    {
+      "name": "semantic fabrication can still pass and is explicitly outside validation coverage",
+      "ok": true
+    }
+  ],
+  "sourceSHA256": "65b43fe5a1da1c3d1ea1f92fb041bb2aea3c9583966cb1239bf31694ecbcc4d7",
+  "note": "Synthetic structural invariants. No actual model generation, semantic validation or professional evaluation."
+}
