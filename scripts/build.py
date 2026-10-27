@@ -48,7 +48,10 @@ app_bytes = (root / 'index.html').read_bytes()
 app_sha = hashlib.sha256(app_bytes).hexdigest()
 worker_template = (root / 'src/service-worker.js').read_text(encoding='utf-8')
 web_files = ['manifest.webmanifest','assets/app/icon-192.png','assets/app/icon-512.png','assets/app/apple-touch-icon.png','assets/app/icon.svg']
-release_hash = hashlib.sha256((app_sha+worker_template).encode()+b''.join((root / path).read_bytes() for path in web_files)).hexdigest()
+def web_asset_bytes(path):
+    source = root / path
+    return source.read_text(encoding='utf-8').encode('utf-8') if source.suffix in {'.webmanifest','.svg'} else source.read_bytes()
+release_hash = hashlib.sha256((app_sha+worker_template).encode()+b''.join(web_asset_bytes(path) for path in web_files)).hexdigest()
 worker = worker_template.replace('__ARCANA_APP_SHA256__', app_sha).replace('__ARCANA_RELEASE_ID__', release_hash[:24])
 (root / 'sw.js').write_text(worker, encoding='utf-8', newline='\n')
 (root / 'release.json').write_text(json.dumps({'appVersion':app_version,'readingEngine':82,'appSHA256':app_sha,'appBytes':len(app_bytes),'webRelease':release_hash[:24]}, indent=2)+'\n', encoding='utf-8', newline='\n')
