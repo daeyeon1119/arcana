@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "ARCANA · 직접 고르는 타로",
+  "short_name": "ARCANA",
+  "lang": "ko",
+  "description": "원본 RWS 카드 78장으로 질문을 돌아보는 타로 성찰 앱",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f3eb",
+  "theme_color": "#17382f",
+  "icons": [
+    {"src":"assets/app/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/app/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

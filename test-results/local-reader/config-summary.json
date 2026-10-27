@@ -2,7 +2,7 @@
   "total": 17,
   "checks": [
     {
-      "name": "original experiment freeze is preserved byte for byte in its values",
+      "name": "replaying original experiment inputs preserves its freeze after app updates",
       "ok": true
     },
     {

@@ -1,0 +1,4 @@
+.arc-web{margin:22px 0 0;padding:18px 20px;border:1px solid var(--line,#ded8c9);border-radius:12px;background:var(--paper,#faf8f1);font-size:14px;line-height:1.75;overflow-wrap:anywhere}
+.arc-web h2{margin:0 0 8px;font-size:18px}.arc-web p{margin:6px 0}.arc-web small{display:block;color:var(--muted,#65756b)}
+.arc-web-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.arc-web button{font:inherit;padding:10px 14px;min-height:44px;cursor:pointer;border:1px solid #9caa9e;border-radius:7px;background:#fffdf6;color:#17382f}
+.arc-web [hidden]{display:none!important}.arc-web-status{font-weight:600}.arc-web-link{color:inherit}

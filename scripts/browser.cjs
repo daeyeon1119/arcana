@@ -8,8 +8,8 @@ module.exports = async () => {
   const server=http.createServer((req,res)=>{
     const target=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
     if(target!==root&&!target.startsWith(root+path.sep)){res.writeHead(403).end();return;}
-    const file=target===root?path.join(root,'index.html'):target;
-    try{res.setHeader('Content-Type',file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.jpg')?'image/jpeg':'application/octet-stream');res.end(fs.readFileSync(file));}
+    let file=target;
+    try{if(fs.statSync(file).isDirectory())file=path.join(file,'index.html');const types={'.html':'text/html; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.js':'text/javascript; charset=utf-8','.webmanifest':'application/manifest+json','.json':'application/json'};res.setHeader('Content-Type',types[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file));}
     catch{res.writeHead(404).end();}
   });
   // Stable origin and persistent cache only for real multi-GB model diagnostics.

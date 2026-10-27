@@ -221,6 +221,12 @@ function arc79UI(){
  const artCredit=document.createElement('p');artCredit.className='arc79-art-credit';
  artCredit.innerHTML='카드 그림: Pamela Colman Smith · 1909 RWS “Roses &amp; Lilies” 원본 스캔 · Saskia Jansen 소장본. <a href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)" target="_blank" rel="noopener noreferrer">원본 출처 보기</a>. 78장 모두 앱에 내장되어 인터넷 없이도 원본이 표시됩니다.';
  $('deckGrid').before(artCredit);
+ const guideUpdates=new Map([
+  ['질문의 맥락 분석','질문의 요청과 배경을 구분하고 사건·주체·발신/수신·부정·계획·전언·시간 범위를 읽는 v82 규칙을 사용합니다. 여러 요청은 나누어 답하고 핵심 상황이 빠지면 추첨 전에 보충 설명을 묻습니다. 학습된 언어모델이 아니므로 의미를 잘못 파악할 수 있으며, 질문 분야와 답변의 초점을 직접 바꿀 수 있습니다.'],
+  ['자료 및 이미지 출처',artCredit.innerHTML+' 텍스트는 전통 RWS 상징을 바탕으로 한국어로 작성했습니다. 원전 참고: <a href="https://www.sacred-texts.com/tarot/pkt/" target="_blank" rel="noopener noreferrer">A. E. Waite, The Pictorial Key to the Tarot</a>.'],
+  ['한계','타로가 실제 미래·타인의 속마음·진단이나 수익을 확인하는 수단은 아닙니다. 질문을 여러 관점에서 돌아보는 성찰 도구이며 전문 해석가와 동등한 품질은 아직 입증하지 못했습니다. 기본 해석과 기록 처리는 각 기기의 브라우저에서 이루어집니다.']
+ ]);
+ document.querySelectorAll('#about .about-content > h2').forEach(heading=>{if(guideUpdates.has(heading.textContent)&&heading.nextElementSibling?.tagName==='P')heading.nextElementSibling.innerHTML=guideUpdates.get(heading.textContent);});
  ['a33Panel','a34Panel'].forEach(id=>{if($(id))advanced.appendChild($(id));});
  update();
 }

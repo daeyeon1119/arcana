@@ -6,8 +6,11 @@ import json
 import re
 root = Path(__file__).resolve().parents[1]
 base = (root / 'ARCANA_tarot_v78_source/html/ARCANA_tarot_v78.html').read_text(encoding='utf-8')
-css = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.css','src/card-mat.css','src/question-context.css'])
-js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/question-model.js','src/reading-context.js','src/card-mat.js'])
+css = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.css','src/card-mat.css','src/question-context.css','src/web-app.css'])
+js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/question-model.js','src/reading-context.js','src/card-mat.js','src/web-app.js'])
+app_version = json.loads((root / 'package.json').read_text(encoding='utf-8'))['version']
+assert js.count('__ARCANA_APP_VERSION__') == 1
+js = js.replace('__ARCANA_APP_VERSION__', app_version)
 manifest = json.loads((root / 'assets/rws/manifest.json').read_text(encoding='utf-8'))
 art = {}
 for card in manifest['cards']:
@@ -36,7 +39,17 @@ assert 'a22OfflineCard' not in base and 'arcanaArtPlaceholder' not in base
 assert 'if(f.noConflict)' not in js, 'Unresolved placeholder'
 assert '</script' not in js.lower()
 bundle = f'\n<!-- ARCANA v82 maintained enhancement -->\n<style>\n{css}\n</style>\n<script>\n{js}\n</script>\n'
-base = base.replace('ARCANA 78.0 |', 'ARCANA 82.0 |', 1)
+base = base.replace('ARCANA 78.0 |', f'ARCANA {app_version} |', 1)
+web_head = '<link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#17382f"><link rel="icon" href="./assets/app/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="./assets/app/apple-touch-icon.png">'
+base = base.replace('</head>', web_head + '</head>')
 assert base.count('</body>') == 1
 (root / 'index.html').write_text(base.replace('</body>', bundle+'</body>'), encoding='utf-8', newline='\n')
-print(f'Built index.html (ARCANA 82), 78 original JPEGs embedded ({sum(c["bytes"] for c in manifest["cards"]):,} source bytes)')
+app_bytes = (root / 'index.html').read_bytes()
+app_sha = hashlib.sha256(app_bytes).hexdigest()
+worker_template = (root / 'src/service-worker.js').read_text(encoding='utf-8')
+web_files = ['manifest.webmanifest','assets/app/icon-192.png','assets/app/icon-512.png','assets/app/apple-touch-icon.png','assets/app/icon.svg']
+release_hash = hashlib.sha256((app_sha+worker_template).encode()+b''.join((root / path).read_bytes() for path in web_files)).hexdigest()
+worker = worker_template.replace('__ARCANA_APP_SHA256__', app_sha).replace('__ARCANA_RELEASE_ID__', release_hash[:24])
+(root / 'sw.js').write_text(worker, encoding='utf-8', newline='\n')
+(root / 'release.json').write_text(json.dumps({'appVersion':app_version,'readingEngine':82,'appSHA256':app_sha,'appBytes':len(app_bytes),'webRelease':release_hash[:24]}, indent=2)+'\n', encoding='utf-8', newline='\n')
+print(f'Built index.html (app {app_version}, reading engine 82), web cache, 78 original JPEGs embedded ({sum(c["bytes"] for c in manifest["cards"]):,} source bytes)')

@@ -1,0 +1,11 @@
+{
+  "note": "Fixed inputs for device/output equality only. No expected meanings, quality labels or professional score.",
+  "questions": [
+    "친구의 답은 아직 받지 못했어요. 기다리는 동안 어떤 태도가 좋을까요?",
+    "시험은 다음 주예요. 준비 순서와 긴장을 다룰 방법을 각각 알려 주세요.",
+    "이미 결정한 이사 계획을 실행하려면 무엇부터 해야 할까요?",
+    "보드게임 안내를 고쳐 더 쉽게 설명하고 싶어요. 무엇을 살펴볼까요?",
+    "왜 비슷한 선택을 반복하는지 돌아보고 싶어요.",
+    "둘 중 어느 쪽이 나을까요?"
+  ]
+}
