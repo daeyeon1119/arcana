@@ -4,3 +4,7 @@
 *.png -text
 *.gz -text
 index.html text eol=lf
+manifest.webmanifest text eol=lf
+assets/app/icon.svg text eol=lf
+sw.js text eol=lf
+release.json text eol=lf
