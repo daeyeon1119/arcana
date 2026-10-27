@@ -1,0 +1,202 @@
+{
+  "checks": [
+    {
+      "name": "ordinary operation remains the same across topic labels: communicate",
+      "ok": true
+    },
+    {
+      "name": "ordinary operation remains the same across topic labels: inquire",
+      "ok": true
+    },
+    {
+      "name": "ordinary operation remains the same across topic labels: verify",
+      "ok": true
+    },
+    {
+      "name": "ordinary operation remains the same across topic labels: improve",
+      "ok": true
+    },
+    {
+      "name": "ordinary operation remains the same across topic labels: cope",
+      "ok": true
+    },
+    {
+      "name": "urgent outranks communicate",
+      "ok": true
+    },
+    {
+      "name": "urgent outranks cope",
+      "ok": true
+    },
+    {
+      "name": "urgent outranks coordinate",
+      "ok": true
+    },
+    {
+      "name": "urgent outranks prepare",
+      "ok": true
+    },
+    {
+      "name": "urgent outranks improve",
+      "ok": true
+    },
+    {
+      "name": "urgent outranks finish",
+      "ok": true
+    },
+    {
+      "name": "boundary outranks communicate",
+      "ok": true
+    },
+    {
+      "name": "boundary outranks cope",
+      "ok": true
+    },
+    {
+      "name": "boundary outranks coordinate",
+      "ok": true
+    },
+    {
+      "name": "boundary outranks prepare",
+      "ok": true
+    },
+    {
+      "name": "boundary outranks improve",
+      "ok": true
+    },
+    {
+      "name": "boundary outranks finish",
+      "ok": true
+    },
+    {
+      "name": "abuse outranks communicate",
+      "ok": true
+    },
+    {
+      "name": "abuse outranks cope",
+      "ok": true
+    },
+    {
+      "name": "abuse outranks coordinate",
+      "ok": true
+    },
+    {
+      "name": "abuse outranks prepare",
+      "ok": true
+    },
+    {
+      "name": "abuse outranks improve",
+      "ok": true
+    },
+    {
+      "name": "abuse outranks finish",
+      "ok": true
+    },
+    {
+      "name": "reply not received cannot become a new contact instruction",
+      "ok": true
+    },
+    {
+      "name": "received answer is acknowledged without inventing its contents",
+      "ok": true
+    },
+    {
+      "name": "completed submission is not told to finish again",
+      "ok": true
+    },
+    {
+      "name": "clinical intervention stays with existing clinical path: 약 용량을 어떻게 줄이면 좋을까요?",
+      "ok": true
+    },
+    {
+      "name": "clinical intervention stays with existing clinical path: 통증을 개선할 방법을 알려 주세요.",
+      "ok": true
+    },
+    {
+      "name": "clinical intervention stays with existing clinical path: 치료를 끝낼 방법을 알려 주세요.",
+      "ok": true
+    },
+    {
+      "name": "an unrelated document does not make clinical intervention an ordinary editing task",
+      "ok": true
+    },
+    {
+      "name": "asking a clinician is supported without choosing a clinical outcome",
+      "ok": true
+    },
+    {
+      "name": "financial transaction changes do not become general improvement experiments",
+      "ok": true
+    },
+    {
+      "name": "a financial document can receive editing support without an investment instruction",
+      "ok": true
+    },
+    {
+      "name": "condition checking does not prescribe a bank, amount or personal financial history",
+      "ok": true
+    },
+    {
+      "name": "unhandled intentions keep their existing route",
+      "ok": true
+    },
+    {
+      "name": "pure planner does not mutate original evidence or input settings",
+      "ok": true
+    },
+    {
+      "name": "quoted requests cannot change the actual editing operation",
+      "ok": true
+    },
+    {
+      "name": "background frame cannot supply the requested operation: 범위를 바꾸려면 어떤 내용을 설명해야 할까요?",
+      "ok": true
+    },
+    {
+      "name": "background frame cannot supply the requested operation: 수업을 시작할 때 어떤 조건을 확인해야 할까요?",
+      "ok": true
+    },
+    {
+      "name": "background frame cannot supply the requested operation: 협상을 앞두고 어떤 기준을 세워야 할까요?",
+      "ok": true
+    },
+    {
+      "name": "background frame cannot supply the requested operation: 직무를 바꾸려면 어떤 경험을 먼저 정리해야 할까요?",
+      "ok": true
+    },
+    {
+      "name": "generic how-to predicate can inherit its explicit purpose",
+      "ok": true
+    },
+    {
+      "name": "requested predicate outranks a preparation noun before it",
+      "ok": true
+    },
+    {
+      "name": "generic verb without its required object does not imply task allocation: 검토 의견을 어떻게 나누어 볼까요?",
+      "ok": true
+    },
+    {
+      "name": "generic verb without its required object does not imply task allocation: 단가를 어떻게 조정할까요?",
+      "ok": true
+    },
+    {
+      "name": "explicit role allocation keeps its operation",
+      "ok": true
+    },
+    {
+      "name": "actual bounded question model supplies a usable task: 질문을 정리하는 방법을 알려 주세요.",
+      "ok": true
+    },
+    {
+      "name": "actual bounded question model supplies a usable task: 신청 조건은 무엇을 확인해야 할까요?",
+      "ok": true
+    },
+    {
+      "name": "actual bounded question model supplies a usable task: 자료를 어떻게 설명할까요?",
+      "ok": true
+    }
+  ],
+  "total": 49,
+  "note": "Authored development/property checks for request routing and factual/safety invariants. Not a first-seen quality benchmark or professional evaluation."
+}

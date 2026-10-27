@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#141d1b"><meta name="description" content="전통 라이더–웨이트–스미스 78장 기반 타로 리딩. 정·역방향, 카드 간 관계, 전통 배열 지원.">
-<title>ARCANA 82.1.0 | 직접 고르는 타로</title>
+<title>ARCANA 83.0.0 | 직접 고르는 타로</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
 :root { --ink:#17211f; --ink2:#273432; --night:#151e1c; --night2:#1e2926; --cream:#f6f2e8; --paper:#fffcf6; --muted:#6c756e; --gold:#bc925c; --goldlight:#e3d2b4; --line:#ded9cd; --wine:#8b4c4f; --shadow:0 18px 60px rgba(19,26,23,.13); --sans:'DM Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; --serif:'Noto Serif KR',Georgia,'Times New Roman',serif }
@@ -5049,7 +5049,7 @@ arcanaV5Render=function(report){ARC78_RENDER_PREVIOUS(report);if(!report.arc78)r
 
 </script>
 
-<!-- ARCANA v82 maintained enhancement -->
+<!-- ARCANA v83 maintained enhancement -->
 <style>
 /* Keep the existing paper / forest palette and make the preparation flow legible. */
 .arc79-question-tools{margin:12px 0 18px}.arc79-examples{display:flex;align-items:center;flex-wrap:wrap;gap:8px}.arc79-examples>span{font-size:12px;color:#656e64;margin-right:5px}.arc79-examples button{background:#f1eee4;color:#34493c;border:1px solid #d7d5c6;border-radius:24px;padding:8px 13px;font-size:12px;min-height:40px}.arc79-examples button:hover{background:#e3e9dd;border-color:#728a73}
@@ -5422,24 +5422,26 @@ arc79Scene=function(question,override='auto'){
 const ARC80_ACTION=arc79Action;
 arc79Action=function(scene,pack){
  const q=scene.question,f=scene.facts,previous=ARC80_ACTION(scene,pack);
+ scene.arc80ActionTask=null;
  if(scene.boundary||scene.abuse||scene.urgent)return previous;
  if(scene.domain==='health'){
   if(/약을\s*먹|처방|복용/.test(q))return '복용 시각과 불편했던 점을 적어 두고, 약의 변경·중단은 처방한 의료진이나 약사에게 문의하세요.';
-  if(/의료진.{0,12}증상.{0,10}설명/.test(q))return '증상이 시작된 때와 이후의 변화, 복용 중인 약과 궁금한 점을 적어 의료진에게 전달해 보세요.';
-  if(/(?:검사\s*결과|진단).{0,30}(?:질문|준비|설명|이해|물어)/.test(q))return '의료진에게 물어볼 내용을 결과의 의미, 다음 일정, 주의할 증상으로 나누어 적어 보세요.';
+  if(/의료진.{0,12}증상.{0,10}설명/.test(q)){scene.arc80ActionTask='communicate';return '증상이 시작된 때와 이후의 변화, 복용 중인 약과 궁금한 점을 적어 의료진에게 전달해 보세요.';}
+  if(/(?:검사\s*결과|진단).{0,30}(?:질문|준비|설명|이해|물어)/.test(q)){scene.arc80ActionTask='inquire';return '의료진에게 물어볼 내용을 결과의 의미, 다음 일정, 주의할 증상으로 나누어 적어 보세요.';}
   if(/검사\s*결과/.test(q)&&scene.phase==='pending')return '안내받은 결과 확인 시점과 문의 방법을 적어 두세요. 걱정이 커질 때 함께 이야기할 사람과 일상을 지킬 작은 일도 정해 볼 수 있습니다.';
   return previous;
  }
  if(f.known){
-  if(scene.intent==='emotion')return '이미 확인한 결과와 자신에 대한 평가를 분리하고, 마음을 추스를 시간을 먼저 마련해 보세요.';
+  if(scene.intent==='emotion'){scene.arc80ActionTask='cope';return '이미 확인한 결과와 자신에 대한 평가를 분리하고, 마음을 추스를 시간을 먼저 마련해 보세요.';}
   return previous;
  }
  if(f.sent&&f.noReply&&!f.replied)return previous;
  if(f.replyUnknown&&['family','relationship'].includes(scene.domain))return '이미 전한 내용과 다음에 묻고 싶은 내용을 나누어 적고, 같은 말을 더 보낼 필요가 있는지 살펴보세요.';
  if(scene.phase==='pending'&&['career','preparation','waiting'].includes(scene.domain))return '공식 확인 일정과 경로를 정해 두고, 오늘 할 수 있는 다른 일 하나를 골라 보세요. 이미 끝난 평가를 계속 되짚지 않아도 됩니다.';
  const emotion=scene.intent==='emotion';
- const first=rules=>rules.find(([rx])=>rx.test(q))?.[1];
+ const first=(rules,operations)=>{if(rules.length!==operations.length)throw Error('Action operation metadata mismatch');const index=rules.findIndex(([rx])=>rx.test(q));if(index<0)return;scene.arc80ActionTask=operations[index];return rules[index][1];};
  if(emotion){
+  scene.arc80ActionTask='cope';
   if(scene.domain==='finances')return '지금 느끼는 불안과 실제로 확인한 금액을 나누어 적어 보세요. 감정을 가라앉힐 시간과 숫자를 검토할 시간을 따로 정해도 됩니다.';
   if(['career','project','preparation'].includes(scene.domain))return '지금 가장 부담스러운 부분을 한 문장으로 적고, 오늘 줄일 일과 쉬어 갈 시간을 하나씩 정해 보세요.';
   if(['family','relationship'].includes(scene.domain))return '실제로 오간 말과 그때 느낀 마음을 나누어 적어 보세요. 당장 관계의 결론을 내리지 않아도 됩니다.';
@@ -5504,24 +5506,24 @@ arc79Action=function(scene,pack){
   [/휴대폰/,'휴대폰을 가장 자주 집어 드는 순간 하나를 찾아, 그때 대신할 짧은 행동을 정해 보세요.'],
   [/계획|하루|시간/,'오늘 꼭 할 일 하나와 미뤄도 되는 일을 나누고, 실제로 쓸 수 있는 시간 안에 넣어 보세요.']
  ];
- if(scene.domain==='career')return first(career)||previous;
+ if(scene.domain==='career')return first(career,['prepare','compare','communicate','communicate','prioritize','coordinate','verify','communicate','coordinate','improve','communicate','communicate','coordinate'])||previous;
  if(scene.domain==='finances'){
-  if(/주식.{0,10}이미\s*팔|이미.{0,10}팔았/.test(q))return '이미 한 매도의 이유를 기록하고, 가격을 확인할 시간을 정해 보세요. 지나간 선택을 매 순간의 가격으로 다시 평가하지 않아도 됩니다.';
-  if(/대출/.test(q)&&scene.intent==='compare')return '각 조건의 금리·상환 일정·수수료를 공식 자료로 확인하고, 같은 기간의 부담을 나란히 계산해 보세요.';
+  if(/주식.{0,10}이미\s*팔|이미.{0,10}팔았/.test(q)){scene.arc80ActionTask='cope';return '이미 한 매도의 이유를 기록하고, 가격을 확인할 시간을 정해 보세요. 지나간 선택을 매 순간의 가격으로 다시 평가하지 않아도 됩니다.';}
+  if(/대출/.test(q)&&scene.intent==='compare'){scene.arc80ActionTask='compare';return '각 조건의 금리·상환 일정·수수료를 공식 자료로 확인하고, 같은 기간의 부담을 나란히 계산해 보세요.';}
   return previous;
  }
- if(['family','relationship'].includes(scene.domain))return first(relationship)||previous;
- if(scene.domain==='preparation')return first(preparation)||previous;
- if(scene.domain==='project')return first(project)||previous;
+ if(['family','relationship'].includes(scene.domain))return first(relationship,['communicate','coordinate','coordinate','communicate','communicate','communicate','communicate','communicate','communicate','communicate','communicate','communicate'])||previous;
+ if(scene.domain==='preparation')return first(preparation,['prepare','prioritize','prepare','prioritize','prepare','communicate','prepare'])||previous;
+ if(scene.domain==='project')return first(project,['wait','improve','improve','improve','improve','improve','improve','prioritize','improve','improve'])||previous;
  if(scene.domain==='decision'){
   if(/이미\s*결정/.test(q))return '결정할 때의 이유와 그 뒤 새로 알게 된 사실을 나누어 적어 보세요. 새 정보 때문에 바꿀 부분인지, 불확실함이 불편한 것인지 구분해 볼 수 있습니다.';
   return '두 선택을 같은 기준으로 적고, 되돌릴 수 있는 작은 확인부터 해보세요. 아직 모르는 조건은 추측으로 채우지 않아도 됩니다.';
  }
- if(scene.domain==='stress'&&/상담/.test(q))return '상담을 신청하게 된 이유와 최근 특히 힘들었던 장면을 적어 보세요. 처음부터 모든 이야기를 잘 정리해서 말할 필요는 없습니다.';
- if(scene.domain==='stress'&&/도움.{0,8}청/.test(q))return '지금 어려운 점과 부탁하고 싶은 도움을 한 가지씩 구체적으로 말해 보세요. 상대가 가능한 범위를 답할 여지도 남겨 두면 좋습니다.';
+ if(scene.domain==='stress'&&/상담/.test(q)){scene.arc80ActionTask='communicate';return '상담을 신청하게 된 이유와 최근 특히 힘들었던 장면을 적어 보세요. 처음부터 모든 이야기를 잘 정리해서 말할 필요는 없습니다.';}
+ if(scene.domain==='stress'&&/도움.{0,8}청/.test(q)){scene.arc80ActionTask='communicate';return '지금 어려운 점과 부탁하고 싶은 도움을 한 가지씩 구체적으로 말해 보세요. 상대가 가능한 범위를 답할 여지도 남겨 두면 좋습니다.';}
  if(scene.domain==='stress'&&/목표/.test(q))return '오늘 에너지로 할 수 있는 가장 작은 일 하나를 정하고, 시작하거나 마친 사실 자체를 기록해 보세요.';
- if(scene.domain==='stress'&&/자책|표현|말을\s*줄/.test(q))return '나를 단정하는 말 대신 지금 어려운 상황을 설명하는 말로 바꿔 적어 보세요. 고칠 행동과 나 자신에 대한 평가는 나누어 볼 수 있습니다.';
- if(scene.domain==='general')return first(daily)||previous;
+ if(scene.domain==='stress'&&/자책|표현|말을\s*줄/.test(q)){scene.arc80ActionTask='improve';return '나를 단정하는 말 대신 지금 어려운 상황을 설명하는 말로 바꿔 적어 보세요. 고칠 행동과 나 자신에 대한 평가는 나누어 볼 수 있습니다.';}
+ if(scene.domain==='general')return first(daily,['prepare','communicate','prepare','prepare','prepare','improve','prioritize'])||previous;
  return previous;
 };
 
@@ -5732,17 +5734,19 @@ arc79Scene=function(question,override='auto'){
 const ARC81_ACTION=arc79Action;
 arc79Action=function(scene,pack){
  const old=ARC81_ACTION(scene,pack),q=scene.question;
+ scene.arc81ActionTask=null;
+ const support=(operation,text)=>{scene.arc81ActionTask=operation;return text;};
  if(scene.boundary||scene.abuse||scene.urgent||scene.medical||scene.facts.known||scene.phase==='pending')return old;
- if(scene.domain==='relationship'&&/(?:생활비|지출|돈)/.test(q)&&/(?:합의|대화|이야기|소통)/.test(q))return '각자 부담할 수 있는 범위와 함께 쓸 항목을 나누고, 지출을 바꿀 때 먼저 상의할 기준을 정해 보세요.';
+ if(scene.domain==='relationship'&&/(?:생활비|지출|돈)/.test(q)&&/(?:합의|대화|이야기|소통)/.test(q))return support('coordinate','각자 부담할 수 있는 범위와 함께 쓸 항목을 나누고, 지출을 바꿀 때 먼저 상의할 기준을 정해 보세요.');
  if(scene.domain==='career'){
-  if(/(?:옮길|이직).{0,60}(?:맡은|마무리)|(?:마무리).{0,60}(?:이직|옮길)/.test(q))return '현재 업무의 마감과 인수인계 범위, 새 일정에서 바꿀 수 없는 조건을 나란히 적고 조율할 담당자와 확인해 보세요.';
-  if(/(?:업무|일).{0,30}(?:익히|배우)/.test(q)&&/질문/.test(q))return '먼저 시도한 방법과 막힌 지점, 확인받을 기준을 짧게 적어 보세요. 반복해서 막히거나 다른 사람의 일정에 영향을 주는 부분부터 질문해 볼 수 있습니다.';
-  if(/(?:가게|매장|단골|손님)/.test(q))return '기존 손님을 돕는 일과 새 손님을 맞는 일에 드는 시간을 나누고, 겹치는 시간대에 줄이거나 함께 맡을 일을 정해 보세요.';
+  if(/(?:옮길|이직).{0,60}(?:맡은|마무리)|(?:마무리).{0,60}(?:이직|옮길)/.test(q))return support('coordinate','현재 업무의 마감과 인수인계 범위, 새 일정에서 바꿀 수 없는 조건을 나란히 적고 조율할 담당자와 확인해 보세요.');
+  if(/(?:업무|일).{0,30}(?:익히|배우)/.test(q)&&/질문/.test(q))return support('inquire','먼저 시도한 방법과 막힌 지점, 확인받을 기준을 짧게 적어 보세요. 반복해서 막히거나 다른 사람의 일정에 영향을 주는 부분부터 질문해 볼 수 있습니다.');
+  if(/(?:가게|매장|단골|손님)/.test(q))return support('coordinate','기존 손님을 돕는 일과 새 손님을 맞는 일에 드는 시간을 나누고, 겹치는 시간대에 줄이거나 함께 맡을 일을 정해 보세요.');
  }
  if(scene.domain==='project'){
-  if(/(?:원고|작품).{0,24}(?:투고|제출)/.test(q)&&/(?:접수|안내).{0,12}받/.test(q))return '받은 안내의 답변 일정만 기록해 두고, 새 작업에서 이번 주 마칠 수 있는 작은 단위를 정해 보세요.';
-  if(/피드백|칭찬|비판/.test(q))return '작업의 목적과 직접 고칠 수 있는 피드백을 나누어 적고, 이번 수정에서 반영할 한 가지만 정해 보세요.';
-  if(!/(?:소설|원고|집필|인물|장면|문장)/.test(q)&&/인물|장면|문장/.test(old))return '이번 작업의 목적과 막힌 지점을 적고, 작게 완성해 확인할 한 부분을 골라 보세요.';
+  if(/(?:원고|작품).{0,24}(?:투고|제출)/.test(q)&&/(?:접수|안내).{0,12}받/.test(q))return support('implement','받은 안내의 답변 일정만 기록해 두고, 새 작업에서 이번 주 마칠 수 있는 작은 단위를 정해 보세요.');
+  if(/피드백|칭찬|비판/.test(q))return support('improve','작업의 목적과 직접 고칠 수 있는 피드백을 나누어 적고, 이번 수정에서 반영할 한 가지만 정해 보세요.');
+  if(!/(?:소설|원고|집필|인물|장면|문장)/.test(q)&&/인물|장면|문장/.test(old))return support('improve','이번 작업의 목적과 막힌 지점을 적고, 작게 완성해 확인할 한 부분을 골라 보세요.');
  }
  return old;
 };
@@ -5996,22 +6000,24 @@ arc79Scene=function(question,override='auto'){
 };
 function arc82Action(scene,pack,task){
  const model=scene.arc82||ARCANA_QUESTION_MODEL.parse(scene.question),state=model.state,goal=task?.goal||model.requests[0]?.goal;
+ scene.arc82ActionTask=null;
+ const support=(operation,text)=>{scene.arc82ActionTask=operation;return text;};
  if(scene.boundary||scene.abuse||scene.urgent||scene.medical||['health','finances'].includes(scene.domain)||scene.facts.known)return null;
  if(state.sent===true&&state.received===false)return '이미 전한 내용을 반복해서 보내기보다, 응답을 기다리는 동안 내 일상을 이어 가고 언제까지 기다릴 수 있을지 정해 보세요.';
  if(state.received===false&&state.replyWaiting)return '아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다.';
  if(state.waiting&&(state.resultWaiting||state.assessmentCompleted===true))return '공식 결과를 확인할 경로와 시간을 정하고, '+(state.assessmentCompleted===true||state.submitted===true?'이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요.':'확인된 사실과 아직 모르는 결과를 나누어 보세요.')+' 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.';
  if(goal==='cope'||task?.kind==='emotion'||scene.intent==='emotion'){
-  if(state.received===true)return '이미 받은 답의 내용과 그 뒤에도 남아 있는 마음을 나누어 적어 보세요. 답을 다시 확인받는 일보다 지금 필요한 휴식이나 지지를 먼저 살펴볼 수 있습니다.';
-  if(task?.kind==='emotion'&&model.requests.length>1)return '지금 가장 큰 감정을 한 문장으로 적고, 바로 바꿀 수 있는 일과 잠시 내려놓을 걱정을 나누어 보세요. 쉬는 시간이나 도움을 청할 사람도 정해 볼 수 있습니다.';
+  if(state.received===true)return support('cope','이미 받은 답의 내용과 그 뒤에도 남아 있는 마음을 나누어 적어 보세요. 답을 다시 확인받는 일보다 지금 필요한 휴식이나 지지를 먼저 살펴볼 수 있습니다.');
+  if(task?.kind==='emotion'&&model.requests.length>1)return support('cope','지금 가장 큰 감정을 한 문장으로 적고, 바로 바꿀 수 있는 일과 잠시 내려놓을 걱정을 나누어 보세요. 쉬는 시간이나 도움을 청할 사람도 정해 볼 수 있습니다.');
   return null;
  }
- if(goal==='coordinate'&&!/(?:생활비|지출|돈)/.test(scene.question))return '함께 해야 할 일을 적고, 각 일의 담당자·마감·예상 소요 시간·완료 기준을 맞춰 보세요. 겹치는 일과 빠지는 일을 먼저 확인하면 나눌 몫을 구체적으로 정할 수 있습니다.';
- if(goal==='prioritize')return '할 일의 마감과 예상 소요 시간을 적고, 실제로 가능한 시간과 비교해 보세요. 먼저 할 일과 미룰 일을 정한 뒤 영향을 받는 사람과 일정을 맞춰 보세요.';
- if(goal==='finish'&&state.submitted!==true)return '이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다.';
- if(goal==='communicate'&&(model.requests.length>1||scene.domain==='general'))return '전달할 결론과 그 이유 한 가지를 짧게 정리해 보세요. 내 선택을 설명하는 부분과 상대의 의견을 들어야 할 부분을 나누고, 상대가 답할 여지도 남겨 두세요.';
- if(goal==='prepare'&&model.requests.length>1)return '시작할 때 필요한 조건·진행 순서·확인할 일정을 적어 보세요. 이미 준비된 것과 한 가지 더 알아볼 것을 나누고, 첫날 해볼 작은 단계부터 정해 보세요.';
- if(goal==='implement')return '결정을 내린 뒤 그 안에서 이번 주에 마칠 작은 일 하나를 정하고, 언제 할지와 끝났다고 볼 기준을 적어 보세요. 필요한 사람이나 준비물이 있다면 먼저 확인해 둘 수 있습니다.';
- if(goal==='improve'&&scene.domain==='general')return '사용하는 사람이 기대한 것과 실제로 불편했던 지점을 함께 확인해 보세요. 한 가지를 바꾼 작은 안을 만들어 같은 상황에서 다시 사용해 보고 달라진 점을 적어 보세요.';
+ if(goal==='coordinate'&&!/(?:생활비|지출|돈)/.test(scene.question))return support('coordinate','함께 해야 할 일을 적고, 각 일의 담당자·마감·예상 소요 시간·완료 기준을 맞춰 보세요. 겹치는 일과 빠지는 일을 먼저 확인하면 나눌 몫을 구체적으로 정할 수 있습니다.');
+ if(goal==='prioritize')return support('prioritize','할 일의 마감과 예상 소요 시간을 적고, 실제로 가능한 시간과 비교해 보세요. 먼저 할 일과 미룰 일을 정한 뒤 영향을 받는 사람과 일정을 맞춰 보세요.');
+ if(goal==='finish'&&state.submitted!==true)return support('finish','이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다.');
+ if(goal==='communicate'&&(model.requests.length>1||scene.domain==='general'))return support('communicate','전달할 결론과 그 이유 한 가지를 짧게 정리해 보세요. 내 선택을 설명하는 부분과 상대의 의견을 들어야 할 부분을 나누고, 상대가 답할 여지도 남겨 두세요.');
+ if(goal==='prepare'&&model.requests.length>1)return support('prepare','시작할 때 필요한 조건·진행 순서·확인할 일정을 적어 보세요. 이미 준비된 것과 한 가지 더 알아볼 것을 나누고, 첫날 해볼 작은 단계부터 정해 보세요.');
+ if(goal==='implement')return support('implement','결정을 내린 뒤 그 안에서 이번 주에 마칠 작은 일 하나를 정하고, 언제 할지와 끝났다고 볼 기준을 적어 보세요. 필요한 사람이나 준비물이 있다면 먼저 확인해 둘 수 있습니다.');
+ if(goal==='improve'&&scene.domain==='general')return support('improve','사용하는 사람이 기대한 것과 실제로 불편했던 지점을 함께 확인해 보세요. 한 가지를 바꾼 작은 안을 만들어 같은 상황에서 다시 사용해 보고 달라진 점을 적어 보세요.');
  return null;
 }
 const ARC82_ACTION=arc79Action;
@@ -6024,7 +6030,7 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
  if(model.needsContext){r.headline='질문할 상황을 먼저 알려 주세요';r.direct=model.clarification;r.actions=[model.clarification];}
  else if(requests.length){
   const baseRefs=pack.list.filter(a=>r.direct.includes(a.name)).map(a=>a.index);
-  answers.push({request:requests[0],text:r.direct,refs:baseRefs.length?baseRefs:[pack.main.index]});
+  answers.push({request:requests[0],text:r.direct,directText:r.direct,actionText:r.actions[0],actionTask:r.arc72?.scene?.arc82ActionTask||r.arc72?.scene?.arc81ActionTask||r.arc72?.scene?.arc80ActionTask||null,refs:baseRefs.length?baseRefs:[pack.main.index]});
   for(const task of requests.slice(1)){
    const taskScene={...scene,intent:task.kind};let text;
    if(task.kind==='action'||task.kind==='emotion')text=arc82Action(taskScene,pack,task)||ARC82_ACTION(taskScene,pack);
@@ -6035,7 +6041,7 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
    const evidence=(task.kind==='action'||task.kind==='emotion')?pack.advice:pack.main;
    const body=text+' '+arc80CardSentence(evidence,spread),title={action:'함께 요청한 실천 방법',emotion:'함께 요청한 마음 돌보기',compare:'함께 요청한 선택 비교',cause:'함께 요청한 배경 살피기',forecast:'함께 요청한 앞으로의 관점',open:'함께 요청한 성찰'}[task.kind];
    r.direct+='\n\n'+text;r.sections.push({title,body,refs:[evidence.index],kind:'request'});
-   answers.push({request:task,text:body,refs:[evidence.index]});
+   answers.push({request:task,text:body,directText:text,actionText:['action','emotion'].includes(task.kind)?text:null,actionTask:taskScene.arc82ActionTask||taskScene.arc81ActionTask||taskScene.arc80ActionTask||null,refs:[evidence.index]});
    if(['action','emotion'].includes(task.kind)&&!r.actions.includes(text))r.actions.push(text);
   }
   if(requests.length>1)r.headline='요청한 관점을 함께 살펴볼게요';
@@ -6067,6 +6073,102 @@ $('arc82ContextContinue').addEventListener('click',()=>{
 $('arc82ContextInput').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('arc82ContextContinue').click();}});
 $('question').addEventListener('input',()=>{const model=ARCANA_QUESTION_MODEL.parse($('question').value);if(model.question!==arc82ContextBase){$('arc82ContextInput').value='';$('arc82ContextError').textContent='';arc82ContextBase='';arc82ContextPanel.hidden=true;}else if(!model.needsContext)arc82ContextPanel.hidden=true;});
 $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistoryId)return;const records=storedRecords(),record=records.find(r=>r.id===currentHistoryId);if(record){record.engineVersion=82;setStoredRecords(records);}});
+
+/* Request-first practical support. This bounded policy is not a language model.
+ * The topic never supplies personal facts or replaces an identified ordinary task. */
+(function(root){
+ 'use strict';
+ const actions={
+  communicate:['설명할 내용을 먼저 정리하기','전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다.'],
+  inquire:['물어볼 질문을 준비하기','궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “제가 이해한 내용이 맞나요?”, “더 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다.'],
+  verify:['확인할 조건을 나누어 살피기','확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.'],
+  improve:['작게 바꾸고 같은 상황에서 확인하기','바꾸고 싶은 부분 한 가지와 지금 어떤 점이 어려운지를 구체적으로 적어 보세요. 한 번에 한 가지를 바꾼 작은 방법을 시도하고, 전후의 차이를 같은 기준으로 확인해 보세요.'],
+  prepare:['앞둔 일을 작은 단계로 준비하기','앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요.'],
+  coordinate:['맡을 몫과 기준 맞추기','할 일을 작은 단계로 나누고, 각 단계의 완료 기준과 감당할 시간·범위를 정해 보세요. 함께하는 사람이 있다면 담당할 몫과 조율이 필요한 부분을 확인해 보세요.'],
+  prioritize:['지금 할 일과 미룰 일 나누기','각 일의 마감·중요도·예상 소요 시간을 실제로 쓸 수 있는 시간과 비교해 보세요. 먼저 할 일 한 가지와 미뤄도 되는 일을 나누고, 일정이 달라지면 영향을 받는 사람에게 확인해 보세요.'],
+  finish:['마칠 기준과 다음 수정을 구분하기','이번 단계에서 꼭 충족해야 할 기준과 확인할 시점을 먼저 정해 보세요. 기준을 충족한 뒤 떠오르는 추가 수정은 다음 단계 목록에 남겨, 마무리와 계속 다듬을 일을 구분해 보세요.'],
+  implement:['결정한 다음의 작은 실행 정하기','이미 정한 방향에서 가장 먼저 마칠 작은 일 하나를 골라 보세요. 언제 할지와 끝났다고 볼 기준을 정하고, 필요한 준비나 다른 사람의 확인이 있다면 그 부분부터 챙겨 보세요.'],
+  cope:['느끼는 마음과 확인한 사실 나누기','지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.']
+ };
+ const artifact=/(?:문서|자료|안내문|설명문|문구|서식|장부|보고서|화면|페이지|지도|도표|책자|포스터|규칙|대본|목록)/;
+ function operation(task,question){
+  if(!task||!['action','emotion'].includes(task.kind))return null;
+  const original=task.evidenceText??task.text??'',cue=original.search(/어떻게|어떡|무엇|뭘|어떤|무슨|어디|언제/);
+  const framed=cue>0&&/(?:려면|려고|고\s*싶|할\s*때|하는\s*때|앞두고|앞둔|하면서|한\s*뒤)/.test(original.slice(0,cue));
+  const text=cue>=0?original.slice(cue):original;
+  if(task.kind==='emotion')return 'cope';
+  const questionTarget=/(?:질문|물어볼|물을\s*(?:것|내용|점)|여쭐|여쭤볼|궁금한\s*(?:점|내용))/;
+  const negatedInquiry=/(?:묻지|물어보지|질문하지)\s*않/.test(original);
+  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈/g],['improve',/보완|개선|바꾸|바꿀|고칠|손볼|수정/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계)/g]];
+  if(/(?:역할|담당|몫|책임|업무|할\s*일).{0,18}(?:나누|나눌)/.test(original))predicates.push(['coordinate',/나누|나눌/g]);
+  if(/(?:업무|일정|분량|범위|할\s*일|시간).{0,12}(?:줄이|줄일|조정)|감당할\s*(?:양|범위)/.test(original))predicates.push(['prioritize',/줄이|줄일|조정|감당할/g]);
+  if(!negatedInquiry)predicates.push(['inquire',/물어|여쭐|여쭤|묻|질문(?:해|하|할)/g]);
+  if(/조건|기준|요건|규정|절차|준비물|사항/.test(original+' '+question))predicates.push(['verify',/확인|검토|점검|살펴|살피|알아/g]);
+  if(/마음|감정|불안|걱정|긴장/.test(text))predicates.push(['cope',/다루|다룰|돌보|추스|관리|달래|다스리/g]);
+  const matches=predicates.flatMap(([operation,rx])=>[...text.matchAll(rx)].map(match=>({operation,index:match.index})));
+  const found=matches.sort((a,b)=>b.index-a.index)[0]?.operation;
+  if(found)return found==='prepare'&&!negatedInquiry&&questionTarget.test(original+' '+question)?'inquire':found;
+  if(!negatedInquiry&&questionTarget.test(original)&&/정리|준비|적|써|잊|기억/.test(text))return 'inquire';
+  if(framed&&!/^어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)/.test(text))return null;
+  if(task.goal==='prepare'&&questionTarget.test(question)&&!negatedInquiry)return 'inquire';
+  if(task.goal==='cope')return 'cope';
+  return Object.hasOwn(actions,task.goal)?task.goal:null;
+ }
+ function plan({question='',evidenceQuestion=question,task,scene={},state={}}={}){
+  const op=operation(task,evidenceQuestion);if(!op||scene.urgent||scene.boundary||scene.abuse)return null;
+  if(state.sent===true&&state.received===false&&['communicate','inquire'].includes(op))return null;
+  if(state.submitted===true&&op==='finish')return null;
+  const text=task.evidenceText??task.text??'',hasArtifact=artifact.test(text);
+  const clinicalChange=/(?:약|치료|수술|복용|용량|증상|통증).{0,18}(?:끊|중단|바꾸|늘리|줄이|끝내|시작|개선|선택)|(?:끊|중단|바꾸|늘리|줄이).{0,12}(?:약|치료|복용|용량)/.test(text);
+  if(scene.medical||scene.domain==='health'){
+   if(op!=='inquire'&&clinicalChange)return null;
+   if(!['communicate','inquire','verify','cope','coordinate'].includes(op)&&!hasArtifact)return null;
+  }
+  if(scene.domain==='finances'&&!hasArtifact&&!['communicate','inquire','verify','cope','coordinate'].includes(op)&&/(?:투자|매수|매도|대출|주식|코인|보험|예금|수익|상환)/.test(evidenceQuestion))return null;
+  const [headline,body]=actions[op];
+  const prefix=state.received===true&&['communicate','cope'].includes(op)?'이미 받은 답에서 확인한 내용과 더 알아볼 부분을 구분해 보세요. ':'';
+  return {operation:op,headline,text:prefix+body,source:task.text,scope:'ordinary-practical-support'};
+ }
+ const api=Object.freeze({operation,plan});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_TASK_POLICY=api;
+})(typeof globalThis==='object'?globalThis:this);
+
+/* v83: keep practical requests ahead of broad topic templates, with actual card evidence. */
+const ARC83_PREVIOUS_REPORT=arc79CreateReport;
+arc79CreateReport=function(question,spread,cards,override='auto'){
+ const report=ARC83_PREVIOUS_REPORT(question,spread,cards,override),model=report.arc82?.model;
+ if(!model||model.needsContext||!report.arc82.answers.length)return report;
+ const {scene}=arc79Scene(question,override),pack=arc79Pack(question,spread,cards),plans=[],replacements=new Map();
+ for(const answer of report.arc82.answers){
+  const task={...answer.request,evidenceText:model.evidenceQuestion.slice(answer.request.start,answer.request.end)};
+  const plan=ARCANA_TASK_POLICY.plan({question:model.question,evidenceQuestion:model.evidenceQuestion,task,scene,state:model.state});
+  if(!plan){plans.push(null);continue;}
+  const people=/(?:서로|각자|함께|동료|팀|공동|같이|분담|협의|합의|담당자|여럿|가족|부모님|엄마|아빠|친구|연인)/.test(model.evidenceQuestion);
+  const compatible=operation=>!(operation==='coordinate'&&!people)&&(operation===plan.operation||plan.operation==='communicate'&&operation==='coordinate'||plan.operation==='prepare'&&operation==='communicate'&&/근거|논거|설명|말할|말하|말을|할\s*말|이야기|대화|제안|질문|발표|협상/.test(task.evidenceText));
+  const previousOperation=answer.actionTask||ARCANA_TASK_POLICY.operation({kind:'action',goal:'action',text:answer.actionText||''},model.evidenceQuestion);
+  let supported=compatible(previousOperation),practical=answer.actionText,actionSource='existing-operation-specific';
+  if(!supported){
+   const contextual={...scene,facts:{...scene.facts},intent:answer.request.kind};
+   const contextText=ARC82_ACTION(contextual,pack),contextOperation=contextual.arc81ActionTask||contextual.arc80ActionTask||ARCANA_TASK_POLICY.operation({kind:'action',goal:'action',text:contextText},model.evidenceQuestion);
+   if(compatible(contextOperation)){supported=true;practical=contextText;actionSource='context-operation-specific';}
+  }
+  if(supported&&actionSource==='existing-operation-specific'&&!['health','finances'].includes(scene.domain)){plans.push(null);continue;}
+  // An existing operation-specific action wins over the generic fallback. Broad
+  // topic introductions must not hide it; safety checks have already run above.
+  if(!supported){practical=plan.text;actionSource='request-policy';}
+  const card=answer.request.kind==='emotion'?pack.main:pack.advice;
+  const shared=plans.length===0&&report.arc81?.directSynthesisUsed?arc81Relations(pack,spread)[0]:null;
+  const previous=answer.text;answer.directText=practical+' '+(shared?.core||arc80CardSentence(card,spread));answer.text=answer.directText;answer.refs=shared?.refs||[card.index];replacements.set(previous,{body:answer.text,refs:answer.refs});plans.push({...plan,text:practical,actionSource});
+ }
+ if(plans.some(Boolean)){
+  report.direct=report.arc82.answers.map(answer=>answer.directText||answer.text).join('\n\n');
+  if(plans[0])report.headline=report.arc82.answers.length>1?'요청한 관점을 함께 살펴볼게요':plans[0].headline;
+  report.actions=[...new Set(report.arc82.answers.filter(answer=>['action','emotion'].includes(answer.request.kind)).map((answer)=>{const index=report.arc82.answers.indexOf(answer);return plans[index]?.text||answer.actionText||answer.directText||answer.text;}))];
+  report.sections=report.sections.map(section=>section.kind==='request'&&replacements.has(section.body)?{...section,...replacements.get(section.body)}:section);
+ }
+ report.arc83={version:83,policy:'request-first',handled:plans.map((plan,index)=>plan?{request:index,operation:plan.operation,source:plan.source,scope:plan.scope,actionSource:plan.actionSource}:null).filter(Boolean)};
+ return report;
+};
+$('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistoryId)return;const records=storedRecords(),record=records.find(item=>item.id===currentHistoryId);if(record){record.engineVersion=83;setStoredRecords(records);}});
 
 /* Compact logical positions shared by the draw mat, reading overview and history. */
 function arc80MatLayout(spread){
@@ -6101,7 +6203,7 @@ openHistoryDetail=function(record){ARC80_MAT_HISTORY(record);arc80CompactMats();
 matchMedia('(max-width:640px)').addEventListener('change',arc80CompactMats);
 
 /* Same bundled reading engine on every device. Optional web caching has no AI server. */
-const ARCANA_WEB_BUILD=Object.freeze({appVersion:'82.1.0',readingEngine:82});
+const ARCANA_WEB_BUILD=Object.freeze({appVersion:'83.0.0',readingEngine:83});
 (function(){
  'use strict';
  const panel=document.createElement('section');panel.className='arc-web';panel.id='arcanaWebApp';panel.setAttribute('aria-label','기기에서 앱 사용');
