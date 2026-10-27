@@ -1,0 +1,38 @@
+{
+  "release": {
+    "appVersion": "82.1.0",
+    "readingEngine": 82,
+    "appSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+    "appBytes": 30724973,
+    "webRelease": "9709bb59bde7b81e74d0b370"
+  },
+  "checks": [
+    "release metadata matches exact deployed HTML and worker",
+    "desktop: 48 fixed question/card readings equal across locale, timezone and screen",
+    "desktop: complete app cache respects nested deployment scope",
+    "desktop: offline new tab serves same 48 readings",
+    "desktop: all 78 embedded original JPEGs decode offline",
+    "offline draw/reveal/save works without a model server",
+    "android-emulation: 48 fixed question/card readings equal across locale, timezone and screen",
+    "android-emulation: complete app cache respects nested deployment scope",
+    "android-emulation: offline new tab serves same 48 readings",
+    "android-emulation: all 78 embedded original JPEGs decode offline",
+    "android-emulation: backup restores the same question/cards/report without cloud sync",
+    "iphone-emulation: 48 fixed question/card readings equal across locale, timezone and screen",
+    "iphone-emulation: complete app cache respects nested deployment scope",
+    "iphone-emulation: offline new tab serves same 48 readings",
+    "iphone-emulation: all 78 embedded original JPEGs decode offline",
+    "iphone-emulation: backup restores the same question/cards/report without cloud sync",
+    "mismatched update is rejected and old offline app and records survive",
+    "new release waits for the user instead of replacing the current page",
+    "declining update preserves the current unsaved reading",
+    "accepted update preserves records and removes only this app’s old cache",
+    "blocked service workers leave online reading available and never claim offline readiness"
+  ],
+  "errors": [],
+  "browser": "156.0.4314.42",
+  "profiles": 3,
+  "questionCardCombinationsPerProfile": 48,
+  "readingParitySHA256": "72c661c6d3023030159d2e2e78980bdcc0b5189456a25dd99204c70614b2ddad",
+  "note": "Actual browser cache, network-offline and update tests. Android/iPhone profiles are Chromium emulations, not physical phone or Safari tests. Reading equality does not prove professional quality."
+}
