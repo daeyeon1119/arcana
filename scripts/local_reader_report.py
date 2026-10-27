@@ -8,10 +8,14 @@ import hashlib
 
 root = Path(__file__).resolve().parents[1]
 staged = '--staged' in sys.argv
+separated = '--separated' in sys.argv
+assert not (staged and separated), 'Choose one interpretation protocol'
 profile_id = next((arg[10:] for arg in sys.argv[1:] if arg.startswith('--profile=')), 'qwen3-4b')
 profiles = json.loads((root / 'scripts/local-reader-profiles.json').read_text(encoding='utf-8'))
 assert profile_id in profiles
 base_folder = ('native-staged-first' if staged else 'native-first') if profile_id == 'qwen3-4b' else 'native-' + profile_id + ('-staged' if staged else '') + '-first'
+if separated:
+    base_folder = 'native-' + profile_id + '-separated-first'
 folder = root / 'test-results/local-reader' / base_folder
 run_tag = next((arg[6:] for arg in sys.argv[1:] if arg.startswith('--run=')), None)
 if run_tag:
@@ -40,10 +44,17 @@ notes = json.loads(notes_path.read_text(encoding='utf-8')) if notes_path.exists(
 target_path = root / 'test-results/local-reader/editorial-targets.json'
 targets = json.loads(target_path.read_text(encoding='utf-8'))['targets'] if target_path.exists() else {}
 esc = lambda value: html.escape(str(value))
-blocks, complete, reviewed, answers, execution_failures = [], 0, 0, 0, 0
+blocks, complete, reviewed, answers, execution_failures, drafts = [], 0, 0, 0, 0, 0
 for case in cases:
     path = folder / (case['id'] + '.json')
     if not path.exists():
+        draft_path = folder / (case['id'] + '.draft.json')
+        if separated and draft_path.exists():
+            draft_row = json.loads(draft_path.read_text(encoding='utf-8'))
+            drafts += bool(draft_row.get('draftRaw'))
+            help_text = '\n\n'.join(request.get('answer', '') for request in (draft_row.get('draft') or {}).get('requests', []) if isinstance(request, dict))
+            blocks.append(f'<article data-kind="{esc(case["kind"])}"><small>{esc(case["id"])} · 질문 답변 초안만 수신 · 전체 해석 미완료</small><h2>{esc(case["question"])}</h2><p>{esc(help_text)}</p><details><summary>첫 초안 원문</summary><pre>{esc(draft_row.get("draftRaw", ""))}</pre></details></article>')
+            continue
         blocks.append(f'<article data-kind="{esc(case["kind"])}"><small>{esc(case["id"])} · 아직 실행 결과 없음</small><h2>{esc(case["question"])}</h2></article>')
         continue
     row = json.loads(path.read_text(encoding='utf-8'))
@@ -51,7 +62,7 @@ for case in cases:
     answers += bool(row.get('raw'))
     execution_failures += bool(row.get('error'))
     note = notes.get(case['id'])
-    reviewed += bool(note) and bool(row.get('raw')) and note.get('reviewScope') != 'question-plan-only'
+    reviewed += bool(note) and bool(row.get('raw')) and note.get('reviewScope') not in {'question-plan-only','question-help-only'}
     packet, parsed = row['packet'], row.get('parsed') or {}
     cards = '<br>'.join(esc(f'{c["ref"]} · {c["position"]} · {c["name"]} {c["orientation"]} · {c["meaning"]}') for c in packet['cards'])
     baseline = row['baseline']['direct']
@@ -61,19 +72,34 @@ for case in cases:
     valid = '구조 검사 통과' if row['validation']['ok'] else '구조 검사 실패: ' + ', '.join(row['validation']['issues'])
     review = esc(note['comment']) if note else '실제 문장 검토 전입니다. 구조 검사 통과를 의미·품질의 통과로 읽지 마세요.'
     plan = '' if not staged else '<h4>카드 없이 분석한 질문</h4><pre>' + esc(json.dumps(row.get('questionPlan'), ensure_ascii=False, indent=2)) + '</pre>'
+    synthesis = parsed.get('synthesis', {}).get('text', '출력 없음')
+    unknowns = parsed.get('unknowns', [])
+    if separated:
+        draft = row.get('draft') or {}
+        drafts += bool(row.get('draftRaw'))
+        requests = ''.join(f'<h4>요청 원문: {esc(request.get("source", ""))}</h4><p>{esc(request.get("answer", ""))}</p>' for request in draft.get('requests', []) if isinstance(request, dict))
+        actions = '<br>'.join(esc(action) for action in draft.get('actions', []))
+        details = ''.join(f'<h4>{esc(card["position"])} · {esc(card["name"])} {esc(card["orientation"])}</h4><p>{esc((parsed.get("cards", {}).get(card["ref"]) or {}).get("lens", ""))}<br>{esc((parsed.get("cards", {}).get(card["ref"]) or {}).get("invitation", "출력 없음"))}</p>' for card in packet['cards'])
+        synthesis = '\n'.join(parsed.get('synthesis', {}).get(key, '') for key in ['connection','invitation']) or '출력 없음'
+        unknowns = draft.get('unknowns', [])
+        plan = '<h4>카드 없이 생성한 고정 답변 원문</h4><pre>' + esc(row.get('draftRaw', '')) + '</pre>'
     target = targets.get(case['id'])
     target_html = '' if not target else '<details><summary>저자의 편집 목표 예시 · 모델 출력이나 외부 전문가 답변이 아닙니다</summary><p>' + esc(target['focus']) + '</p><p>' + esc(target['answer']) + '</p><h4>실천</h4><p>' + esc(target['action']) + '</p><small>' + esc(target['limits']) + '</small></details>'
     blocks.append(f'''<article data-kind="{esc(case['kind'])}"><small>{esc(case['id'])} · {esc(case['kind'])} · {row['elapsedMs']/1000:.1f}초 · {esc(valid)}</small>
 <h2>{esc(case['question'])}</h2><p class="cards">{cards}</p><p class="memo">검토할 점: {esc(case['review'])}<br>실제 검토: {review}</p>
-<div class="compare"><section><h3>기존 v82 실제 답변</h3><p>{esc(baseline)}</p></section><section><h3>무료 로컬 모델의 실제 답변</h3>{requests}<h4>전체 흐름</h4><p>{esc(parsed.get('synthesis', {}).get('text', '출력 없음'))}</p><h4>실천</h4><p>{actions}</p></section></div>
-<details><summary>전체 카드 설명 · 미확인 정보 · 원본 JSON</summary>{plan}{details}<h4>더 알아볼 점</h4><p>{esc(chr(10).join(parsed.get('unknowns', [])))}</p><pre>{esc(row['raw'])}</pre></details>{target_html}</article>''')
+<div class="compare"><section><h3>기존 v82 실제 답변</h3><p>{esc(baseline)}</p></section><section><h3>무료 로컬 모델의 실제 답변</h3>{requests}<h4>카드가 만드는 관점</h4><p>{esc(synthesis)}</p><h4>실천</h4><p>{actions}</p></section></div>
+<details><summary>전체 카드 설명 · 미확인 정보 · 원본 JSON</summary>{plan}{details}<h4>더 알아볼 점</h4><p>{esc(chr(10).join(unknowns))}</p><pre>{esc(row['raw'])}</pre></details>{target_html}</article>''')
 
-evaluation_note = '기존 진단 질문을 재사용합니다. 개발·회귀 자료이며 새로운 독립 평가가 아닙니다.' if (staged or profile_id != 'qwen3-4b') else '알려진 개발 질문 3개와 프롬프트 고정 뒤 작성한 새 상황 12개를 구분합니다.'
+evaluation_note = '기존 진단 질문을 재사용합니다. 개발·회귀 자료이며 새로운 독립 평가가 아닙니다.' if (staged or separated or profile_id != 'qwen3-4b') else '알려진 개발 질문 3개와 프롬프트 고정 뒤 작성한 새 상황 12개를 구분합니다.'
 if fixture_path.name != 'local-reader-first.json':
     evaluation_note = '별도로 작성한 새 질문의 실제 첫 출력을 보존합니다. 작성 시점과 평가 성격은 질문 파일과 고정 기록에 명시합니다.'
 if run_tag and run_tag.startswith('transport-retry'):
     evaluation_note += ' 이 화면은 통신 장애 뒤 선택한 질문을 다시 실행한 별도 기록이며 원래 실패를 대체하지 않습니다.'
 title = '무료 로컬 해석 모델 · 두 단계 후보 진단' if staged else '무료 로컬 해석 모델 · 첫 실제 진단'
+draft_note = ''
+if separated:
+    title = '무료 로컬 해석 모델 · 질문 답변과 카드 관점 분리'
+    draft_note = f'카드 없는 답변 초안 수신 {drafts}개. 첫 단계의 질문 답변·실천은 고정하고, 두 번째 단계는 카드별 관점과 연결만 추가합니다. 초안만 받은 항목은 완성된 해석으로 세지 않습니다.'
 model_name = freeze.get('model', profiles[profile_id].get('model', {})).get('name', 'Qwen3-4B-Q4_K_M')
 kind_labels = {'fresh': '별도 작성 질문', 'development': '개발·회귀 질문'}
 kind_counts = {}
@@ -85,6 +111,7 @@ filter_options = '<option value="all">전체 자료</option>' + ''.join(
 doc = f'''<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>
 *{{box-sizing:border-box}}body{{margin:0;background:#f5f2e9;color:#253d32;font:16px/1.85 system-ui,sans-serif}}main{{max-width:1200px;margin:auto;padding:24px}}h1{{font-size:28px}}h2{{font-size:20px}}h3,h4{{margin:12px 0 8px}}p{{white-space:pre-wrap;margin:8px 0}}article{{background:#fffdf7;border:1px solid #d5ccba;border-radius:12px;padding:22px;margin:22px 0}}small{{color:#5c7164}}.cards,.memo{{font-size:14px;padding:14px;background:#f1f1e5;border-radius:8px}}.compare{{display:grid;grid-template-columns:1fr 1fr;gap:24px}}select{{font:inherit;min-height:44px;padding:8px}}pre{{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}}summary{{cursor:pointer}}@media(max-width:700px){{main{{padding:12px}}article{{padding:16px}}.compare{{grid-template-columns:1fr}}}}</style><main>
 <h1>{title}</h1><p>실행 기록 {complete}/{len(cases)}개 · 답변 생성 {answers}개 · 실행 오류 {execution_failures}개 · 실제 문장 검토 {reviewed}개. {esc(model_name)}과 llama.cpp CPU를 이 기기에서 실행했습니다. 유료 API를 쓰거나 질문을 외부 추론 서버로 보내지 않습니다.</p>
+<p>{draft_note}</p>
 <p>질문·프롬프트·카드·원본 출력을 보존합니다. {evaluation_note} 저자가 수행한 진단이며 전문가와의 독립 비교가 아닙니다. JSON 형태·원문 인용·카드 참조 검사는 답변의 의미나 품질을 보증하지 않습니다.</p>
 <select id="filter" aria-label="평가 자료 구분">{filter_options}</select>
 {''.join(blocks)}<script>document.getElementById('filter').onchange=e=>document.querySelectorAll('article[data-kind]').forEach(a=>a.hidden=e.target.value!=='all'&&a.dataset.kind!==e.target.value);</script></main></html>'''

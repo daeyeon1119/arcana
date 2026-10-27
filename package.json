@@ -15,12 +15,14 @@
     "test:question-model": "node tests/question-model.cjs",
     "test:local-contract": "node tests/local-reader-core.cjs",
     "test:local-planner": "node tests/local-reader-planner.cjs",
+    "test:local-separated": "node tests/local-reader-separated.cjs",
     "test:local-transport": "node tests/local-model-http.cjs",
     "test:local-config": "node tests/local-reader-config.cjs",
     "test:local-report": "python tests/local-reader-report.py",
     "diagnose:local-native": "node scripts/local-reader-native.cjs",
     "diagnose:local-qwen35": "node scripts/local-reader-native.cjs --profile=qwen35-9b",
     "diagnose:local-staged": "node scripts/local-reader-native.cjs --staged",
+    "diagnose:local-separated": "node scripts/local-reader-native.cjs --profile=qwen35-9b --separated",
     "diagnose:local-browser": "node scripts/local-reader-diagnostic.cjs",
     "report:local-reader": "python scripts/local_reader_report.py",
     "report:blind-review": "python scripts/local_blind_review.py",
@@ -30,7 +32,7 @@
     "diagnose:generalization": "node scripts/context.cjs",
     "report:synthesis": "python scripts/synthesis_report.py",
     "report:questions": "python scripts/question_report.py",
-    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-model && npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
+    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-model && npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
   },
   "devDependencies": {
     "playwright": "1.62.1"

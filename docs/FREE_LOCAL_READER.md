@@ -85,3 +85,14 @@ python scripts/local_reader_report.py --profile=qwen35-9b --run=development-v1
 [실제 검토 결과](../test-results/local-reader/REVIEW_QWEN35.md)는 개발 질문 3개의 답변과 두 단계 후보 1개입니다. 여전히 질문과 다른 조언, 없는 사실·인과관계가 나와 기본 해석에 채택하지 않았습니다. 실행은 약 3~5분 걸렸고 메모리 여유도 작았습니다. 모델 크기를 키운 것만으로 해석 품질을 해결했다는 결론을 내리지 않습니다.
 
 후보 설정을 고정한 다음 별도 질문 14개를 첫 답변 수신 전에 커밋했습니다. 이 질문들은 아직 실행하지 않았으며 평가 성적으로 세지 않습니다. 개발 질문에서 드러난 실패를 수정한 후보를 다시 시험할 때는 후보 설정과 첫 출력을 별도로 보존해야 합니다.
+
+## 질문 답변을 고정한 분리 후보
+
+[분리 후보의 실제 첫 검토](SEPARATED_READER_EXPERIMENT.md)는 카드 없이 생성한 질문 도움을 고정한 뒤 카드 관점만 추가합니다. Qwen3.5-9B의 기존 개발 질문 1개를 약 451.2초에 완성했고 두 단계를 모두 읽었습니다. 초안의 요청 오독·부적절한 계산 기준과 카드 단계의 없는 과거·현재 사정이 남아 채택하지 않았습니다. 이 결과를 보고 질문별 정답 대체문을 앱에 넣지 않았습니다.
+
+```powershell
+node scripts/local-reader-native.cjs --profile=qwen35-9b --separated --cases=d01 --run=development-v1
+python scripts/local_reader_report.py --profile=qwen35-9b --separated --run=development-v1
+```
+
+실행에 필요한 환경 변수와 무료 가중치는 앞의 CPU 진단과 같습니다. 기본 검사는 실제 모델을 실행하지 않습니다. 초안은 생성 직후 별도 파일에 보존하고, 완성된 답과 초안만 받은 상태를 보고서에서 구분합니다. 모델이 원문 인용·카드 구조를 맞췄다는 사실은 의미 품질의 통과를 뜻하지 않습니다.
