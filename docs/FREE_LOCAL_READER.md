@@ -66,3 +66,20 @@ npm run test:blind-review
 ```
 
 타로 실무자라는 선택은 자기 신고이며, 작성자가 자체 검토한 것과 구분합니다. **현재 외부 전문가의 평가 결과는 없습니다.** 브라우저 동작 검사에서 넣는 값은 격리된 프로필의 명시적인 `TEST ONLY` 자료이며 평가 결과로 집계하거나 저장소에 올리지 않습니다.
+
+## 두 번째 무료 후보와 새 평가 자료 분리
+
+[Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)의 Apache-2.0 공개 모델을 [bartowski의 고정 GGUF 파일](https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF/tree/182be2fd6c7bc44887d88a91cb03ff009cc9f549)로 받았습니다. 모델은 약 6.17GB이며 고정 출처·리비전·바이트 수·SHA-256·샘플링 설정은 `scripts/local-reader-profiles.json`에 있습니다. 컨텍스트 4096, CPU 스레드 4개로 실행합니다. 기존 Qwen3-4B 설정과 첫 기록은 유지합니다.
+
+```powershell
+python scripts/prepare-local-reader.py --profile=qwen35-9b
+$env:ARCANA_MODEL_DIAGNOSTIC='1'
+node scripts/local-reader-native.cjs --profile=qwen35-9b --cases=d01,d02,d03 --run=development-v1
+python scripts/local_reader_report.py --profile=qwen35-9b --run=development-v1
+```
+
+`--describe`를 붙이면 모델을 시작하지 않고 선택한 설정을 볼 수 있습니다. `--fixture=tests/파일.json`은 프로젝트의 테스트 폴더 내부 파일만 허용하며, 보고서도 같은 질문 파일과 고정 해시를 확인합니다. 알 수 없는 모델·옵션·카드 ID·중복 질문·출력 경로 이탈은 거부합니다. 기본 `npm test`는 모델을 다운로드하거나 실행하지 않습니다.
+
+[실제 검토 결과](../test-results/local-reader/REVIEW_QWEN35.md)는 개발 질문 3개의 답변과 두 단계 후보 1개입니다. 여전히 질문과 다른 조언, 없는 사실·인과관계가 나와 기본 해석에 채택하지 않았습니다. 실행은 약 3~5분 걸렸고 메모리 여유도 작았습니다. 모델 크기를 키운 것만으로 해석 품질을 해결했다는 결론을 내리지 않습니다.
+
+후보 설정을 고정한 다음 별도 질문 14개를 첫 답변 수신 전에 커밋했습니다. 이 질문들은 아직 실행하지 않았으며 평가 성적으로 세지 않습니다. 개발 질문에서 드러난 실패를 수정한 후보를 다시 시험할 때는 후보 설정과 첫 출력을 별도로 보존해야 합니다.

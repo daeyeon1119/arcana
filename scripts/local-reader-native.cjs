@@ -5,7 +5,7 @@ const postLocalJSON=require('./local-model-http.cjs');
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex'),canonical=p=>fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n');
 const configAPI=require('./local-reader-config.cjs'),config=configAPI.setup(process.argv.slice(2));
 const {resources,fixture,fixturePath,profileId,profile,staged,selectedIds,limit,folder,cache}=config,planner=staged?require('../src/local-reader-planner.js'):null;
-if(config.describe){console.log(JSON.stringify({profile:profileId,model:resources.model,folder,fixture:path.relative(process.cwd(),fixturePath),selectedCaseIds:selectedIds||fixture.cases.slice(0,limit).map(c=>c.id),context:profile.context||8192,generation:profile.generation||{temperature:0.4,top_p:0.9},note:'Read-only description. No model starts, downloads or question uploads.'},null,2));process.exit(0);}
+if(config.describe){console.log(JSON.stringify({profile:profileId,model:resources.model,folder,fixture:path.relative(process.cwd(),fixturePath),selectedCaseIds:fixture.cases.filter(c=>!selectedIds||selectedIds.includes(c.id)).slice(0,limit).map(c=>c.id),context:profile.context||8192,generation:profile.generation||{temperature:0.4,top_p:0.9},note:'Read-only description. No model starts, downloads or question uploads.'},null,2));process.exit(0);}
 async function fileHash(file){const h=crypto.createHash('sha256');for await(const chunk of fs.createReadStream(file))h.update(chunk);return h.digest('hex');}
 (async()=>{
  if(process.env.ARCANA_MODEL_DIAGNOSTIC!=='1')throw Error('Explicitly set ARCANA_MODEL_DIAGNOSTIC=1 for free local inference.');

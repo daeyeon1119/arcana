@@ -1,5 +1,5 @@
 {
-  "total": 14,
+  "total": 17,
   "checks": [
     {
       "name": "original experiment freeze is preserved byte for byte in its values",
@@ -19,6 +19,14 @@
     },
     {
       "name": "reject unsupported or unsafe options --profile=__proto__",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --profile=",
+      "ok": true
+    },
+    {
+      "name": "reject unsupported or unsafe options --profile=qwen3-4b --profile=qwen35-9b",
       "ok": true
     },
     {
@@ -51,6 +59,10 @@
     },
     {
       "name": "reject unsupported or unsafe options --case=d01",
+      "ok": true
+    },
+    {
+      "name": "case limit is frozen so resume cannot silently expand its sample",
       "ok": true
     },
     {

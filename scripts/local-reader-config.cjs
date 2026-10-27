@@ -4,8 +4,8 @@ const root=path.resolve(__dirname,'..'),json=p=>JSON.parse(fs.readFileSync(path.
 function setup(argv=[]){
  const known=/^--(?:profile=|run=|cases=|limit=|fixture=|staged$|describe$)/;
  for(const arg of argv)assert(known.test(arg),'Unknown diagnostic option: '+arg);
- const get=name=>argv.find(a=>a.startsWith('--'+name+'='))?.slice(name.length+3);
- const profileId=get('profile')||'qwen3-4b',profiles=json('scripts/local-reader-profiles.json');
+ const get=name=>{const args=argv.filter(a=>a.startsWith('--'+name+'='));assert(args.length<=1,'Duplicate diagnostic option: '+name);if(args.length){const value=args[0].slice(name.length+3);assert(value.length,'Empty diagnostic option: '+name);return value;}};
+ const profileId=get('profile')??'qwen3-4b',profiles=json('scripts/local-reader-profiles.json');
  assert(Object.hasOwn(profiles,profileId),'Unknown local model profile');
  const profile=profiles[profileId],resources=json('scripts/local-reader-resources.json');
  if(profile.model)resources.model=profile.model;
@@ -22,11 +22,12 @@ function setup(argv=[]){
  return {profileId,profile,resources,fixture,fixturePath,staged,runTag,selectedIds,limit,describe:argv.includes('--describe'),folder:'test-results/local-reader/'+baseFolder+(runTag?'/'+runTag:''),cache:path.join(root,'.cache/local-reader')};
 }
 function freezeFor(config,hashes){
- const {profileId,profile,resources,staged,selectedIds}=config;
+ const {profileId,profile,resources,staged,selectedIds,limit,fixture}=config;
  const freeze={appSHA256:hashes.app,contractSHA256:hashes.contract,fixtureSHA256:hashes.fixture,runtime:resources.runtime,model:resources.model,temperature:0.4,top_p:0.9,max_tokens:1800,seed:830027,context:8192,threads:4};
  if(profileId!=='qwen3-4b')Object.assign(freeze,{profile:profileId,context:profile.context,generation:profile.generation,temperature:profile.generation.temperature,top_p:profile.generation.top_p});
  if(staged)Object.assign(freeze,{plannerSHA256:hashes.planner,planTemperature:0.2,planMaxTokens:600,stages:['question-without-cards','grounded-reading']});
  if(selectedIds)freeze.selectedCaseIds=selectedIds;
+ if(limit!==fixture.cases.length)freeze.caseLimit=limit;
  return freeze;
 }
 module.exports={setup,freezeFor};
