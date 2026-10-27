@@ -1,0 +1,12 @@
+{
+ "engineFreezeCommit":"82cfae2",
+ "fixtureCommit":"0218191",
+ "actualQuestions":16,
+ "actualReadingsPerVersion":128,
+ "primaryAnswersRead":{"spread":"five","questionIds":"f01–f16","count":16},
+ "detailedSectionsRead":0,
+ "reviewer":"implementation author",
+ "independentExpertReview":false,
+ "qualityScore":null,
+ "note":"All 16 primary answers read. Not all 128 detailed readings read. Original engine, fixture and first outputs retained. Temporal participants, parallel action requests, recipient perspective, generic product-template reuse and requirements/question paraphrases still fail despite many routing checks passing. Subsequent fixes using these questions are regression work."
+}
