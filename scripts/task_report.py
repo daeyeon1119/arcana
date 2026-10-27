@@ -6,7 +6,7 @@ import sys
 
 root = Path(__file__).resolve().parents[1]
 phase = sys.argv[1] if len(sys.argv) > 1 else 'first'
-assert phase in {'development', 'first', 'regression'}
+assert phase in {'development', 'first', 'regression', 'fresh'}
 folder = root / 'test-results/task-policy' / phase
 rows = json.loads((folder / 'readings.json').read_text(encoding='utf-8'))
 summary = json.loads((folder / 'summary.json').read_text(encoding='utf-8'))

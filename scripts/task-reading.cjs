@@ -1,7 +1,7 @@
 /* Actual v82/v83 outputs, with immutable first-run evidence separate from development. */
 const fs=require('node:fs'),crypto=require('node:crypto'),assert=require('node:assert/strict'),zlib=require('node:zlib'),{execFileSync}=require('node:child_process');
-const phase=process.argv[2]||'development';assert(['development','first','regression'].includes(phase),'Unknown evaluation phase');
-const fixturePath=phase==='development'?'tests/task-policy-dev.json':'tests/task-policy-new.json';
+const phase=process.argv[2]||'development';assert(['development','first','regression','fresh'].includes(phase),'Unknown evaluation phase');
+const fixturePath=phase==='development'?'tests/task-policy-dev.json':phase==='fresh'?'tests/task-policy-fresh.json':'tests/task-policy-new.json';
 let fixtureText=fs.readFileSync(fixturePath,'utf8').replace(/\r\n/g,'\n');const fixture=JSON.parse(fixtureText),folder='test-results/task-policy/'+phase;
 if(phase==='regression'){
  const expectations=JSON.parse(fs.readFileSync('tests/task-policy-regression-expectations.json','utf8'));
@@ -12,8 +12,8 @@ const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 const baseline=execFileSync('git',['show','56b357c:index.html'],{maxBuffer:40*1024*1024});assert.equal(hash(baseline),'fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb');
 fs.mkdirSync('.cache',{recursive:true});fs.writeFileSync('.cache/task-v82.html',baseline);fs.mkdirSync(folder,{recursive:true});
 const freeze={appSHA256:hash(fs.readFileSync('index.html')),baselineSHA256:hash(baseline),fixtureSHA256:hash(fixtureText),policySHA256:hash(fs.readFileSync('src/task-policy.js','utf8').replace(/\r\n/g,'\n')),collectorSHA256:hash(fs.readFileSync(__filename,'utf8').replace(/\r\n/g,'\n')),seed:830031,phase,note:fixture.note};
-if(phase==='first'&&fs.existsSync(folder+'/readings.json'))throw Error('First outputs already exist; use regression instead of replacing them.');
-if(phase==='first'&&fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.parse(fs.readFileSync(folder+'/freeze.json','utf8')),freeze,'Frozen first evaluation changed');
+if(['first','fresh'].includes(phase)&&fs.existsSync(folder+'/readings.json'))throw Error('First outputs already exist; use regression instead of replacing them.');
+if(['first','fresh'].includes(phase)&&fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.parse(fs.readFileSync(folder+'/freeze.json','utf8')),freeze,'Frozen first evaluation changed');
 fs.writeFileSync(folder+'/freeze.json',JSON.stringify(freeze,null,2));
 (async()=>{
  const browser=await require('./browser.cjs')(),errors=[];try{

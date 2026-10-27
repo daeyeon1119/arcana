@@ -1,0 +1,21 @@
+{
+  "note":"Authored after engine commit 82cfae2 (HTML SHA256 646cb51f16fe8d31db473703d15cdfdb3d512c57e5f87fc4ea48679c4195c182). A second self-authored first-run diagnostic, not independent expert evidence. No labels or review notes are sent to the engine. All first actual outputs are retained even when they fail; no production fix is based on these questions before this run. Routing checks alone cannot establish semantic quality.",
+  "cases":[
+    {"id":"f01","group":"water-guide","question":"우물 수질검사 안내서를 마을 자원봉사자들과 읽으려고 해요. 검사 수치는 전문기관에서 확인했습니다. 이 자료를 처음 읽는 분들에게 어떻게 설명할까요?","operation":"communicate","specialized":true},
+    {"id":"f02","group":"water-guide","question":"우물 수질검사 안내서를 받았지만 수치와 기준일은 아직 대조하지 않았습니다. 이 자료에서 어떤 조건을 확인해야 할까요?","operation":"verify","specialized":true},
+    {"id":"f03","group":"team-time","question":"작년에는 동료들과 함께 했지만 지금은 협업자가 없고 혼자 행사 일을 맡아요. 할 일을 어떻게 나누면 좋을까요?","operation":"coordinate","specialized":true},
+    {"id":"f04","group":"team-time","question":"작년에는 혼자 일을 처리했지만 지금은 새 동료 두 명과 함께 행사를 맡아요. 할 일을 어떻게 나누면 좋을까요?","operation":"coordinate","specialized":true},
+    {"id":"f05","group":"safety-edit","question":"과학실 안전 포스터에 “보호 장비는 착용하지 않아도 된다”라고 적혀 있어요. 학생이 오해하지 않도록 이 문구를 어떻게 고치면 좋을까요?","operation":"improve","specialized":true},
+    {"id":"f06","group":"camp-request","question":"가족 캠핑을 준비합니다. 예약 변경 조건을 확인할 방법과 각자의 역할을 나눌 방법을 각각 알려 주세요.","operation":"coordinate","specialized":true},
+    {"id":"f07","group":"tutor-question","question":"초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?","operation":"inquire","specialized":true},
+    {"id":"f08","group":"keyboard-practice","question":"합주에서 제 건반 연습 방식을 어떻게 개선할까요? 같은 마디에서 자꾸 박자를 놓치는데 연습 시간은 하루 20분입니다.","operation":"improve","specialized":true},
+    {"id":"f09","group":"ceramics-stage","question":"도예 공방 전시 신청은 이미 접수됐습니다. 추가 작품 사진을 보낼 수 있는지 등 접수 뒤의 조건에서 무엇을 확인할까요?","operation":"verify","specialized":true},
+    {"id":"f10","group":"ceramics-stage","question":"도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?","operation":"verify","specialized":true},
+    {"id":"f11","group":"supplier-reply","question":"납품업체에 보낸 문의의 회신은 아직 없어요. 답을 받았을 때 다시 물을 사항을 정리하는 방법을 알려 주세요.","operation":"inquire","specialized":true},
+    {"id":"f12","group":"supplier-reply","question":"납품업체의 회신을 방금 받았어요. 그 답에서 모호한 내용을 다음 대화에서 물어볼 질문으로 어떻게 정리할까요?","operation":"inquire","specialized":true},
+    {"id":"f13","group":"choice-content","question":"둘 중에서 제 상황에 맞는 것을 골라 주세요. 선택지의 내용은 아직 적지 않았어요.","operation":null},
+    {"id":"f14","group":"choice-content","question":"둘 중에서 비교해 주세요. A는 하루 15분 온라인 언어 모임이고 B는 매주 토요일 2시간 대면 모임입니다. 저는 평일 저녁에 30분 정도 쓸 수 있어요.","operation":null},
+    {"id":"f15","group":"provenance","question":"연금 교육 자료에 “수익률은 어떤 상황에서도 확실하게 보장된다”라는 문장이 있어요. 확인하지 못한 조건을 포함해 이 내용을 어떻게 설명해야 할까요?","operation":"communicate","specialized":true},
+    {"id":"f16","group":"parallel-emotion","question":"동물 보호소의 새 봉사 규칙을 설명할 방법과 처음 진행하는 자리의 긴장을 다룰 방법을 각각 알려 주세요.","operation":"communicate","specialized":true,"also":"cope"}
+  ]
+}
