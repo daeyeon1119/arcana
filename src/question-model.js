@@ -2,6 +2,7 @@
  * This is a bounded Korean grammar, not a claim of unrestricted language understanding. */
 (function(root){
  'use strict';
+ const literalEvidence=typeof module==='object'&&module.exports?require('./reading-evidence.js'):root.ARCANA_READING_EVIDENCE;
  const CONTACT=/(?:메시지|메세지|문자|연락|고백|사과|카톡|톡)/g;
  const REPLY=/(?:답장|회신|답변|대답|(?<!정|오|문)답(?=이|을|도|은|는|해|했|하|할))/g;
  const RESULT=/(?:검사\s*결과|채점\s*결과|결과|성적|점수|발표|합격|불합격|탈락|낙방|선발|승인|당선)/g;
@@ -177,9 +178,10 @@
   const question=normalize(input),parts=segments(question),requests=requestsFrom(parts,question),events=eventsFrom(parts),state=summarize(events,requests,question);
   const generic=question.replace(/[\s.!?。！？,]/g,'');
   const missingChoices=/(?:두\s*(?:가지|개)|둘)\s*중/.test(masked(question))&&/정해|고르|골라|선택|비교/.test(masked(question))&&!/A.{0,80}B|하나는.{1,80}(?:다른|하나는)|(?:첫째|첫\s*번째).{1,80}(?:둘째|두\s*번째)/i.test(masked(question));
-  const needsContext=missingChoices||!!generic&&/^(?:(?:저는|제가|나는|내가|지금|이제|그|이|저|일|상황|사람|것|거|앞으로|어떻게|뭘|무엇을|할까요|해야할까요|해야하나요|하면좋을까요|해야|할지|모르겠어요|모르겠습니다|될까요|잘|풀릴까요|봐주세요|보아주세요|알려주세요|좀|요|은|는|이|가|을|를|과|와|하고|에|대해|입니다|이에요|예요))+$/u.test(generic)&&!/오늘|하루|전반|전체/.test(question);
+  const options=literalEvidence?.extract(question).options||[],missingDefinedOption=requests.some(request=>request.kind==='compare')&&options.length>0&&(options.length<2||options.some(option=>!option.defined));
+  const needsContext=missingChoices||missingDefinedOption||!!generic&&/^(?:(?:저는|제가|나는|내가|지금|이제|그|이|저|일|상황|사람|것|거|앞으로|어떻게|뭘|무엇을|할까요|해야할까요|해야하나요|하면좋을까요|해야|할지|모르겠어요|모르겠습니다|될까요|잘|풀릴까요|봐주세요|보아주세요|알려주세요|좀|요|은|는|이|가|을|를|과|와|하고|에|대해|입니다|이에요|예요))+$/u.test(generic)&&!/오늘|하루|전반|전체/.test(question);
   const romantic=/(?:연애|연인|애인|짝사랑|고백|호감|좋아하는\s*(?:사람|분|이)|좋아하.{0,6}사람)/.test(masked(question));
-  return {version:82,question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices?'비교할 선택지의 내용이 필요합니다. 각 선택지와 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
+  return {version:82,question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices||missingDefinedOption?'비교할 선택지의 내용이 필요합니다. 아직 정하지 않은 안의 내용과 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
  }
  const api=Object.freeze({parse});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_QUESTION_MODEL=api;
 })(typeof globalThis==='object'?globalThis:this);

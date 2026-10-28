@@ -1,0 +1,34 @@
+{
+  "releaseAppSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+  "actualQuestions": 24,
+  "actualReadingsPerVersion": 192,
+  "primaryAnswersRead": {
+    "spread": "five",
+    "questionIds": "g01–g24",
+    "count": 24
+  },
+  "additionalPrimaryAnswersRead": {
+    "spread": "choice5",
+    "questionIds": [
+      "g13",
+      "g14",
+      "g17",
+      "g18"
+    ],
+    "count": 4
+  },
+  "relationalSectionsRead": {
+    "spread": "choice5",
+    "questionIds": [
+      "g13",
+      "g14",
+      "g18"
+    ],
+    "count": 5
+  },
+  "detailedCardSectionsRead": 0,
+  "reviewer": "implementation author",
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "Known regression material, read after final card-attribution and whole-practical-step preservation correction. First outputs remain immutable. Not all 192 full variants were manually read. Generic advice and limited grammar still fall short of professional interpretation."
+}

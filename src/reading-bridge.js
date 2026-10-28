@@ -14,7 +14,7 @@
   care:['care','grief','recovery','hope','balance','security']
  };
  const work={improve:'바꿀 방법',prepare:'준비 순서',coordinate:'할 일과 맡을 범위',prioritize:'우선순위',finish:'마칠 기준',implement:'다음 실행'};
- // Six composable families per lens. These do not select outcomes or invent a
+ // Task families per lens. These do not select outcomes or invent a
  // question-specific event; the requested work still comes from the parser.
  const lenses={
   evidence:{
@@ -77,7 +77,7 @@
    verify:'다른 사람에게 좋아 보이는 조건과 나에게 꼭 필요한 요건을 구분하고, 우선 지킬 기준부터 확인해 보세요.',
    work:'이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.',
    cope:'평가나 비교가 마음에 걸린다면 그것이 나의 전체 가치를 정하는지 돌아보세요. 고칠 행동과 스스로에게 붙인 단정은 나누어 볼 수 있습니다.',
-   compare:'두 안의 장점 수를 세기보다 자신에게 중요한 기준의 순서를 먼저 정해 보세요. 양보할 수 있는 조건과 지킬 조건을 구분합니다.',
+   compare:'선택지의 장점 수를 세기보다 자신에게 중요한 기준의 순서를 먼저 정해 보세요. 양보할 수 있는 조건과 지킬 조건을 구분합니다.',
    option:'이 안이 자신에게 중요한 기준에 맞는지 살피고, 외부에서 좋아 보이는 점과 스스로 지킬 조건을 구분해 보세요.'
   },
   transition:{
@@ -105,7 +105,8 @@
   if(!group)return null;
   const family=Object.hasOwn(work,operation)?'work':operation,text=lenses[group][family];if(!text)return null;
   const noun=work[operation],last=noun?.charCodeAt(noun.length-1),particle=last>=0xac00&&last<=0xd7a3&&(last-0xac00)%28===0?'를':'을';
-  return {operation,primary:relationAxis&&(relationGroups[relationAxis]||axisGroup)?null:primary,group,relationAxis:relationAxis||null,text:family==='work'?noun+particle+' 정할 때는 '+text:text};
+  const relationUsed=!!(relationAxis&&(relationGroups[relationAxis]||axisGroup));
+  return {operation,primary:relationUsed?null:primary,group,relationAxis:relationUsed?relationAxis:null,text:family==='work'?noun+particle+' 정할 때는 '+text:text};
  }
  const api=Object.freeze({compose,groups});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_READING_BRIDGE=api;
 })(typeof globalThis==='object'?globalThis:this);

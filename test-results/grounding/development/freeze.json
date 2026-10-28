@@ -1,9 +1,9 @@
 {
   "phase": "development",
-  "appSHA256": "3703b9fb220189afd280c0c9eba461cf9612ab2af70b1de9a365cd2fc82f0cd8",
+  "appSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
   "baselineSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
   "fixtureSHA256": "8ef7d9268ecac48ca0316ae45d3f2dfe98617ea1305b7ba061b75330b0293737",
-  "collectorSHA256": "d89c96de0ca9ea40d411d9f58f37e0c1ce6713cf26536f15081c88ee35be909b",
+  "collectorSHA256": "b7f643f5f4bd6d9fcd092ab87855f6a0e91328c71370c3ae77da79c5b6107556",
   "seed": 840031,
   "note": "12 known v83 questions, used as development material. Not an independent/unseen quality evaluation."
 }

@@ -1,0 +1,82 @@
+{
+  "release": {
+    "appVersion": "84.0.0",
+    "readingEngine": 84,
+    "appSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+    "appBytes": 30781022,
+    "webRelease": "d92160e15bbd7604ea035e5a"
+  },
+  "checks": [
+    {
+      "artifact": "test-results/stress-summary.json",
+      "scope": "1024 known readings, 78 cards / 156 orientations"
+    },
+    {
+      "artifact": "test-results/editorial/v84-summary.json",
+      "scope": "320 existing questions / 12 editorial contracts"
+    },
+    {
+      "artifact": "test-results/synthesis/v84-summary.json",
+      "scope": "72 existing synthesis outputs"
+    },
+    {
+      "artifact": "test-results/grounding/development/summary.json",
+      "scope": "Known literal-evidence and card-attribution outputs"
+    },
+    {
+      "artifact": "test-results/grounding/regression/summary.json",
+      "scope": "Known literal-evidence and card-attribution outputs"
+    },
+    {
+      "artifact": "test-results/task-policy/v84/development/summary.json",
+      "scope": "Known task dispatch and card evidence outputs"
+    },
+    {
+      "artifact": "test-results/task-policy/v84/regression/summary.json",
+      "scope": "Known task dispatch and card evidence outputs"
+    },
+    {
+      "artifact": "test-results/task-policy/v84/fresh-regression/summary.json",
+      "scope": "Known task dispatch and card evidence outputs"
+    },
+    {
+      "artifact": "test-results/question-model/unseen/regression/summary.json",
+      "scope": "24 previously seen questions / 192 outputs"
+    },
+    {
+      "artifact": "test-results/portable-summary.json",
+      "scope": "Technical browser / build checks; no semantic quality score"
+    },
+    {
+      "artifact": "test-results/grounding/ui-summary.json",
+      "scope": "Technical browser / build checks; no semantic quality score"
+    },
+    {
+      "artifact": "test-results/build-repro-v84.json",
+      "scope": "Technical browser / build checks; no semantic quality score"
+    }
+  ],
+  "npmTestExitCode": 0,
+  "taskRegressionExitCode": 0,
+  "firstOutputsSHA256": "150111acdbd495e434017c89a751fbc0d0573bec4ac1c10a342e99df6423d821",
+  "nonBlockingKnownDiagnosticFailures": [
+    {
+      "group": "sent",
+      "variant": 2,
+      "question": "연락을 전했지만 회신을 못 받았습니다. 이 상황에서 제가 지킬 태도는 무엇인가요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    },
+    {
+      "group": "accessibility",
+      "variant": 0,
+      "question": "보드게임 규칙을 색만으로 구분해 만들었어요. 여러 사람이 편하게 쓰도록 어떻게 보완할까요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    }
+  ],
+  "pass": true,
+  "note": "Actual matching final build artifacts, not independent expert evidence. First 24-question candidate outputs remain immutable; corrected runs are regressions. Counts overlap and are not distinct unseen question totals. Physical phone/Safari validation remains outstanding. Free offline operation retained."
+}

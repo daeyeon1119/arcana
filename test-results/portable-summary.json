@@ -1,10 +1,10 @@
 {
   "release": {
-    "appVersion": "83.0.0",
-    "readingEngine": 83,
-    "appSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
-    "appBytes": 30746613,
-    "webRelease": "b554a08eb980de4bac436228"
+    "appVersion": "84.0.0",
+    "readingEngine": 84,
+    "appSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+    "appBytes": 30781022,
+    "webRelease": "d92160e15bbd7604ea035e5a"
   },
   "checks": [
     "release metadata matches exact deployed HTML and worker",
@@ -33,6 +33,6 @@
   "browser": "156.0.4314.42",
   "profiles": 3,
   "questionCardCombinationsPerProfile": 48,
-  "readingParitySHA256": "a8ef029f8b81f1b8a0fbf0074a123098a16f0de95f50220bf7cdd4ce27afc0f0",
+  "readingParitySHA256": "cb52fe0826a97df94aab6cbdc2d3959a284b4e3691554faef8def0e3d3a3d918",
   "note": "Actual browser cache, network-offline and update tests. Android/iPhone profiles are Chromium emulations, not physical phone or Safari tests. Reading equality does not prove professional quality."
 }

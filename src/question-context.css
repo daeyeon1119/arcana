@@ -5,4 +5,5 @@
 .arc82-context input,.arc82-context button{min-height:44px;width:100%;min-width:0;box-sizing:border-box;font:inherit;border:1px solid #879580;border-radius:6px;padding:10px}
 .arc82-context button{background:#294c39;color:#fff;cursor:pointer}
 .arc82-context #arc82ContextError{color:#8d352b}
-#humanDirect,.history-detail .human-direct{white-space:pre-line}
+#humanDirect,.history-detail .human-direct,#centralAxis,#summary{white-space:pre-line;overflow-wrap:anywhere}
+.human-actions li,.story-chapter p,.card-reading p{overflow-wrap:anywhere}

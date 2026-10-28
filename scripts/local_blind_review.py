@@ -52,6 +52,15 @@ if shutil.which('node'):
     script = template.split('<script>',1)[1].rsplit('</script>',1)[0]
     subprocess.run(['node','--check','--input-type=commonjs'],input=script.encode('utf-8'),check=True)
 output = folder / 'blind-review.html'
-output.write_text(template.replace('/*__REVIEW_DATA__*/null',payload), encoding='utf-8', newline='\n')
-(folder / 'blind-key.json').write_text(json.dumps({'note':'Source key only. No human or expert review has been performed by this generator. Ratings must refer to the per-case fingerprint.','seed':seed,'cases':key},ensure_ascii=False,indent=2),encoding='utf-8')
+def save_if_changed(path, text):
+    content = text.encode('utf-8')
+    if path.exists() and path.read_bytes() == content:
+        return
+    # Avoid truncating the historical report while Windows is inspecting it.
+    temporary = path.with_name(path.name + '.tmp')
+    temporary.write_bytes(content)
+    temporary.replace(path)
+
+save_if_changed(output, template.replace('/*__REVIEW_DATA__*/null',payload))
+save_if_changed(folder / 'blind-key.json', json.dumps({'note':'Source key only. No human or expert review has been performed by this generator. Ratings must refer to the per-case fingerprint.','seed':seed,'cases':key},ensure_ascii=False,indent=2))
 print(f'Prepared {len(key)} recorded cases / {len(cases)} total. Zero reviewer scores generated. {len(cards_by_id)} original JPEGs verified.')

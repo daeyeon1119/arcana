@@ -93,7 +93,7 @@ arc82Start.addEventListener('click',e=>{
 },true);
 $('arc82ContextContinue').addEventListener('click',()=>{
  const context=$('arc82ContextInput').value.trim();if(!context){$('arc82ContextError').textContent='현재 어떤 일이 있는지 한 문장으로 적어 주세요.';$('arc82ContextInput').focus();return;}
- const combined=context+'. '+$('question').value.trim();
+ const original=$('question').value.trim(),combined=original+(/[.!?。！？]$/.test(original)?' ':'. ')+context;
  if(combined.length>500){$('arc82ContextError').textContent='원래 질문과 추가한 상황을 합쳐 500자 이내로 적어 주세요.';return;}
  if(ARCANA_QUESTION_MODEL.parse(combined).needsContext){$('arc82ContextError').textContent='어떤 일인지 알아볼 수 있도록 상황을 조금 더 구체적으로 적어 주세요.';return;}
  $('question').value=combined;$('question').dispatchEvent(new Event('input',{bubbles:true}));arc82ContextPanel.hidden=true;$('arc82ContextInput').value='';$('arc82ContextError').textContent='';arc82Start.click();

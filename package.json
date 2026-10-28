@@ -17,6 +17,7 @@
     "test:reading-evidence": "node tests/reading-evidence.cjs",
     "test:reading-bridge": "node tests/reading-bridge.cjs",
     "test:grounding": "node scripts/grounding-reading.cjs development",
+    "test:grounding-ui": "node scripts/grounding-ui.cjs",
     "report:grounding": "python scripts/grounding_report.py",
     "test:task-reading": "node scripts/task-reading.cjs development",
     "test:task-regression": "node scripts/task-reading.cjs regression && node scripts/task-reading.cjs fresh-regression",
@@ -39,7 +40,7 @@
     "diagnose:generalization": "node scripts/context.cjs",
     "report:synthesis": "python scripts/synthesis_report.py",
     "report:questions": "python scripts/question_report.py",
-    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-model && npm run test:task-policy && npm run test:reading-evidence && npm run test:reading-bridge && npm run test:grounding && npm run test:task-reading && npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
+    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-model && npm run test:task-policy && npm run test:reading-evidence && npm run test:reading-bridge && npm run test:grounding && npm run test:task-reading && npm run test:stress && npm run test:ui && npm run test:grounding-ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
   },
   "devDependencies": {
     "playwright": "1.62.1"

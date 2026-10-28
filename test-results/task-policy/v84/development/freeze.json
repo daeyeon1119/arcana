@@ -1,0 +1,10 @@
+{
+  "appSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+  "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "fixtureSHA256": "5c34b4448d724ac0a8553651711ae4abd2a3ca260346335557cd3f97e40a09cd",
+  "policySHA256": "8435ecba0e46aa45a45580e947a67a74725d354cec72342b7dad48a23a870bcf",
+  "collectorSHA256": "cfc9bf709dc08876319d13a17bf31dc91e0fecce984e5d3c62a93ea545aa89c7",
+  "seed": 830031,
+  "phase": "development",
+  "note": "Development cases authored before the v83 candidate freeze. Reused scenarios and contract examples; not independent quality evidence."
+}
