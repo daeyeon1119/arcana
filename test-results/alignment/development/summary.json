@@ -1,0 +1,17 @@
+{
+  "phase": "development",
+  "appSHA256": "634ced37ea7a81db5489f92596f290d401030c2223304e794d2f7f67da67f73f",
+  "baselineSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+  "fixtureSHA256": "cde88b95955aab7041101d882588bcf2b9a46dfaff1adc7529c664413e709a65",
+  "collectorSHA256": "0405c57dc18f2c5e98edeb62162748a1af23f2d1fbf068dfb7f9d8c86bc700b8",
+  "seed": 850041,
+  "note": "12 existing questions used for development. Not unseen or independent expert evidence. Dispatch/position contracts are not semantic quality or expert scores.",
+  "readingsSHA256": "4e058d55aa8600127300f4f6bcef99e49744b65b61ed8c1d57e54044b0de32af",
+  "compressedSHA256": "852b84b18eb380aef579c1b7183db50749ac32f63ec4cfb924537bf8a2f57967",
+  "questions": 12,
+  "readingsPerVersion": 96,
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 96,
+  "qualityScore": null
+}

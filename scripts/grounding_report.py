@@ -4,7 +4,8 @@ import sys,json,html,hashlib
 root=Path(__file__).resolve().parents[1]
 phase=sys.argv[1] if len(sys.argv)>1 else 'development'
 assert phase in {'development','first','regression'}
-folder=root/'test-results/grounding'/phase
+version=int(sys.argv[2]) if len(sys.argv)>2 else 84
+folder=root/'test-results/grounding'/('' if version==84 else 'v'+str(version))/phase
 rows=json.loads((folder/'readings.json').read_text(encoding='utf-8'))
 summary=json.loads((folder/'summary.json').read_text(encoding='utf-8'))
 freeze=json.loads((folder/'freeze.json').read_text(encoding='utf-8'))

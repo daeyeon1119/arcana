@@ -49,3 +49,5 @@ const ARCANA_WEB_BUILD=Object.freeze({appVersion:'__ARCANA_APP_VERSION__',readin
  else if(!window.isSecureContext||!('serviceWorker'in navigator)){show('이 브라우저에서는 오프라인 저장을 지원하지 않습니다. 인터넷에 연결하면 앱을 사용할 수 있습니다.','unsupported');}
  else register();
 })();
+// Final build metadata owns the saved version after historical save listeners.
+$('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistoryId)return;const records=storedRecords(),record=records.find(item=>item.id===currentHistoryId);if(record){record.engineVersion=ARCANA_WEB_BUILD.readingEngine;setStoredRecords(records);}});

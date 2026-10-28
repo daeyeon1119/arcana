@@ -1,7 +1,7 @@
 {
-  "appVersion": "84.0.0",
-  "readingEngine": 84,
-  "appSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
-  "appBytes": 30781022,
-  "webRelease": "d92160e15bbd7604ea035e5a"
+  "appVersion": "85.0.0",
+  "readingEngine": 85,
+  "appSHA256": "634ced37ea7a81db5489f92596f290d401030c2223304e794d2f7f67da67f73f",
+  "appBytes": 30784006,
+  "webRelease": "78b6019ef9c46b4a693e480f"
 }

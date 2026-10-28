@@ -58,7 +58,7 @@ function arc79Pack(q,spread,cards){
  if(!Object.hasOwn(SPREADS,spread))throw new Error('알 수 없는 카드 배열입니다.');
  if(!Array.isArray(cards)||cards.length!==SPREADS[spread].slots.length)throw new Error('배열의 카드 수가 맞지 않습니다.');
  if(cards.some(c=>!c||!CARD_BY_ID.has(c.id)||typeof c.rev!=='boolean')||new Set(cards.map(c=>c.id)).size!==cards.length)throw new Error('카드 ID·방향 또는 중복을 확인해 주세요.');
- return arc72CardPack(q,spread,cards,{});
+ return {...arc72CardPack(q,spread,cards,{}),question:String(q||'')};
 }
 function arc79Action(scene,pack){
  const facts=arc72PlanFacts(scene,scene.question);
@@ -144,7 +144,7 @@ arcanaV5Build=function(){return drawn.length?arc79Plan($('question').value,selec
 // A single plain-text view also powers the copy, download and saved-reading view.
 readingText=function(){
  const report=arcanaV5Build();
- return [`ARCANA · ${SPREADS[selectedSpread].title}`,`질문: ${$('question').value.trim()||'오늘의 성찰'}`,`일시: ${new Date().toLocaleString('ko-KR')}`,'',report.headline,report.direct,'','[지금 해볼 일]',...report.actions.map((x,i)=>`${i+1}. ${x}`),'','[카드별 근거]',...report.sections.flatMap(s=>[s.title,s.body,'']),...drawn.map((d,i)=>`${i+1}. ${SPREADS[selectedSpread].slots[i][0]} · ${orName(d)} · ${cardMeaning(d)}`),'',report.footer,...(v11FollowupLog.length?['',v11FollowupText(v11FollowupLog)]:[])].join('\n');
+ return [`ARCANA · ${SPREADS[selectedSpread].title}`,`질문: ${$('question').value.trim()||'오늘의 성찰'}`,`일시: ${new Date().toLocaleString('ko-KR')}`,'',report.headline,report.direct,...(report.arc81?.choiceAssignment?.note?['',report.arc81.choiceAssignment.note]:[]),'','[지금 해볼 일]',...report.actions.map((x,i)=>`${i+1}. ${x}`),'','[카드별 근거]',...report.sections.flatMap(s=>[s.title,s.body,'']),...drawn.map((d,i)=>`${i+1}. ${SPREADS[selectedSpread].slots[i][0]} · ${orName(d)} · ${cardMeaning(d)}`),'',report.footer,...(v11FollowupLog.length?['',v11FollowupText(v11FollowupLog)]:[])].join('\n');
 };
 v10AnswerFollowup=function(q){
  const report=arcanaV5Build(),pack=arc79Pack($('question').value,selectedSpread,drawn),category=v10FollowupCategory(q);
@@ -235,7 +235,7 @@ const ARC79_AUTO_INTENT=arc79Intent;
 let arc79ForcedIntent='auto';
 arc79Intent=function(q,s){const r=ARC79_AUTO_INTENT(q,s);return Object.hasOwn(ARC78_INTENT_LABEL,arc79ForcedIntent)?{...r,primary:arc79ForcedIntent,secondary:null,confidence:'manual'}:r;};
 const ARC79_RENDER=arcanaV5Render;
-arcanaV5Render=function(report){ARC79_RENDER(report);if(!report.arc79)return;let info=$('arc79-indicator');if(!info){info=document.createElement('p');info.id='arc79-indicator';document.querySelector('#report .human-hero').appendChild(info);}info.textContent=`${ARC79_DOMAINS[report.arc79.domain]} · ${ARC78_INTENT_LABEL[report.arc79.intent.primary]} · ${report.arc79.evidence.length}장 해석`;$('arc78-indicator')?.remove();};
+arcanaV5Render=function(report){ARC79_RENDER(report);if(!report.arc79)return;let info=$('arc79-indicator');if(!info){info=document.createElement('p');info.id='arc79-indicator';document.querySelector('#report .human-hero').appendChild(info);}info.textContent=`${ARC79_DOMAINS[report.arc79.domain]} · ${ARC78_INTENT_LABEL[report.arc79.intent.primary]} · ${report.arc79.evidence.length}장 해석`;$('arc78-indicator')?.remove();let note=$('arc85SpreadNote');if(!note){note=document.createElement('p');note.id='arc85SpreadNote';info.after(note);}note.textContent=report.arc81?.choiceAssignment?.note||'';note.hidden=!note.textContent;};
 const ARC79_REPORT=renderReport;
 renderReport=function(){
  ARC79_REPORT();

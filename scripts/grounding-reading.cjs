@@ -3,7 +3,8 @@ const fs=require('node:fs'),crypto=require('node:crypto'),zlib=require('node:zli
 const phase=process.argv[2]||'development';assert(['development','first','regression'].includes(phase));
 const known=[...JSON.parse(fs.readFileSync('tests/task-policy-new.json','utf8')).cases.filter(item=>['n05','n09','n15','n16','n21','n22','n24','n29','n31'].includes(item.id)),...JSON.parse(fs.readFileSync('tests/task-policy-fresh.json','utf8')).cases.filter(item=>['f08','f14','f16'].includes(item.id))];
 const fixture=phase==='development'?{note:'12 known v83 questions, used as development material. Not an independent/unseen quality evaluation.',cases:known}:JSON.parse(fs.readFileSync('tests/grounding-first.json','utf8'));
-const folder='test-results/grounding/'+phase,hash=value=>crypto.createHash('sha256').update(value).digest('hex');fs.mkdirSync(folder,{recursive:true});fs.mkdirSync('.cache',{recursive:true});
+const major=Number(JSON.parse(fs.readFileSync('package.json','utf8')).version.split('.')[0]);if(major!==84&&phase==='first')throw Error('This v84 fixture is known material; use regression.');
+const folder='test-results/grounding/'+(major===84?'':'v'+major+'/')+phase,hash=value=>crypto.createHash('sha256').update(value).digest('hex');fs.mkdirSync(folder,{recursive:true});fs.mkdirSync('.cache',{recursive:true});
 const save=async(path,data)=>{const temporary=path+'.'+process.pid+'.tmp';fs.writeFileSync(temporary,data);for(let attempt=0;;attempt++){try{fs.renameSync(temporary,path);return;}catch(error){if(attempt>=2)throw error;await new Promise(resolve=>setTimeout(resolve,150));}}};
 if(phase==='first'&&fs.existsSync(folder+'/readings.json'))throw Error('First outputs already exist. Use regression.');
 const baseline=execFileSync('git',['show','880916e:index.html'],{maxBuffer:40*1024*1024});assert.equal(hash(baseline),'734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f');fs.writeFileSync('.cache/grounding-v83.html',baseline);

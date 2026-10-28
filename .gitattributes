@@ -11,3 +11,6 @@ release.json text eol=lf
 test-results/grounding/**/*.json text eol=lf
 test-results/grounding/**/*.html text eol=lf
 tests/grounding-first.json text eol=lf
+test-results/alignment/**/*.json text eol=lf
+test-results/alignment/**/*.html text eol=lf
+tests/alignment-first.json text eol=lf

@@ -1,0 +1,21 @@
+{
+  "release": {
+    "appVersion": "85.0.0",
+    "readingEngine": 85,
+    "appSHA256": "634ced37ea7a81db5489f92596f290d401030c2223304e794d2f7f67da67f73f",
+    "appBytes": 30784006,
+    "webRelease": "78b6019ef9c46b4a693e480f"
+  },
+  "checks": [
+    "non-comparison 141: same five cards, visible assignment note and matching export",
+    "non-comparison 173: same five cards, visible assignment note and matching export",
+    "non-comparison 293: same five cards, visible assignment note and matching export",
+    "follow-up does not revive an unassigned A/B relationship",
+    "saved non-comparison retains focus and unassigned positions",
+    "actual A/B comparison hides the unassigned notice and preserves ownership",
+    "manual action focus controls relation selection despite comparison wording"
+  ],
+  "errors": [],
+  "browser": "156.0.4314.42",
+  "note": "Known regression inputs in actual 360px draw/reveal/export/save flows. Chromium emulation, not a physical phone/Safari or expert semantic evaluation."
+}

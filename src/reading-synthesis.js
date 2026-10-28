@@ -128,16 +128,23 @@ function arc81Relation(a,b,spread){
  else if(roles.includes('future')||roles.includes('outcome'))positional='이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.';
  return {refs:[a.index,b.index],kind,semanticKind,axis,shared,leftMotifs:left,rightMotifs:right,insight,positional,core:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}`,body:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}${positional?' '+positional:''}`};
 }
+function arc81ChoiceAssigned(pack){
+ if(!Object.hasOwn(pack,'question'))return true; // Standalone symbolic diagnostics.
+ return arc79ForcedIntent==='compare'||arc79ForcedIntent==='auto'&&!!globalThis.ARCANA_QUESTION_MODEL?.parse(pack.question).requests.some(request=>request.kind==='compare');
+}
 function arc81Relations(pack,spread){
  const byRole=r=>pack.list.find(a=>a.role===r),pairs=[];
  const add=(a,b)=>{if(!a||!b||a.index===b.index)return;const key=[a.index,b.index].sort((x,y)=>x-y).join(':');if(!pairs.some(p=>p.key===key))pairs.push({key,...arc81Relation(a,b,spread)});};
- if(spread==='choice5'){add(byRole('optionA'),byRole('optionB'));add(byRole('criteria'),byRole('advice'));}
+ if(spread==='choice5'){if(arc81ChoiceAssigned(pack))add(byRole('optionA'),byRole('optionB'));add(byRole('criteria'),byRole('advice'));}
  else if(spread==='three'){add(byRole('now'),byRole('future'));add(byRole('past'),byRole('now'));}
  else if(spread==='waiting3'){add(byRole('feeling'),byRole('advice'));add(byRole('boundary'),byRole('advice'));}
  else if(spread==='celtic'){add(byRole('now'),byRole('obstacle'));add(byRole('goal'),byRole('root'));add(byRole('self'),byRole('outcome'));}
  else if(pack.list.length>1){add(pack.main,pack.limit);add(pack.limit,pack.advice);add(byRole('resource'),pack.advice);}
  if(!['choice5','three','waiting3','celtic'].includes(spread))pairs.sort((a,b)=>({distinct:0,shared:1,tension:2,complement:2}[b.kind]-{distinct:0,shared:1,tension:2,complement:2}[a.kind]));
  return pairs;
+}
+function arc81DirectRelation(pack,spread,kind){
+ return arc81Relations(pack,spread).find(link=>link.kind!=='distinct'&&(kind==='compare'?link.kind==='alternatives':link.kind!=='alternatives'))||null;
 }
 
 // Preserve the last requested task, including requests phrased as choosing criteria or an attitude.
@@ -180,10 +187,12 @@ arc79Action=function(scene,pack){
 const ARC81_REPORT=arc79CreateReport;
 arc79CreateReport=function(q,spread,cards,override='auto'){
  const r=ARC81_REPORT(q,spread,cards,override),{scene,intent}=arc79Scene(q,override),pack=arc79Pack(q,spread,cards),relations=arc81Relations(pack,spread);
+ const unassigned=spread==='choice5'&&!arc81ChoiceAssigned(pack),assignmentNote=unassigned?'이번 질문은 선택지 비교를 요청하지 않아 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택을 비교하려면 각 안의 내용과 비교할 기준을 질문에 적어 주세요.':null;
  const single=pack.list.map(a=>{
   const motif=arc81Profile(a)[0],slot=SPREADS[spread].slots[a.index][0];
   const role=a.role==='obstacle'?`‘${a.main}’${arc58Josa(a.main,'과','와')} 관련해 실제로 막히는 부분이 있는지 확인해 보세요.`:a.role==='resource'?`이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.`:a.role==='past'?'이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.':a.role==='future'||a.role==='outcome'?'현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.':a.role==='environment'?'주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.':a.role==='boundary'?'이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.':'';
-  return {title:slot,body:`${arc81Anchor(a,spread)} ${ARC81_MOTIFS[motif][1]}${role?' '+role:''}`,refs:[a.index],kind:'card'};
+  const unassignedOption=unassigned&&['optionA','optionB'].includes(a.role);
+  return {title:slot+(unassignedOption?' (선택지 미지정)':''),body:`${arc81Anchor(a,spread)} ${unassignedOption?'특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. ':''}${ARC81_MOTIFS[motif][1]}${role?' '+role:''}`,refs:[a.index],kind:'card'};
  });
  const relationTitle=(link,i)=>{
   const roles=link.refs.map(n=>pack.list[n].role);
@@ -199,9 +208,10 @@ arc79CreateReport=function(q,spread,cards,override='auto'){
  // Without a semantic link the individual cards carry the evidence; do not add filler pairs.
  r.sections=[...single,...relations.filter(link=>link.kind!=='distinct').map((link,i)=>({title:relationTitle(link,i),body:link.body,refs:link.refs,kind:'relational'}))];
  const protectedReading=scene.medical||['health','finances'].includes(scene.domain)||scene.boundary||scene.abuse||scene.urgent||scene.facts.known;
- const useDirectSynthesis=!protectedReading&&relations.length>0&&relations[0].kind!=='distinct'&&(intent.primary!=='compare'||spread==='choice5');
+ const directRelation=arc81DirectRelation(pack,spread,intent.primary);
+ const useDirectSynthesis=!protectedReading&&!!directRelation&&(intent.primary!=='compare'||spread==='choice5');
  if(useDirectSynthesis){
-  const first=relations[0];
+  const first=directRelation;
   // Avoid replacing a specific answer with a long list of card names. Put the connection after it.
   if(['action','emotion'].includes(intent.primary)){
    const prefix=scene.facts.sent&&!scene.facts.replied?(scene.facts.noReply?'이미 마음을 전했고 아직 답을 받지 못한 상황입니다. ':'이미 생각을 전했다는 점을 바탕으로 읽었습니다. '):'';
@@ -211,7 +221,8 @@ arc79CreateReport=function(q,spread,cards,override='auto'){
   else if(intent.primary==='cause')r.direct=(scene.facts.noConflict?'다툰 적이 없다는 점을 전제로 읽었습니다. ':'')+first.core+' 이 연결은 상황을 돌아볼 가설이며, 실제 이유는 관찰한 사실과 대화로 확인해야 합니다.';
   else if(intent.primary==='open')r.direct=first.core+' 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?';
  }
- r.arc81={version:81,profileSource:'ARC58_ATOMS editorial motifs',directSynthesisUsed:useDirectSynthesis,relations:relations.map(({key,body,core,...x})=>x),cardMotifs:pack.list.map(a=>({index:a.index,id:a.id,reverse:a.reverse,motifs:arc81Profile(a)}))};
+ if(assignmentNote)r.sections.push({title:'선택 배열을 읽는 범위',body:assignmentNote,refs:pack.list.filter(card=>['optionA','optionB'].includes(card.role)).map(card=>card.index),kind:'contextual'});
+ r.arc81={version:81,profileSource:'ARC58_ATOMS editorial motifs',directSynthesisUsed:useDirectSynthesis,directRelationRefs:useDirectSynthesis?directRelation.refs:[],choiceAssignment:spread==='choice5'?{assigned:!unassigned,note:assignmentNote}:null,relations:relations.map(({key,body,core,...x})=>x),cardMotifs:pack.list.map(a=>({index:a.index,id:a.id,reverse:a.reverse,motifs:arc81Profile(a)}))};
  return r;
 };
 $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistoryId)return;const records=storedRecords(),record=records.find(r=>r.id===currentHistoryId);if(record){record.engineVersion=81;setStoredRecords(records);}});

@@ -100,13 +100,14 @@
   }
  };
  const relationGroups={focus:'evidence',threshold:'evidence',enough:'evidence',reflection:'evidence',evidence:'evidence',capacity:'capacity',means:'capacity',sustain:'capacity',pace:'pace',readiness:'iteration',restoration:'care',release:'care',space:'boundary',ending:'transition',adaptation:'boundary',framework:'boundary',repair:'exchange',voice:'exchange',evaluation:'values'};
- function compose(operation,motifs,relationAxis){
+ const selfLenses={exchange:{work:'원하는 결과와 실제 진행 상태를 나누어 보고, 어긋나는 부분이 있다면 이번 단계에서 바꿀 수 있는 조건부터 확인해 보세요.',cope:'기대한 모습과 실제로 겪은 일을 나누어 적고, 그 차이 때문에 느끼는 마음과 지금 바꿀 수 있는 행동을 구별해 보세요.'},boundary:{cope:'내가 선택할 수 있는 행동과 지금 조절하기 어려운 조건을 나누어 보세요. 경계를 정하는 일이 느끼는 감정을 없애야 한다는 뜻은 아닙니다.'}};
+ function compose(operation,motifs,relationAxis,context={}){
   const primary=motifs?.[0],axisGroup=Object.keys(groups).find(key=>groups[key].includes(relationAxis)),group=relationGroups[relationAxis]||axisGroup||Object.keys(groups).find(key=>groups[key].includes(primary));
   if(!group)return null;
-  const family=Object.hasOwn(work,operation)?'work':operation,text=lenses[group][family];if(!text)return null;
+  const family=Object.hasOwn(work,operation)?'work':operation,selfLens=context.participants!==true&&selfLenses[group]?.[family],text=selfLens||lenses[group][family];if(!text)return null;
   const noun=work[operation],last=noun?.charCodeAt(noun.length-1),particle=last>=0xac00&&last<=0xd7a3&&(last-0xac00)%28===0?'를':'을';
   const relationUsed=!!(relationAxis&&(relationGroups[relationAxis]||axisGroup));
-  return {operation,primary:relationUsed?null:primary,group,relationAxis:relationUsed?relationAxis:null,text:family==='work'?noun+particle+' 정할 때는 '+text:text};
+  return {operation,primary:relationUsed?null:primary,group,relationAxis:relationUsed?relationAxis:null,contextRule:selfLens?'self-or-unknown':null,text:family==='work'?noun+particle+' 정할 때는 '+text:text};
  }
  const api=Object.freeze({compose,groups});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_READING_BRIDGE=api;
 })(typeof globalThis==='object'?globalThis:this);
