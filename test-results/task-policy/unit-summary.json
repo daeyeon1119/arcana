@@ -247,8 +247,40 @@
     {
       "name": "quoted content checking does not assert the quote as a personal event: 수익은 무조건 보장된다",
       "ok": true
+    },
+    {
+      "name": "explicit current participants outrank past participants: 동료와 함께 맡아요",
+      "ok": true
+    },
+    {
+      "name": "explicit current participants outrank past participants: 협업자가 없고 혼자 맡아요",
+      "ok": true
+    },
+    {
+      "name": "hypothetical collaborators do not assert their presence",
+      "ok": true
+    },
+    {
+      "name": "generic product-improvement prose cannot overwrite a personal practice task",
+      "ok": true
+    },
+    {
+      "name": "asking a contact person for practical information does not assert a collaborative team",
+      "ok": true
+    },
+    {
+      "name": "preparing questions may retain supported clinical detail when no missing reply is stated",
+      "ok": true
+    },
+    {
+      "name": "requested eligibility and required documents are requirements, not editing an artifact",
+      "ok": true
+    },
+    {
+      "name": "question preparation accepts an interrogative complement without inventing a received answer",
+      "ok": true
     }
   ],
-  "total": 62,
-  "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by the preserved first 32 questions. Not a first-seen quality benchmark or professional evaluation."
+  "total": 70,
+  "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by both preserved first-run question sets. Not a first-seen quality benchmark or professional evaluation."
 }

@@ -1,0 +1,34 @@
+{
+  "release": {
+    "appVersion": "83.0.0",
+    "readingEngine": 83,
+    "appSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+    "appBytes": 30746613,
+    "webRelease": "b554a08eb980de4bac436228"
+  },
+  "checks": [
+    {
+      "id": "n15",
+      "width": 360,
+      "directLength": 304,
+      "overflow": false,
+      "exportMatches": true
+    },
+    {
+      "id": "f06",
+      "width": 360,
+      "directLength": 358,
+      "overflow": false,
+      "exportMatches": true
+    },
+    {
+      "id": "f16",
+      "width": 360,
+      "directLength": 223,
+      "overflow": false,
+      "exportMatches": true
+    }
+  ],
+  "errors": [],
+  "note": "Three actual draw/reveal UI runs at 360px in Chromium. Layout/export checks, not independent semantic evaluation or physical phone testing."
+}

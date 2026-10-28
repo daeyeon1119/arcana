@@ -1,0 +1,10 @@
+{
+ "baseline":"v82-readings.json",
+ "candidate":"v83-readings.json",
+ "primaryAnswersReadAfterChange":[114,120,136,141,145,173,179,186,201,213,219,234,251,280,293,294],
+ "additionalRestoredDetailChecked":[10,201],
+ "reviewer":"implementation author",
+ "independentExpertReview":false,
+ "qualityScore":null,
+ "note":"Existing 320 questions were generated again. This pass read the changed primary answers, not every full detail paragraph of all 320 readings. General advice remains in several cases; the original 320 are development/regression data. First-day and clinical-question preparation retain supported specifics after overly broad reuse restrictions were corrected. No claim of arbitrary-question professional quality."
+}

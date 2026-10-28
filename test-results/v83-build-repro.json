@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "index.html": true,
+    "sw.js": true,
+    "release.json": true
+  },
+  "appSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+  "note": "Actual rebuild in a separate copy with CRLF source, manifest and SVG files. Exact output bytes match the tested working build. Original JPEG/PNG bytes unchanged."
+}

@@ -1,6 +1,6 @@
 {
   "note": "54 known v81 questions, replayed as development/regression data. Classification scores do not measure professional quality.",
-  "appSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "appSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
   "questions": 54,
   "readingsPerVersion": 432,
   "before": {
@@ -89,7 +89,7 @@
       "ok": true
     },
     {
-      "name": "engine version is saved as 82",
+      "name": "current engine version is saved",
       "ok": true
     },
     {
