@@ -1,0 +1,28 @@
+{
+  "phase": "first",
+  "appSHA256": "634ced37ea7a81db5489f92596f290d401030c2223304e794d2f7f67da67f73f",
+  "baselineSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+  "fixtureSHA256": "d0d297c34a192b51492b2f5d1da05911444f5d555b6d95bd0bde86362f49df48",
+  "collectorSHA256": "0405c57dc18f2c5e98edeb62162748a1af23f2d1fbf068dfb7f9d8c86bc700b8",
+  "seed": 850041,
+  "note": "Authored after candidate freeze 624494e (HTML SHA256 634ced37ea7a81db5489f92596f290d401030c2223304e794d2f7f67da67f73f). Sixteen self-authored first-run diagnostic questions, not independent expert evidence. v84 and the frozen candidate use identical questions/cards/orientations/arrays/focus settings. Expected comparison labels are collector-only contracts, not engine input. Preserve all actual first outputs and observed failures. Any corrections informed by these outputs make subsequent runs regressions. Dispatch/position contracts are not semantic quality or expert scores.",
+  "readingsSHA256": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+  "compressedSHA256": "41841ed7bdfd5f25ca136adbc41cdfdd72e76666a545095382b3204016a91359",
+  "questions": 16,
+  "readingsPerVersion": 128,
+  "errors": [],
+  "failures": [
+    {
+      "id": "u02",
+      "spread": "choice5",
+      "error": "comparison assignment disagrees with authored request expectation"
+    },
+    {
+      "id": "u04",
+      "spread": "choice5",
+      "error": "comparison assignment disagrees with authored request expectation"
+    }
+  ],
+  "mechanicalPassed": 126,
+  "qualityScore": null
+}

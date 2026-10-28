@@ -1,0 +1,18 @@
+{
+  "engineFreezeCommit": "624494e",
+  "fixtureCommit": "f91bb42",
+  "appSHA256": "634ced37ea7a81db5489f92596f290d401030c2223304e794d2f7f67da67f73f",
+  "readingsSHA256": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+  "actualQuestions": 16,
+  "actualReadingsPerVersion": 128,
+  "primaryAnswersRead": {
+    "spread": "choice5",
+    "questionIds": "u01–u16",
+    "count": 16
+  },
+  "detailedCardSectionsRead": 0,
+  "reviewer": "implementation author",
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "Two comparison assignment contracts failed. Direct reading found additional missing/incorrect requests and interpersonal framing errors that these contracts did not detect. All first outputs remain immutable. Subsequent corrections use known regression material."
+}
