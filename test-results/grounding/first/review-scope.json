@@ -1,0 +1,14 @@
+{
+ "engineFreezeCommit":"f6a47a8",
+ "fixtureCommit":"62cdaa0",
+ "actualQuestions":24,
+ "actualReadingsPerVersion":192,
+ "primaryAnswersRead":{"spread":"five","questionIds":"g01–g24","count":24},
+ "additionalPrimaryAnswersRead":{"spread":"choice5","questionIds":["g13","g14","g17","g18"],"count":4},
+ "detailedEvidenceMetadataRead":["g18","g19"],
+ "detailedCardSectionsRead":0,
+ "reviewer":"implementation author",
+ "independentExpertReview":false,
+ "qualityScore":null,
+ "note":"All 192 mechanical checks passed, but actual primary reading found incorrect time binding, old corrected option values, an unprovided B option, a third option merged into B, truncated filenames and underused budget/verification targets. First outputs remain unchanged. Subsequent fixes using these cases are regression work. Not all 192 detailed variants were manually read."
+}
