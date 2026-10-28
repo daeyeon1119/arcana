@@ -1,0 +1,134 @@
+{
+  "appSHA256": "646cb51f16fe8d31db473703d15cdfdb3d512c57e5f87fc4ea48679c4195c182",
+  "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "fixtureSHA256": "68bb31b930d66b29c9d249c32115025cc001c43fa494e433af8b18b02a74c519",
+  "policySHA256": "f3a6d08d0a99099b0259fc2e2c91778848565eba7447a24af126157e60b300d5",
+  "collectorSHA256": "527d67e18cd1aceab7d112547c400495774419b4debf96f33f4b51af66d64338",
+  "seed": 830031,
+  "phase": "fresh",
+  "note": "Authored after engine commit 82cfae2 (HTML SHA256 646cb51f16fe8d31db473703d15cdfdb3d512c57e5f87fc4ea48679c4195c182). A second self-authored first-run diagnostic, not independent expert evidence. No labels or review notes are sent to the engine. All first actual outputs are retained even when they fail; no production fix is based on these questions before this run. Routing checks alone cannot establish semantic quality. Routing checks are not semantic or professional quality scores.",
+  "questions": 16,
+  "readingsPerVersion": 128,
+  "errors": [],
+  "failures": [
+    {
+      "id": "f10",
+      "spread": "one",
+      "expectedOperation": "verify",
+      "actual": [],
+      "specialized": [
+        "improve"
+      ]
+    },
+    {
+      "id": "f10",
+      "spread": "three",
+      "expectedOperation": "verify",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f10",
+      "spread": "five",
+      "expectedOperation": "verify",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f10",
+      "spread": "relationship5",
+      "expectedOperation": "verify",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f10",
+      "spread": "choice5",
+      "expectedOperation": "verify",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f10",
+      "spread": "waiting3",
+      "expectedOperation": "verify",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f10",
+      "spread": "career5",
+      "expectedOperation": "verify",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f10",
+      "spread": "celtic",
+      "expectedOperation": "verify",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f11",
+      "spread": "one",
+      "expectedOperation": "inquire",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f11",
+      "spread": "three",
+      "expectedOperation": "inquire",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f11",
+      "spread": "five",
+      "expectedOperation": "inquire",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f11",
+      "spread": "relationship5",
+      "expectedOperation": "inquire",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f11",
+      "spread": "choice5",
+      "expectedOperation": "inquire",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f11",
+      "spread": "waiting3",
+      "expectedOperation": "inquire",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f11",
+      "spread": "career5",
+      "expectedOperation": "inquire",
+      "actual": [],
+      "specialized": []
+    },
+    {
+      "id": "f11",
+      "spread": "celtic",
+      "expectedOperation": "inquire",
+      "actual": [],
+      "specialized": []
+    }
+  ],
+  "checks": {
+    "routing": 112,
+    "cardEvidence": 128
+  },
+  "qualityReviewed": 0
+}

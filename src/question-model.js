@@ -6,7 +6,7 @@
  const REPLY=/(?:답장|회신|답변|대답|(?<!정|오|문)답(?=이|을|도|은|는|해|했|하|할))/g;
  const RESULT=/(?:검사\s*결과|채점\s*결과|결과|성적|점수|발표|합격|불합격|탈락|낙방|선발|승인|당선)/g;
  const ASSESS=/(?:시험|면접|평가|심사)/g;
- const ARTIFACT=/(?:원고|과제|제안서|신청서|지원서|서류|작품|답안)/g;
+ const ARTIFACT=/(?:원고|과제|제안서|신청서|신청|지원서|서류|작품|답안)/g;
  const OTHER='(?:친구|동료|상대(?:방)?|연인|애인|그\\s*사람|엄마|아빠|부모님|자녀|고객|담당자|회사|팀장|상사|동생|형제)';
  const SUBJECT=new RegExp(`(${OTHER}|저|제|나|내)(가|는|은|이|도)(?!게|라고|라)`,'g');
  const RECIPIENT=new RegExp(`(${OTHER}|저|제|나|내)(에게서|한테서|에게|한테|께)`,'g');
@@ -31,7 +31,7 @@
   return {actor:/^(?:저|제|나|내)$/.test(m[1])?'self':'other',incoming:/서$/.test(m[2]),evidence:m[0]};
  }
  function modality(text){
-  if(/(?:면|다면|다면야|경우|가정|라고\s*가정|했으면|았으면|었으면|다면)\b|(?:했|됐|받았|보냈|왔)(?:으면|다면)/.test(text))return 'conditional';
+  if(/(?:면|다면|다면야|경우|가정|라고\s*가정|했으면|았으면|었으면|다면)\b|(?:했|됐|받았|보냈|왔)(?:으면|다면)|(?:했|받았|보냈|왔|제출했|접수됐)을\s*때/.test(text))return 'conditional';
   if(/(?:까\s*봐|을까\s*봐|다고\s*(?:생각|추측|상상)|일지도|인\s*것\s*같|했을까|왔을까|받았을까|보냈을까|꿈에서)|(?:했는지|보냈는지|왔는지|받았는지).{0,8}(?:모르|모릅|알지\s*못)/.test(text))return 'uncertain';
   if(/(?:다는|라는)\s*말|전해\s*들|다고\s*(?:했|하|해|말)/.test(text))return 'reported';
   const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|확인|제출|공개)|(?:하지|보내지|전하지|받지|오지|나오지|읽지|확인하지|제출하지|공개되지)\s*않/.test(text);
@@ -122,7 +122,7 @@
   if(/(?:역할|담당|몫|일).{0,18}(?:나누|나눌|분담)|조율|협의|합의/.test(text))return 'coordinate';
   if(/우선순위|마감|업무량|감당할\s*(?:양|범위)|줄이|(?:업무|일정|분량|범위).{0,12}조정/.test(text))return 'prioritize';
   if(/수정.{0,12}(?:멈|끝)|(?:수정|작업|단계).{0,18}(?:마치|마쳐|끝내|끝낼|멈)|완성\s*기준|어디서.{0,12}멈|마칠|끝낼/.test(text))return 'finish';
-  if(/보완|개선|바꾸|고칠|손볼/.test(text))return 'improve';
+  if(/보완|개선|바꾸|고치|고칠|손볼/.test(text))return 'improve';
   if(/(?:말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내)/.test(text))return 'communicate';
   if(/준비|앞두|시작/.test(text))return 'prepare';
   if(/결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계)/.test(text))return 'implement';
@@ -157,11 +157,16 @@
    else if((development||/어떤\s*(?:결과|미래|흐름|가능성|마음)|어떻게\s*(?:될|흘러)|결과.{0,8}기대/.test(t))&&!emotionalStatement&&!/(?:설명|물어|준비|바꿀|해야)/.test(t))emit('forecast',part);
    else if(action){
     const parallel=t.match(/(?:일|행동|준비|기준|방법)과\s*/);
-    if(parallel&&/각각|함께|동시에/.test(t)&&EMOTION.test(t.slice(parallel.index+parallel[0].length))){const end=parallel.index+parallel[0].indexOf('과');emit('action',{...part,text:part.text.slice(0,end),source:part.source.slice(0,end),end:part.start+end});}
+    if(parallel&&/각각|함께|동시에/.test(t)){
+     const end=parallel.index+parallel[0].indexOf('과'),start=parallel.index+parallel[0].length;
+     emit('action',{...part,text:part.text.slice(0,end),source:part.source.slice(0,end),end:part.start+end});
+     const right={...part,text:part.text.slice(start),source:part.source.slice(start),start:part.start+start};
+     if(EMOTION.test(right.text)&&/다룰|다루|돌볼|돌보|추스/.test(right.text))emit('emotion',right,'cope');else emit('action',right);
+    }
     else emit('action',part);
    }
    else if(forecast)emit('forecast',part);
-   if(/각각|함께|동시에|그리고|방법도/.test(t)&&EMOTION.test(t)&&/다룰|다루|돌볼|돌보|추스/.test(t)&&/준비|행동|선택|비교|일과/.test(t))emit('emotion',part,'cope');
+   if(/각각|함께|동시에|그리고|방법도/.test(t)&&EMOTION.test(t)&&/다룰|다루|돌볼|돌보|추스/.test(t))emit('emotion',part,'cope');
   }
   if(!requests.length){const last=parts.at(-1);if(last&&EMOTION.test(last.text))emit('emotion',last);}
   // A final explicit request supersedes earlier background questions unless coordination is explicit.
@@ -171,9 +176,10 @@
  function parse(input){
   const question=normalize(input),parts=segments(question),requests=requestsFrom(parts,question),events=eventsFrom(parts),state=summarize(events,requests,question);
   const generic=question.replace(/[\s.!?。！？,]/g,'');
-  const needsContext=!!generic&&/^(?:(?:저는|제가|나는|내가|지금|이제|그|이|저|일|상황|사람|것|거|앞으로|어떻게|뭘|무엇을|할까요|해야할까요|해야하나요|하면좋을까요|해야|할지|모르겠어요|모르겠습니다|될까요|잘|풀릴까요|봐주세요|보아주세요|알려주세요|좀|요|은|는|이|가|을|를|과|와|하고|에|대해|입니다|이에요|예요))+$/u.test(generic)&&!/오늘|하루|전반|전체/.test(question);
+  const missingChoices=/(?:두\s*(?:가지|개)|둘)\s*중/.test(masked(question))&&/정해|고르|골라|선택|비교/.test(masked(question))&&!/A.{0,80}B|하나는.{1,80}(?:다른|하나는)|(?:첫째|첫\s*번째).{1,80}(?:둘째|두\s*번째)/i.test(masked(question));
+  const needsContext=missingChoices||!!generic&&/^(?:(?:저는|제가|나는|내가|지금|이제|그|이|저|일|상황|사람|것|거|앞으로|어떻게|뭘|무엇을|할까요|해야할까요|해야하나요|하면좋을까요|해야|할지|모르겠어요|모르겠습니다|될까요|잘|풀릴까요|봐주세요|보아주세요|알려주세요|좀|요|은|는|이|가|을|를|과|와|하고|에|대해|입니다|이에요|예요))+$/u.test(generic)&&!/오늘|하루|전반|전체/.test(question);
   const romantic=/(?:연애|연인|애인|짝사랑|고백|호감|좋아하는\s*(?:사람|분|이)|좋아하.{0,6}사람)/.test(masked(question));
-  return {version:82,question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.':null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
+  return {version:82,question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices?'비교할 선택지의 내용이 필요합니다. 각 선택지와 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
  }
  const api=Object.freeze({parse});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_QUESTION_MODEL=api;
 })(typeof globalThis==='object'?globalThis:this);

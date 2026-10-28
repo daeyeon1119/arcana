@@ -57,24 +57,26 @@ arc79Scene=function(question,override='auto'){
 const ARC80_ACTION=arc79Action;
 arc79Action=function(scene,pack){
  const q=scene.question,f=scene.facts,previous=ARC80_ACTION(scene,pack);
+ scene.arc80ActionTask=null;
  if(scene.boundary||scene.abuse||scene.urgent)return previous;
  if(scene.domain==='health'){
   if(/약을\s*먹|처방|복용/.test(q))return '복용 시각과 불편했던 점을 적어 두고, 약의 변경·중단은 처방한 의료진이나 약사에게 문의하세요.';
-  if(/의료진.{0,12}증상.{0,10}설명/.test(q))return '증상이 시작된 때와 이후의 변화, 복용 중인 약과 궁금한 점을 적어 의료진에게 전달해 보세요.';
-  if(/(?:검사\s*결과|진단).{0,30}(?:질문|준비|설명|이해|물어)/.test(q))return '의료진에게 물어볼 내용을 결과의 의미, 다음 일정, 주의할 증상으로 나누어 적어 보세요.';
+  if(/의료진.{0,12}증상.{0,10}설명/.test(q)){scene.arc80ActionTask='communicate';return '증상이 시작된 때와 이후의 변화, 복용 중인 약과 궁금한 점을 적어 의료진에게 전달해 보세요.';}
+  if(/(?:검사\s*결과|진단).{0,30}(?:질문|준비|설명|이해|물어)/.test(q)){scene.arc80ActionTask='inquire';return '의료진에게 물어볼 내용을 결과의 의미, 다음 일정, 주의할 증상으로 나누어 적어 보세요.';}
   if(/검사\s*결과/.test(q)&&scene.phase==='pending')return '안내받은 결과 확인 시점과 문의 방법을 적어 두세요. 걱정이 커질 때 함께 이야기할 사람과 일상을 지킬 작은 일도 정해 볼 수 있습니다.';
   return previous;
  }
  if(f.known){
-  if(scene.intent==='emotion')return '이미 확인한 결과와 자신에 대한 평가를 분리하고, 마음을 추스를 시간을 먼저 마련해 보세요.';
+  if(scene.intent==='emotion'){scene.arc80ActionTask='cope';return '이미 확인한 결과와 자신에 대한 평가를 분리하고, 마음을 추스를 시간을 먼저 마련해 보세요.';}
   return previous;
  }
  if(f.sent&&f.noReply&&!f.replied)return previous;
  if(f.replyUnknown&&['family','relationship'].includes(scene.domain))return '이미 전한 내용과 다음에 묻고 싶은 내용을 나누어 적고, 같은 말을 더 보낼 필요가 있는지 살펴보세요.';
  if(scene.phase==='pending'&&['career','preparation','waiting'].includes(scene.domain))return '공식 확인 일정과 경로를 정해 두고, 오늘 할 수 있는 다른 일 하나를 골라 보세요. 이미 끝난 평가를 계속 되짚지 않아도 됩니다.';
  const emotion=scene.intent==='emotion';
- const first=rules=>rules.find(([rx])=>rx.test(q))?.[1];
+ const first=(rules,operations)=>{if(rules.length!==operations.length)throw Error('Action operation metadata mismatch');const index=rules.findIndex(([rx])=>rx.test(q));if(index<0)return;scene.arc80ActionTask=operations[index];return rules[index][1];};
  if(emotion){
+  scene.arc80ActionTask='cope';
   if(scene.domain==='finances')return '지금 느끼는 불안과 실제로 확인한 금액을 나누어 적어 보세요. 감정을 가라앉힐 시간과 숫자를 검토할 시간을 따로 정해도 됩니다.';
   if(['career','project','preparation'].includes(scene.domain))return '지금 가장 부담스러운 부분을 한 문장으로 적고, 오늘 줄일 일과 쉬어 갈 시간을 하나씩 정해 보세요.';
   if(['family','relationship'].includes(scene.domain))return '실제로 오간 말과 그때 느낀 마음을 나누어 적어 보세요. 당장 관계의 결론을 내리지 않아도 됩니다.';
@@ -139,24 +141,24 @@ arc79Action=function(scene,pack){
   [/휴대폰/,'휴대폰을 가장 자주 집어 드는 순간 하나를 찾아, 그때 대신할 짧은 행동을 정해 보세요.'],
   [/계획|하루|시간/,'오늘 꼭 할 일 하나와 미뤄도 되는 일을 나누고, 실제로 쓸 수 있는 시간 안에 넣어 보세요.']
  ];
- if(scene.domain==='career')return first(career)||previous;
+ if(scene.domain==='career')return first(career,['prepare','compare','communicate','communicate','prioritize','coordinate','verify','communicate','coordinate','improve','communicate','communicate','coordinate'])||previous;
  if(scene.domain==='finances'){
-  if(/주식.{0,10}이미\s*팔|이미.{0,10}팔았/.test(q))return '이미 한 매도의 이유를 기록하고, 가격을 확인할 시간을 정해 보세요. 지나간 선택을 매 순간의 가격으로 다시 평가하지 않아도 됩니다.';
-  if(/대출/.test(q)&&scene.intent==='compare')return '각 조건의 금리·상환 일정·수수료를 공식 자료로 확인하고, 같은 기간의 부담을 나란히 계산해 보세요.';
+  if(/주식.{0,10}이미\s*팔|이미.{0,10}팔았/.test(q)){scene.arc80ActionTask='cope';return '이미 한 매도의 이유를 기록하고, 가격을 확인할 시간을 정해 보세요. 지나간 선택을 매 순간의 가격으로 다시 평가하지 않아도 됩니다.';}
+  if(/대출/.test(q)&&scene.intent==='compare'){scene.arc80ActionTask='compare';return '각 조건의 금리·상환 일정·수수료를 공식 자료로 확인하고, 같은 기간의 부담을 나란히 계산해 보세요.';}
   return previous;
  }
- if(['family','relationship'].includes(scene.domain))return first(relationship)||previous;
- if(scene.domain==='preparation')return first(preparation)||previous;
- if(scene.domain==='project')return first(project)||previous;
+ if(['family','relationship'].includes(scene.domain))return first(relationship,['communicate','coordinate','coordinate','communicate','communicate','communicate','communicate','communicate','communicate','communicate','communicate','communicate'])||previous;
+ if(scene.domain==='preparation')return first(preparation,['prepare','prioritize','prepare','prioritize','prepare','communicate','prepare'])||previous;
+ if(scene.domain==='project')return first(project,['wait','improve','improve','improve','improve','improve','improve','prioritize','improve','improve'])||previous;
  if(scene.domain==='decision'){
   if(/이미\s*결정/.test(q))return '결정할 때의 이유와 그 뒤 새로 알게 된 사실을 나누어 적어 보세요. 새 정보 때문에 바꿀 부분인지, 불확실함이 불편한 것인지 구분해 볼 수 있습니다.';
   return '두 선택을 같은 기준으로 적고, 되돌릴 수 있는 작은 확인부터 해보세요. 아직 모르는 조건은 추측으로 채우지 않아도 됩니다.';
  }
- if(scene.domain==='stress'&&/상담/.test(q))return '상담을 신청하게 된 이유와 최근 특히 힘들었던 장면을 적어 보세요. 처음부터 모든 이야기를 잘 정리해서 말할 필요는 없습니다.';
- if(scene.domain==='stress'&&/도움.{0,8}청/.test(q))return '지금 어려운 점과 부탁하고 싶은 도움을 한 가지씩 구체적으로 말해 보세요. 상대가 가능한 범위를 답할 여지도 남겨 두면 좋습니다.';
+ if(scene.domain==='stress'&&/상담/.test(q)){scene.arc80ActionTask='communicate';return '상담을 신청하게 된 이유와 최근 특히 힘들었던 장면을 적어 보세요. 처음부터 모든 이야기를 잘 정리해서 말할 필요는 없습니다.';}
+ if(scene.domain==='stress'&&/도움.{0,8}청/.test(q)){scene.arc80ActionTask='communicate';return '지금 어려운 점과 부탁하고 싶은 도움을 한 가지씩 구체적으로 말해 보세요. 상대가 가능한 범위를 답할 여지도 남겨 두면 좋습니다.';}
  if(scene.domain==='stress'&&/목표/.test(q))return '오늘 에너지로 할 수 있는 가장 작은 일 하나를 정하고, 시작하거나 마친 사실 자체를 기록해 보세요.';
- if(scene.domain==='stress'&&/자책|표현|말을\s*줄/.test(q))return '나를 단정하는 말 대신 지금 어려운 상황을 설명하는 말로 바꿔 적어 보세요. 고칠 행동과 나 자신에 대한 평가는 나누어 볼 수 있습니다.';
- if(scene.domain==='general')return first(daily)||previous;
+ if(scene.domain==='stress'&&/자책|표현|말을\s*줄/.test(q)){scene.arc80ActionTask='improve';return '나를 단정하는 말 대신 지금 어려운 상황을 설명하는 말로 바꿔 적어 보세요. 고칠 행동과 나 자신에 대한 평가는 나누어 볼 수 있습니다.';}
+ if(scene.domain==='general')return first(daily,['prepare','communicate','prepare','prepare','prepare','improve','prioritize'])||previous;
  return previous;
 };
 

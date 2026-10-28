@@ -1,0 +1,10 @@
+{
+  "appSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+  "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "fixtureSHA256": "68bb31b930d66b29c9d249c32115025cc001c43fa494e433af8b18b02a74c519",
+  "policySHA256": "8435ecba0e46aa45a45580e947a67a74725d354cec72342b7dad48a23a870bcf",
+  "collectorSHA256": "f85e6b2d97a95edf1d5653470a313a52323a8e9af21c852140a071e3b0bd5c6b",
+  "seed": 830031,
+  "phase": "fresh-regression",
+  "note": "Authored after engine commit 82cfae2 (HTML SHA256 646cb51f16fe8d31db473703d15cdfdb3d512c57e5f87fc4ea48679c4195c182). A second self-authored first-run diagnostic, not independent expert evidence. No labels or review notes are sent to the engine. All first actual outputs are retained even when they fail; no production fix is based on these questions before this run. Routing checks alone cannot establish semantic quality."
+}

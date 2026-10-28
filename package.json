@@ -1,6 +1,6 @@
 {
   "name": "arcana-tarot",
-  "version": "82.1.0",
+  "version": "83.0.0",
   "private": true,
   "description": "Offline Korean tarot reflection app and reproducible reading checks",
   "scripts": {
@@ -11,8 +11,11 @@
     "test:mat": "node scripts/mat.cjs after",
     "test:portable": "node scripts/portable.cjs",
     "verify:public": "node scripts/public-check.cjs",
-    "test:editorial": "node scripts/editorial.cjs v82",
+    "test:editorial": "node scripts/editorial.cjs v83",
     "test:question-model": "node tests/question-model.cjs",
+    "test:task-policy": "node tests/task-policy.cjs",
+    "test:task-reading": "node scripts/task-reading.cjs development",
+    "test:task-regression": "node scripts/task-reading.cjs regression && node scripts/task-reading.cjs fresh-regression",
     "test:local-contract": "node tests/local-reader-core.cjs",
     "test:local-planner": "node tests/local-reader-planner.cjs",
     "test:local-separated": "node tests/local-reader-separated.cjs",
@@ -28,11 +31,11 @@
     "report:blind-review": "python scripts/local_blind_review.py",
     "test:blind-review": "npm run report:blind-review && node scripts/local-blind-check.cjs",
     "test:question-regression": "node scripts/question-unseen.cjs regression",
-    "test:synthesis": "node scripts/synthesis.cjs v82",
+    "test:synthesis": "node scripts/synthesis.cjs v83",
     "diagnose:generalization": "node scripts/context.cjs",
     "report:synthesis": "python scripts/synthesis_report.py",
     "report:questions": "python scripts/question_report.py",
-    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-model && npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
+    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-model && npm run test:task-policy && npm run test:task-reading && npm run test:stress && npm run test:ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
   },
   "devDependencies": {
     "playwright": "1.62.1"

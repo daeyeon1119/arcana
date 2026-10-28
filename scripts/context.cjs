@@ -37,7 +37,7 @@ const fixture=JSON.parse(fs.readFileSync('tests/generalization-v81.json','utf8')
  const count=await page.evaluate(()=>SPREADS[selectedSpread].slots.length);for(let i=0;i<count;i++){await page.locator('.fan-card').first().focus();await page.keyboard.press('Enter');}await page.locator('#revealAll').waitFor({state:'visible'});await page.locator('#revealAll').click();await page.locator('#report.visible').waitFor();
  const compound=await page.locator('#humanDirect').innerText();check('compound request renders both comparison and communication',compound.includes('비교')&&compound.includes('전달할 결론'));
  check('compound export uses the visible answer',await page.evaluate(()=>readingText().includes($('humanDirect').textContent)));
- await page.locator('#saveReading').click();check('engine version is saved as 82',await page.evaluate(()=>storedRecords()[0].engineVersion===82));
+ await page.locator('#saveReading').click();check('current engine version is saved',await page.evaluate(version=>storedRecords()[0].engineVersion===version,require('../release.json').readingEngine));
  await page.locator('.nav-item[data-view="history"]').click();await page.locator('#historyList [data-history]').first().click();check('saved reading retains both requests',(await page.locator('#historyDetailContent .human-direct').innerText()).includes('전달할 결론'));
  const folder='test-results/question-model';fs.mkdirSync(folder,{recursive:true});fs.copyFileSync('.cache/context-form.png',folder+'/context-form.png');
  for(const [name,rows]of [['before',before],['after',after]])fs.writeFileSync(folder+'/'+name+'-readings.jsonl.gz',zlib.gzipSync(rows.map(r=>JSON.stringify(r)).join('\n')+'\n'));

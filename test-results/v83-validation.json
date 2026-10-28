@@ -1,0 +1,49 @@
+{
+  "release": {
+    "appVersion": "83.0.0",
+    "readingEngine": 83,
+    "appSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+    "appBytes": 30746613,
+    "webRelease": "b554a08eb980de4bac436228"
+  },
+  "sourceCommit": "7257a27",
+  "checks": [
+    "1024 known readings, all 78 cards and 156 orientations",
+    "320 existing questions and 12 editorial checks",
+    "72 existing synthesis readings",
+    "development known request readings",
+    "regression known request readings",
+    "fresh-regression known request readings",
+    "21 portability checks across 3 Chromium profiles",
+    "25 UI checks",
+    "78 original embedded JPEGs",
+    "32 mat layouts without repeated card names",
+    "54-question diagnostic retains its two documented domain-label mismatches",
+    "test-results/question-model/unseen/regression/summary.json",
+    "70 task properties",
+    "236 question grammar properties",
+    "three 360px draw/reveal/export checks",
+    "LF and CRLF copies rebuild to exact same bytes",
+    "full npm test chain reached its final regression stage"
+  ],
+  "pass": true,
+  "nonBlockingKnownDiagnosticFailures": [
+    {
+      "group": "sent",
+      "variant": 2,
+      "question": "\uc5f0\ub77d\uc744 \uc804\ud588\uc9c0\ub9cc \ud68c\uc2e0\uc744 \ubabb \ubc1b\uc558\uc2b5\ub2c8\ub2e4. \uc774 \uc0c1\ud669\uc5d0\uc11c \uc81c\uac00 \uc9c0\ud0ac \ud0dc\ub3c4\ub294 \ubb34\uc5c7\uc778\uac00\uc694?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    },
+    {
+      "group": "accessibility",
+      "variant": 0,
+      "question": "\ubcf4\ub4dc\uac8c\uc784 \uaddc\uce59\uc744 \uc0c9\ub9cc\uc73c\ub85c \uad6c\ubd84\ud574 \ub9cc\ub4e4\uc5c8\uc5b4\uc694. \uc5ec\ub7ec \uc0ac\ub78c\uc774 \ud3b8\ud558\uac8c \uc4f0\ub3c4\ub85d \uc5b4\ub5bb\uac8c \ubcf4\uc644\ud560\uae4c\uc694?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    }
+  ],
+  "note": "Aggregate verification of actual final output artifacts after the complete npm test chain. Old terminal handle expired across the turn boundary, so no retained terminal exit code is invented. These are technical/regression checks, not semantic quality scores or independent expert evaluation. Two known domain-label diagnostic mismatches remain and are included, not hidden. The two first-run sets remain immutable; subsequent outputs are known regressions. Mobile profiles are Chromium emulation, not physical phones or Safari."
+}

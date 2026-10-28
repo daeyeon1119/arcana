@@ -1,5 +1,5 @@
 /* Same bundled reading engine on every device. Optional web caching has no AI server. */
-const ARCANA_WEB_BUILD=Object.freeze({appVersion:'__ARCANA_APP_VERSION__',readingEngine:82});
+const ARCANA_WEB_BUILD=Object.freeze({appVersion:'__ARCANA_APP_VERSION__',readingEngine:__ARCANA_READING_ENGINE__});
 (function(){
  'use strict';
  const panel=document.createElement('section');panel.className='arc-web';panel.id='arcanaWebApp';panel.setAttribute('aria-label','기기에서 앱 사용');

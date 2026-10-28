@@ -1,0 +1,10 @@
+{
+  "appSHA256": "f85e27d6fa64c8bcf729973e78d503f3a2430dfe206982bf37683582de076c7e",
+  "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "fixtureSHA256": "c4e7d0c94d773db65d3f9f2a3061c625fc9e0e2f001f6541157bddf2b0f5ed2d",
+  "policySHA256": "2da1eb55d3b3ffa61c62af461402ba8fa945809a5414696b0c4edde7beefd6b3",
+  "collectorSHA256": "f16abcf20fde4daea571228278eba87d3dad6f57950d97a5779d2a5f58153593",
+  "seed": 830031,
+  "phase": "first",
+  "note": "Authored after v83 implementation freeze 860e8ee. First actual outputs are immutable. Self-authored diagnostic with paired wording/facts and new domains, not independent expert evidence. Expected operation checks only dispatch; they do not prove the answer is appropriate or complete. Review text and labels are never passed to the reading engine."
+}

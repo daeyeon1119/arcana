@@ -1,0 +1,8 @@
+{
+ "primaryAnswersRead":{"spread":"five","questionIds":"f01–f16","count":16},
+ "detailedSectionsRead":0,
+ "reviewer":"implementation author",
+ "independentExpertReview":false,
+ "qualityScore":null,
+ "note":"Actual 16 five-card primary regression answers read. Known original questions, not a new unseen evaluation. Other 112 full variants were generated and technically checked but not all manually read. Concrete constraints, recipient-specific questions and card-to-situation interpretation remain limited."
+}

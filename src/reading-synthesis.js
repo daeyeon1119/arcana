@@ -160,17 +160,19 @@ arc79Scene=function(question,override='auto'){
 const ARC81_ACTION=arc79Action;
 arc79Action=function(scene,pack){
  const old=ARC81_ACTION(scene,pack),q=scene.question;
+ scene.arc81ActionTask=null;
+ const support=(operation,text)=>{scene.arc81ActionTask=operation;return text;};
  if(scene.boundary||scene.abuse||scene.urgent||scene.medical||scene.facts.known||scene.phase==='pending')return old;
- if(scene.domain==='relationship'&&/(?:생활비|지출|돈)/.test(q)&&/(?:합의|대화|이야기|소통)/.test(q))return '각자 부담할 수 있는 범위와 함께 쓸 항목을 나누고, 지출을 바꿀 때 먼저 상의할 기준을 정해 보세요.';
+ if(scene.domain==='relationship'&&/(?:생활비|지출|돈)/.test(q)&&/(?:합의|대화|이야기|소통)/.test(q))return support('coordinate','각자 부담할 수 있는 범위와 함께 쓸 항목을 나누고, 지출을 바꿀 때 먼저 상의할 기준을 정해 보세요.');
  if(scene.domain==='career'){
-  if(/(?:옮길|이직).{0,60}(?:맡은|마무리)|(?:마무리).{0,60}(?:이직|옮길)/.test(q))return '현재 업무의 마감과 인수인계 범위, 새 일정에서 바꿀 수 없는 조건을 나란히 적고 조율할 담당자와 확인해 보세요.';
-  if(/(?:업무|일).{0,30}(?:익히|배우)/.test(q)&&/질문/.test(q))return '먼저 시도한 방법과 막힌 지점, 확인받을 기준을 짧게 적어 보세요. 반복해서 막히거나 다른 사람의 일정에 영향을 주는 부분부터 질문해 볼 수 있습니다.';
-  if(/(?:가게|매장|단골|손님)/.test(q))return '기존 손님을 돕는 일과 새 손님을 맞는 일에 드는 시간을 나누고, 겹치는 시간대에 줄이거나 함께 맡을 일을 정해 보세요.';
+  if(/(?:옮길|이직).{0,60}(?:맡은|마무리)|(?:마무리).{0,60}(?:이직|옮길)/.test(q))return support('coordinate','현재 업무의 마감과 인수인계 범위, 새 일정에서 바꿀 수 없는 조건을 나란히 적고 조율할 담당자와 확인해 보세요.');
+  if(/(?:업무|일).{0,30}(?:익히|배우)/.test(q)&&/질문/.test(q))return support('inquire','먼저 시도한 방법과 막힌 지점, 확인받을 기준을 짧게 적어 보세요. 반복해서 막히거나 다른 사람의 일정에 영향을 주는 부분부터 질문해 볼 수 있습니다.');
+  if(/(?:가게|매장|단골|손님)/.test(q))return support('coordinate','기존 손님을 돕는 일과 새 손님을 맞는 일에 드는 시간을 나누고, 겹치는 시간대에 줄이거나 함께 맡을 일을 정해 보세요.');
  }
  if(scene.domain==='project'){
-  if(/(?:원고|작품).{0,24}(?:투고|제출)/.test(q)&&/(?:접수|안내).{0,12}받/.test(q))return '받은 안내의 답변 일정만 기록해 두고, 새 작업에서 이번 주 마칠 수 있는 작은 단위를 정해 보세요.';
-  if(/피드백|칭찬|비판/.test(q))return '작업의 목적과 직접 고칠 수 있는 피드백을 나누어 적고, 이번 수정에서 반영할 한 가지만 정해 보세요.';
-  if(!/(?:소설|원고|집필|인물|장면|문장)/.test(q)&&/인물|장면|문장/.test(old))return '이번 작업의 목적과 막힌 지점을 적고, 작게 완성해 확인할 한 부분을 골라 보세요.';
+  if(/(?:원고|작품).{0,24}(?:투고|제출)/.test(q)&&/(?:접수|안내).{0,12}받/.test(q))return support('implement','받은 안내의 답변 일정만 기록해 두고, 새 작업에서 이번 주 마칠 수 있는 작은 단위를 정해 보세요.');
+  if(/피드백|칭찬|비판/.test(q))return support('improve','작업의 목적과 직접 고칠 수 있는 피드백을 나누어 적고, 이번 수정에서 반영할 한 가지만 정해 보세요.');
+  if(!/(?:소설|원고|집필|인물|장면|문장)/.test(q)&&/인물|장면|문장/.test(old))return support('improve','이번 작업의 목적과 막힌 지점을 적고, 작게 완성해 확인할 한 부분을 골라 보세요.');
  }
  return old;
 };
@@ -180,7 +182,7 @@ arc79CreateReport=function(q,spread,cards,override='auto'){
  const r=ARC81_REPORT(q,spread,cards,override),{scene,intent}=arc79Scene(q,override),pack=arc79Pack(q,spread,cards),relations=arc81Relations(pack,spread);
  const single=pack.list.map(a=>{
   const motif=arc81Profile(a)[0],slot=SPREADS[spread].slots[a.index][0];
-  const role=a.role==='obstacle'?`‘${a.main}’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.`:a.role==='resource'?`이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.`:a.role==='past'?'이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.':a.role==='future'||a.role==='outcome'?'현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.':a.role==='environment'?'주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.':a.role==='boundary'?'이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.':'';
+  const role=a.role==='obstacle'?`‘${a.main}’${arc58Josa(a.main,'과','와')} 관련해 실제로 막히는 부분이 있는지 확인해 보세요.`:a.role==='resource'?`이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.`:a.role==='past'?'이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.':a.role==='future'||a.role==='outcome'?'현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.':a.role==='environment'?'주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.':a.role==='boundary'?'이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.':'';
   return {title:slot,body:`${arc81Anchor(a,spread)} ${ARC81_MOTIFS[motif][1]}${role?' '+role:''}`,refs:[a.index],kind:'card'};
  });
  const relationTitle=(link,i)=>{

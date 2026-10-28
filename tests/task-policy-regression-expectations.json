@@ -1,0 +1,4 @@
+{
+  "note":"The first fixture and its original expectations remain unchanged. Review found that preparing questions is distinct from sending a repeated contact. This intentional contract change is recorded only for regression runs; it is not a new unseen evaluation.",
+  "overrides":{"n11":{"operation":"inquire","reason":"Keep the missing reply fact, allow preparing future questions, and explicitly avoid instructing an immediate resend."}}
+}
