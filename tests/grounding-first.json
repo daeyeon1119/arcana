@@ -1,0 +1,29 @@
+{
+ "note":"Authored after candidate freeze f6a47a8 (HTML SHA256 3703b9fb220189afd280c0c9eba461cf9612ab2af70b1de9a365cd2fc82f0cd8). Self-authored first-run diagnostic, not independent expert evidence. Questions, cards, orientations and arrays are identical for v83 and this candidate. Paired scenarios share cards. Metadata and review expectations are not passed to the engine. All first actual outputs, including semantic failures found by reading, must remain unchanged. Fixes using these cases make later runs regressions.",
+ "cases":[
+  {"id":"g01","group":"plant-time","question":"베란다 식물 돌보기 방식을 어떻게 개선할까요? 지금 제가 쓸 수 있는 시간은 하루 12분입니다."},
+  {"id":"g02","group":"plant-time","question":"베란다 식물 돌보기 방식을 어떻게 개선할까요? 작년에는 쓸 수 있는 시간이 하루 12분이었지만 지금 제가 쓸 수 있는 시간은 하루 35분입니다."},
+  {"id":"g03","group":"other-time","question":"동료는 매일 45분을 쓸 수 있지만 저는 주말에 15분을 쓸 수 있어요. 소품 제작 준비를 어떻게 나누면 좋을까요?"},
+  {"id":"g04","group":"conditional-time","question":"촬영 장비 준비를 어떻게 바꿀까요? 만약 작업 시간이 하루 25분이라면 좋겠지만 실제 가능한 시간은 아직 몰라요."},
+  {"id":"g05","group":"conditional-time","question":"촬영 장비 준비를 어떻게 바꿀까요? 지금 제가 쓸 수 있는 작업 시간은 하루 25분입니다."},
+  {"id":"g06","group":"clock","question":"온라인 회의 자료를 어떻게 준비할까요? 제가 참석할 수 있는 시간은 저녁 8시 30분입니다. 준비에 쓸 시간은 아직 정하지 않았어요."},
+  {"id":"g07","group":"negative-time","question":"자수 연습 방식을 어떻게 바꿀까요? 연습 시간은 20분이 아니라 40분입니다."},
+  {"id":"g08","group":"quoted-time","question":"공예 안내서의 “작업 시간은 하루 60분이다”라는 예문을 어떻게 고치면 좋을까요? 이 숫자는 제 작업 시간이 아니라 설명용 예시입니다."},
+  {"id":"g09","group":"poster-budget","question":"무료 동네 음악회의 포스터 제작 방식을 어떻게 개선할까요? 총 예산은 12만원이고 인쇄 수량은 40개입니다. 예산 금액과 필요한 수량은 담당자와 대조했습니다."},
+  {"id":"g10","group":"mixed-verification","question":"동네 축제 안내 자료를 설명할 방법을 알려 주세요. 장소와 시간은 이미 확인했습니다. 요금 숫자는 아직 대조 중입니다."},
+  {"id":"g11","group":"mixed-verification","question":"동네 축제 안내 자료를 설명할 방법을 알려 주세요. 장소와 시간은 아직 확인 중입니다. 요금 숫자는 이미 대조했습니다."},
+  {"id":"g12","group":"reported-verification","question":"행사 안내 자료를 어떻게 설명할까요? 담당자가 “금액 대조는 이미 완료했다”라고 말했지만 저는 공식 자료를 아직 검증하지 못했습니다."},
+  {"id":"g13","group":"walk-options","question":"A안은 집 앞에서 하루 10분 걷기이고 B안은 매주 토요일 90분 단체 산책입니다. 저는 평일 저녁에 20분을 쓸 수 있어요. 두 안을 같은 기준으로 비교해 주세요."},
+  {"id":"g14","group":"walk-options","question":"B안은 매주 토요일 90분 단체 산책이고 A안은 집 앞에서 하루 10분 걷기입니다. 저는 평일 저녁에 20분을 쓸 수 있어요. 두 안을 같은 기준으로 비교해 주세요."},
+  {"id":"g15","group":"quoted-options","question":"전시 안내 대본에 “A는 오전반이고 B는 저녁반이다”라는 설명용 예문을 넣었어요. 실제 선택을 하는 상황은 아닙니다. 이 문구를 어떻게 고치면 좋을까요?"},
+  {"id":"g16","group":"missing-option","question":"A안은 평일 온라인 공예 모임입니다. B안은 아직 정하지 않았어요. 두 안 중 어느 쪽이 맞는지 비교해 주세요."},
+  {"id":"g17","group":"three-options","question":"A는 평일 사진 수업이고 B는 주말 영상 수업이고 C는 혼자 편집을 배우는 방식입니다. 세 안을 각각 비교해 주세요."},
+  {"id":"g18","group":"corrected-option","question":"A는 30분 수업인 줄 알았지만 A는 실제로 60분 수업이라고 확인했습니다. B는 45분 수업입니다. 저는 50분 정도 쓸 수 있어요. 두 안을 비교해 주세요."},
+  {"id":"g19","group":"bound-time","question":"운영 회의 시간은 2시간입니다. 제가 자료를 준비할 수 있는 시간은 20분입니다. 회의에서 나눠 줄 자료를 어떻게 준비할까요?"},
+  {"id":"g20","group":"bound-time","question":"제가 자료를 준비할 수 있는 시간은 2시간입니다. 운영 회의 시간은 20분입니다. 회의에서 나눠 줄 자료를 어떻게 준비할까요?"},
+  {"id":"g21","group":"urgent","question":"갑자기 심한 가슴 통증이 생기고 숨이 잘 안 쉬어져요. 회의까지 30분 남았는데 발표 자료를 어떻게 준비할까요?"},
+  {"id":"g22","group":"clinical-clock","question":"치료 경과를 2주 동안 기록했습니다. 진료는 오후 3시 20분입니다. 의료진에게 물어볼 질문을 어떻게 준비할까요?"},
+  {"id":"g23","group":"next-stage","question":"학교 전시 신청서는 이미 접수됐습니다. 다음 전시 준비를 위해 제가 쓸 수 있는 시간은 하루 18분입니다. 준비 방식을 어떻게 바꿀까요?"},
+  {"id":"g24","group":"file-options","question":"A안은 observation_guideline_revision_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.pdf를 함께 읽는 방식이고 B안은 observation_summary_revision_yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.pdf를 짧게 읽는 방식입니다. 두 안을 비교해 주세요."}
+ ]
+}
