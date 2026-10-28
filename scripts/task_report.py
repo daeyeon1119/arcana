@@ -7,7 +7,8 @@ import sys
 root = Path(__file__).resolve().parents[1]
 phase = sys.argv[1] if len(sys.argv) > 1 else 'first'
 assert phase in {'development', 'first', 'regression', 'fresh', 'fresh-regression'}
-folder = root / 'test-results/task-policy' / phase
+version = int(sys.argv[2]) if len(sys.argv) > 2 else 83
+folder = root / 'test-results/task-policy' / ('' if version == 83 else f'v{version}') / phase
 rows = json.loads((folder / 'readings.json').read_text(encoding='utf-8'))
 summary = json.loads((folder / 'summary.json').read_text(encoding='utf-8'))
 notes_path = folder / 'review-notes.json'

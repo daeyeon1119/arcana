@@ -8,3 +8,6 @@ manifest.webmanifest text eol=lf
 assets/app/icon.svg text eol=lf
 sw.js text eol=lf
 release.json text eol=lf
+test-results/grounding/**/*.json text eol=lf
+test-results/grounding/**/*.html text eol=lf
+tests/grounding-first.json text eol=lf

@@ -2,7 +2,9 @@
 const fs=require('node:fs'),crypto=require('node:crypto'),assert=require('node:assert/strict'),zlib=require('node:zlib'),{execFileSync}=require('node:child_process');
 const phase=process.argv[2]||'development';assert(['development','first','regression','fresh','fresh-regression'].includes(phase),'Unknown evaluation phase');
 const fixturePath=phase==='development'?'tests/task-policy-dev.json':phase.startsWith('fresh')?'tests/task-policy-fresh.json':'tests/task-policy-new.json';
-let fixtureText=fs.readFileSync(fixturePath,'utf8').replace(/\r\n/g,'\n');const fixture=JSON.parse(fixtureText),folder='test-results/task-policy/'+phase;
+const major=Number(JSON.parse(fs.readFileSync('package.json','utf8')).version.split('.')[0]);
+if(major!==83&&['first','fresh'].includes(phase))throw Error('The v83 fixtures are known regression material. Do not label them as a new first evaluation.');
+let fixtureText=fs.readFileSync(fixturePath,'utf8').replace(/\r\n/g,'\n');const fixture=JSON.parse(fixtureText),folder='test-results/task-policy/'+(major===83?'':'v'+major+'/')+phase;
 if(phase==='regression'){
  const expectations=JSON.parse(fs.readFileSync('tests/task-policy-regression-expectations.json','utf8'));
  for(const item of fixture.cases){const override=expectations.overrides[item.id];if(override){item.operation=override.operation;item.regressionExpectationReason=override.reason;}}

@@ -1,0 +1,21 @@
+{
+  "release": {
+    "appVersion": "84.0.0",
+    "readingEngine": 84,
+    "appSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+    "appBytes": 30781022,
+    "webRelease": "d92160e15bbd7604ea035e5a"
+  },
+  "checks": [
+    "undefined option asks for context before drawing",
+    "newly provided option overrides the old undefined option and completes draw",
+    "three options remain separate without assigning a nonexistent third option card",
+    "long literal filenames wrap at 360px and remain complete in export",
+    "actual rendered preparation uses its own 20-minute constraint",
+    "literal option/verification markup is rendered as text without executing an event",
+    "literal dollar replacement tokens remain unchanged in displayed evidence"
+  ],
+  "errors": [],
+  "browser": "156.0.4314.42",
+  "note": "Actual 360px draw/reveal/export and clarification flows in Chromium. Known regression inputs, not unseen interpretation quality or physical phone/Safari evidence."
+}

@@ -1,0 +1,9 @@
+{
+ "primaryAnswersRead":{"spread":"five","questions":12},
+ "additionalPrimaryAnswersRead":{"spread":"choice5","questionIds":["f14"]},
+ "detailedSectionsRead":0,
+ "reviewer":"implementation author",
+ "independentExpertReview":false,
+ "qualityScore":null,
+ "note":"Known development questions. Read primary outputs, not all 96 full detail variants. Core request preservation required a development fix despite mechanical checks passing. Rich subject-specific technique, source/actor binding and all free-form meanings remain unproven."
+}

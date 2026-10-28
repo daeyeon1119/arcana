@@ -22,7 +22,7 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   if(!supported){practical=plan.text;actionSource='request-policy';}
   const card=answer.request.kind==='emotion'?pack.main:pack.advice;
   const shared=plans.length===0&&report.arc81?.directSynthesisUsed?arc81Relations(pack,spread)[0]:null;
-  const previous=answer.text;answer.directText=plan.boundaryText+practical+' '+(shared?.core||arc80CardSentence(card,spread));answer.text=answer.directText;answer.refs=shared?.refs||[card.index];replacements.set(previous,{body:answer.text,refs:answer.refs});plans.push({...plan,text:practical,actionSource});
+  const previous=answer.text;answer.actionText=practical;answer.directText=plan.boundaryText+practical+' '+(shared?.core||arc80CardSentence(card,spread));answer.text=answer.directText;answer.refs=shared?.refs||[card.index];replacements.set(previous,{body:answer.text,refs:answer.refs});plans.push({...plan,text:practical,actionSource});
  }
  if(plans.some(Boolean)){
   report.direct=report.arc82.answers.map(answer=>answer.directText||answer.text).join('\n\n');
