@@ -7,7 +7,7 @@ import re
 root = Path(__file__).resolve().parents[1]
 base = (root / 'ARCANA_tarot_v78_source/html/ARCANA_tarot_v78.html').read_text(encoding='utf-8')
 css = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.css','src/card-mat.css','src/question-context.css','src/web-app.css'])
-js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/question-model.js','src/reading-context.js','src/task-policy.js','src/reading-task.js','src/card-mat.js','src/web-app.js'])
+js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/question-model.js','src/reading-context.js','src/task-policy.js','src/reading-task.js','src/reading-evidence.js','src/reading-bridge.js','src/reading-grounded.js','src/card-mat.js','src/web-app.js'])
 app_version = json.loads((root / 'package.json').read_text(encoding='utf-8'))['version']
 engine_version = int(app_version.split('.')[0])
 assert js.count('__ARCANA_APP_VERSION__') == 1
