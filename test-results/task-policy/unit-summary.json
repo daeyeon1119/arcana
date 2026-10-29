@@ -297,6 +297,18 @@
       "ok": true
     },
     {
+      "name": "shared object is local to coordinated predicates: 안내문을 어떻게 고치고 어떻게 설명할까요?",
+      "ok": true
+    },
+    {
+      "name": "shared object is local to coordinated predicates: 안내문을 어떻게 고치고 내 선택을 어떻게 설명할까요?",
+      "ok": true
+    },
+    {
+      "name": "shared object is local to coordinated predicates: 안내문을 고쳤습니다. 어떻게 설명할까요?",
+      "ok": true
+    },
+    {
       "name": "an explicit document remains an artifact when edited: 문서",
       "ok": true
     },
@@ -309,6 +321,6 @@
       "ok": true
     }
   ],
-  "total": 77,
+  "total": 80,
   "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by both preserved first-run question sets. Not a first-seen quality benchmark or professional evaluation."
 }

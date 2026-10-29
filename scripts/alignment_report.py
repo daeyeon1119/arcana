@@ -4,7 +4,8 @@ import sys,json,hashlib,html
 root=Path(__file__).resolve().parents[1]
 phase=sys.argv[1] if len(sys.argv)>1 else 'development'
 assert phase in {'development','first','regression'}
-folder=root/'test-results/alignment'/phase
+version=int(sys.argv[2]) if len(sys.argv)>2 else 85
+folder=root/'test-results/alignment'/('' if version==85 else 'v'+str(version))/phase
 summary=json.loads((folder/'summary.json').read_text(encoding='utf-8'))
 raw=(folder/'readings.json').read_bytes()
 assert hashlib.sha256(raw).hexdigest()==summary['readingsSHA256']

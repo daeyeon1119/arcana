@@ -1,0 +1,41 @@
+{
+  "appSHA256": "abafb8b1d74732e291d46b481544e38f0da02b8e13e45a9e7d15df694b684981",
+  "type": "author development review",
+  "directAnswersRead": [
+    {
+      "id": "d01",
+      "spread": "five"
+    },
+    {
+      "id": "d02",
+      "spread": "five"
+    },
+    {
+      "id": "d03",
+      "spread": "five"
+    },
+    {
+      "id": "d04",
+      "spread": "five"
+    },
+    {
+      "id": "d05",
+      "spread": "five"
+    },
+    {
+      "id": "d06",
+      "spread": "five"
+    },
+    {
+      "id": "d07",
+      "spread": "five"
+    },
+    {
+      "id": "d08",
+      "spread": "five"
+    }
+  ],
+  "all64DetailedVariantsRead": false,
+  "independentExpertReview": false,
+  "notes": "Eight final primary answers read; d08 re-read after shared-target correction. Automated state/target/span checks do not measure semantic depth."
+}

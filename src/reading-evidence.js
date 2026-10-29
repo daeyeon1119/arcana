@@ -3,6 +3,7 @@
  * personal history, missing actors, deadlines or outcomes are inferred here. */
 (function(root){
  'use strict';
+ const verificationFacts=typeof module==='object'&&module.exports?require('./verification-facts.js'):root.ARCANA_VERIFICATION_FACTS;
  const mask=text=>text.replace(/[“"「『][^”"」』]*[”"」』]/g,s=>' '.repeat(s.length));
  const normal=text=>String(text||'').normalize('NFKC').replace(/\s+/g,' ').trim();
  const sentenceEnd=(text,index)=>{
@@ -69,13 +70,8 @@
   for(const match of evidence.matchAll(/(?:매주\s*)?(?:월|화|수|목|금|토|일)요일(?:\s*(?:오전|오후|저녁|아침|낮|밤))?|(?:평일|주말)(?:\s*(?:오전|오후|저녁|아침|낮|밤))?/g)){
    const start=match.index,end=start+match[0].length;schedules.push({kind:'schedule',text:question.slice(start,end),start,end,...stateFor(start,end)});
   }
-  const verification=[];
-  for(const part of parts){
-   if(!/확인|대조|검토|검증|확정|맞췄/.test(part.text)||modality(part.text)!=='asserted')continue;
-   const pending=/(?:아직|못|않|대조\s*중|확인\s*중|검토\s*중|검증\s*중)/.test(part.text),confirmed=/이미|마쳤|완료|맞췄|확인했|대조했|검토했|검증했|확정됐|확인했습니다|대조했습니다/.test(part.text);
-   if(pending||confirmed)verification.push({status:pending?'unverified':'verified',text:question.slice(part.start,part.end),start:part.start,end:part.end,timeScope:timeScope(part.text)});
-  }
-  return {version:84,question,options,optionDefinitions,quantities,schedules,verification};
+  const parsedVerification=verificationFacts.extract(question),verification=parsedVerification.facts.filter(item=>item.modality==='asserted').map(item=>({...item,scope:scopeFor(item.start)}));
+  return {version:86,question,options,optionDefinitions,quantities,schedules,verification,verificationUnbound:parsedVerification.unbound,verificationOtherModalities:parsedVerification.facts.filter(item=>item.modality!=='asserted')};
  }
  const usable=item=>item.status==='asserted'&&item.timeScope!=='past';
  function chooseTime(evidence,taskText=''){

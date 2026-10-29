@@ -10,7 +10,7 @@ const fs=require('node:fs'),assert=require('node:assert/strict');
   checks.push('non-comparison '+id+': same five cards, visible assignment note and matching export');
  }
  const followup=await page.evaluate(()=>v10AnswerFollowup('카드가 서로 충돌하나요?'));assert(!/A를 살필|B를 살필/.test(followup.answer));checks.push('follow-up does not revive an unassigned A/B relationship');
- await page.locator('#saveReading').click();assert(await page.evaluate(()=>{const record=storedRecords()[0];return record.engineVersion===85&&withSavedReading(record,()=>arcanaV5Build()).arc81.choiceAssignment.assigned===false;}));checks.push('saved non-comparison retains focus and unassigned positions');
+ await page.locator('#saveReading').click();assert(await page.evaluate(()=>{const record=storedRecords()[0];return record.engineVersion===ARCANA_WEB_BUILD.readingEngine&&withSavedReading(record,()=>arcanaV5Build()).arc81.choiceAssignment.assigned===false;}));checks.push('saved non-comparison retains focus and unassigned positions');
  const question=JSON.parse(fs.readFileSync('tests/grounding-first.json','utf8')).cases.find(item=>item.id==='g13').question;
  await start(question);assert(!(await page.locator('#arc85SpreadNote').isVisible()));assert(await page.evaluate(()=>arcanaV5Build().arc81.choiceAssignment.assigned));checks.push('actual A/B comparison hides the unassigned notice and preserves ownership');
  await start(question,'action');assert(await page.locator('#arc85SpreadNote').isVisible());assert(await page.evaluate(()=>arcanaV5Build().arc82.answers[0].request.kind==='action'&&!arcanaV5Build().arc81.choiceAssignment.assigned));checks.push('manual action focus controls relation selection despite comparison wording');

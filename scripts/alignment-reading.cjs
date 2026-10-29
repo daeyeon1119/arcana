@@ -6,7 +6,8 @@ const existing=fs.readFileSync('tests/editorial-320.tsv','utf8').trim().split(/\
 const known=existing.filter(item=>['e114','e136','e141','e173','e179','e234','e293'].includes(item.id)).map(item=>({...item,expectedComparison:false}));
 known.push(...JSON.parse(fs.readFileSync('tests/grounding-first.json','utf8')).cases.filter(item=>['g13','g14','g16','g17','g18'].includes(item.id)).map(item=>({...item,expectedComparison:true})));
 const fixture=phase==='development'?{note:'12 existing questions used for development. Not unseen or independent expert evidence.',cases:known}:JSON.parse(fs.readFileSync('tests/alignment-first.json','utf8'));
-const folder='test-results/alignment/'+phase;fs.mkdirSync(folder,{recursive:true});fs.mkdirSync('.cache',{recursive:true});
+const major=Number(JSON.parse(fs.readFileSync('package.json','utf8')).version.split('.')[0]);if(major!==85&&phase==='first')throw Error('The v85 fixture is known material; use regression.');
+const folder='test-results/alignment/'+(major===85?'':'v'+major+'/')+phase;fs.mkdirSync(folder,{recursive:true});fs.mkdirSync('.cache',{recursive:true});
 if(phase==='first'&&fs.existsSync(folder+'/readings.json'))throw Error('First outputs already exist. Use regression.');
 const baseline=execFileSync('git',['show','40a9df9:index.html'],{maxBuffer:40*1024*1024});assert.equal(hash(baseline),'0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0');fs.writeFileSync('.cache/alignment-v84.html',baseline);
 const freeze={phase,appSHA256:hash(fs.readFileSync('index.html')),baselineSHA256:hash(baseline),fixtureSHA256:hash(JSON.stringify(fixture)),collectorSHA256:hash(fs.readFileSync(__filename,'utf8').replace(/\r\n/g,'\n')),seed:850041,note:(phase==='regression'?'Known questions corrected after first evaluation. This run is regression, not a fresh holdout. ':'')+fixture.note};

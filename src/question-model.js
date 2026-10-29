@@ -122,8 +122,8 @@
   if(/마음|감정|불안|걱정/.test(text)&&/다루|다룰|돌보|추스|관리|가라앉|달래|다스리|다스릴/.test(text))return 'cope';
   if(/(?:역할|담당|몫|일).{0,18}(?:나누|나눌|분담)|조율|협의|합의|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(text))return 'coordinate';
   if(/우선순위|마감|업무량|감당할\s*(?:양|범위)|줄이|(?:업무|일정|분량|범위).{0,12}조정/.test(text))return 'prioritize';
-  if(/수정.{0,12}(?:멈|끝)|(?:수정|작업|단계).{0,18}(?:마치|마쳐|끝내|끝낼|멈)|완성\s*기준|어디서.{0,12}멈|마칠|끝낼|마무리/.test(text))return 'finish';
-  if(/보완|개선|바꾸|고치|고칠|손볼|다듬|편집|수정/.test(text))return 'improve';
+  if(/수정.{0,12}(?:멈|끝)|(?:수정|작업|단계).{0,18}(?:마치|마쳐|끝내|끝낼|멈)|완성\s*기준|어디서.{0,12}멈|마칠|끝내|끝낼|마무리/.test(text))return 'finish';
+  if(/보완|개선|바꾸|고치|고칠|손보|손볼|다듬|편집|수정/.test(text))return 'improve';
   if(/(?:말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내)/.test(text))return 'communicate';
   if(/준비|앞두|시작/.test(text))return 'prepare';
   if(/결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계|작업)/.test(text))return 'implement';
@@ -133,20 +133,20 @@
   const units=[];
   for(const part of parts){
    // Coordinated predicates share a request ending, not the last verb's goal.
-   const joins=[...part.text.matchAll(/(?:비교하|비교해\s*주|돌보|다루|설명하|정리하|준비하|확인하|수정하|다듬)(고)(?=\s|$)/g)].filter(match=>!/^\s*(?:있|싶)/.test(part.text.slice(match.index+match[0].length)));
+   const joins=[...part.text.matchAll(/(?:비교하|비교해\s*주|돌보|다루|설명하|정리하|준비하|확인하|수정하|다듬|고치|바꾸|손보|나누|끝내|마무리하)(고)(?=\s|$)/g)].filter(match=>!/^\s*(?:있|싶|나서|나면|보니)/.test(part.text.slice(match.index+match[0].length)));
    const requested=/(?:어떻게|무엇|어느|어떤|알려|주세요|줘|봐\s*주|까요|나요)/.test(part.text);
    if(!joins.length||!requested){units.push(part);continue;}
    let start=0;
    for(const end of [...joins.map(match=>match.index+match[0].length),part.text.length]){
     while(start<end&&/\s/.test(part.text[start]))start++;
-    if(end>start)units.push({...part,start:part.start+start,end:part.start+end,text:part.text.slice(start,end),source:part.source.slice(start,end),coordinated:true});
+    if(end>start)units.push({...part,start:part.start+start,end:part.start+end,text:part.text.slice(start,end),source:part.source.slice(start,end),coordinated:true,sharedContext:part.text.slice(0,start)});
     start=end;
    }
   }
   return units;
  }
  function requestsFrom(parts,q){
-  const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.goal===(goal||goalFor(part.text,kind))))requests.push({kind,goal:goal||goalFor(part.text,kind),text:part.source,start:part.start,end:part.end});};
+  const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.goal===(goal||goalFor(part.text,kind))))requests.push({kind,goal:goal||goalFor(part.text,kind),text:part.source,start:part.start,end:part.end,...(part.sharedContext?{sharedContext:part.sharedContext}:{})});};
   const units=requestUnits(parts);
   for(const original of units){
    const correction=original.text.match(/(?:대신|말고|그보다(?:는)?|아니라|(?:이유|원인|예측|전망|비교)보다)\s*|(?:는지|인지|을지|할지)보다(?:는)?\s+/);
@@ -158,7 +158,7 @@
    const compare=explicitCompare||/두\s*(?:안|선택|경로).{0,20}차이|어느\s*쪽/.test(t)||alternativeCount(t)>=2;
    const reflective=/성찰|돌아보|살펴보|어떤\s*관점|배운\s*것|배울\s*수/.test(t)&&!/방법|어떻게\s*(?:말|설명|준비)/.test(t);
    const volitional=[...t.matchAll(/([가-힣]+)(?:까요|까|지)(?=\s|$|입니다|이에요|예요)/g)].some(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8);
-   const howTo=/(?:어떻게|어떡|무엇을|뭘|뭐부터|어디서|어디부터)/.test(t)&&volitional&&!/어떻게\s*(?:될|흘러|바뀔)|어떤\s*(?:결과|흐름|마음)/.test(t);
+   const howTo=original.coordinated&&goalFor(t,'action')!=='action'||/(?:어떻게|어떡|무엇을|뭘|뭐부터|어디서|어디부터)/.test(t)&&volitional&&!/어떻게\s*(?:될|흘러|바뀔)|어떤\s*(?:결과|흐름|마음)/.test(t);
    const practicalDirective=/(?:마칠|마무리|완성\s*기준|첫\s*(?:행동|단계|작업)|준비할\s*일|다듬)/.test(t)&&/(?:어떻게|어느|어떤|알려|살펴봐\s*주|좋을)/.test(t);
    const action=howTo||practicalDirective||/(?:어떻게|어떡|무엇|뭘|뭐부터|어디부터|어디서|어떤|무슨\s*말|어디까지).{0,60}(?:할|해야|좋|하나|쓸|쓰면|정할|고를|볼|찾을|손볼|잡을|설명|말할|필요|줄일|편집|정리|꺼내|바꿀|멈|고려|다룰|다스릴|세울|받아들)|어떤\s*(?:태도|행동|방법|준비|기준).{0,20}(?:도움|필요|좋|적절)|(?:할\s*일|행동|태도|방법|준비|기준).{0,16}(?:무엇|뭘|어떤|궁금)|(?:방법|준비할\s*일|할\s*행동|첫\s*행동|조언)|[가-힣]도\s*(?:될|괜찮)|(?:연락|고백|지원|이직|퇴사|신청|시작|보낼|쉴|갈)(?:할까|까요)/.test(t);
    const care=/(?:마음|감정|불안|걱정|긴장).{0,35}(?:돌보|돌볼|다루|다룰|추스|달래|다스리)/.test(t);

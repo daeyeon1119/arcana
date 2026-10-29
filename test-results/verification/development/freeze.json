@@ -1,0 +1,9 @@
+{
+  "phase": "development",
+  "appSHA256": "abafb8b1d74732e291d46b481544e38f0da02b8e13e45a9e7d15df694b684981",
+  "baselineSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "fixtureSHA256": "212a932f1bd3c684dacfe1ebdb3c36f823909609bda93e16222c8ceb7a6e48f0",
+  "collectorSHA256": "1ccb276b1f8677b0d0e0baf6b77115134cbde36e27af00cc592022e6e5da5cb2",
+  "seed": 860019,
+  "note": "Known/development inputs, including the v85 u16 failure and v84 verification pairs. These are not an unseen or independent expert evaluation."
+}

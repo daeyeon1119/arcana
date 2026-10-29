@@ -1,0 +1,13 @@
+{
+  "note":"Known/development inputs, including the v85 u16 failure and v84 verification pairs. These are not an unseen or independent expert evaluation.",
+  "cases":[
+    {"id":"d01","group":"festival","question":"동네 축제 안내 자료를 설명할 방법을 알려 주세요. 장소와 시간은 이미 확인했습니다. 요금 숫자는 아직 대조 중입니다.","expected":[["장소와 시간","verified"],["요금 숫자","unverified"]]},
+    {"id":"d02","group":"festival","question":"동네 축제 안내 자료를 설명할 방법을 알려 주세요. 장소와 시간은 아직 확인 중입니다. 요금 숫자는 이미 대조했습니다.","expected":[["장소와 시간","unverified"],["요금 숫자","verified"]]},
+    {"id":"d03","question":"지역 식물 관찰 기록지를 준비하고 있어요. 관찰 모임은 2시간 진행하지만 제가 기록지를 만들 수 있는 시간은 25분입니다. 이미 확인한 날짜와 아직 대조하지 못한 장소를 구별해서 자료를 어떻게 준비할까요?","expected":[["날짜","verified"],["장소","unverified"]]},
+    {"id":"d04","question":"행사 안내 자료를 어떻게 설명할까요? 담당자가 “금액 대조는 이미 완료했다”라고 말했지만 저는 공식 자료를 아직 검증하지 못했습니다.","expected":[["공식 자료","unverified"]]},
+    {"id":"d05","question":"민수는 날짜를 확인했습니다. 제가 자료를 어떻게 준비할까요?","expected":[]},
+    {"id":"d06","question":"만약 날짜를 확인했다면 자료를 어떻게 준비할까요?","expected":[]},
+    {"id":"d07","question":"장소는 확인했습니다. 장소는 확인하지 못했습니다. 이 안내 자료를 어떻게 고칠까요?","expected":[["장소","conflict"]]},
+    {"id":"d08","question":"날짜는 이미 확인했습니다. 장소는 아직 검증 중입니다. 이 안내문을 어떻게 고치고 어떻게 설명할까요?","expected":[["날짜","verified"],["장소","unverified"]]}
+  ]
+}

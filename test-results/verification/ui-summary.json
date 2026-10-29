@@ -1,0 +1,18 @@
+{
+  "release": {
+    "appVersion": "86.0.0",
+    "readingEngine": 86,
+    "appSHA256": "abafb8b1d74732e291d46b481544e38f0da02b8e13e45a9e7d15df694b684981",
+    "appBytes": 30798466,
+    "webRelease": "76e7865904b100f96e679670"
+  },
+  "checks": [
+    "bound date/place states and own 25-minute preparation budget in visible text and export",
+    "contradictory current place state asks for clarification",
+    "editing and explanation both retained with shared document object and facts applied once",
+    "saved reading reproduces the same complete direct answer and current engine version"
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "note": "Actual UI, export and save checks in a 360px Chromium profile using development inputs. Not physical phone/Safari evidence or an interpretation quality score."
+}
