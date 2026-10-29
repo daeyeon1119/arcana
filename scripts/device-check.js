@@ -1,4 +1,4 @@
-/* Standalone, opt-in, actual-browser parity check. No reading-history access. */
+/* Opt-in actual-browser parity check. No history collection or result upload. */
 (()=>{'use strict';
  const $=id=>document.getElementById(id),status=text=>{$('status').textContent=text;},hash=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),byte=>byte.toString(16).padStart(2,'0')).join('');
  const fetchText=async path=>{const response=await fetch(new URL(path,location.href),{cache:'no-store'});if(!response.ok)throw Error('검사 파일을 가져오지 못했습니다: '+path);return response.text();};

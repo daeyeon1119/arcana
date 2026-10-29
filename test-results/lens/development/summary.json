@@ -1,12 +1,12 @@
 {
   "phase": "development",
-  "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
+  "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
   "baselineSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
   "fixtureSHA256": "348e453aa879c0c69107a8c81bb1ba7a19bbfe74e3430ca918d32d6f71957fb8",
-  "collectorSHA256": "cf2ddc88a0ffdde2302642de46a080597b5508127494c25faaeed98c3f92a380",
+  "collectorSHA256": "a874cbaa61805a6d67389f7bf081e0c69d3b2ebe1978171a927e28a135d0c7f6",
   "seed": 870037,
   "note": "Known/development questions, including v86 review failures. Expectations are collector-only contracts, not engine input or a semantic/professional score.",
-  "readingsSHA256": "b2a4a64194fd4350522438add8f8ae79338bee713c9a69e95260a6f294168442",
+  "readingsSHA256": "849f76ff0b6b67cf48077c6d80ee7c36b41cc4a9868aa1b0c429b7b8852cb27b",
   "questions": 12,
   "readingsPerVersion": 96,
   "errors": [],
@@ -15,7 +15,7 @@
   "qualityScore": null,
   "matrix": {
     "actualReadings": 1560,
-    "compressedSHA256": "91f6f49fa667a1b57dbfc44a169204fd4b3f654f880d9059f24b69d7d8cd0450",
+    "compressedSHA256": "45c4aacad7fde2e0db3ed713cf478bb7fd25e553fc31020b3aa3620f37f7daa0",
     "failures": [],
     "note": "Ten known task phrasings across every card and orientation. Not 1560 distinct questions or an independent semantic evaluation."
   }

@@ -1,0 +1,9 @@
+{
+  "phase": "regression",
+  "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "baselineSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "fixtureSHA256": "3c13a9d5ee27d758f9fd7b1c5d0365ccf03cf0bada8aee2d637a8a34d4587e1e",
+  "collectorSHA256": "4ba221de091a20d493c746e67ea760223f30cc6a8ee8d54b7417ed11db346b31",
+  "seed": 860019,
+  "note": "Known questions corrected after first outputs. Regression, not a new holdout. Sixteen author-written diagnostic questions created after candidate commit 5f549a2. New to this candidate's execution, but authored with knowledge of the implementation, not an independent or expert-blind benchmark. Includes paraphrases, polarity/actor swaps, unfamiliar fields, ellipsis and compound requests. Preserve the first actual failures before corrections."
+}

@@ -1,6 +1,6 @@
 {
-  "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
-  "readingsSHA256": "b2a4a64194fd4350522438add8f8ae79338bee713c9a69e95260a6f294168442",
+  "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "readingsSHA256": "849f76ff0b6b67cf48077c6d80ee7c36b41cc4a9868aa1b0c429b7b8852cb27b",
   "type": "author development review",
   "directAnswersRead": [
     {
@@ -52,14 +52,11 @@
       "spread": "five"
     }
   ],
-  "rereadAfterLayoutChange": [
-    "prepare",
-    "implement",
-    "v86-n13"
-  ],
+  "additionalDirectAnswersRead": [],
+  "allSectionsRead": [],
+  "allVariantDetailedReportsRead": false,
   "all1560MatrixReadingsManuallyRead": false,
-  "all96DetailedReportsRead": false,
   "independentExpertReview": false,
   "qualityScore": null,
-  "note": "Twelve known five-card primary answers read; matrix is mechanical provenance/coverage only. Domain-specific depth and repeated general advice remain limited."
+  "note": "Final-build outputs were read directly. Known author review; not an untouched holdout or independent expert evaluation. Detailed-card wording, domain depth, repeated conditions and documented semantic failures remain."
 }

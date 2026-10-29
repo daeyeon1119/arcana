@@ -6,7 +6,13 @@ root=Path(__file__).resolve().parents[1]
 def git(*args,cwd=root):
     return subprocess.check_output(['git',*args],cwd=cwd,stderr=subprocess.PIPE)
 commit=git('rev-parse','HEAD').decode().strip()
-paths=['.gitattributes','index.html','sw.js','release.json','test-results/portable-summary.json','test-results/v86-validation.json','test-results/verification/first/readings.json','test-results/verification/first/summary.json','test-results/verification/regression/readings.json','test-results/alignment/first/readings.json','test-results/grounding/first/readings.json']
+committed_release=json.loads(git('show',commit+':release.json'))
+major=int(committed_release['readingEngine'])
+paths=['.gitattributes','index.html','sw.js','release.json','test-results/portable-summary.json',f'test-results/v{major}-validation.json','test-results/verification/first/readings.json','test-results/verification/first/summary.json','test-results/alignment/first/readings.json','test-results/grounding/first/readings.json']
+if major>=87:
+    paths+=['device-check.html','scripts/device-check.js','test-results/lens/first/readings.json','test-results/lens/first/summary.json','test-results/lens/regression/readings.json']
+else:
+    paths+=['test-results/verification/regression/readings.json']
 target=Path(tempfile.mkdtemp(prefix='evidence-checkout-',dir=root/'.cache'))
 git('-c','core.autocrlf=true','clone','--shared','--no-checkout',str(root),str(target))
 git('config','core.autocrlf','true',cwd=target)
@@ -24,6 +30,9 @@ release=json.loads((target/'release.json').read_text(encoding='utf-8'))
 assert checks['index.html']==release['appSHA256']
 summary=json.loads((target/'test-results/verification/first/summary.json').read_text(encoding='utf-8'))
 assert checks['test-results/verification/first/readings.json']==summary['readingsSHA256']
+if major>=87:
+    summary=json.loads((target/'test-results/lens/first/summary.json').read_text(encoding='utf-8'))
+    assert checks['test-results/lens/first/readings.json']==summary['readingsSHA256']
 result={'release':release,'sourceCommit':commit,'coreAutocrlf':True,'committedByteHashes':checks,'allByteEqual':True,'note':'Actual separate sparse Git clone/checkout with core.autocrlf=true. Public and first/regression evidence bytes equal committed blobs. No reading regeneration or semantic/expert score.'}
 output=root/f'test-results/checkout-repro-v{release["readingEngine"]}.json'
 temp=output.with_suffix('.json.tmp');temp.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n');temp.replace(output)

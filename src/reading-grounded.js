@@ -2,7 +2,8 @@
 function arc87CardFacet(card,participants){
  const motif=arc81Profile(card)[0];
  const self={connection:'기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요.',exchange:'들이는 시간과 힘, 그 과정에서 얻는 만족이 어떤 관계인지 살펴보세요.',support:'이미 쓸 수 있는 자원과 새로 필요한 도움을 구별해 보세요.',isolation:'혼자 할 필요가 있는 일과 이용할 수 있는 자원을 나누어 보세요.',mismatch:'바라는 상태와 실제 진행 상태 사이에서 어떤 부분이 어긋나는지 살펴보세요.',expression:'느끼는 것과 실제 표현으로 옮길 내용을 구별해 보세요.',suppression:'감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요.',conflict:'서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.'};
- return {motif,text:participants!==true&&self[motif]||ARC81_MOTIFS[motif][1]};
+ const exploratory={grief:'상실감이나 상처가 있다면, 그 마음을 돌볼 시간과 지금 남아 있는 것을 함께 살펴보세요.'};
+ return {motif,text:participants!==true&&self[motif]||exploratory[motif]||ARC81_MOTIFS[motif][1]};
 }
 function arc87AppliedLens(card,relation,spread,plan,bridge,usedRefs){
  const cards=relation?relation.refs.map(index=>relation.cards[index]):[card];
@@ -98,9 +99,10 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   else answer.directText=originalDirect+(context.text?' '+context.text:'');
   const appliedLens=integrateLens?arc87AppliedLens(card,usesPair?{...relation,cards:pack.list}:null,spread,plan,bridge,usedLensRefs):null;
   if(appliedLens){
-   const previousLens=usesPair?relation.core:arc80CardSentence(card,spread);
+   const previousLens=usesPair?relation.core:pack.list.map(atom=>arc80CardSentence(atom,spread)).find(text=>answer.directText.includes(text))||arc80CardSentence(card,spread);
    const lensStart=answer.directText.indexOf(previousLens);
    answer.directText=lensStart>=0?answer.directText.slice(0,lensStart).trimEnd()+'\n\n'+appliedLens.text+answer.directText.slice(lensStart+previousLens.length):answer.directText+'\n\n'+appliedLens.text;
+   answer.refs=appliedLens.refs;
   }
   answer.text=answer.directText;answer.actionText=practical;
   const refs=usesPair?relation.refs:[card.index],anchor=usesPair?relation.core:arc81Anchor(card,spread);

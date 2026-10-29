@@ -2,18 +2,81 @@
   "release": {
     "appVersion": "87.0.0",
     "readingEngine": 87,
-    "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
-    "appBytes": 30803635,
-    "webRelease": "fa87d043ec613c9c54b3066c"
+    "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+    "appBytes": 30807834,
+    "webRelease": "b7b87b17ba5f55331ff7f544"
   },
   "checks": [
     "communicate: actual visible card lens has drawn IDs/directions and matches export without overflow",
     "implement: actual visible card lens has drawn IDs/directions and matches export without overflow",
     "v86-n13: actual visible card lens has drawn IDs/directions and matches export without overflow",
     "compound practical methods and literal evidence remain separate from card emphasis",
-    "saved reading reproduces complete applied card answer and current engine"
+    "saved reading reproduces complete applied card answer and current engine",
+    "controlled non-relational emotional reading replaces the old advice footer and points to its actual current-card lens",
+    "a grief motif is framed as a possible theme when the question does not establish a loss"
   ],
+  "footerRegression": {
+    "cards": [
+      {
+        "id": "ar00",
+        "rev": false
+      },
+      {
+        "id": "ar02",
+        "rev": false
+      },
+      {
+        "id": "pe09",
+        "rev": false
+      }
+    ],
+    "direct": "지금 가장 부담스러운 부분을 한 문장으로 적고, 오늘 줄일 일과 쉬어 갈 시간을 하나씩 정해 보세요.\n\n‘현재’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 떠오르는 예상과 실제 확인한 일을 따로 적어, 모르는 부분을 최악의 결론으로 채우지 않도록 살펴보세요.",
+    "refs": [
+      1
+    ],
+    "lens": {
+      "text": "‘현재’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 떠오르는 예상과 실제 확인한 일을 따로 적어, 모르는 부분을 최악의 결론으로 채우지 않도록 살펴보세요.",
+      "refs": [
+        1
+      ],
+      "operation": "cope",
+      "relationAxis": null,
+      "facets": [
+        {
+          "index": 1,
+          "id": "ar02",
+          "reverse": false,
+          "motifs": [
+            "intuition",
+            "uncertain"
+          ]
+        }
+      ],
+      "roleFrame": "",
+      "reused": false
+    },
+    "coverage": [
+      0,
+      1,
+      2
+    ]
+  },
+  "griefRegression": {
+    "direct": "상담을 신청하게 된 이유와 최근 특히 힘들었던 장면을 적어 보세요. 처음부터 모든 이야기를 잘 정리해서 말할 필요는 없습니다.\n\n‘핵심 메시지’의 소드 3 정방향에서 살필 관점은 ‘상실·명료함’입니다. 상실감이나 상처가 있다면, 그 마음을 돌볼 시간과 지금 남아 있는 것을 함께 살펴보세요. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+    "facts": {
+      "resultFailed": false,
+      "resultPassed": false,
+      "known": false,
+      "sent": false,
+      "noReply": false,
+      "replied": false,
+      "noConflict": false,
+      "waiting": false,
+      "upcoming": false,
+      "replyUnknown": false
+    }
+  },
   "errors": [],
   "browser": "156.0.4314.50",
-  "note": "Known-input actual draw/reveal/render/export/save in 360px Chromium. Not physical phone/Safari or an expert interpretation evaluation."
+  "note": "Known-input actual draw/reveal/render/export/save in 360px Chromium, plus controlled canonical report regressions. Not physical phone/Safari or an expert interpretation evaluation."
 }

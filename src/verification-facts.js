@@ -3,7 +3,7 @@
 (function(root){
  'use strict';
  const normal=value=>String(value||'').normalize('NFKC').replace(/\s+/g,' ').trim();
- const mask=text=>text.replace(/[“"「『][^”"」』]*[”"」』]/g,value=>' '.repeat(value.length));
+ const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,mask=questionText.mask;
  const person=/^(?:저|제|나|내|동료|친구|담당자|상대|학생|자녀|그사람)$/;
  const temporal=/^(?:오늘|현재|지금|이번|어제|작년|예전|과거|지난\s*(?:주|달|해))(?:에)?$/;
  const rootWord='(?:확인|대조|검토|검증|확정|점검|맞췄)';

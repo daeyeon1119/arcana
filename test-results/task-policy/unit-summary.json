@@ -297,15 +297,19 @@
       "ok": true
     },
     {
-      "name": "shared object is local to coordinated predicates: 안내문을 어떻게 고치고 어떻게 설명할까요?",
+      "name": "shared object and bounded recent topic: 안내문을 어떻게 고치고 어떻게 설명할까요?",
       "ok": true
     },
     {
-      "name": "shared object is local to coordinated predicates: 안내문을 어떻게 고치고 내 선택을 어떻게 설명할까요?",
+      "name": "shared object and bounded recent topic: 안내문을 어떻게 고치고 내 선택을 어떻게 설명할까요?",
       "ok": true
     },
     {
-      "name": "shared object is local to coordinated predicates: 안내문을 고쳤습니다. 어떻게 설명할까요?",
+      "name": "shared object and bounded recent topic: 안내문을 고쳤습니다. 어떻게 설명할까요?",
+      "ok": true
+    },
+    {
+      "name": "shared object and bounded recent topic: 안내문을 고쳤습니다. 운동을 끝냈습니다. 어떻게 설명할까요?",
       "ok": true
     },
     {
@@ -337,6 +341,42 @@
       "ok": true
     },
     {
+      "name": "a generic complement inherits the explicit preceding purpose: 순서",
+      "ok": true
+    },
+    {
+      "name": "a generic complement inherits the explicit preceding purpose: 방법",
+      "ok": true
+    },
+    {
+      "name": "a generic complement inherits the explicit preceding purpose: 범위",
+      "ok": true
+    },
+    {
+      "name": "a generic complement inherits the explicit preceding purpose: 단계",
+      "ok": true
+    },
+    {
+      "name": "a generic complement inherits the explicit preceding purpose: 기준",
+      "ok": true
+    },
+    {
+      "name": "a requested first step is not replaced by its subordinate completion goal",
+      "ok": true
+    },
+    {
+      "name": "an omitted explanation object may retain the active document topic: 번호는 확인했습니다. archive$&$$.pdf의 날짜는 검토 중입니다.",
+      "ok": true
+    },
+    {
+      "name": "an omitted explanation object may retain the active document topic: 준비했습니다.",
+      "ok": true
+    },
+    {
+      "name": "a new explicit topic ends omitted document inheritance",
+      "ok": true
+    },
+    {
       "name": "an explicit document remains an artifact when edited: 문서",
       "ok": true
     },
@@ -349,6 +389,6 @@
       "ok": true
     }
   ],
-  "total": 87,
+  "total": 97,
   "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by both preserved first-run question sets. Not a first-seen quality benchmark or professional evaluation."
 }

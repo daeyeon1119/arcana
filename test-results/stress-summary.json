@@ -1,6 +1,6 @@
 {
   "seed": 790026,
-  "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
   "scenarioCount": 128,
   "readingCount": 1024,
   "passed": 1024,
@@ -925,9 +925,9 @@
   "failures": [],
   "latencyMs": {
     "note": "Single local generation, excluding browser startup, UI animation and baseline comparison.",
-    "p50": 2.5,
-    "p95": 6.3,
-    "max": 72.8,
-    "total": 3247.5
+    "p50": 5.2,
+    "p95": 10,
+    "max": 63.9,
+    "total": 5773.5
   }
 }

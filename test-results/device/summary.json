@@ -2,9 +2,9 @@
   "release": {
     "appVersion": "87.0.0",
     "readingEngine": 87,
-    "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
-    "appBytes": 30803635,
-    "webRelease": "fa87d043ec613c9c54b3066c"
+    "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+    "appBytes": 30807834,
+    "webRelease": "b7b87b17ba5f55331ff7f544"
   },
   "checks": [
     "actual checker executes canonical readings, decodes 78 cards and preserves an existing saved reading",
