@@ -14,3 +14,8 @@ tests/grounding-first.json text eol=lf
 test-results/alignment/**/*.json text eol=lf
 test-results/alignment/**/*.html text eol=lf
 tests/alignment-first.json text eol=lf
+
+# Keep evaluation hashes stable on Windows, including new suites.
+test-results/**/*.json text eol=lf
+test-results/**/*.html text eol=lf
+tests/verification-first.json text eol=lf
