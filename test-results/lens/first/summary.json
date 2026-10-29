@@ -1,0 +1,177 @@
+{
+  "phase": "first",
+  "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
+  "baselineSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "fixtureSHA256": "7d48515f1bb206d48a8db522fd97bd1f68532071aec9ca23fe056ffc816ecb6f",
+  "collectorSHA256": "4226b626d305b36442e893eedf5ff96a2a5a40638853067635c0b6d1760168f6",
+  "seed": 870037,
+  "note": "Twenty author-written diagnostic questions created after candidate 39d81a9 (HTML d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0). New to this candidate's execution, authored with implementation knowledge; not independent or expert-blind evidence. Includes unfamiliar topics, different request syntax, mixed intent, negative facts and format constraints. Preserve all first outputs before corrections.",
+  "readingsSHA256": "d7263373aed6f8bcd5e4c9fb38dbb6df1b1db0e71f32366b2e7a9a6b40dc2855",
+  "questions": 20,
+  "readingsPerVersion": 160,
+  "errors": [],
+  "failures": [
+    {
+      "id": "l01",
+      "spread": "one",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l01",
+      "spread": "three",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l01",
+      "spread": "five",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l01",
+      "spread": "relationship5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l01",
+      "spread": "choice5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l01",
+      "spread": "waiting3",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l01",
+      "spread": "career5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l01",
+      "spread": "celtic",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l02",
+      "spread": "one",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l02",
+      "spread": "three",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l02",
+      "spread": "five",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l02",
+      "spread": "relationship5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l02",
+      "spread": "choice5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l02",
+      "spread": "waiting3",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l02",
+      "spread": "career5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l02",
+      "spread": "celtic",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l09",
+      "spread": "one",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l09",
+      "spread": "three",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l09",
+      "spread": "five",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l09",
+      "spread": "relationship5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l09",
+      "spread": "choice5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l09",
+      "spread": "waiting3",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l09",
+      "spread": "career5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l09",
+      "spread": "celtic",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l19",
+      "spread": "one",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l19",
+      "spread": "three",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l19",
+      "spread": "five",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l19",
+      "spread": "relationship5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l19",
+      "spread": "choice5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l19",
+      "spread": "waiting3",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l19",
+      "spread": "career5",
+      "error": "expected practical lens missing"
+    },
+    {
+      "id": "l19",
+      "spread": "celtic",
+      "error": "expected practical lens missing"
+    }
+  ],
+  "mechanicalPassed": 128,
+  "qualityScore": null
+}
