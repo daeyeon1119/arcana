@@ -1,0 +1,17 @@
+{
+  "phase": "regression",
+  "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "baselineSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+  "fixtureSHA256": "823212de04268ff59771a0332d68d88e2b5ba31437f45c381ebd2e3b5112e0e5",
+  "collectorSHA256": "22d5bbe22a34ed65f566b7d44910ca39730b8243c3de93f5f733a9c100fcc9bd",
+  "seed": 840031,
+  "note": "Known questions used for corrections; this is regression, not a new unseen evaluation. Original first-run fixture note follows: Authored after candidate freeze f6a47a8 (HTML SHA256 3703b9fb220189afd280c0c9eba461cf9612ab2af70b1de9a365cd2fc82f0cd8). Self-authored first-run diagnostic, not independent expert evidence. Questions, cards, orientations and arrays are identical for v83 and this candidate. Paired scenarios share cards. Metadata and review expectations are not passed to the engine. All first actual outputs, including semantic failures found by reading, must remain unchanged. Fixes using these cases make later runs regressions. Mechanical invariants are not a semantic or professional quality score.",
+  "readingsSHA256": "ad0592d44ffb73035d966d2e7e9d3d4ad27cf2e8d80ad137c2cfd413838f43af",
+  "compressedSHA256": "fe2d27fb25f98ff9193485fc6928dc725e07d9441d278a62faf07e949d1a6df7",
+  "questions": 24,
+  "readingsPerVersion": 192,
+  "errors": [],
+  "failures": [],
+  "mechanicalChecksPassed": 192,
+  "qualityReviewed": 0
+}

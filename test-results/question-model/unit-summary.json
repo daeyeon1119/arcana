@@ -1,5 +1,5 @@
 {
-  "developmentChecks": 255,
-  "passed": 255,
+  "developmentChecks": 258,
+  "passed": 258,
   "note": "Authored development/property checks. Includes regressions informed by actual first outputs. Not independent accuracy or professional evaluation."
 }

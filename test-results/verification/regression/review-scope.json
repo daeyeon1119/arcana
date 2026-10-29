@@ -1,0 +1,115 @@
+{
+  "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "readingsSHA256": "87e3ce0bd54d72bf0a9fc6401eb3f082f17efecf4844a64adfd063ca6b5ae19c",
+  "type": "known regression author review",
+  "directAnswersRead": [
+    {
+      "id": "n01",
+      "spread": "five"
+    },
+    {
+      "id": "n02",
+      "spread": "five"
+    },
+    {
+      "id": "n03",
+      "spread": "five"
+    },
+    {
+      "id": "n04",
+      "spread": "five"
+    },
+    {
+      "id": "n05",
+      "spread": "five"
+    },
+    {
+      "id": "n06",
+      "spread": "five"
+    },
+    {
+      "id": "n07",
+      "spread": "five"
+    },
+    {
+      "id": "n08",
+      "spread": "five"
+    },
+    {
+      "id": "n09",
+      "spread": "five"
+    },
+    {
+      "id": "n10",
+      "spread": "five"
+    },
+    {
+      "id": "n11",
+      "spread": "five"
+    },
+    {
+      "id": "n12",
+      "spread": "five"
+    },
+    {
+      "id": "n13",
+      "spread": "five"
+    },
+    {
+      "id": "n14",
+      "spread": "five"
+    },
+    {
+      "id": "n15",
+      "spread": "five"
+    },
+    {
+      "id": "n16",
+      "spread": "five"
+    },
+    {
+      "id": "n03",
+      "spread": "celtic"
+    },
+    {
+      "id": "n07",
+      "spread": "celtic"
+    },
+    {
+      "id": "n10",
+      "spread": "celtic"
+    },
+    {
+      "id": "n16",
+      "spread": "celtic"
+    },
+    {
+      "id": "n01",
+      "spread": "choice5"
+    },
+    {
+      "id": "n02",
+      "spread": "choice5"
+    }
+  ],
+  "allSectionsRead": [
+    {
+      "id": "n13",
+      "spread": "five"
+    },
+    {
+      "id": "n16",
+      "spread": "five"
+    }
+  ],
+  "all128DetailedVariantsRead": false,
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "remainingLimits": [
+    "domain-specific interpretation is generic",
+    "card motif sentences repeat",
+    "n14 missing delivery reply not concretely integrated",
+    "n16 second explanation retains generic personal-choice prose"
+  ],
+  "note": "All sixteen final five-card primary answers, six additional primaries and two full five-card reports read. State/span/request contracts all pass; this does not establish semantic completeness or expert equivalence."
+}

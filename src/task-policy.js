@@ -63,7 +63,10 @@
   // An omitted object may be shared within one coordinated request, while an
   // explicit new object or another sentence must retain its own target.
   const sharedArtifact=artifact.test(task.sharedContext||'')&&!/(?:[을를은는](?=\s|$)|마음|감정|선택|결정)/.test(text);
-  const hasArtifact=!requiredResources&&(artifact.test(text)||sharedArtifact||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
+  const previousClause=typeof task.start==='number'?evidenceQuestion.slice(0,task.start).split(/[.!?。！？]/).map(item=>item.trim()).filter(Boolean).at(-1)||'':'';
+  const sameTask=artifact.test(previousClause)&&operation({kind:'action',text:previousClause},previousClause)===op&&!/[을를]\s*(?:어떻게\s*)?(?:준비|고치|바꾸|다듬|설명|마무리)/.test(text)&&!/마음|감정|선택|결정/.test(text);
+  const referent=artifact.test(evidenceQuestion)&&/^(?:이를|이것을|그것을)\s/.test(text);
+  const hasArtifact=!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
   const clinicalChange=/(?:약|치료|수술|복용|용량|증상|통증).{0,18}(?:끊|중단|바꾸|늘리|줄이|끝내|시작|개선|선택)|(?:끊|중단|바꾸|늘리|줄이).{0,12}(?:약|치료|복용|용량)/.test(text);
   if(scene.medical||scene.domain==='health'){
    if(op!=='inquire'&&clinicalChange)return null;

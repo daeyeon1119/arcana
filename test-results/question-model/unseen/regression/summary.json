@@ -1,5 +1,5 @@
 {
-  "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
   "fixtureSHA256": "be27460d7189a187d12c5f7a7128d60946582eaa165644dc58fa1db8663cd259",
   "seed": 820024,
   "note": "Regression replay after the first v82 evaluation informed structural corrections. Not an untouched holdout.",

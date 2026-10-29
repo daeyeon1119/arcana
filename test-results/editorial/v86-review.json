@@ -1,0 +1,10 @@
+{
+  "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "comparedTo": "public v85",
+  "comparedPrimaryAnswers": 320,
+  "changedPrimaryAnswers": [],
+  "manuallyReadAgain": 0,
+  "note": "Exact primary string comparison; no claim that all 320 detailed reports were read again. New verification outputs were reviewed separately.",
+  "beforeSHA256": "f976257fe1ac309400e5a1aeb08939ae71030dfbacd99b501037a860f7c408a8",
+  "afterSHA256": "5fd5e4e2aec2b69871f1c446448bdced0ecf7ceef8ff57c5828a09d6d9bbd7db"
+}

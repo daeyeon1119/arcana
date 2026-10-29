@@ -2,9 +2,9 @@
   "release": {
     "appVersion": "86.0.0",
     "readingEngine": 86,
-    "appSHA256": "f152263ae9fde469c6282fd6b2e457e6720bf76b1aa0afeb91c43a51b57ed24f",
-    "appBytes": 30797922,
-    "webRelease": "382d85504b4d77e67491f7bb"
+    "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+    "appBytes": 30800308,
+    "webRelease": "831aa9ef0b377dd40c713134"
   },
   "checks": [
     "undefined option asks for context before drawing",

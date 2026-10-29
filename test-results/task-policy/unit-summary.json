@@ -309,6 +309,18 @@
       "ok": true
     },
     {
+      "name": "bounded omitted document object: 문서를 준비하려고 합니다. 확인한 제목을 구별해서 어떻게 준비할까요?",
+      "ok": true
+    },
+    {
+      "name": "bounded omitted document object: 문서를 준비하려고 합니다. 노래를 어떻게 준비할까요?",
+      "ok": true
+    },
+    {
+      "name": "bounded omitted document object: 자료를 확인했습니다. 이를 어떻게 고칠까요?",
+      "ok": true
+    },
+    {
       "name": "an explicit document remains an artifact when edited: 문서",
       "ok": true
     },
@@ -321,6 +333,6 @@
       "ok": true
     }
   ],
-  "total": 80,
+  "total": 83,
   "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by both preserved first-run question sets. Not a first-seen quality benchmark or professional evaluation."
 }

@@ -154,7 +154,7 @@
    const t=part.text,explicitCompare=/비교(?:해(?:\s*주|줘|보고|볼)|하고(?:\s*싶|$)|할(?:까요|지)|를\s*(?:부탁|원|해))|(?:어떻게|어떤\s*기준).{0,20}비교/.test(t),ask=original.coordinated||/(?:까|나요|가요|궁금|싶|알려|조언|봐\s*주|보아\s*주|말해\s*주|주세요|무엇|뭘|어떻게|어디|왜|언제|어떤)/.test(t)||explicitCompare||alternativeCount(t)>=2&&/고민|선택|결정/.test(t);
    if(!ask)continue;
    if(correction&&requests.length)requests.length=0;
-   const cause=/(?:왜|어째서|까닭|원인)/.test(t)||/(?:이유|배경)/.test(t)&&!/이유로|배경으로|이유를\s*(?:말|전|설명)|돌아보|성찰/.test(t);
+   const cause=/(?:왜|어째서|까닭|원인)/.test(t)||/(?:이유|배경)/.test(t)&&!/이유로|배경으로|이유를\s*(?:어떻게\s*)?(?:말|전|설명)|돌아보|성찰/.test(t);
    const compare=explicitCompare||/두\s*(?:안|선택|경로).{0,20}차이|어느\s*쪽/.test(t)||alternativeCount(t)>=2;
    const reflective=/성찰|돌아보|살펴보|어떤\s*관점|배운\s*것|배울\s*수/.test(t)&&!/방법|어떻게\s*(?:말|설명|준비)/.test(t);
    const volitional=[...t.matchAll(/([가-힣]+)(?:까요|까|지)(?=\s|$|입니다|이에요|예요)/g)].some(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8);
