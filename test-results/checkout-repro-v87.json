@@ -1,0 +1,29 @@
+{
+  "release": {
+    "appVersion": "87.0.0",
+    "readingEngine": 87,
+    "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+    "appBytes": 30807834,
+    "webRelease": "b7b87b17ba5f55331ff7f544"
+  },
+  "sourceCommit": "10340bf6f936dadaf0f0fcf0a0c859e56072b374",
+  "coreAutocrlf": true,
+  "committedByteHashes": {
+    "index.html": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+    "sw.js": "3af9bb875db92e260c376f4037ce36cb4aa917d4d99d152eda621b07a8a3fb39",
+    "release.json": "21cc4adbe5c859e7722e21a76a5b75806eb13d19c048bee3b997fa0daf80aadb",
+    "test-results/portable-summary.json": "81f49969f970113670480687b879fb6d1f47a5e9c81d804c044f780f44e1d86f",
+    "test-results/v87-validation.json": "c4fe3c41dc960dbf8391f9cc4347740c0ccdc53c81e1d1fc3ea61f11b090591a",
+    "test-results/verification/first/readings.json": "0f97498364ce94959a852f87768e820b9b14727d01815178289d6d0a10d6613e",
+    "test-results/verification/first/summary.json": "f1d640bfb26fb5726172908a2215ef729ed3d04f43aee2eb677a64431567446e",
+    "test-results/alignment/first/readings.json": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+    "test-results/grounding/first/readings.json": "150111acdbd495e434017c89a751fbc0d0573bec4ac1c10a342e99df6423d821",
+    "device-check.html": "d9b9dd5aeeb77bb1635c6e7f2de6ee3672823e4b9cac8254ef3d096428126eb5",
+    "scripts/device-check.js": "abbfe5fe8880bdb53039241a0541eaf87395f7a4723a1e9a97add9461d9ee05b",
+    "test-results/lens/first/readings.json": "d7263373aed6f8bcd5e4c9fb38dbb6df1b1db0e71f32366b2e7a9a6b40dc2855",
+    "test-results/lens/first/summary.json": "dcdbfbb36685043a71b8d44f94b54fc51941fbcd72bc6f1b3091cd3de73c3e69",
+    "test-results/lens/regression/readings.json": "eba71d3234555ac14bb0a0c58b71fc76caf09291d975f4876ff730c657000bec"
+  },
+  "allByteEqual": true,
+  "note": "Actual separate sparse Git clone/checkout with core.autocrlf=true. Public and first/regression evidence bytes equal committed blobs. No reading regeneration or semantic/expert score."
+}
