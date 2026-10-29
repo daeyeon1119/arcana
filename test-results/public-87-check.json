@@ -1,0 +1,31 @@
+{
+  "url": "https://daeyeon1119.github.io/arcana/",
+  "release": {
+    "appVersion": "87.0.0",
+    "readingEngine": 87,
+    "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+    "appBytes": 30807834,
+    "webRelease": "b7b87b17ba5f55331ff7f544"
+  },
+  "checks": [
+    "desktop: public HTTPS app bytes in offline cache match tested local build",
+    "desktop: 144 public/offline question/card/settings readings match local outputs exactly",
+    "desktop: 78 originals decode after public site is reopened offline",
+    "mobile-emulation: public HTTPS app bytes in offline cache match tested local build",
+    "mobile-emulation: 144 public/offline question/card/settings readings match local outputs exactly",
+    "mobile-emulation: 78 originals decode after public site is reopened offline",
+    "public application makes no request to this PC or a model endpoint"
+  ],
+  "errors": [],
+  "requestedOrigins": [
+    "https://daeyeon1119.github.io",
+    "https://fonts.googleapis.com"
+  ],
+  "browser": "156.0.4314.50",
+  "note": "Actual public HTTPS download and offline browser runs. Mobile is a Chromium profile, not a physical phone/Safari test. Fonts were blocked; no claim of professional reading quality.",
+  "verifiedDeployment": {
+    "mainCommit": "6e3d09db2529ae61d2e601c75aee20833b647835",
+    "pagesRunId": 40873326385,
+    "pagesConclusion": "success"
+  }
+}

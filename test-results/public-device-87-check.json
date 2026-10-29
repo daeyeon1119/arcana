@@ -1,0 +1,48 @@
+{
+  "url": "https://daeyeon1119.github.io/arcana/device-check.html",
+  "release": {
+    "appVersion": "87.0.0",
+    "readingEngine": 87,
+    "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+    "appBytes": 30807834,
+    "webRelease": "b7b87b17ba5f55331ff7f544"
+  },
+  "publicAssetSHA256": {
+    "release.json": "21cc4adbe5c859e7722e21a76a5b75806eb13d19c048bee3b997fa0daf80aadb",
+    "device-check.html": "d9b9dd5aeeb77bb1635c6e7f2de6ee3672823e4b9cac8254ef3d096428126eb5",
+    "scripts/device-check.js": "abbfe5fe8880bdb53039241a0541eaf87395f7a4723a1e9a97add9461d9ee05b"
+  },
+  "result": {
+    "kind": "arcana-actual-browser-check",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "language": "ko-KR",
+    "screen": {
+      "width": 390,
+      "height": 844,
+      "pixelRatio": 1
+    },
+    "physicalDeviceConfirmedByUser": false,
+    "professionalQualityScore": null,
+    "release": {
+      "appVersion": "87.0.0",
+      "readingEngine": 87,
+      "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+      "appBytes": 30807834,
+      "webRelease": "b7b87b17ba5f55331ff7f544"
+    },
+    "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+    "readings": 144,
+    "readingParitySHA256": "bd1c72e1ced0a94c36bce045adad4e5d29d44c45490952a0a02ec9ae64f3dcd7",
+    "originalCardsDecoded": 78,
+    "passed": true,
+    "scope": "Actual browser execution only. Physical device, manual touch, saving, installation and offline use require separate user confirmation."
+  },
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "note": "Actual public HTTPS checker execution in Chromium mobile emulation. Not a physical Android phone or manual touch/install/offline test. No expert quality score.",
+  "verifiedDeployment": {
+    "mainCommit": "6e3d09db2529ae61d2e601c75aee20833b647835",
+    "pagesRunId": 40873326385,
+    "pagesConclusion": "success"
+  }
+}
