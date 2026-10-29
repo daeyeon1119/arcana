@@ -1,0 +1,66 @@
+{
+  "n01": {
+    "mechanicalFailed": false,
+    "comment": "인쇄 날짜 확인/저작권 미확인을 구별한다. 카드 주제가 자금으로 끝나 점자 안내에 충분히 통합되지 않는다."
+  },
+  "n02": {
+    "mechanicalFailed": false,
+    "comment": "동일 카드의 상태 반전이 적용된다. 분야별 설명은 여전히 일반적이다."
+  },
+  "n03": {
+    "mechanicalFailed": true,
+    "comment": "완료된 검증 표현과 생략된 자료 대상을 놓쳐 두 사실 모두 조언에 적용하지 못한다."
+  },
+  "n04": {
+    "mechanicalFailed": false,
+    "comment": "민지의 확인을 내 확인으로 만들지 않고 내 수량 미확인을 적용한다."
+  },
+  "n05": {
+    "mechanicalFailed": false,
+    "comment": "가정을 완료 사실로 사용하지 않는다. 가정 상황의 구체적 설명은 부족하다."
+  },
+  "n06": {
+    "mechanicalFailed": false,
+    "comment": "전해 들은 판본과 기억 불확실성을 내 완료 사실로 사용하지 않는다."
+  },
+  "n07": {
+    "mechanicalFailed": true,
+    "comment": "오늘은을 검증 주체로 오독해 현재 미확인 파일명을 누락한다."
+  },
+  "n08": {
+    "mechanicalFailed": false,
+    "comment": "명시적 정정 이후의 서가 미확인 상태를 적용한다."
+  },
+  "n09": {
+    "mechanicalFailed": false,
+    "comment": "권수의 상충 상태에 현재 상태 확인을 요청한다."
+  },
+  "n10": {
+    "mechanicalFailed": true,
+    "comment": "표지 색상은 유지하지만 생략된 쪽수의 미확인을 누락한다."
+  },
+  "n11": {
+    "mechanicalFailed": false,
+    "comment": "A/B 원문과 카드 배정 범위를 유지한다. 실제 시간표 검토·비교 기준은 일반적이다."
+  },
+  "n12": {
+    "mechanicalFailed": true,
+    "comment": "파일명 앞부분을 문장 경계로 잘라 pdf의 쪽수만 남긴다. 도표 단위 미확인은 유지한다."
+  },
+  "n13": {
+    "mechanicalFailed": false,
+    "comment": "다듬기와 관람객 설명 요청 둘을 보존하고 사실을 한 번 적용한다. 두 답변의 카드·확인 안내 반복이 남는다."
+  },
+  "n14": {
+    "mechanicalFailed": false,
+    "comment": "자료 준비와 초조한 마음을 구별하지만 납기 답변 부재를 실천에 구체적으로 연결하지 못한다."
+  },
+  "n15": {
+    "mechanicalFailed": true,
+    "comment": "이중 부정을 잘못 읽어 게 아닙니다를 미확인 대상으로 내보낸다. 의미·자연스러움 실패다."
+  },
+  "n16": {
+    "mechanicalFailed": true,
+    "comment": "목적어 뒤의 제가를 잘못 처리하고 이를의 대상을 놓친다. 바꾼 이유의 설명을 원인 탐색으로 오독한다."
+  }
+}
