@@ -2,9 +2,9 @@
   "release": {
     "appVersion": "85.0.0",
     "readingEngine": 85,
-    "appSHA256": "634ced37ea7a81db5489f92596f290d401030c2223304e794d2f7f67da67f73f",
-    "appBytes": 30784006,
-    "webRelease": "78b6019ef9c46b4a693e480f"
+    "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+    "appBytes": 30787869,
+    "webRelease": "00a930fde9d1675d3d0eee36"
   },
   "checks": [
     "non-comparison 141: same five cards, visible assignment note and matching export",
@@ -16,6 +16,6 @@
     "manual action focus controls relation selection despite comparison wording"
   ],
   "errors": [],
-  "browser": "156.0.4314.42",
+  "browser": "156.0.4314.50",
   "note": "Known regression inputs in actual 360px draw/reveal/export/save flows. Chromium emulation, not a physical phone/Safari or expert semantic evaluation."
 }

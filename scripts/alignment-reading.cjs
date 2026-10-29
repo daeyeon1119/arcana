@@ -9,7 +9,7 @@ const fixture=phase==='development'?{note:'12 existing questions used for develo
 const folder='test-results/alignment/'+phase;fs.mkdirSync(folder,{recursive:true});fs.mkdirSync('.cache',{recursive:true});
 if(phase==='first'&&fs.existsSync(folder+'/readings.json'))throw Error('First outputs already exist. Use regression.');
 const baseline=execFileSync('git',['show','40a9df9:index.html'],{maxBuffer:40*1024*1024});assert.equal(hash(baseline),'0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0');fs.writeFileSync('.cache/alignment-v84.html',baseline);
-const freeze={phase,appSHA256:hash(fs.readFileSync('index.html')),baselineSHA256:hash(baseline),fixtureSHA256:hash(JSON.stringify(fixture)),collectorSHA256:hash(fs.readFileSync(__filename,'utf8').replace(/\r\n/g,'\n')),seed:850041,note:fixture.note};
+const freeze={phase,appSHA256:hash(fs.readFileSync('index.html')),baselineSHA256:hash(baseline),fixtureSHA256:hash(JSON.stringify(fixture)),collectorSHA256:hash(fs.readFileSync(__filename,'utf8').replace(/\r\n/g,'\n')),seed:850041,note:(phase==='regression'?'Known questions corrected after first evaluation. This run is regression, not a fresh holdout. ':'')+fixture.note};
 if(phase==='first'&&fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.parse(fs.readFileSync(folder+'/freeze.json','utf8')),freeze);
 fs.writeFileSync(folder+'/freeze.json',JSON.stringify(freeze,null,2));
 const save=(name,bytes)=>{const target=folder+'/'+name,temporary=target+'.tmp';fs.writeFileSync(temporary,bytes);fs.renameSync(temporary,target);};
@@ -19,7 +19,7 @@ const save=(name,bytes)=>{const target=folder+'/'+name,temporary=target+'.tmp';f
  const cases=fixture.cases.flatMap(item=>Object.entries(catalog.slots).map(([spread,slots])=>{let seed=850041;for(const char of item.group||item.id)seed=(Math.imul(seed,31)+char.charCodeAt(0))>>>0;const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/2**32;},pool=[...catalog.ids];for(let i=pool.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}return {...item,spread,cards:pool.slice(0,slots.length).map(id=>({id,rev:rand()<.5}))};}));
  const generate=()=>page.evaluate(cases=>cases.map(item=>{try{arc79ForcedIntent=item.focus||'auto';return __arcana79Build(item.question,item.spread,item.cards,item.domain||'auto');}catch(error){return {error:error.message};}}),cases);
  const before=await generate();await page.goto(browser.appURL,{waitUntil:'domcontentloaded'});const after=await generate();
- const rows=cases.map((item,index)=>({...item,cardLabels:item.cards.map((card,i)=>catalog.slots[item.spread][i]+' · '+catalog.names[card.id]+' '+(card.rev?'역방향':'정방향')),before:before[index],after:after[index]})),failures=[];
+ const rows=cases.map((item,index)=>({...item,cardLabels:item.cards.map((card,i)=>catalog.slots[item.spread][i]+' · '+catalog.names[card.id]+' '+(card.rev?'역방향':'정방향')),before:before[index],after:after[index]})),failures=[],expectations=phase==='regression'?JSON.parse(fs.readFileSync('tests/alignment-regression-expectations.json','utf8')).cases:{};
  for(const row of rows){const report=row.after,fail=error=>failures.push({id:row.id,spread:row.spread,error});
   if(report.error){fail(report.error);continue;}
   if(row.before.error)fail('baseline: '+row.before.error);
@@ -27,6 +27,11 @@ const save=(name,bytes)=>{const target=folder+'/'+name,temporary=target+'.tmp';f
   if(new Set(report.sections.flatMap(section=>section.refs)).size!==row.cards.length)fail('drawn card coverage lost');
   if(report.sections.some(section=>!section.refs.length||section.refs.some(i=>!Number.isInteger(i)||i<0||i>=row.cards.length)))fail('invalid card reference');
   if(/undefined|NaN|\[object Object\]|을를/.test(report.direct))fail('malformed direct text');
+  const expected=expectations[row.id];if(expected){
+   if(JSON.stringify(report.arc82.answers.map(answer=>answer.request.kind))!==JSON.stringify(expected.kinds))fail('known request coverage contract');
+   if(expected.actions&&JSON.stringify(report.arc82.answers.filter(answer=>['action','emotion'].includes(answer.request.kind)).map(answer=>answer.actionTask))!==JSON.stringify(expected.actions))fail('known practical operation metadata contract');
+   if(expected.needsContext&&!report.arc82.needsContext)fail('known missing context contract');
+  }
   if(row.spread==='choice5'&&!report.arc82.needsContext){
    if(report.arc81.choiceAssignment.assigned!==row.expectedComparison)fail('comparison assignment disagrees with authored request expectation');
    if(!row.expectedComparison){
@@ -37,5 +42,5 @@ const save=(name,bytes)=>{const target=folder+'/'+name,temporary=target+'.tmp';f
   }
  }
  const bytes=Buffer.from(JSON.stringify(rows,null,2)),compressed=zlib.gzipSync(rows.map(row=>JSON.stringify(row)).join('\n')+'\n');save('readings.json',bytes);save('readings.jsonl.gz',compressed);
- const summary={...freeze,readingsSHA256:hash(bytes),compressedSHA256:hash(compressed),questions:fixture.cases.length,readingsPerVersion:rows.length,errors,failures,mechanicalPassed:rows.length-new Set(failures.map(item=>item.id+':'+item.spread)).size,qualityScore:null,note:fixture.note+' Dispatch/position contracts are not semantic quality or expert scores.'};save('summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));if(errors.length||failures.length)process.exitCode=1;
+ const summary={...freeze,readingsSHA256:hash(bytes),compressedSHA256:hash(compressed),questions:fixture.cases.length,readingsPerVersion:rows.length,errors,failures,mechanicalPassed:rows.length-new Set(failures.map(item=>item.id+':'+item.spread)).size,qualityScore:null,note:freeze.note+' Dispatch/position contracts are not semantic quality or expert scores.'};save('summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));if(errors.length||failures.length)process.exitCode=1;
 }finally{await browser.close();}})().catch(error=>{console.error(error);process.exitCode=1;});

@@ -279,8 +279,36 @@
     {
       "name": "question preparation accepts an interrogative complement without inventing a received answer",
       "ok": true
+    },
+    {
+      "name": "editing does not supply a factual document object: 영상",
+      "ok": true
+    },
+    {
+      "name": "editing does not supply a factual document object: 사진",
+      "ok": true
+    },
+    {
+      "name": "editing does not supply a factual document object: 음악",
+      "ok": true
+    },
+    {
+      "name": "editing does not supply a factual document object: 작품",
+      "ok": true
+    },
+    {
+      "name": "an explicit document remains an artifact when edited: 문서",
+      "ok": true
+    },
+    {
+      "name": "an explicit document remains an artifact when edited: 자료",
+      "ok": true
+    },
+    {
+      "name": "an explicit document remains an artifact when edited: 안내문",
+      "ok": true
     }
   ],
-  "total": 70,
+  "total": 77,
   "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by both preserved first-run question sets. Not a first-seen quality benchmark or professional evaluation."
 }

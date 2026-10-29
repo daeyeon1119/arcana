@@ -1,0 +1,19 @@
+{
+  "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "fixtureSHA256": "24287d945e44cf60387156f088dd26e23de0dbda444893a310d0973bc9732e21",
+  "policySHA256": "25930e16c0f35959d5a89c879b37d2efb42fc52e4fdce3d61d5583d5da1c3cd9",
+  "collectorSHA256": "cfc9bf709dc08876319d13a17bf31dc91e0fecce984e5d3c62a93ea545aa89c7",
+  "seed": 830031,
+  "phase": "regression",
+  "note": "Authored after v83 implementation freeze 860e8ee. First actual outputs are immutable. Self-authored diagnostic with paired wording/facts and new domains, not independent expert evidence. Expected operation checks only dispatch; they do not prove the answer is appropriate or complete. Review text and labels are never passed to the reading engine. The first fixture and its original expectations remain unchanged. Review found that preparing questions is distinct from sending a repeated contact. This intentional contract change is recorded only for regression runs; it is not a new unseen evaluation. Routing checks are not semantic or professional quality scores.",
+  "questions": 32,
+  "readingsPerVersion": 256,
+  "errors": [],
+  "failures": [],
+  "checks": {
+    "routing": 256,
+    "cardEvidence": 256
+  },
+  "qualityReviewed": 0
+}

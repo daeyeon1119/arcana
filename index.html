@@ -5682,13 +5682,16 @@ function arc81Profile(atom){
  return raw.split(',');
 }
 function arc81Anchor(atom,spread){return `‘${SPREADS[spread].slots[atom.index][0]}’의 ${atom.name} ${atom.reverse?'역방향':'정방향'}은 ‘${atom.main}’${arc58Josa(atom.main,'을','를')} 보여 줍니다.`;}
-function arc81Relation(a,b,spread){
+function arc81Relation(a,b,spread,context=null){
  const left=arc81Profile(a),right=arc81Profile(b),shared=left.filter(x=>right.includes(x));
  const match=ARC81_LINKS.find(([, ,x,y])=>left.some(m=>x.includes(m))&&right.some(m=>y.includes(m))||left.some(m=>y.includes(m))&&right.some(m=>x.includes(m)));
  let kind,axis,insight;
  if(match){[axis,kind]=match;insight=match[4];}
  else if(shared.length){kind='shared';axis=shared[0];insight=`두 카드에서는 ‘${ARC81_MOTIFS[axis][0]}’${arc58Josa(ARC81_MOTIFS[axis][0],'이라는','라는')} 주제를 함께 살펴볼 수 있습니다. ${ARC81_MOTIFS[axis][1]}`;}
  else{kind='distinct';axis=null;insight=`‘${a.main}’${arc58Josa(a.main,'과','와')} ‘${b.main}’${arc58Josa(b.main,'은','는')} 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘${a.support}’, 다른 쪽에서는 ‘${b.support}’${arc58Josa(b.support,'을','를')} 살펴봅니다.`;}
+ const selfInsights={repair:'어려움이 있는 부분과 다시 활용할 수 있는 자원을 나란히 살펴보는 연결입니다. 더 버티는 일과 부담을 줄여 회복할 여지를 만드는 일을 구분해 보세요.',space:'관심을 주려는 일과 스스로 지킬 범위를 함께 살펴보는 연결입니다. 계속할 분량과 쉬어 갈 여지를 실제로 감당할 수 있는 범위에서 정해 보세요.',voice:'느끼는 마음과 표현으로 옮길 내용을 나누어 보는 연결입니다. 당장 표현을 완성하려 하기보다 스스로 정리할 시간과 방식을 살펴보세요.',connection:'기대하는 경험과 실제로 이어 가는 경험을 나누어 살펴보세요.',exchange:'들이는 시간과 힘, 돌려받는 만족이 어떤 관계인지 살펴보세요.',support:'이미 쓸 수 있는 자원과 새로 필요한 도움을 구별해 보세요.',isolation:'혼자 감당하는 부담이 있는지 살피고 이용할 수 있는 자원을 확인해 보세요.',mismatch:'기대했던 모습과 실제로 확인한 모습을 나누어 보세요.',expression:'느끼는 것과 실제 표현으로 옮길 부분을 구별해 보세요.',suppression:'감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요.',conflict:'서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.'};
+ const contextualInsight=context&&context.participants!==true?selfInsights[axis]:null;
+ if(contextualInsight)insight=contextualInsight;
  const roles=[a.role,b.role];
  const semanticKind=kind;
  let positional='';
@@ -5701,15 +5704,15 @@ function arc81Relation(a,b,spread){
  else if(roles.includes('boundary'))positional='이미 진행된 외부 절차와 지금 조절할 수 있는 태도를 구분해 읽습니다.';
  else if(roles.includes('obstacle'))positional='제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.';
  else if(roles.includes('future')||roles.includes('outcome'))positional='이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.';
- return {refs:[a.index,b.index],kind,semanticKind,axis,shared,leftMotifs:left,rightMotifs:right,insight,positional,core:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}`,body:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}${positional?' '+positional:''}`};
+ return {refs:[a.index,b.index],kind,semanticKind,axis,shared,leftMotifs:left,rightMotifs:right,contextRule:contextualInsight&&kind!=='alternatives'?'no-stated-participant':null,insight,positional,core:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}`,body:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}${positional?' '+positional:''}`};
 }
 function arc81ChoiceAssigned(pack){
  if(!Object.hasOwn(pack,'question'))return true; // Standalone symbolic diagnostics.
  return arc79ForcedIntent==='compare'||arc79ForcedIntent==='auto'&&!!globalThis.ARCANA_QUESTION_MODEL?.parse(pack.question).requests.some(request=>request.kind==='compare');
 }
 function arc81Relations(pack,spread){
- const byRole=r=>pack.list.find(a=>a.role===r),pairs=[];
- const add=(a,b)=>{if(!a||!b||a.index===b.index)return;const key=[a.index,b.index].sort((x,y)=>x-y).join(':');if(!pairs.some(p=>p.key===key))pairs.push({key,...arc81Relation(a,b,spread)});};
+ const byRole=r=>pack.list.find(a=>a.role===r),pairs=[],context=Object.hasOwn(pack,'question')?{participants:globalThis.ARCANA_TASK_POLICY?.participants(pack.question)}:null;
+ const add=(a,b)=>{if(!a||!b||a.index===b.index)return;const key=[a.index,b.index].sort((x,y)=>x-y).join(':');if(!pairs.some(p=>p.key===key))pairs.push({key,...arc81Relation(a,b,spread,context)});};
  if(spread==='choice5'){if(arc81ChoiceAssigned(pack))add(byRole('optionA'),byRole('optionB'));add(byRole('criteria'),byRole('advice'));}
  else if(spread==='three'){add(byRole('now'),byRole('future'));add(byRole('past'),byRole('now'));}
  else if(spread==='waiting3'){add(byRole('feeling'),byRole('advice'));add(byRole('boundary'),byRole('advice'));}
@@ -5762,7 +5765,7 @@ arc79Action=function(scene,pack){
 const ARC81_REPORT=arc79CreateReport;
 arc79CreateReport=function(q,spread,cards,override='auto'){
  const r=ARC81_REPORT(q,spread,cards,override),{scene,intent}=arc79Scene(q,override),pack=arc79Pack(q,spread,cards),relations=arc81Relations(pack,spread);
- const unassigned=spread==='choice5'&&!arc81ChoiceAssigned(pack),assignmentNote=unassigned?'이번 질문은 선택지 비교를 요청하지 않아 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택을 비교하려면 각 안의 내용과 비교할 기준을 질문에 적어 주세요.':null;
+ const unassigned=spread==='choice5'&&!arc81ChoiceAssigned(pack),assignmentNote=unassigned?'현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.':null;
  const single=pack.list.map(a=>{
   const motif=arc81Profile(a)[0],slot=SPREADS[spread].slots[a.index][0];
   const role=a.role==='obstacle'?`‘${a.main}’${arc58Josa(a.main,'과','와')} 관련해 실제로 막히는 부분이 있는지 확인해 보세요.`:a.role==='resource'?`이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.`:a.role==='past'?'이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.':a.role==='future'||a.role==='outcome'?'현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.':a.role==='environment'?'주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.':a.role==='boundary'?'이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.':'';
@@ -6016,29 +6019,49 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   if(kind==='emotion')return 'cope';
   if(kind!=='action')return kind;
   if(/마음|감정|불안|걱정/.test(text)&&/다루|다룰|돌보|추스|관리|가라앉|달래|다스리|다스릴/.test(text))return 'cope';
-  if(/(?:역할|담당|몫|일).{0,18}(?:나누|나눌|분담)|조율|협의|합의/.test(text))return 'coordinate';
+  if(/(?:역할|담당|몫|일).{0,18}(?:나누|나눌|분담)|조율|협의|합의|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(text))return 'coordinate';
   if(/우선순위|마감|업무량|감당할\s*(?:양|범위)|줄이|(?:업무|일정|분량|범위).{0,12}조정/.test(text))return 'prioritize';
-  if(/수정.{0,12}(?:멈|끝)|(?:수정|작업|단계).{0,18}(?:마치|마쳐|끝내|끝낼|멈)|완성\s*기준|어디서.{0,12}멈|마칠|끝낼/.test(text))return 'finish';
-  if(/보완|개선|바꾸|고치|고칠|손볼/.test(text))return 'improve';
+  if(/수정.{0,12}(?:멈|끝)|(?:수정|작업|단계).{0,18}(?:마치|마쳐|끝내|끝낼|멈)|완성\s*기준|어디서.{0,12}멈|마칠|끝낼|마무리/.test(text))return 'finish';
+  if(/보완|개선|바꾸|고치|고칠|손볼|다듬|편집|수정/.test(text))return 'improve';
   if(/(?:말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내)/.test(text))return 'communicate';
   if(/준비|앞두|시작/.test(text))return 'prepare';
-  if(/결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계)/.test(text))return 'implement';
+  if(/결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계|작업)/.test(text))return 'implement';
   return 'action';
+ }
+ function requestUnits(parts){
+  const units=[];
+  for(const part of parts){
+   // Coordinated predicates share a request ending, not the last verb's goal.
+   const joins=[...part.text.matchAll(/(?:비교하|비교해\s*주|돌보|다루|설명하|정리하|준비하|확인하|수정하|다듬)(고)(?=\s|$)/g)].filter(match=>!/^\s*(?:있|싶)/.test(part.text.slice(match.index+match[0].length)));
+   const requested=/(?:어떻게|무엇|어느|어떤|알려|주세요|줘|봐\s*주|까요|나요)/.test(part.text);
+   if(!joins.length||!requested){units.push(part);continue;}
+   let start=0;
+   for(const end of [...joins.map(match=>match.index+match[0].length),part.text.length]){
+    while(start<end&&/\s/.test(part.text[start]))start++;
+    if(end>start)units.push({...part,start:part.start+start,end:part.start+end,text:part.text.slice(start,end),source:part.source.slice(start,end),coordinated:true});
+    start=end;
+   }
+  }
+  return units;
  }
  function requestsFrom(parts,q){
   const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.goal===(goal||goalFor(part.text,kind))))requests.push({kind,goal:goal||goalFor(part.text,kind),text:part.source,start:part.start,end:part.end});};
-  for(const original of parts){
+  const units=requestUnits(parts);
+  for(const original of units){
    const correction=original.text.match(/(?:대신|말고|그보다(?:는)?|아니라|(?:이유|원인|예측|전망|비교)보다)\s*|(?:는지|인지|을지|할지)보다(?:는)?\s+/);
    const cut=correction?correction.index+correction[0].length:0,part={...original,text:original.text.slice(cut),source:original.source.slice(cut),start:original.start+cut};
-   const t=part.text,explicitCompare=/비교(?:해(?:\s*주|줘|보고|볼)|하고(?:\s*싶|$)|할(?:까요|지)|를\s*(?:부탁|원|해))|(?:어떻게|어떤\s*기준).{0,20}비교/.test(t),ask=/(?:까|나요|가요|궁금|싶|알려|조언|봐\s*주|보아\s*주|말해\s*주|주세요|무엇|뭘|어떻게|어디|왜|언제|어떤)/.test(t)||explicitCompare||alternativeCount(t)>=2&&/고민|선택|결정/.test(t);
+   const t=part.text,explicitCompare=/비교(?:해(?:\s*주|줘|보고|볼)|하고(?:\s*싶|$)|할(?:까요|지)|를\s*(?:부탁|원|해))|(?:어떻게|어떤\s*기준).{0,20}비교/.test(t),ask=original.coordinated||/(?:까|나요|가요|궁금|싶|알려|조언|봐\s*주|보아\s*주|말해\s*주|주세요|무엇|뭘|어떻게|어디|왜|언제|어떤)/.test(t)||explicitCompare||alternativeCount(t)>=2&&/고민|선택|결정/.test(t);
    if(!ask)continue;
    if(correction&&requests.length)requests.length=0;
    const cause=/(?:왜|어째서|까닭|원인)/.test(t)||/(?:이유|배경)/.test(t)&&!/이유로|배경으로|이유를\s*(?:말|전|설명)|돌아보|성찰/.test(t);
    const compare=explicitCompare||/두\s*(?:안|선택|경로).{0,20}차이|어느\s*쪽/.test(t)||alternativeCount(t)>=2;
    const reflective=/성찰|돌아보|살펴보|어떤\s*관점|배운\s*것|배울\s*수/.test(t)&&!/방법|어떻게\s*(?:말|설명|준비)/.test(t);
-   const volitional=[...t.matchAll(/([가-힣]+)(?:까요|까|지)(?=\s|$)/g)].some(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8);
+   const volitional=[...t.matchAll(/([가-힣]+)(?:까요|까|지)(?=\s|$|입니다|이에요|예요)/g)].some(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8);
    const howTo=/(?:어떻게|어떡|무엇을|뭘|뭐부터|어디서|어디부터)/.test(t)&&volitional&&!/어떻게\s*(?:될|흘러|바뀔)|어떤\s*(?:결과|흐름|마음)/.test(t);
-   const action=howTo||/(?:어떻게|어떡|무엇|뭘|뭐부터|어디부터|어디서|어떤|무슨\s*말|어디까지).{0,60}(?:할|해야|좋|하나|쓸|쓰면|정할|고를|볼|찾을|손볼|잡을|설명|말할|필요|줄일|편집|정리|꺼내|바꿀|멈|고려|다룰|다스릴|세울|받아들)|어떤\s*(?:태도|행동|방법|준비|기준).{0,20}(?:도움|필요|좋|적절)|(?:할\s*일|행동|태도|방법|준비|기준).{0,16}(?:무엇|뭘|어떤|궁금)|(?:방법|준비할\s*일|할\s*행동|첫\s*행동|조언)|[가-힣]도\s*(?:될|괜찮)|(?:연락|고백|지원|이직|퇴사|신청|시작|보낼|쉴|갈)(?:할까|까요)/.test(t);
+   const practicalDirective=/(?:마칠|마무리|완성\s*기준|첫\s*(?:행동|단계|작업)|준비할\s*일|다듬)/.test(t)&&/(?:어떻게|어느|어떤|알려|살펴봐\s*주|좋을)/.test(t);
+   const action=howTo||practicalDirective||/(?:어떻게|어떡|무엇|뭘|뭐부터|어디부터|어디서|어떤|무슨\s*말|어디까지).{0,60}(?:할|해야|좋|하나|쓸|쓰면|정할|고를|볼|찾을|손볼|잡을|설명|말할|필요|줄일|편집|정리|꺼내|바꿀|멈|고려|다룰|다스릴|세울|받아들)|어떤\s*(?:태도|행동|방법|준비|기준).{0,20}(?:도움|필요|좋|적절)|(?:할\s*일|행동|태도|방법|준비|기준).{0,16}(?:무엇|뭘|어떤|궁금)|(?:방법|준비할\s*일|할\s*행동|첫\s*행동|조언)|[가-힣]도\s*(?:될|괜찮)|(?:연락|고백|지원|이직|퇴사|신청|시작|보낼|쉴|갈)(?:할까|까요)/.test(t);
+   const care=/(?:마음|감정|불안|걱정|긴장).{0,35}(?:돌보|돌볼|다루|다룰|추스|달래|다스리)/.test(t);
+   const parallelNoun=t.match(/(?:일|것|행동|준비|기준|방법)과\s*/),explicitNounPair=parallelNoun&&/각각|함께|동시에/.test(t);
    const emotionalStatement=EMOTION.test(t)&&(/(?:두렵|걱정|불안|무섭|자책|초조).{0,10}(?:습니다|어요|에요|돼요|됩니다)$/.test(t)||/까\s*(?:봐)?\s*(?:걱정|불안|두려|무섭)/.test(t)&&!/궁금|가능성|전망/.test(t));
    const development=/오래갈까|이어질까|덜해질까|나아질까|좋아질까|편해질까|회복될까/.test(t);
    const forecast=(/언제|가능성|전망|(?:될|올|일|있을|이어질|좋아질|회복될|합격할|붙을|풀릴|생길)(?:까|지|까요)|어떨까|어떤\s*마음/.test(t)||development)&&!emotionalStatement&&!/까\s*봐|하지\s*말|예측.{0,8}(?:않|말)/.test(t);
@@ -6049,12 +6072,13 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
     else emit('compare',part);
     if(action&&/(?:비교(?:해\s*주고|하고)|비교와|그리고).{0,50}(?:방법|행동|말할|전할)|(?:방법|행동)도/.test(t))emit('action',part);
    }
+   else if(care&&!explicitNounPair)emit('emotion',part,'cope');
    else if(reflective&&!/준비할\s*일|첫\s*행동/.test(t))emit('open',part);
    else if(/어떤\s*흐름/.test(t)&&!forecast&&!action&&!/앞으로|미래|다음/.test(t))emit('open',part);
    else if((development||/어떤\s*(?:결과|미래|흐름|가능성|마음)|어떻게\s*(?:될|흘러)|결과.{0,8}기대/.test(t))&&!emotionalStatement&&!/(?:설명|물어|준비|바꿀|해야)/.test(t))emit('forecast',part);
    else if(action){
-    const parallel=t.match(/(?:일|행동|준비|기준|방법)과\s*/);
-    if(parallel&&/각각|함께|동시에/.test(t)){
+    const parallel=parallelNoun;
+    if(explicitNounPair){
      const end=parallel.index+parallel[0].indexOf('과'),start=parallel.index+parallel[0].length;
      emit('action',{...part,text:part.text.slice(0,end),source:part.source.slice(0,end),end:part.start+end});
      const right={...part,text:part.text.slice(start),source:part.source.slice(start),start:part.start+start};
@@ -6067,7 +6091,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   }
   if(!requests.length){const last=parts.at(-1);if(last&&EMOTION.test(last.text))emit('emotion',last);}
   // A final explicit request supersedes earlier background questions unless coordination is explicit.
-  if(requests.length>1&&!/(?:그리고|각각|함께|동시에|방법도|행동도|비교(?:해\s*주고|하고)|알려\s*주고)/.test(masked(q))){const last=requests.at(-1);return [last];}
+  if(requests.length>1&&!units.some(unit=>unit.coordinated)&&!/(?:그리고|각각|함께|동시에|방법도|행동도|비교(?:해\s*주고|하고)|알려\s*주고)/.test(masked(q))){const last=requests.at(-1);return [last];}
   return requests;
  }
  function parse(input){
@@ -6202,7 +6226,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   implement:['결정한 다음의 작은 실행 정하기','이미 정한 방향에서 가장 먼저 마칠 작은 일 하나를 골라 보세요. 언제 할지와 끝났다고 볼 기준을 정하고, 필요한 준비나 다른 사람의 확인이 있다면 그 부분부터 챙겨 보세요.'],
   cope:['느끼는 마음과 확인한 사실 나누기','지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.']
  };
- const artifact=/(?:문서|자료|안내문|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|편집|결산표|상환표|이\s*표)/;
+ const artifact=/(?:문서|자료|안내문|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|결산표|상환표|이\s*표)/;
  const mask=text=>String(text||'').replace(/[“"「『][^”"」』]*[”"」』]/g,s=>' '.repeat(s.length));
  function participants(question){
   let state=null,rank=-1;
@@ -6223,11 +6247,11 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   if(task.kind==='emotion')return 'cope';
   const questionTarget=/(?:질문|물어볼|물을\s*(?:것|내용|점|사항)|여쭐|여쭤볼|궁금한\s*(?:점|내용))/;
   const negatedInquiry=/(?:묻지|물어보지|질문하지)\s*않/.test(original);
-  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈/g],['improve',/보완|개선|바꾸|바꿀|고치|고칠|손볼|수정/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계)/g]];
-  if(/(?:역할|담당|몫|책임|업무|할\s*일).{0,18}(?:나누|나눌)/.test(original))predicates.push(['coordinate',/나누|나눌/g]);
+  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈|마무리/g],['improve',/보완|개선|바꾸|바꿀|고치|고칠|손볼|수정|다듬|편집/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계|작업)/g]];
+  if(/(?:역할|담당|몫|책임|업무|할\s*일).{0,18}(?:나누|나눌)|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(original))predicates.push(['coordinate',/나누|나눌/g]);
   if(/(?:업무|일정|분량|범위|할\s*일|시간).{0,12}(?:줄이|줄일|조정)|감당할\s*(?:양|범위)/.test(original))predicates.push(['prioritize',/줄이|줄일|조정|감당할/g]);
   if(!negatedInquiry)predicates.push(['inquire',/물어|여쭐|여쭤|묻|질문(?:해|하|할)/g]);
-  if(/조건|기준|요건|자격|규정|절차|준비물|사항/.test(original+' '+question))predicates.push(['verify',/확인|검토|점검|살펴|살피|알아/g]);
+  if(/조건|기준|요건|자격|규정|절차|준비물|사항/.test(original+' '+question))predicates.push(['verify',['finish','implement'].includes(task.goal)?/확인|검토|점검|알아/g:/확인|검토|점검|살펴|살피|알아/g]);
   if(/마음|감정|불안|걱정|긴장/.test(text))predicates.push(['cope',/다루|다룰|돌보|추스|관리|달래|다스리/g]);
   const matches=predicates.flatMap(([operation,rx])=>[...text.matchAll(rx)].map(match=>({operation,index:match.index})));
   const found=matches.sort((a,b)=>b.index-a.index)[0]?.operation;
@@ -6313,7 +6337,7 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   if(!supported){practical=plan.text;actionSource='request-policy';}
   const card=answer.request.kind==='emotion'?pack.main:pack.advice;
   const shared=plans.length===0&&report.arc81?.directSynthesisUsed?arc81DirectRelation(pack,spread,answer.request.kind):null;
-  const previous=answer.text;answer.actionText=practical;answer.directText=plan.boundaryText+practical+' '+(shared?.core||arc80CardSentence(card,spread));answer.text=answer.directText;answer.refs=shared?.refs||[card.index];replacements.set(previous,{body:answer.text,refs:answer.refs});plans.push({...plan,text:practical,actionSource});
+  const previous=answer.text;answer.actionText=practical;answer.actionTask=plan.operation;answer.directText=plan.boundaryText+practical+' '+(shared?.core||arc80CardSentence(card,spread));answer.text=answer.directText;answer.refs=shared?.refs||[card.index];replacements.set(previous,{body:answer.text,refs:answer.refs});plans.push({...plan,text:practical,actionSource});
  }
  if(plans.some(Boolean)){
   report.direct=report.arc82.answers.map(answer=>answer.directText||answer.text).join('\n\n');
@@ -6428,7 +6452,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   }
  };
  const relationGroups={focus:'evidence',threshold:'evidence',enough:'evidence',reflection:'evidence',evidence:'evidence',capacity:'capacity',means:'capacity',sustain:'capacity',pace:'pace',readiness:'iteration',restoration:'care',release:'care',space:'boundary',ending:'transition',adaptation:'boundary',framework:'boundary',repair:'exchange',voice:'exchange',evaluation:'values'};
- const selfLenses={exchange:{work:'원하는 결과와 실제 진행 상태를 나누어 보고, 어긋나는 부분이 있다면 이번 단계에서 바꿀 수 있는 조건부터 확인해 보세요.',cope:'기대한 모습과 실제로 겪은 일을 나누어 적고, 그 차이 때문에 느끼는 마음과 지금 바꿀 수 있는 행동을 구별해 보세요.'},boundary:{cope:'내가 선택할 수 있는 행동과 지금 조절하기 어려운 조건을 나누어 보세요. 경계를 정하는 일이 느끼는 감정을 없애야 한다는 뜻은 아닙니다.'}};
+ const selfLenses={exchange:{work:'원하는 결과와 실제 진행 상태를 나누어 보고, 어긋나는 부분이 있다면 이번 단계에서 바꿀 수 있는 조건부터 확인해 보세요.',cope:'기대한 모습과 실제로 겪은 일을 나누어 적고, 그 차이 때문에 느끼는 마음과 지금 바꿀 수 있는 행동을 구별해 보세요.',option:'이 안에서 기대하는 경험과 실제로 확인할 조건을 나누어 보세요. 다른 사람의 협력이나 확인이 필요한 부분이 있다면 별도 항목으로 남겨 보세요.'},boundary:{cope:'내가 선택할 수 있는 행동과 지금 조절하기 어려운 조건을 나누어 보세요. 경계를 정하는 일이 느끼는 감정을 없애야 한다는 뜻은 아닙니다.'}};
  function compose(operation,motifs,relationAxis,context={}){
   const primary=motifs?.[0],axisGroup=Object.keys(groups).find(key=>groups[key].includes(relationAxis)),group=relationGroups[relationAxis]||axisGroup||Object.keys(groups).find(key=>groups[key].includes(primary));
   if(!group)return null;

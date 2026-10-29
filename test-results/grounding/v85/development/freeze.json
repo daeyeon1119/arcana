@@ -1,0 +1,9 @@
+{
+  "phase": "development",
+  "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "baselineSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+  "fixtureSHA256": "8ef7d9268ecac48ca0316ae45d3f2dfe98617ea1305b7ba061b75330b0293737",
+  "collectorSHA256": "c51e7cd590baecc5f555d584518dddc7ef8a0090936116a4d82f70780153eab1",
+  "seed": 840031,
+  "note": "12 known v83 questions, used as development material. Not an independent/unseen quality evaluation."
+}

@@ -1,0 +1,33 @@
+{
+  "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "readingsSHA256": "bb32705b84aef75ef084d5ed7e175e0c0bdef771c30933edd257c59260fe84f5",
+  "actualQuestions": 16,
+  "actualReadingsPerVersion": 128,
+  "primaryAnswersRead": {
+    "spread": "choice5",
+    "questionIds": "u01–u16",
+    "count": 16
+  },
+  "additionalPrimaryAnswersRead": {
+    "spread": "five",
+    "questionIds": [
+      "u02",
+      "u07",
+      "u10",
+      "u15"
+    ],
+    "count": 4
+  },
+  "relationalSectionsRead": {
+    "spread": "choice5",
+    "questionIds": [
+      "u02"
+    ],
+    "count": 1
+  },
+  "detailedCardSectionsRead": 0,
+  "reviewer": "implementation author",
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "Known regression material. Coverage contracts pass, but target-specific advice, remaining clause-level verification binding and repetition still fall short of the goal. Not all 128 complete variants were manually read."
+}

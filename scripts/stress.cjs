@@ -63,7 +63,7 @@ const scenarios=fs.readFileSync('tests/scenarios.tsv','utf8').trim().split(/\r?\
  const holdoutResults=await page.evaluate(cases=>cases.map(c=>({question:c.question,expected:c.expected,before:arc78Scene(c.question,{}).intent.primary,after:arc79Scene(c.question).intent.primary})),holdout);
  fs.mkdirSync('test-results',{recursive:true});
  const raw=result.results.map(r=>JSON.stringify(r)).join('\n')+'\n';
- fs.writeFileSync('test-results/readings.jsonl.gz',zlib.gzipSync(raw));
+ require('./save-artifact.cjs') ('test-results/readings.jsonl.gz',zlib.gzipSync(raw));
  const failures=result.results.filter(r=>r.issues.length);
  const times=result.results.map(r=>r.elapsedMs).filter(Number.isFinite).sort((a,b)=>a-b);
  const summary={seed:790026,appSHA256:crypto.createHash('sha256').update(fs.readFileSync('index.html')).digest('hex'),scenarioCount:result.scenarios,readingCount:result.total,passed:result.total-failures.length,failed:failures.length,pageErrors:errors,coverage:{uniqueCards:new Set(result.coverage.map(c=>c.split(':')[0])).size,cardOrientations:result.coverage.length,spreads:8},classification:{before:result.before,after:result.after,denominator:result.scenarios,factDenominator:scenarios.filter(c=>c.checks.length).length},confusions:result.confusions,sensitivity:{total:result.sensitivity.length,passed:result.sensitivity.filter(s=>s.changed).length,details:result.sensitivity},holdout:{note:'Legacy 48 prompts; no tuning based on these results in this change.',count:holdout.length,before:holdoutResults.filter(c=>c.before===c.expected).length,after:holdoutResults.filter(c=>c.after===c.expected).length,results:holdoutResults},failures:failures.slice(0,30)};
@@ -72,9 +72,9 @@ const scenarios=fs.readFileSync('tests/scenarios.tsv','utf8').trim().split(/\r?\
  summary.holdout.improved=holdoutResults.filter(c=>c.before!==c.expected&&c.after===c.expected).length;
  summary.holdout.regressed=holdoutResults.filter(c=>c.before===c.expected&&c.after!==c.expected).length;
  summary.latencyMs={note:'Single local generation, excluding browser startup, UI animation and baseline comparison.',p50:rounded(times[Math.floor(times.length*.5)]),p95:rounded(times[Math.floor(times.length*.95)]),max:rounded(times.at(-1)),total:rounded(times.reduce((a,b)=>a+b,0))};
- fs.writeFileSync('test-results/stress-summary.json',JSON.stringify(summary,null,2));
+ require('./save-artifact.cjs') ('test-results/stress-summary.json',JSON.stringify(summary,null,2));
  const sample=result.results.filter((r,i)=>i%33===0).map(r=>({id:r.caseId,question:r.question,cards:r.cards,answer:r.answer}));
- fs.writeFileSync('test-results/review-samples.json',JSON.stringify(sample,null,2));
+ require('./save-artifact.cjs') ('test-results/review-samples.json',JSON.stringify(sample,null,2));
  console.log(JSON.stringify({...summary,sensitivity:{...summary.sensitivity,details:undefined},holdout:{...summary.holdout,results:undefined},failures:failures.slice(0,4)},null,2));
  if(failures.length||errors.length||summary.sensitivity.passed!==summary.sensitivity.total)process.exitCode=1;
  }finally{await browser.close();}

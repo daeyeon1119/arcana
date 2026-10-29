@@ -2,8 +2,10 @@
 const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex'),url='https://daeyeon1119.github.io/arcana/';
 const expected=JSON.parse(fs.readFileSync('release.json','utf8')),local=JSON.parse(fs.readFileSync('test-results/portable-summary.json','utf8'));
-const questions=JSON.parse(fs.readFileSync('tests/portable-cases.json','utf8')).questions;
+const fixture=JSON.parse(fs.readFileSync('tests/portable-cases.json','utf8')),shared=require('./portable-probe.cjs'),inputs=shared.inputs(fixture);
 assert.deepEqual(local.release,expected,'Run the local portable checks for this release first');
+assert.equal(local.fixtureSHA256,hash(JSON.stringify(fixture)),'Local and public inputs/settings must match');
+assert.equal(local.probeSHA256,hash(fs.readFileSync('scripts/portable-probe.cjs','utf8').replace(/\r\n/g,'\n')),'Local and public collectors must match');
 (async()=>{
  const response=await fetch(url+'release.json',{cache:'no-store'});assert(response.ok,'Public release metadata unavailable');const release=await response.json();assert.deepEqual(release,expected,'Public deployment is not the tested release yet');
  const browser=await require('./browser.cjs')(),checks=[],errors=[],origins=new Set();
@@ -22,8 +24,8 @@ assert.deepEqual(local.release,expected,'Run the local portable checks for this 
    const savedHashes=await page.evaluate(async()=>{const hashes=[],app=new URL('index.html',location.href).href;for(const name of await caches.keys()){if(!name.startsWith('arcana-web:'))continue;const response=await (await caches.open(name)).match(app);if(response)hashes.push(Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await response.arrayBuffer())),byte=>byte.toString(16).padStart(2,'0')).join(''));}return hashes;});
    assert.deepEqual(savedHashes,[release.appSHA256]);checks.push(name+': public HTTPS app bytes in offline cache match tested local build');
    await context.setOffline(true);await page.close();page=await context.newPage();page.on('pageerror',error=>errors.push(error.message));await page.goto(url+'?launch=offline',{waitUntil:'domcontentloaded',timeout:90000});
-   const actual=await page.evaluate(questions=>{arc79ForcedIntent='auto';return questions.flatMap(question=>Object.keys(SPREADS).map((spread,s)=>{const cards=Array.from({length:SPREADS[spread].slots.length},(_,i)=>({id:CARDS[(s*7+i)%CARDS.length].id,rev:i%2===1}));return {question,spread,cards,report:__arcana79Build(question,spread,cards)};}));},questions);
-   assert.equal(hash(JSON.stringify(actual)),local.readingParitySHA256);checks.push(name+': 48 public/offline readings match local outputs exactly');
+   const actual=await page.evaluate(shared.probe,inputs);
+   assert.equal(actual.length,local.questionCardCombinationsPerProfile);assert.equal(hash(JSON.stringify(actual)),local.readingParitySHA256);checks.push(name+': '+actual.length+' public/offline question/card/settings readings match local outputs exactly');
    assert.equal(await page.evaluate(async()=>{await Promise.all(CARDS.map(card=>{const image=new Image();image.src=card.img;return image.decode();}));return CARDS.length;}),78);checks.push(name+': 78 originals decode after public site is reopened offline');
    await page.locator('.nav-item[data-view="about"]').click();await page.locator('#arcanaWebApp').scrollIntoViewIfNeeded();assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:'.cache/public-'+name+'.png'});
   }finally{await context.close();}

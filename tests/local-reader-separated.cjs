@@ -38,4 +38,4 @@ check('necessary clarification may have no prescribed action',()=>{const x=struc
 check('semantic fabrication can still pass and is explicitly outside validation coverage',()=>{const x=structuredClone(symbols);x.cards.c0.invitation='당신은 이미 상대의 속마음을 확실히 알고 있습니다.';assert(api.validateSymbols(packet,x).ok);const d=structuredClone(draft);d.requests[0].answer='동료가 이미 다시 시작해 달라고 요청했습니다.';assert(api.validateDraft(packet,d).ok);});
 const source=fs.readFileSync('src/local-reader-separated.js','utf8').replace(/\r\n/g,'\n');
 const result={total:checks.length,checks,sourceSHA256:crypto.createHash('sha256').update(source).digest('hex'),note:'Synthetic structural invariants. No actual model generation, semantic validation or professional evaluation.'};
-fs.writeFileSync('test-results/local-reader/separated-contract-summary.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+require('../scripts/save-artifact.cjs') ('test-results/local-reader/separated-contract-summary.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

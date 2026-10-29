@@ -1,0 +1,165 @@
+{
+  "release": {
+    "appVersion": "85.0.0",
+    "readingEngine": 85,
+    "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+    "appBytes": 30787869,
+    "webRelease": "00a930fde9d1675d3d0eee36"
+  },
+  "checks": [
+    {
+      "artifact": "test-results/stress-summary.json",
+      "scope": "1024 known question/card combinations"
+    },
+    {
+      "artifact": "test-results/editorial/v85-summary.json",
+      "scope": "320 existing questions; technical/editorial contracts"
+    },
+    {
+      "artifact": "test-results/synthesis/v85-summary.json",
+      "scope": "72 known synthesis outputs"
+    },
+    {
+      "artifact": "test-results/grounding/v85/development/summary.json",
+      "scope": "Known literal-evidence regressions"
+    },
+    {
+      "artifact": "test-results/alignment/development/summary.json",
+      "scope": "Known request/spread alignment regressions"
+    },
+    {
+      "artifact": "test-results/grounding/v85/regression/summary.json",
+      "scope": "Known literal-evidence regressions"
+    },
+    {
+      "artifact": "test-results/alignment/regression/summary.json",
+      "scope": "Known request/spread alignment regressions"
+    },
+    {
+      "artifact": "test-results/task-policy/v85/development/summary.json",
+      "scope": "Known task/evidence regressions"
+    },
+    {
+      "artifact": "test-results/task-policy/v85/regression/summary.json",
+      "scope": "Known task/evidence regressions"
+    },
+    {
+      "artifact": "test-results/task-policy/v85/fresh-regression/summary.json",
+      "scope": "Known task/evidence regressions"
+    },
+    {
+      "artifact": "test-results/portable-summary.json",
+      "scope": "Technical browser/build checks; no professional quality score"
+    },
+    {
+      "artifact": "test-results/grounding/ui-summary.json",
+      "scope": "Technical browser/build checks; no professional quality score"
+    },
+    {
+      "artifact": "test-results/alignment/ui-summary.json",
+      "scope": "Technical browser/build checks; no professional quality score"
+    },
+    {
+      "artifact": "test-results/build-repro-v85.json",
+      "scope": "Technical browser/build checks; no professional quality score"
+    }
+  ],
+  "fullTestExitCode": 0,
+  "taskRegressionExitCode": 0,
+  "literalRegressionExitCode": 0,
+  "alignmentRegressionExitCode": 0,
+  "firstOutputsSHA256": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+  "existingEditorialLabelMatches": {
+    "intent": 320,
+    "domain": 303,
+    "questions": 320
+  },
+  "strictLegacyDiagnosticDisagreements": [
+    {
+      "group": "sent",
+      "variant": 0,
+      "question": "좋아하는 사람에게 문자를 보냈는데 답장은 없어요. 더 보내고 싶은 마음을 어떻게 다룰까요?",
+      "intentMatch": false,
+      "domainMatch": true,
+      "facts": []
+    },
+    {
+      "group": "sent",
+      "variant": 2,
+      "question": "연락을 전했지만 회신을 못 받았습니다. 이 상황에서 제가 지킬 태도는 무엇인가요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    },
+    {
+      "group": "accessibility",
+      "variant": 0,
+      "question": "보드게임 규칙을 색만으로 구분해 만들었어요. 여러 사람이 편하게 쓰도록 어떻게 보완할까요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    }
+  ],
+  "strictLegacyIntentDisagreements": [
+    {
+      "id": "u01",
+      "question": "팀원이 제 일정 제안에 답해 줬어요. 그래도 거절당할까 봐 초조한 마음을 어떻게 다룰까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "replied",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u04",
+      "question": "친구에게 연락을 했지만 자신이 없어요. 받은 대답은 없고 기다리는 중입니다. 마음을 어떻게 돌볼까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "sent",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        },
+        {
+          "key": "replied",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        },
+        {
+          "key": "noReply",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u05",
+      "question": "결과가 나왔다는 말을 들었지만 아직 공식 내용을 확인하지 않았어요. 불안을 다룰 방법을 알려 주세요.",
+      "intent": false,
+      "facts": [
+        {
+          "key": "known",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    }
+  ],
+  "technicalPass": true,
+  "qualityScore": null,
+  "note": "Actual final-build technical/regression artifacts. Explicit care requests now use emotion rather than some legacy action labels; these strict label disagreements are retained, not hidden. First 16-question outputs are immutable; corrected runs are known regressions. Author review, not independent professional evidence. Clause-level verification binding, target-specific depth, repetition and physical phone/Safari verification remain incomplete."
+}

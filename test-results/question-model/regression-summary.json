@@ -1,6 +1,6 @@
 {
   "note": "54 known v81 questions, replayed as development/regression data. Classification scores do not measure professional quality.",
-  "appSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+  "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
   "questions": 54,
   "readingsPerVersion": 432,
   "before": {
@@ -19,7 +19,7 @@
   },
   "after": {
     "intent": {
-      "passed": 48,
+      "passed": 47,
       "total": 48
     },
     "domain": {
@@ -99,6 +99,14 @@
   ],
   "errors": [],
   "failures": [
+    {
+      "group": "sent",
+      "variant": 0,
+      "question": "좋아하는 사람에게 문자를 보냈는데 답장은 없어요. 더 보내고 싶은 마음을 어떻게 다룰까요?",
+      "intentMatch": false,
+      "domainMatch": true,
+      "facts": []
+    },
     {
       "group": "sent",
       "variant": 2,

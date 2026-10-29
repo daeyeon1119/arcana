@@ -107,13 +107,16 @@ function arc81Profile(atom){
  return raw.split(',');
 }
 function arc81Anchor(atom,spread){return `‘${SPREADS[spread].slots[atom.index][0]}’의 ${atom.name} ${atom.reverse?'역방향':'정방향'}은 ‘${atom.main}’${arc58Josa(atom.main,'을','를')} 보여 줍니다.`;}
-function arc81Relation(a,b,spread){
+function arc81Relation(a,b,spread,context=null){
  const left=arc81Profile(a),right=arc81Profile(b),shared=left.filter(x=>right.includes(x));
  const match=ARC81_LINKS.find(([, ,x,y])=>left.some(m=>x.includes(m))&&right.some(m=>y.includes(m))||left.some(m=>y.includes(m))&&right.some(m=>x.includes(m)));
  let kind,axis,insight;
  if(match){[axis,kind]=match;insight=match[4];}
  else if(shared.length){kind='shared';axis=shared[0];insight=`두 카드에서는 ‘${ARC81_MOTIFS[axis][0]}’${arc58Josa(ARC81_MOTIFS[axis][0],'이라는','라는')} 주제를 함께 살펴볼 수 있습니다. ${ARC81_MOTIFS[axis][1]}`;}
  else{kind='distinct';axis=null;insight=`‘${a.main}’${arc58Josa(a.main,'과','와')} ‘${b.main}’${arc58Josa(b.main,'은','는')} 같은 뜻으로 합치기보다 각각 다룰 과제로 읽어 보세요. 한쪽에서는 ‘${a.support}’, 다른 쪽에서는 ‘${b.support}’${arc58Josa(b.support,'을','를')} 살펴봅니다.`;}
+ const selfInsights={repair:'어려움이 있는 부분과 다시 활용할 수 있는 자원을 나란히 살펴보는 연결입니다. 더 버티는 일과 부담을 줄여 회복할 여지를 만드는 일을 구분해 보세요.',space:'관심을 주려는 일과 스스로 지킬 범위를 함께 살펴보는 연결입니다. 계속할 분량과 쉬어 갈 여지를 실제로 감당할 수 있는 범위에서 정해 보세요.',voice:'느끼는 마음과 표현으로 옮길 내용을 나누어 보는 연결입니다. 당장 표현을 완성하려 하기보다 스스로 정리할 시간과 방식을 살펴보세요.',connection:'기대하는 경험과 실제로 이어 가는 경험을 나누어 살펴보세요.',exchange:'들이는 시간과 힘, 돌려받는 만족이 어떤 관계인지 살펴보세요.',support:'이미 쓸 수 있는 자원과 새로 필요한 도움을 구별해 보세요.',isolation:'혼자 감당하는 부담이 있는지 살피고 이용할 수 있는 자원을 확인해 보세요.',mismatch:'기대했던 모습과 실제로 확인한 모습을 나누어 보세요.',expression:'느끼는 것과 실제 표현으로 옮길 부분을 구별해 보세요.',suppression:'감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요.',conflict:'서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.'};
+ const contextualInsight=context&&context.participants!==true?selfInsights[axis]:null;
+ if(contextualInsight)insight=contextualInsight;
  const roles=[a.role,b.role];
  const semanticKind=kind;
  let positional='';
@@ -126,15 +129,15 @@ function arc81Relation(a,b,spread){
  else if(roles.includes('boundary'))positional='이미 진행된 외부 절차와 지금 조절할 수 있는 태도를 구분해 읽습니다.';
  else if(roles.includes('obstacle'))positional='제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.';
  else if(roles.includes('future')||roles.includes('outcome'))positional='이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.';
- return {refs:[a.index,b.index],kind,semanticKind,axis,shared,leftMotifs:left,rightMotifs:right,insight,positional,core:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}`,body:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}${positional?' '+positional:''}`};
+ return {refs:[a.index,b.index],kind,semanticKind,axis,shared,leftMotifs:left,rightMotifs:right,contextRule:contextualInsight&&kind!=='alternatives'?'no-stated-participant':null,insight,positional,core:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}`,body:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}${positional?' '+positional:''}`};
 }
 function arc81ChoiceAssigned(pack){
  if(!Object.hasOwn(pack,'question'))return true; // Standalone symbolic diagnostics.
  return arc79ForcedIntent==='compare'||arc79ForcedIntent==='auto'&&!!globalThis.ARCANA_QUESTION_MODEL?.parse(pack.question).requests.some(request=>request.kind==='compare');
 }
 function arc81Relations(pack,spread){
- const byRole=r=>pack.list.find(a=>a.role===r),pairs=[];
- const add=(a,b)=>{if(!a||!b||a.index===b.index)return;const key=[a.index,b.index].sort((x,y)=>x-y).join(':');if(!pairs.some(p=>p.key===key))pairs.push({key,...arc81Relation(a,b,spread)});};
+ const byRole=r=>pack.list.find(a=>a.role===r),pairs=[],context=Object.hasOwn(pack,'question')?{participants:globalThis.ARCANA_TASK_POLICY?.participants(pack.question)}:null;
+ const add=(a,b)=>{if(!a||!b||a.index===b.index)return;const key=[a.index,b.index].sort((x,y)=>x-y).join(':');if(!pairs.some(p=>p.key===key))pairs.push({key,...arc81Relation(a,b,spread,context)});};
  if(spread==='choice5'){if(arc81ChoiceAssigned(pack))add(byRole('optionA'),byRole('optionB'));add(byRole('criteria'),byRole('advice'));}
  else if(spread==='three'){add(byRole('now'),byRole('future'));add(byRole('past'),byRole('now'));}
  else if(spread==='waiting3'){add(byRole('feeling'),byRole('advice'));add(byRole('boundary'),byRole('advice'));}
@@ -187,7 +190,7 @@ arc79Action=function(scene,pack){
 const ARC81_REPORT=arc79CreateReport;
 arc79CreateReport=function(q,spread,cards,override='auto'){
  const r=ARC81_REPORT(q,spread,cards,override),{scene,intent}=arc79Scene(q,override),pack=arc79Pack(q,spread,cards),relations=arc81Relations(pack,spread);
- const unassigned=spread==='choice5'&&!arc81ChoiceAssigned(pack),assignmentNote=unassigned?'이번 질문은 선택지 비교를 요청하지 않아 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택을 비교하려면 각 안의 내용과 비교할 기준을 질문에 적어 주세요.':null;
+ const unassigned=spread==='choice5'&&!arc81ChoiceAssigned(pack),assignmentNote=unassigned?'현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.':null;
  const single=pack.list.map(a=>{
   const motif=arc81Profile(a)[0],slot=SPREADS[spread].slots[a.index][0];
   const role=a.role==='obstacle'?`‘${a.main}’${arc58Josa(a.main,'과','와')} 관련해 실제로 막히는 부분이 있는지 확인해 보세요.`:a.role==='resource'?`이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.`:a.role==='past'?'이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.':a.role==='future'||a.role==='outcome'?'현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.':a.role==='environment'?'주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.':a.role==='boundary'?'이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.':'';
