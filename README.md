@@ -20,7 +20,9 @@
 
 [기존 질문의 변경 답변 52개](test-results/editorial/v87-review.html)를 직접 검토했고, 마지막 수정으로 달라진 12개를 다시 읽었습니다. [최종 기술·회귀 검사](test-results/v87-validation.json)에는 1,024개 스트레스 출력, 1,560개 개발 카드 변형, 프로필당 144개 전체 답변 일치와 첫 실패 원본의 보존을 기록합니다. 의미 품질이나 전문가 동등성 점수는 부여하지 않습니다.
 
-main 병합·배포 뒤 [공개 앱의 오프라인 검사](test-results/public-87-check.json)와 [공개 진단 페이지 실행](test-results/public-device-87-check.json)도 통과했습니다. 실제 Android Chrome 결과는 별도 확인을 기다립니다.
+main 병합·배포 뒤 [공개 앱의 오프라인 검사](test-results/public-87-check.json)와 [공개 진단 페이지 실행](test-results/public-device-87-check.json)도 통과했습니다. 이 공개 기록은 브라우저 자동 실행 범위이며 실제 휴대전화의 UI·비행기 모드 조작과 구별합니다.
+
+[공개 Chrome UI 검사](test-results/public-flow-87-check.json)는 별도의 합성 테스트 프로필에서 8종 배열의 선택·공개·저장·기록 보기를 실행합니다. 데스크톱 마우스와 표준 390px 터치 에뮬레이션의 18개 흐름에 오프라인 새 탭·새 리딩 저장·재접속 보존을 포함합니다. 공개 결과에는 개인 기기 진단과 개인 저장 기록을 넣지 않습니다.
 
 ## v86 · 확인 대상과 복합 요청 보존
 
