@@ -35,7 +35,7 @@
   if(task.kind==='emotion')return 'cope';
   const questionTarget=/(?:질문|물어볼|물을\s*(?:것|내용|점|사항)|여쭐|여쭤볼|궁금한\s*(?:점|내용))/;
   const negatedInquiry=/(?:묻지|물어보지|질문하지)\s*않/.test(original);
-  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈|마무리/g],['improve',/보완|개선|바꾸|바꿀|고치|고칠|손볼|수정|다듬|편집/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계|작업)/g]];
+  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈|마무리/g],['improve',/보완|개선|바꾸|바꿀|고치|고칠|손보|손볼|수정|다듬|편집/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계|작업)/g]];
   if(/(?:역할|담당|몫|책임|업무|할\s*일).{0,18}(?:나누|나눌)|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(original))predicates.push(['coordinate',/나누|나눌/g]);
   if(/(?:업무|일정|분량|범위|할\s*일|시간).{0,12}(?:줄이|줄일|조정)|감당할\s*(?:양|범위)/.test(original))predicates.push(['prioritize',/줄이|줄일|조정|감당할/g]);
   if(!negatedInquiry)predicates.push(['inquire',/물어|여쭐|여쭤|묻|질문(?:해|하|할)/g]);
@@ -60,7 +60,13 @@
   if(state.sent===true&&state.received===false&&['communicate','inquire'].includes(op)&&!preparingQuestion)return null;
   if(state.submitted===true&&op==='finish')return null;
   const requiredResources=op==='verify'&&/자격|필요한\s*(?:자료|서류)|제출할\s*(?:자료|서류)|준비물/.test(text);
-  const hasArtifact=!requiredResources&&(artifact.test(text)||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
+  // An omitted object may be shared within one coordinated request, while an
+  // explicit new object or another sentence must retain its own target.
+  const sharedArtifact=artifact.test(task.sharedContext||'')&&!/(?:[을를은는](?=\s|$)|마음|감정|선택|결정)/.test(text);
+  const previousClause=typeof task.start==='number'?evidenceQuestion.slice(0,task.start).split(/[.!?。！？]/).map(item=>item.trim()).filter(Boolean).at(-1)||'':'';
+  const sameTask=artifact.test(previousClause)&&operation({kind:'action',text:previousClause},previousClause)===op&&!/[을를]\s*(?:어떻게\s*)?(?:준비|고치|바꾸|다듬|설명|마무리)/.test(text)&&!/마음|감정|선택|결정/.test(text);
+  const referent=artifact.test(evidenceQuestion)&&/^(?:이를|이것을|그것을)\s/.test(text);
+  const hasArtifact=!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
   const clinicalChange=/(?:약|치료|수술|복용|용량|증상|통증).{0,18}(?:끊|중단|바꾸|늘리|줄이|끝내|시작|개선|선택)|(?:끊|중단|바꾸|늘리|줄이).{0,12}(?:약|치료|복용|용량)/.test(text);
   if(scene.medical||scene.domain==='health'){
    if(op!=='inquire'&&clinicalChange)return null;

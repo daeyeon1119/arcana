@@ -1,0 +1,29 @@
+/* Actual before/after readings. Oracles are never passed to the engine. */
+const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto'),zlib=require('node:zlib'),{execFileSync}=require('node:child_process'),save=require('./save-artifact.cjs');
+const phase=process.argv[2]||'development';assert(['development','first','regression'].includes(phase));
+const fixture=JSON.parse(fs.readFileSync('tests/verification-'+(phase==='development'?'dev':'first')+'.json','utf8')),folder='test-results/verification/'+phase,hash=value=>crypto.createHash('sha256').update(value).digest('hex');fs.mkdirSync(folder,{recursive:true});fs.mkdirSync('.cache',{recursive:true});
+if(phase==='first'&&fs.existsSync(folder+'/readings.json'))throw Error('First outputs already exist. Use regression.');
+const baseline=execFileSync('git',['show','77daec9:index.html'],{maxBuffer:40*1024*1024});assert.equal(hash(baseline),'b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5');save('.cache/verification-v85.html',baseline);
+const freeze={phase,appSHA256:hash(fs.readFileSync('index.html')),baselineSHA256:hash(baseline),fixtureSHA256:hash(JSON.stringify(fixture)),collectorSHA256:hash(fs.readFileSync(__filename,'utf8').replace(/\r\n/g,'\n')),seed:860019,note:(phase==='regression'?'Known questions corrected after first outputs. Regression, not a new holdout. ':'')+fixture.note};
+if(phase==='first'&&fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.parse(fs.readFileSync(folder+'/freeze.json','utf8')),freeze);save(folder+'/freeze.json',JSON.stringify(freeze,null,2));
+(async()=>{const browser=await require('./browser.cjs')();try{
+ const page=await browser.newPage(),errors=[];page.on('pageerror',error=>errors.push(error.message));await page.route('https://**/*',route=>route.abort());await page.goto(browser.appURL+'/.cache/verification-v85.html',{waitUntil:'domcontentloaded'});
+ const catalog=await page.evaluate(()=>({ids:CARDS.map(card=>card.id),names:Object.fromEntries(CARDS.map(card=>[card.id,card.ko])),slots:Object.fromEntries(Object.entries(SPREADS).map(([key,value])=>[key,value.slots.map(slot=>slot[0])]))}));
+ const cases=fixture.cases.flatMap(item=>Object.entries(catalog.slots).map(([spread,slots])=>{let seed=860019;for(const char of item.group||item.id)seed=(Math.imul(seed,31)+char.charCodeAt(0))>>>0;const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/2**32;},pool=[...catalog.ids];for(let i=pool.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}return {...item,spread,cards:pool.slice(0,slots.length).map(id=>({id,rev:rand()<.5}))};}));
+ const generate=()=>page.evaluate(inputs=>inputs.map(item=>{try{arc79ForcedIntent='auto';const report=__arcana79Build(item.question,item.spread,item.cards);return {headline:report.headline,direct:report.direct,actions:report.actions,sections:report.sections,requests:report.arc82.answers,cardEvidence:report.arc79.evidence,facts:report.arc79.facts,grounding:report.arc84||null};}catch(error){return {error:error.message};}}),cases);
+ const before=await generate();await page.goto(browser.appURL,{waitUntil:'domcontentloaded'});const after=await generate();
+ const rows=cases.map((item,index)=>({...item,cardLabels:item.cards.map((card,i)=>catalog.slots[item.spread][i]+' · '+catalog.names[card.id]+' '+(card.rev?'역방향':'정방향')),before:before[index],after:after[index]})),failures=[],goals=phase==='regression'?{n13:['improve','communicate'],n14:['prepare','cope'],n16:['improve','communicate']}:{};
+ for(const row of rows){const report=row.after,fail=error=>failures.push({id:row.id,spread:row.spread,error});
+  if(report.error){fail(report.error);continue;}if(row.before.error)fail('baseline: '+row.before.error);
+  if(goals[row.id]&&JSON.stringify(report.requests.map(item=>item.request.goal))!==JSON.stringify(goals[row.id]))fail('known compound request coverage');
+  if(report.cardEvidence.some((card,i)=>card.id!==row.cards[i].id||card.reverse!==row.cards[i].rev)||new Set(report.sections.flatMap(section=>section.refs)).size!==row.cards.length)fail('card identity/direction/coverage');
+  const evidence=report.grounding?.questionEvidence,applications=report.grounding?.applications||[],groups=applications.flatMap(item=>item.verification||[]);
+  for(const fact of evidence?.verification||[])for(const span of [fact,fact.target,fact.predicate])if(evidence.question.slice(span.start,span.end)!==span.text)fail('verification provenance mismatch');
+  const actual=groups.map(item=>[item.target.text,item.status]);if(JSON.stringify(actual)!==JSON.stringify(row.expected))fail('verification target/state application differs from authored expectation');
+  if(groups.some(item=>!report.direct.includes(item.target.text)))fail('applied verification missing from visible direct');
+  if(applications.filter(item=>item.verification?.length).length>1)fail('same verification is repeated across requests');
+  if(/undefined|\[object Object\]|을를/.test(report.direct))fail('malformed visible text');
+ }
+ const bytes=Buffer.from(JSON.stringify(rows,null,2)),compressed=zlib.gzipSync(rows.map(row=>JSON.stringify(row)).join('\n')+'\n');save(folder+'/readings.json',bytes);save(folder+'/readings.jsonl.gz',compressed);
+ const summary={...freeze,readingsSHA256:hash(bytes),compressedSHA256:hash(compressed),questions:fixture.cases.length,readingsPerVersion:rows.length,errors,failures,mechanicalPassed:rows.length-new Set(failures.map(item=>item.id+':'+item.spread)).size,qualityScore:null,note:freeze.note+' Literal span/application contracts are not a semantic quality or professional score.'};save(folder+'/summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));if(errors.length||failures.length)process.exitCode=1;
+}finally{await browser.close();}})().catch(error=>{console.error(error);process.exitCode=1;});

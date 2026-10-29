@@ -35,7 +35,12 @@ if(phase==='first'&&fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.p
   }
   if(phase==='regression'){
    const contract={g09:()=>r.direct.includes('12만원')&&r.direct.includes('40개'),g10:()=>r.direct.includes('장소와 시간은 이미 확인')&&r.direct.includes('요금 숫자는 아직 대조'),g11:()=>r.direct.includes('장소와 시간은 아직 확인')&&r.direct.includes('요금 숫자는 이미 대조'),g16:()=>r.direct.includes('선택지의 내용이 필요'),g17:()=>evidence?.options.length===3&&r.grounding.applications.some(item=>item.operation==='compare'&&item.mode==='common'),g18:()=>r.direct.includes('60분')&&!/A안:\s*30분/.test(r.direct),g19:()=>r.grounding?.applications.some(item=>item.quantity?.text==='20분'),g20:()=>r.grounding?.applications.some(item=>item.quantity?.text==='2시간'),g24:()=>r.direct.includes('.pdf를 함께 읽는 방식')&&r.direct.includes('.pdf를 짧게 읽는 방식')}[row.id];
-   if(contract&&!contract())failures.push({id:row.id,spread:row.spread,error:'known corrected fact/option contract'});
+   if(contract){
+    const verificationExpectation={g10:[['장소와 시간','verified'],['요금 숫자','unverified']],g11:[['장소와 시간','unverified'],['요금 숫자','verified']]}[row.id];
+    const bound=major>=86&&verificationExpectation?r.grounding?.applications.flatMap(item=>item.verification||[]):null;
+    const ok=bound?verificationExpectation.every(([target,status])=>bound.some(item=>item.target.text===target&&item.status===status)&&r.direct.includes(target)):contract();
+    if(!ok)failures.push({id:row.id,spread:row.spread,error:'known corrected fact/option contract'});
+   }
   }
  }
  const readingBytes=Buffer.from(JSON.stringify(readings,null,2)),compressed=zlib.gzipSync(readings.map(row=>JSON.stringify(row)).join('\n')+'\n');

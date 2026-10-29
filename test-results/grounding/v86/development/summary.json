@@ -1,0 +1,17 @@
+{
+  "phase": "development",
+  "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "baselineSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+  "fixtureSHA256": "8ef7d9268ecac48ca0316ae45d3f2dfe98617ea1305b7ba061b75330b0293737",
+  "collectorSHA256": "22d5bbe22a34ed65f566b7d44910ca39730b8243c3de93f5f733a9c100fcc9bd",
+  "seed": 840031,
+  "note": "12 known v83 questions, used as development material. Not an independent/unseen quality evaluation. Mechanical invariants are not a semantic or professional quality score.",
+  "readingsSHA256": "b335ba7658b738e1c012b2f2bbf2db5b3b5135b060189191abcc4e5b6c2dd5c9",
+  "compressedSHA256": "94046acb48fe8853c438a9fa7de0c9861bd0cff263adb94c6c0f601759d81c05",
+  "questions": 12,
+  "readingsPerVersion": 96,
+  "errors": [],
+  "failures": [],
+  "mechanicalChecksPassed": 96,
+  "qualityReviewed": 0
+}

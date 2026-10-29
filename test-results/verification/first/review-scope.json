@@ -1,0 +1,76 @@
+{
+  "appSHA256": "abafb8b1d74732e291d46b481544e38f0da02b8e13e45a9e7d15df694b684981",
+  "readingsSHA256": "0f97498364ce94959a852f87768e820b9b14727d01815178289d6d0a10d6613e",
+  "candidateCommit": "5f549a2",
+  "fixtureCommit": "3463947",
+  "directAnswersRead": [
+    {
+      "id": "n01",
+      "spread": "five"
+    },
+    {
+      "id": "n02",
+      "spread": "five"
+    },
+    {
+      "id": "n03",
+      "spread": "five"
+    },
+    {
+      "id": "n04",
+      "spread": "five"
+    },
+    {
+      "id": "n05",
+      "spread": "five"
+    },
+    {
+      "id": "n06",
+      "spread": "five"
+    },
+    {
+      "id": "n07",
+      "spread": "five"
+    },
+    {
+      "id": "n08",
+      "spread": "five"
+    },
+    {
+      "id": "n09",
+      "spread": "five"
+    },
+    {
+      "id": "n10",
+      "spread": "five"
+    },
+    {
+      "id": "n11",
+      "spread": "five"
+    },
+    {
+      "id": "n12",
+      "spread": "five"
+    },
+    {
+      "id": "n13",
+      "spread": "five"
+    },
+    {
+      "id": "n14",
+      "spread": "five"
+    },
+    {
+      "id": "n15",
+      "spread": "five"
+    },
+    {
+      "id": "n16",
+      "spread": "five"
+    }
+  ],
+  "all128DetailedVariantsRead": false,
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "All 16 five-card primary outputs and card labels read. Six questions fail target/state application across all eight spreads (48 rows); semantic issues also occur in mechanically passing outputs. No independent or expert score."
+}

@@ -1,0 +1,9 @@
+{
+  "phase": "first",
+  "appSHA256": "abafb8b1d74732e291d46b481544e38f0da02b8e13e45a9e7d15df694b684981",
+  "baselineSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "fixtureSHA256": "3c13a9d5ee27d758f9fd7b1c5d0365ccf03cf0bada8aee2d637a8a34d4587e1e",
+  "collectorSHA256": "1ccb276b1f8677b0d0e0baf6b77115134cbde36e27af00cc592022e6e5da5cb2",
+  "seed": 860019,
+  "note": "Sixteen author-written diagnostic questions created after candidate commit 5f549a2. New to this candidate's execution, but authored with knowledge of the implementation, not an independent or expert-blind benchmark. Includes paraphrases, polarity/actor swaps, unfamiliar fields, ellipsis and compound requests. Preserve the first actual failures before corrections."
+}

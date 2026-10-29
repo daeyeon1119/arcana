@@ -1,0 +1,22 @@
+{
+  "candidateCommit":"5f549a2",
+  "note":"Sixteen author-written diagnostic questions created after candidate commit 5f549a2. New to this candidate's execution, but authored with knowledge of the implementation, not an independent or expert-blind benchmark. Includes paraphrases, polarity/actor swaps, unfamiliar fields, ellipsis and compound requests. Preserve the first actual failures before corrections.",
+  "cases":[
+    {"id":"n01","group":"tactile","question":"점자 전시 안내문을 어떻게 설명할까요? 제가 인쇄 날짜는 확인했습니다. 촉각 도안의 저작권은 아직 검토하지 못했습니다.","expected":[["인쇄 날짜","verified"],["촉각 도안의 저작권","unverified"]]},
+    {"id":"n02","group":"tactile","question":"점자 전시 안내문을 어떻게 설명할까요? 제가 인쇄 날짜는 아직 확인하지 못했습니다. 촉각 도안의 저작권은 이미 검토했습니다.","expected":[["인쇄 날짜","unverified"],["촉각 도안의 저작권","verified"]]},
+    {"id":"n03","question":"해양 표본 기록 자료를 준비하려 합니다. 검증이 끝난 채집 시각과 아직 점검 중인 보관 온도를 구별해서 어떻게 준비할까요?","expected":[["채집 시각","verified"],["보관 온도","unverified"]]},
+    {"id":"n04","question":"민지는 재료 단가를 확인했습니다. 저는 수량을 확인하지 못했습니다. 수리 견적 자료를 어떻게 고칠까요?","expected":[["수량","unverified"]]},
+    {"id":"n05","question":"만약 판본의 발행일을 확인했다면 사전 목록 자료를 어떻게 설명할까요? 지금 확인을 마쳤다는 뜻은 아닙니다.","expected":[]},
+    {"id":"n06","question":"관측 보고서의 판본이 확인됐다는 말을 들었습니다. 제가 대조했는지는 기억나지 않습니다. 자료를 설명하려면 어떻게 할까요?","expected":[]},
+    {"id":"n07","question":"작년에는 파일명을 대조했습니다. 오늘은 파일명을 아직 확인하지 못했습니다. 복원 작업 자료를 어떻게 준비할까요?","expected":[["파일명","unverified"]]},
+    {"id":"n08","question":"서가 위치는 점검했습니다. 정정하면 서가 위치는 아직 점검하지 못했습니다. 이 배치 자료를 어떻게 고칠까요?","expected":[["서가 위치","unverified"]]},
+    {"id":"n09","question":"권수는 확인했습니다. 권수는 확인하지 못했습니다. 이 소장 목록을 어떻게 설명할까요?","expected":[["권수","conflict"]]},
+    {"id":"n10","question":"표지 색상은 확인했지만 쪽수는 아직이에요. 제본 안내문을 어떻게 고칠까요?","expected":[["표지 색상","verified"],["쪽수","unverified"]]},
+    {"id":"n11","question":"A안은 이미 확인한 시간표를 쓰는 방식이고 B안은 아직 점검 중인 시간표를 쓰는 방식입니다. 두 안을 비교해 주세요.","expected":[]},
+    {"id":"n12","question":"archive$&$$.pdf의 쪽수는 확인했습니다. 도표의 단위는 아직 대조하지 못했습니다. 이 자료를 어떻게 설명할까요?","expected":[["archive$&$$.pdf의 쪽수","verified"],["도표의 단위","unverified"]]},
+    {"id":"n13","question":"출처는 이미 확인했습니다. 인용 범위는 아직 검증 중입니다. 음성 해설 대본을 어떻게 다듬고 관람객에게 어떻게 설명할까요?","expected":[["출처","verified"],["인용 범위","unverified"]]},
+    {"id":"n14","question":"견본 규격은 이미 확인했습니다. 작업실 담당자에게는 납기 확인을 부탁했지만 답이 없어요. 제작 안내 자료를 어떻게 준비하고 초조한 마음은 어떻게 돌볼까요?","expected":[["견본 규격","verified"]]},
+    {"id":"n15","question":"저는 음원 권리를 확인하지 않은 게 아닙니다. 요금은 확인한 줄 알았지만 실제로는 아직 몰라요. 이 공연 자료를 어떻게 설명할까요?","expected":[]},
+    {"id":"n16","question":"서연이 만든 지도 자료의 축척은 제가 확인했습니다. 표기 언어는 아직 확정 전입니다. 이를 어떻게 고치고 바꾼 이유를 어떻게 설명할까요?","expected":[["서연이 만든 지도 자료의 축척","verified"],["표기 언어","unverified"]]}
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "arcana-tarot",
-  "version": "85.0.0",
+  "version": "86.0.0",
   "private": true,
   "description": "Offline Korean tarot reflection app and reproducible reading checks",
   "scripts": {
@@ -11,10 +11,12 @@
     "test:mat": "node scripts/mat.cjs after",
     "test:portable": "node scripts/portable.cjs",
     "verify:public": "node scripts/public-check.cjs",
-    "test:editorial": "node scripts/editorial.cjs v85",
+    "test:editorial": "node scripts/editorial.cjs v86",
     "test:question-model": "node tests/question-model.cjs",
     "test:task-policy": "node tests/task-policy.cjs",
     "test:reading-evidence": "node tests/reading-evidence.cjs",
+    "test:verification-facts": "node tests/verification-facts.cjs",
+    "test:verification-reading": "node scripts/verification-reading.cjs development",
     "test:reading-bridge": "node tests/reading-bridge.cjs",
     "test:grounding": "node scripts/grounding-reading.cjs development",
     "test:grounding-ui": "node scripts/grounding-ui.cjs",
@@ -38,11 +40,13 @@
     "report:blind-review": "python scripts/local_blind_review.py",
     "test:blind-review": "npm run report:blind-review && node scripts/local-blind-check.cjs",
     "test:question-regression": "node scripts/question-unseen.cjs regression",
-    "test:synthesis": "node scripts/synthesis.cjs v85",
+    "test:synthesis": "node scripts/synthesis.cjs v86",
     "diagnose:generalization": "node scripts/context.cjs",
     "report:synthesis": "python scripts/synthesis_report.py",
     "report:questions": "python scripts/question_report.py",
-    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-model && npm run test:task-policy && npm run test:reading-evidence && npm run test:reading-bridge && npm run test:grounding && npm run test:alignment && npm run test:alignment-ui && npm run test:task-reading && npm run test:stress && npm run test:ui && npm run test:grounding-ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression"
+    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-model && npm run test:task-policy && npm run test:reading-evidence && npm run test:verification-facts && npm run test:reading-bridge && npm run test:grounding && npm run test:verification-reading && npm run test:verification-ui && npm run test:verification-regression && npm run test:alignment && npm run test:alignment-ui && npm run test:task-reading && npm run test:stress && npm run test:ui && npm run test:grounding-ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression",
+    "test:verification-ui": "node scripts/verification-ui.cjs",
+    "test:verification-regression": "node scripts/verification-reading.cjs regression"
   },
   "devDependencies": {
     "playwright": "1.62.1"

@@ -1,0 +1,43 @@
+{
+  "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "type": "author development review",
+  "directAnswersRead": [
+    {
+      "id": "d01",
+      "spread": "five"
+    },
+    {
+      "id": "d02",
+      "spread": "five"
+    },
+    {
+      "id": "d03",
+      "spread": "five"
+    },
+    {
+      "id": "d04",
+      "spread": "five"
+    },
+    {
+      "id": "d05",
+      "spread": "five"
+    },
+    {
+      "id": "d06",
+      "spread": "five"
+    },
+    {
+      "id": "d07",
+      "spread": "five"
+    },
+    {
+      "id": "d08",
+      "spread": "five"
+    }
+  ],
+  "all64DetailedVariantsRead": false,
+  "independentExpertReview": false,
+  "notes": "Eight final primary answers read; d08 re-read after shared-target correction. Automated state/target/span checks do not measure semantic depth.",
+  "candidateAppSHA256": "abafb8b1d74732e291d46b481544e38f0da02b8e13e45a9e7d15df694b684981",
+  "noteFinalComparison": "All eight final five-card primary strings are byte-equal to the manually reviewed candidate primaries; compared after final source corrections."
+}
