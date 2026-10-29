@@ -1,0 +1,92 @@
+{
+  "candidateCommit": "39d81a9",
+  "fixtureCommit": "94621c5",
+  "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
+  "readingsSHA256": "d7263373aed6f8bcd5e4c9fb38dbb6df1b1db0e71f32366b2e7a9a6b40dc2855",
+  "directAnswersRead": [
+    {
+      "id": "l01",
+      "spread": "five"
+    },
+    {
+      "id": "l02",
+      "spread": "five"
+    },
+    {
+      "id": "l03",
+      "spread": "five"
+    },
+    {
+      "id": "l04",
+      "spread": "five"
+    },
+    {
+      "id": "l05",
+      "spread": "five"
+    },
+    {
+      "id": "l06",
+      "spread": "five"
+    },
+    {
+      "id": "l07",
+      "spread": "five"
+    },
+    {
+      "id": "l08",
+      "spread": "five"
+    },
+    {
+      "id": "l09",
+      "spread": "five"
+    },
+    {
+      "id": "l10",
+      "spread": "five"
+    },
+    {
+      "id": "l11",
+      "spread": "five"
+    },
+    {
+      "id": "l12",
+      "spread": "five"
+    },
+    {
+      "id": "l13",
+      "spread": "five"
+    },
+    {
+      "id": "l14",
+      "spread": "five"
+    },
+    {
+      "id": "l15",
+      "spread": "five"
+    },
+    {
+      "id": "l16",
+      "spread": "five"
+    },
+    {
+      "id": "l17",
+      "spread": "five"
+    },
+    {
+      "id": "l18",
+      "spread": "five"
+    },
+    {
+      "id": "l19",
+      "spread": "five"
+    },
+    {
+      "id": "l20",
+      "spread": "five"
+    }
+  ],
+  "all160DetailedReportsRead": false,
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "All twenty five-card primary outputs read. Four question phrasings fail practical-lens contracts across eight spreads (32 rows). Mechanically passing cases also have state, quote, request and format failures. Author-aware diagnostic, not independent generalization evidence."
+}

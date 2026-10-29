@@ -1,0 +1,8 @@
+{
+  "initialAppSHA256": "7c3eff2742d22ee46cd12cdf86f74dd663ebf754808e6008e11c4a2b7f9fec91",
+  "failedQuestions": [
+    "implement"
+  ],
+  "matrixFailures": 156,
+  "finding": "Existing portable/development question about executing an already decided plan was treated as reconsidering the decision. Generic question cues now retain the stated purpose. Known development correction, not unseen quality evidence."
+}

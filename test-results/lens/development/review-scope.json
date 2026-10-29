@@ -1,0 +1,62 @@
+{
+  "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "readingsSHA256": "849f76ff0b6b67cf48077c6d80ee7c36b41cc4a9868aa1b0c429b7b8852cb27b",
+  "type": "author development review",
+  "directAnswersRead": [
+    {
+      "id": "communicate",
+      "spread": "five"
+    },
+    {
+      "id": "inquire",
+      "spread": "five"
+    },
+    {
+      "id": "verify",
+      "spread": "five"
+    },
+    {
+      "id": "improve",
+      "spread": "five"
+    },
+    {
+      "id": "prepare",
+      "spread": "five"
+    },
+    {
+      "id": "coordinate",
+      "spread": "five"
+    },
+    {
+      "id": "prioritize",
+      "spread": "five"
+    },
+    {
+      "id": "finish",
+      "spread": "five"
+    },
+    {
+      "id": "implement",
+      "spread": "five"
+    },
+    {
+      "id": "cope",
+      "spread": "five"
+    },
+    {
+      "id": "v86-n01",
+      "spread": "five"
+    },
+    {
+      "id": "v86-n13",
+      "spread": "five"
+    }
+  ],
+  "additionalDirectAnswersRead": [],
+  "allSectionsRead": [],
+  "allVariantDetailedReportsRead": false,
+  "all1560MatrixReadingsManuallyRead": false,
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "Final-build outputs were read directly. Known author review; not an untouched holdout or independent expert evaluation. Detailed-card wording, domain depth, repeated conditions and documented semantic failures remain."
+}

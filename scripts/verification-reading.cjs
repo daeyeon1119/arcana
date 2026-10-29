@@ -1,7 +1,8 @@
 /* Actual before/after readings. Oracles are never passed to the engine. */
 const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto'),zlib=require('node:zlib'),{execFileSync}=require('node:child_process'),save=require('./save-artifact.cjs');
 const phase=process.argv[2]||'development';assert(['development','first','regression'].includes(phase));
-const fixture=JSON.parse(fs.readFileSync('tests/verification-'+(phase==='development'?'dev':'first')+'.json','utf8')),folder='test-results/verification/'+phase,hash=value=>crypto.createHash('sha256').update(value).digest('hex');fs.mkdirSync(folder,{recursive:true});fs.mkdirSync('.cache',{recursive:true});
+const major=Number(JSON.parse(fs.readFileSync('package.json','utf8')).version.split('.')[0]);if(major!==86&&phase==='first')throw Error('The v86 fixture is known material; use regression.');
+const fixture=JSON.parse(fs.readFileSync('tests/verification-'+(phase==='development'?'dev':'first')+'.json','utf8')),folder='test-results/verification/'+(major===86?'':'v'+major+'/')+phase,hash=value=>crypto.createHash('sha256').update(value).digest('hex');fs.mkdirSync(folder,{recursive:true});fs.mkdirSync('.cache',{recursive:true});
 if(phase==='first'&&fs.existsSync(folder+'/readings.json'))throw Error('First outputs already exist. Use regression.');
 const baseline=execFileSync('git',['show','77daec9:index.html'],{maxBuffer:40*1024*1024});assert.equal(hash(baseline),'b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5');save('.cache/verification-v85.html',baseline);
 const freeze={phase,appSHA256:hash(fs.readFileSync('index.html')),baselineSHA256:hash(baseline),fixtureSHA256:hash(JSON.stringify(fixture)),collectorSHA256:hash(fs.readFileSync(__filename,'utf8').replace(/\r\n/g,'\n')),seed:860019,note:(phase==='regression'?'Known questions corrected after first outputs. Regression, not a new holdout. ':'')+fixture.note};

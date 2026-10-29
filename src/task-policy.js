@@ -14,8 +14,8 @@
   implement:['결정한 다음의 작은 실행 정하기','이미 정한 방향에서 가장 먼저 마칠 작은 일 하나를 골라 보세요. 언제 할지와 끝났다고 볼 기준을 정하고, 필요한 준비나 다른 사람의 확인이 있다면 그 부분부터 챙겨 보세요.'],
   cope:['느끼는 마음과 확인한 사실 나누기','지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.']
  };
- const artifact=/(?:문서|자료|안내문|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|결산표|상환표|이\s*표)/;
- const mask=text=>String(text||'').replace(/[“"「『][^”"」』]*[”"」』]/g,s=>' '.repeat(s.length));
+ const artifact=/(?:문서|자료|안내문|안내서|안내(?=를|의)|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|결산표|상환표|이\s*표)/;
+ const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,mask=questionText.mask;
  function participants(question){
   let state=null,rank=-1;
   for(const text of mask(question).split(/[.!?,]|지만|그러나|반면/)){
@@ -31,11 +31,11 @@
   if(!task||!['action','emotion'].includes(task.kind))return null;
   const original=task.evidenceText??task.text??'',cue=original.search(/어떻게|어떡|무엇|뭘|어떤|무슨|어디|언제/);
   const framed=cue>0&&/(?:려면|려고|고\s*싶|할\s*때|하는\s*때|앞두고|앞둔|하면서|한\s*뒤)/.test(original.slice(0,cue));
-  const text=cue>=0?original.slice(cue):original;
+  const text=questionText.requestHead(cue>=0?original.slice(cue):original);
   if(task.kind==='emotion')return 'cope';
   const questionTarget=/(?:질문|물어볼|물을\s*(?:것|내용|점|사항)|여쭐|여쭤볼|궁금한\s*(?:점|내용))/;
   const negatedInquiry=/(?:묻지|물어보지|질문하지)\s*않/.test(original);
-  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈|마무리/g],['improve',/보완|개선|바꾸|바꿀|고치|고칠|손보|손볼|수정|다듬|편집/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계|작업)/g]];
+  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈|마무리/g],['improve',/보완|개선|바꾸|바꿀|바꿔|고치|고칠|고쳐|손보|손볼|손봐|수정|다듬|편집/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계|작업)/g]];
   if(/(?:역할|담당|몫|책임|업무|할\s*일).{0,18}(?:나누|나눌)|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(original))predicates.push(['coordinate',/나누|나눌/g]);
   if(/(?:업무|일정|분량|범위|할\s*일|시간).{0,12}(?:줄이|줄일|조정)|감당할\s*(?:양|범위)/.test(original))predicates.push(['prioritize',/줄이|줄일|조정|감당할/g]);
   if(!negatedInquiry)predicates.push(['inquire',/물어|여쭐|여쭤|묻|질문(?:해|하|할)/g]);
@@ -45,11 +45,12 @@
   const found=matches.sort((a,b)=>b.index-a.index)[0]?.operation;
   if(found)return found==='prepare'&&!negatedInquiry&&questionTarget.test(original+' '+question)?'inquire':found;
   if(!negatedInquiry&&questionTarget.test(original)&&/정리|준비|적|써|잊|기억/.test(text))return 'inquire';
-  if(framed&&/^어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)/.test(text)){
+  const genericTaskCue=/^(?:어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)|(?:무엇|뭘|뭐)(?:부터|을)?\s*(?:먼저\s*)?(?:해야|할|하면|하나요)|(?:어떤|어느)\s*(?:순서|방법|범위|단계|기준|시점).{0,12}(?:좋|필요|적절|도움))/.test(text);
+  if(framed&&genericTaskCue){
    const purpose=predicates.flatMap(([operation,rx])=>[...original.slice(0,cue).matchAll(rx)].map(match=>({operation,index:match.index}))).sort((a,b)=>b.index-a.index)[0];
    if(purpose)return purpose.operation==='prepare'&&!negatedInquiry&&questionTarget.test(original+' '+question)?'inquire':purpose.operation;
   }
-  if(framed&&!/^어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)/.test(text))return null;
+  if(framed&&!genericTaskCue)return null;
   if(task.goal==='prepare'&&questionTarget.test(question)&&!negatedInquiry)return 'inquire';
   if(task.goal==='cope')return 'cope';
   return Object.hasOwn(actions,task.goal)?task.goal:null;
@@ -63,10 +64,12 @@
   // An omitted object may be shared within one coordinated request, while an
   // explicit new object or another sentence must retain its own target.
   const sharedArtifact=artifact.test(task.sharedContext||'')&&!/(?:[을를은는](?=\s|$)|마음|감정|선택|결정)/.test(text);
-  const previousClause=typeof task.start==='number'?evidenceQuestion.slice(0,task.start).split(/[.!?。！？]/).map(item=>item.trim()).filter(Boolean).at(-1)||'':'';
+  const topicPrefix=typeof task.start==='number'?evidenceQuestion.slice(0,task.start):'',previousClause=questionText.sentences(topicPrefix).at(-1)||'';
   const sameTask=artifact.test(previousClause)&&operation({kind:'action',text:previousClause},previousClause)===op&&!/[을를]\s*(?:어떻게\s*)?(?:준비|고치|바꾸|다듬|설명|마무리)/.test(text)&&!/마음|감정|선택|결정/.test(text);
   const referent=artifact.test(evidenceQuestion)&&/^(?:이를|이것을|그것을)\s/.test(text);
-  const hasArtifact=!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
+  const lastArtifact=[...topicPrefix.matchAll(new RegExp(artifact.source,'g'))].at(-1),following=lastArtifact?questionText.sentences(topicPrefix.slice(lastArtifact.index+lastArtifact[0].length)):[];
+  const omittedArtifact=op==='communicate'&&lastArtifact&&!/[을를]\s|마음|감정|사과|선택|결정/.test(text)&&following.slice(1).every(clause=>/확인|대조|검토|검증|점검|확정/.test(clause));
+  const hasArtifact=!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||omittedArtifact||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
   const clinicalChange=/(?:약|치료|수술|복용|용량|증상|통증).{0,18}(?:끊|중단|바꾸|늘리|줄이|끝내|시작|개선|선택)|(?:끊|중단|바꾸|늘리|줄이).{0,12}(?:약|치료|복용|용량)/.test(text);
   if(scene.medical||scene.domain==='health'){
    if(op!=='inquire'&&clinicalChange)return null;
@@ -82,7 +85,7 @@
   if(op==='coordinate'&&people===false){headline='혼자 맡은 일을 감당할 단계로 나누기';body='지금 혼자 맡은 일을 작은 단계로 나누고, 각 단계의 완료 기준과 쓸 수 있는 시간을 적어 보세요. 이번에 할 범위와 미룰 범위를 구분해 일정에 넣어 보세요.';}
   if(op==='verify'&&state.submitted===true){headline='이미 접수한 뒤의 진행 조건 확인하기';body='이미 접수한 절차는 반복하지 않고, 이후 일정과 안내를 받을 경로, 추가 자료나 변경·철회가 필요한 경우의 조건을 공식 안내에서 확인해 보세요. 확인한 항목과 아직 모르는 항목을 나누어 적어 보세요.';}
   if(preparingQuestion&&state.received===false)body='아직 회신을 받지 못했다는 점을 전제로, 답이 오면 확인할 질문을 따로 준비해 보세요. '+body+' 준비한 질문을 바로 다시 보내라는 뜻은 아닙니다.';
-  const quoted=[...String(question).matchAll(/[“"「『]([^”"」』]*)[”"」』]/g)].map(match=>match[1]).join(' '),contentChecks=[];
+  const quoted=questionText.quotes(question).map(span=>span.text).join(' '),contentChecks=[];
   if(target==='artifact'&&/(?:처방|복용|치료|용량)/.test(quoted))contentChecks.push('복약·치료에 관한 문구는 표현만 다듬기 전에 원자료와 의료진·약사의 검토로 내용의 정확성을 확인해 보세요. 확인 전에는 독자가 임의로 약이나 치료를 변경해도 된다고 읽을 표현을 그대로 사용하지 마세요.');
   if(target==='artifact'&&/(?:원금|수익|수익률|손실)/.test(quoted)&&/(?:항상|언제나|무조건|확실|100\s*%|절대|보장)/.test(quoted))contentChecks.push('보장 표현은 실제 근거와 적용 조건·예외를 원자료에서 확인해 보세요. 확인하지 않은 보장을 사실로 전달하지 않고, 확인된 범위와 아직 확인할 부분을 구별해 설명해 보세요.');
   if(contentChecks.length)body=contentChecks.join(' ')+' '+body;

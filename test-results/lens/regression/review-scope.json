@@ -1,0 +1,120 @@
+{
+  "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "readingsSHA256": "eba71d3234555ac14bb0a0c58b71fc76caf09291d975f4876ff730c657000bec",
+  "type": "author known-regression review",
+  "directAnswersRead": [
+    {
+      "id": "l01",
+      "spread": "five"
+    },
+    {
+      "id": "l02",
+      "spread": "five"
+    },
+    {
+      "id": "l03",
+      "spread": "five"
+    },
+    {
+      "id": "l04",
+      "spread": "five"
+    },
+    {
+      "id": "l05",
+      "spread": "five"
+    },
+    {
+      "id": "l06",
+      "spread": "five"
+    },
+    {
+      "id": "l07",
+      "spread": "five"
+    },
+    {
+      "id": "l08",
+      "spread": "five"
+    },
+    {
+      "id": "l09",
+      "spread": "five"
+    },
+    {
+      "id": "l10",
+      "spread": "five"
+    },
+    {
+      "id": "l11",
+      "spread": "five"
+    },
+    {
+      "id": "l12",
+      "spread": "five"
+    },
+    {
+      "id": "l13",
+      "spread": "five"
+    },
+    {
+      "id": "l14",
+      "spread": "five"
+    },
+    {
+      "id": "l15",
+      "spread": "five"
+    },
+    {
+      "id": "l16",
+      "spread": "five"
+    },
+    {
+      "id": "l17",
+      "spread": "five"
+    },
+    {
+      "id": "l18",
+      "spread": "five"
+    },
+    {
+      "id": "l19",
+      "spread": "five"
+    },
+    {
+      "id": "l20",
+      "spread": "five"
+    }
+  ],
+  "additionalDirectAnswersRead": [
+    {
+      "id": "l01",
+      "spread": "one"
+    },
+    {
+      "id": "l19",
+      "spread": "three"
+    },
+    {
+      "id": "l10",
+      "spread": "celtic"
+    },
+    {
+      "id": "l20",
+      "spread": "one"
+    }
+  ],
+  "allSectionsRead": [
+    {
+      "id": "l10",
+      "spread": "five"
+    },
+    {
+      "id": "l19",
+      "spread": "five"
+    }
+  ],
+  "allVariantDetailedReportsRead": false,
+  "all1560MatrixReadingsManuallyRead": false,
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "Final-build outputs were read directly. Known author review; not an untouched holdout or independent expert evaluation. Detailed-card wording, domain depth, repeated conditions and documented semantic failures remain."
+}

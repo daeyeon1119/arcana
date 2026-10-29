@@ -1,0 +1,9 @@
+{
+  "phase": "regression",
+  "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "baselineSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "fixtureSHA256": "7d48515f1bb206d48a8db522fd97bd1f68532071aec9ca23fe056ffc816ecb6f",
+  "collectorSHA256": "a874cbaa61805a6d67389f7bf081e0c69d3b2ebe1978171a927e28a135d0c7f6",
+  "seed": 870037,
+  "note": "Twenty author-written diagnostic questions created after candidate 39d81a9 (HTML d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0). New to this candidate's execution, authored with implementation knowledge; not independent or expert-blind evidence. Includes unfamiliar topics, different request syntax, mixed intent, negative facts and format constraints. Preserve all first outputs before corrections."
+}

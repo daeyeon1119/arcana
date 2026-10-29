@@ -19,3 +19,5 @@ tests/alignment-first.json text eol=lf
 test-results/**/*.json text eol=lf
 test-results/**/*.html text eol=lf
 tests/verification-first.json text eol=lf
+device-check.html text eol=lf
+scripts/device-check.js text eol=lf

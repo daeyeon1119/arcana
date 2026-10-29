@@ -1,0 +1,17 @@
+{
+ "note":"Known/development questions, including v86 review failures. Expectations are collector-only contracts, not engine input or a semantic/professional score.",
+ "cases":[
+  {"id":"communicate","question":"이 안내 자료를 어떻게 설명할까요?","operation":"communicate"},
+  {"id":"inquire","question":"담당자에게 물어볼 질문을 어떻게 준비할까요?","operation":"inquire"},
+  {"id":"verify","question":"신청 조건에서 무엇을 확인할까요?","operation":"verify"},
+  {"id":"improve","question":"이 안내 자료를 어떻게 고칠까요?","operation":"improve"},
+  {"id":"prepare","question":"새 모임을 앞두고 무엇을 준비할까요?","operation":"prepare"},
+  {"id":"coordinate","question":"지금 혼자 일해요. 맡은 일의 역할을 어떻게 나눌까요?","operation":"coordinate"},
+  {"id":"prioritize","question":"업무의 우선순위를 어떻게 정할까요?","operation":"prioritize"},
+  {"id":"finish","question":"목공 작업을 어느 기준에서 마무리하면 좋을까요?","operation":"finish"},
+  {"id":"implement","question":"이미 결정한 이사 계획을 실행하려면 무엇부터 해야 할까요?","operation":"implement"},
+  {"id":"cope","question":"불안한 마음을 어떻게 돌볼까요?","operation":"cope"},
+  {"id":"v86-n01","question":"점자 전시 안내문을 어떻게 설명할까요? 제가 인쇄 날짜는 확인했습니다. 촉각 도안의 저작권은 아직 검토하지 못했습니다."},
+  {"id":"v86-n13","question":"출처는 이미 확인했습니다. 인용 범위는 아직 검증 중입니다. 음성 해설 대본을 어떻게 다듬고 관람객에게 어떻게 설명할까요?"}
+ ]
+}

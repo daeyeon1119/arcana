@@ -1,0 +1,15 @@
+{
+  "release": {
+    "appVersion": "87.0.0",
+    "readingEngine": 87,
+    "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+    "appBytes": 30807834,
+    "webRelease": "b7b87b17ba5f55331ff7f544"
+  },
+  "checks": {
+    "index.html": true,
+    "sw.js": true,
+    "release.json": true
+  },
+  "note": "Actual rebuild in a separate copy with CRLF sources, manifest and SVG files. JPEG/PNG bytes unchanged. Public output bytes match exactly. Not a semantic quality or physical-device evaluation."
+}

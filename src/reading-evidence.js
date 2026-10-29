@@ -4,7 +4,7 @@
 (function(root){
  'use strict';
  const verificationFacts=typeof module==='object'&&module.exports?require('./verification-facts.js'):root.ARCANA_VERIFICATION_FACTS;
- const mask=text=>text.replace(/[“"「『][^”"」』]*[”"」』]/g,s=>' '.repeat(s.length));
+ const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,mask=questionText.mask;
  const normal=text=>String(text||'').normalize('NFKC').replace(/\s+/g,' ').trim();
  const sentenceEnd=(text,index)=>{
   if(!/[.!?。！？]/.test(text[index]))return false;

@@ -1,0 +1,59 @@
+{
+  "note": "Known expectations added after reading the preserved first outputs. Not untouched holdout labels or professional scores.",
+  "goals": {
+    "l01": [
+      "communicate"
+    ],
+    "l02": [
+      "improve"
+    ],
+    "l06": [
+      "cause"
+    ],
+    "l09": [
+      "implement"
+    ],
+    "l14": [
+      "compare",
+      "implement"
+    ],
+    "l19": [
+      "communicate",
+      "finish",
+      "cope"
+    ]
+  },
+  "verification": {
+    "l10": [
+      [
+        "낡은 지도 자료의 인쇄 연도",
+        "verified"
+      ],
+      [
+        "archive$&$$.pdf의 축척",
+        "unverified"
+      ]
+    ],
+    "l11": [
+      [
+        "낡은 지도 자료의 인쇄 연도",
+        "unverified"
+      ],
+      [
+        "archive$&$$.pdf의 축척",
+        "verified"
+      ]
+    ]
+  },
+  "clinicalReviewRequired": [
+    "l16"
+  ],
+  "remainingSemanticLimits": [
+    "l04 explicitly denied waiting is still classified as waiting in factual metadata even though the visible answer is coping-focused",
+    "l07 forecast advice remains too generic for the requested confidence in reading aloud",
+    "l17 financial metadata and condition-specific depth remain limited",
+    "l18 already-held answer is not fully represented as an explicit receipt event",
+    "l20 two-sentence formatting request is not implemented",
+    "domain depth and repeated general imperatives remain below the professional target"
+  ]
+}

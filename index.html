@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#141d1b"><meta name="description" content="전통 라이더–웨이트–스미스 78장 기반 타로 리딩. 정·역방향, 카드 간 관계, 전통 배열 지원.">
-<title>ARCANA 86.0.0 | 직접 고르는 타로</title>
+<title>ARCANA 87.0.0 | 직접 고르는 타로</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
 :root { --ink:#17211f; --ink2:#273432; --night:#151e1c; --night2:#1e2926; --cream:#f6f2e8; --paper:#fffcf6; --muted:#6c756e; --gold:#bc925c; --goldlight:#e3d2b4; --line:#ded9cd; --wine:#8b4c4f; --shadow:0 18px 60px rgba(19,26,23,.13); --sans:'DM Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; --serif:'Noto Serif KR',Georgia,'Times New Roman',serif }
@@ -5049,7 +5049,7 @@ arcanaV5Render=function(report){ARC78_RENDER_PREVIOUS(report);if(!report.arc78)r
 
 </script>
 
-<!-- ARCANA v86 maintained enhancement -->
+<!-- ARCANA v87 maintained enhancement -->
 <style>
 /* Keep the existing paper / forest palette and make the preparation flow legible. */
 .arc79-question-tools{margin:12px 0 18px}.arc79-examples{display:flex;align-items:center;flex-wrap:wrap;gap:8px}.arc79-examples>span{font-size:12px;color:#656e64;margin-right:5px}.arc79-examples button{background:#f1eee4;color:#34493c;border:1px solid #d7d5c6;border-radius:24px;padding:8px 13px;font-size:12px;min-height:40px}.arc79-examples button:hover{background:#e3e9dd;border-color:#728a73}
@@ -5096,6 +5096,40 @@ img[data-card-id]{object-fit:contain!important}
 
 </style>
 <script>
+/* Balanced literal quotations shared by evidence, event and task parsing.
+ * Masking preserves UTF-16 offsets; quoted statements are not personal facts. */
+(function(root){'use strict';
+ const pairs={'“':'”','"':'"','「':'」','『':'』','‘':'’',"'":"'"};
+ function quotes(input){
+  const text=String(input||''),result=[];
+  for(let start=0;start<text.length;start++){
+   const open=text[start],close=pairs[open];if(!close||open==="'"&&/[A-Za-z0-9]/.test(text[start-1]||''))continue;
+   let end=start+1;
+   for(;end<text.length;end++){
+    if(text[end]==='\\'){end++;continue;}
+    if(text[end]!==close)continue;
+    if(/[’']/.test(close)&&/[A-Za-z]/.test(text[end-1]||'')&&/[A-Za-z]/.test(text[end+1]||''))continue;
+    break;
+   }
+   if(end>=text.length)continue;
+   result.push({start,end:end+1,text:text.slice(start+1,end),contentStart:start+1,contentEnd:end});start=end;
+  }
+  return result;
+ }
+ function mask(input){const text=String(input||''),spans=quotes(text);let result='',position=0;for(const span of spans){result+=text.slice(position,span.start)+' '.repeat(span.end-span.start);position=span.end;}return result+text.slice(position);}
+ function sentences(input){
+  const text=String(input||''),result=[];let start=0;
+  for(let i=0;i<text.length;i++){
+   if(!/[.!?。！？]/.test(text[i]))continue;
+   if(text[i]==='.'&&/[^\s.,;!?。！？]/.test(text[i-1]||'')&&/[A-Za-z0-9_-]/.test(text[i+1]||''))continue;
+   const value=text.slice(start,i).trim();if(value)result.push(value);start=i+1;
+  }
+  const last=text.slice(start).trim();if(last)result.push(last);return result;
+ }
+ function requestHead(input){const text=String(input||''),cue=text.search(/어떻게|어떡|어디|어느|어떤|무엇|뭘|뭐/),link=cue<0?null:[...text.matchAll(/(?:해야|[가-힣]*(?:아야|어야|여야|쳐야|춰야|려야|뤄야|봐야|돼야|내야|가야|와야|써야|줘야))\s+(?=[\s\S]*(?:수\s*있|좋을|가능))/g)].find(match=>match.index>=cue);return link?text.slice(0,link.index+link[0].trimEnd().length):text;}
+ const api=Object.freeze({quotes,mask,sentences,requestHead});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_QUESTION_TEXT=api;
+})(typeof globalThis==='object'?globalThis:this);
+
 /* v79: one question context for the answer, evidence, export and follow-up. */
 'use strict';
 const ARC79_DOMAINS={general:'자기성찰',relationship:'연애·관계',family:'가족·친구',career:'일·진로',preparation:'시험·평가',waiting:'결과 기다리기',stress:'마음 돌보기',project:'창작·프로젝트',finances:'금전',health:'건강',decision:'선택'};
@@ -5592,7 +5626,7 @@ const ARC81_MOTIFS={
  rigid:['경직','지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.'],
  bounds:['경계','내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.'],
  autonomy:['자율성','익숙한 기대와 별개로 스스로 지키고 싶은 기준을 적어 보세요.'],
- attachment:['매임','계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.'],
+ attachment:['놓기 어려움','계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.'],
  connection:['교류','내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.'],
  exchange:['상호성','주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.'],
  support:['지원','혼자 해야 한다고 여긴 일 가운데 도움을 받을 수 있는 부분을 찾아보세요.'],
@@ -5810,7 +5844,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
 (function(root){
  'use strict';
  const normal=value=>String(value||'').normalize('NFKC').replace(/\s+/g,' ').trim();
- const mask=text=>text.replace(/[“"「『][^”"」』]*[”"」』]/g,value=>' '.repeat(value.length));
+ const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,mask=questionText.mask;
  const person=/^(?:저|제|나|내|동료|친구|담당자|상대|학생|자녀|그사람)$/;
  const temporal=/^(?:오늘|현재|지금|이번|어제|작년|예전|과거|지난\s*(?:주|달|해))(?:에)?$/;
  const rootWord='(?:확인|대조|검토|검증|확정|점검|맞췄)';
@@ -5916,7 +5950,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
 (function(root){
  'use strict';
  const verificationFacts=typeof module==='object'&&module.exports?require('./verification-facts.js'):root.ARCANA_VERIFICATION_FACTS;
- const mask=text=>text.replace(/[“"「『][^”"」』]*[”"」』]/g,s=>' '.repeat(s.length));
+ const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,mask=questionText.mask;
  const normal=text=>String(text||'').normalize('NFKC').replace(/\s+/g,' ').trim();
  const sentenceEnd=(text,index)=>{
   if(!/[.!?。！？]/.test(text[index]))return false;
@@ -6013,7 +6047,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
  const RECIPIENT=new RegExp(`(${OTHER}|저|제|나|내)(에게서|한테서|에게|한테|께)`,'g');
  const EMOTION=/(?:불안|걱정|두려|두렵|무섭|서운|속상|외롭|외로|허탈|자책|조마조마|민망|초조|공허|위축|슬프|지쳤|지쳐|마음이\s*무거|죄책감|긴장|답답|우울)/;
  const normalize=q=>String(q||'').normalize('NFKC').replace(/\s+/g,' ').trim();
- const masked=q=>q.replace(/[“"「『][^”"」』]*[”"」』]/g,s=>' '.repeat(s.length));
+ const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,masked=questionText.mask;
  function segments(q){
   const text=masked(q),parts=[];let start=0;
   const rx=/[.!?。！？,;]+|(?:하지만|그런데|반면에|그러나)\s+|((?:했|았|었)(?:는데|지만|고|더니))\s*/g;let m;
@@ -6116,25 +6150,28 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   return state;
  }
  function alternativeCount(text){return [...text.matchAll(/([가-힣]+)지(?=\s|,|$)/g)].filter(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8).length;}
- function goalFor(text,kind){
+ function goalFor(text,kind,question=text){
   if(kind==='emotion')return 'cope';
   if(kind!=='action')return kind;
+  text=questionText.requestHead(text);
+  if(/(?:무엇|뭘|뭐)(?:부터|을)?\s*(?:먼저\s*)?해야/.test(text)&&/실행하려|이미\s*(?:정한|결정한|선택한)\s+.{1,15}[을를]/.test(masked(question)))return 'implement';
   if(/마음|감정|불안|걱정/.test(text)&&/다루|다룰|돌보|추스|관리|가라앉|달래|다스리|다스릴/.test(text))return 'cope';
   if(/(?:역할|담당|몫|일).{0,18}(?:나누|나눌|분담)|조율|협의|합의|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(text))return 'coordinate';
   if(/우선순위|마감|업무량|감당할\s*(?:양|범위)|줄이|(?:업무|일정|분량|범위).{0,12}조정/.test(text))return 'prioritize';
   if(/수정.{0,12}(?:멈|끝)|(?:수정|작업|단계).{0,18}(?:마치|마쳐|끝내|끝낼|멈)|완성\s*기준|어디서.{0,12}멈|마칠|끝내|끝낼|마무리/.test(text))return 'finish';
-  if(/보완|개선|바꾸|고치|고칠|손보|손볼|다듬|편집|수정/.test(text))return 'improve';
+  if(/보완|개선|바꾸|바꿔|고치|고칠|고쳐|손보|손볼|손봐|다듬|편집|수정/.test(text))return 'improve';
   if(/(?:말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내)/.test(text))return 'communicate';
   if(/준비|앞두|시작/.test(text))return 'prepare';
-  if(/결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계|작업)/.test(text))return 'implement';
+  if(/실행|결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계|작업)/.test(text))return 'implement';
   return 'action';
  }
- function requestUnits(parts){
+ function requestUnits(parts,q){
   const units=[];
   for(const part of parts){
    // Coordinated predicates share a request ending, not the last verb's goal.
-   const joins=[...part.text.matchAll(/(?:비교하|비교해\s*주|돌보|다루|설명하|정리하|준비하|확인하|수정하|다듬|고치|바꾸|손보|나누|끝내|마무리하)(고)(?=\s|$)/g)].filter(match=>!/^\s*(?:있|싶|나서|나면|보니)/.test(part.text.slice(match.index+match[0].length)));
-   const requested=/(?:어떻게|무엇|어느|어떤|알려|주세요|줘|봐\s*주|까요|나요)/.test(part.text);
+   const joins=[...part.text.matchAll(/(?:비교하|비교해\s*주|돌보|다루|설명하|정리하|준비하|확인하|수정하|다듬|고치|바꾸|손보|나누|끝내|멈추|마무리하)(?:고|며|으며)(?=\s|$)/g)].filter(match=>!/^\s*(?:있|싶|나서|나면|보니)/.test(part.text.slice(match.index+match[0].length)));
+   const askEnding=/(?:어떻게|무엇|어느|어떤|알려|주세요|줘|봐\s*주|까요|나요)/,following=q.slice(part.end),sharedEnding=joins.some(match=>match.index+match[0].length===part.text.length)&&/^\s*,/.test(following)&&askEnding.test(following.split(/[.!?。！？]/)[0]);
+   const requested=askEnding.test(part.text)||sharedEnding;
    if(!joins.length||!requested){units.push(part);continue;}
    let start=0;
    for(const end of [...joins.map(match=>match.index+match[0].length),part.text.length]){
@@ -6146,8 +6183,8 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   return units;
  }
  function requestsFrom(parts,q){
-  const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.goal===(goal||goalFor(part.text,kind))))requests.push({kind,goal:goal||goalFor(part.text,kind),text:part.source,start:part.start,end:part.end,...(part.sharedContext?{sharedContext:part.sharedContext}:{})});};
-  const units=requestUnits(parts);
+  const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.goal===(goal||goalFor(part.text,kind,q))))requests.push({kind,goal:goal||goalFor(part.text,kind,q),text:part.source,start:part.start,end:part.end,...(part.sharedContext?{sharedContext:part.sharedContext}:{})});};
+  const units=requestUnits(parts,q);
   for(const original of units){
    const correction=original.text.match(/(?:대신|말고|그보다(?:는)?|아니라|(?:이유|원인|예측|전망|비교)보다)\s*|(?:는지|인지|을지|할지)보다(?:는)?\s+/);
    const cut=correction?correction.index+correction[0].length:0,part={...original,text:original.text.slice(cut),source:original.source.slice(cut),start:original.start+cut};
@@ -6155,10 +6192,11 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
    if(!ask)continue;
    if(correction&&requests.length)requests.length=0;
    const cause=/(?:왜|어째서|까닭|원인)/.test(t)||/(?:이유|배경)/.test(t)&&!/이유로|배경으로|이유를\s*(?:어떻게\s*)?(?:말|전|설명)|돌아보|성찰/.test(t);
-   const compare=explicitCompare||/두\s*(?:안|선택|경로).{0,20}차이|어느\s*쪽/.test(t)||alternativeCount(t)>=2;
+   const nominalCompare=/비교(?:와|도)\s*함께/.test(t)&&(literalEvidence?.extract(q).options.length||0)>1;
+   const compare=nominalCompare||explicitCompare||/두\s*(?:안|선택|경로).{0,20}차이|어느\s*쪽/.test(t)||alternativeCount(t)>=2;
    const reflective=/성찰|돌아보|살펴보|어떤\s*관점|배운\s*것|배울\s*수/.test(t)&&!/방법|어떻게\s*(?:말|설명|준비)/.test(t);
    const volitional=[...t.matchAll(/([가-힣]+)(?:까요|까|지)(?=\s|$|입니다|이에요|예요)/g)].some(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8);
-   const howTo=original.coordinated&&goalFor(t,'action')!=='action'||/(?:어떻게|어떡|무엇을|뭘|뭐부터|어디서|어디부터)/.test(t)&&volitional&&!/어떻게\s*(?:될|흘러|바뀔)|어떤\s*(?:결과|흐름|마음)/.test(t);
+   const howTo=(original.coordinated||/(?:어떤|어느|어디|무엇|뭘|어떻게|어떡)/.test(t)&&volitional)&&goalFor(t,'action',q)!=='action'||/(?:어떻게|어떡|무엇을|뭘|뭐부터|어디서|어디부터)/.test(t)&&volitional&&!/어떻게\s*(?:될|흘러|바뀔)|어떤\s*(?:결과|흐름|마음)/.test(t);
    const practicalDirective=/(?:마칠|마무리|완성\s*기준|첫\s*(?:행동|단계|작업)|준비할\s*일|다듬)/.test(t)&&/(?:어떻게|어느|어떤|알려|살펴봐\s*주|좋을)/.test(t);
    const action=howTo||practicalDirective||/(?:어떻게|어떡|무엇|뭘|뭐부터|어디부터|어디서|어떤|무슨\s*말|어디까지).{0,60}(?:할|해야|좋|하나|쓸|쓰면|정할|고를|볼|찾을|손볼|잡을|설명|말할|필요|줄일|편집|정리|꺼내|바꿀|멈|고려|다룰|다스릴|세울|받아들)|어떤\s*(?:태도|행동|방법|준비|기준).{0,20}(?:도움|필요|좋|적절)|(?:할\s*일|행동|태도|방법|준비|기준).{0,16}(?:무엇|뭘|어떤|궁금)|(?:방법|준비할\s*일|할\s*행동|첫\s*행동|조언)|[가-힣]도\s*(?:될|괜찮)|(?:연락|고백|지원|이직|퇴사|신청|시작|보낼|쉴|갈)(?:할까|까요)/.test(t);
    const care=/(?:마음|감정|불안|걱정|긴장).{0,35}(?:돌보|돌볼|다루|다룰|추스|달래|다스리)/.test(t);
@@ -6192,7 +6230,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   }
   if(!requests.length){const last=parts.at(-1);if(last&&EMOTION.test(last.text))emit('emotion',last);}
   // A final explicit request supersedes earlier background questions unless coordination is explicit.
-  if(requests.length>1&&!units.some(unit=>unit.coordinated)&&!/(?:그리고|각각|함께|동시에|방법도|행동도|비교(?:해\s*주고|하고)|알려\s*주고)/.test(masked(q))){const last=requests.at(-1);return [last];}
+  if(requests.length>1&&!units.some(unit=>unit.coordinated)&&!/(?:그리고|각각|함께|동시에|방법도|행동도|비교(?:해\s*주고|하고)|알려\s*주고)/.test(masked(q))){const last=requests.at(-1);if(last.kind==='open'&&/^(?:카드|타로)(?:를\s*통해|로)\s*(?:좀\s*)?(?:돌아보|살펴보|보|성찰하)(?:고\s*싶(?:어요|습니다)|아\s*주세요)$/.test(last.text))return requests.slice(0,-1);return [last];}
   return requests;
  }
  function parse(input){
@@ -6327,8 +6365,8 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   implement:['결정한 다음의 작은 실행 정하기','이미 정한 방향에서 가장 먼저 마칠 작은 일 하나를 골라 보세요. 언제 할지와 끝났다고 볼 기준을 정하고, 필요한 준비나 다른 사람의 확인이 있다면 그 부분부터 챙겨 보세요.'],
   cope:['느끼는 마음과 확인한 사실 나누기','지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.']
  };
- const artifact=/(?:문서|자료|안내문|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|결산표|상환표|이\s*표)/;
- const mask=text=>String(text||'').replace(/[“"「『][^”"」』]*[”"」』]/g,s=>' '.repeat(s.length));
+ const artifact=/(?:문서|자료|안내문|안내서|안내(?=를|의)|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|결산표|상환표|이\s*표)/;
+ const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,mask=questionText.mask;
  function participants(question){
   let state=null,rank=-1;
   for(const text of mask(question).split(/[.!?,]|지만|그러나|반면/)){
@@ -6344,11 +6382,11 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   if(!task||!['action','emotion'].includes(task.kind))return null;
   const original=task.evidenceText??task.text??'',cue=original.search(/어떻게|어떡|무엇|뭘|어떤|무슨|어디|언제/);
   const framed=cue>0&&/(?:려면|려고|고\s*싶|할\s*때|하는\s*때|앞두고|앞둔|하면서|한\s*뒤)/.test(original.slice(0,cue));
-  const text=cue>=0?original.slice(cue):original;
+  const text=questionText.requestHead(cue>=0?original.slice(cue):original);
   if(task.kind==='emotion')return 'cope';
   const questionTarget=/(?:질문|물어볼|물을\s*(?:것|내용|점|사항)|여쭐|여쭤볼|궁금한\s*(?:점|내용))/;
   const negatedInquiry=/(?:묻지|물어보지|질문하지)\s*않/.test(original);
-  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈|마무리/g],['improve',/보완|개선|바꾸|바꿀|고치|고칠|손보|손볼|수정|다듬|편집/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계|작업)/g]];
+  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈|마무리/g],['improve',/보완|개선|바꾸|바꿀|바꿔|고치|고칠|고쳐|손보|손볼|손봐|수정|다듬|편집/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계|작업)/g]];
   if(/(?:역할|담당|몫|책임|업무|할\s*일).{0,18}(?:나누|나눌)|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(original))predicates.push(['coordinate',/나누|나눌/g]);
   if(/(?:업무|일정|분량|범위|할\s*일|시간).{0,12}(?:줄이|줄일|조정)|감당할\s*(?:양|범위)/.test(original))predicates.push(['prioritize',/줄이|줄일|조정|감당할/g]);
   if(!negatedInquiry)predicates.push(['inquire',/물어|여쭐|여쭤|묻|질문(?:해|하|할)/g]);
@@ -6358,11 +6396,12 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   const found=matches.sort((a,b)=>b.index-a.index)[0]?.operation;
   if(found)return found==='prepare'&&!negatedInquiry&&questionTarget.test(original+' '+question)?'inquire':found;
   if(!negatedInquiry&&questionTarget.test(original)&&/정리|준비|적|써|잊|기억/.test(text))return 'inquire';
-  if(framed&&/^어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)/.test(text)){
+  const genericTaskCue=/^(?:어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)|(?:무엇|뭘|뭐)(?:부터|을)?\s*(?:먼저\s*)?(?:해야|할|하면|하나요)|(?:어떤|어느)\s*(?:순서|방법|범위|단계|기준|시점).{0,12}(?:좋|필요|적절|도움))/.test(text);
+  if(framed&&genericTaskCue){
    const purpose=predicates.flatMap(([operation,rx])=>[...original.slice(0,cue).matchAll(rx)].map(match=>({operation,index:match.index}))).sort((a,b)=>b.index-a.index)[0];
    if(purpose)return purpose.operation==='prepare'&&!negatedInquiry&&questionTarget.test(original+' '+question)?'inquire':purpose.operation;
   }
-  if(framed&&!/^어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)/.test(text))return null;
+  if(framed&&!genericTaskCue)return null;
   if(task.goal==='prepare'&&questionTarget.test(question)&&!negatedInquiry)return 'inquire';
   if(task.goal==='cope')return 'cope';
   return Object.hasOwn(actions,task.goal)?task.goal:null;
@@ -6376,10 +6415,12 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   // An omitted object may be shared within one coordinated request, while an
   // explicit new object or another sentence must retain its own target.
   const sharedArtifact=artifact.test(task.sharedContext||'')&&!/(?:[을를은는](?=\s|$)|마음|감정|선택|결정)/.test(text);
-  const previousClause=typeof task.start==='number'?evidenceQuestion.slice(0,task.start).split(/[.!?。！？]/).map(item=>item.trim()).filter(Boolean).at(-1)||'':'';
+  const topicPrefix=typeof task.start==='number'?evidenceQuestion.slice(0,task.start):'',previousClause=questionText.sentences(topicPrefix).at(-1)||'';
   const sameTask=artifact.test(previousClause)&&operation({kind:'action',text:previousClause},previousClause)===op&&!/[을를]\s*(?:어떻게\s*)?(?:준비|고치|바꾸|다듬|설명|마무리)/.test(text)&&!/마음|감정|선택|결정/.test(text);
   const referent=artifact.test(evidenceQuestion)&&/^(?:이를|이것을|그것을)\s/.test(text);
-  const hasArtifact=!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
+  const lastArtifact=[...topicPrefix.matchAll(new RegExp(artifact.source,'g'))].at(-1),following=lastArtifact?questionText.sentences(topicPrefix.slice(lastArtifact.index+lastArtifact[0].length)):[];
+  const omittedArtifact=op==='communicate'&&lastArtifact&&!/[을를]\s|마음|감정|사과|선택|결정/.test(text)&&following.slice(1).every(clause=>/확인|대조|검토|검증|점검|확정/.test(clause));
+  const hasArtifact=!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||omittedArtifact||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
   const clinicalChange=/(?:약|치료|수술|복용|용량|증상|통증).{0,18}(?:끊|중단|바꾸|늘리|줄이|끝내|시작|개선|선택)|(?:끊|중단|바꾸|늘리|줄이).{0,12}(?:약|치료|복용|용량)/.test(text);
   if(scene.medical||scene.domain==='health'){
    if(op!=='inquire'&&clinicalChange)return null;
@@ -6395,7 +6436,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   if(op==='coordinate'&&people===false){headline='혼자 맡은 일을 감당할 단계로 나누기';body='지금 혼자 맡은 일을 작은 단계로 나누고, 각 단계의 완료 기준과 쓸 수 있는 시간을 적어 보세요. 이번에 할 범위와 미룰 범위를 구분해 일정에 넣어 보세요.';}
   if(op==='verify'&&state.submitted===true){headline='이미 접수한 뒤의 진행 조건 확인하기';body='이미 접수한 절차는 반복하지 않고, 이후 일정과 안내를 받을 경로, 추가 자료나 변경·철회가 필요한 경우의 조건을 공식 안내에서 확인해 보세요. 확인한 항목과 아직 모르는 항목을 나누어 적어 보세요.';}
   if(preparingQuestion&&state.received===false)body='아직 회신을 받지 못했다는 점을 전제로, 답이 오면 확인할 질문을 따로 준비해 보세요. '+body+' 준비한 질문을 바로 다시 보내라는 뜻은 아닙니다.';
-  const quoted=[...String(question).matchAll(/[“"「『]([^”"」』]*)[”"」』]/g)].map(match=>match[1]).join(' '),contentChecks=[];
+  const quoted=questionText.quotes(question).map(span=>span.text).join(' '),contentChecks=[];
   if(target==='artifact'&&/(?:처방|복용|치료|용량)/.test(quoted))contentChecks.push('복약·치료에 관한 문구는 표현만 다듬기 전에 원자료와 의료진·약사의 검토로 내용의 정확성을 확인해 보세요. 확인 전에는 독자가 임의로 약이나 치료를 변경해도 된다고 읽을 표현을 그대로 사용하지 마세요.');
   if(target==='artifact'&&/(?:원금|수익|수익률|손실)/.test(quoted)&&/(?:항상|언제나|무조건|확실|100\s*%|절대|보장)/.test(quoted))contentChecks.push('보장 표현은 실제 근거와 적용 조건·예외를 원자료에서 확인해 보세요. 확인하지 않은 보장을 사실로 전달하지 않고, 확인된 범위와 아직 확인할 부분을 구별해 설명해 보세요.');
   if(contentChecks.length)body=contentChecks.join(' ')+' '+body;
@@ -6571,7 +6612,23 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
  const api=Object.freeze({compose,groups});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_READING_BRIDGE=api;
 })(typeof globalThis==='object'?globalThis:this);
 
-/* v84: connect literal question constraints to actual card lenses. */
+/* Connect literal constraints and requested work to actual card lenses. */
+function arc87CardFacet(card,participants){
+ const motif=arc81Profile(card)[0];
+ const self={connection:'기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요.',exchange:'들이는 시간과 힘, 그 과정에서 얻는 만족이 어떤 관계인지 살펴보세요.',support:'이미 쓸 수 있는 자원과 새로 필요한 도움을 구별해 보세요.',isolation:'혼자 할 필요가 있는 일과 이용할 수 있는 자원을 나누어 보세요.',mismatch:'바라는 상태와 실제 진행 상태 사이에서 어떤 부분이 어긋나는지 살펴보세요.',expression:'느끼는 것과 실제 표현으로 옮길 내용을 구별해 보세요.',suppression:'감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요.',conflict:'서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.'};
+ const exploratory={grief:'상실감이나 상처가 있다면, 그 마음을 돌볼 시간과 지금 남아 있는 것을 함께 살펴보세요.'};
+ return {motif,text:participants!==true&&self[motif]||exploratory[motif]||ARC81_MOTIFS[motif][1]};
+}
+function arc87AppliedLens(card,relation,spread,plan,bridge,usedRefs){
+ const cards=relation?relation.refs.map(index=>relation.cards[index]):[card];
+ const anchor=atom=>`‘${SPREADS[spread].slots[atom.index][0]}’의 ${atom.name} ${atom.reverse?'역방향':'정방향'}에서 살필 관점은 ‘${arc81Profile(atom).map(motif=>ARC81_MOTIFS[motif][0]).join('·')}’입니다.`;
+ const facet=relation?relation.insight:arc87CardFacet(card,plan.participants).text;
+ const roles=cards.map(atom=>atom.role),roleFrame=roles.includes('boundary')?'이미 진행된 외부 절차와 조절할 태도를 나누어 보면, ':roles.some(role=>['future','outcome'].includes(role))?'현재 방향이 이어질 때 점검할 관점으로 읽으면, ':roles.includes('obstacle')?'실제로 막히는 부분이 있는지 살피는 관점으로, ':'';
+ const refs=cards.map(atom=>atom.index),reused=refs.every(index=>usedRefs.has(index));for(const index of refs)usedRefs.add(index);
+ const operationName={communicate:'설명',inquire:'질문 준비',verify:'조건 확인',improve:'수정',prepare:'준비',coordinate:'분담',prioritize:'우선순위',finish:'마무리',implement:'실행',cope:'마음 돌보기'}[plan.operation];
+ const introduction=reused?`같은 카드의 관점을 ${operationName}에 적용하면, `:cards.map(anchor).join(' ')+' '+facet+' ';
+ return {text:introduction+roleFrame+bridge.text,refs,operation:plan.operation,relationAxis:relation?.axis||null,facets:cards.map(atom=>({index:atom.index,id:atom.id,reverse:atom.reverse,motifs:arc81Profile(atom)})),roleFrame,reused};
+}
 const ARC84_PREVIOUS_REPORT=arc79CreateReport;
 function arc84ConstraintText(evidence,operation,plan,taskText,usedVerification){
  const usable=ARCANA_READING_EVIDENCE.usable,timeBinding=ARCANA_READING_EVIDENCE.chooseTime(evidence,taskText),available=timeBinding.value;
@@ -6620,7 +6677,7 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
  const report=ARC84_PREVIOUS_REPORT(question,spread,cards,override),model=report.arc82?.model;
  if(!model||model.needsContext||!report.arc82.answers.length)return report;
  const {scene}=arc79Scene(question,override);if(scene.urgent||scene.boundary||scene.abuse)return report;
- const evidence=ARCANA_READING_EVIDENCE.extract(model),pack=arc79Pack(question,spread,cards),applications=[],replacements=new Map(),extra=[],usedVerification=new Set();
+ const evidence=ARCANA_READING_EVIDENCE.extract(model),pack=arc79Pack(question,spread,cards),applications=[],replacements=new Map(),extra=[],usedVerification=new Set(),usedLensRefs=new Set();
  for(let index=0;index<report.arc82.answers.length;index++){
   const answer=report.arc82.answers[index],previous=answer.text;
   if(answer.request.kind==='compare'){
@@ -6647,18 +6704,26 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   // not remove completion lists, question examples or source-checking steps.
   let practical=context.verification.length?ARCANA_VERIFICATION_FACTS.practical(originalPractical):originalPractical;
   if(context.text)practical+=' '+context.text;
-  if(replaceGeneric)practical+='\n\n'+(usesPair?'카드의 연결을 더하면, ':`‘${SPREADS[spread].slots[card.index][0]}’ 카드의 관점을 더하면, `)+bridge.text;
+  const integrateLens=!scene.medical&&!['health','finances'].includes(scene.domain)&&!scene.facts.known;
+  if(replaceGeneric&&!integrateLens)practical+='\n\n'+(usesPair?'카드의 연결을 더하면, ':`‘${SPREADS[spread].slots[card.index][0]}’ 카드의 관점을 더하면, `)+bridge.text;
   // Retain the previous boundaries, factual introductions and card connection.
   // Only the practical text is replaced, by its actual canonical source.
   const originalDirect=answer.directText||answer.text;
   if(originalDirect.includes(originalPractical))answer.directText=originalDirect.replace(originalPractical,()=>practical);
   else answer.directText=originalDirect+(context.text?' '+context.text:'');
+  const appliedLens=integrateLens?arc87AppliedLens(card,usesPair?{...relation,cards:pack.list}:null,spread,plan,bridge,usedLensRefs):null;
+  if(appliedLens){
+   const previousLens=usesPair?relation.core:pack.list.map(atom=>arc80CardSentence(atom,spread)).find(text=>answer.directText.includes(text))||arc80CardSentence(card,spread);
+   const lensStart=answer.directText.indexOf(previousLens);
+   answer.directText=lensStart>=0?answer.directText.slice(0,lensStart).trimEnd()+'\n\n'+appliedLens.text+answer.directText.slice(lensStart+previousLens.length):answer.directText+'\n\n'+appliedLens.text;
+   answer.refs=appliedLens.refs;
+  }
   answer.text=answer.directText;answer.actionText=practical;
   const refs=usesPair?relation.refs:[card.index],anchor=usesPair?relation.core:arc81Anchor(card,spread);
   const body=anchor+' '+bridge.text+(context.text?' '+context.text:'');
-  if(!report.sections.some(section=>section.body===body)&&!extra.some(section=>section.body===body))extra.push({title:'질문에 적용할 관점',body,refs,kind:'contextual'});
+  if(!appliedLens&&!report.sections.some(section=>section.body===body)&&!extra.some(section=>section.body===body))extra.push({title:'질문에 적용할 관점',body,refs,kind:'contextual'});
   replacements.set(previous,{body:answer.text,refs:answer.refs});
-  applications.push({request:index,operation:plan.operation,group:bridge.group,primaryMotif:bridge.primary,relationAxis:bridge.relationAxis,contextRule:bridge.contextRule,refs,replaceGeneric,quantity:context.quantity,timeBinding:context.timeBinding,verification:context.verification});
+  applications.push({request:index,operation:plan.operation,group:bridge.group,primaryMotif:bridge.primary,relationAxis:bridge.relationAxis,contextRule:bridge.contextRule,refs,replaceGeneric,quantity:context.quantity,timeBinding:context.timeBinding,verification:context.verification,directLens:appliedLens});
  }
  if(applications.length){
   report.direct=report.arc82.answers.map(answer=>answer.directText||answer.text).join('\n\n');
@@ -6702,7 +6767,7 @@ openHistoryDetail=function(record){ARC80_MAT_HISTORY(record);arc80CompactMats();
 matchMedia('(max-width:640px)').addEventListener('change',arc80CompactMats);
 
 /* Same bundled reading engine on every device. Optional web caching has no AI server. */
-const ARCANA_WEB_BUILD=Object.freeze({appVersion:'86.0.0',readingEngine:86});
+const ARCANA_WEB_BUILD=Object.freeze({appVersion:'87.0.0',readingEngine:87});
 (function(){
  'use strict';
  const panel=document.createElement('section');panel.className='arc-web';panel.id='arcanaWebApp';panel.setAttribute('aria-label','기기에서 앱 사용');
