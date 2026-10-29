@@ -45,11 +45,12 @@
   const found=matches.sort((a,b)=>b.index-a.index)[0]?.operation;
   if(found)return found==='prepare'&&!negatedInquiry&&questionTarget.test(original+' '+question)?'inquire':found;
   if(!negatedInquiry&&questionTarget.test(original)&&/정리|준비|적|써|잊|기억/.test(text))return 'inquire';
-  if(framed&&/^어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)/.test(text)){
+  const genericTaskCue=/^(?:어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)|(?:무엇|뭘|뭐)(?:부터|을)?\s*(?:해야|할|하면|하나요))/.test(text);
+  if(framed&&genericTaskCue){
    const purpose=predicates.flatMap(([operation,rx])=>[...original.slice(0,cue).matchAll(rx)].map(match=>({operation,index:match.index}))).sort((a,b)=>b.index-a.index)[0];
    if(purpose)return purpose.operation==='prepare'&&!negatedInquiry&&questionTarget.test(original+' '+question)?'inquire':purpose.operation;
   }
-  if(framed&&!/^어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)/.test(text))return null;
+  if(framed&&!genericTaskCue)return null;
   if(task.goal==='prepare'&&questionTarget.test(question)&&!negatedInquiry)return 'inquire';
   if(task.goal==='cope')return 'cope';
   return Object.hasOwn(actions,task.goal)?task.goal:null;

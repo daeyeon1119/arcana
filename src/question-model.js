@@ -126,7 +126,7 @@
   if(/보완|개선|바꾸|고치|고칠|손보|손볼|다듬|편집|수정/.test(text))return 'improve';
   if(/(?:말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내)/.test(text))return 'communicate';
   if(/준비|앞두|시작/.test(text))return 'prepare';
-  if(/결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계|작업)/.test(text))return 'implement';
+  if(/실행|결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계|작업)/.test(text))return 'implement';
   return 'action';
  }
  function requestUnits(parts){

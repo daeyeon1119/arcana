@@ -2,7 +2,8 @@
 from pathlib import Path
 import sys,json,hashlib,html
 root=Path(__file__).resolve().parents[1];phase=sys.argv[1] if len(sys.argv)>1 else 'development';assert phase in {'development','first','regression'}
-folder=root/'test-results/verification'/phase
+version=int(sys.argv[2]) if len(sys.argv)>2 else 86
+folder=root/'test-results/verification'/('' if version==86 else 'v'+str(version))/phase
 summary=json.loads((folder/'summary.json').read_text(encoding='utf-8'));raw=(folder/'readings.json').read_bytes();assert hashlib.sha256(raw).hexdigest()==summary['readingsSHA256']
 assert json.loads((folder/'freeze.json').read_text())['appSHA256']==summary['appSHA256']
 rows=json.loads(raw);notes=json.loads((folder/'review-notes.json').read_text(encoding='utf-8')) if (folder/'review-notes.json').exists() else {};escape=lambda value:html.escape(str(value),quote=True)

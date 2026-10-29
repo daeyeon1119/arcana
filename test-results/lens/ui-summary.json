@@ -1,0 +1,19 @@
+{
+  "release": {
+    "appVersion": "87.0.0",
+    "readingEngine": 87,
+    "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
+    "appBytes": 30803635,
+    "webRelease": "fa87d043ec613c9c54b3066c"
+  },
+  "checks": [
+    "communicate: actual visible card lens has drawn IDs/directions and matches export without overflow",
+    "implement: actual visible card lens has drawn IDs/directions and matches export without overflow",
+    "v86-n13: actual visible card lens has drawn IDs/directions and matches export without overflow",
+    "compound practical methods and literal evidence remain separate from card emphasis",
+    "saved reading reproduces complete applied card answer and current engine"
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "note": "Known-input actual draw/reveal/render/export/save in 360px Chromium. Not physical phone/Safari or an expert interpretation evaluation."
+}

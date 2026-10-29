@@ -1,0 +1,65 @@
+{
+  "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
+  "readingsSHA256": "b2a4a64194fd4350522438add8f8ae79338bee713c9a69e95260a6f294168442",
+  "type": "author development review",
+  "directAnswersRead": [
+    {
+      "id": "communicate",
+      "spread": "five"
+    },
+    {
+      "id": "inquire",
+      "spread": "five"
+    },
+    {
+      "id": "verify",
+      "spread": "five"
+    },
+    {
+      "id": "improve",
+      "spread": "five"
+    },
+    {
+      "id": "prepare",
+      "spread": "five"
+    },
+    {
+      "id": "coordinate",
+      "spread": "five"
+    },
+    {
+      "id": "prioritize",
+      "spread": "five"
+    },
+    {
+      "id": "finish",
+      "spread": "five"
+    },
+    {
+      "id": "implement",
+      "spread": "five"
+    },
+    {
+      "id": "cope",
+      "spread": "five"
+    },
+    {
+      "id": "v86-n01",
+      "spread": "five"
+    },
+    {
+      "id": "v86-n13",
+      "spread": "five"
+    }
+  ],
+  "rereadAfterLayoutChange": [
+    "prepare",
+    "implement",
+    "v86-n13"
+  ],
+  "all1560MatrixReadingsManuallyRead": false,
+  "all96DetailedReportsRead": false,
+  "independentExpertReview": false,
+  "qualityScore": null,
+  "note": "Twelve known five-card primary answers read; matrix is mechanical provenance/coverage only. Domain-specific depth and repeated general advice remain limited."
+}

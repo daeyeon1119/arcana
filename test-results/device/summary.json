@@ -1,0 +1,19 @@
+{
+  "release": {
+    "appVersion": "87.0.0",
+    "readingEngine": 87,
+    "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
+    "appBytes": 30803635,
+    "webRelease": "fa87d043ec613c9c54b3066c"
+  },
+  "checks": [
+    "actual checker executes canonical readings, decodes 78 cards and preserves an existing saved reading",
+    "copy control supplies only the diagnostic result to the clipboard interface (stubbed)",
+    "different answer fingerprint fails without claiming success",
+    "an old app cache asks for the normal update instead of clearing user storage",
+    "missing fixture reports failure and preserves copyable diagnostics"
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "note": "Actual diagnostic page execution and failure paths in local 390px mobile Chromium emulation. Clipboard interface is stubbed. Not a physical Android phone, Safari, manual touch/offline confirmation or expert quality evidence."
+}

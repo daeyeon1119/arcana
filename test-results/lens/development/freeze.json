@@ -1,0 +1,9 @@
+{
+  "phase": "development",
+  "appSHA256": "d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0",
+  "baselineSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "fixtureSHA256": "348e453aa879c0c69107a8c81bb1ba7a19bbfe74e3430ca918d32d6f71957fb8",
+  "collectorSHA256": "cf2ddc88a0ffdde2302642de46a080597b5508127494c25faaeed98c3f92a380",
+  "seed": 870037,
+  "note": "Known/development questions, including v86 review failures. Expectations are collector-only contracts, not engine input or a semantic/professional score."
+}

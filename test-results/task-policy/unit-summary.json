@@ -321,6 +321,22 @@
       "ok": true
     },
     {
+      "name": "a generic question cue retains its stated purpose: 무엇부터 해야 할까요",
+      "ok": true
+    },
+    {
+      "name": "a generic question cue retains its stated purpose: 뭘 해야 할까요",
+      "ok": true
+    },
+    {
+      "name": "a generic question cue retains its stated purpose: 뭐부터 할까요",
+      "ok": true
+    },
+    {
+      "name": "a generic question cue retains its stated purpose: 어떻게 할까요",
+      "ok": true
+    },
+    {
       "name": "an explicit document remains an artifact when edited: 문서",
       "ok": true
     },
@@ -333,6 +349,6 @@
       "ok": true
     }
   ],
-  "total": 83,
+  "total": 87,
   "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by both preserved first-run question sets. Not a first-seen quality benchmark or professional evaluation."
 }
