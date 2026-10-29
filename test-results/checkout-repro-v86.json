@@ -1,0 +1,25 @@
+{
+  "release": {
+    "appVersion": "86.0.0",
+    "readingEngine": 86,
+    "appSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+    "appBytes": 30800308,
+    "webRelease": "831aa9ef0b377dd40c713134"
+  },
+  "sourceCommit": "19d334f794900b5201c63e4e3e3f304dfdc8de2c",
+  "coreAutocrlf": true,
+  "committedByteHashes": {
+    "index.html": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+    "sw.js": "7d05e44012ad552da49d66b25c32b449adc86b055dae6b23fe1cdf1cd6049115",
+    "release.json": "de9fcc33f22bc14be9229cf8b4525834e945a4a3938f4bf2e7cc8c6551319a62",
+    "test-results/portable-summary.json": "0e922ac5387d9506d541612fb120e30b17a762868f5a1c209f977042aa1d940d",
+    "test-results/v86-validation.json": "5aeb820f8b5c1b8d2a73c2438c43af00ba24334078e1061c116ecd681ab2b2f3",
+    "test-results/verification/first/readings.json": "0f97498364ce94959a852f87768e820b9b14727d01815178289d6d0a10d6613e",
+    "test-results/verification/first/summary.json": "f1d640bfb26fb5726172908a2215ef729ed3d04f43aee2eb677a64431567446e",
+    "test-results/verification/regression/readings.json": "87e3ce0bd54d72bf0a9fc6401eb3f082f17efecf4844a64adfd063ca6b5ae19c",
+    "test-results/alignment/first/readings.json": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+    "test-results/grounding/first/readings.json": "150111acdbd495e434017c89a751fbc0d0573bec4ac1c10a342e99df6423d821"
+  },
+  "allByteEqual": true,
+  "note": "Actual separate sparse Git clone/checkout with core.autocrlf=true. Public and first/regression evidence bytes equal committed blobs. No reading regeneration or semantic/expert score."
+}
