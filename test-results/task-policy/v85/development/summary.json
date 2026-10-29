@@ -1,0 +1,19 @@
+{
+  "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "fixtureSHA256": "5c34b4448d724ac0a8553651711ae4abd2a3ca260346335557cd3f97e40a09cd",
+  "policySHA256": "25930e16c0f35959d5a89c879b37d2efb42fc52e4fdce3d61d5583d5da1c3cd9",
+  "collectorSHA256": "cfc9bf709dc08876319d13a17bf31dc91e0fecce984e5d3c62a93ea545aa89c7",
+  "seed": 830031,
+  "phase": "development",
+  "note": "Development cases authored before the v83 candidate freeze. Reused scenarios and contract examples; not independent quality evidence. Routing checks are not semantic or professional quality scores.",
+  "questions": 12,
+  "readingsPerVersion": 96,
+  "errors": [],
+  "failures": [],
+  "checks": {
+    "routing": 96,
+    "cardEvidence": 96
+  },
+  "qualityReviewed": 0
+}

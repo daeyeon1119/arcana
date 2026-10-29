@@ -1,0 +1,9 @@
+{
+  "phase": "regression",
+  "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "baselineSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+  "fixtureSHA256": "823212de04268ff59771a0332d68d88e2b5ba31437f45c381ebd2e3b5112e0e5",
+  "collectorSHA256": "c51e7cd590baecc5f555d584518dddc7ef8a0090936116a4d82f70780153eab1",
+  "seed": 840031,
+  "note": "Authored after candidate freeze f6a47a8 (HTML SHA256 3703b9fb220189afd280c0c9eba461cf9612ab2af70b1de9a365cd2fc82f0cd8). Self-authored first-run diagnostic, not independent expert evidence. Questions, cards, orientations and arrays are identical for v83 and this candidate. Paired scenarios share cards. Metadata and review expectations are not passed to the engine. All first actual outputs, including semantic failures found by reading, must remain unchanged. Fixes using these cases make later runs regressions."
+}

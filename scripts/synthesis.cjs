@@ -51,6 +51,6 @@ const pools=[['ar07','ar12','sw01','wa10','pe03','ar18','cu02','ar13','ar14','pe
   check('relationship synthesis does not invent a work task',!readings.find(r=>r.id===10&&r.variant===1).direct.includes('마칠 수 있는 작업'));
   check('shared living cost discussion receives agreement advice',readings.filter(r=>r.id===15).every(r=>r.direct.includes('상담')||r.direct.includes('상의할 기준')));
  }
- fs.mkdirSync('test-results/synthesis',{recursive:true});fs.writeFileSync(`test-results/synthesis/${phase}-readings.json`,JSON.stringify(readings,null,2));
- const summary={phase,questions:cases.length,readings:readings.length,checks,pageErrors,appSHA256:crypto.createHash('sha256').update(fs.readFileSync('index.html')).digest('hex')};fs.writeFileSync(`test-results/synthesis/${phase}-summary.json`,JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));
+ fs.mkdirSync('test-results/synthesis',{recursive:true});require('./save-artifact.cjs') (`test-results/synthesis/${phase}-readings.json`,JSON.stringify(readings,null,2));
+ const summary={phase,questions:cases.length,readings:readings.length,checks,pageErrors,appSHA256:crypto.createHash('sha256').update(fs.readFileSync('index.html')).digest('hex')};require('./save-artifact.cjs') (`test-results/synthesis/${phase}-summary.json`,JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));
  }finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

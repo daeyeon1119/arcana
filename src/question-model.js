@@ -120,29 +120,49 @@
   if(kind==='emotion')return 'cope';
   if(kind!=='action')return kind;
   if(/마음|감정|불안|걱정/.test(text)&&/다루|다룰|돌보|추스|관리|가라앉|달래|다스리|다스릴/.test(text))return 'cope';
-  if(/(?:역할|담당|몫|일).{0,18}(?:나누|나눌|분담)|조율|협의|합의/.test(text))return 'coordinate';
+  if(/(?:역할|담당|몫|일).{0,18}(?:나누|나눌|분담)|조율|협의|합의|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(text))return 'coordinate';
   if(/우선순위|마감|업무량|감당할\s*(?:양|범위)|줄이|(?:업무|일정|분량|범위).{0,12}조정/.test(text))return 'prioritize';
-  if(/수정.{0,12}(?:멈|끝)|(?:수정|작업|단계).{0,18}(?:마치|마쳐|끝내|끝낼|멈)|완성\s*기준|어디서.{0,12}멈|마칠|끝낼/.test(text))return 'finish';
-  if(/보완|개선|바꾸|고치|고칠|손볼/.test(text))return 'improve';
+  if(/수정.{0,12}(?:멈|끝)|(?:수정|작업|단계).{0,18}(?:마치|마쳐|끝내|끝낼|멈)|완성\s*기준|어디서.{0,12}멈|마칠|끝낼|마무리/.test(text))return 'finish';
+  if(/보완|개선|바꾸|고치|고칠|손볼|다듬|편집|수정/.test(text))return 'improve';
   if(/(?:말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내)/.test(text))return 'communicate';
   if(/준비|앞두|시작/.test(text))return 'prepare';
-  if(/결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계)/.test(text))return 'implement';
+  if(/결정(?:한)?\s*(?:뒤|후)|선택(?:한)?\s*(?:뒤|후)|첫\s*(?:주|날|행동|단계|작업)/.test(text))return 'implement';
   return 'action';
+ }
+ function requestUnits(parts){
+  const units=[];
+  for(const part of parts){
+   // Coordinated predicates share a request ending, not the last verb's goal.
+   const joins=[...part.text.matchAll(/(?:비교하|비교해\s*주|돌보|다루|설명하|정리하|준비하|확인하|수정하|다듬)(고)(?=\s|$)/g)].filter(match=>!/^\s*(?:있|싶)/.test(part.text.slice(match.index+match[0].length)));
+   const requested=/(?:어떻게|무엇|어느|어떤|알려|주세요|줘|봐\s*주|까요|나요)/.test(part.text);
+   if(!joins.length||!requested){units.push(part);continue;}
+   let start=0;
+   for(const end of [...joins.map(match=>match.index+match[0].length),part.text.length]){
+    while(start<end&&/\s/.test(part.text[start]))start++;
+    if(end>start)units.push({...part,start:part.start+start,end:part.start+end,text:part.text.slice(start,end),source:part.source.slice(start,end),coordinated:true});
+    start=end;
+   }
+  }
+  return units;
  }
  function requestsFrom(parts,q){
   const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.goal===(goal||goalFor(part.text,kind))))requests.push({kind,goal:goal||goalFor(part.text,kind),text:part.source,start:part.start,end:part.end});};
-  for(const original of parts){
+  const units=requestUnits(parts);
+  for(const original of units){
    const correction=original.text.match(/(?:대신|말고|그보다(?:는)?|아니라|(?:이유|원인|예측|전망|비교)보다)\s*|(?:는지|인지|을지|할지)보다(?:는)?\s+/);
    const cut=correction?correction.index+correction[0].length:0,part={...original,text:original.text.slice(cut),source:original.source.slice(cut),start:original.start+cut};
-   const t=part.text,explicitCompare=/비교(?:해(?:\s*주|줘|보고|볼)|하고(?:\s*싶|$)|할(?:까요|지)|를\s*(?:부탁|원|해))|(?:어떻게|어떤\s*기준).{0,20}비교/.test(t),ask=/(?:까|나요|가요|궁금|싶|알려|조언|봐\s*주|보아\s*주|말해\s*주|주세요|무엇|뭘|어떻게|어디|왜|언제|어떤)/.test(t)||explicitCompare||alternativeCount(t)>=2&&/고민|선택|결정/.test(t);
+   const t=part.text,explicitCompare=/비교(?:해(?:\s*주|줘|보고|볼)|하고(?:\s*싶|$)|할(?:까요|지)|를\s*(?:부탁|원|해))|(?:어떻게|어떤\s*기준).{0,20}비교/.test(t),ask=original.coordinated||/(?:까|나요|가요|궁금|싶|알려|조언|봐\s*주|보아\s*주|말해\s*주|주세요|무엇|뭘|어떻게|어디|왜|언제|어떤)/.test(t)||explicitCompare||alternativeCount(t)>=2&&/고민|선택|결정/.test(t);
    if(!ask)continue;
    if(correction&&requests.length)requests.length=0;
    const cause=/(?:왜|어째서|까닭|원인)/.test(t)||/(?:이유|배경)/.test(t)&&!/이유로|배경으로|이유를\s*(?:말|전|설명)|돌아보|성찰/.test(t);
    const compare=explicitCompare||/두\s*(?:안|선택|경로).{0,20}차이|어느\s*쪽/.test(t)||alternativeCount(t)>=2;
    const reflective=/성찰|돌아보|살펴보|어떤\s*관점|배운\s*것|배울\s*수/.test(t)&&!/방법|어떻게\s*(?:말|설명|준비)/.test(t);
-   const volitional=[...t.matchAll(/([가-힣]+)(?:까요|까|지)(?=\s|$)/g)].some(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8);
+   const volitional=[...t.matchAll(/([가-힣]+)(?:까요|까|지)(?=\s|$|입니다|이에요|예요)/g)].some(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8);
    const howTo=/(?:어떻게|어떡|무엇을|뭘|뭐부터|어디서|어디부터)/.test(t)&&volitional&&!/어떻게\s*(?:될|흘러|바뀔)|어떤\s*(?:결과|흐름|마음)/.test(t);
-   const action=howTo||/(?:어떻게|어떡|무엇|뭘|뭐부터|어디부터|어디서|어떤|무슨\s*말|어디까지).{0,60}(?:할|해야|좋|하나|쓸|쓰면|정할|고를|볼|찾을|손볼|잡을|설명|말할|필요|줄일|편집|정리|꺼내|바꿀|멈|고려|다룰|다스릴|세울|받아들)|어떤\s*(?:태도|행동|방법|준비|기준).{0,20}(?:도움|필요|좋|적절)|(?:할\s*일|행동|태도|방법|준비|기준).{0,16}(?:무엇|뭘|어떤|궁금)|(?:방법|준비할\s*일|할\s*행동|첫\s*행동|조언)|[가-힣]도\s*(?:될|괜찮)|(?:연락|고백|지원|이직|퇴사|신청|시작|보낼|쉴|갈)(?:할까|까요)/.test(t);
+   const practicalDirective=/(?:마칠|마무리|완성\s*기준|첫\s*(?:행동|단계|작업)|준비할\s*일|다듬)/.test(t)&&/(?:어떻게|어느|어떤|알려|살펴봐\s*주|좋을)/.test(t);
+   const action=howTo||practicalDirective||/(?:어떻게|어떡|무엇|뭘|뭐부터|어디부터|어디서|어떤|무슨\s*말|어디까지).{0,60}(?:할|해야|좋|하나|쓸|쓰면|정할|고를|볼|찾을|손볼|잡을|설명|말할|필요|줄일|편집|정리|꺼내|바꿀|멈|고려|다룰|다스릴|세울|받아들)|어떤\s*(?:태도|행동|방법|준비|기준).{0,20}(?:도움|필요|좋|적절)|(?:할\s*일|행동|태도|방법|준비|기준).{0,16}(?:무엇|뭘|어떤|궁금)|(?:방법|준비할\s*일|할\s*행동|첫\s*행동|조언)|[가-힣]도\s*(?:될|괜찮)|(?:연락|고백|지원|이직|퇴사|신청|시작|보낼|쉴|갈)(?:할까|까요)/.test(t);
+   const care=/(?:마음|감정|불안|걱정|긴장).{0,35}(?:돌보|돌볼|다루|다룰|추스|달래|다스리)/.test(t);
+   const parallelNoun=t.match(/(?:일|것|행동|준비|기준|방법)과\s*/),explicitNounPair=parallelNoun&&/각각|함께|동시에/.test(t);
    const emotionalStatement=EMOTION.test(t)&&(/(?:두렵|걱정|불안|무섭|자책|초조).{0,10}(?:습니다|어요|에요|돼요|됩니다)$/.test(t)||/까\s*(?:봐)?\s*(?:걱정|불안|두려|무섭)/.test(t)&&!/궁금|가능성|전망/.test(t));
    const development=/오래갈까|이어질까|덜해질까|나아질까|좋아질까|편해질까|회복될까/.test(t);
    const forecast=(/언제|가능성|전망|(?:될|올|일|있을|이어질|좋아질|회복될|합격할|붙을|풀릴|생길)(?:까|지|까요)|어떨까|어떤\s*마음/.test(t)||development)&&!emotionalStatement&&!/까\s*봐|하지\s*말|예측.{0,8}(?:않|말)/.test(t);
@@ -153,12 +173,13 @@
     else emit('compare',part);
     if(action&&/(?:비교(?:해\s*주고|하고)|비교와|그리고).{0,50}(?:방법|행동|말할|전할)|(?:방법|행동)도/.test(t))emit('action',part);
    }
+   else if(care&&!explicitNounPair)emit('emotion',part,'cope');
    else if(reflective&&!/준비할\s*일|첫\s*행동/.test(t))emit('open',part);
    else if(/어떤\s*흐름/.test(t)&&!forecast&&!action&&!/앞으로|미래|다음/.test(t))emit('open',part);
    else if((development||/어떤\s*(?:결과|미래|흐름|가능성|마음)|어떻게\s*(?:될|흘러)|결과.{0,8}기대/.test(t))&&!emotionalStatement&&!/(?:설명|물어|준비|바꿀|해야)/.test(t))emit('forecast',part);
    else if(action){
-    const parallel=t.match(/(?:일|행동|준비|기준|방법)과\s*/);
-    if(parallel&&/각각|함께|동시에/.test(t)){
+    const parallel=parallelNoun;
+    if(explicitNounPair){
      const end=parallel.index+parallel[0].indexOf('과'),start=parallel.index+parallel[0].length;
      emit('action',{...part,text:part.text.slice(0,end),source:part.source.slice(0,end),end:part.start+end});
      const right={...part,text:part.text.slice(start),source:part.source.slice(start),start:part.start+start};
@@ -171,7 +192,7 @@
   }
   if(!requests.length){const last=parts.at(-1);if(last&&EMOTION.test(last.text))emit('emotion',last);}
   // A final explicit request supersedes earlier background questions unless coordination is explicit.
-  if(requests.length>1&&!/(?:그리고|각각|함께|동시에|방법도|행동도|비교(?:해\s*주고|하고)|알려\s*주고)/.test(masked(q))){const last=requests.at(-1);return [last];}
+  if(requests.length>1&&!units.some(unit=>unit.coordinated)&&!/(?:그리고|각각|함께|동시에|방법도|행동도|비교(?:해\s*주고|하고)|알려\s*주고)/.test(masked(q))){const last=requests.at(-1);return [last];}
   return requests;
  }
  function parse(input){

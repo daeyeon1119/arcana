@@ -1,0 +1,21 @@
+{
+  "note": "Known contracts added after reading first failures. These do not change the first fixture, first outputs or production dispatch. They detect missing request coverage and stale operation metadata, not professional interpretation quality.",
+  "cases": {
+    "u01":{"kinds":["action"],"actions":["finish"]},
+    "u02":{"kinds":["compare","action"],"actions":["finish"]},
+    "u03":{"kinds":["action"],"actions":["prepare"]},
+    "u04":{"kinds":["compare","action"],"actions":["prepare"]},
+    "u05":{"kinds":["action"],"actions":["improve"]},
+    "u06":{"kinds":["action"],"actions":["improve"]},
+    "u07":{"kinds":["emotion","action"],"actions":["cope","inquire"]},
+    "u08":{"kinds":["emotion","action"],"actions":["cope","improve"]},
+    "u09":{"kinds":["action"],"actions":["prepare"]},
+    "u10":{"kinds":["action"],"actions":["coordinate"]},
+    "u11":{"kinds":["emotion"],"actions":["cope"]},
+    "u12":{"kinds":["compare"]},
+    "u13":{"kinds":[],"needsContext":true},
+    "u14":{"kinds":[]},
+    "u15":{"kinds":["compare","action"],"actions":["implement"]},
+    "u16":{"kinds":["action"],"actions":["prepare"]}
+  }
+}

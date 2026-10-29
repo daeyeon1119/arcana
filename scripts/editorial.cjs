@@ -20,10 +20,11 @@ if(cases.length!==320||new Set(cases.map(c=>c.question)).size!==320)throw Error(
   check('already accepted job does not advise applying',!find(10).direct.includes('지원 자격')&&find(10).direct.includes('출근'));
   check('medication discomfort remains medical',find(206).actualDomain==='health'&&find(206).direct.includes('의료진'));
   check('completed assignment not submitted again',!find(128).direct.includes('제출 기준과 마감')&&find(128).direct.includes('피드백'));
+  if(Number(phase.replace('v',''))>=85)check('editing verb alone does not imply a factual document',find(156).direct.includes('첫 장면에서 전달하려는 내용')&&!find(156).direct.includes('원자료와 대조'));
  }
  fs.mkdirSync('test-results/editorial',{recursive:true});
- fs.writeFileSync(`test-results/editorial/${phase}-readings.jsonl.gz`,zlib.gzipSync(readings.map(r=>JSON.stringify(r)).join('\n')+'\n'));
- fs.writeFileSync(`test-results/editorial/${phase}-readings.json`,JSON.stringify(readings,null,2));
+ require('./save-artifact.cjs') (`test-results/editorial/${phase}-readings.jsonl.gz`,zlib.gzipSync(readings.map(r=>JSON.stringify(r)).join('\n')+'\n'));
+ require('./save-artifact.cjs') (`test-results/editorial/${phase}-readings.json`,JSON.stringify(readings,null,2));
  const summary={questions:readings.length,categories:[...new Set(readings.map(r=>r.category))],errors:[...errors,...readings.filter(r=>r.error)],intentMatches:readings.filter(r=>r.intent===r.actualIntent).length,domainMatches:readings.filter(r=>r.domain===r.actualDomain).length,qualityChecks,appSHA256:crypto.createHash('sha256').update(fs.readFileSync('index.html')).digest('hex')};
- fs.writeFileSync(`test-results/editorial/${phase}-summary.json`,JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));if(summary.errors.length)process.exitCode=1;
+ require('./save-artifact.cjs') (`test-results/editorial/${phase}-summary.json`,JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));if(summary.errors.length)process.exitCode=1;
  }finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

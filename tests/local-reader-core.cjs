@@ -39,4 +39,4 @@ check('schema binds card output keys and allowed references',()=>{const s=core.s
 // Intentionally demonstrate the limit: structural validity cannot prove this sentence true.
 check('semantic contradiction is outside structural validator coverage',()=>{const x=structuredClone(good);x.requests[0].text='이미 받은 답의 내용을 적어 보세요.';assert.equal(core.validate(p,x).ok,true);});
 const summary={checks:checks.map(name=>({name,ok:true})),total:checks.length,sourceSHA256:crypto.createHash('sha256').update(fs.readFileSync('src/local-reader-core.js','utf8').replace(/\r\n/g,'\n')).digest('hex'),note:'Development protocol checks. Passing does not prove semantic truth or reading quality.'};
-fs.mkdirSync('test-results/local-reader',{recursive:true});fs.writeFileSync('test-results/local-reader/contract-summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));
+fs.mkdirSync('test-results/local-reader',{recursive:true});require('../scripts/save-artifact.cjs') ('test-results/local-reader/contract-summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));

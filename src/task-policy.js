@@ -14,7 +14,7 @@
   implement:['결정한 다음의 작은 실행 정하기','이미 정한 방향에서 가장 먼저 마칠 작은 일 하나를 골라 보세요. 언제 할지와 끝났다고 볼 기준을 정하고, 필요한 준비나 다른 사람의 확인이 있다면 그 부분부터 챙겨 보세요.'],
   cope:['느끼는 마음과 확인한 사실 나누기','지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.']
  };
- const artifact=/(?:문서|자료|안내문|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|편집|결산표|상환표|이\s*표)/;
+ const artifact=/(?:문서|자료|안내문|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|결산표|상환표|이\s*표)/;
  const mask=text=>String(text||'').replace(/[“"「『][^”"」』]*[”"」』]/g,s=>' '.repeat(s.length));
  function participants(question){
   let state=null,rank=-1;
@@ -35,11 +35,11 @@
   if(task.kind==='emotion')return 'cope';
   const questionTarget=/(?:질문|물어볼|물을\s*(?:것|내용|점|사항)|여쭐|여쭤볼|궁금한\s*(?:점|내용))/;
   const negatedInquiry=/(?:묻지|물어보지|질문하지)\s*않/.test(original);
-  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈/g],['improve',/보완|개선|바꾸|바꿀|고치|고칠|손볼|수정/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계)/g]];
-  if(/(?:역할|담당|몫|책임|업무|할\s*일).{0,18}(?:나누|나눌)/.test(original))predicates.push(['coordinate',/나누|나눌/g]);
+  const predicates=[['coordinate',/분담|조율|협의|합의/g],['prioritize',/우선순위|마감/g],['finish',/마치|마칠|끝내|끝낼|멈|마무리/g],['improve',/보완|개선|바꾸|바꿀|고치|고칠|손볼|수정|다듬|편집/g],['communicate',/말할|말하|전할|전하|설명|이야기|대화|꺼낼|꺼내/g],['prepare',/준비|앞두|시작/g],['implement',/실행|첫\s*(?:주|날|행동|단계|작업)/g]];
+  if(/(?:역할|담당|몫|책임|업무|할\s*일).{0,18}(?:나누|나눌)|(?:각자|서로).{0,60}(?:일|업무|범위).{0,25}(?:나누|나눌)/.test(original))predicates.push(['coordinate',/나누|나눌/g]);
   if(/(?:업무|일정|분량|범위|할\s*일|시간).{0,12}(?:줄이|줄일|조정)|감당할\s*(?:양|범위)/.test(original))predicates.push(['prioritize',/줄이|줄일|조정|감당할/g]);
   if(!negatedInquiry)predicates.push(['inquire',/물어|여쭐|여쭤|묻|질문(?:해|하|할)/g]);
-  if(/조건|기준|요건|자격|규정|절차|준비물|사항/.test(original+' '+question))predicates.push(['verify',/확인|검토|점검|살펴|살피|알아/g]);
+  if(/조건|기준|요건|자격|규정|절차|준비물|사항/.test(original+' '+question))predicates.push(['verify',['finish','implement'].includes(task.goal)?/확인|검토|점검|알아/g:/확인|검토|점검|살펴|살피|알아/g]);
   if(/마음|감정|불안|걱정|긴장/.test(text))predicates.push(['cope',/다루|다룰|돌보|추스|관리|달래|다스리/g]);
   const matches=predicates.flatMap(([operation,rx])=>[...text.matchAll(rx)].map(match=>({operation,index:match.index})));
   const found=matches.sort((a,b)=>b.index-a.index)[0]?.operation;

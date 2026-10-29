@@ -12,5 +12,5 @@ const post=require('../scripts/local-model-http.cjs');
   await check('oversized local response rejected',async()=>{mode='large';await assert.rejects(post(endpoint,{}, {maxBytes:100}),/too large|interrupted/);});
   await check('total deadline includes waiting for response headers',async()=>{mode='slow';await assert.rejects(post(endpoint,{}, {timeoutMs:30}),e=>e.code==='LOCAL_TIMEOUT');});
  }finally{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));}
- const summary={total:checks.length,checks,note:'Actual local HTTP integration checks with a test server. No test response is presented as model or quality evidence.'};fs.writeFileSync('test-results/local-reader/transport-summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));
+ const summary={total:checks.length,checks,note:'Actual local HTTP integration checks with a test server. No test response is presented as model or quality evidence.'};require('../scripts/save-artifact.cjs') ('test-results/local-reader/transport-summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));
 })().catch(e=>{console.error(e);process.exitCode=1;});

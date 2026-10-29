@@ -7,5 +7,11 @@
     "보드게임 안내를 고쳐 더 쉽게 설명하고 싶어요. 무엇을 살펴볼까요?",
     "왜 비슷한 선택을 반복하는지 돌아보고 싶어요.",
     "둘 중 어느 쪽이 나을까요?"
+  ],
+  "settings": [
+    {"question":"A안은 무광 유약이고 B안은 투명 유약입니다. 두 안을 비교하고 마칠 기준도 살펴봐 주세요.","focus":"auto","domain":"project"},
+    {"question":"마음을 어떻게 돌보고 연습 방식을 어떻게 바꿀까요?","focus":"auto","domain":"general"},
+    {"question":"A안은 주말 사진 동아리이고 B안은 혼자 사진 산책하기입니다. 실수할까 봐 걱정돼요.","focus":"emotion","domain":"preparation"},
+    {"question":"A안은 주말 사진 동아리이고 B안은 혼자 사진 산책하기입니다. 실수할까 봐 걱정돼요.","focus":"compare","domain":"general"}
   ]
 }

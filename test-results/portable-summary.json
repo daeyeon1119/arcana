@@ -1,26 +1,28 @@
 {
   "release": {
-    "appVersion": "84.0.0",
-    "readingEngine": 84,
-    "appSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
-    "appBytes": 30781022,
-    "webRelease": "d92160e15bbd7604ea035e5a"
+    "appVersion": "85.0.0",
+    "readingEngine": 85,
+    "appSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+    "appBytes": 30787869,
+    "webRelease": "00a930fde9d1675d3d0eee36"
   },
+  "fixtureSHA256": "9f343bac6705198cb237af93a1ca403130947456ed334f9673864acf345627dc",
+  "probeSHA256": "8a8f2dc68711fb38ed996ed14e6e280590606b5315d566a90cb9d3aaf08414a4",
   "checks": [
     "release metadata matches exact deployed HTML and worker",
-    "desktop: 48 fixed question/card readings equal across locale, timezone and screen",
+    "desktop: 80 fixed question/card/settings readings equal across locale, timezone and screen",
     "desktop: complete app cache respects nested deployment scope",
-    "desktop: offline new tab serves same 48 readings",
+    "desktop: offline new tab serves same 80 readings",
     "desktop: all 78 embedded original JPEGs decode offline",
     "offline draw/reveal/save works without a model server",
-    "android-emulation: 48 fixed question/card readings equal across locale, timezone and screen",
+    "android-emulation: 80 fixed question/card/settings readings equal across locale, timezone and screen",
     "android-emulation: complete app cache respects nested deployment scope",
-    "android-emulation: offline new tab serves same 48 readings",
+    "android-emulation: offline new tab serves same 80 readings",
     "android-emulation: all 78 embedded original JPEGs decode offline",
     "android-emulation: backup restores the same question/cards/report without cloud sync",
-    "iphone-emulation: 48 fixed question/card readings equal across locale, timezone and screen",
+    "iphone-emulation: 80 fixed question/card/settings readings equal across locale, timezone and screen",
     "iphone-emulation: complete app cache respects nested deployment scope",
-    "iphone-emulation: offline new tab serves same 48 readings",
+    "iphone-emulation: offline new tab serves same 80 readings",
     "iphone-emulation: all 78 embedded original JPEGs decode offline",
     "iphone-emulation: backup restores the same question/cards/report without cloud sync",
     "mismatched update is rejected and old offline app and records survive",
@@ -30,9 +32,9 @@
     "blocked service workers leave online reading available and never claim offline readiness"
   ],
   "errors": [],
-  "browser": "156.0.4314.42",
+  "browser": "156.0.4314.50",
   "profiles": 3,
-  "questionCardCombinationsPerProfile": 48,
-  "readingParitySHA256": "cb52fe0826a97df94aab6cbdc2d3959a284b4e3691554faef8def0e3d3a3d918",
-  "note": "Actual browser cache, network-offline and update tests. Android/iPhone profiles are Chromium emulations, not physical phone or Safari tests. Reading equality does not prove professional quality."
+  "questionCardCombinationsPerProfile": 80,
+  "readingParitySHA256": "b7c62c0e537e0274b4cbdaac1ffe41a076aa337d9737332e2eea20f115bc4e54",
+  "note": "Actual browser cache, network-offline and update tests. Inputs include manual topic/focus settings and known compound requests. Android/iPhone profiles are Chromium emulations, not physical phone or Safari tests. Reading equality does not prove professional quality."
 }

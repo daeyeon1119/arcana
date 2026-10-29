@@ -2,7 +2,7 @@
 const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto'),zlib=require('node:zlib');
 const fixture=JSON.parse(fs.readFileSync('tests/generalization-v81.json','utf8')),hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 (async()=>{const browser=await require('./browser.cjs')();try{
- fs.mkdirSync('.cache',{recursive:true});if(!fs.existsSync('.cache/v81.html'))fs.writeFileSync('.cache/v81.html',require('node:child_process').execFileSync('git',['show','0a8099d:index.html'],{maxBuffer:40*1024*1024}));
+ fs.mkdirSync('.cache',{recursive:true});if(!fs.existsSync('.cache/v81.html'))require('./save-artifact.cjs') ('.cache/v81.html',require('node:child_process').execFileSync('git',['show','0a8099d:index.html'],{maxBuffer:40*1024*1024}));
  assert.equal(hash(fs.readFileSync('.cache/v81.html')),'7b6a8293f68f568fb07962911e51748f10583b1134e59241c6504c6d7332aa67');
  const page=await browser.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route('https://**/*',r=>r.abort());
  const run=async path=>{await page.goto(browser.appURL+path,{waitUntil:'domcontentloaded',timeout:60000});return page.evaluate(groups=>{
@@ -40,8 +40,8 @@ const fixture=JSON.parse(fs.readFileSync('tests/generalization-v81.json','utf8')
  await page.locator('#saveReading').click();check('current engine version is saved',await page.evaluate(version=>storedRecords()[0].engineVersion===version,require('../release.json').readingEngine));
  await page.locator('.nav-item[data-view="history"]').click();await page.locator('#historyList [data-history]').first().click();check('saved reading retains both requests',(await page.locator('#historyDetailContent .human-direct').innerText()).includes('전달할 결론'));
  const folder='test-results/question-model';fs.mkdirSync(folder,{recursive:true});fs.copyFileSync('.cache/context-form.png',folder+'/context-form.png');
- for(const [name,rows]of [['before',before],['after',after]])fs.writeFileSync(folder+'/'+name+'-readings.jsonl.gz',zlib.gzipSync(rows.map(r=>JSON.stringify(r)).join('\n')+'\n'));
- fs.writeFileSync(folder+'/samples.json',JSON.stringify({before:old.questions,after:fresh.questions},null,2));
+ for(const [name,rows]of [['before',before],['after',after]])require('./save-artifact.cjs') (folder+'/'+name+'-readings.jsonl.gz',zlib.gzipSync(rows.map(r=>JSON.stringify(r)).join('\n')+'\n'));
+ require('./save-artifact.cjs') (folder+'/samples.json',JSON.stringify({before:old.questions,after:fresh.questions},null,2));
  const summary={note:'54 known v81 questions, replayed as development/regression data. Classification scores do not measure professional quality.',appSHA256:hash(fs.readFileSync('index.html')),questions:54,readingsPerVersion:432,before:{intent:old.intent,domain:old.domain,facts:old.facts},after:{intent:fresh.intent,domain:fresh.domain,facts:fresh.facts},checks,errors,failures:fresh.questions.filter(q=>q.intentMatch===false||q.domainMatch===false||q.factChecks.some(f=>!f.ok)).map(q=>({group:q.group,variant:q.variant,question:q.question,intentMatch:q.intentMatch,domainMatch:q.domainMatch,facts:q.factChecks.filter(f=>!f.ok)}))};
- fs.writeFileSync(folder+'/regression-summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));
+ require('./save-artifact.cjs') (folder+'/regression-summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));
  }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
