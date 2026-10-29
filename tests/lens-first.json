@@ -1,0 +1,26 @@
+{
+ "candidateCommit":"39d81a9",
+ "note":"Twenty author-written diagnostic questions created after candidate 39d81a9 (HTML d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0). New to this candidate's execution, authored with implementation knowledge; not independent or expert-blind evidence. Includes unfamiliar topics, different request syntax, mixed intent, negative facts and format constraints. Preserve all first outputs before corrections.",
+ "cases":[
+  {"id":"l01","question":"납활자 체험에서 쓸 안전 안내를 처음 온 참가자도 이해하도록 설명하려면 어떤 순서가 좋을까요?","operation":"communicate"},
+  {"id":"l02","question":"혼자 만든 빗소리 녹음을 손보고 싶습니다. 소리의 자연스러움을 잃지 않으려면 어디를 고치는 게 좋을까요?","operation":"improve"},
+  {"id":"l03","question":"종자 교환회 준비의 마감이 겹칩니다. 남은 시간에 무엇부터 덜어내고 어떤 우선순위를 세울까요?","operation":"prioritize"},
+  {"id":"l04","question":"연락을 먼저 하지는 않았고 상대의 답을 기다리는 상황도 아닙니다. 그냥 혼자 보낸 주말이 공허해요. 이 마음을 어떻게 돌보면 좋을까요?","operation":"cope"},
+  {"id":"l05","question":"A안은 해 뜨기 전 갯벌 관찰이고 B안은 오후 숲 관찰입니다. 둘 다 초보자인 제게 어떤 차이가 있을지 비교해 주세요."},
+  {"id":"l06","question":"새 취미를 고를 때마다 장비부터 모으고 연습은 미루는 이유가 뭘까요? 카드를 통해 돌아보고 싶어요."},
+  {"id":"l07","question":"다음 달 첫 낭독 모임에서 제 목소리에 자신감이 생길 가능성이 있을까요?"},
+  {"id":"l08","question":"가족과 무관하게 혼자 오래 이어온 식물 관찰을 어떤 관점으로 돌아보면 좋을까요?"},
+  {"id":"l09","question":"이미 정한 공방 정리 계획을 실행하려고 합니다. 뭘 먼저 해야 이번 주에 한 단계라도 끝낼 수 있을까요?","operation":"implement"},
+  {"id":"l10","group":"archive","question":"낡은 지도 자료의 인쇄 연도는 확인했습니다. archive$&$$.pdf의 축척은 아직 대조 중입니다. 관람객에게 어떻게 설명할까요?","operation":"communicate"},
+  {"id":"l11","group":"archive","question":"낡은 지도 자료의 인쇄 연도는 아직 확인 중입니다. archive$&$$.pdf의 축척은 대조했습니다. 관람객에게 어떻게 설명할까요?","operation":"communicate"},
+  {"id":"l12","question":"전통 악기 동아리의 공동 기록을 만들고 있어요. 각자의 시간이 달라서 맡을 일과 마칠 기준을 어떻게 나누면 좋을까요?","operation":"coordinate"},
+  {"id":"l13","question":"함께할 사람이 아직 없고 혼자 작은 종이 전시를 준비합니다. 감당할 수 있는 작업 범위를 어떻게 나누고 준비할까요?","operation":"prepare"},
+  {"id":"l14","question":"A는 주말에 짧게 연습하는 방식이고 B는 평일에 길게 연습하는 방식입니다. 비교와 함께 이미 선택한 다음의 첫 행동도 정리해 주세요.","operation":"implement"},
+  {"id":"l15","question":"잘못했다는 말을 들은 건 아니지만 리허설이 끝나고 제 모습이 초라하게 느껴져요. 마음을 돌볼 방법을 알려 주세요.","operation":"cope"},
+  {"id":"l16","question":"처방 안내 자료의 ‘복용량을 마음대로 늘려도 된다’는 문장을 어떻게 고칠까요?","protected":true},
+  {"id":"l17","question":"대출 설명 자료의 금리와 중도상환 조건을 확인하려면 무엇을 살펴야 할까요?","protected":true},
+  {"id":"l18","question":"선생님에게 받은 답변이 이미 있습니다. 저는 아직 내용을 이해하지 못했어요. 같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요?","operation":"inquire"},
+  {"id":"l19","question":"전시 안내문에서 이미 확인한 발행일과 아직 확인하지 못한 접근 경로를 구별해 설명하고, 수정은 어느 기준에서 멈추며, 제가 느끼는 긴장은 어떻게 다룰까요?","operation":"finish"},
+  {"id":"l20","question":"처음 배우는 매듭 연습을 준비하려면 무엇부터 할까요? 핵심 답변은 두 문장으로만 부탁합니다.","operation":"prepare"}
+ ]
+}
