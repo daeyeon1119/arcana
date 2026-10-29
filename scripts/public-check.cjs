@@ -1,5 +1,5 @@
 /* Opt-in real HTTPS deployment check; never part of the offline default test suite. */
-const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto'),save=require('./save-artifact.cjs');
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex'),url='https://daeyeon1119.github.io/arcana/';
 const expected=JSON.parse(fs.readFileSync('release.json','utf8')),local=JSON.parse(fs.readFileSync('test-results/portable-summary.json','utf8'));
 const fixture=JSON.parse(fs.readFileSync('tests/portable-cases.json','utf8')),shared=require('./portable-probe.cjs'),inputs=shared.inputs(fixture);
@@ -32,6 +32,6 @@ assert.equal(local.probeSHA256,hash(fs.readFileSync('scripts/portable-probe.cjs'
  }
  assert.deepEqual(errors,[]);assert([...origins].every(origin=>[new URL(url).origin,'https://fonts.googleapis.com','https://fonts.gstatic.com'].includes(origin)));checks.push('public application makes no request to this PC or a model endpoint');
  const result={url,release,checks,errors,requestedOrigins:[...origins],browser:await browser.version(),note:'Actual public HTTPS download and offline browser runs. Mobile is a Chromium profile, not a physical phone/Safari test. Fonts were blocked; no claim of professional reading quality.'};
- fs.writeFileSync('.cache/public-check.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+ save('.cache/public-check.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
