@@ -1,0 +1,193 @@
+{
+  "note": "First execution on questions authored only after candidate 93a77f8d49eaebd028f0b5c638fb2b0f6e94487b was committed. Self-authored evaluation, not independent, blind or expert. Cases cover new fields, inflections, foreign subjects, negation, received material, compound tasks and insufficient context. Labels never enter the engine. Once outputs are viewed these cases become known regression data.",
+  "candidateCommit": "93a77f8d49eaebd028f0b5c638fb2b0f6e94487b",
+  "candidateAppSHA256": "aeb43655a943342449ea8d34da8099ccbf189d6050f8fa0b045c2507fdbc99ea",
+  "cases": [
+    {
+      "id": "n01",
+      "question": "Lea가 답장을 받았다고 했어요. 저는 제가 만든 목차를 어떤 순서로 점검할까요?",
+      "expect": {
+        "state": {
+          "received": null
+        },
+        "medical": false
+      }
+    },
+    {
+      "id": "n02",
+      "question": "💬 Lin에게 정리한 의견을 보냈습니다. 제 표현에서 무엇을 돌아볼까요?",
+      "expect": {
+        "state": {
+          "sent": true
+        },
+        "medical": false
+      }
+    },
+    {
+      "id": "n03",
+      "question": "마을 기록관 자원봉사자입니다. 처음 온 방문객에게 자료 열람 순서를 어떻게 알려줄까요?",
+      "expect": {
+        "medical": false
+      }
+    },
+    {
+      "id": "n04",
+      "question": "담당 검사가 보내 준 목록을 받았지만 열어보지는 않았어요. 빠진 서류가 있는지 확인하려면 무엇부터 해야 할까요?",
+      "expect": {
+        "medical": false,
+        "state": {
+          "received": true
+        },
+        "readPrerequisite": true
+      }
+    },
+    {
+      "id": "n05",
+      "question": "보험회사 신입 채용 면접에서 면접관에게 여쭐 질문을 어떻게 정리하면 좋을까요?",
+      "expect": {
+        "domain": "career",
+        "medical": false,
+        "operations": [
+          "inquire"
+        ]
+      }
+    },
+    {
+      "id": "n06",
+      "question": "주식회사와 첫 공급 계약을 앞두고 있어요. 계약서를 설명하는 순서를 어떻게 잡을까요?",
+      "expect": {
+        "notDomain": [
+          "finances"
+        ],
+        "medical": false
+      }
+    },
+    {
+      "id": "n07",
+      "question": "다육식물의 잎이 떨어지는 원인을 진단하려고 관찰 일지를 쓰고 있어요. 기록의 빈틈은 어떻게 살필까요?",
+      "expect": {
+        "medical": false,
+        "notDomain": [
+          "health"
+        ]
+      }
+    },
+    {
+      "id": "n08",
+      "question": "다음 달 채용 발표를 기다리는데 오른손 저림이 계속돼요. 진료에서 증상을 어떻게 이야기하면 좋을까요?",
+      "expect": {
+        "domain": "health",
+        "medical": true
+      }
+    },
+    {
+      "id": "n09",
+      "question": "치과 진료를 예약했습니다. 이미 적어 둔 증상 설명을 간결하게 전하려면 어떤 점을 줄여야 할까요?",
+      "expect": {
+        "domain": "health",
+        "medical": true
+      }
+    },
+    {
+      "id": "n10",
+      "question": "몸이 아프다는 뜻은 아니에요. 동아리에서 건강한 토론 규칙을 어떻게 합의할까요?",
+      "expect": {
+        "medical": false,
+        "notDomain": [
+          "health"
+        ]
+      }
+    },
+    {
+      "id": "n11",
+      "question": "박물관으로부터 회신은 왔지만 아직 읽지 않았습니다. 신청 자격이 맞는지 살피려면 어떻게 시작할까요?",
+      "expect": {
+        "state": {
+          "received": true,
+          "read": false
+        },
+        "readPrerequisite": true
+      }
+    },
+    {
+      "id": "n12",
+      "question": "답장은 받지 못했고 추가 연락도 하지 않았어요. 다음 안내에 담을 질문을 무엇부터 준비할까요?",
+      "expect": {
+        "state": {
+          "received": false,
+          "sent": false
+        },
+        "operations": [
+          "inquire"
+        ]
+      }
+    },
+    {
+      "id": "n13",
+      "question": "동료의 회신을 읽었지만 제 의견은 아직 보내지 않았어요. 이해한 내용이 맞는지 여쭈려면 무엇을 준비할까요?",
+      "expect": {
+        "state": {
+          "received": true,
+          "read": true,
+          "sent": false
+        },
+        "operations": [
+          "inquire"
+        ]
+      }
+    },
+    {
+      "id": "n14",
+      "question": "보내 준 답은 읽었습니다. 그와 별도로 제가 만든 목공 안내서를 초보자에게 어떻게 설명할까요?",
+      "expect": {
+        "state": {
+          "received": true,
+          "read": true
+        },
+        "operations": [
+          "communicate"
+        ]
+      }
+    },
+    {
+      "id": "n15",
+      "question": "행사 대관 조건을 알아보려는데 비용은 일부만 들었습니다. 우선 살필 항목과 담당자에게 물을 질문을 각각 정리해 주세요.",
+      "expect": {
+        "medical": false
+      }
+    },
+    {
+      "id": "n16",
+      "question": "주민의 의견을 들으려고 배포할 설문 안내문을 어떻게 고칠까요?",
+      "expect": {
+        "medical": false
+      }
+    },
+    {
+      "id": "n17",
+      "question": "보증금 반환을 기다리고 있어요. 상대의 속마음 추측보다 지금 가진 자료와 빠진 자료를 어떤 기준으로 구별할까요?",
+      "expect": {
+        "medical": false
+      }
+    },
+    {
+      "id": "n18",
+      "question": "무엇부터 해야 할지 모르겠어요. 지금 어떤 방향이 좋을까요?",
+      "expect": {}
+    },
+    {
+      "id": "n19",
+      "question": "졸업 전시를 혼자 꾸릴지 동료와 같이 할지 고민입니다. 두 방식의 부담과 제가 지키려는 기준을 어떻게 비교할까요?",
+      "expect": {
+        "medical": false
+      }
+    },
+    {
+      "id": "n20",
+      "question": "그 사람이 친절한 이유가 궁금하지만 사적인 이야기는 듣지 못했어요. 제 기대와 실제 관찰을 어떤 기준으로 나눠 볼까요?",
+      "expect": {
+        "medical": false
+      }
+    }
+  ]
+}
