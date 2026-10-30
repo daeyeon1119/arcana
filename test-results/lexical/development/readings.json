@@ -209,7 +209,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -615,7 +616,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -1079,7 +1081,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -1537,7 +1540,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -2019,7 +2023,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -2455,7 +2460,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -2913,7 +2919,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -3477,7 +3484,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -53625,7 +53633,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -54103,7 +54112,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -54621,7 +54631,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -55169,7 +55180,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -55717,7 +55729,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -56225,7 +56238,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -56785,7 +56799,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -57445,7 +57460,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -60884,7 +60900,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -61384,7 +61401,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -61924,7 +61942,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -62494,7 +62513,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -63064,7 +63084,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -63564,7 +63585,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -64104,7 +64126,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -64744,7 +64767,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -65201,7 +65225,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -65659,7 +65684,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -66205,7 +66231,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -66715,7 +66742,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -67231,7 +67259,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -67689,7 +67718,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -68253,7 +68283,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -68863,7 +68894,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -69297,7 +69329,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -69795,7 +69828,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -70333,7 +70367,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -70871,7 +70906,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -71427,7 +71463,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -71925,7 +71962,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -72493,7 +72531,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -73143,7 +73182,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -73544,7 +73584,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -73940,7 +73981,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -74376,7 +74418,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -74812,7 +74855,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -75296,7 +75340,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -75704,7 +75749,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -76140,7 +76186,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -76724,7 +76771,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {

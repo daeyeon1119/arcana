@@ -2,9 +2,9 @@
   "release": {
     "appVersion": "89.0.0",
     "readingEngine": 89,
-    "appSHA256": "aeb43655a943342449ea8d34da8099ccbf189d6050f8fa0b045c2507fdbc99ea",
-    "appBytes": 33136512,
-    "webRelease": "92550add8b6a20a958540079",
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
     "languageAnalysis": {
       "backend": "garu-ko",
       "version": "0.11.0",
@@ -12,7 +12,7 @@
       "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
     }
   },
-  "readingsSHA256": "e6e598c34f822a4bc21be3e8d71e32f850a7c98d1ea2e21586f8812479ff0199",
+  "readingsSHA256": "4d6fa3b7d3649d5fe4901bca7b7c439d83dc8faec680305aac5494cccdb3776e",
   "directlyRead": [
     {
       "id": "k01",

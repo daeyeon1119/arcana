@@ -9,6 +9,8 @@
     "failed": false
   },
   "checks": [
+    "content exchange and adjacent past clauses retain separate polarity and unknown relative senders",
+    "nonhuman background and a denied proposition do not erase separately asserted clinical symptoms",
     "literal eojeol spans are valid UTF-16 across astral symbols, combining marks and quotations",
     "nominal subjects, temporal/symbol prefixes and adnominal predicates retain participant polarity",
     "purpose/means and requested question output differ from negative inquiry, biting and explicit condition checks",
@@ -17,6 +19,6 @@
     "loaded model and WASM are the pinned unchanged vendored bytes",
     "synthetic per-input analysis failure does not contaminate later valid analysis or initialization status"
   ],
-  "records": 29,
+  "records": 35,
   "scope": "Known Unicode, grammatical-role and purpose development assertions. Not distinct unseen questions, semantic expert scores or a proof of unrestricted Korean analysis."
 }

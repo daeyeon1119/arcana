@@ -3,9 +3,9 @@
   "release": {
     "appVersion": "89.0.0",
     "readingEngine": 89,
-    "appSHA256": "d32e9534f3cc4a8ff7b0b64edf545af5d5c42b712937c3b68953f4e590b60213",
-    "appBytes": 33133798,
-    "webRelease": "7fe18e89a145e0eda51475a2",
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
     "languageAnalysis": {
       "backend": "garu-ko",
       "version": "0.11.0",
@@ -18,7 +18,7 @@
   "collectorSHA256": "fc3ce09c7338ea045392d600261da56627dbcfa93bca4d591ab6b2341e8aa83e",
   "seed": 880031,
   "note": "Twenty synthetic author-written questions created after candidate commit 83cd30a. First execution on that frozen implementation; not independent, blind or expert evaluation. Outputs and failures remain immutable. Question variants are development material after review. Expected facts are evaluator-only. Known regression after first outputs informed changes.",
-  "readingsSHA256": "08566a93a41276c626c48d2252a1bf57373f46cf4fb305220fcdc5ce43982f01",
+  "readingsSHA256": "3bfa308094e183842143fba9b3839e258a5733ad80e06c7c392d72f6ac3343c3",
   "questions": 20,
   "readingsPerVersion": 160,
   "errors": [],

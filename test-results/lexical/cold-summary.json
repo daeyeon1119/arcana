@@ -2,9 +2,9 @@
   "release": {
     "appVersion": "89.0.0",
     "readingEngine": 89,
-    "appSHA256": "aeb43655a943342449ea8d34da8099ccbf189d6050f8fa0b045c2507fdbc99ea",
-    "appBytes": 33136512,
-    "webRelease": "92550add8b6a20a958540079",
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
     "languageAnalysis": {
       "backend": "garu-ko",
       "version": "0.11.0",
@@ -15,7 +15,7 @@
   "results": [
     {
       "profile": "desktop-http",
-      "fingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "fingerprint": "c0c9516a24dd73f882a747769e888350b39832410361800066f72f92e9fc5bbd",
       "questions": 24,
       "status": {
         "backend": "garu-ko",
@@ -25,9 +25,9 @@
         "ready": true,
         "failed": false
       },
-      "initialElapsedMs": 1878.5999999977648,
+      "initialElapsedMs": 2224.7000000029802,
       "freshOfflineModelReady": true,
-      "offlineFingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "offlineFingerprint": "c0c9516a24dd73f882a747769e888350b39832410361800066f72f92e9fc5bbd",
       "noticesAvailableInAbout": true,
       "externalModelRequests": 0,
       "questionUploadObserved": false,
@@ -35,7 +35,7 @@
     },
     {
       "profile": "mobile-http",
-      "fingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "fingerprint": "c0c9516a24dd73f882a747769e888350b39832410361800066f72f92e9fc5bbd",
       "questions": 24,
       "status": {
         "backend": "garu-ko",
@@ -45,9 +45,9 @@
         "ready": true,
         "failed": false
       },
-      "initialElapsedMs": 1045.8999999985099,
+      "initialElapsedMs": 1048.5999999977648,
       "freshOfflineModelReady": true,
-      "offlineFingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "offlineFingerprint": "c0c9516a24dd73f882a747769e888350b39832410361800066f72f92e9fc5bbd",
       "noticesAvailableInAbout": true,
       "externalModelRequests": 0,
       "questionUploadObserved": false,
@@ -55,7 +55,7 @@
     },
     {
       "profile": "cold-file",
-      "fingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "fingerprint": "c0c9516a24dd73f882a747769e888350b39832410361800066f72f92e9fc5bbd",
       "questions": 24,
       "status": {
         "backend": "garu-ko",
@@ -65,7 +65,7 @@
         "ready": true,
         "failed": false
       },
-      "initialElapsedMs": 734.9000000022352,
+      "initialElapsedMs": 885.9000000022352,
       "freshOfflineModelReady": null,
       "offlineFingerprint": null,
       "noticesAvailableInAbout": true,

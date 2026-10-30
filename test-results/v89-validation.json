@@ -1,0 +1,445 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "interpretationSourceCommit": "159378a50c249e4bc039b788b4fd307d2402d1cb",
+  "checks": [
+    {
+      "artifact": "test-results/stress-summary.json",
+      "sha256": "db774b2767da081571309334dfd66c604619456a28fd58fd463f3182609f32f4",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/editorial/v89-summary.json",
+      "sha256": "93bcd083a83bd5a5d811d3a526bd7f5ce04a48132aa7907062d4a1249e540ae0",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/synthesis/v89-summary.json",
+      "sha256": "a072864ba5041ed1b0f2372b919dda21ba0416381fc4abca15dac2719c4f5b47",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/portable-summary.json",
+      "sha256": "17e71722caed5ac848930bd3da646eba47fb5c35f31d1e1518eedcb06cb1f525",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/ui-summary.json",
+      "sha256": "f48e67ca6628266a45754130e38200d91fae3857f26d60215a89c6dc93831a4c",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/images-summary.json",
+      "sha256": "57a66fd02f2d6c891ed60f8a01091d354eecea5821b4590902ea36d680814951",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/ui-summary.json",
+      "sha256": "644c0965e193f550b9cc81d5e3c60383894efeb9ab2f469071cfc7c2a3ad702b",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/alignment/ui-summary.json",
+      "sha256": "9f594e9acbb582cdf796f9b659d2193ee6e1daea8c627f66a034d720d328f740",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/verification/ui-summary.json",
+      "sha256": "9da0a2c3101703ed1fa13ae08814969c980240336194be8deb195d029c471207",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/build-repro-v89.json",
+      "sha256": "c815b43d0d8f46f1b61a2809956e75b9fe640ad7030e1b0c28c61b90dd9e91c7",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lens/ui-summary.json",
+      "sha256": "a6f20367a7d531842841ff77b0429eaec0e641be69d2ed35456a8f13db05674b",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/device/summary.json",
+      "sha256": "84d86850f0734b5c33725a7344dc09eaa5a79ea9fa8b2ec81a00950f69e6d39b",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/ui-summary.json",
+      "sha256": "0cf9b80858f169d69d28a72340036860c2d5582e1234f550fefd544e3e47460f",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/v89/development/summary.json",
+      "sha256": "549c812ab8a20a9317a2e9ce2675ffbaa9fd3854ebe8dbf882785d79d3a87081",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/v89/regression/summary.json",
+      "sha256": "39656b2bc85f4e99ba962d9f036aa4cd4cdbd1329d386608a11183a0f295263a",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/alignment/v89/development/summary.json",
+      "sha256": "b2c51f40101c31118c860ea4b9013d787059e7aee23acc2099a43e3eb10a379e",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/alignment/v89/regression/summary.json",
+      "sha256": "f6b4ab3113abf2bc8c67fe3cb375f2e75b3fe7c0858b825e1ce848fe516913a3",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v89/development/summary.json",
+      "sha256": "8226a2be821a4c02e05935edcb028c68ceadab30e0dbd57b2bf46333f20720ed",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v89/regression/summary.json",
+      "sha256": "db5fa542bb50fb1a62f842a6f5367c10745ec29abfa62c2d6129e4104e946a09",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v89/fresh-regression/summary.json",
+      "sha256": "d6fb222f80cf4b816dc7b35c3c6ce01d95c1e0fb3afcc0b38613577327242e48",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/verification/v89/development/summary.json",
+      "sha256": "cf7bee022e05a1efac211764d89e87963f9f9e08ee1004f559fff5e1c7d53e2e",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/verification/v89/regression/summary.json",
+      "sha256": "1c68ec771bd6769ff7b76cd497b425b20d075be6a1c7da6987950391c601fc6e",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lens/v89/development/summary.json",
+      "sha256": "152daf4409aadfe1c56df4cd8fa33a5ad5fa7d0c2254800b791a1ad9e6b126da",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lens/v89/regression/summary.json",
+      "sha256": "29b5517978b669aee6fa1b5fe69f06601d5bd6271ec8cb7f70ad34e183d6b525",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/v89/development/summary.json",
+      "sha256": "0d4a4735a58450a02f4fff2540030b257c95c31261afea59e372a245d27f81f3",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/v89/regression/summary.json",
+      "sha256": "81793b57d30b28f5816f79e8397d36b661241451f77bf1c19bfef1b604741e99",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/mat/after-geometry.json",
+      "sha256": "4e08073c333da022a00a430e51ddbcf28c729b9a756db217f00ef547d64e047f",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/question-text/unit-summary.json",
+      "sha256": "973fabd79c915f6fda68d7b7b77cdfacc0bc3baf8fea94fd4f0b023d4c9c7bbf",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/question-model/unit-summary.json",
+      "sha256": "c48cf7b8a11215cc4b0c56a9eadc99241f14773f83c20e9f4829eceb3a68ff75",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/unit-summary.json",
+      "sha256": "065ccdf9f5981707625b8c1f2409fa6cb2f793fa4c4c3ca21bb9fc18e138987e",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/evidence-summary.json",
+      "sha256": "43b547c60592145245ff75fde6bc2175cee7e1f8e29338fe870b6911b8ce7bfb",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/bridge-summary.json",
+      "sha256": "f293c5cabe19a514a924a0b051c786100f1aa3f2ca0476b5c79fe6e81673613e",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/verification/unit-summary.json",
+      "sha256": "2cd898fef3687dca63364d85419f81365bf8ef6778c87e8234200630618d6d9e",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/v89/development/property-summary.json",
+      "sha256": "851c58901b7b3b11c2bb5d69dc2234b96886e1b39f4d36a414011d2989e2f93b",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/v89/development/review-scope.json",
+      "sha256": "68a1bec87bca1ac4ce2e18741645909e3acefaa8d1bd77cac691eac3b5517883",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/v89/regression/review-scope.json",
+      "sha256": "5e3f7daeee1d30c271ce1f78c5591f503a8e5333e9e23af133743dd97cde0804",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/editorial/v89-review.json",
+      "sha256": "3226f46a7d69386269ac7fba5980bc4c440d1561d3dc27a48431425a8c4c7184",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/unit-summary.json",
+      "sha256": "8472b2592e5144ec10ab03c36b9699533a7a9592d12fc26dc35109aa5d8a15d0",
+      "appSHA256": null,
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/development/summary.json",
+      "sha256": "a73f2d7857c1fae883a5f217564807574a09a31ef2903de0868f36e38f2f9c96",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/development/review-scope.json",
+      "sha256": "014a383ca343a1258509ec3f18542e783b3bc7b5ce07194354345f44a00e0a56",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/regression/summary.json",
+      "sha256": "9c6e28d43568baf0266e952fffe1db6ea5ccaec9743c301ff1bcf6f5fef2f1e1",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/regression/review-scope.json",
+      "sha256": "2a1a8bb42b79e4f6ff382f8d5adb78c4a64f3876784b40db321bae175fcf5f03",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/cold-summary.json",
+      "sha256": "664189de422bf7bcef1741ced46ac47a805946e9c9b08e7e2842dc2298ada953",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lens/v89/development/review-scope.json",
+      "sha256": "64b5d6f2407a9802bde0bf5d39286c9ee15caa97a0e5a8c4cd0b41c48c8419d3",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/lens/v89/regression/review-scope.json",
+      "sha256": "c08e7a5c65bc84fb291140c2ef84c41dd88c4934755a2e49c72c9d98b834c21b",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/question-model/regression-summary.json",
+      "sha256": "8b71766ab63bb0ed100b5286676c001c3b07e256e769f0fd3e1c191c41c78f7c",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    },
+    {
+      "artifact": "test-results/question-model/unseen/regression/summary.json",
+      "sha256": "793183a669c2bd3857fdd94d4ce1deeaaf3c0f1dea297fea52aba0b280f88484",
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "scope": "Technical, known development/regression or explicitly bounded manual-review evidence. No expert score."
+    }
+  ],
+  "fullTestExitCode": 0,
+  "old704RegressionChainExitCode": 0,
+  "fullTestLogSHA256": "065e155fe01c2c3554bacb3f4004e0a908fb8f42ac3cf9fd329488cf905f0aa5",
+  "oldRegressionLogSHA256": {
+    "v89-reviewed-task.log": "032dee3254508f0fbe43cf30e405bf920a6aeac56e681ee81b6623bd567630b8",
+    "v89-reviewed-fresh.log": "7b009c062ae1704f1632d720390f61476ba2b2bd4a3b7c9d7a9592687aefc879",
+    "v89-reviewed-grounding.log": "41dc3064fadaa593807123b336d4a63039e82a69b41c28ce589f49d301d1a945",
+    "v89-reviewed-alignment.log": "e720edf2e11e444347e14dbac4aa78511e21ad788766d57512c1a40d78b8d047"
+  },
+  "preservedFirstOutputs": {
+    "test-results/grounding/first/readings.json": "150111acdbd495e434017c89a751fbc0d0573bec4ac1c10a342e99df6423d821",
+    "test-results/alignment/first/readings.json": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+    "test-results/verification/first/readings.json": "0f97498364ce94959a852f87768e820b9b14727d01815178289d6d0a10d6613e",
+    "test-results/lens/first/readings.json": "d7263373aed6f8bcd5e4c9fb38dbb6df1b1db0e71f32366b2e7a9a6b40dc2855",
+    "test-results/event-state/first/readings.json": "91bdf1a5c929defdceb393b827563b13dcb2f3200089b23b8cbdeb921369cce4",
+    "test-results/lexical/first/readings.json": "4b2fa9b373ecc51ba1e4d5b828c6f85dcc0531b87a9f5bc6bd2aa1b38b607ed5"
+  },
+  "stressReadings": 1024,
+  "portableCombinationsPerProfile": 272,
+  "portableProfiles": 3,
+  "knownLexicalDevelopmentReadings": 192,
+  "knownLexicalRegressionReadings": 160,
+  "newFirstExecution": {
+    "questions": 20,
+    "readings": 160,
+    "candidateCommit": "93a77f8d49eaebd028f0b5c638fb2b0f6e94487b",
+    "preservedCommit": "4c9de9da05e52dcd3e5019e628afbcc395fca7f2",
+    "contractFailedQuestionIds": [
+      "n02",
+      "n04",
+      "n07",
+      "n10",
+      "n11",
+      "n13"
+    ],
+    "note": "First execution is self-authored and is now known regression data. Original failures remain unchanged."
+  },
+  "remainingSemanticLimits": [
+    "n01 목차 점검 요청 누락",
+    "n02 표현 성찰의 기준 누락",
+    "n04/n11 received-source checking includes unnecessary generic conditions",
+    "n06 계약서 설명 대상 어긋남",
+    "n07 관찰 기록 점검의 구체성 부족",
+    "n09 증상 설명 축약을 진료 질문으로 바꿈",
+    "n10 토론 규칙을 업무 분담으로 설명",
+    "n12 next notice versus future reply scope",
+    "n15 복합 결과물 누락",
+    "n17 자료 구별 방법 부족",
+    "n18 정보 부족 확인 누락",
+    "n19 두 방식 비교 누락",
+    "n20 기대와 관찰 구별 기준 누락",
+    "weak contextual card applications and repeated generic advice",
+    "Development k02/k05/k07/k10/k11/k13/k15-k19/k24 limitations recorded separately.",
+    "Broader domain depth, repeated language and weak card integration remain below the professional target."
+  ],
+  "technicalPass": true,
+  "qualityScore": null,
+  "independentExpertReview": false,
+  "physicalPhoneUIOrAirplaneModeVerified": false,
+  "note": "Exact-build final technical checks. Existing semantic failures and strict diagnostic disagreements are not hidden by contract passes. No paid service, question upload, native model/server dependency or generated card art added. Public deployment checks are recorded only after merge.",
+  "strictLegacyDiagnosticDisagreements": [
+    {
+      "group": "sent",
+      "variant": 0,
+      "question": "좋아하는 사람에게 문자를 보냈는데 답장은 없어요. 더 보내고 싶은 마음을 어떻게 다룰까요?",
+      "intentMatch": false,
+      "domainMatch": true,
+      "facts": []
+    },
+    {
+      "group": "sent",
+      "variant": 2,
+      "question": "연락을 전했지만 회신을 못 받았습니다. 이 상황에서 제가 지킬 태도는 무엇인가요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    },
+    {
+      "group": "accessibility",
+      "variant": 0,
+      "question": "보드게임 규칙을 색만으로 구분해 만들었어요. 여러 사람이 편하게 쓰도록 어떻게 보완할까요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    }
+  ],
+  "strictLegacyIntentDisagreements": [
+    {
+      "id": "u01",
+      "question": "팀원이 제 일정 제안에 답해 줬어요. 그래도 거절당할까 봐 초조한 마음을 어떻게 다룰까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "replied",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u04",
+      "question": "친구에게 연락을 했지만 자신이 없어요. 받은 대답은 없고 기다리는 중입니다. 마음을 어떻게 돌볼까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "sent",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        },
+        {
+          "key": "replied",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        },
+        {
+          "key": "noReply",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u05",
+      "question": "결과가 나왔다는 말을 들었지만 아직 공식 내용을 확인하지 않았어요. 불안을 다룰 방법을 알려 주세요.",
+      "intent": false,
+      "facts": [
+        {
+          "key": "known",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    }
+  ]
+}

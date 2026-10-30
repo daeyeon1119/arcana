@@ -1,5 +1,85 @@
 [
   {
+    "question": "회신은 왔지만 아직 읽지 않았어요.",
+    "state": {
+      "sent": null,
+      "received": true,
+      "read": false,
+      "resultKnown": null,
+      "resultPublished": null,
+      "outcome": null,
+      "outcomeScope": null,
+      "assessmentCompleted": null,
+      "assessmentUpcoming": false,
+      "submitted": null,
+      "replyWaiting": false,
+      "resultWaiting": false,
+      "replyWaitingSource": "received",
+      "resultWaitingSource": null,
+      "waiting": false
+    }
+  },
+  {
+    "question": "💬 Lin에게 정리한 의견을 보냈습니다.",
+    "state": {
+      "sent": true,
+      "received": null,
+      "read": null,
+      "resultKnown": null,
+      "resultPublished": null,
+      "outcome": null,
+      "outcomeScope": null,
+      "assessmentCompleted": null,
+      "assessmentUpcoming": false,
+      "submitted": null,
+      "replyWaiting": false,
+      "resultWaiting": false,
+      "replyWaitingSource": null,
+      "resultWaitingSource": null,
+      "waiting": false
+    }
+  },
+  {
+    "question": "회신을 읽었지만 제 의견은 보내지 않았어요.",
+    "state": {
+      "sent": false,
+      "received": true,
+      "read": true,
+      "resultKnown": null,
+      "resultPublished": null,
+      "outcome": null,
+      "outcomeScope": null,
+      "assessmentCompleted": null,
+      "assessmentUpcoming": false,
+      "submitted": null,
+      "replyWaiting": false,
+      "resultWaiting": false,
+      "replyWaitingSource": "received",
+      "resultWaitingSource": null,
+      "waiting": false
+    }
+  },
+  {
+    "question": "보내 준 답은 읽었습니다.",
+    "state": {
+      "sent": null,
+      "received": true,
+      "read": true,
+      "resultKnown": null,
+      "resultPublished": null,
+      "outcome": null,
+      "outcomeScope": null,
+      "assessmentCompleted": null,
+      "assessmentUpcoming": false,
+      "submitted": null,
+      "replyWaiting": false,
+      "resultWaiting": false,
+      "replyWaitingSource": "received",
+      "resultWaitingSource": null,
+      "waiting": false
+    }
+  },
+  {
     "text": "제가 답변을 받았어요.",
     "ready": true,
     "tokens": [
@@ -1478,6 +1558,14 @@
   },
   {
     "text": "말을 걸려면 어떤 조건을 확인할까요?",
+    "actual": null
+  },
+  {
+    "text": "초안의 문장과 구성을 어떤 순서로 점검할까요?",
+    "actual": null
+  },
+  {
+    "text": "작은 실험으로 결정을 확인하려면 무엇을 할까요?",
     "actual": null
   }
 ]

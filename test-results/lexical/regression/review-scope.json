@@ -1,0 +1,142 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "c889b8955e00d8831130cb1ec6538e3e091dfe2a34f7616fdaa39cdaa45aaec1",
+  "sourceCommit": "159378a50c249e4bc039b788b4fd307d2402d1cb",
+  "directlyRead": [
+    {
+      "id": "n01",
+      "spread": "five",
+      "directSHA256": "595d03be6cd7edcdcc391dfa4094862f36126f9a9889a06cf9700c8be17b8ca4"
+    },
+    {
+      "id": "n02",
+      "spread": "five",
+      "directSHA256": "bdb68194df280866b41459fcb569ca51c70e989b4216b41afa1739029424ced0"
+    },
+    {
+      "id": "n03",
+      "spread": "five",
+      "directSHA256": "b28e0adc660bb0aeb2ceea0ede89426eabf55920c0d70694c12abe2500e40652"
+    },
+    {
+      "id": "n04",
+      "spread": "five",
+      "directSHA256": "0db23bf21b7035b19c0effe1eff592876c5f035678872a2f1db3529c1f9474c7"
+    },
+    {
+      "id": "n05",
+      "spread": "five",
+      "directSHA256": "13864656fe9a9611f058d627615a47210f1c7a340d34b2a4859f41461b7c2dfe"
+    },
+    {
+      "id": "n06",
+      "spread": "five",
+      "directSHA256": "663af2f746161399476b5f600a48f447d2c9106cd563b3f8d9a79c4dfb61374a"
+    },
+    {
+      "id": "n07",
+      "spread": "five",
+      "directSHA256": "c9ac3ed6f564a22a21d8f0697e5210439bdff9f8a7e7f73c03aa1313b9d3362d"
+    },
+    {
+      "id": "n08",
+      "spread": "five",
+      "directSHA256": "a4484abfc54ec28407bb65ae1d0fc1c184cefb43d655617652fe56e572789f91"
+    },
+    {
+      "id": "n09",
+      "spread": "five",
+      "directSHA256": "59ff005a7e15909cb62a30e07bbec39f97ed9712509255e7c7205ec9d8d5c49f"
+    },
+    {
+      "id": "n10",
+      "spread": "five",
+      "directSHA256": "77daff7361cfd23009e7ad0950ba0d35cfae9c98a0ef0b708f1ecf667c8c3783"
+    },
+    {
+      "id": "n11",
+      "spread": "five",
+      "directSHA256": "b078a00c5af3e1cecdba169cff47a5e531018817ac1b00a695d000574b45e666"
+    },
+    {
+      "id": "n12",
+      "spread": "five",
+      "directSHA256": "21a559b87ebe54984a4a4ab873ac1ebb29422d7bfb1eaf526195218798af7577"
+    },
+    {
+      "id": "n13",
+      "spread": "five",
+      "directSHA256": "ff6a0a351563a4288a73cfd21ef934a47d4f0ef32dd57fc857082c18e4eaa918"
+    },
+    {
+      "id": "n14",
+      "spread": "five",
+      "directSHA256": "ec2dbfdd2b5ee8f3d172cdf611a6782f2ea7e9bb9225a12b3bb91da2c4a69d35"
+    },
+    {
+      "id": "n15",
+      "spread": "five",
+      "directSHA256": "181b50c56d78da0ea4bf10e4a3879a6237f25173e4be9ae0b3ac2466baa0fd95"
+    },
+    {
+      "id": "n16",
+      "spread": "five",
+      "directSHA256": "7b368c8810212cd08b036e01a07cb042c30019086908ac067f71998d292fa821"
+    },
+    {
+      "id": "n17",
+      "spread": "five",
+      "directSHA256": "aed13424f1e0dd76fc122cabb51998599571f1c48a81a9d6399be47a3ed75e3a"
+    },
+    {
+      "id": "n18",
+      "spread": "five",
+      "directSHA256": "d20720f1ea5f5465cbe40369c314ec93b869469a666b459ca4f32ca8dcf75dcd"
+    },
+    {
+      "id": "n19",
+      "spread": "five",
+      "directSHA256": "e36482b00c9da4e9428177e5a802ef2cd7accf7b7baeaee8801e7d66deb1de79"
+    },
+    {
+      "id": "n20",
+      "spread": "five",
+      "directSHA256": "88d9ba0e8c259f3361e19bbec91544c550d5c71db254e49f97530041600d89f5"
+    }
+  ],
+  "mechanicalFailures": [],
+  "remainingSemanticLimits": [
+    "n01 목차 점검 요청 누락",
+    "n02 표현 성찰의 기준 누락",
+    "n04/n11 received-source checking includes unnecessary generic conditions",
+    "n06 계약서 설명 대상 어긋남",
+    "n07 관찰 기록 점검의 구체성 부족",
+    "n09 증상 설명 축약을 진료 질문으로 바꿈",
+    "n10 토론 규칙을 업무 분담으로 설명",
+    "n12 next notice versus future reply scope",
+    "n15 복합 결과물 누락",
+    "n17 자료 구별 방법 부족",
+    "n18 정보 부족 확인 누락",
+    "n19 두 방식 비교 누락",
+    "n20 기대와 관찰 구별 기준 누락",
+    "weak contextual card applications and repeated generic advice"
+  ],
+  "professionalQualityScore": null,
+  "independentExpertReview": false,
+  "scope": "Twenty known regression five-card primary answers read on final source. Complete 160 paired reports retained; all detailed spread variants were not manually reread. First execution and failures remain separate and immutable.",
+  "changedSincePreviousReadingRead": [
+    "n07"
+  ]
+}

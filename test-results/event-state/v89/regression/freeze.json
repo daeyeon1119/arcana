@@ -3,9 +3,9 @@
   "release": {
     "appVersion": "89.0.0",
     "readingEngine": 89,
-    "appSHA256": "d32e9534f3cc4a8ff7b0b64edf545af5d5c42b712937c3b68953f4e590b60213",
-    "appBytes": 33133798,
-    "webRelease": "7fe18e89a145e0eda51475a2",
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
     "languageAnalysis": {
       "backend": "garu-ko",
       "version": "0.11.0",

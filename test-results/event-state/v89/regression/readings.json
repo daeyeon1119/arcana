@@ -11,9 +11,9 @@
     ],
     "after": {
       "headline": "전달받은 내용을 먼저 살펴보기",
-      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘핵심 메시지’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
       "actions": [
-        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요."
       ],
       "sections": [
         {
@@ -98,7 +98,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -341,9 +342,9 @@
     ],
     "after": {
       "headline": "전달받은 내용을 먼저 살펴보기",
-      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’의 펜타클 시종 역방향에서 살필 관점은 ‘계획·지연’입니다. 크게 세운 방향을 확인 가능한 다음 단계로 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 조건을 읽는 것에서 끝내지 말고, 가능한 범위에서 직접 따라 해 보거나 구체적인 사례로 확인할 항목을 정해 보세요.",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘미래’의 펜타클 시종 역방향에서 살필 관점은 ‘계획·지연’입니다. 크게 세운 방향을 확인 가능한 다음 단계로 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 조건을 읽는 것에서 끝내지 말고, 가능한 범위에서 직접 따라 해 보거나 구체적인 사례로 확인할 항목을 정해 보세요.",
       "actions": [
-        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요."
       ],
       "sections": [
         {
@@ -444,7 +445,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -711,9 +713,9 @@
     ],
     "after": {
       "headline": "전달받은 내용을 먼저 살펴보기",
-      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘장애물’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘조언’의 완드 10 역방향에서 살필 관점은 ‘과부하·지원’입니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘장애물’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘조언’의 완드 10 역방향에서 살필 관점은 ‘과부하·지원’입니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
       "actions": [
-        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요."
       ],
       "sections": [
         {
@@ -848,7 +850,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -1171,9 +1174,9 @@
     ],
     "after": {
       "headline": "전달받은 내용을 먼저 살펴보기",
-      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다시 연결할 자원’의 완드 7 정방향에서 살필 관점은 ‘경계·주도성’입니다. ‘내가 취할 행동’의 소드 시종 정방향에서 살필 관점은 ‘명료함·탐색’입니다. 추진력을 방향과 사실 확인에 연결하는 조합입니다. 힘을 더 쓰기 전에 무엇을 확인하면 다음 행동이 분명해질지 살펴보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘다시 연결할 자원’의 완드 7 정방향에서 살필 관점은 ‘경계·주도성’입니다. ‘내가 취할 행동’의 소드 시종 정방향에서 살필 관점은 ‘명료함·탐색’입니다. 추진력을 방향과 사실 확인에 연결하는 조합입니다. 힘을 더 쓰기 전에 무엇을 확인하면 다음 행동이 분명해질지 살펴보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
       "actions": [
-        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요."
       ],
       "sections": [
         {
@@ -1299,7 +1302,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -1613,9 +1617,9 @@
     ],
     "after": {
       "headline": "전달받은 내용을 먼저 살펴보기",
-      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’의 세계 정방향에서 살필 관점은 ‘마무리·만족’입니다. 끝난 일과 아직 처리할 과제를 분리해 보세요. 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘다음 한 걸음’의 세계 정방향에서 살필 관점은 ‘마무리·만족’입니다. 끝난 일과 아직 처리할 과제를 분리해 보세요. 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
       "actions": [
-        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요."
       ],
       "sections": [
         {
@@ -1741,7 +1745,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -2025,9 +2030,9 @@
     ],
     "after": {
       "headline": "전달받은 내용을 먼저 살펴보기",
-      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘바꿀 수 없는 것’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. ‘오늘의 실천’의 소드 7 정방향에서 살필 관점은 ‘계획·경계’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 이미 진행된 외부 절차와 조절할 태도를 나누어 보면, 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요.",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘바꿀 수 없는 것’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. ‘오늘의 실천’의 소드 7 정방향에서 살필 관점은 ‘계획·경계’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 이미 진행된 외부 절차와 조절할 태도를 나누어 보면, 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요.",
       "actions": [
-        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요."
       ],
       "sections": [
         {
@@ -2137,7 +2142,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -2435,9 +2441,9 @@
     ],
     "after": {
       "headline": "전달받은 내용을 먼저 살펴보기",
-      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘현실의 제약’의 펜타클 시종 정방향에서 살필 관점은 ‘역량·계획’입니다. ‘실행의 첫 단계’의 펜타클 에이스 정방향에서 살필 관점은 ‘시작·자원’입니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 조건을 읽는 것에서 끝내지 말고, 가능한 범위에서 직접 따라 해 보거나 구체적인 사례로 확인할 항목을 정해 보세요.",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘현실의 제약’의 펜타클 시종 정방향에서 살필 관점은 ‘역량·계획’입니다. ‘실행의 첫 단계’의 펜타클 에이스 정방향에서 살필 관점은 ‘시작·자원’입니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 조건을 읽는 것에서 끝내지 말고, 가능한 범위에서 직접 따라 해 보거나 구체적인 사례로 확인할 항목을 정해 보세요.",
       "actions": [
-        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요."
       ],
       "sections": [
         {
@@ -2563,7 +2569,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -2897,9 +2904,9 @@
     ],
     "after": {
       "headline": "전달받은 내용을 먼저 살펴보기",
-      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘현재 상황’의 완드 5 역방향에서 살필 관점은 ‘충돌·회피’입니다. ‘가로지르는 도전’의 소드 5 정방향에서 살필 관점은 ‘충돌·경계’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘현재 상황’의 완드 5 역방향에서 살필 관점은 ‘충돌·회피’입니다. ‘가로지르는 도전’의 소드 5 정방향에서 살필 관점은 ‘충돌·경계’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
       "actions": [
-        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요."
       ],
       "sections": [
         {
@@ -3074,7 +3081,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -3485,7 +3493,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -3770,7 +3779,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -4113,7 +4123,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -4503,7 +4514,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -4884,7 +4896,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -5210,7 +5223,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -5544,7 +5558,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -5994,7 +6009,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -12265,7 +12281,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -12565,7 +12582,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -12914,7 +12932,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -13301,7 +13320,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -13666,7 +13686,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -14007,7 +14028,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -14356,7 +14378,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -14803,7 +14826,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -17646,7 +17670,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -17951,7 +17976,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -18296,7 +18322,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -18675,7 +18702,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -19085,7 +19113,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -19431,7 +19460,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -19785,7 +19815,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -20246,7 +20277,8 @@
             "predicate": "온",
             "direction": "receive",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -20609,7 +20641,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -20932,7 +20965,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -21313,7 +21347,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -21750,7 +21785,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -22178,7 +22214,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -22551,7 +22588,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -22954,7 +22992,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -23433,7 +23472,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -23851,7 +23891,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -24158,7 +24199,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -24516,7 +24558,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -24879,7 +24922,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -25262,7 +25306,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -25601,7 +25646,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -25939,7 +25985,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -26353,7 +26400,8 @@
             "predicate": "보낸",
             "direction": "send",
             "accepting": false,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -26683,7 +26731,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -27025,7 +27074,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -27438,7 +27488,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -27849,7 +27900,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -28247,7 +28299,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -28661,7 +28714,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -29074,7 +29128,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -29554,7 +29609,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           },
           {
             "kind": "reply",
@@ -53439,7 +53495,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -53742,7 +53799,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -54085,7 +54143,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -54462,7 +54521,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -54879,7 +54939,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -55254,7 +55315,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -55597,7 +55659,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {
@@ -56016,7 +56079,8 @@
             "predicate": "받은",
             "direction": "receive",
             "accepting": true,
-            "relative": true
+            "relative": true,
+            "outgoingUnestablished": false
           }
         ],
         "state": {

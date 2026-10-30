@@ -1,6 +1,6 @@
 {
   "note": "54 known v81 questions, replayed as development/regression data. Classification scores do not measure professional quality.",
-  "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+  "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
   "questions": 54,
   "readingsPerVersion": 432,
   "before": {
