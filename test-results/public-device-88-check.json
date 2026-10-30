@@ -1,0 +1,46 @@
+{
+  "url": "https://daeyeon1119.github.io/arcana/device-check.html",
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "publicAssetSHA256": {
+    "release.json": "4bfc30dc46406ec509d48eb32ea80e7bb3faed2b5d56d719b846b16145e6190b",
+    "device-check.html": "d9b9dd5aeeb77bb1635c6e7f2de6ee3672823e4b9cac8254ef3d096428126eb5",
+    "scripts/device-check.js": "abbfe5fe8880bdb53039241a0541eaf87395f7a4723a1e9a97add9461d9ee05b"
+  },
+  "result": {
+    "kind": "arcana-actual-browser-check",
+    "language": "ko-KR",
+    "screen": {
+      "width": 390,
+      "height": 844,
+      "pixelRatio": 1
+    },
+    "physicalDeviceConfirmedByUser": false,
+    "professionalQualityScore": null,
+    "release": {
+      "appVersion": "88.0.0",
+      "readingEngine": 88,
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "appBytes": 30822607,
+      "webRelease": "957d4eb9189c54050cdc6a2a"
+    },
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "readings": 192,
+    "readingParitySHA256": "e5291b1f45ca0737777e2b3fe69581388649bfd4d9114aea61257ff297eed279",
+    "originalCardsDecoded": 78,
+    "passed": true,
+    "scope": "Actual browser execution only. Physical device, manual touch, saving, installation and offline use require separate user confirmation."
+  },
+  "errors": [],
+  "browser": "156.0.8078.76",
+  "note": "Actual public HTTPS checker execution in Chromium mobile emulation. Not a physical Android phone or manual touch/install/offline test. No expert quality score.",
+  "publicationScope": "Derived synthetic runner evidence; UA omitted. Not a user phone diagnostic.",
+  "sourceMergeCommit": "20b4b70b527635cb3cc86f1d60ef0b53a1228071",
+  "pagesRunId": 41004353765,
+  "pagesConclusion": "success"
+}
