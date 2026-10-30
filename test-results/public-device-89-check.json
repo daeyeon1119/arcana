@@ -1,0 +1,58 @@
+{
+  "url": "https://daeyeon1119.github.io/arcana/device-check.html",
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "publicAssetSHA256": {
+    "release.json": "c9a21b2f57f104344ca70776f56c97e2769a58c956e00b6ab0d735d93185e539",
+    "device-check.html": "d9b9dd5aeeb77bb1635c6e7f2de6ee3672823e4b9cac8254ef3d096428126eb5",
+    "scripts/device-check.js": "abbfe5fe8880bdb53039241a0541eaf87395f7a4723a1e9a97add9461d9ee05b"
+  },
+  "result": {
+    "kind": "arcana-actual-browser-check",
+    "language": "ko-KR",
+    "screen": {
+      "width": 390,
+      "height": 844,
+      "pixelRatio": 1
+    },
+    "physicalDeviceConfirmedByUser": false,
+    "professionalQualityScore": null,
+    "release": {
+      "appVersion": "89.0.0",
+      "readingEngine": 89,
+      "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+      "appBytes": 33141003,
+      "webRelease": "12dd12a13151379b100bfbdc",
+      "languageAnalysis": {
+        "backend": "garu-ko",
+        "version": "0.11.0",
+        "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+        "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+      }
+    },
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "readings": 272,
+    "readingParitySHA256": "5d25a3ffa318d2b32745287b446525fd7046d64a3b98acfd0897b8e04b2a8057",
+    "originalCardsDecoded": 78,
+    "passed": true,
+    "scope": "Actual browser execution only. Physical device, manual touch, saving, installation and offline use require separate user confirmation."
+  },
+  "errors": [],
+  "browser": "156.0.8078.76",
+  "note": "Actual public HTTPS checker execution in Chromium mobile emulation. Not a physical Android phone or manual touch/install/offline test. No expert quality score.",
+  "publicationScope": "Derived synthetic runner evidence; UA omitted. Not a user phone diagnostic.",
+  "sourceMergeCommit": "46b2a0dae7fc34e1217b2edd823f2ccb04bd5fb9",
+  "pagesRunId": 41040146948,
+  "pagesConclusion": "success"
+}
