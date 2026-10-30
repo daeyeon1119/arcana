@@ -1,0 +1,13 @@
+# Pinned Korean morphology component
+
+ARCANA uses the published `garu-ko@0.11.0` package, retrieved with npm lifecycle scripts disabled. [The upstream project](https://github.com/ongjin/garu) and [the exact package archive](https://registry.npmjs.org/garu-ko/-/garu-ko-0.11.0.tgz) are recorded in [the manifest](0.11.0/manifest.json). That manifest identifies the archive and every copied runtime/model/license file by its actual bytes and hash.
+
+The 1,260,476-byte model and 424,696-byte WASM file are unmodified. `scripts/build_morphology.py` verifies the pinned files and generates `runtime.cjs` from the retained upstream glue. The adapter removes unused network/URL loaders, replaces ESM import/export plumbing with a synchronous inline/CommonJS factory, and retains the original performance helper's behavior. It does not register example-specific dictionary entries or change model weights.
+
+The application embeds the model, WASM, glue and license notices into its existing self-contained HTML. Browser questions are analyzed in that document; no model endpoint, download, API key, WebGPU or separate native model installation is used. Node's filesystem loader is for the same vendored bytes in development tests. `src/korean-morphology.js` converts upstream Unicode-scalar offsets to JavaScript UTF-16 and keeps whole-word offsets separate from morpheme labels.
+
+The distribution's engine/package license is retained in [LICENSE](0.11.0/LICENSE). Dictionary attribution, source-specific terms and per-entry provenance are retained in [models/NOTICE.md](0.11.0/models/NOTICE.md), [the license copies](0.11.0/models/licenses/) and [bulk-provenance.json](0.11.0/models/bulk-provenance.json). The HTML's About view includes the full notices and Apache/CC license text for offline use. The model bytes and imported dictionary entries have not been adapted by ARCANA.
+
+The optional upstream sentence-splitter and boundary models are not used. Its retained `sentence-provenance.json` describes that separate optional artifact and mentions a different WASM hash; ARCANA verifies the actual used WASM hash `4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac` from the pinned package manifest, not that optional module's hash. The WASM binary is redistributed, not rebuilt from Rust in this repository.
+
+Upstream benchmark/accuracy claims in copied package metadata are not ARCANA evaluation results. This component supplies lexical/POS evidence, not tarot interpretation or unrestricted Korean understanding. The app still has bounded interpretation logic and recorded semantic failures. Browser emulation and cold-file/offline tests are distinct from physical Android verification.

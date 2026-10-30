@@ -1,0 +1,2390 @@
+{
+  "summary": {
+    "appSHA256": "d32e9534f3cc4a8ff7b0b64edf545af5d5c42b712937c3b68953f4e590b60213",
+    "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+    "fixtureSHA256": "68bb31b930d66b29c9d249c32115025cc001c43fa494e433af8b18b02a74c519",
+    "policySHA256": "a4a833df5f988c4a3debddc856e377cf84abb8c54fc193974f7a9eb1396a6177",
+    "collectorSHA256": "cfc9bf709dc08876319d13a17bf31dc91e0fecce984e5d3c62a93ea545aa89c7",
+    "seed": 830031,
+    "phase": "fresh-regression",
+    "note": "Authored after engine commit 82cfae2 (HTML SHA256 646cb51f16fe8d31db473703d15cdfdb3d512c57e5f87fc4ea48679c4195c182). A second self-authored first-run diagnostic, not independent expert evidence. No labels or review notes are sent to the engine. All first actual outputs are retained even when they fail; no production fix is based on these questions before this run. Routing checks alone cannot establish semantic quality. Routing checks are not semantic or professional quality scores.",
+    "questions": 16,
+    "readingsPerVersion": 128,
+    "errors": [],
+    "failures": [
+      {
+        "id": "f07",
+        "spread": "one",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f07",
+        "spread": "three",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f07",
+        "spread": "five",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f07",
+        "spread": "relationship5",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f07",
+        "spread": "choice5",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f07",
+        "spread": "waiting3",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f07",
+        "spread": "career5",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f07",
+        "spread": "celtic",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      }
+    ],
+    "checks": {
+      "routing": 120,
+      "cardEvidence": 128
+    },
+    "qualityReviewed": 0
+  },
+  "actualReports": [
+    {
+      "id": "f07",
+      "group": "tutor-question",
+      "question": "초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?",
+      "operation": "inquire",
+      "specialized": true,
+      "spread": "one",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "핵심 메시지 · 완드 10 정방향"
+      ],
+      "before": {
+        "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘핵심 메시지’에 놓인 완드 10의 주제는 ‘무거운 책임’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59
+            },
+            "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘핵심 메시지’에 놓인 완드 10의 주제는 ‘무거운 책임’입니다.",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "message",
+            "meaning": "무거운 책임"
+          }
+        ]
+      },
+      "after": {
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’의 완드 10 정방향에서 살필 관점은 ‘과부하·자원’입니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요. 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+        "headline": "확인할 조건을 나누어 살피기",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "verify",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59,
+              "frame": {
+                "operation": "verify",
+                "reason": "purpose-before-generic-means",
+                "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+                "purpose": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "알아보려고"
+                },
+                "informationGoal": true
+              }
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’의 완드 10 정방향에서 살필 관점은 ‘과부하·자원’입니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요. 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’의 완드 10 정방향에서 살필 관점은 ‘과부하·자원’입니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요. 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "target": "unspecified",
+              "participants": null,
+              "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "message",
+            "meaning": "무거운 책임"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "group": "tutor-question",
+      "question": "초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?",
+      "operation": "inquire",
+      "specialized": true,
+      "spread": "three",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        },
+        {
+          "id": "ar11",
+          "rev": true
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "과거 · 완드 10 정방향",
+        "현재 · 정의 역방향",
+        "미래 · 태양 역방향"
+      ],
+      "before": {
+        "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘미래’에 놓인 태양 역방향의 주제는 ‘지연된 기쁨’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59
+            },
+            "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘미래’에 놓인 태양 역방향의 주제는 ‘지연된 기쁨’입니다.",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "past",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "now",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "future",
+            "meaning": "지연된 기쁨"
+          }
+        ]
+      },
+      "after": {
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+        "headline": "확인할 조건을 나누어 살피기",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "verify",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59,
+              "frame": {
+                "operation": "verify",
+                "reason": "purpose-before-generic-means",
+                "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+                "purpose": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "알아보려고"
+                },
+                "informationGoal": true
+              }
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "target": "unspecified",
+              "participants": null,
+              "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "past",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "now",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "future",
+            "meaning": "지연된 기쁨"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "group": "tutor-question",
+      "question": "초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?",
+      "operation": "inquire",
+      "specialized": true,
+      "spread": "five",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        },
+        {
+          "id": "ar11",
+          "rev": true
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        },
+        {
+          "id": "ar12",
+          "rev": false
+        },
+        {
+          "id": "cu10",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "핵심 · 완드 10 정방향",
+        "근원 · 정의 역방향",
+        "장애물 · 태양 역방향",
+        "자원 · 매달린 사람 정방향",
+        "조언 · 컵 10 정방향"
+      ],
+      "before": {
+        "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘조언’에 놓인 컵 10의 주제는 ‘함께 누리는 조화’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. ‘지연된 기쁨’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59
+            },
+            "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘조언’에 놓인 컵 10의 주제는 ‘함께 누리는 조화’입니다.",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "now",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "root",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "함께 누리는 조화"
+          }
+        ]
+      },
+      "after": {
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+        "headline": "확인할 조건을 나누어 살피기",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. ‘지연된 기쁨’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "verify",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59,
+              "frame": {
+                "operation": "verify",
+                "reason": "purpose-before-generic-means",
+                "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+                "purpose": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "알아보려고"
+                },
+                "informationGoal": true
+              }
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "target": "unspecified",
+              "participants": null,
+              "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "now",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "root",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "함께 누리는 조화"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "group": "tutor-question",
+      "question": "초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?",
+      "operation": "inquire",
+      "specialized": true,
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        },
+        {
+          "id": "ar11",
+          "rev": true
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        },
+        {
+          "id": "ar12",
+          "rev": false
+        },
+        {
+          "id": "cu10",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "지금의 거리감 · 완드 10 정방향",
+        "나의 기대 · 정의 역방향",
+        "확인해야 할 차이 · 태양 역방향",
+        "다시 연결할 자원 · 매달린 사람 정방향",
+        "내가 취할 행동 · 컵 10 정방향"
+      ],
+      "before": {
+        "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘내가 취할 행동’에 놓인 컵 10의 주제는 ‘함께 누리는 조화’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. ‘지연된 기쁨’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59
+            },
+            "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘내가 취할 행동’에 놓인 컵 10의 주제는 ‘함께 누리는 조화’입니다.",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "now",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "함께 누리는 조화"
+          }
+        ]
+      },
+      "after": {
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘내가 취할 행동’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+        "headline": "확인할 조건을 나누어 살피기",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. ‘지연된 기쁨’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "verify",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59,
+              "frame": {
+                "operation": "verify",
+                "reason": "purpose-before-generic-means",
+                "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+                "purpose": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "알아보려고"
+                },
+                "informationGoal": true
+              }
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘내가 취할 행동’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘내가 취할 행동’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "target": "unspecified",
+              "participants": null,
+              "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "now",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "함께 누리는 조화"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "group": "tutor-question",
+      "question": "초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?",
+      "operation": "inquire",
+      "specialized": true,
+      "spread": "choice5",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        },
+        {
+          "id": "ar11",
+          "rev": true
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        },
+        {
+          "id": "ar12",
+          "rev": false
+        },
+        {
+          "id": "cu10",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "선택의 핵심 · 완드 10 정방향",
+        "A의 성격 · 정의 역방향",
+        "B의 성격 · 태양 역방향",
+        "선택의 기준 · 매달린 사람 정방향",
+        "다음 한 걸음 · 컵 10 정방향"
+      ],
+      "before": {
+        "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘A의 성격’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. ‘B의 성격’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. A를 살필 때는 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요. B를 살필 때는 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격",
+            "body": "‘A의 성격’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격",
+            "body": "‘B의 성격’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "두 선택을 함께 읽으면",
+            "body": "‘A의 성격’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. ‘B의 성격’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. A를 살필 때는 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요. B를 살필 때는 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 질문에 두 안을 적었다면 A와 B를 적은 순서로 읽어 보세요. 두 경로에서 실제로 감당할 조건을 같은 기준으로 비교해 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59
+            },
+            "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘A의 성격’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. ‘B의 성격’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. A를 살필 때는 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요. B를 살필 때는 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "message",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "optionA",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "optionB",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "criteria",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "함께 누리는 조화"
+          }
+        ]
+      },
+      "after": {
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+        "headline": "확인할 조건을 나누어 살피기",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "verify",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59,
+              "frame": {
+                "operation": "verify",
+                "reason": "purpose-before-generic-means",
+                "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+                "purpose": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "알아보려고"
+                },
+                "informationGoal": true
+              }
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "target": "unspecified",
+              "participants": null,
+              "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "message",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "optionA",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "optionB",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "criteria",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "함께 누리는 조화"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "group": "tutor-question",
+      "question": "초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?",
+      "operation": "inquire",
+      "specialized": true,
+      "spread": "waiting3",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        },
+        {
+          "id": "ar11",
+          "rev": true
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "바꿀 수 없는 것 · 완드 10 정방향",
+        "지금 다룰 마음 · 정의 역방향",
+        "오늘의 실천 · 태양 역방향"
+      ],
+      "before": {
+        "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘오늘의 실천’에 놓인 태양 역방향의 주제는 ‘지연된 기쁨’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59
+            },
+            "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘오늘의 실천’에 놓인 태양 역방향의 주제는 ‘지연된 기쁨’입니다.",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "boundary",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "feeling",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "지연된 기쁨"
+          }
+        ]
+      },
+      "after": {
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘오늘의 실천’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+        "headline": "확인할 조건을 나누어 살피기",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "verify",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59,
+              "frame": {
+                "operation": "verify",
+                "reason": "purpose-before-generic-means",
+                "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+                "purpose": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "알아보려고"
+                },
+                "informationGoal": true
+              }
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘오늘의 실천’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘오늘의 실천’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "target": "unspecified",
+              "participants": null,
+              "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "boundary",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "feeling",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "지연된 기쁨"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "group": "tutor-question",
+      "question": "초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?",
+      "operation": "inquire",
+      "specialized": true,
+      "spread": "career5",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        },
+        {
+          "id": "ar11",
+          "rev": true
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        },
+        {
+          "id": "ar12",
+          "rev": false
+        },
+        {
+          "id": "cu10",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "지금 가진 역량 · 완드 10 정방향",
+        "나의 동기 · 정의 역방향",
+        "현실의 제약 · 태양 역방향",
+        "도움이 될 자원 · 매달린 사람 정방향",
+        "실행의 첫 단계 · 컵 10 정방향"
+      ],
+      "before": {
+        "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘실행의 첫 단계’에 놓인 컵 10의 주제는 ‘함께 누리는 조화’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. ‘지연된 기쁨’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59
+            },
+            "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘실행의 첫 단계’에 놓인 컵 10의 주제는 ‘함께 누리는 조화’입니다.",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "self",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "함께 누리는 조화"
+          }
+        ]
+      },
+      "after": {
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+        "headline": "확인할 조건을 나누어 살피기",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. ‘지연된 기쁨’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "verify",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59,
+              "frame": {
+                "operation": "verify",
+                "reason": "purpose-before-generic-means",
+                "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+                "purpose": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "알아보려고"
+                },
+                "informationGoal": true
+              }
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’의 컵 10 정방향에서 살필 관점은 ‘교류·안정’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "target": "unspecified",
+              "participants": null,
+              "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "self",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "함께 누리는 조화"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "group": "tutor-question",
+      "question": "초보 학생에게 재봉틀 사용법을 가르칩니다. 학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요?",
+      "operation": "inquire",
+      "specialized": true,
+      "spread": "celtic",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        },
+        {
+          "id": "ar11",
+          "rev": true
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        },
+        {
+          "id": "ar12",
+          "rev": false
+        },
+        {
+          "id": "cu10",
+          "rev": false
+        },
+        {
+          "id": "sw02",
+          "rev": true
+        },
+        {
+          "id": "ar17",
+          "rev": true
+        },
+        {
+          "id": "cu04",
+          "rev": true
+        },
+        {
+          "id": "pe08",
+          "rev": true
+        },
+        {
+          "id": "wa01",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "현재 상황 · 완드 10 정방향",
+        "가로지르는 도전 · 정의 역방향",
+        "의식적인 목표 · 태양 역방향",
+        "무의식·기반 · 매달린 사람 정방향",
+        "지나온 영향 · 컵 10 정방향",
+        "가까운 흐름 · 소드 2 역방향",
+        "나 자신의 위치 · 별 역방향",
+        "주변 환경 · 컵 4 역방향",
+        "희망과 두려움 · 펜타클 8 역방향",
+        "가능한 귀결 · 완드 에이스 역방향"
+      ],
+      "before": {
+        "direct": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘가능한 귀결’에 놓인 완드 에이스 역방향의 주제는 ‘꺼진 열정’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요. ‘편향된 판단’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 소드 2 역방향은 ‘피할 수 없는 선택’을 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 별 역방향은 ‘희망의 약화’를 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 컵 4 역방향은 ‘닫힌 마음의 변화’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 펜타클 8 역방향은 ‘완벽주의의 함정’을 보여 줍니다. 이번 단계에 필요한 완성도와 끝없이 고치고 싶은 부분을 구별해 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. 계속 버티는 방식이 회복할 여지를 남기는지 점검해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘나 자신의 위치’의 별 역방향은 ‘희망의 약화’를 보여 줍니다. ‘가능한 귀결’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+            "refs": [
+              6,
+              9
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59
+            },
+            "text": "막히는 개념 하나를 골라 내 말로 설명해 보고, 설명이 끊기는 부분을 자료나 질문으로 확인해 보세요. ‘가능한 귀결’에 놓인 완드 에이스 역방향의 주제는 ‘꺼진 열정’입니다.",
+            "refs": [
+              9
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "now",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "root",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "past",
+            "meaning": "함께 누리는 조화"
+          },
+          {
+            "index": 5,
+            "id": "sw02",
+            "reverse": true,
+            "role": "future",
+            "meaning": "피할 수 없는 선택"
+          },
+          {
+            "index": 6,
+            "id": "ar17",
+            "reverse": true,
+            "role": "self",
+            "meaning": "희망의 약화"
+          },
+          {
+            "index": 7,
+            "id": "cu04",
+            "reverse": true,
+            "role": "environment",
+            "meaning": "닫힌 마음의 변화"
+          },
+          {
+            "index": 8,
+            "id": "pe08",
+            "reverse": true,
+            "role": "fear",
+            "meaning": "완벽주의의 함정"
+          },
+          {
+            "index": 9,
+            "id": "wa01",
+            "reverse": true,
+            "role": "outcome",
+            "meaning": "꺼진 열정"
+          }
+        ]
+      },
+      "after": {
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘나 자신의 위치’의 별 역방향에서 살필 관점은 ‘의심·희망’입니다. ‘가능한 귀결’의 완드 에이스 역방향에서 살필 관점은 ‘소진·멈춤’입니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+        "headline": "확인할 조건을 나누어 살피기",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 정의 역방향은 ‘편향된 판단’을 보여 줍니다. 기존의 판단과 새로 알게 된 정보를 나란히 놓아 보세요. ‘편향된 판단’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 매달린 사람 정방향은 ‘시각의 전환’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 컵 10 정방향은 ‘함께 누리는 조화’를 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 소드 2 역방향은 ‘피할 수 없는 선택’을 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 별 역방향은 ‘희망의 약화’를 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 컵 4 역방향은 ‘닫힌 마음의 변화’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 펜타클 8 역방향은 ‘완벽주의의 함정’을 보여 줍니다. 이번 단계에 필요한 완성도와 끝없이 고치고 싶은 부분을 구별해 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. 계속 버티는 방식이 회복할 여지를 남기는지 점검해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘나 자신의 위치’의 별 역방향은 ‘희망의 약화’를 보여 줍니다. ‘가능한 귀결’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+            "refs": [
+              6,
+              9
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "verify",
+              "text": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "start": 24,
+              "end": 59,
+              "frame": {
+                "operation": "verify",
+                "reason": "purpose-before-generic-means",
+                "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+                "purpose": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "알아보려고"
+                },
+                "informationGoal": true
+              }
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘나 자신의 위치’의 별 역방향에서 살필 관점은 ‘의심·희망’입니다. ‘가능한 귀결’의 완드 에이스 역방향에서 살필 관점은 ‘소진·멈춤’입니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘나 자신의 위치’의 별 역방향에서 살필 관점은 ‘의심·희망’입니다. ‘가능한 귀결’의 완드 에이스 역방향에서 살필 관점은 ‘소진·멈춤’입니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              6,
+              9
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "target": "unspecified",
+              "participants": null,
+              "source": "학생이 이해한 부분을 알아보려고 물어볼 질문을 어떻게 준비할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "wa10",
+            "reverse": false,
+            "role": "now",
+            "meaning": "무거운 책임"
+          },
+          {
+            "index": 1,
+            "id": "ar11",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "편향된 판단"
+          },
+          {
+            "index": 2,
+            "id": "ar19",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "지연된 기쁨"
+          },
+          {
+            "index": 3,
+            "id": "ar12",
+            "reverse": false,
+            "role": "root",
+            "meaning": "시각의 전환"
+          },
+          {
+            "index": 4,
+            "id": "cu10",
+            "reverse": false,
+            "role": "past",
+            "meaning": "함께 누리는 조화"
+          },
+          {
+            "index": 5,
+            "id": "sw02",
+            "reverse": true,
+            "role": "future",
+            "meaning": "피할 수 없는 선택"
+          },
+          {
+            "index": 6,
+            "id": "ar17",
+            "reverse": true,
+            "role": "self",
+            "meaning": "희망의 약화"
+          },
+          {
+            "index": 7,
+            "id": "cu04",
+            "reverse": true,
+            "role": "environment",
+            "meaning": "닫힌 마음의 변화"
+          },
+          {
+            "index": 8,
+            "id": "pe08",
+            "reverse": true,
+            "role": "fear",
+            "meaning": "완벽주의의 함정"
+          },
+          {
+            "index": 9,
+            "id": "wa01",
+            "reverse": true,
+            "role": "outcome",
+            "meaning": "꺼진 열정"
+          }
+        ]
+      }
+    }
+  ],
+  "finding": "The new purpose frame overrode an explicit main-clause question object with the earlier goal of checking understanding. Retain explicit output/operation ahead of a general purpose. Captured before correction."
+}

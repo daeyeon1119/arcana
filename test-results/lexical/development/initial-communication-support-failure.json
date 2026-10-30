@@ -1,0 +1,396 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "85f5161b06827a91159c7b26b6b6b34bc2ba5c0702d9861225b4e61ac2ff828c",
+    "appBytes": 33134827,
+    "webRelease": "877d8ff52a68152d14094fc5",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "finding": "The request is communicate, but a noun mention of a clinician explanation was accepted as an operation-specific communication method. The direct text also shifts to unreported test results. Captured before a verb-predicate compatibility check.",
+  "actual": {
+    "id": "k06",
+    "question": "식후구토가 계속됩니다. 의료진에게 상황을 어떻게 설명할까요?",
+    "spread": "five",
+    "cards": [
+      {
+        "id": "wa04",
+        "rev": false
+      },
+      {
+        "id": "pe13",
+        "rev": true
+      },
+      {
+        "id": "wa07",
+        "rev": true
+      },
+      {
+        "id": "sw12",
+        "rev": true
+      },
+      {
+        "id": "pe07",
+        "rev": true
+      }
+    ],
+    "before": {
+      "direct": "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요. ‘조언’에 놓인 펜타클 7 역방향의 주제는 ‘성과에 대한 조급함’입니다.",
+      "actions": [
+        "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요."
+      ],
+      "sections": [
+        {
+          "title": "핵심",
+          "body": "‘핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "근원",
+          "body": "‘근원’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "장애물",
+          "body": "‘장애물’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. ‘지친 방어’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "자원",
+          "body": "‘자원’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "조언",
+          "body": "‘조언’의 펜타클 7 역방향은 ‘성과에 대한 조급함’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "카드가 만드는 중심 흐름",
+          "body": "‘핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. ‘장애물’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 관심을 주려는 일과 스스로 지킬 범위를 함께 살펴보는 연결입니다. 계속할 분량과 쉬어 갈 여지를 실제로 감당할 수 있는 범위에서 정해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+          "refs": [
+            0,
+            2
+          ],
+          "kind": "relational"
+        },
+        {
+          "title": "질문에 적용할 관점",
+          "body": "‘조언’의 펜타클 7 역방향은 ‘성과에 대한 조급함’을 보여 줍니다. 지금 꼭 전할 요점과 조금 뒤에 답해도 되는 내용을 나누고, 상대가 이해하거나 답할 여백을 남겨 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "contextual"
+        }
+      ],
+      "domain": "health",
+      "medical": false,
+      "urgent": false,
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "model": {
+        "version": 88,
+        "question": "식후구토가 계속됩니다. 의료진에게 상황을 어떻게 설명할까요?",
+        "evidenceQuestion": "식후구토가 계속됩니다. 의료진에게 상황을 어떻게 설명할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "communicate",
+            "text": "의료진에게 상황을 어떻게 설명할까요",
+            "start": 13,
+            "end": 32
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "requests": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "communicate",
+            "text": "의료진에게 상황을 어떻게 설명할까요",
+            "start": 13,
+            "end": 32
+          },
+          "text": "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요. ‘조언’에 놓인 펜타클 7 역방향의 주제는 ‘성과에 대한 조급함’입니다.",
+          "directText": "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요. ‘조언’에 놓인 펜타클 7 역방향의 주제는 ‘성과에 대한 조급함’입니다.",
+          "actionText": "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요.",
+          "actionTask": "communicate",
+          "refs": [
+            4
+          ]
+        }
+      ],
+      "applications": [
+        {
+          "request": 0,
+          "operation": "communicate",
+          "group": "pace",
+          "primaryMotif": "impulse",
+          "relationAxis": null,
+          "contextRule": null,
+          "refs": [
+            4
+          ],
+          "replaceGeneric": false,
+          "quantity": null,
+          "timeBinding": {
+            "value": null,
+            "reason": "no-available-time",
+            "candidates": []
+          },
+          "verification": [],
+          "directLens": null
+        }
+      ],
+      "lexical": null
+    },
+    "after": {
+      "direct": "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요. ‘조언’에 놓인 펜타클 7 역방향의 주제는 ‘성과에 대한 조급함’입니다.",
+      "actions": [
+        "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요."
+      ],
+      "sections": [
+        {
+          "title": "핵심",
+          "body": "‘핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "근원",
+          "body": "‘근원’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "장애물",
+          "body": "‘장애물’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. ‘지친 방어’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "자원",
+          "body": "‘자원’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "조언",
+          "body": "‘조언’의 펜타클 7 역방향은 ‘성과에 대한 조급함’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "카드가 만드는 중심 흐름",
+          "body": "‘핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. ‘장애물’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 관심을 주려는 일과 스스로 지킬 범위를 함께 살펴보는 연결입니다. 계속할 분량과 쉬어 갈 여지를 실제로 감당할 수 있는 범위에서 정해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+          "refs": [
+            0,
+            2
+          ],
+          "kind": "relational"
+        }
+      ],
+      "domain": "health",
+      "medical": true,
+      "urgent": false,
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "model": {
+        "version": 89,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "식후구토가 계속됩니다. 의료진에게 상황을 어떻게 설명할까요?",
+        "evidenceQuestion": "식후구토가 계속됩니다. 의료진에게 상황을 어떻게 설명할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "communicate",
+            "text": "의료진에게 상황을 어떻게 설명할까요",
+            "start": 13,
+            "end": 32
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "requests": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "communicate",
+            "text": "의료진에게 상황을 어떻게 설명할까요",
+            "start": 13,
+            "end": 32
+          },
+          "text": "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요. ‘조언’에 놓인 펜타클 7 역방향의 주제는 ‘성과에 대한 조급함’입니다.",
+          "directText": "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요. ‘조언’에 놓인 펜타클 7 역방향의 주제는 ‘성과에 대한 조급함’입니다.",
+          "actionText": "검사 결과와 의료진의 설명 등 확인 가능한 정보부터 살펴보세요.",
+          "actionTask": "communicate",
+          "refs": [
+            4
+          ]
+        }
+      ],
+      "applications": [],
+      "lexical": {
+        "domain": "health",
+        "medical": true,
+        "scope": {
+          "start": 0,
+          "end": 33,
+          "reason": "whole-question"
+        },
+        "evidence": {
+          "health": [
+            {
+              "term": "구토",
+              "pos": "NNG",
+              "start": 0,
+              "end": 5,
+              "text": "식후구토가"
+            },
+            {
+              "term": "의료진",
+              "pos": "NNG",
+              "start": 13,
+              "end": 18,
+              "text": "의료진에게"
+            }
+          ],
+          "financial": [],
+          "domains": {
+            "project": [],
+            "family": [],
+            "relationship": [],
+            "career": [],
+            "preparation": [],
+            "decision": [],
+            "stress": [],
+            "waiting": []
+          }
+        },
+        "rejectedWords": [],
+        "replayed": null,
+        "analysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "legacyDomain": "health"
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "aeb43655a943342449ea8d34da8099ccbf189d6050f8fa0b045c2507fdbc99ea",
+    "appBytes": 33136512,
+    "webRelease": "92550add8b6a20a958540079",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "results": [
+    {
+      "profile": "desktop-http",
+      "fingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "questions": 24,
+      "status": {
+        "backend": "garu-ko",
+        "version": "0.11.0",
+        "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+        "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+        "ready": true,
+        "failed": false
+      },
+      "initialElapsedMs": 1878.5999999977648,
+      "freshOfflineModelReady": true,
+      "offlineFingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "noticesAvailableInAbout": true,
+      "externalModelRequests": 0,
+      "questionUploadObserved": false,
+      "scope": "Fresh HTTP and new offline document; mobile is Chromium emulation."
+    },
+    {
+      "profile": "mobile-http",
+      "fingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "questions": 24,
+      "status": {
+        "backend": "garu-ko",
+        "version": "0.11.0",
+        "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+        "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+        "ready": true,
+        "failed": false
+      },
+      "initialElapsedMs": 1045.8999999985099,
+      "freshOfflineModelReady": true,
+      "offlineFingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "noticesAvailableInAbout": true,
+      "externalModelRequests": 0,
+      "questionUploadObserved": false,
+      "scope": "Fresh HTTP and new offline document; mobile is Chromium emulation."
+    },
+    {
+      "profile": "cold-file",
+      "fingerprint": "d62ac55ae1db78572e98bfd04e6a3ebb3794cf668c4d878c551405bb591fc4a0",
+      "questions": 24,
+      "status": {
+        "backend": "garu-ko",
+        "version": "0.11.0",
+        "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+        "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+        "ready": true,
+        "failed": false
+      },
+      "initialElapsedMs": 734.9000000022352,
+      "freshOfflineModelReady": null,
+      "offlineFingerprint": null,
+      "noticesAvailableInAbout": true,
+      "externalModelRequests": 0,
+      "questionUploadObserved": false,
+      "scope": "Fresh file:// load of the self-contained HTML, with external HTTP blocked."
+    }
+  ],
+  "errors": [],
+  "physicalPhoneVerified": false,
+  "professionalQualityScore": null,
+  "scope": "Twenty-four known development questions with fixed actual cards. Equal complete reports in HTTP desktop/mobile, cold file and new offline documents. No localhost, model download or WebGPU is needed by the file runtime; the HTTP server is test infrastructure."
+}

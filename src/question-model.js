@@ -15,6 +15,8 @@
  const normalize=q=>String(q||'').normalize('NFKC').replace(/\s+/g,' ').trim();
  const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,masked=questionText.mask;
  const eventEvidence=typeof module==='object'&&module.exports?require('./event-evidence.js'):root.ARCANA_EVENT_EVIDENCE;
+ const morphology=typeof module==='object'&&module.exports?require('./korean-morphology.js'):root.ARCANA_KOREAN_MORPHOLOGY;
+ const lexicalContext=typeof module==='object'&&module.exports?require('./lexical-context.js'):root.ARCANA_LEXICAL_CONTEXT;
  function segments(q){
   const text=masked(q),parts=[];let start=0;
   const rx=/[.!?。！？,;]+|(?:하지만|그런데|반면에|그러나)\s+|((?:했|았|었)(?:는데|지만|고|더니))\s*/g;let m;
@@ -22,8 +24,11 @@
   while((m=rx.exec(text))){add(m.index+(m[1]?.length||0));start=rx.lastIndex;}add(text.length);return parts;
  }
  function actorAt(text,index){
-  let actor='unspecified',evidence='',start=-1;
-  for(const m of text.slice(0,index).matchAll(SUBJECT)){actor=/^(?:저|제|나|내)$/.test(m[1])?'self':'other';evidence=m[0];start=m.index;}
+  let actor='unspecified',evidence='',start=-1;const analysis=morphology.analyze(text.slice(0,index));
+  for(const m of text.slice(0,index).matchAll(SUBJECT)){
+   if(analysis&&!analysis.words.some(w=>w.start===m.index&&w.tokens.some(t=>t.pos==='JKS'||t.pos==='JX')&&!w.tokens.some(t=>t.pos==='ETM')))continue;
+   actor=/^(?:저|제|나|내)$/.test(m[1])?'self':'other';evidence=m[0];start=m.index;
+  }
   if(/서로/.test(text.slice(0,index)))return {actor:'mutual',evidence:'서로',start:text.slice(0,index).lastIndexOf('서로')};
   return {actor,evidence,start};
  }
@@ -226,13 +231,15 @@
  }
  function parse(input){
   const question=normalize(input),parts=segments(question),requests=requestsFrom(parts,question),events=eventsFrom(parts),state=summarize(events,requests,question);
+  const languageAnalysis=morphology.analyze(masked(question));
+  for(const task of requests){const frame=lexicalContext.requestFrame(masked(task.text));if(frame&&task.kind==='action'){task.frame=frame;task.goal=frame.operation;}}
   eventEvidence.bindRequests(requests,events,masked(question),state);
   const generic=question.replace(/[\s.!?。！？,]/g,'');
   const missingChoices=/(?:두\s*(?:가지|개)|둘)\s*중/.test(masked(question))&&/정해|고르|골라|선택|비교/.test(masked(question))&&!/A.{0,80}B|하나는.{1,80}(?:다른|하나는)|(?:첫째|첫\s*번째).{1,80}(?:둘째|두\s*번째)/i.test(masked(question));
   const options=literalEvidence?.extract(question).options||[],missingDefinedOption=requests.some(request=>request.kind==='compare')&&options.length>0&&(options.length<2||options.some(option=>!option.defined));
   const needsContext=missingChoices||missingDefinedOption||!!generic&&/^(?:(?:저는|제가|나는|내가|지금|이제|그|이|저|일|상황|사람|것|거|앞으로|어떻게|뭘|무엇을|할까요|해야할까요|해야하나요|하면좋을까요|해야|할지|모르겠어요|모르겠습니다|될까요|잘|풀릴까요|봐주세요|보아주세요|알려주세요|좀|요|은|는|이|가|을|를|과|와|하고|에|대해|입니다|이에요|예요))+$/u.test(generic)&&!/오늘|하루|전반|전체/.test(question);
   const romantic=/(?:연애|연인|애인|짝사랑|고백|호감|좋아하는\s*(?:사람|분|이)|좋아하.{0,6}사람)/.test(masked(question));
-  return {version:88,question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices||missingDefinedOption?'비교할 선택지의 내용이 필요합니다. 아직 정하지 않은 안의 내용과 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
+  return {version:89,languageAnalysis:{...morphology.status(),ready:!!languageAnalysis?.ready},question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices||missingDefinedOption?'비교할 선택지의 내용이 필요합니다. 아직 정하지 않은 안의 내용과 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
  }
  const api=Object.freeze({parse});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_QUESTION_MODEL=api;
 })(typeof globalThis==='object'?globalThis:this);

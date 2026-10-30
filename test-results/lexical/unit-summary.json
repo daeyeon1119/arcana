@@ -1,0 +1,22 @@
+{
+  "version": "89.0.0",
+  "status": {
+    "backend": "garu-ko",
+    "version": "0.11.0",
+    "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+    "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+    "ready": true,
+    "failed": false
+  },
+  "checks": [
+    "literal eojeol spans are valid UTF-16 across astral symbols, combining marks and quotations",
+    "nominal subjects, temporal/symbol prefixes and adnominal predicates retain participant polarity",
+    "purpose/means and requested question output differ from negative inquiry, biting and explicit condition checks",
+    "cache eviction and preceding analysis do not change a canonical question model",
+    "a communication predicate, including nominal verbal forms, differs from a noun mention of someone else’s explanation",
+    "loaded model and WASM are the pinned unchanged vendored bytes",
+    "synthetic per-input analysis failure does not contaminate later valid analysis or initialization status"
+  ],
+  "records": 29,
+  "scope": "Known Unicode, grammatical-role and purpose development assertions. Not distinct unseen questions, semantic expert scores or a proof of unrestricted Korean analysis."
+}

@@ -1,0 +1,556 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "d32e9534f3cc4a8ff7b0b64edf545af5d5c42b712937c3b68953f4e590b60213",
+    "appBytes": 33133798,
+    "webRelease": "7fe18e89a145e0eda51475a2",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "finding": "The inferred unread-content review method repeats condition/confirmation imperatives. Shorten the generic method while keeping the conditional link and missing-information step.",
+  "actual": {
+    "id": "k20",
+    "question": "공방 장인에게 받은 회신을 아직 읽지 않았어요. 예약 조건을 살피려면 무엇부터 할까요?",
+    "spread": "five",
+    "cards": [
+      {
+        "id": "wa04",
+        "rev": false
+      },
+      {
+        "id": "pe04",
+        "rev": false
+      },
+      {
+        "id": "cu07",
+        "rev": false
+      },
+      {
+        "id": "ar14",
+        "rev": false
+      },
+      {
+        "id": "cu01",
+        "rev": true
+      }
+    ],
+    "before": {
+      "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+      "actions": [
+        "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+      ],
+      "sections": [
+        {
+          "title": "핵심",
+          "body": "‘핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "근원",
+          "body": "‘근원’의 펜타클 4 정방향은 ‘지키고 싶은 안정’을 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "장애물",
+          "body": "‘장애물’의 컵 7 정방향은 ‘매력적인 선택지’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. ‘매력적인 선택지’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "자원",
+          "body": "‘자원’의 절제 정방향은 ‘적절한 균형’을 보여 줍니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "조언",
+          "body": "‘조언’의 컵 에이스 역방향은 ‘막힌 감정’을 보여 줍니다. 감정을 조절하는 일과 감정을 드러내지 못하는 일을 구별해 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        }
+      ],
+      "domain": "general",
+      "medical": false,
+      "urgent": false,
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": true,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "model": {
+        "version": 88,
+        "question": "공방 장인에게 받은 회신을 아직 읽지 않았어요. 예약 조건을 살피려면 무엇부터 할까요?",
+        "evidenceQuestion": "공방 장인에게 받은 회신을 아직 읽지 않았어요. 예약 조건을 살피려면 무엇부터 할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "action",
+            "text": "예약 조건을 살피려면 무엇부터 할까요",
+            "start": 27,
+            "end": 47
+          }
+        ],
+        "events": [
+          {
+            "kind": "reply",
+            "object": "회신",
+            "actor": "unspecified",
+            "actorEvidence": "",
+            "recipient": null,
+            "timeScope": "unspecified",
+            "status": "asserted",
+            "completed": true,
+            "text": "받은 회신",
+            "start": 8,
+            "end": 13,
+            "action": "receive",
+            "predicate": "받은",
+            "direction": "receive",
+            "accepting": true,
+            "relative": true
+          },
+          {
+            "kind": "reply",
+            "object": "회신",
+            "actor": "unspecified",
+            "actorEvidence": "",
+            "recipient": null,
+            "timeScope": "unspecified",
+            "status": "negated",
+            "completed": false,
+            "text": "회신을 아직 읽지 않았어요",
+            "start": 11,
+            "end": 25,
+            "direction": "read",
+            "predicate": "읽지",
+            "accepting": true,
+            "waitingEvidence": null,
+            "waiting": false,
+            "absence": false,
+            "benefactive": false,
+            "readingFromOtherReceipt": false
+          }
+        ],
+        "state": {
+          "sent": null,
+          "received": true,
+          "read": false,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": "received",
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "result"
+        ]
+      },
+      "requests": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "action",
+            "text": "예약 조건을 살피려면 무엇부터 할까요",
+            "start": 27,
+            "end": 47
+          },
+          "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+          "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+          "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+          "actionTask": "verify",
+          "refs": [
+            4
+          ]
+        }
+      ],
+      "applications": [
+        {
+          "request": 0,
+          "operation": "verify",
+          "group": "exchange",
+          "primaryMotif": "suppression",
+          "relationAxis": null,
+          "contextRule": null,
+          "refs": [
+            4
+          ],
+          "replaceGeneric": true,
+          "quantity": null,
+          "timeBinding": {
+            "value": null,
+            "reason": "no-available-time",
+            "candidates": []
+          },
+          "verification": [],
+          "directLens": {
+            "text": "‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "refs": [
+              4
+            ],
+            "operation": "verify",
+            "relationAxis": null,
+            "facets": [
+              {
+                "index": 4,
+                "id": "cu01",
+                "reverse": true,
+                "motifs": [
+                  "suppression",
+                  "pause"
+                ]
+              }
+            ],
+            "roleFrame": "",
+            "reused": false
+          }
+        }
+      ],
+      "lexical": null
+    },
+    "after": {
+      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+      "actions": [
+        "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+      ],
+      "sections": [
+        {
+          "title": "핵심",
+          "body": "‘핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "근원",
+          "body": "‘근원’의 펜타클 4 정방향은 ‘지키고 싶은 안정’을 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "장애물",
+          "body": "‘장애물’의 컵 7 정방향은 ‘매력적인 선택지’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. ‘매력적인 선택지’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "자원",
+          "body": "‘자원’의 절제 정방향은 ‘적절한 균형’을 보여 줍니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "조언",
+          "body": "‘조언’의 컵 에이스 역방향은 ‘막힌 감정’을 보여 줍니다. 감정을 조절하는 일과 감정을 드러내지 못하는 일을 구별해 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        }
+      ],
+      "domain": "general",
+      "medical": false,
+      "urgent": false,
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": true,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "model": {
+        "version": 89,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "공방 장인에게 받은 회신을 아직 읽지 않았어요. 예약 조건을 살피려면 무엇부터 할까요?",
+        "evidenceQuestion": "공방 장인에게 받은 회신을 아직 읽지 않았어요. 예약 조건을 살피려면 무엇부터 할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "verify",
+            "text": "예약 조건을 살피려면 무엇부터 할까요",
+            "start": 27,
+            "end": 47,
+            "frame": {
+              "operation": "verify",
+              "reason": "purpose-before-generic-means",
+              "source": "예약 조건을 살피려면 무엇부터 할까요",
+              "purpose": {
+                "start": 7,
+                "end": 11,
+                "text": "살피려면"
+              },
+              "informationGoal": true
+            },
+            "context": {
+              "type": "received-content",
+              "sourceEvent": {
+                "start": 8,
+                "end": 13,
+                "object": "회신",
+                "text": "받은 회신"
+              },
+              "read": false,
+              "relation": "possible-source-before-inquiry",
+              "inferred": true
+            }
+          }
+        ],
+        "events": [
+          {
+            "kind": "reply",
+            "object": "회신",
+            "actor": "unspecified",
+            "actorEvidence": "",
+            "recipient": null,
+            "timeScope": "unspecified",
+            "status": "asserted",
+            "completed": true,
+            "text": "받은 회신",
+            "start": 8,
+            "end": 13,
+            "action": "receive",
+            "predicate": "받은",
+            "direction": "receive",
+            "accepting": true,
+            "relative": true
+          },
+          {
+            "kind": "reply",
+            "object": "회신",
+            "actor": "unspecified",
+            "actorEvidence": "",
+            "recipient": null,
+            "timeScope": "unspecified",
+            "status": "negated",
+            "completed": false,
+            "text": "회신을 아직 읽지 않았어요",
+            "start": 11,
+            "end": 25,
+            "direction": "read",
+            "predicate": "읽지",
+            "accepting": true,
+            "waitingEvidence": null,
+            "waiting": false,
+            "absence": false,
+            "benefactive": false,
+            "readingFromOtherReceipt": false
+          }
+        ],
+        "state": {
+          "sent": null,
+          "received": true,
+          "read": false,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": "received",
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "result"
+        ]
+      },
+      "requests": [
+        {
+          "request": {
+            "kind": "action",
+            "goal": "verify",
+            "text": "예약 조건을 살피려면 무엇부터 할까요",
+            "start": 27,
+            "end": 47,
+            "frame": {
+              "operation": "verify",
+              "reason": "purpose-before-generic-means",
+              "source": "예약 조건을 살피려면 무엇부터 할까요",
+              "purpose": {
+                "start": 7,
+                "end": 11,
+                "text": "살피려면"
+              },
+              "informationGoal": true
+            },
+            "context": {
+              "type": "received-content",
+              "sourceEvent": {
+                "start": 8,
+                "end": 13,
+                "object": "회신",
+                "text": "받은 회신"
+              },
+              "read": false,
+              "relation": "possible-source-before-inquiry",
+              "inferred": true
+            }
+          },
+          "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+          "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+          "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 전달받은 내용을 먼저 확인해 보세요. 그 안에서 확인되는 조건과 별도로 알아봐야 할 조건을 나누어 보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+          "actionTask": "verify",
+          "refs": [
+            4
+          ]
+        }
+      ],
+      "applications": [
+        {
+          "request": 0,
+          "operation": "verify",
+          "group": "exchange",
+          "primaryMotif": "suppression",
+          "relationAxis": null,
+          "contextRule": null,
+          "refs": [
+            4
+          ],
+          "replaceGeneric": false,
+          "quantity": null,
+          "timeBinding": {
+            "value": null,
+            "reason": "no-available-time",
+            "candidates": []
+          },
+          "verification": [],
+          "directLens": {
+            "text": "‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "refs": [
+              4
+            ],
+            "operation": "verify",
+            "relationAxis": null,
+            "facets": [
+              {
+                "index": 4,
+                "id": "cu01",
+                "reverse": true,
+                "motifs": [
+                  "suppression",
+                  "pause"
+                ]
+              }
+            ],
+            "roleFrame": "",
+            "reused": false
+          }
+        }
+      ],
+      "lexical": {
+        "domain": "general",
+        "medical": false,
+        "scope": {
+          "start": 0,
+          "end": 48,
+          "reason": "whole-question"
+        },
+        "evidence": {
+          "health": [],
+          "financial": [],
+          "domains": {
+            "project": [],
+            "family": [],
+            "relationship": [],
+            "career": [],
+            "preparation": [],
+            "decision": [
+              {
+                "term": "조건",
+                "pos": "NNG",
+                "start": 30,
+                "end": 33,
+                "text": "조건을"
+              }
+            ],
+            "stress": [],
+            "waiting": [
+              {
+                "term": "회신",
+                "pos": "NNG",
+                "start": 11,
+                "end": 14,
+                "text": "회신을"
+              }
+            ]
+          }
+        },
+        "rejectedWords": [],
+        "replayed": null,
+        "analysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "legacyDomain": "general"
+      }
+    }
+  }
+}

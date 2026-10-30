@@ -1,0 +1,36 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "8209a7a1eea04dbe14cef994ed112d1ae7c2ac092771cd1fb60f7cedf7cb9a13",
+    "appBytes": 33134591,
+    "webRelease": "634f03be3c44fd566bad4e51",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "note": "Known development inspection before correcting explicit editing precedence. A question noun must not erase a later editing operation.",
+  "actual": [
+    {
+      "text": "어떤 질문을 고쳐야 할까요?",
+      "frame": {
+        "operation": "inquire",
+        "reason": "requested-question-as-output-or-instrument",
+        "source": "어떤 질문을 고쳐야 할까요?",
+        "informationGoal": true
+      }
+    },
+    {
+      "text": "무엇을 물어보고 어떻게 고칠까요?",
+      "frame": {
+        "operation": "inquire",
+        "reason": "inflected-inquiry-lemma",
+        "source": "무엇을 물어보고 어떻게 고칠까요?",
+        "informationGoal": true
+      }
+    }
+  ]
+}

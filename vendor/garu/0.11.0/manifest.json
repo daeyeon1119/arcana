@@ -1,0 +1,95 @@
+{
+  "package": "garu-ko",
+  "version": "0.11.0",
+  "source": "https://registry.npmjs.org/garu-ko/-/garu-ko-0.11.0.tgz",
+  "repository": "https://github.com/ongjin/garu",
+  "packageSHA1": "1ef4a671fcd1c722be95157b37de9b57d57d6deb",
+  "packageSHA512": "d2d60cbcdef926f0816bd71e35b34b3b601279341d867952e17bc16300630754b5cd0936f15bed258997a67453eacff2ecf238027c7a85750b9a69e48f38820c",
+  "files": [
+    {
+      "upstreamPath": "pkg/garu_wasm.js",
+      "path": "upstream/garu_wasm.js",
+      "bytes": 15238,
+      "sha256": "353387e22b7cb0eb9e55cd887b63cf946322f7b9ad3718c0ad87c9793e82c9c7"
+    },
+    {
+      "upstreamPath": "pkg/garu_wasm_bg.wasm",
+      "path": "garu_wasm_bg.wasm",
+      "bytes": 424696,
+      "sha256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    },
+    {
+      "upstreamPath": "pkg/snippets/garu-core-4cd6f92ead9d35cd/inline0.js",
+      "path": "upstream/performance.js",
+      "bytes": 63,
+      "sha256": "044244657976618020590900b224b2befe08c2ea5273e02b26a716e34b4ba537"
+    },
+    {
+      "upstreamPath": "models/base.gmdl",
+      "path": "base.gmdl",
+      "bytes": 1260476,
+      "sha256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7"
+    },
+    {
+      "upstreamPath": "LICENSE",
+      "path": "LICENSE",
+      "bytes": 11663,
+      "sha256": "096b90ba19f29aee345db42a8474e503bec05a141a8666f7f884142cb75f80b3"
+    },
+    {
+      "upstreamPath": "NOTICE",
+      "path": "NOTICE",
+      "bytes": 454,
+      "sha256": "48ce79aa485a846bc6a66282620f76119519047c2ea69e990b394556c27b87dd"
+    },
+    {
+      "upstreamPath": "models/NOTICE.md",
+      "path": "models/NOTICE.md",
+      "bytes": 3137,
+      "sha256": "5d9f5be1200c739caa83e078cd03ae8c39a27e58867a0ecd40955527b45f0648"
+    },
+    {
+      "upstreamPath": "models/bulk-provenance.json",
+      "path": "models/bulk-provenance.json",
+      "bytes": 297283,
+      "sha256": "b86e8bb7a46f117b23d7561a2973dc3c122ebd6a821efc16b67a5c892d42807d"
+    },
+    {
+      "upstreamPath": "models/sentence-provenance.json",
+      "path": "models/sentence-provenance.json",
+      "bytes": 2918,
+      "sha256": "cd6572ff2c38860e6d425bf5a733f45b13f72b80a8c8f03a882733133705bd3d"
+    },
+    {
+      "upstreamPath": "package.json",
+      "path": "upstream/package.json",
+      "bytes": 1937,
+      "sha256": "52eb98a951518decbb7f3286e999dcf459407dfe89f0f5a16b279a23874b695d"
+    },
+    {
+      "upstreamPath": "models/licenses/Apache-2.0.txt",
+      "path": "models/licenses/Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "upstreamPath": "models/licenses/CC-BY-SA-2.0-KR.txt",
+      "path": "models/licenses/CC-BY-SA-2.0-KR.txt",
+      "bytes": 15359,
+      "sha256": "b88fd4669aab0163bf96249f1436ea25d6baa0b74cc138aaba89d6451112483c"
+    },
+    {
+      "upstreamPath": "models/licenses/MeCab-AUTHORS.txt",
+      "path": "models/licenses/MeCab-AUTHORS.txt",
+      "bytes": 65,
+      "sha256": "29804e123814efb1c983677cfc9875540a77823f201973b27999b650726586eb"
+    },
+    {
+      "upstreamPath": "models/licenses/MeCab-CONTRIBUTORS.txt",
+      "path": "models/licenses/MeCab-CONTRIBUTORS.txt",
+      "bytes": 6,
+      "sha256": "104df76d435973c994733ef3bf8cae04c6b4ce6a99918369dc910420e0db122c"
+    }
+  ],
+  "modifications": "Binary model and WASM bytes are unchanged. A generated synchronous wrapper removes unused fetch-based loading and replaces ESM exports/imported performance helper for inline browser and CommonJS use. Attribution and data provenance are retained. No imported dictionary entries or model weights are edited."
+}

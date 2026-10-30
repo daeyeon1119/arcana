@@ -1,0 +1,1042 @@
+{
+  "summary": {
+    "questions": 320,
+    "categories": [
+      "이직·진로",
+      "직장·협업",
+      "연애",
+      "친구",
+      "가족",
+      "시험",
+      "학습",
+      "창작",
+      "앱·개발",
+      "금전",
+      "건강",
+      "선택",
+      "감정",
+      "사업·프리랜서",
+      "결과·기다림",
+      "일상·취미"
+    ],
+    "errors": [
+      "Editorial regression: borrowed item receives return advice"
+    ],
+    "intentMatches": 320,
+    "domainMatches": 303,
+    "qualityChecks": [
+      {
+        "name": "no foreign placeholder / broken text",
+        "ok": true
+      },
+      {
+        "name": "colleague apology is not an outgoing message",
+        "ok": true
+      },
+      {
+        "name": "mutual exchange preserves reply",
+        "ok": true
+      },
+      {
+        "name": "reply with 도 is preserved",
+        "ok": true
+      },
+      {
+        "name": "child question avoids friend advice",
+        "ok": true
+      },
+      {
+        "name": "borrowed item receives return advice",
+        "ok": false
+      },
+      {
+        "name": "travel preparation avoids exam advice",
+        "ok": true
+      },
+      {
+        "name": "commute question includes actual travel time",
+        "ok": true
+      },
+      {
+        "name": "workload includes deadlines and effort",
+        "ok": true
+      },
+      {
+        "name": "already accepted job does not advise applying",
+        "ok": true
+      },
+      {
+        "name": "medication discomfort remains medical",
+        "ok": true
+      },
+      {
+        "name": "clinical test possibility retains its medical boundary",
+        "ok": true
+      },
+      {
+        "name": "hospital avoidance retains clinical context",
+        "ok": true
+      },
+      {
+        "name": "completed assignment not submitted again",
+        "ok": true
+      },
+      {
+        "name": "editing verb alone does not imply a factual document",
+        "ok": true
+      }
+    ],
+    "appSHA256": "6382eff6de0fb426bfc537b03adb9cae1314072bcb2f2bab019cb5997633f316"
+  },
+  "finding": "Nominal verbal forms such as 말+하 and 상의+하 were omitted from the communication predicate set. This incorrectly discarded existing specific practical methods. Original broken-text noun-only rejection remains necessary; do not drop valid predicate compositions.",
+  "actualPairs": [
+    {
+      "id": 60,
+      "question": "연인과 돈을 쓰는 기준을 어떻게 대화하면 좋을까요?",
+      "before": {
+        "id": 60,
+        "category": "연애",
+        "question": "연인과 돈을 쓰는 기준을 어떻게 대화하면 좋을까요?",
+        "intent": "action",
+        "domain": "relationship",
+        "spread": "career5",
+        "cards": [
+          {
+            "id": "wa04",
+            "rev": false
+          },
+          {
+            "id": "cu01",
+            "rev": false
+          },
+          {
+            "id": "ar15",
+            "rev": false
+          },
+          {
+            "id": "cu05",
+            "rev": true
+          },
+          {
+            "id": "pe14",
+            "rev": true
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "relationship",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "각자 부담할 수 있는 범위와 함께 쓸 항목을 나누고, 지출을 바꿀 때 먼저 상의할 기준을 정해 보세요.\n\n‘도움이 될 자원’의 컵 5 역방향에서 살필 관점은 ‘회복·전환’입니다. ‘실행의 첫 단계’의 펜타클 왕 역방향에서 살필 관점은 ‘놓기 어려움·경직’입니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+        "actions": [
+          "각자 부담할 수 있는 범위와 함께 쓸 항목을 나누고, 지출을 바꿀 때 먼저 상의할 기준을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 컵 에이스 정방향은 ‘열리는 감정’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 악마 정방향은 ‘집착의 자각’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. ‘집착의 자각’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘도움이 될 자원’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. ‘실행의 첫 단계’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "제약과 실천을 연결하기",
+            "body": "‘현실의 제약’의 악마 정방향은 ‘집착의 자각’을 보여 줍니다. ‘실행의 첫 단계’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 두 카드에서는 ‘놓기 어려움’이라는 주제를 함께 살펴볼 수 있습니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      },
+      "after": {
+        "id": 60,
+        "category": "연애",
+        "question": "연인과 돈을 쓰는 기준을 어떻게 대화하면 좋을까요?",
+        "intent": "action",
+        "domain": "relationship",
+        "spread": "career5",
+        "cards": [
+          {
+            "id": "wa04",
+            "rev": false
+          },
+          {
+            "id": "cu01",
+            "rev": false
+          },
+          {
+            "id": "ar15",
+            "rev": false
+          },
+          {
+            "id": "cu05",
+            "rev": true
+          },
+          {
+            "id": "pe14",
+            "rev": true
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "relationship",
+        "headline": "설명할 내용을 먼저 정리하기",
+        "direct": "전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다.\n\n‘도움이 될 자원’의 컵 5 역방향에서 살필 관점은 ‘회복·전환’입니다. ‘실행의 첫 단계’의 펜타클 왕 역방향에서 살필 관점은 ‘놓기 어려움·경직’입니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+        "actions": [
+          "전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 컵 에이스 정방향은 ‘열리는 감정’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 악마 정방향은 ‘집착의 자각’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. ‘집착의 자각’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘도움이 될 자원’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. ‘실행의 첫 단계’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "제약과 실천을 연결하기",
+            "body": "‘현실의 제약’의 악마 정방향은 ‘집착의 자각’을 보여 줍니다. ‘실행의 첫 단계’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 두 카드에서는 ‘놓기 어려움’이라는 주제를 함께 살펴볼 수 있습니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      }
+    },
+    {
+      "id": 61,
+      "question": "오래된 친구와 약속이 자꾸 취소돼요. 어떻게 말을 꺼낼까요?",
+      "before": {
+        "id": 61,
+        "category": "친구",
+        "question": "오래된 친구와 약속이 자꾸 취소돼요. 어떻게 말을 꺼낼까요?",
+        "intent": "action",
+        "domain": "family",
+        "spread": "choice5",
+        "cards": [
+          {
+            "id": "pe14",
+            "rev": true
+          },
+          {
+            "id": "wa14",
+            "rev": false
+          },
+          {
+            "id": "sw10",
+            "rev": true
+          },
+          {
+            "id": "cu05",
+            "rev": true
+          },
+          {
+            "id": "sw09",
+            "rev": true
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "family",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "약속이 취소될 때 어떤 점이 아쉬운지 구체적으로 말하고, 다시 정할 수 있는 일정이 있는지 물어보세요.\n\n‘선택의 기준’의 컵 5 역방향에서 살필 관점은 ‘회복·전환’입니다. ‘다음 한 걸음’의 소드 9 역방향에서 살필 관점은 ‘회복·표현’입니다. 두 카드에서는 ‘회복’이라는 주제를 함께 살펴볼 수 있습니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+        "actions": [
+          "약속이 취소될 때 어떤 점이 아쉬운지 구체적으로 말하고, 다시 정할 수 있는 일정이 있는지 물어보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘선택의 기준’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. ‘다음 한 걸음’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. 두 카드에서는 ‘회복’이라는 주제를 함께 살펴볼 수 있습니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      },
+      "after": {
+        "id": 61,
+        "category": "친구",
+        "question": "오래된 친구와 약속이 자꾸 취소돼요. 어떻게 말을 꺼낼까요?",
+        "intent": "action",
+        "domain": "family",
+        "spread": "choice5",
+        "cards": [
+          {
+            "id": "pe14",
+            "rev": true
+          },
+          {
+            "id": "wa14",
+            "rev": false
+          },
+          {
+            "id": "sw10",
+            "rev": true
+          },
+          {
+            "id": "cu05",
+            "rev": true
+          },
+          {
+            "id": "sw09",
+            "rev": true
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "family",
+        "headline": "설명할 내용을 먼저 정리하기",
+        "direct": "전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다.\n\n‘선택의 기준’의 컵 5 역방향에서 살필 관점은 ‘회복·전환’입니다. ‘다음 한 걸음’의 소드 9 역방향에서 살필 관점은 ‘회복·표현’입니다. 두 카드에서는 ‘회복’이라는 주제를 함께 살펴볼 수 있습니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+        "actions": [
+          "전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘선택의 기준’의 컵 5 역방향은 ‘후회에서의 회복’을 보여 줍니다. ‘다음 한 걸음’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. 두 카드에서는 ‘회복’이라는 주제를 함께 살펴볼 수 있습니다. 회복을 서두르기보다 지금 달라진 작은 지점부터 확인해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      }
+    },
+    {
+      "id": 71,
+      "question": "빌려 간 물건을 돌려달라고 친구에게 어떻게 말할까요?",
+      "before": {
+        "id": 71,
+        "category": "친구",
+        "question": "빌려 간 물건을 돌려달라고 친구에게 어떻게 말할까요?",
+        "intent": "action",
+        "domain": "family",
+        "spread": "celtic",
+        "cards": [
+          {
+            "id": "sw11",
+            "rev": true
+          },
+          {
+            "id": "sw03",
+            "rev": true
+          },
+          {
+            "id": "ar21",
+            "rev": true
+          },
+          {
+            "id": "sw10",
+            "rev": true
+          },
+          {
+            "id": "sw08",
+            "rev": false
+          },
+          {
+            "id": "wa11",
+            "rev": true
+          },
+          {
+            "id": "ar07",
+            "rev": true
+          },
+          {
+            "id": "pe07",
+            "rev": false
+          },
+          {
+            "id": "ar06",
+            "rev": false
+          },
+          {
+            "id": "cu13",
+            "rev": true
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "family",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "돌려받을 물건과 필요한 날짜를 분명히 말하고, 서로 가능한 반환 방법을 정해 보세요.\n\n‘의식적인 목표’의 세계 역방향에서 살필 관점은 ‘지연·마무리’입니다. ‘무의식·기반’의 소드 10 역방향에서 살필 관점은 ‘상실·회복’입니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+        "actions": [
+          "돌려받을 물건과 필요한 날짜를 분명히 말하고, 서로 가능한 반환 방법을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 소드 시종 역방향은 ‘성급한 의심’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. ‘상처에서의 회복’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 세계 역방향은 ‘미완의 과제’를 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 소드 8 정방향은 ‘마음속 제약’을 보여 줍니다. 정보가 부족한 부분을 확신이나 최악의 예상으로 채우지 않아도 됩니다. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 완드 시종 역방향은 ‘서투른 의욕’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 연인 정방향은 ‘가치에 맞는 선택’을 보여 줍니다. 내가 중요하게 여기는 것과 실제 선택의 기준이 이어지는지 살펴보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 컵 여왕 역방향은 ‘흐려진 감정 경계’를 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘의식적인 목표’의 세계 역방향은 ‘미완의 과제’를 보여 줍니다. ‘무의식·기반’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다.",
+            "refs": [
+              2,
+              3
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      },
+      "after": {
+        "id": 71,
+        "category": "친구",
+        "question": "빌려 간 물건을 돌려달라고 친구에게 어떻게 말할까요?",
+        "intent": "action",
+        "domain": "family",
+        "spread": "celtic",
+        "cards": [
+          {
+            "id": "sw11",
+            "rev": true
+          },
+          {
+            "id": "sw03",
+            "rev": true
+          },
+          {
+            "id": "ar21",
+            "rev": true
+          },
+          {
+            "id": "sw10",
+            "rev": true
+          },
+          {
+            "id": "sw08",
+            "rev": false
+          },
+          {
+            "id": "wa11",
+            "rev": true
+          },
+          {
+            "id": "ar07",
+            "rev": true
+          },
+          {
+            "id": "pe07",
+            "rev": false
+          },
+          {
+            "id": "ar06",
+            "rev": false
+          },
+          {
+            "id": "cu13",
+            "rev": true
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "family",
+        "headline": "설명할 내용을 먼저 정리하기",
+        "direct": "전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다.\n\n‘의식적인 목표’의 세계 역방향에서 살필 관점은 ‘지연·마무리’입니다. ‘무의식·기반’의 소드 10 역방향에서 살필 관점은 ‘상실·회복’입니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+        "actions": [
+          "전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 소드 시종 역방향은 ‘성급한 의심’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. ‘상처에서의 회복’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 세계 역방향은 ‘미완의 과제’를 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 소드 8 정방향은 ‘마음속 제약’을 보여 줍니다. 정보가 부족한 부분을 확신이나 최악의 예상으로 채우지 않아도 됩니다. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 완드 시종 역방향은 ‘서투른 의욕’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 연인 정방향은 ‘가치에 맞는 선택’을 보여 줍니다. 내가 중요하게 여기는 것과 실제 선택의 기준이 이어지는지 살펴보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 컵 여왕 역방향은 ‘흐려진 감정 경계’를 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘의식적인 목표’의 세계 역방향은 ‘미완의 과제’를 보여 줍니다. ‘무의식·기반’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다.",
+            "refs": [
+              2,
+              3
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      }
+    },
+    {
+      "id": 96,
+      "question": "아빠와 의견이 다를 때 어떤 질문을 해보면 좋을까요?",
+      "before": {
+        "id": 96,
+        "category": "가족",
+        "question": "아빠와 의견이 다를 때 어떤 질문을 해보면 좋을까요?",
+        "intent": "action",
+        "domain": "family",
+        "spread": "one",
+        "cards": [
+          {
+            "id": "cu13",
+            "rev": false
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "family",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "가족이 걱정하는 점을 먼저 물어보고, 내가 원하는 것과 준비한 계획을 한 가지씩 설명해 보세요. ‘핵심 메시지’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다.",
+        "actions": [
+          "가족이 걱정하는 점을 먼저 물어보고, 내가 원하는 것과 준비한 계획을 한 가지씩 설명해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 컵 여왕 정방향은 ‘감정에 대한 공감’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      },
+      "after": {
+        "id": 96,
+        "category": "가족",
+        "question": "아빠와 의견이 다를 때 어떤 질문을 해보면 좋을까요?",
+        "intent": "action",
+        "domain": "family",
+        "spread": "one",
+        "cards": [
+          {
+            "id": "cu13",
+            "rev": false
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "family",
+        "headline": "물어볼 질문을 준비하기",
+        "direct": "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다.\n\n‘핵심 메시지’의 컵 여왕 정방향에서 살필 관점은 ‘돌봄·지원’입니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 불편하거나 걱정되는 점도 질문할 수 있도록 우선순위를 적고, 답을 놓쳤을 때 메모나 재설명을 부탁할 방법을 준비해 보세요.",
+        "actions": [
+          "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 컵 여왕 정방향은 ‘감정에 대한 공감’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      }
+    },
+    {
+      "id": 248,
+      "question": "상담을 신청했어요. 첫 상담에서 무엇을 이야기할까요?",
+      "before": {
+        "id": 248,
+        "category": "감정",
+        "question": "상담을 신청했어요. 첫 상담에서 무엇을 이야기할까요?",
+        "intent": "action",
+        "domain": "stress",
+        "spread": "one",
+        "cards": [
+          {
+            "id": "sw03",
+            "rev": false
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "stress",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "상담을 신청하게 된 이유와 최근 특히 힘들었던 장면을 적어 보세요. 처음부터 모든 이야기를 잘 정리해서 말할 필요는 없습니다.\n\n‘핵심 메시지’의 소드 3 정방향에서 살필 관점은 ‘상실·명료함’입니다. 상실감이나 상처가 있다면, 그 마음을 돌볼 시간과 지금 남아 있는 것을 함께 살펴보세요. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+        "actions": [
+          "상담을 신청하게 된 이유와 최근 특히 힘들었던 장면을 적어 보세요. 처음부터 모든 이야기를 잘 정리해서 말할 필요는 없습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 소드 3 정방향은 ‘아픈 진실’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      },
+      "after": {
+        "id": 248,
+        "category": "감정",
+        "question": "상담을 신청했어요. 첫 상담에서 무엇을 이야기할까요?",
+        "intent": "action",
+        "domain": "stress",
+        "spread": "one",
+        "cards": [
+          {
+            "id": "sw03",
+            "rev": false
+          }
+        ],
+        "actualIntent": "action",
+        "actualDomain": "stress",
+        "headline": "설명할 내용을 먼저 정리하기",
+        "direct": "전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다.\n\n‘핵심 메시지’의 소드 3 정방향에서 살필 관점은 ‘상실·명료함’입니다. 상실감이나 상처가 있다면, 그 마음을 돌볼 시간과 지금 남아 있는 것을 함께 살펴보세요. 내용을 정확히 전하는 것과 감당할 수 있는 말의 양을 함께 살피고, 상대와 나 모두에게 필요한 속도로 설명해 보세요.",
+        "actions": [
+          "전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 소드 3 정방향은 ‘아픈 진실’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        }
+      }
+    }
+  ]
+}
