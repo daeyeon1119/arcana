@@ -1,0 +1,407 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "f3766e1a3975b54fab86b677dda1ae907593cd51237282db32cf6343b0dc3eea",
+    "appBytes": 33140682,
+    "webRelease": "3da3182099565574da348a03",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "sourceSHA256": "b87ba08a95d2a0965a7a2a3b9104725d8920a38ce6ecbf6ab0ae8a25e60e7232",
+  "failure": [
+    {
+      "id": "u02",
+      "spread": "one",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u02",
+      "spread": "three",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u02",
+      "spread": "five",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u02",
+      "spread": "relationship5",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u02",
+      "spread": "choice5",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u02",
+      "spread": "waiting3",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u02",
+      "spread": "career5",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u02",
+      "spread": "celtic",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u15",
+      "spread": "one",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u15",
+      "spread": "three",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u15",
+      "spread": "five",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u15",
+      "spread": "relationship5",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u15",
+      "spread": "choice5",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u15",
+      "spread": "waiting3",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u15",
+      "spread": "career5",
+      "error": "known practical operation metadata contract"
+    },
+    {
+      "id": "u15",
+      "spread": "celtic",
+      "error": "known practical operation metadata contract"
+    }
+  ],
+  "actualFailedPrimaries": [
+    {
+      "id": "u02",
+      "question": "도자기 잔의 A안은 무광 유약이고 B안은 투명 유약입니다. 작품을 아직 완성하지 않았어요. 두 안을 비교하고 작업을 마칠 기준도 함께 살펴봐 주세요.",
+      "cards": [
+        {
+          "id": "wa14",
+          "rev": false
+        },
+        {
+          "id": "sw11",
+          "rev": false
+        },
+        {
+          "id": "sw10",
+          "rev": true
+        },
+        {
+          "id": "cu09",
+          "rev": false
+        },
+        {
+          "id": "pe02",
+          "rev": false
+        }
+      ],
+      "direct": "질문에 적은 선택지를 구분해 읽었습니다.\nA안: 무광 유약\nB안: 투명 유약입니다\n\n‘핵심’에 놓인 완드 왕의 주제는 ‘큰 비전의 실행’입니다. 작업의 목적과 준비할 시간, 피드백을 얻을 방법을 같은 기준으로 비교해 보세요.\n\n각 안의 실제 조건과 아직 모르는 부분을 같은 항목으로 비교하세요. 카드의 의미는 확인할 관점이며 어느 안의 결과나 우열을 보장하지 않습니다.\n\n확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 펜타클 2 정방향에서 살필 관점은 ‘균형·유연성’입니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+      "model": {
+        "version": 89,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "도자기 잔의 A안은 무광 유약이고 B안은 투명 유약입니다. 작품을 아직 완성하지 않았어요. 두 안을 비교하고 작업을 마칠 기준도 함께 살펴봐 주세요.",
+        "evidenceQuestion": "도자기 잔의 A안은 무광 유약이고 B안은 투명 유약입니다. 작품을 아직 완성하지 않았어요. 두 안을 비교하고 작업을 마칠 기준도 함께 살펴봐 주세요.",
+        "requests": [
+          {
+            "kind": "compare",
+            "goal": "compare",
+            "text": "두 안을 비교하고",
+            "start": 51,
+            "end": 60
+          },
+          {
+            "kind": "action",
+            "goal": "verify",
+            "text": "작업을 마칠 기준도 함께 살펴봐 주세요",
+            "start": 61,
+            "end": 82,
+            "sharedContext": "두 안을 비교하고 ",
+            "frame": {
+              "operation": "verify",
+              "reason": "requested-lexical-predicate",
+              "source": "작업을 마칠 기준도 함께 살펴봐 주세요"
+            }
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "applications": [
+        {
+          "request": 0,
+          "operation": "compare",
+          "mode": "pair",
+          "options": [
+            {
+              "label": "A",
+              "start": 11,
+              "end": 16
+            },
+            {
+              "label": "B",
+              "start": 23,
+              "end": 31
+            }
+          ],
+          "refs": []
+        },
+        {
+          "request": 1,
+          "operation": "verify",
+          "group": "care",
+          "primaryMotif": "balance",
+          "relationAxis": null,
+          "contextRule": null,
+          "refs": [
+            4
+          ],
+          "replaceGeneric": true,
+          "quantity": null,
+          "timeBinding": {
+            "value": null,
+            "reason": "no-available-time",
+            "candidates": []
+          },
+          "verification": [],
+          "directLens": {
+            "text": "‘조언’의 펜타클 2 정방향에서 살필 관점은 ‘균형·유연성’입니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+            "refs": [
+              4
+            ],
+            "operation": "verify",
+            "relationAxis": null,
+            "facets": [
+              {
+                "index": 4,
+                "id": "pe02",
+                "reverse": false,
+                "motifs": [
+                  "balance",
+                  "flexibility"
+                ]
+              }
+            ],
+            "roleFrame": "",
+            "reused": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "u15",
+      "question": "A는 종이 지도 만들기이고 B는 음성 산책 안내 만들기이며 C는 사진 기록 만들기입니다. 세 방식을 비교하고, 결정 뒤에 할 첫 작업도 살펴봐 주세요.",
+      "cards": [
+        {
+          "id": "cu14",
+          "rev": false
+        },
+        {
+          "id": "wa11",
+          "rev": false
+        },
+        {
+          "id": "ar01",
+          "rev": false
+        },
+        {
+          "id": "ar12",
+          "rev": true
+        },
+        {
+          "id": "pe09",
+          "rev": true
+        }
+      ],
+      "direct": "질문에 적은 선택지를 구분해 읽었습니다.\nA안: 종이 지도 만들기\nB안: 음성 산책 안내 만들기\nC안: 사진 기록 만들기입니다\n\n선택지가 3개이므로 각 안의 결과를 카드 한 장씩에 임의로 배정하지 않고 공통 기준으로 비교합니다. ‘조언’의 펜타클 9 역방향은 ‘안정감의 흔들림’을 보여 줍니다. 선택지의 장점 수를 세기보다 자신에게 중요한 기준의 순서를 먼저 정해 보세요. 양보할 수 있는 조건과 지킬 조건을 구분합니다.\n\n각 안의 실제 조건과 아직 모르는 부분을 같은 항목으로 비교하세요. 카드의 의미는 확인할 관점이며 어느 안의 결과나 우열을 보장하지 않습니다.\n\n두 선택을 같은 기준으로 적고, 되돌릴 수 있는 작은 확인부터 해보세요. 아직 모르는 조건은 추측으로 채우지 않아도 됩니다.\n\n‘조언’의 펜타클 9 역방향에서 살필 관점은 ‘비교·의심’입니다. 다른 사람의 성과와 내 과정에서 확인할 기준을 분리해 보세요. 다른 사람에게 좋아 보이는 조건과 나에게 꼭 필요한 요건을 구분하고, 우선 지킬 기준부터 확인해 보세요.",
+      "model": {
+        "version": 89,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "A는 종이 지도 만들기이고 B는 음성 산책 안내 만들기이며 C는 사진 기록 만들기입니다. 세 방식을 비교하고, 결정 뒤에 할 첫 작업도 살펴봐 주세요.",
+        "evidenceQuestion": "A는 종이 지도 만들기이고 B는 음성 산책 안내 만들기이며 C는 사진 기록 만들기입니다. 세 방식을 비교하고, 결정 뒤에 할 첫 작업도 살펴봐 주세요.",
+        "requests": [
+          {
+            "kind": "compare",
+            "goal": "compare",
+            "text": "세 방식을 비교하고",
+            "start": 50,
+            "end": 60
+          },
+          {
+            "kind": "action",
+            "goal": "verify",
+            "text": "결정 뒤에 할 첫 작업도 살펴봐 주세요",
+            "start": 62,
+            "end": 83,
+            "frame": {
+              "operation": "verify",
+              "reason": "requested-lexical-predicate",
+              "source": "결정 뒤에 할 첫 작업도 살펴봐 주세요"
+            }
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "applications": [
+        {
+          "request": 0,
+          "operation": "compare",
+          "mode": "common",
+          "options": [
+            {
+              "label": "A",
+              "start": 3,
+              "end": 12
+            },
+            {
+              "label": "B",
+              "start": 18,
+              "end": 30
+            },
+            {
+              "label": "C",
+              "start": 36,
+              "end": 48
+            }
+          ],
+          "refs": [
+            4
+          ]
+        },
+        {
+          "request": 1,
+          "operation": "verify",
+          "group": "values",
+          "primaryMotif": "comparison",
+          "relationAxis": null,
+          "contextRule": null,
+          "refs": [
+            4
+          ],
+          "replaceGeneric": false,
+          "quantity": null,
+          "timeBinding": {
+            "value": null,
+            "reason": "no-available-time",
+            "candidates": []
+          },
+          "verification": [],
+          "directLens": {
+            "text": "‘조언’의 펜타클 9 역방향에서 살필 관점은 ‘비교·의심’입니다. 다른 사람의 성과와 내 과정에서 확인할 기준을 분리해 보세요. 다른 사람에게 좋아 보이는 조건과 나에게 꼭 필요한 요건을 구분하고, 우선 지킬 기준부터 확인해 보세요.",
+            "refs": [
+              4
+            ],
+            "operation": "verify",
+            "relationAxis": null,
+            "facets": [
+              {
+                "index": 4,
+                "id": "pe09",
+                "reverse": true,
+                "motifs": [
+                  "comparison",
+                  "doubt"
+                ]
+              }
+            ],
+            "roleFrame": "",
+            "reused": false
+          }
+        }
+      ]
+    }
+  ],
+  "note": "The new lexical predicate fallback replaced an already identified finish/implement request with generic verify. Whole first execution remains untouched. Full npm job was stopped on this known source failure; its partial result is not a final pass."
+}

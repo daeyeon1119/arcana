@@ -1,0 +1,541 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "268b4ab5869146b7d8ddbc8ecfe0e74c7a753d49110c58528399510c1fc90c0a",
+    "appBytes": 33136308,
+    "webRelease": "27829dc83e85e93ae45ef4eb",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "finding": "The model split the valid surface verb 상의할 as 상/의하. Lexeme evidence alone rejected a valid specific communication method. Capture before using explicit verbal surface plus predicate POS as corroboration.",
+  "text": "각자 부담할 수 있는 범위와 함께 쓸 항목을 나누고, 지출을 바꿀 때 먼저 상의할 기준을 정해 보세요.",
+  "analysis": {
+    "text": "각자 부담할 수 있는 범위와 함께 쓸 항목을 나누고, 지출을 바꿀 때 먼저 상의할 기준을 정해 보세요.",
+    "ready": true,
+    "tokens": [
+      {
+        "text": "각자",
+        "pos": "MAG",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "text": "부담",
+        "pos": "NNG",
+        "start": 3,
+        "end": 6
+      },
+      {
+        "text": "하",
+        "pos": "XSV",
+        "start": 3,
+        "end": 6
+      },
+      {
+        "text": "ㄹ",
+        "pos": "ETM",
+        "start": 3,
+        "end": 6
+      },
+      {
+        "text": "수",
+        "pos": "NNB",
+        "start": 7,
+        "end": 8
+      },
+      {
+        "text": "있",
+        "pos": "VA",
+        "start": 9,
+        "end": 11
+      },
+      {
+        "text": "는",
+        "pos": "ETM",
+        "start": 9,
+        "end": 11
+      },
+      {
+        "text": "범위",
+        "pos": "NNG",
+        "start": 12,
+        "end": 15
+      },
+      {
+        "text": "와",
+        "pos": "JC",
+        "start": 12,
+        "end": 15
+      },
+      {
+        "text": "함께",
+        "pos": "MAG",
+        "start": 16,
+        "end": 18
+      },
+      {
+        "text": "쓰",
+        "pos": "VV",
+        "start": 19,
+        "end": 20
+      },
+      {
+        "text": "ㄹ",
+        "pos": "ETM",
+        "start": 19,
+        "end": 20
+      },
+      {
+        "text": "항목",
+        "pos": "NNG",
+        "start": 21,
+        "end": 24
+      },
+      {
+        "text": "을",
+        "pos": "JKO",
+        "start": 21,
+        "end": 24
+      },
+      {
+        "text": "나누",
+        "pos": "VV",
+        "start": 25,
+        "end": 29
+      },
+      {
+        "text": "고",
+        "pos": "EC",
+        "start": 25,
+        "end": 29
+      },
+      {
+        "text": ",",
+        "pos": "SP",
+        "start": 25,
+        "end": 29
+      },
+      {
+        "text": "지출",
+        "pos": "NNG",
+        "start": 30,
+        "end": 33
+      },
+      {
+        "text": "을",
+        "pos": "JKO",
+        "start": 30,
+        "end": 33
+      },
+      {
+        "text": "바꾸",
+        "pos": "VV",
+        "start": 34,
+        "end": 36
+      },
+      {
+        "text": "ㄹ",
+        "pos": "ETM",
+        "start": 34,
+        "end": 36
+      },
+      {
+        "text": "때",
+        "pos": "NNG",
+        "start": 37,
+        "end": 38
+      },
+      {
+        "text": "먼저",
+        "pos": "MAG",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "text": "상",
+        "pos": "NNG",
+        "start": 42,
+        "end": 45
+      },
+      {
+        "text": "의하",
+        "pos": "VV",
+        "start": 42,
+        "end": 45
+      },
+      {
+        "text": "ㄹ",
+        "pos": "ETM",
+        "start": 42,
+        "end": 45
+      },
+      {
+        "text": "기준",
+        "pos": "NNG",
+        "start": 46,
+        "end": 49
+      },
+      {
+        "text": "을",
+        "pos": "JKO",
+        "start": 46,
+        "end": 49
+      },
+      {
+        "text": "정하",
+        "pos": "VV",
+        "start": 50,
+        "end": 52
+      },
+      {
+        "text": "아",
+        "pos": "EC",
+        "start": 50,
+        "end": 52
+      },
+      {
+        "text": "보",
+        "pos": "VX",
+        "start": 53,
+        "end": 57
+      },
+      {
+        "text": "세요",
+        "pos": "EF",
+        "start": 53,
+        "end": 57
+      },
+      {
+        "text": ".",
+        "pos": "SF",
+        "start": 53,
+        "end": 57
+      }
+    ],
+    "words": [
+      {
+        "start": 0,
+        "end": 2,
+        "text": "각자",
+        "tokens": [
+          {
+            "text": "각자",
+            "pos": "MAG",
+            "start": 0,
+            "end": 2
+          }
+        ]
+      },
+      {
+        "start": 3,
+        "end": 6,
+        "text": "부담할",
+        "tokens": [
+          {
+            "text": "부담",
+            "pos": "NNG",
+            "start": 3,
+            "end": 6
+          },
+          {
+            "text": "하",
+            "pos": "XSV",
+            "start": 3,
+            "end": 6
+          },
+          {
+            "text": "ㄹ",
+            "pos": "ETM",
+            "start": 3,
+            "end": 6
+          }
+        ]
+      },
+      {
+        "start": 7,
+        "end": 8,
+        "text": "수",
+        "tokens": [
+          {
+            "text": "수",
+            "pos": "NNB",
+            "start": 7,
+            "end": 8
+          }
+        ]
+      },
+      {
+        "start": 9,
+        "end": 11,
+        "text": "있는",
+        "tokens": [
+          {
+            "text": "있",
+            "pos": "VA",
+            "start": 9,
+            "end": 11
+          },
+          {
+            "text": "는",
+            "pos": "ETM",
+            "start": 9,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "start": 12,
+        "end": 15,
+        "text": "범위와",
+        "tokens": [
+          {
+            "text": "범위",
+            "pos": "NNG",
+            "start": 12,
+            "end": 15
+          },
+          {
+            "text": "와",
+            "pos": "JC",
+            "start": 12,
+            "end": 15
+          }
+        ]
+      },
+      {
+        "start": 16,
+        "end": 18,
+        "text": "함께",
+        "tokens": [
+          {
+            "text": "함께",
+            "pos": "MAG",
+            "start": 16,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "start": 19,
+        "end": 20,
+        "text": "쓸",
+        "tokens": [
+          {
+            "text": "쓰",
+            "pos": "VV",
+            "start": 19,
+            "end": 20
+          },
+          {
+            "text": "ㄹ",
+            "pos": "ETM",
+            "start": 19,
+            "end": 20
+          }
+        ]
+      },
+      {
+        "start": 21,
+        "end": 24,
+        "text": "항목을",
+        "tokens": [
+          {
+            "text": "항목",
+            "pos": "NNG",
+            "start": 21,
+            "end": 24
+          },
+          {
+            "text": "을",
+            "pos": "JKO",
+            "start": 21,
+            "end": 24
+          }
+        ]
+      },
+      {
+        "start": 25,
+        "end": 29,
+        "text": "나누고,",
+        "tokens": [
+          {
+            "text": "나누",
+            "pos": "VV",
+            "start": 25,
+            "end": 29
+          },
+          {
+            "text": "고",
+            "pos": "EC",
+            "start": 25,
+            "end": 29
+          },
+          {
+            "text": ",",
+            "pos": "SP",
+            "start": 25,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "start": 30,
+        "end": 33,
+        "text": "지출을",
+        "tokens": [
+          {
+            "text": "지출",
+            "pos": "NNG",
+            "start": 30,
+            "end": 33
+          },
+          {
+            "text": "을",
+            "pos": "JKO",
+            "start": 30,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "start": 34,
+        "end": 36,
+        "text": "바꿀",
+        "tokens": [
+          {
+            "text": "바꾸",
+            "pos": "VV",
+            "start": 34,
+            "end": 36
+          },
+          {
+            "text": "ㄹ",
+            "pos": "ETM",
+            "start": 34,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "start": 37,
+        "end": 38,
+        "text": "때",
+        "tokens": [
+          {
+            "text": "때",
+            "pos": "NNG",
+            "start": 37,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "start": 39,
+        "end": 41,
+        "text": "먼저",
+        "tokens": [
+          {
+            "text": "먼저",
+            "pos": "MAG",
+            "start": 39,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "start": 42,
+        "end": 45,
+        "text": "상의할",
+        "tokens": [
+          {
+            "text": "상",
+            "pos": "NNG",
+            "start": 42,
+            "end": 45
+          },
+          {
+            "text": "의하",
+            "pos": "VV",
+            "start": 42,
+            "end": 45
+          },
+          {
+            "text": "ㄹ",
+            "pos": "ETM",
+            "start": 42,
+            "end": 45
+          }
+        ]
+      },
+      {
+        "start": 46,
+        "end": 49,
+        "text": "기준을",
+        "tokens": [
+          {
+            "text": "기준",
+            "pos": "NNG",
+            "start": 46,
+            "end": 49
+          },
+          {
+            "text": "을",
+            "pos": "JKO",
+            "start": 46,
+            "end": 49
+          }
+        ]
+      },
+      {
+        "start": 50,
+        "end": 52,
+        "text": "정해",
+        "tokens": [
+          {
+            "text": "정하",
+            "pos": "VV",
+            "start": 50,
+            "end": 52
+          },
+          {
+            "text": "아",
+            "pos": "EC",
+            "start": 50,
+            "end": 52
+          }
+        ]
+      },
+      {
+        "start": 53,
+        "end": 57,
+        "text": "보세요.",
+        "tokens": [
+          {
+            "text": "보",
+            "pos": "VX",
+            "start": 53,
+            "end": 57
+          },
+          {
+            "text": "세요",
+            "pos": "EF",
+            "start": 53,
+            "end": 57
+          },
+          {
+            "text": ".",
+            "pos": "SF",
+            "start": 53,
+            "end": 57
+          }
+        ]
+      }
+    ]
+  },
+  "accepted": false
+}

@@ -1,0 +1,142 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "aeb43655a943342449ea8d34da8099ccbf189d6050f8fa0b045c2507fdbc99ea",
+    "appBytes": 33136512,
+    "webRelease": "92550add8b6a20a958540079",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "4b2fa9b373ecc51ba1e4d5b828c6f85dcc0531b87a9f5bc6bd2aa1b38b607ed5",
+  "candidateCommit": "93a77f8d49eaebd028f0b5c638fb2b0f6e94487b",
+  "directlyRead": [
+    {
+      "id": "n01",
+      "spread": "five",
+      "directSHA256": "595d03be6cd7edcdcc391dfa4094862f36126f9a9889a06cf9700c8be17b8ca4"
+    },
+    {
+      "id": "n02",
+      "spread": "five",
+      "directSHA256": "bc30d229a09cfa1477e9660199c7d6bcb81adab45a3b1825f10272ac468e730a"
+    },
+    {
+      "id": "n03",
+      "spread": "five",
+      "directSHA256": "106b13df1978f24c0395b21d6883e0236604d69a815762113ebc1df63b92c382"
+    },
+    {
+      "id": "n04",
+      "spread": "five",
+      "directSHA256": "e20c4b9913ae2e2ac4315d09db699b07dda184bb705279dd5b7f289dea251760"
+    },
+    {
+      "id": "n05",
+      "spread": "five",
+      "directSHA256": "13864656fe9a9611f058d627615a47210f1c7a340d34b2a4859f41461b7c2dfe"
+    },
+    {
+      "id": "n06",
+      "spread": "five",
+      "directSHA256": "663af2f746161399476b5f600a48f447d2c9106cd563b3f8d9a79c4dfb61374a"
+    },
+    {
+      "id": "n07",
+      "spread": "five",
+      "directSHA256": "98db1783a02b91eb9c24bcb11ec90039cb5b05052c2a946af68c6ae4cdb8e2c8"
+    },
+    {
+      "id": "n08",
+      "spread": "five",
+      "directSHA256": "a4484abfc54ec28407bb65ae1d0fc1c184cefb43d655617652fe56e572789f91"
+    },
+    {
+      "id": "n09",
+      "spread": "five",
+      "directSHA256": "59ff005a7e15909cb62a30e07bbec39f97ed9712509255e7c7205ec9d8d5c49f"
+    },
+    {
+      "id": "n10",
+      "spread": "five",
+      "directSHA256": "c7a5ab01ae0fa6d6452a901b1493f1a38e05e409ade527a4c21e63676dd78986"
+    },
+    {
+      "id": "n11",
+      "spread": "five",
+      "directSHA256": "a1da1710ca53b1d786419fd05d083e0eabcad1beff68d649bda0fd0fbde71efc"
+    },
+    {
+      "id": "n12",
+      "spread": "five",
+      "directSHA256": "21a559b87ebe54984a4a4ab873ac1ebb29422d7bfb1eaf526195218798af7577"
+    },
+    {
+      "id": "n13",
+      "spread": "five",
+      "directSHA256": "e6e5e2900a1b6b84a1b30623d0e303a36536168fdca43ab2358b368cd80cbf41"
+    },
+    {
+      "id": "n14",
+      "spread": "five",
+      "directSHA256": "ec2dbfdd2b5ee8f3d172cdf611a6782f2ea7e9bb9225a12b3bb91da2c4a69d35"
+    },
+    {
+      "id": "n15",
+      "spread": "five",
+      "directSHA256": "181b50c56d78da0ea4bf10e4a3879a6237f25173e4be9ae0b3ac2466baa0fd95"
+    },
+    {
+      "id": "n16",
+      "spread": "five",
+      "directSHA256": "7b368c8810212cd08b036e01a07cb042c30019086908ac067f71998d292fa821"
+    },
+    {
+      "id": "n17",
+      "spread": "five",
+      "directSHA256": "aed13424f1e0dd76fc122cabb51998599571f1c48a81a9d6399be47a3ed75e3a"
+    },
+    {
+      "id": "n18",
+      "spread": "five",
+      "directSHA256": "d20720f1ea5f5465cbe40369c314ec93b869469a666b459ca4f32ca8dcf75dcd"
+    },
+    {
+      "id": "n19",
+      "spread": "five",
+      "directSHA256": "e36482b00c9da4e9428177e5a802ef2cd7accf7b7baeaee8801e7d66deb1de79"
+    },
+    {
+      "id": "n20",
+      "spread": "five",
+      "directSHA256": "88d9ba0e8c259f3361e19bbec91544c550d5c71db254e49f97530041600d89f5"
+    }
+  ],
+  "mechanicalFailedQuestionIds": [
+    "n02",
+    "n04",
+    "n07",
+    "n10",
+    "n11",
+    "n13"
+  ],
+  "mechanicalFailureEntries": 104,
+  "semanticFailuresBeyondContracts": [
+    "n01",
+    "n03",
+    "n06",
+    "n09",
+    "n14",
+    "n15",
+    "n17",
+    "n18",
+    "n19",
+    "n20"
+  ],
+  "scope": "All twenty five-card primary answers read. All 160 complete reports retained; other detailed spread variants not manually reread. Self-authored post-candidate first execution, now known regression data. No independent/expert evaluation.",
+  "professionalQualityScore": null
+}

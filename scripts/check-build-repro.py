@@ -6,10 +6,10 @@ from save_artifact import save_text
 root=Path(__file__).resolve().parents[1]
 (root/'.cache').mkdir(exist_ok=True)
 target=Path(tempfile.mkdtemp(prefix='release-crlf-',dir=root/'.cache'))
-for folder in ['src','assets','ARCANA_tarot_v78_source']:
+for folder in ['src','assets','vendor','ARCANA_tarot_v78_source']:
     shutil.copytree(root/folder,target/folder)
 (target/'scripts').mkdir()
-for name in ['scripts/build.py','scripts/save_artifact.py','package.json','manifest.webmanifest']:
+for name in ['scripts/build.py','scripts/build_morphology.py','scripts/save_artifact.py','package.json','manifest.webmanifest']:
     shutil.copy2(root/name,target/name)
 for folder in ['src','assets']:
     for path in (target/folder).rglob('*'):

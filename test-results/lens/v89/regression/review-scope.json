@@ -1,0 +1,22 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "440e4128438984ecaa1d36c2c51426fc18425b831bf32043085675d1c54dff36",
+  "previousSHA256": "00fbb1b5fcc8a83ae7e9d6897e247fc3f0ca724df7bed48ddcf59cdb76c83aee",
+  "changedPrimariesRead": [],
+  "primaryFactChanges": [],
+  "professionalQualityScore": null,
+  "scope": "Known development/regression. Changed five-card primary strings read; unchanged strings byte-compared to v88. Full detailed variants not manually reread. No independent or expert evaluation.",
+  "interpretationSourceCommit": "159378a50c249e4bc039b788b4fd307d2402d1cb"
+}

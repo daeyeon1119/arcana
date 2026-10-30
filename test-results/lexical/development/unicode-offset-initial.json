@@ -1,0 +1,575 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "9aea6e1a488d2ddfdbd9e7002bbde8bbcc589002d7eb6927943b90b2fdf7735e",
+    "appBytes": 33131304,
+    "webRelease": "59701732722150a00aad0fa3",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "sourceSHA256": "db116ef5936ffb87cab80e4992b74e27a50763e0b2121574bd26cd446bcfd1fb",
+  "findings": "Upstream offsets count Unicode scalar values; the first adapter incorrectly treated them as JavaScript UTF-16 offsets. Captured before correction. These are known development probes, not the post-freeze evaluation.",
+  "actual": [
+    {
+      "text": "😊 민수가 답변을 받았어요.",
+      "ready": true,
+      "tokens": [
+        {
+          "text": "😊",
+          "pos": "SW",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "민수",
+          "pos": "NNP",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "가",
+          "pos": "JKS",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "text": "답변",
+          "pos": "NNG",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "을",
+          "pos": "JKO",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "받",
+          "pos": "VV",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "았",
+          "pos": "EP",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": "어요",
+          "pos": "EF",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "text": ".",
+          "pos": "SF",
+          "start": 10,
+          "end": 15
+        }
+      ],
+      "words": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "\ud83d",
+          "tokens": [
+            {
+              "text": "😊",
+              "pos": "SW",
+              "start": 0,
+              "end": 1
+            }
+          ]
+        },
+        {
+          "start": 2,
+          "end": 5,
+          "text": " 민수",
+          "tokens": [
+            {
+              "text": "민수",
+              "pos": "NNP",
+              "start": 2,
+              "end": 5
+            },
+            {
+              "text": "가",
+              "pos": "JKS",
+              "start": 2,
+              "end": 5
+            }
+          ]
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": " 답변",
+          "tokens": [
+            {
+              "text": "답변",
+              "pos": "NNG",
+              "start": 6,
+              "end": 9
+            },
+            {
+              "text": "을",
+              "pos": "JKO",
+              "start": 6,
+              "end": 9
+            }
+          ]
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": " 받았어요",
+          "tokens": [
+            {
+              "text": "받",
+              "pos": "VV",
+              "start": 10,
+              "end": 15
+            },
+            {
+              "text": "았",
+              "pos": "EP",
+              "start": 10,
+              "end": 15
+            },
+            {
+              "text": "어요",
+              "pos": "EF",
+              "start": 10,
+              "end": 15
+            },
+            {
+              "text": ".",
+              "pos": "SF",
+              "start": 10,
+              "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "🎴 저는 받은 답변을 아직 읽지 않았어요.",
+      "ready": true,
+      "tokens": [
+        {
+          "text": "🎴",
+          "pos": "SW",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "저",
+          "pos": "NP",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "는",
+          "pos": "JX",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "text": "받",
+          "pos": "VV",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "은",
+          "pos": "ETM",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "text": "답변",
+          "pos": "NNG",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "을",
+          "pos": "JKO",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "text": "아직",
+          "pos": "MAG",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "text": "읽",
+          "pos": "VV",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "지",
+          "pos": "EC",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "text": "않",
+          "pos": "VX",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "았",
+          "pos": "EP",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": "어요",
+          "pos": "EF",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "text": ".",
+          "pos": "SF",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "words": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "\ud83c",
+          "tokens": [
+            {
+              "text": "🎴",
+              "pos": "SW",
+              "start": 0,
+              "end": 1
+            }
+          ]
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "text": " 저",
+          "tokens": [
+            {
+              "text": "저",
+              "pos": "NP",
+              "start": 2,
+              "end": 4
+            },
+            {
+              "text": "는",
+              "pos": "JX",
+              "start": 2,
+              "end": 4
+            }
+          ]
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": " 받",
+          "tokens": [
+            {
+              "text": "받",
+              "pos": "VV",
+              "start": 5,
+              "end": 7
+            },
+            {
+              "text": "은",
+              "pos": "ETM",
+              "start": 5,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": " 답변",
+          "tokens": [
+            {
+              "text": "답변",
+              "pos": "NNG",
+              "start": 8,
+              "end": 11
+            },
+            {
+              "text": "을",
+              "pos": "JKO",
+              "start": 8,
+              "end": 11
+            }
+          ]
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": " 아",
+          "tokens": [
+            {
+              "text": "아직",
+              "pos": "MAG",
+              "start": 12,
+              "end": 14
+            }
+          ]
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": " 읽",
+          "tokens": [
+            {
+              "text": "읽",
+              "pos": "VV",
+              "start": 15,
+              "end": 17
+            },
+            {
+              "text": "지",
+              "pos": "EC",
+              "start": 15,
+              "end": 17
+            }
+          ]
+        },
+        {
+          "start": 18,
+          "end": 23,
+          "text": " 않았어요",
+          "tokens": [
+            {
+              "text": "않",
+              "pos": "VX",
+              "start": 18,
+              "end": 23
+            },
+            {
+              "text": "았",
+              "pos": "EP",
+              "start": 18,
+              "end": 23
+            },
+            {
+              "text": "어요",
+              "pos": "EF",
+              "start": 18,
+              "end": 23
+            },
+            {
+              "text": ".",
+              "pos": "SF",
+              "start": 18,
+              "end": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "😊😊 어울리는 사람에게 문자를 보냈어요.",
+      "ready": true,
+      "tokens": [
+        {
+          "text": "😊",
+          "pos": "SW",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "😊",
+          "pos": "SW",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "어울리",
+          "pos": "VV",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "는",
+          "pos": "ETM",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "text": "사람",
+          "pos": "NNG",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "에게",
+          "pos": "JKB",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "text": "문자",
+          "pos": "NNG",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "를",
+          "pos": "JKO",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "text": "보내",
+          "pos": "VV",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "었",
+          "pos": "EP",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": "어요",
+          "pos": "EF",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "text": ".",
+          "pos": "SF",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "words": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "😊",
+          "tokens": [
+            {
+              "text": "😊",
+              "pos": "SW",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "text": "😊",
+              "pos": "SW",
+              "start": 0,
+              "end": 2
+            }
+          ]
+        },
+        {
+          "start": 3,
+          "end": 7,
+          "text": "\ude0a 어울",
+          "tokens": [
+            {
+              "text": "어울리",
+              "pos": "VV",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "text": "는",
+              "pos": "ETM",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "는 사람",
+          "tokens": [
+            {
+              "text": "사람",
+              "pos": "NNG",
+              "start": 8,
+              "end": 12
+            },
+            {
+              "text": "에게",
+              "pos": "JKB",
+              "start": 8,
+              "end": 12
+            }
+          ]
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "게 문",
+          "tokens": [
+            {
+              "text": "문자",
+              "pos": "NNG",
+              "start": 13,
+              "end": 16
+            },
+            {
+              "text": "를",
+              "pos": "JKO",
+              "start": 13,
+              "end": 16
+            }
+          ]
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "를 보냈어",
+          "tokens": [
+            {
+              "text": "보내",
+              "pos": "VV",
+              "start": 17,
+              "end": 22
+            },
+            {
+              "text": "었",
+              "pos": "EP",
+              "start": 17,
+              "end": 22
+            },
+            {
+              "text": "어요",
+              "pos": "EF",
+              "start": 17,
+              "end": 22
+            },
+            {
+              "text": ".",
+              "pos": "SF",
+              "start": 17,
+              "end": 22
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

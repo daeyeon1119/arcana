@@ -1,0 +1,155 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "4d6fa3b7d3649d5fe4901bca7b7c439d83dc8faec680305aac5494cccdb3776e",
+  "directlyRead": [
+    {
+      "id": "k01",
+      "spread": "five",
+      "directSHA256": "0a53df6db168d1d68b74785f3beea1868429d781bd8b4d76e85c819d1c91a101"
+    },
+    {
+      "id": "k02",
+      "spread": "five",
+      "directSHA256": "a6233dc8de999e189eb6d02922136448da31294e5dfd3721196506ea01673c81"
+    },
+    {
+      "id": "k03",
+      "spread": "five",
+      "directSHA256": "a79ccbb666e92745e3e4f0032e48b2ca8053d7c4a687cd9acc9751ed43142363"
+    },
+    {
+      "id": "k04",
+      "spread": "five",
+      "directSHA256": "c2e6d3c2ca543a5b8961d4a7f3e3cdfcf2a0d0d79b98a764b50eb0be05993c9f"
+    },
+    {
+      "id": "k05",
+      "spread": "five",
+      "directSHA256": "b4c3e4e1b6f3f485bdcd740ee8a70f036cff283f7b4fe9146fd31905412781e4"
+    },
+    {
+      "id": "k06",
+      "spread": "five",
+      "directSHA256": "dbeb44e3e173d188058ecfc41d73b2bc93d568d7fd46ee64214f212120c43b3d"
+    },
+    {
+      "id": "k07",
+      "spread": "five",
+      "directSHA256": "5f69dab11f822d34894defcbac178071110a89f6b65f1d0004c52cabf1c32c74"
+    },
+    {
+      "id": "k08",
+      "spread": "five",
+      "directSHA256": "37af241f4a2a9ea4126f5baff238f605aa5d107bce7634b7dd672dbdeffab150"
+    },
+    {
+      "id": "k09",
+      "spread": "five",
+      "directSHA256": "96de3b9da7b733f1ffee6b6d720320edd936ef6c03e7ef9ed1a9f36e85d6091b"
+    },
+    {
+      "id": "k10",
+      "spread": "five",
+      "directSHA256": "c82dfae6f3e0b28bf0da85e92a9bc79eede95baa24c49d9f34223df43644b201"
+    },
+    {
+      "id": "k11",
+      "spread": "five",
+      "directSHA256": "59f1d5131b587e1c838792f3c31ea4c45c3ba6e7c74e5fb5c0b050957eabb9cc"
+    },
+    {
+      "id": "k12",
+      "spread": "five",
+      "directSHA256": "42f62af4765c474aae1c7fd32e31105ebb19e97a4dd1347902158b023cae1d4c"
+    },
+    {
+      "id": "k13",
+      "spread": "five",
+      "directSHA256": "93fd3be871a5c17520cdeec46a7cd9b6e45c93649742b6b04f88f22f2462c8eb"
+    },
+    {
+      "id": "k14",
+      "spread": "five",
+      "directSHA256": "0b378781f8ffb8aec4d0cc6a55ccb74c25ebd6a53f9a76510252667e709f06b3"
+    },
+    {
+      "id": "k15",
+      "spread": "five",
+      "directSHA256": "09dfe99e8b93e107c3f92370e5211a912c7bf84870f50e02faca6bb36f7fbedc"
+    },
+    {
+      "id": "k16",
+      "spread": "five",
+      "directSHA256": "4e363049945d6db6eedeb2fb8499a4cd6add0228ce2b5ac1618ffb0dea5009aa"
+    },
+    {
+      "id": "k17",
+      "spread": "five",
+      "directSHA256": "ee5c2fcc395fa2ac5661979e23268e2bd37978bccf6725e228d719b150dcedc7"
+    },
+    {
+      "id": "k18",
+      "spread": "five",
+      "directSHA256": "3965d672dd037098f34a6a074c31d9e8707a461a79b4dfa8171fac878e1e43cb"
+    },
+    {
+      "id": "k19",
+      "spread": "five",
+      "directSHA256": "e6e087035807c7b975c24980c12797e2b46d516f8d24622b993334f7f7046a4b"
+    },
+    {
+      "id": "k20",
+      "spread": "five",
+      "directSHA256": "fdca538730bd47b0444e2c9a4c33c1d1b2cc2a00ccb636317d68da837157295e"
+    },
+    {
+      "id": "k21",
+      "spread": "five",
+      "directSHA256": "e1e081014fab3c1315378f8be49a499855b991c30d7602c0e8d1ebb552093302"
+    },
+    {
+      "id": "k22",
+      "spread": "five",
+      "directSHA256": "6fd2856d1ab8e2bda0dd24c239c2734a96e3c0a776e6864e184d1033714ff038"
+    },
+    {
+      "id": "k23",
+      "spread": "five",
+      "directSHA256": "1909abfe73c27a0d0f1c9eab1a674b46e4a035d6ef3d2a0922ca5f4642784a80"
+    },
+    {
+      "id": "k24",
+      "spread": "five",
+      "directSHA256": "6ba20813a86fc83ba29223261f74f99b5dd4d02c1377c64c39ce40e3fff59555"
+    }
+  ],
+  "otherVariants": "Full 192 before/after reports retained. Mechanical contracts only; all detailed variants were not manually reread.",
+  "professionalQualityScore": null,
+  "independentExpertReview": false,
+  "remainingFailures": [
+    "k02 reply editing depth",
+    "k05 unreported-results emphasis",
+    "k07 card theme after urgent advice",
+    "k10 document explanation target",
+    "k11 interpersonal coordination sounds like staffing",
+    "k13 investment advice shifts to spending",
+    "k15/k16/k17 reflective intent",
+    "k18 weak card application",
+    "k19 completed-work criteria",
+    "k24 two-stage inquiry coverage",
+    "generic and repetitive advice across domains"
+  ],
+  "scope": "Twenty-four known development primary answers read; not a new/blind/expert evaluation. Initial routing, purpose and Unicode failures are retained separately."
+}

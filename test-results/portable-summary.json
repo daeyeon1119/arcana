@@ -1,28 +1,34 @@
 {
   "release": {
-    "appVersion": "88.0.0",
-    "readingEngine": 88,
-    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
-    "appBytes": 30822607,
-    "webRelease": "957d4eb9189c54050cdc6a2a"
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
   },
-  "fixtureSHA256": "e1e0818e554531ee9d337e7c41d62e9d53a51d97d6c75e6ca9eb9d1d50dfb706",
+  "fixtureSHA256": "d5d200956c1822e489ab45812ecad9ca47478f9e5570af2cec35a3875db32bab",
   "probeSHA256": "8a8f2dc68711fb38ed996ed14e6e280590606b5315d566a90cb9d3aaf08414a4",
   "checks": [
     "release metadata matches exact deployed HTML and worker",
-    "desktop: 192 fixed question/card/settings readings equal across locale, timezone and screen",
+    "desktop: 272 fixed question/card/settings readings equal across locale, timezone and screen",
     "desktop: complete app cache respects nested deployment scope",
-    "desktop: offline new tab serves same 192 readings",
+    "desktop: offline new tab serves same 272 readings",
     "desktop: all 78 embedded original JPEGs decode offline",
     "offline draw/reveal/save works without a model server",
-    "android-emulation: 192 fixed question/card/settings readings equal across locale, timezone and screen",
+    "android-emulation: 272 fixed question/card/settings readings equal across locale, timezone and screen",
     "android-emulation: complete app cache respects nested deployment scope",
-    "android-emulation: offline new tab serves same 192 readings",
+    "android-emulation: offline new tab serves same 272 readings",
     "android-emulation: all 78 embedded original JPEGs decode offline",
     "android-emulation: backup restores the same question/cards/report without cloud sync",
-    "iphone-emulation: 192 fixed question/card/settings readings equal across locale, timezone and screen",
+    "iphone-emulation: 272 fixed question/card/settings readings equal across locale, timezone and screen",
     "iphone-emulation: complete app cache respects nested deployment scope",
-    "iphone-emulation: offline new tab serves same 192 readings",
+    "iphone-emulation: offline new tab serves same 272 readings",
     "iphone-emulation: all 78 embedded original JPEGs decode offline",
     "iphone-emulation: backup restores the same question/cards/report without cloud sync",
     "mismatched update is rejected and old offline app and records survive",
@@ -34,7 +40,7 @@
   "errors": [],
   "browser": "156.0.4314.50",
   "profiles": 3,
-  "questionCardCombinationsPerProfile": 192,
-  "readingParitySHA256": "e5291b1f45ca0737777e2b3fe69581388649bfd4d9114aea61257ff297eed279",
+  "questionCardCombinationsPerProfile": 272,
+  "readingParitySHA256": "5d25a3ffa318d2b32745287b446525fd7046d64a3b98acfd0897b8e04b2a8057",
   "note": "Actual browser cache, network-offline and update tests. Inputs include manual topic/focus settings and known compound requests. Android/iPhone profiles are Chromium emulations, not physical phone or Safari tests. Reading equality does not prove professional quality."
 }

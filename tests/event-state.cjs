@@ -49,7 +49,7 @@ for(const row of rows){
  for(const [key,value]of Object.entries(row.state))if(row.actual.state[key]!==value)failures.push({id:row.id,family:row.family,question:row.question,key,expected:value,actual:row.actual.state[key]});
  for(const event of row.actual.events){assert.equal(row.actual.question.slice(event.start,event.end),event.text,'event literal span');if(event.waitingEvidence)assert.equal(row.actual.question.slice(event.waitingEvidence.start,event.waitingEvidence.end),event.waitingEvidence.text,'waiting literal span');}
 }
-const hash=x=>crypto.createHash('sha256').update(x).digest('hex'),folder='test-results/event-state/development';fs.mkdirSync(folder,{recursive:true});
+const hash=x=>crypto.createHash('sha256').update(x).digest('hex'),major=Number(require('../package.json').version.split('.')[0]),folder='test-results/event-state/'+(major===88?'':'v'+major+'/')+'development';fs.mkdirSync(folder,{recursive:true});
 const sources=Object.fromEntries(['src/event-evidence.js','src/question-model.js'].map(name=>[name,hash(fs.readFileSync(name,'utf8').replace(/\r\n/g,'\n'))]));
 const summary={packageVersion:require('../package.json').version,sourceSHA256:sources,properties:rows.length,passed:rows.length-new Set(failures.map(f=>f.id)).size,topicAndReadAssertions:13,failures,note:'Known author-written grammar and metamorphic development properties plus 13 topic/read assertions. These are not distinct unseen user questions, semantic expert scores or a claim of unrestricted Korean understanding.'};
 if(failures.length&&!fs.existsSync(folder+'/property-initial-failures.json'))save(folder+'/property-initial-failures.json',JSON.stringify(summary,null,2)+'\n');

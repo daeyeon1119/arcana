@@ -5,10 +5,12 @@ import hashlib
 import json
 import re
 from save_artifact import save_text
+from build_morphology import build as build_morphology
 root = Path(__file__).resolve().parents[1]
 base = (root / 'ARCANA_tarot_v78_source/html/ARCANA_tarot_v78.html').read_text(encoding='utf-8')
 css = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.css','src/card-mat.css','src/question-context.css','src/web-app.css'])
-js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/question-text.js','src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/verification-facts.js','src/reading-evidence.js','src/event-evidence.js','src/question-model.js','src/reading-context.js','src/task-policy.js','src/reading-task.js','src/reading-bridge.js','src/reading-grounded.js','src/card-mat.js','src/web-app.js'])
+language_bundle, language_meta = build_morphology()
+js = language_bundle + '\n' + '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/question-text.js','src/korean-morphology.js','src/lexical-context.js','src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/verification-facts.js','src/reading-evidence.js','src/event-evidence.js','src/question-model.js','src/reading-context.js','src/reading-language.js','src/task-policy.js','src/reading-task.js','src/reading-bridge.js','src/reading-grounded.js','src/card-mat.js','src/web-app.js'])
 app_version = json.loads((root / 'package.json').read_text(encoding='utf-8'))['version']
 engine_version = int(app_version.split('.')[0])
 assert js.count('__ARCANA_APP_VERSION__') == 1
@@ -58,5 +60,5 @@ def web_asset_bytes(path):
 release_hash = hashlib.sha256((app_sha+worker_template).encode()+b''.join(web_asset_bytes(path) for path in web_files)).hexdigest()
 worker = worker_template.replace('__ARCANA_APP_SHA256__', app_sha).replace('__ARCANA_RELEASE_ID__', release_hash[:24])
 save_text(root / 'sw.js', worker)
-save_text(root / 'release.json', json.dumps({'appVersion':app_version,'readingEngine':engine_version,'appSHA256':app_sha,'appBytes':len(app_bytes),'webRelease':release_hash[:24]}, indent=2)+'\n')
+save_text(root / 'release.json', json.dumps({'appVersion':app_version,'readingEngine':engine_version,'appSHA256':app_sha,'appBytes':len(app_bytes),'webRelease':release_hash[:24],'languageAnalysis':language_meta}, indent=2)+'\n')
 print(f'Built index.html (app {app_version}, reading engine {engine_version}), web cache, 78 original JPEGs embedded ({sum(c["bytes"] for c in manifest["cards"]):,} source bytes)')

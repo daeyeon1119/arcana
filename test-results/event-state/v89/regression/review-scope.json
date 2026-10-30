@@ -1,0 +1,47 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "3bfa308094e183842143fba9b3839e258a5733ad80e06c7c392d72f6ac3343c3",
+  "previousSHA256": "91bdf1a5c929defdceb393b827563b13dcb2f3200089b23b8cbdeb921369cce4",
+  "changedPrimariesRead": [
+    {
+      "id": "e01",
+      "question": "공방 장인에게 받은 회신을 아직 읽지 않았어요. 예약 조건을 살피려면 무엇부터 할까요?",
+      "direct": "아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. 필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.\n\n‘장애물’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘조언’의 완드 10 역방향에서 살필 관점은 ‘과부하·지원’입니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+      "directSHA256": "2c364b236b67bbb020d4ee53c116c270fd16bd5367731909e80be14b7c4813e2"
+    },
+    {
+      "id": "e07",
+      "question": "협동조합에서 온 답변이 있습니다. 안내가 모호한 부분을 다시 물으려면 어떻게 준비할까요?",
+      "direct": "전달받은 내용을 살펴보고, 이해한 부분과 아직 막힌 부분을 나누어 보세요. “제가 이 부분을 이렇게 이해했는데 맞나요?”, “이 설명에서 제가 빠뜨린 조건은 무엇인가요?”처럼 받은 내용에 연결해 다시 물을 점을 적어 보세요.\n\n‘조언’의 컵 시종 정방향에서 살필 관점은 ‘표현·교류’입니다. 느끼는 것과 실제 표현으로 옮길 내용을 구별해 보세요. 답변을 재촉하거나 원하는 답을 유도하기보다 상대의 설명을 들을 수 있는 질문을 만들고, 이해가 다른 부분은 다시 확인해 보세요.",
+      "directSHA256": "775d904f56b82d8556ce4d110398ebe7029d22007461a2682371e6c9fd18a5e4"
+    },
+    {
+      "id": "e09",
+      "question": "출판사가 보낸 답장을 읽었어요. 서로 이해한 내용이 맞는지 어떤 질문으로 확인할까요?",
+      "direct": "이미 읽은 답변에서 내가 이해한 뜻과 아직 불분명한 부분을 나누어 보세요. “제가 이 부분을 이렇게 이해했는데 맞나요?”, “이 설명에서 제가 빠뜨린 조건은 무엇인가요?”처럼 실제 내용에 연결해 확인할 질문을 만들어 보세요.\n\n‘조언’의 컵 5 정방향에서 살필 관점은 ‘상실·자원’입니다. 상실감이나 상처가 있다면, 그 마음을 돌볼 시간과 지금 남아 있는 것을 함께 살펴보세요. 불편하거나 걱정되는 점도 질문할 수 있도록 우선순위를 적고, 답을 놓쳤을 때 메모나 재설명을 부탁할 방법을 준비해 보세요.",
+      "directSHA256": "ec460e58c49d085e1543d160f9d3542881e17fbc4f42352eacd8510a32ed51bd"
+    },
+    {
+      "id": "e11",
+      "question": "친구는 결과를 기다리고 있어요. 저는 끝낸 작업을 어떤 기준으로 돌아볼까요?",
+      "direct": "추측과 확인된 정보를 나누어 판단 기준을 세워 보세요. ‘조언’에 놓인 완드 5의 주제는 ‘다양한 경쟁’입니다.",
+      "directSHA256": "f09e99067ebe00fd4fd1fb806f158a50db92a22c9aab0a7ca76b2bdf5b85e886"
+    }
+  ],
+  "primaryFactChanges": [],
+  "professionalQualityScore": null,
+  "scope": "Known development/regression. Changed five-card primary strings read; unchanged strings byte-compared to v88. Full detailed variants not manually reread. No independent or expert evaluation.",
+  "interpretationSourceCommit": "159378a50c249e4bc039b788b4fd307d2402d1cb"
+}

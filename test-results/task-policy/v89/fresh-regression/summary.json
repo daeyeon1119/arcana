@@ -1,0 +1,19 @@
+{
+  "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+  "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+  "fixtureSHA256": "68bb31b930d66b29c9d249c32115025cc001c43fa494e433af8b18b02a74c519",
+  "policySHA256": "474b28f42768a7ba98e81ad885936d70604f2253325130eb196207f1a8b0e47d",
+  "collectorSHA256": "b07c317f4d3aa3bb1431de13155a2240da976a4b242aa1ca01aea38bc4ec06a5",
+  "seed": 830031,
+  "phase": "fresh-regression",
+  "note": "Authored after engine commit 82cfae2 (HTML SHA256 646cb51f16fe8d31db473703d15cdfdb3d512c57e5f87fc4ea48679c4195c182). A second self-authored first-run diagnostic, not independent expert evidence. No labels or review notes are sent to the engine. All first actual outputs are retained even when they fail; no production fix is based on these questions before this run. Routing checks alone cannot establish semantic quality. Routing checks are not semantic or professional quality scores.",
+  "questions": 16,
+  "readingsPerVersion": 128,
+  "errors": [],
+  "failures": [],
+  "checks": {
+    "routing": 128,
+    "cardEvidence": 128
+  },
+  "qualityReviewed": 0
+}

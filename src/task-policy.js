@@ -16,6 +16,7 @@
  };
  const artifact=/(?:문서|자료|안내문|안내서|안내(?=를|의)|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|결산표|상환표|이\s*표)/;
  const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,mask=questionText.mask;
+ const lexicalContext=typeof module==='object'&&module.exports?require('./lexical-context.js'):root.ARCANA_LEXICAL_CONTEXT;
  function participants(question){
   let state=null,rank=-1;
   for(const text of mask(question).split(/[.!?,]|지만|그러나|반면/)){
@@ -30,6 +31,7 @@
  function operation(task,question){
   if(!task||!['action','emotion'].includes(task.kind))return null;
   const original=task.evidenceText??task.text??'',cue=original.search(/어떻게|어떡|무엇|뭘|어떤|무슨|어디|언제/);
+  const frame=task.frame||lexicalContext.requestFrame(original);if(frame?.operation&&(frame.reason!=='requested-lexical-predicate'||!task.goal||task.goal==='action'||task.frame))return frame.operation;
   const framed=cue>0&&/(?:려면|려고|고\s*싶|할\s*때|하는\s*때|앞두고|앞둔|하면서|한\s*뒤)/.test(original.slice(0,cue));
   const text=questionText.requestHead(cue>=0?original.slice(cue):original);
   if(task.kind==='emotion')return 'cope';
@@ -80,7 +82,9 @@
   let [headline,body]=actions[op];
   const target=hasArtifact?'artifact':task.context?.type==='received-content'?'received-content':/(?:역할|담당할|담당\s*(?:범위|업무|일)|몫|책임)/.test(text)?'responsibility':'unspecified',people=participants(evidenceQuestion);
   if(target==='received-content'&&op==='verify'){headline='전달받은 내용을 먼저 살펴보기';body=(task.context.read===false?'아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. ':'전달받은 내용을 먼저 확인해 보세요. ')+'실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.';}
+  if(target==='received-content'&&op==='verify'&&task.context.inferred)body=(task.context.read===false?'아직 읽지 않은 내용을 먼저 살펴보고, 필요한 조건이 그 안에 나와 있는지 확인해 보세요. ':'전달받은 내용에 필요한 조건이 나와 있는지 확인해 보세요. ')+'필수 요건·시간과 비용·변경이나 중단 조건을 한곳에 정리하면 빠진 점을 찾기 쉽습니다. 회신만으로 알 수 없는 항목은 따로 알아볼 질문과 확인할 경로로 남겨 보세요.';
   if(target==='received-content'&&op==='inquire'){headline='받은 내용에 연결해 다시 묻기';body='전달받은 내용을 살펴보고, 이해한 부분과 아직 막힌 부분을 나누어 보세요. “제가 이 부분을 이렇게 이해했는데 맞나요?”, “이 설명에서 제가 빠뜨린 조건은 무엇인가요?”처럼 받은 내용에 연결해 다시 물을 점을 적어 보세요.';}
+  if(target==='received-content'&&op==='inquire'&&task.context.read===true)body='이미 읽은 답변에서 내가 이해한 뜻과 아직 불분명한 부분을 나누어 보세요. “제가 이 부분을 이렇게 이해했는데 맞나요?”, “이 설명에서 제가 빠뜨린 조건은 무엇인가요?”처럼 실제 내용에 연결해 확인할 질문을 만들어 보세요.';
   if(target==='artifact'&&op==='communicate')body='자료에서 전달할 핵심과 그 근거를 짧게 정리해 보세요. 읽는 사람이 필요한 정보를 찾을 수 있는 순서로 설명하고, 확인된 내용과 아직 확인 중인 내용을 구별해 표시해 보세요.';
   if(target==='artifact'&&op==='improve')body='이 자료의 목적과 읽는 사람이 알아야 할 내용을 먼저 적어 보세요. 사실을 설명하는 문장은 내용 자체를 원자료와 대조하고, 확인되지 않은 주장과 확인된 내용을 구별해 보세요. 어려운 표현이나 빠진 정보를 한 부분씩 고친 뒤, 자료의 목적과 확인된 사실이 유지되는지 다시 읽어 보세요.';
   if(target==='artifact'&&op==='verify')body='이 자료에 쓰인 조건과 수치의 출처·기준일을 확인하고, 이미 대조한 항목과 아직 검토 중인 항목을 표시해 보세요. 원자료와 다른 부분이나 빠진 조건은 배포 전에 확인할 목록으로 남겨 두세요.';
@@ -93,7 +97,12 @@
   if(target==='artifact'&&/(?:원금|수익|수익률|손실)/.test(quoted)&&/(?:항상|언제나|무조건|확실|100\s*%|절대|보장)/.test(quoted))contentChecks.push('보장 표현은 실제 근거와 적용 조건·예외를 원자료에서 확인해 보세요. 확인하지 않은 보장을 사실로 전달하지 않고, 확인된 범위와 아직 확인할 부분을 구별해 설명해 보세요.');
   if(contentChecks.length)body=contentChecks.join(' ')+' '+body;
   const prefix=target==='received-content'&&['communicate','cope'].includes(op)?'이미 받은 답에서 확인한 내용과 더 알아볼 부분을 구분해 보세요. ':'';
-  const clinicalContext=/(?:진단|치료|검사\s*결과|증상|처방|복용|통증)/.test(evidenceQuestion)&&!hasArtifact;
+  const clinicalContext=!hasArtifact&&(scene.medical||/(?:진단|치료|검사\s*결과|증상|처방|복용|통증)/.test(evidenceQuestion));
+  // General visit communication, not diagnosis or treatment selection.
+  // NIH/NIA: https://www.nia.nih.gov/health/five-ways-get-most-out-your-doctors-visit
+  if(clinicalContext&&scene.medical&&op==='communicate'&&/(?:의료진|의사|간호사|진료)/.test(text)){
+   headline='의료진에게 전할 내용을 정리하기';body='실제로 겪은 증상과 시작된 시점, 얼마나 자주 나타나는지, 어떻게 달라졌는지를 순서대로 적어 의료진에게 전해 보세요. 기억이 분명하지 않은 부분은 추정이라고 구분하고, 가장 궁금한 점도 함께 적어 두면 좋습니다.';
+  }
   const boundaryText=clinicalContext&&(scene.medical||scene.domain==='health')?'진단·치료 판단은 의료진의 설명과 실제 검사 결과를 기준으로 하고, 카드는 마음과 준비를 살펴보는 데 활용해 보세요. ':'';
   return {operation:op,headline,text:prefix+body,source:task.text,scope:'ordinary-practical-support',target,participants:people,preparingQuestion,waitingReply:state.replyWaiting===true||state.received===false&&state.replyWaitingSource!=='denied',contentCheck:contentChecks.length>0,submitted:state.submitted===true,boundaryText};
  }
@@ -102,7 +111,8 @@
   // Specialized prose must fit the requested object and its prerequisites, not
   // just share an activity label. Unknown participants are not asserted present.
   if(plan.contentCheck||plan.preparingQuestion&&plan.waitingReply||plan.submitted&&plan.operation==='verify')return false;
-  if(plan.target==='received-content'&&['verify','inquire'].includes(plan.operation))return /받은\s*(?:답|내용)|전달받은|전해진\s*내용/.test(action);
+  if(plan.operation==='communicate'&&lexicalContext.communicates(action)===false)return false;
+  if(plan.target==='received-content'&&['verify','inquire'].includes(plan.operation))return /받은\s*(?:답|내용)|전달받은|전해진\s*내용|이미\s*읽은\s*(?:답|내용)/.test(action);
   if(plan.target==='artifact'&&['communicate','improve','verify'].includes(plan.operation))return artifact.test(action)&&!/(?:가족이\s*걱정|월\s*상환액|복용\s*시각)/.test(action);
   if(plan.target==='responsibility'&&plan.operation==='communicate')return /역할|담당|범위|몫/.test(action);
   if(plan.operation==='improve'&&plan.target==='unspecified'&&/사용하는\s*사람|사용자가/.test(action)&&!/사용자|이용자|고객|독자|관객/.test(mask(question)))return false;

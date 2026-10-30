@@ -19,6 +19,10 @@ if(cases.length!==320||new Set(cases.map(c=>c.question)).size!==320)throw Error(
   check('workload includes deadlines and effort',find(21).direct.includes('마감')&&find(21).direct.includes('소요 시간'));
   check('already accepted job does not advise applying',!find(10).direct.includes('지원 자격')&&find(10).direct.includes('출근'));
   check('medication discomfort remains medical',find(206).actualDomain==='health'&&find(206).direct.includes('의료진'));
+  if(Number(phase.replace('v',''))>=89){
+   check('clinical test possibility retains its medical boundary',find(212).actualDomain==='health'&&find(212).direct.includes('의료진'));
+   check('hospital avoidance retains clinical context',find(217).actualDomain==='health');
+  }
   check('completed assignment not submitted again',!find(128).direct.includes('제출 기준과 마감')&&find(128).direct.includes('피드백'));
   if(Number(phase.replace('v',''))>=85)check('editing verb alone does not imply a factual document',find(156).direct.includes('첫 장면에서 전달하려는 내용')&&!find(156).direct.includes('원자료와 대조'));
  }

@@ -1,0 +1,36 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "beforeSHA256": "80cfe708a9b199b8e5e72836a853151fabb2eea78afc483c89470f61f94091e6",
+  "afterSHA256": "cd3740d6d1118ee17de7338865295cfbf0bab2dfd6af7ff14281d8b0043d1d1b",
+  "changedPrimaryRead": [
+    96
+  ],
+  "clinicalControlsRead": [
+    212,
+    217
+  ],
+  "domainChanges": [],
+  "factChanges": [],
+  "actualPairs": [
+    {
+      "id": 96,
+      "question": "아빠와 의견이 다를 때 어떤 질문을 해보면 좋을까요?",
+      "before": "가족이 걱정하는 점을 먼저 물어보고, 내가 원하는 것과 준비한 계획을 한 가지씩 설명해 보세요. ‘핵심 메시지’에 놓인 컵 여왕의 주제는 ‘감정에 대한 공감’입니다.",
+      "after": "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다.\n\n‘핵심 메시지’의 컵 여왕 정방향에서 살필 관점은 ‘돌봄·지원’입니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 불편하거나 걱정되는 점도 질문할 수 있도록 우선순위를 적고, 답을 놓쳤을 때 메모나 재설명을 부탁할 방법을 준비해 보세요."
+    }
+  ],
+  "professionalQualityScore": null,
+  "scope": "Changed primary answers and two restored clinical controls read. Other unchanged primary strings are byte-identical to v88; detailed reports were not all reread. Known regression/editorial evidence."
+}

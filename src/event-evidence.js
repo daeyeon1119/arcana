@@ -2,7 +2,10 @@
  * This bounded grammar records literal spans; it is not unrestricted Korean NLP. */
 (function(root){'use strict';
  const self=/^(?:저|제|나|내|우리|저희)$/;
+ const morphology=typeof module==='object'&&module.exports?require('./korean-morphology.js'):root.ARCANA_KOREAN_MORPHOLOGY;
  function actor(text,index,excluded=[]){
+  const analysis=morphology.analyze(text.slice(0,index));
+  if(analysis)return morphology.actor(text,index,excluded);
   const prefix=text.slice(0,index),matches=[];
   for(const m of prefix.matchAll(/(?:^|\s)([가-힣A-Za-z][가-힣A-Za-z0-9_-]{1,17})(이|가)(?=\s|$)/g)){
    const start=m.index+m[0].indexOf(m[1]);if(excluded.some(span=>start>=span.start&&start<span.end))continue;
@@ -19,7 +22,7 @@
  }
  function predicate(tail){
   const leading=tail.match(/^[은는이가을를도]+/),offset=leading?.[0].length||0,text=tail.slice(offset);
-  const rules=[['receive',/^(?:받았|받은|받아|받지|받고|받을|받는|받겠|받습니다|왔|오지|오고|오는|오면|올|도착)/],['send',/^(?:보냈|보내|보낼|전했|전하|전할)/],['read',/^(?:읽었|읽은|읽지|읽고|읽을|읽는|읽어|읽습니다)/],['make',/^(?:했|하(?:지|진|고|는|면|려|겠|셨|나(?:요|$))|할|해(?=요|서|도|줄|주|줬|보|\s|$))/]];
+  const rules=[['receive',/^(?:받았|받은|받아|받지|받고|받을|받는|받겠|받습니다|왔|오지|오고|오는|오면|올|도착)/],['send',/^(?:보냈|보내|보낼|전했|전하|전할)/],['read',/^(?:읽었|읽은|읽지|읽고|읽을|읽는|읽어|읽습니다|열어보)/],['make',/^(?:했|하(?:지|진|고|는|면|려|겠|셨|나(?:요|$))|할|해(?=요|서|도|줄|주|줬|보|\s|$))/]];
   for(const word of text.matchAll(/\S+/g)){
    const stripped=word[0].replace(/^(?:안|못)(?=[가-힣])/,'');
    for(const [action,rx]of rules){const m=stripped.match(rx);if(m)return {action,text:m[0],index:offset+word.index+word[0].length-stripped.length};}
@@ -68,8 +71,10 @@
    if(!receipt)continue;
    const gap=question.slice(receipt.end,Math.max(receipt.end,task.start)),text=question.slice(task.start,task.end);
    const clauses=sentences(gap),continuation=clauses[0]||'',contrast=continuation.match(/(?:지만|반면|한편|그런데|그리고)\s*/);
-   if(/별개|별도로|제쳐두|그\s*(?:답|내용)과\s*무관/.test(continuation)||contrast&&barrier(continuation.slice(contrast.index+contrast[0].length))||clauses.slice(1).some(barrier)||barrier(text))continue;
-   task.context={type:'received-content',sourceEvent:{start:receipt.start,end:receipt.end,object:receipt.object,text:receipt.text},read:state.read};
+   const possibleReview=task.frame?.informationGoal&&!/별개|별도로|제쳐두|다른\s*(?:일|문제|주제|질문)|(?:^|\s)(?:제|내)\s|안내문|문서|자료|서식|도표|포스터/.test(text)&&(state.read===false||/모호|불분명|이해.{0,8}(?:안|못|어려)/.test(text));
+   const newHead=barrier(text);
+   if(/별개|별도로|제쳐두|그\s*(?:답|내용)과\s*무관/.test(continuation)||contrast&&barrier(continuation.slice(contrast.index+contrast[0].length))||clauses.slice(1).some(barrier)||newHead&&!possibleReview)continue;
+   task.context={type:'received-content',sourceEvent:{start:receipt.start,end:receipt.end,object:receipt.object,text:receipt.text},read:state.read,...(newHead?{relation:'possible-source-before-inquiry',inferred:true}:{})};
    if(task.kind==='open'&&state.read===false&&/(?:무엇|뭘|어디)(?:을|를)?(?:부터|먼저)|(?:무엇|뭘).{0,8}먼저/.test(text)){task.kind='action';task.goal='verify';}
   }
  }

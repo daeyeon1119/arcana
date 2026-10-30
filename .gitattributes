@@ -21,3 +21,7 @@ test-results/**/*.html text eol=lf
 tests/verification-first.json text eol=lf
 device-check.html text eol=lf
 scripts/device-check.js text eol=lf
+vendor/garu/** text eol=lf
+vendor/garu/**/*.wasm -text
+vendor/garu/**/*.gmdl -text
+tests/lexical-first.json text eol=lf

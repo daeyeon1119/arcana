@@ -1,0 +1,17 @@
+{
+  "phase": "regression",
+  "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+  "baselineSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "fixtureSHA256": "3c13a9d5ee27d758f9fd7b1c5d0365ccf03cf0bada8aee2d637a8a34d4587e1e",
+  "collectorSHA256": "4ba221de091a20d493c746e67ea760223f30cc6a8ee8d54b7417ed11db346b31",
+  "seed": 860019,
+  "note": "Known questions corrected after first outputs. Regression, not a new holdout. Sixteen author-written diagnostic questions created after candidate commit 5f549a2. New to this candidate's execution, but authored with knowledge of the implementation, not an independent or expert-blind benchmark. Includes paraphrases, polarity/actor swaps, unfamiliar fields, ellipsis and compound requests. Preserve the first actual failures before corrections. Literal span/application contracts are not a semantic quality or professional score.",
+  "readingsSHA256": "7954f2088a8c7b32758ccb593d315045dc6fe49336b3849a1f6113cb65a1130e",
+  "compressedSHA256": "f7872e2b45ad56273208135d91d6409b5891332f81695cc1b1d1c661e695e463",
+  "questions": 16,
+  "readingsPerVersion": 128,
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 128,
+  "qualityScore": null
+}

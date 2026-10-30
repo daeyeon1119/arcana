@@ -1,0 +1,249 @@
+{
+  "note": "Known author development probes spanning lexical collisions, grammatical roles, clinical/career coexistence and request purpose. Includes reviewed v88 failures. Expected fields are evaluator-only; not a fresh, independent or expert benchmark.",
+  "cases": [
+    {
+      "id": "k01",
+      "question": "제가 보낸 답변을 해설사가 받았습니다. 다음 일을 어떻게 준비할까요?",
+      "expect": {
+        "notDomain": [
+          "health"
+        ],
+        "medical": false,
+        "state": {
+          "received": null
+        }
+      }
+    },
+    {
+      "id": "k02",
+      "question": "문화해설사에게 보낼 답변을 어떻게 고칠까요?",
+      "expect": {
+        "notDomain": [
+          "health"
+        ],
+        "medical": false
+      }
+    },
+    {
+      "id": "k03",
+      "question": "주식회사에 입사했습니다. 다음 주 업무를 어떻게 준비할까요?",
+      "expect": {
+        "domain": "career",
+        "medical": false
+      }
+    },
+    {
+      "id": "k04",
+      "question": "코인세탁소를 운영하고 있어요. 신규 직원의 근무 순서를 어떻게 설명할까요?",
+      "expect": {
+        "notDomain": [
+          "finances"
+        ],
+        "medical": false
+      }
+    },
+    {
+      "id": "k05",
+      "question": "설사가 계속돼요. 진료 때 어떤 점을 물어볼까요?",
+      "expect": {
+        "domain": "health",
+        "medical": true
+      }
+    },
+    {
+      "id": "k06",
+      "question": "식후구토가 계속됩니다. 의료진에게 상황을 어떻게 설명할까요?",
+      "expect": {
+        "domain": "health",
+        "medical": true,
+        "directContains": [
+          "증상",
+          "시작",
+          "의료진에게"
+        ]
+      }
+    },
+    {
+      "id": "k07",
+      "question": "회사 면접을 준비하고 있는데 가슴 통증이 있어요. 어떻게 해야 할까요?",
+      "expect": {
+        "domain": "health",
+        "medical": true,
+        "urgent": true
+      }
+    },
+    {
+      "id": "k08",
+      "question": "간호사 채용에 지원했어요. 복용 중인 약을 중단할지는 어떤 기준으로 정할까요?",
+      "expect": {
+        "domain": "health",
+        "medical": true
+      }
+    },
+    {
+      "id": "k09",
+      "question": "병원 입사 면접을 앞두고 있어요. 물어볼 질문을 어떻게 준비할까요?",
+      "expect": {
+        "domain": "career",
+        "medical": false
+      }
+    },
+    {
+      "id": "k10",
+      "question": "검사에게 증거 목록을 전달했어요. 서류의 내용을 어떻게 설명할까요?",
+      "expect": {
+        "notDomain": [
+          "health"
+        ],
+        "medical": false
+      }
+    },
+    {
+      "id": "k11",
+      "question": "건강한 관계를 유지하려면 서로의 약속을 어떻게 조율할까요?",
+      "expect": {
+        "notDomain": [
+          "health"
+        ],
+        "medical": false
+      }
+    },
+    {
+      "id": "k12",
+      "question": "건강검진 결과를 받았습니다. 진료에서 확인할 질문을 어떻게 준비할까요?",
+      "expect": {
+        "domain": "health",
+        "medical": true
+      }
+    },
+    {
+      "id": "k13",
+      "question": "주식에 투자하기 전 손실 가능성과 계약 조건을 어떤 관점으로 살펴볼까요?",
+      "expect": {
+        "domain": "finances",
+        "medical": false
+      }
+    },
+    {
+      "id": "k14",
+      "question": "유리는 회신을 받았어요. 저는 제 작업을 어떻게 준비할까요?",
+      "expect": {
+        "state": {
+          "received": null
+        }
+      }
+    },
+    {
+      "id": "k15",
+      "question": "어울리는 사람에게 문자를 보냈어요. 제 표현을 어떻게 돌아볼까요?",
+      "expect": {
+        "state": {
+          "sent": true
+        }
+      }
+    },
+    {
+      "id": "k16",
+      "question": "어울리는 사람에게 문자를 보내지 않았어요. 제 마음을 어떻게 돌아볼까요?",
+      "expect": {
+        "state": {
+          "sent": false
+        }
+      }
+    },
+    {
+      "id": "k17",
+      "question": "유리는 어울리는 사람에게 문자를 보냈어요. 저는 무엇을 돌아볼까요?",
+      "expect": {
+        "state": {
+          "sent": null
+        }
+      }
+    },
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "expect": {
+        "state": {
+          "received": true,
+          "read": false
+        },
+        "readPrerequisite": true
+      }
+    },
+    {
+      "id": "k19",
+      "question": "친구는 결과를 기다리고 있어요. 저는 끝낸 작업을 어떤 기준으로 돌아볼까요?",
+      "expect": {
+        "notDomain": [
+          "family",
+          "relationship",
+          "waiting"
+        ],
+        "state": {
+          "waiting": false
+        }
+      }
+    },
+    {
+      "id": "k20",
+      "question": "공방 장인에게 받은 회신을 아직 읽지 않았어요. 예약 조건을 살피려면 무엇부터 할까요?",
+      "expect": {
+        "state": {
+          "received": true,
+          "read": false
+        },
+        "readPrerequisite": true
+      }
+    },
+    {
+      "id": "k21",
+      "question": "협동조합에서 온 답변이 있습니다. 안내가 모호한 부분을 다시 물으려면 어떻게 준비할까요?",
+      "expect": {
+        "state": {
+          "received": true
+        },
+        "operations": [
+          "inquire"
+        ]
+      }
+    },
+    {
+      "id": "k22",
+      "question": "출판사가 보낸 답장을 읽었어요. 서로 이해한 내용이 맞는지 어떤 질문으로 확인할까요?",
+      "expect": {
+        "state": {
+          "received": true,
+          "read": true
+        },
+        "operations": [
+          "inquire"
+        ]
+      }
+    },
+    {
+      "id": "k23",
+      "question": "받은 답변은 따로 보관했어요. 이와 별개로 도자기 안내문을 처음 온 관람객에게 어떻게 설명할까요?",
+      "expect": {
+        "state": {
+          "received": true
+        },
+        "operations": [
+          "communicate"
+        ]
+      }
+    },
+    {
+      "id": "k24",
+      "question": "시험 결과를 기다리는 동안 정리할 질문과 앞으로 물어볼 질문을 각각 어떻게 준비할까요?",
+      "expect": {
+        "state": {
+          "resultWaiting": true
+        },
+        "operations": [
+          "inquire"
+        ]
+      }
+    }
+  ]
+}
