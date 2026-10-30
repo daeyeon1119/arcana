@@ -1,0 +1,368 @@
+{
+  "scope": "Node-only development before browser integration; not new evaluation.",
+  "sourceSHA256": "ae545d084fd2d625fb487e061456efcebd26729386646abc5e11de7c05917945",
+  "sourceArchive": "initial-object-source.js.gz",
+  "actual": [
+    {
+      "id": "w17",
+      "model": {
+        "version": 89,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "보증금 반환을 기다리고 있어요. 상대의 속마음 추측보다 지금 가진 자료와 빠진 자료를 어떤 기준으로 구별할까요?",
+        "evidenceQuestion": "보증금 반환을 기다리고 있어요. 상대의 속마음 추측보다 지금 가진 자료와 빠진 자료를 어떤 기준으로 구별할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "action",
+            "text": "상대의 속마음 추측보다 지금 가진 자료와 빠진 자료를 어떤 기준으로 구별할까요",
+            "start": 18,
+            "end": 61,
+            "work": {
+              "version": 90,
+              "operation": "inspect",
+              "target": {
+                "kind": "evidence",
+                "head": "자료",
+                "evidence": {
+                  "start": 44,
+                  "end": 47,
+                  "text": "자료를"
+                },
+                "owner": "other",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 56,
+                "end": 61,
+                "text": "구별할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 18,
+                "end": 61
+              },
+              "reason": "predicate-and-object"
+            }
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      }
+    },
+    {
+      "id": "w25",
+      "model": {
+        "version": 89,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "하루에 쓸 수 있는 시간은 20분입니다. 연습 기록을 점검하고 불안한 마음을 다룰 방법을 각각 알려 주세요.",
+        "evidenceQuestion": "하루에 쓸 수 있는 시간은 20분입니다. 연습 기록을 점검하고 불안한 마음을 다룰 방법을 각각 알려 주세요.",
+        "requests": [
+          {
+            "text": "연습 기록을 점검하고",
+            "start": 23,
+            "end": 34,
+            "source": "연습 기록을 점검하고 불안한 마음을 다룰 방법을 각각 알려 주세요",
+            "coordinated": true,
+            "sharedContext": "",
+            "kind": "action",
+            "goal": "inspect",
+            "work": {
+              "version": 90,
+              "operation": "inspect",
+              "target": {
+                "kind": "observation",
+                "head": "기록",
+                "evidence": {
+                  "start": 26,
+                  "end": 29,
+                  "text": "기록을"
+                },
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 30,
+                "end": 34,
+                "text": "점검하고"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 23,
+                "end": 34
+              },
+              "reason": "predicate-and-object"
+            }
+          },
+          {
+            "text": "불안한 마음을 다룰 방법을 각각 알려 주세요",
+            "start": 35,
+            "end": 59,
+            "source": "연습 기록을 점검하고 불안한 마음을 다룰 방법을 각각 알려 주세요",
+            "coordinated": true,
+            "sharedContext": "연습 기록을 점검하고 ",
+            "kind": "action",
+            "goal": "communicate",
+            "work": {
+              "version": 90,
+              "operation": "communicate",
+              "target": {
+                "kind": "unspecified",
+                "head": "마음",
+                "evidence": {
+                  "start": 39,
+                  "end": 42,
+                  "text": "마음을"
+                },
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 53,
+                "end": 55,
+                "text": "알려"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 35,
+                "end": 59
+              },
+              "reason": "predicate-and-object"
+            }
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      }
+    },
+    {
+      "id": "w27",
+      "model": {
+        "version": 89,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "식물 성장 사진을 모아 안내문을 만들었어요. 처음 보는 사람에게 어떻게 설명할까요?",
+        "evidenceQuestion": "식물 성장 사진을 모아 안내문을 만들었어요. 처음 보는 사람에게 어떻게 설명할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "communicate",
+            "text": "처음 보는 사람에게 어떻게 설명할까요",
+            "start": 25,
+            "end": 45,
+            "work": {
+              "version": 90,
+              "operation": "communicate",
+              "target": {
+                "kind": "message",
+                "head": "설명",
+                "evidence": {
+                  "start": 40,
+                  "end": 45,
+                  "text": "설명할까요"
+                },
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 40,
+                "end": 45,
+                "text": "설명할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 25,
+                "end": 45
+              },
+              "reason": "predicate-and-object"
+            }
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      }
+    },
+    {
+      "id": "w28",
+      "model": {
+        "version": 89,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "함께 일하는 사람은 없습니다. 제가 맡은 일을 어떻게 나눠 진행할까요?",
+        "evidenceQuestion": "함께 일하는 사람은 없습니다. 제가 맡은 일을 어떻게 나눠 진행할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "action",
+            "text": "제가 맡은 일을 어떻게 나눠 진행할까요",
+            "start": 17,
+            "end": 38,
+            "work": {
+              "version": 90,
+              "operation": "coordinate",
+              "target": {
+                "kind": "responsibility",
+                "head": "일",
+                "evidence": {
+                  "start": 23,
+                  "end": 25,
+                  "text": "일을"
+                },
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 30,
+                "end": 32,
+                "text": "나눠"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 17,
+                "end": 38
+              },
+              "reason": "predicate-and-object"
+            }
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": true,
+        "clarification": "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.",
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      }
+    }
+  ],
+  "findings": [
+    "Finite predicate nouns were being selected as objects, blocking recent document inheritance.",
+    "A surface inquiry wrapper hid an adnominal emotion-management predicate.",
+    "A contrastive earlier possessor leaked into the current object owner.",
+    "Generic task nouns made a concrete alone-work question appear contextless."
+  ]
+}

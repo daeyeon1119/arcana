@@ -20,17 +20,17 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   // An existing operation-specific action wins over the generic fallback. Broad
   // topic introductions must not hide it; safety checks have already run above.
   if(!supported){practical=plan.text;actionSource='request-policy';}
-  const card=answer.request.kind==='emotion'?pack.main:pack.advice;
+  const card=answer.request.kind==='emotion'||plan.operation==='reflect'?pack.main:pack.advice;
   const shared=plans.length===0&&report.arc81?.directSynthesisUsed?arc81DirectRelation(pack,spread,answer.request.kind):null;
   const previous=answer.text;answer.actionText=practical;answer.actionTask=plan.operation;answer.directText=plan.boundaryText+practical+' '+(shared?.core||arc80CardSentence(card,spread));answer.text=answer.directText;answer.refs=shared?.refs||[card.index];replacements.set(previous,{body:answer.text,refs:answer.refs});plans.push({...plan,text:practical,actionSource});
  }
  if(plans.some(Boolean)){
   report.direct=report.arc82.answers.map(answer=>answer.directText||answer.text).join('\n\n');
   if(plans[0])report.headline=report.arc82.answers.length>1?'요청한 관점을 함께 살펴볼게요':plans[0].headline;
-  report.actions=[...new Set(report.arc82.answers.filter(answer=>['action','emotion'].includes(answer.request.kind)).map((answer)=>{const index=report.arc82.answers.indexOf(answer);return plans[index]?.text||answer.actionText||answer.directText||answer.text;}))];
+  report.actions=[...new Set(report.arc82.answers.filter(answer=>['action','emotion'].includes(answer.request.kind)||answer.request.work?.operation==='reflect').map((answer)=>{const index=report.arc82.answers.indexOf(answer);return plans[index]?.text||answer.actionText||answer.directText||answer.text;}))];
   report.sections=report.sections.map(section=>section.kind==='request'&&replacements.has(section.body)?{...section,...replacements.get(section.body)}:section);
  }
-  report.arc83={version:83,policy:'request-first',handled:plans.map((plan,index)=>plan?{request:index,operation:plan.operation,target:plan.target,participants:plan.participants,source:plan.source,scope:plan.scope,actionSource:plan.actionSource}:null).filter(Boolean)};
+  report.arc83={version:83,policy:'request-first',handled:plans.map((plan,index)=>plan?{request:index,operation:plan.operation,target:plan.target,object:plan.object,participants:plan.participants,source:plan.source,scope:plan.scope,actionSource:plan.actionSource}:null).filter(Boolean)};
  return report;
 };
 $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistoryId)return;const records=storedRecords(),record=records.find(item=>item.id===currentHistoryId);if(record){record.engineVersion=83;setStoredRecords(records);}});

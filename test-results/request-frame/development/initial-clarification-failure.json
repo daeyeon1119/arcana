@@ -1,0 +1,55 @@
+{
+  "scope": "Node module development only, not a bundled app or new evaluation.",
+  "moduleSHA256": "5c57d90ecd84a068f19eb12cc0ea2eeaa238d413126d21dfb0ecb7090b8d8cec",
+  "actual": {
+    "version": 89,
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+      "ready": true,
+      "failed": false
+    },
+    "question": "이직할까요?",
+    "evidenceQuestion": "이직할까요?",
+    "requests": [
+      {
+        "kind": "action",
+        "goal": "action",
+        "text": "이직할까요",
+        "start": 0,
+        "end": 5
+      }
+    ],
+    "events": [],
+    "state": {
+      "sent": null,
+      "received": null,
+      "read": null,
+      "resultKnown": null,
+      "resultPublished": null,
+      "outcome": null,
+      "outcomeScope": null,
+      "assessmentCompleted": null,
+      "assessmentUpcoming": false,
+      "submitted": null,
+      "replyWaiting": false,
+      "resultWaiting": false,
+      "replyWaitingSource": null,
+      "resultWaitingSource": null,
+      "waiting": false
+    },
+    "needsContext": true,
+    "clarification": "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.",
+    "entities": {
+      "romantic": false
+    },
+    "unknowns": [
+      "outgoing-contact",
+      "received-reply",
+      "result"
+    ]
+  },
+  "finding": "Excluding every nominal verb stem from context erased meaningful career content. Only positively generic stems should be ignored."
+}

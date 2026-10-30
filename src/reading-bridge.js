@@ -101,6 +101,29 @@
  };
  const relationGroups={focus:'evidence',threshold:'evidence',enough:'evidence',reflection:'evidence',evidence:'evidence',capacity:'capacity',means:'capacity',sustain:'capacity',pace:'pace',readiness:'iteration',restoration:'care',release:'care',space:'boundary',ending:'transition',adaptation:'boundary',framework:'boundary',repair:'exchange',voice:'exchange',evaluation:'values'};
  const selfLenses={exchange:{work:'원하는 결과와 실제 진행 상태를 나누어 보고, 어긋나는 부분이 있다면 이번 단계에서 바꿀 수 있는 조건부터 확인해 보세요.',cope:'기대한 모습과 실제로 겪은 일을 나누어 적고, 그 차이 때문에 느끼는 마음과 지금 바꿀 수 있는 행동을 구별해 보세요.',option:'이 안에서 기대하는 경험과 실제로 확인할 조건을 나누어 보세요. 다른 사람의 협력이나 확인이 필요한 부분이 있다면 별도 항목으로 남겨 보세요.'},boundary:{cope:'내가 선택할 수 있는 행동과 지금 조절하기 어려운 조건을 나누어 보세요. 경계를 정하는 일이 느끼는 감정을 없애야 한다는 뜻은 아닙니다.'}};
+ const inspection={
+  evidence:'확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.',
+  pace:'서둘러 넘어가기 쉬운 부분과 점검을 반복하는 부분을 구별하고, 이번에 확인할 범위와 멈출 기준을 정해 보세요.',
+  capacity:'가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.',
+  boundary:'반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.',
+  exchange:'내용을 만든 사람과 받아들이는 사람이 다르게 이해할 부분이 있는지 살피고, 실제로 확인할 질문을 남겨 보세요.',
+  iteration:'한 부분을 고친 뒤 같은 기준으로 다시 살펴보고, 바꾼 점이 어떤 차이를 만드는지 기록해 보세요.',
+  values:'다른 사람의 평가보다 이 대상의 목적에 필요한 기준을 먼저 고르고, 중요한 문제부터 순서를 정해 보세요.',
+  transition:'이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.',
+  care:'부족한 부분을 찾는 일과 자신 전체를 평가하는 일을 구분하고, 점검을 이어 갈 수 있는 분량으로 범위를 좁혀 보세요.'
+ };
+ const reflection={
+  evidence:'확인한 사실과 그 사실에 붙인 판단을 나누고, 아직 모르는 부분에 다른 해석의 여지를 남겨 보세요.',
+  pace:'결론을 빨리 내리려는 마음과 시간을 두고 살펴야 할 부분을 구분하고, 지금 붙잡고 싶은 한 장면부터 돌아보세요.',
+  capacity:'스스로에게 기대한 몫과 실제로 감당할 수 있었던 몫을 나누고, 결과를 해석할 때 당시의 여건도 함께 살펴보세요.',
+  boundary:'지키고 싶은 원칙과 바꾸어도 되는 방식을 구분하고, 내 책임과 다른 사람의 선택을 따로 돌아보세요.',
+  exchange:'내가 기대한 모습과 실제로 표현되거나 경험한 것을 나누고, 그 차이를 확인할 수 있는 정보가 무엇인지 살펴보세요.',
+  iteration:'잘했거나 어려웠던 한 장면에서 배운 것을 적고, 다음 경험에서 확인해 보고 싶은 한 가지로 연결해 보세요.',
+  values:'다른 사람에게 인정받고 싶은 기준과 나에게 중요한 기준을 구분하고, 이번 경험에서 무엇이 더 중요했는지 돌아보세요.',
+  transition:'달라진 현실 속에서도 남길 점과 이제 조정할 기대를 나누고, 익숙해서 붙잡는 부분이 있는지 살펴보세요.',
+  care:'실망하거나 아쉬운 부분이 있다면 그 감정과 자신에 대한 평가를 구분하고, 돌볼 필요와 이어 갈 자원을 함께 살펴보세요.'
+ };
+ for(const group of Object.keys(lenses)){lenses[group].inspect=inspection[group];lenses[group].reflect=reflection[group];}
  function compose(operation,motifs,relationAxis,context={}){
   const primary=motifs?.[0],axisGroup=Object.keys(groups).find(key=>groups[key].includes(relationAxis)),group=relationGroups[relationAxis]||axisGroup||Object.keys(groups).find(key=>groups[key].includes(primary));
   if(!group)return null;

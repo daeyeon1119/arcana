@@ -3,6 +3,9 @@
 (function(root){
  'use strict';
  const actions={
+  inspect:['점검할 대상과 근거 살피기','점검할 기준과 실제로 확인한 근거를 나누고, 빠진 정보와 서로 맞지 않는 부분을 따로 확인해 보세요.'],
+  reflect:['원했던 것과 실제 경험 돌아보기','중요하게 여긴 것과 실제로 경험한 것을 나누고, 앞으로 지킬 기준과 조정할 기대를 살펴보세요.'],
+  compare:['같은 항목으로 선택 비교하기','각 방식의 실제 조건과 기대에 그치는 부분을 같은 항목으로 비교하고, 꼭 지킬 기준과 양보할 수 있는 기준을 나누어 보세요.'],
   communicate:['설명할 내용을 먼저 정리하기','전하고 싶은 요점 한 가지와 그 근거가 되는 확인된 내용을 짧게 정리해 보세요. 듣거나 읽을 사람이 헷갈릴 부분을 찾아, 더 설명할 내용과 상대에게 확인할 내용을 나누어 볼 수 있습니다.'],
   inquire:['물어볼 질문을 준비하기','궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다.'],
   verify:['확인할 조건을 나누어 살피기','확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.'],
@@ -17,11 +20,12 @@
  const artifact=/(?:문서|자료|안내문|안내서|안내(?=를|의)|설명문|문구|서식|장부|보고서|화면|페이지|도표|책자|포스터|규칙|회칙|대본|목록|목차|결산표|상환표|이\s*표)/;
  const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,mask=questionText.mask;
  const lexicalContext=typeof module==='object'&&module.exports?require('./lexical-context.js'):root.ARCANA_LEXICAL_CONTEXT;
+ const workGuidance=typeof module==='object'&&module.exports?require('./work-guidance.js'):root.ARCANA_WORK_GUIDANCE;
  function participants(question){
   let state=null,rank=-1;
   for(const text of mask(question).split(/[.!?,]|지만|그러나|반면/)){
    if(/(?:있|없)(?:다면|으면)|가정|경우/.test(text))continue;
-   const absent=/(?:혼자|홀로|단독으로).{0,14}(?:일|처리|맡|진행)|(?:팀원|동료|협업자|함께할\s*사람)(?:이|가|은|는)?\s*(?:없|아직\s*없|없는)/.test(text);
+   const absent=/(?:혼자|홀로|단독으로).{0,14}(?:일|처리|맡|진행)|(?:팀원|동료|협업자|함께할\s*사람|(?:함께|같이)\s*일하는\s*사람)(?:이|가|은|는)?\s*(?:없|아직\s*없|없는)/.test(text);
    const present=/(?:서로|각자|함께|동료|팀원|공동|같이|분담|협의|합의|담당자|여럿|가족|부모님|엄마|아빠|친구|연인)/.test(text);
    const current=/지금|현재|이제|이번/.test(text),past=/작년|예전|과거|지난|전에는/.test(text),priority=current?2:past?0:1;
    if((absent||present)&&priority>=rank){state=!absent;rank=priority;}
@@ -29,7 +33,8 @@
   return state;
  }
  function operation(task,question){
-  if(!task||!['action','emotion'].includes(task.kind))return null;
+  if(!task||!['action','emotion'].includes(task.kind)&&!(task.kind==='open'&&task.work?.operation==='reflect'))return null;
+  if(task.work?.operation)return task.work.operation;
   const original=task.evidenceText??task.text??'',cue=original.search(/어떻게|어떡|무엇|뭘|어떤|무슨|어디|언제/);
   const frame=task.frame||lexicalContext.requestFrame(original);if(frame?.operation&&(frame.reason!=='requested-lexical-predicate'||!task.goal||task.goal==='action'||task.frame))return frame.operation;
   const framed=cue>0&&/(?:려면|려고|고\s*싶|할\s*때|하는\s*때|앞두고|앞둔|하면서|한\s*뒤)/.test(original.slice(0,cue));
@@ -72,13 +77,15 @@
   const referent=artifact.test(evidenceQuestion)&&/^(?:이를|이것을|그것을)\s/.test(text);
   const lastArtifact=[...topicPrefix.matchAll(new RegExp(artifact.source,'g'))].at(-1),following=lastArtifact?questionText.sentences(topicPrefix.slice(lastArtifact.index+lastArtifact[0].length)):[];
   const omittedArtifact=op==='communicate'&&lastArtifact&&!/[을를]\s|마음|감정|사과|선택|결정/.test(text)&&following.slice(1).every(clause=>/확인|대조|검토|검증|점검|확정/.test(clause));
-  const hasArtifact=!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||omittedArtifact||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
+  const object=task.work?.target||null;
+  const hasArtifact=object?.kind==='document'||!['requirements','clinical','asset'].includes(object?.kind)&&!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||omittedArtifact||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
+  const presentationOnly=op==='improve'&&object?.kind==='message'&&/^(?:설명|말|표현|문장|문구)$/.test(object.head||'');
   const clinicalChange=/(?:약|치료|수술|복용|용량|증상|통증).{0,18}(?:끊|중단|바꾸|늘리|줄이|끝내|시작|개선|선택)|(?:끊|중단|바꾸|늘리|줄이).{0,12}(?:약|치료|복용|용량)/.test(text);
   if(scene.medical||scene.domain==='health'){
-   if(op!=='inquire'&&clinicalChange)return null;
-   if(!['communicate','inquire','verify','cope','coordinate'].includes(op)&&!hasArtifact)return null;
+   if(op!=='inquire'&&clinicalChange&&!presentationOnly)return null;
+   if(!['communicate','inquire','verify','cope','coordinate'].includes(op)&&!hasArtifact&&!presentationOnly)return null;
   }
-  if(scene.domain==='finances'&&!hasArtifact&&!['communicate','inquire','verify','cope','coordinate'].includes(op)&&/(?:투자|매수|매도|대출|주식|코인|보험|예금|수익|상환)/.test(evidenceQuestion))return null;
+  if(scene.domain==='finances'&&!hasArtifact&&!(op==='inspect'&&['evidence','observation'].includes(object?.kind))&&!['communicate','inquire','verify','cope','coordinate'].includes(op)&&/(?:투자|매수|매도|대출|주식|코인|보험|예금|수익|상환)/.test(evidenceQuestion))return null;
   let [headline,body]=actions[op];
   const target=hasArtifact?'artifact':task.context?.type==='received-content'?'received-content':/(?:역할|담당할|담당\s*(?:범위|업무|일)|몫|책임)/.test(text)?'responsibility':'unspecified',people=participants(evidenceQuestion);
   if(target==='received-content'&&op==='verify'){headline='전달받은 내용을 먼저 살펴보기';body=(task.context.read===false?'아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. ':'전달받은 내용을 먼저 확인해 보세요. ')+'실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.';}
@@ -90,8 +97,10 @@
   if(target==='artifact'&&op==='verify')body='이 자료에 쓰인 조건과 수치의 출처·기준일을 확인하고, 이미 대조한 항목과 아직 검토 중인 항목을 표시해 보세요. 원자료와 다른 부분이나 빠진 조건은 배포 전에 확인할 목록으로 남겨 두세요.';
   if(op==='communicate'&&target==='responsibility')body='달라지는 역할과 그 이유, 그대로 유지되는 부분을 나누어 정리해 보세요. 각자가 맡을 범위와 시작 시점을 설명하고, 이해가 다른 부분이 있는지 확인할 질문을 남겨 보세요.';
   if(op==='coordinate'&&people===false){headline='혼자 맡은 일을 감당할 단계로 나누기';body='지금 혼자 맡은 일을 작은 단계로 나누고, 각 단계의 완료 기준과 쓸 수 있는 시간을 적어 보세요. 이번에 할 범위와 미룰 범위를 구분해 일정에 넣어 보세요.';}
+  const focused=workGuidance.compose(task.work,{state,task,medical:!!scene.medical});
+  if(focused){headline=focused.headline;body=focused.text;}
   if(op==='verify'&&state.submitted===true){headline='이미 접수한 뒤의 진행 조건 확인하기';body='이미 접수한 절차는 반복하지 않고, 이후 일정과 안내를 받을 경로, 추가 자료나 변경·철회가 필요한 경우의 조건을 공식 안내에서 확인해 보세요. 확인한 항목과 아직 모르는 항목을 나누어 적어 보세요.';}
-  if(preparingQuestion&&state.received===false)body='아직 회신을 받지 못했다는 점을 전제로, 답이 오면 확인할 질문을 따로 준비해 보세요. '+body+' 준비한 질문을 바로 다시 보내라는 뜻은 아닙니다.';
+  if(preparingQuestion&&state.received===false)body='아직 회신을 받지 못했다는 점을 전제로, 지금 정리할 질문과 답을 받은 뒤 확인할 질문을 나누어 보세요. '+body+' 준비한 질문을 바로 다시 보내라는 뜻은 아닙니다.';
   const quoted=questionText.quotes(question).map(span=>span.text).join(' '),contentChecks=[];
   if(target==='artifact'&&/(?:처방|복용|치료|용량)/.test(quoted))contentChecks.push('복약·치료에 관한 문구는 표현만 다듬기 전에 원자료와 의료진·약사의 검토로 내용의 정확성을 확인해 보세요. 확인 전에는 독자가 임의로 약이나 치료를 변경해도 된다고 읽을 표현을 그대로 사용하지 마세요.');
   if(target==='artifact'&&/(?:원금|수익|수익률|손실)/.test(quoted)&&/(?:항상|언제나|무조건|확실|100\s*%|절대|보장)/.test(quoted))contentChecks.push('보장 표현은 실제 근거와 적용 조건·예외를 원자료에서 확인해 보세요. 확인하지 않은 보장을 사실로 전달하지 않고, 확인된 범위와 아직 확인할 부분을 구별해 설명해 보세요.');
@@ -104,10 +113,11 @@
    headline='의료진에게 전할 내용을 정리하기';body='실제로 겪은 증상과 시작된 시점, 얼마나 자주 나타나는지, 어떻게 달라졌는지를 순서대로 적어 의료진에게 전해 보세요. 기억이 분명하지 않은 부분은 추정이라고 구분하고, 가장 궁금한 점도 함께 적어 두면 좋습니다.';
   }
   const boundaryText=clinicalContext&&(scene.medical||scene.domain==='health')?'진단·치료 판단은 의료진의 설명과 실제 검사 결과를 기준으로 하고, 카드는 마음과 준비를 살펴보는 데 활용해 보세요. ':'';
-  return {operation:op,headline,text:prefix+body,source:task.text,scope:'ordinary-practical-support',target,participants:people,preparingQuestion,waitingReply:state.replyWaiting===true||state.received===false&&state.replyWaitingSource!=='denied',contentCheck:contentChecks.length>0,submitted:state.submitted===true,boundaryText};
+  return {operation:op,headline,text:prefix+body,source:task.text,scope:'ordinary-practical-support',target,object,work:task.work||null,participants:people,preparingQuestion,waitingReply:state.replyWaiting===true||state.received===false&&state.replyWaitingSource!=='denied',contentCheck:contentChecks.length>0,submitted:state.submitted===true,boundaryText};
  }
  function supports(plan,action,question,taskText=''){
   if(!plan||!action)return false;
+  if(!workGuidance.supports(plan.work,action))return false;
   // Specialized prose must fit the requested object and its prerequisites, not
   // just share an activity label. Unknown participants are not asserted present.
   if(plan.contentCheck||plan.preparingQuestion&&plan.waitingReply||plan.submitted&&plan.operation==='verify')return false;

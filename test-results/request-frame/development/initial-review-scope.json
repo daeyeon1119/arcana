@@ -1,0 +1,132 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "4e1772bdf7a818a9e646e0651dcd94c85e357a5e3fdc2ee9d98679b3aafb1507",
+    "appBytes": 33165971,
+    "webRelease": "0dbb0d0c134fe57401f592a0",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "5d8f51c9ce8312fa64e8e583582e96e3d9c23d2781ea36f52ae7b669baf62892",
+  "directlyRead": [
+    {
+      "id": "w01",
+      "directSHA256": "36413b099b11e7793108196a911766095ce598d5fe3f03aa433a59ae79ada55a"
+    },
+    {
+      "id": "w02",
+      "directSHA256": "0c5302fe8b42c01048cd85bdfd6e94f563b8a9c7c457ba2ff3b00dca424d4338"
+    },
+    {
+      "id": "w03",
+      "directSHA256": "c38819a11ce5f0f8baf357ff0a9f552e5b688c429188daf04e64d9117330611b"
+    },
+    {
+      "id": "w04",
+      "directSHA256": "604d68481c19b685a76d58f4738ec08675e4d644b37493d5017f7e7fa5dde1ff"
+    },
+    {
+      "id": "w05",
+      "directSHA256": "cb3ededf19ad81c1b7d9b522250eb9d2c4a7e1a2c4ed725d31d299e89d624a9e"
+    },
+    {
+      "id": "w06",
+      "directSHA256": "c3f219c2108be6e286407629e97ee93490a1d833a8d4fe0ceec2af32157edf1e"
+    },
+    {
+      "id": "w07",
+      "directSHA256": "d2c104b938812e431f0b2b04778a5b825e8f26332306274cd7072851cc0ae0ea"
+    },
+    {
+      "id": "w08",
+      "directSHA256": "0e88ed1150885f4dc354a2fc38633a7273f92db9f6d0b9853e16f5a20cfc8068"
+    },
+    {
+      "id": "w09",
+      "directSHA256": "e8e5746f5989403156c33f35fa7b85e0bca0ca5ccc9b622d18acdc5966d01b65"
+    },
+    {
+      "id": "w10",
+      "directSHA256": "26f80b8172b92280902fbd3a3adfda37475ed735306e000d7467aadd16306a1e"
+    },
+    {
+      "id": "w11",
+      "directSHA256": "560e4f84222800ca542868056a9ccc065006b61027f8279b1bb23d664751d7dc"
+    },
+    {
+      "id": "w12",
+      "directSHA256": "d7753aefcc1657b251122d3e673a0052deabf9e446cccd2c26cdb5c397853c23"
+    },
+    {
+      "id": "w13",
+      "directSHA256": "d014109bc7aea3c39eed92b4f74fb234dd5ce7abcd62f9578867ef87b0da8d94"
+    },
+    {
+      "id": "w14",
+      "directSHA256": "9fbb692e86909f69273532b24bf24ee3d7715339cec7a8c9792ba355e4640edd"
+    },
+    {
+      "id": "w15",
+      "directSHA256": "a9205ba68c59608ee95c4ff18707f8985f1c6fa387f65021e5a7f14cd1a77e95"
+    },
+    {
+      "id": "w16",
+      "directSHA256": "55aee67250eba5eaf078bbd50706c4f2967943c3c13a29461ff4914a384aed64"
+    },
+    {
+      "id": "w17",
+      "directSHA256": "35b746cd1af586069df9235b936cc4addbbe4678da6754e96a335fbcbf9f738a"
+    },
+    {
+      "id": "w18",
+      "directSHA256": "cbd5e08a4f3a4af66c0f61e693bf3886eaeae5189de2c0fb3f1eab1290f1f4fe"
+    },
+    {
+      "id": "w19",
+      "directSHA256": "3cba1c296573d30b0b660307a7b6e90b4da4e4cc031764b421dcdb9a77e9ed7f"
+    },
+    {
+      "id": "w20",
+      "directSHA256": "31343b43c34bf0038d7601f3b5e0e83b1fce38e368d3a6106c1ddee416180a60"
+    },
+    {
+      "id": "w21",
+      "directSHA256": "b3e59892f037cecee040e7692b267c0526629a484028ce2a44759bfd56fef5f1"
+    },
+    {
+      "id": "w22",
+      "directSHA256": "354a6e8cc4f2488a5699670d7ea70c8b55750231c2bd54ea17dc8ea0529625c2"
+    },
+    {
+      "id": "w23",
+      "directSHA256": "1fd26ca42a5ffa8379969d69b1f7e2643b69859dc74968f7a1d474b34245bdef"
+    },
+    {
+      "id": "w24",
+      "directSHA256": "cbd5e08a4f3a4af66c0f61e693bf3886eaeae5189de2c0fb3f1eab1290f1f4fe"
+    },
+    {
+      "id": "w25",
+      "directSHA256": "37b95bb3d7c9f68f4175a07c621d15535f26ad1cafa638aa7e5b29ac5b230a8b"
+    },
+    {
+      "id": "w26",
+      "directSHA256": "dfa5d48c5cae91619f768b72db57f8773627442566779ce225674596dfd8c79a"
+    },
+    {
+      "id": "w27",
+      "directSHA256": "037306e56726ceeacf4d60ba5d609b86c25fb21b2a2e52b37b52319071dc7420"
+    },
+    {
+      "id": "w28",
+      "directSHA256": "ab5e8c3f982be2e78c7296a432fb2b367cc528e9b3ef037d8da97ded5fe1e65c"
+    }
+  ],
+  "scope": "All 28 known development five-card primary answers read. Other detailed variants retained but not manually reread. Metadata contracts pass; semantic shortcomings remain and no expert score is assigned.",
+  "professionalQualityScore": null
+}
