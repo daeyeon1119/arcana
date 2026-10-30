@@ -14,5 +14,25 @@
   "intentionalContractChange": {
     "scope": "task-policy received acknowledgment",
     "reason": "A global received=true flag is not enough to prefix an unrelated request with a received answer. The test now supplies an actual receipt and a referring request, and adds an unrelated-document counterexample. This is a stronger context prerequisite, not removal of the acknowledgment requirement."
+  },
+  "legacyContextContractCorrection": {
+    "fixture": "tests/generalization-v81.json",
+    "group": "sent",
+    "variant": 1,
+    "question": "고백은 이미 했고 대답을 기다립니다. 지금 저는 무엇을 하면 좋을까요?",
+    "oldSharedExpectation": {
+      "sent": true,
+      "noReply": true
+    },
+    "currentExpectedFacts": {
+      "sent": true,
+      "noReply": false
+    },
+    "additionalCanonicalAssertions": {
+      "sent": true,
+      "received": null,
+      "replyWaiting": true
+    },
+    "reason": "Waiting alone does not state the absence of a receipt. Original fixture and historic results remain unchanged. Current evaluation overrides this single erroneous shared label and strengthens send polarity/explicit absence/unknown receipt checks. Separately, the actual adnominal actor regression is corrected; it is not dismissed as a label error."
   }
 }

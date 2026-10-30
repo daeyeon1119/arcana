@@ -44,8 +44,8 @@
   const matches=predicates.flatMap(([operation,rx])=>[...text.matchAll(rx)].map(match=>({operation,index:match.index})));
   const found=matches.sort((a,b)=>b.index-a.index)[0]?.operation;
   if(found)return found==='prepare'&&!negatedInquiry&&questionTarget.test(original+' '+question)?'inquire':found;
-  if(task.context?.type==='received-content'&&/읽|살펴|검토|정리|확인/.test(text))return 'verify';
   if(!negatedInquiry&&questionTarget.test(original)&&/정리|준비|적|써|잊|기억/.test(text))return 'inquire';
+  if(task.context?.type==='received-content'&&/읽|살펴|검토|정리|확인/.test(text))return 'verify';
   const genericTaskCue=/^(?:어떻게\s*(?:할(?:까요|까|지)|하면|하나요|해야)|(?:무엇|뭘|뭐)(?:부터|을)?\s*(?:먼저\s*)?(?:해야|할|하면|하나요)|(?:어떤|어느)\s*(?:순서|방법|범위|단계|기준|시점).{0,12}(?:좋|필요|적절|도움))/.test(text);
   if(framed&&genericTaskCue){
    const purpose=predicates.flatMap(([operation,rx])=>[...original.slice(0,cue).matchAll(rx)].map(match=>({operation,index:match.index}))).sort((a,b)=>b.index-a.index)[0];

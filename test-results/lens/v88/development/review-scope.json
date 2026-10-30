@@ -1,0 +1,57 @@
+{
+  "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+  "readingsSHA256": "ec4c319f9a30c7f3002215e77376a9c272cfc10c8730e587abfd84a00c596ce5",
+  "comparedTo": "v87 known, previously reviewed primary strings",
+  "changedPrimariesReadNow": [],
+  "unchangedPreviouslyRead": [
+    {
+      "id": "communicate",
+      "spread": "five"
+    },
+    {
+      "id": "inquire",
+      "spread": "five"
+    },
+    {
+      "id": "verify",
+      "spread": "five"
+    },
+    {
+      "id": "improve",
+      "spread": "five"
+    },
+    {
+      "id": "prepare",
+      "spread": "five"
+    },
+    {
+      "id": "coordinate",
+      "spread": "five"
+    },
+    {
+      "id": "prioritize",
+      "spread": "five"
+    },
+    {
+      "id": "finish",
+      "spread": "five"
+    },
+    {
+      "id": "implement",
+      "spread": "five"
+    },
+    {
+      "id": "cope",
+      "spread": "five"
+    },
+    {
+      "id": "v86-n01",
+      "spread": "five"
+    },
+    {
+      "id": "v86-n13",
+      "spread": "five"
+    }
+  ],
+  "note": "Only l18 changed among the thirty-two five-card primary strings; the changed answer was read. Detailed reports and other variants were not all read again. This is known regression evidence, not a new or expert evaluation."
+}

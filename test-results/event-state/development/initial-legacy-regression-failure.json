@@ -1,0 +1,112 @@
+{
+  "source": "test-results\\task-policy\\v88\\fresh-regression\\summary.json",
+  "summary": {
+    "appSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337",
+    "baselineSHA256": "fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb",
+    "fixtureSHA256": "68bb31b930d66b29c9d249c32115025cc001c43fa494e433af8b18b02a74c519",
+    "policySHA256": "82580b2ef6041b28eaf0ae5e0cb94e9cf99d8580771935a8b4dd508473ada088",
+    "collectorSHA256": "cfc9bf709dc08876319d13a17bf31dc91e0fecce984e5d3c62a93ea545aa89c7",
+    "seed": 830031,
+    "phase": "fresh-regression",
+    "note": "Authored after engine commit 82cfae2 (HTML SHA256 646cb51f16fe8d31db473703d15cdfdb3d512c57e5f87fc4ea48679c4195c182). A second self-authored first-run diagnostic, not independent expert evidence. No labels or review notes are sent to the engine. All first actual outputs are retained even when they fail; no production fix is based on these questions before this run. Routing checks alone cannot establish semantic quality. Routing checks are not semantic or professional quality scores.",
+    "questions": 16,
+    "readingsPerVersion": 128,
+    "errors": [],
+    "failures": [
+      {
+        "id": "f12",
+        "spread": "one",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f12",
+        "spread": "three",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f12",
+        "spread": "five",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f12",
+        "spread": "relationship5",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f12",
+        "spread": "choice5",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f12",
+        "spread": "waiting3",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f12",
+        "spread": "career5",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      },
+      {
+        "id": "f12",
+        "spread": "celtic",
+        "expectedOperation": "inquire",
+        "actual": [
+          "verify"
+        ],
+        "specialized": [
+          "verify"
+        ]
+      }
+    ],
+    "checks": {
+      "routing": 120,
+      "cardEvidence": 128
+    },
+    "qualityReviewed": 0
+  },
+  "finding": "New received-content fallback verify ran before existing explicit question-preparation inquiry handling, changing f12 in every spread. The expectation is retained; narrower operation evidence must precede generic content review."
+}

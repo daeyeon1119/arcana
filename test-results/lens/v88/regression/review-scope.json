@@ -1,0 +1,90 @@
+{
+  "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+  "readingsSHA256": "00fbb1b5fcc8a83ae7e9d6897e247fc3f0ca724df7bed48ddcf59cdb76c83aee",
+  "comparedTo": "v87 known, previously reviewed primary strings",
+  "changedPrimariesReadNow": [
+    {
+      "id": "l18",
+      "spread": "five"
+    }
+  ],
+  "unchangedPreviouslyRead": [
+    {
+      "id": "l01",
+      "spread": "five"
+    },
+    {
+      "id": "l02",
+      "spread": "five"
+    },
+    {
+      "id": "l03",
+      "spread": "five"
+    },
+    {
+      "id": "l04",
+      "spread": "five"
+    },
+    {
+      "id": "l05",
+      "spread": "five"
+    },
+    {
+      "id": "l06",
+      "spread": "five"
+    },
+    {
+      "id": "l07",
+      "spread": "five"
+    },
+    {
+      "id": "l08",
+      "spread": "five"
+    },
+    {
+      "id": "l09",
+      "spread": "five"
+    },
+    {
+      "id": "l10",
+      "spread": "five"
+    },
+    {
+      "id": "l11",
+      "spread": "five"
+    },
+    {
+      "id": "l12",
+      "spread": "five"
+    },
+    {
+      "id": "l13",
+      "spread": "five"
+    },
+    {
+      "id": "l14",
+      "spread": "five"
+    },
+    {
+      "id": "l15",
+      "spread": "five"
+    },
+    {
+      "id": "l16",
+      "spread": "five"
+    },
+    {
+      "id": "l17",
+      "spread": "five"
+    },
+    {
+      "id": "l19",
+      "spread": "five"
+    },
+    {
+      "id": "l20",
+      "spread": "five"
+    }
+  ],
+  "note": "Only l18 changed among the thirty-two five-card primary strings; the changed answer was read. Detailed reports and other variants were not all read again. This is known regression evidence, not a new or expert evaluation."
+}

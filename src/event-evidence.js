@@ -9,7 +9,10 @@
    matches.push({actor:self.test(m[1])?'self':'other',evidence:m[1]+m[2],start});
   }
   const topic=prefix.match(/^\s*([가-힣A-Za-z][가-힣A-Za-z0-9_-]{1,17})(은|는|도)(?=\s|$)/);
-  if(topic&&!/^(?:오늘|어제|지금|이번|다음|내일|당시|전날|현재)$/.test(topic[1])&&!/(?:에서|에게|에|으로|로)$/.test(topic[1])){
+  // Productive adnominal predicate endings are not nominal topic particles.
+  // In particular X하는/되는/있는/없는/모르는 must not become an actor.
+  const modifier=topic&&topic[2]==='는'&&/(?:하|되|있|없|르)$/.test(topic[1]);
+  if(topic&&!modifier&&!/^(?:오늘|어제|지금|이번|다음|내일|당시|전날|현재)$/.test(topic[1])&&!/(?:에서|에게|에|으로|로)$/.test(topic[1])){
    const start=topic.index+topic[0].indexOf(topic[1]);if(!excluded.some(span=>start>=span.start&&start<span.end))matches.push({actor:self.test(topic[1])?'self':'other',evidence:topic[1]+topic[2],start});
   }
   return matches.sort((a,b)=>a.start-b.start).at(-1)||null;

@@ -15,6 +15,10 @@ for(const noun of ['답변','회신','답장','대답']){
  for(const [left,right]of [['“','”'],['"','"'],['「','」'],['『','』'],['‘','’'],["'","'"]])add('quoted receipt is not a personal fact',left+noun+'을 받았습니다'+right+'라는 문장을 다듬고 있어요.',{received:null});
 }
 for(const subject of ['제가','나는','동료가'])for(const [noun,root]of [['연락','하'],['메시지','보내'],['문자','보내']])for(const focus of ['지','지는','지도','진'])add('focused verbal negation preserves direction',subject+' '+noun+(noun==='연락'?'을':'를')+' '+root+focus+' 않았어요.',{sent:subject==='동료가'?null:false});
+for(const modifier of ['좋아하는','존경하는','모르는']){
+ for(const negative of [false,true])add('adnominal predicates are not topical actors',modifier+' 사람에게 문자를 '+(negative?'보내지 않았어요.':'보냈어요.'),{sent:!negative});
+ add('adnominal predicates do not hide explicit reply absence',modifier+' 사람에게 문자를 보냈는데 답장은 없어요.',{sent:true,received:false});
+}
 for(const modifier of ['긴','아주 긴','새로운','자세한','매우 자세한'])add('relative sender is not the reader','친구가 보내 준 '+modifier+' 답장을 읽었어요.',{received:true,read:true});
 for(const [question,state]of [
  ['어머니는 친구가 보낸 답변을 읽었습니다.',{received:null,read:null}],

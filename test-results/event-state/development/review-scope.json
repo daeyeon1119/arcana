@@ -2,9 +2,9 @@
   "release": {
     "appVersion": "88.0.0",
     "readingEngine": 88,
-    "appSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337",
-    "appBytes": 30822350,
-    "webRelease": "7dc985672ec05c8781873acc"
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
   },
   "readingsSHA256": "b2b35baab930978aae4838ea2d4700f48408b11070f6956c0439ff1400a14964",
   "directlyRead": [
@@ -118,5 +118,5 @@
     "d17 hypothetical request underspecified",
     "generic/repetitive advice and weak cross-card applications remain"
   ],
-  "scope": "Agent editorial review of twenty five-card primary answers, not independent or blind expert review."
+  "scope": "Previously read twenty primary strings are byte-identical after the operation-precedence and modifier-scope corrections. This is known regression evidence, not a second new evaluation or expert review."
 }

@@ -1,0 +1,12 @@
+{
+  "baseCommit": "83cd30a",
+  "baseHTMLSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337",
+  "failedHTMLSHA256": "826506edddc70f733346d65e98ede70700929e928aac144731c9409fe4e02b55",
+  "exactHTMLReplacement": {
+    "before": "  if(task.context?.type==='received-content'&&/읽|살펴|검토|정리|확인/.test(text))return 'verify';\n  if(!negatedInquiry&&questionTarget.test(original)&&/정리|준비|적|써|잊|기억/.test(text))return 'inquire';",
+    "after": "  if(!negatedInquiry&&questionTarget.test(original)&&/정리|준비|적|써|잊|기억/.test(text))return 'inquire';\n  if(task.context?.type==='received-content'&&/읽|살펴|검토|정리|확인/.test(text))return 'verify';"
+  },
+  "capturedActualReports": "context-failure-826506edddc7.jsonl.gz",
+  "capturedReportsSHA256": "b20b2906442c8c0bea22e93130f4c7f8bc0808f0c5aad1baf245275fd91160ac",
+  "note": "The exact failed 8265 HTML can be reconstructed from the committed frozen 83cd30a HTML with this single operation-precedence line swap; its hash was verified. The later adnominal correction is absent in this source."
+}

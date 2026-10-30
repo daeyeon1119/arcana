@@ -49,11 +49,20 @@
     "l16"
   ],
   "remainingSemanticLimits": [
-    "l04 explicitly denied waiting is still classified as waiting in factual metadata even though the visible answer is coping-focused",
     "l07 forecast advice remains too generic for the requested confidence in reading aloud",
     "l17 financial metadata and condition-specific depth remain limited",
-    "l18 already-held answer is not fully represented as an explicit receipt event",
     "l20 two-sentence formatting request is not implemented",
     "domain depth and repeated general imperatives remain below the professional target"
-  ]
+  ],
+  "facts": {
+    "l04": {
+      "sent": false,
+      "waiting": false
+    },
+    "l18": {
+      "replied": true,
+      "noReply": false
+    }
+  },
+  "resolvedIn88": "Explicit waiting denial and existing received answer are covered by actual event-state reports and additional factual assertions. Historic first outputs and summaries are not rewritten."
 }
