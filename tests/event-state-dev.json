@@ -1,0 +1,25 @@
+{
+  "note": "Known author development probes, including v87 review failures. These expectations are evaluation-only, not parser input or an unseen/expert benchmark. Null means the question does not establish a personal fact.",
+  "cases": [
+    {"id":"d01","question":"연락을 먼저 하지는 않았고 상대의 답을 기다리는 상황도 아닙니다. 그냥 혼자 보낸 주말이 공허해요. 이 마음을 어떻게 돌보면 좋을까요?","state":{"sent":false,"received":null,"waiting":false}},
+    {"id":"d02","question":"선생님에게 받은 답변이 이미 있습니다. 저는 아직 내용을 이해하지 못했어요. 같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요?","state":{"received":true,"replyWaiting":false}},
+    {"id":"d03","question":"저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?","state":{"received":true,"replyWaiting":false}},
+    {"id":"d04","question":"회신을 아직 받지 않았어요. 답이 오면 물을 질문을 어떻게 준비할까요?","state":{"received":false}},
+    {"id":"d05","question":"저는 문자를 보내지는 않았어요. 이 마음을 어떻게 돌아볼까요?","state":{"sent":false}},
+    {"id":"d06","question":"시험은 끝났지만 결과를 기다리는 상황은 아닙니다. 다음 일을 어떻게 준비할까요?","state":{"assessmentCompleted":true,"resultKnown":null,"waiting":false}},
+    {"id":"d07","question":"받은 회신이 도움이 될지는 모르겠어요. 어떤 점을 다시 물어볼까요?","state":{"received":true}},
+    {"id":"d08","question":"제 답변을 친구가 받았습니다. 저는 무엇을 돌아보면 좋을까요?","state":{"received":null}},
+    {"id":"d09","question":"친구가 받은 답변이 있습니다. 제 계획은 어떻게 준비할까요?","state":{"received":null}},
+    {"id":"d10","question":"저는 받은 회신은 있지만 답하지는 않았어요. 이제 어떻게 정리할까요?","state":{"received":true,"sent":false}},
+    {"id":"d11","question":"제가 보낸 답변을 해설사가 받았습니다. 다음 일을 어떻게 준비할까요?","state":{"sent":true,"received":null}},
+    {"id":"d12","question":"회신을 기다리고 있습니다. 기다리는 동안 무엇을 정리할까요?","state":{"received":null,"replyWaiting":true}},
+    {"id":"d13","question":"답장은 없지만 기다리지는 않아요. 어떻게 마음을 돌볼까요?","state":{"received":false,"replyWaiting":false,"waiting":false}},
+    {"id":"d14","question":"회신은 아직 없어요. 이제 기다리지 않아요. 오늘 무엇을 준비할까요?","state":{"received":false,"replyWaiting":false,"waiting":false}},
+    {"id":"d15","question":"친구는 회신을 기다리고 있어요. 제 일은 어떤 관점으로 볼까요?","state":{"received":null,"replyWaiting":false}},
+    {"id":"d16","question":"‘회신을 받았다’는 문장을 다듬고 있어요. 어떻게 설명할까요?","state":{"received":null}},
+    {"id":"d17","question":"답변을 받았다면 어떤 질문을 했을까요?","state":{"received":null}},
+    {"id":"d18","question":"받은 답변이 있다면 다음에 어떻게 물어볼까요?","state":{"received":null}},
+    {"id":"d19","question":"회신은 아직 안 왔어요. 버스를 기다리지 않습니다. 오늘 마음을 어떻게 돌볼까요?","state":{"received":false,"replyWaiting":true}},
+    {"id":"d20","question":"회신을 기다리지는 않는 것은 아닙니다. 어떻게 마음을 정리할까요?","state":{"received":null,"replyWaiting":true}}
+  ]
+}
