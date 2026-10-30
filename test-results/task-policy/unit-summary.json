@@ -101,7 +101,11 @@
       "ok": true
     },
     {
-      "name": "received answer is acknowledged without inventing its contents",
+      "name": "received answer is acknowledged when the request refers to it, without inventing its contents",
+      "ok": true
+    },
+    {
+      "name": "a global received flag does not attach an unrelated explanation to that reply",
       "ok": true
     },
     {
@@ -389,6 +393,6 @@
       "ok": true
     }
   ],
-  "total": 97,
+  "total": 98,
   "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by both preserved first-run question sets. Not a first-seen quality benchmark or professional evaluation."
 }

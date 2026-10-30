@@ -1,0 +1,538 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337",
+    "appBytes": 30822350,
+    "webRelease": "7dc985672ec05c8781873acc"
+  },
+  "checks": [
+    "insufficient context uses the canonical context panel; the legacy category gate stays hidden",
+    "d03/auto: actual touch draw, correct receipt/read context, export and saved history match",
+    "d03/action: actual touch draw, correct receipt/read context, export and saved history match",
+    "d02/auto: actual touch draw, correct receipt/read context, export and saved history match",
+    "d10/auto: actual touch draw, correct receipt/read context, export and saved history match",
+    "controlled delay/patience cards do not reinstate explicitly denied real waiting",
+    "unknown receipt, relative sender/reader and local waiting modality project correctly into actual report facts"
+  ],
+  "actual": [
+    {
+      "id": "d03",
+      "intent": "auto",
+      "cards": [
+        {
+          "id": "wa14",
+          "rev": true
+        },
+        {
+          "id": "cu12",
+          "rev": true
+        },
+        {
+          "id": "pe03",
+          "rev": true
+        }
+      ],
+      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘현재’의 컵 기사 역방향에서 살필 관점은 ‘이상·엇갈림’입니다. ‘미래’의 펜타클 3 역방향에서 살필 관점은 ‘엇갈림·구조’입니다. 두 카드에서는 ‘엇갈림’이라는 주제를 함께 살펴볼 수 있습니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+      "state": {
+        "sent": null,
+        "received": true,
+        "read": false,
+        "resultKnown": null,
+        "resultPublished": null,
+        "outcome": null,
+        "outcomeScope": null,
+        "assessmentCompleted": null,
+        "assessmentUpcoming": false,
+        "submitted": null,
+        "replyWaiting": false,
+        "resultWaiting": false,
+        "replyWaitingSource": "received",
+        "resultWaitingSource": null,
+        "waiting": false
+      },
+      "request": {
+        "kind": "action",
+        "goal": "action",
+        "text": "무엇부터 살펴볼까요",
+        "start": 27,
+        "end": 37,
+        "context": {
+          "type": "received-content",
+          "sourceEvent": {
+            "start": 8,
+            "end": 13,
+            "object": "답변",
+            "text": "받은 답변"
+          },
+          "read": false
+        }
+      }
+    },
+    {
+      "id": "d03",
+      "intent": "action",
+      "cards": [
+        {
+          "id": "ar01",
+          "rev": false
+        },
+        {
+          "id": "wa09",
+          "rev": false
+        },
+        {
+          "id": "wa08",
+          "rev": true
+        }
+      ],
+      "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘미래’의 완드 8 역방향에서 살필 관점은 ‘엇갈림·지연’입니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+      "state": {
+        "sent": null,
+        "received": true,
+        "read": false,
+        "resultKnown": null,
+        "resultPublished": null,
+        "outcome": null,
+        "outcomeScope": null,
+        "assessmentCompleted": null,
+        "assessmentUpcoming": false,
+        "submitted": null,
+        "replyWaiting": false,
+        "resultWaiting": false,
+        "replyWaitingSource": "received",
+        "resultWaitingSource": null,
+        "waiting": false
+      },
+      "request": {
+        "kind": "action",
+        "goal": "action",
+        "text": "저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+        "start": 0,
+        "end": 38,
+        "context": {
+          "type": "received-content",
+          "sourceEvent": {
+            "start": 8,
+            "end": 13,
+            "object": "답변",
+            "text": "받은 답변"
+          },
+          "read": false
+        }
+      }
+    },
+    {
+      "id": "d02",
+      "intent": "auto",
+      "cards": [
+        {
+          "id": "sw05",
+          "rev": false
+        },
+        {
+          "id": "ar00",
+          "rev": false
+        },
+        {
+          "id": "wa11",
+          "rev": true
+        }
+      ],
+      "direct": "전달받은 내용을 살펴보고, 이해한 부분과 아직 막힌 부분을 나누어 보세요. “제가 이 부분을 이렇게 이해했는데 맞나요?”, “이 설명에서 제가 빠뜨린 조건은 무엇인가요?”처럼 받은 내용에 연결해 다시 물을 점을 적어 보세요.\n\n‘미래’의 완드 시종 역방향에서 살필 관점은 ‘충동·현실성’입니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 한꺼번에 많은 답을 얻으려 하기보다 지금 필요한 질문부터 묻고, 답을 정리한 뒤 이어서 물을 순서를 정해 보세요.",
+      "state": {
+        "sent": null,
+        "received": true,
+        "read": null,
+        "resultKnown": null,
+        "resultPublished": null,
+        "outcome": null,
+        "outcomeScope": null,
+        "assessmentCompleted": null,
+        "assessmentUpcoming": false,
+        "submitted": null,
+        "replyWaiting": false,
+        "resultWaiting": false,
+        "replyWaitingSource": "received",
+        "resultWaitingSource": null,
+        "waiting": false
+      },
+      "request": {
+        "kind": "action",
+        "goal": "action",
+        "text": "같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요",
+        "start": 43,
+        "end": 73,
+        "context": {
+          "type": "received-content",
+          "sourceEvent": {
+            "start": 6,
+            "end": 11,
+            "object": "답변",
+            "text": "받은 답변"
+          },
+          "read": null
+        }
+      }
+    },
+    {
+      "id": "d10",
+      "intent": "auto",
+      "cards": [
+        {
+          "id": "cu09",
+          "rev": false
+        },
+        {
+          "id": "pe08",
+          "rev": true
+        },
+        {
+          "id": "ar09",
+          "rev": true
+        }
+      ],
+      "direct": "전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘현재’의 펜타클 8 역방향에서 살필 관점은 ‘완벽주의·소진’입니다. ‘미래’의 은둔자 역방향에서 살필 관점은 ‘고립·지원’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+      "state": {
+        "sent": false,
+        "received": true,
+        "read": null,
+        "resultKnown": null,
+        "resultPublished": null,
+        "outcome": null,
+        "outcomeScope": null,
+        "assessmentCompleted": null,
+        "assessmentUpcoming": false,
+        "submitted": null,
+        "replyWaiting": false,
+        "resultWaiting": false,
+        "replyWaitingSource": "received",
+        "resultWaitingSource": null,
+        "waiting": false
+      },
+      "request": {
+        "kind": "action",
+        "goal": "action",
+        "text": "이제 어떻게 정리할까요",
+        "start": 25,
+        "end": 37,
+        "context": {
+          "type": "received-content",
+          "sourceEvent": {
+            "start": 3,
+            "end": 8,
+            "object": "회신",
+            "text": "받은 회신"
+          },
+          "read": null
+        }
+      }
+    }
+  ],
+  "controlled": [
+    {
+      "card": {
+        "id": "ar19",
+        "rev": true
+      },
+      "direct": "지금 느끼는 마음을 한 문장으로 적고, 오늘 덜어낼 부담과 도움을 청할 사람을 하나씩 정해 보세요. 감정을 바로 해결하지 못해도 괜찮습니다.\n\n‘핵심 메시지’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 결론을 재촉하는 마음이 올라올 때 바로 행동할 일과 잠시 보류할 일을 나누어 보세요. 시간이 더 필요한 부분이 있다면 그 사이에 지킬 일상도 정해 볼 수 있습니다.",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "state": {
+        "sent": false,
+        "received": null,
+        "read": null,
+        "resultKnown": null,
+        "resultPublished": null,
+        "outcome": null,
+        "outcomeScope": null,
+        "assessmentCompleted": null,
+        "assessmentUpcoming": false,
+        "submitted": null,
+        "replyWaiting": false,
+        "resultWaiting": false,
+        "replyWaitingSource": "denied",
+        "resultWaitingSource": null,
+        "waiting": false
+      },
+      "sections": [
+        {
+          "title": "핵심 메시지",
+          "body": "‘핵심 메시지’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        }
+      ]
+    },
+    {
+      "card": {
+        "id": "pe07",
+        "rev": false
+      },
+      "direct": "지금 느끼는 마음을 한 문장으로 적고, 오늘 덜어낼 부담과 도움을 청할 사람을 하나씩 정해 보세요. 감정을 바로 해결하지 못해도 괜찮습니다.\n\n‘핵심 메시지’의 펜타클 7 정방향에서 살필 관점은 ‘인내·연습’입니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 결론을 재촉하는 마음이 올라올 때 바로 행동할 일과 잠시 보류할 일을 나누어 보세요. 시간이 더 필요한 부분이 있다면 그 사이에 지킬 일상도 정해 볼 수 있습니다.",
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "state": {
+        "sent": false,
+        "received": null,
+        "read": null,
+        "resultKnown": null,
+        "resultPublished": null,
+        "outcome": null,
+        "outcomeScope": null,
+        "assessmentCompleted": null,
+        "assessmentUpcoming": false,
+        "submitted": null,
+        "replyWaiting": false,
+        "resultWaiting": false,
+        "replyWaitingSource": "denied",
+        "resultWaitingSource": null,
+        "waiting": false
+      },
+      "sections": [
+        {
+          "title": "핵심 메시지",
+          "body": "‘핵심 메시지’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        }
+      ]
+    }
+  ],
+  "factControls": [
+    {
+      "question": "헤어진 연인이 먼저 안부를 물었어요. 어떻게 답할까요?",
+      "facts": {
+        "replied": true
+      },
+      "actual": {
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "direct": "상대가 실제로 전한 내용에 먼저 답하고, 이어가고 싶은 이야기를 한 가지 덧붙여 보세요. ‘과거’의 바보 정방향은 ‘새로운 출발’을 보여 줍니다. ‘현재’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다."
+      }
+    },
+    {
+      "question": "친구가 보내 준 긴 답장을 읽었어요. 어떤 태도로 답하면 좋을까요?",
+      "facts": {
+        "replied": true
+      },
+      "state": {
+        "received": true,
+        "read": true
+      },
+      "actual": {
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "state": {
+          "sent": null,
+          "received": true,
+          "read": true,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": "received",
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "direct": "상대가 실제로 전한 내용에 먼저 답하고, 이어가고 싶은 이야기를 한 가지 덧붙여 보세요. ‘과거’의 바보 정방향은 ‘새로운 출발’을 보여 줍니다. ‘현재’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다."
+      }
+    },
+    {
+      "question": "제 답변을 친구가 받았습니다. 저는 무엇을 돌아보면 좋을까요?",
+      "facts": {
+        "replied": false
+      },
+      "state": {
+        "received": null
+      },
+      "actual": {
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "direct": "‘과거’의 바보 정방향은 ‘새로운 출발’을 보여 줍니다. ‘현재’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?"
+      }
+    },
+    {
+      "question": "원고를 출판사에 보냈어요. 답을 기다리는 동안 뭘 할까요?",
+      "facts": {
+        "waiting": true,
+        "noReply": false
+      },
+      "state": {
+        "received": null,
+        "replyWaiting": true
+      },
+      "actual": {
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": true,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": true,
+          "replyWaiting": true,
+          "resultWaiting": false,
+          "replyWaitingSource": "explicit",
+          "resultWaitingSource": null,
+          "waiting": true
+        },
+        "direct": "답을 기다리는 동안 지금 이어 갈 일과 다음에 확인할 시점을 나누어 보세요. 회신의 내용이나 상대의 뜻은 확인한 범위에서 읽고, 아직 모르는 부분을 추측으로 채우지 않아도 됩니다. ‘과거’의 바보 정방향은 ‘새로운 출발’을 보여 줍니다. ‘현재’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다."
+      }
+    },
+    {
+      "question": "답변을 기다릴 때 계속 확인하는 이유가 뭘까요?",
+      "facts": {
+        "waiting": false,
+        "noReply": false
+      },
+      "state": {
+        "received": null,
+        "replyWaiting": false
+      },
+      "actual": {
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "direct": "‘과거’의 바보 정방향은 ‘새로운 출발’을 보여 줍니다. ‘현재’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다. 이 연결은 상황을 돌아볼 가설이며, 실제 이유는 관찰한 사실과 대화로 확인해야 합니다."
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "scope": "Local 390px mobile touch emulation. Four actual UI draw/reveal/export/save/history flows; seven controlled card reports are explicitly separate. No physical phone UI or expert score."
+}

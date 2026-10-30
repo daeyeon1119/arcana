@@ -1,0 +1,79 @@
+{
+  "questions": 320,
+  "categories": [
+    "이직·진로",
+    "직장·협업",
+    "연애",
+    "친구",
+    "가족",
+    "시험",
+    "학습",
+    "창작",
+    "앱·개발",
+    "금전",
+    "건강",
+    "선택",
+    "감정",
+    "사업·프리랜서",
+    "결과·기다림",
+    "일상·취미"
+  ],
+  "errors": [],
+  "intentMatches": 320,
+  "domainMatches": 303,
+  "qualityChecks": [
+    {
+      "name": "no foreign placeholder / broken text",
+      "ok": true
+    },
+    {
+      "name": "colleague apology is not an outgoing message",
+      "ok": true
+    },
+    {
+      "name": "mutual exchange preserves reply",
+      "ok": true
+    },
+    {
+      "name": "reply with 도 is preserved",
+      "ok": true
+    },
+    {
+      "name": "child question avoids friend advice",
+      "ok": true
+    },
+    {
+      "name": "borrowed item receives return advice",
+      "ok": true
+    },
+    {
+      "name": "travel preparation avoids exam advice",
+      "ok": true
+    },
+    {
+      "name": "commute question includes actual travel time",
+      "ok": true
+    },
+    {
+      "name": "workload includes deadlines and effort",
+      "ok": true
+    },
+    {
+      "name": "already accepted job does not advise applying",
+      "ok": true
+    },
+    {
+      "name": "medication discomfort remains medical",
+      "ok": true
+    },
+    {
+      "name": "completed assignment not submitted again",
+      "ok": true
+    },
+    {
+      "name": "editing verb alone does not imply a factual document",
+      "ok": true
+    }
+  ],
+  "appSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337"
+}

@@ -1,0 +1,18 @@
+{
+  "firstFailureArtifact": "test-results/event-state/development/property-initial-failures.json",
+  "corrections": [
+    {
+      "scope": "24 rows whose explicit subject was 제가",
+      "reason": "The initial test generator used /^저/ and incorrectly expected null for 제가. The parser's true receipt was correct. The expectation now explicitly recognizes 저는 and 제가 as self. This was an evaluator error, not 24 model failures."
+    },
+    {
+      "scope": "Focused contact negation templates",
+      "reason": "Use the grammatical 연락을 instead of 연락를. The two actual parser failures were contracted 하진 않다, addressed by recognizing the contracted predicate; the original failed artifact is retained."
+    }
+  ],
+  "note": "Known development properties. Correcting an erroneous expectation is not counted as an engine quality gain or unseen generalization.",
+  "intentionalContractChange": {
+    "scope": "task-policy received acknowledgment",
+    "reason": "A global received=true flag is not enough to prefix an unrelated request with a received answer. The test now supplies an actual receipt and a referring request, and adds an unrelated-document counterexample. This is a stronger context prerequisite, not removal of the acknowledgment requirement."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "packageVersion": "88.0.0",
+  "sourceSHA256": {
+    "src/event-evidence.js": "6ba56148287c640e88ed3a5015ddf0519fc709c0433781efccf415e8fd82ce58",
+    "src/question-model.js": "11fbda193f5fb3636bdf744f5a3c2dfdc98667f976cbec4e5d95d9c7ae761d6a"
+  },
+  "properties": 304,
+  "passed": 304,
+  "topicAndReadAssertions": 13,
+  "failures": [],
+  "note": "Known author-written grammar and metamorphic development properties plus 13 topic/read assertions. These are not distinct unseen user questions, semantic expert scores or a claim of unrestricted Korean understanding."
+}

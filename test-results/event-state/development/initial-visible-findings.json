@@ -1,0 +1,2029 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "64666557e258e3d5854d14e1fbafb0730862edd1375326fce660c687aa7200a6",
+    "appBytes": 30816293,
+    "webRelease": "6c462cc83c939da55b65df43"
+  },
+  "readingsSHA256": "52ad5f3e5adde151a6d0748aad4b92b6747d899c55afb64e9aca5a074cbbff6e",
+  "scope": "Actual author development outputs; not a fresh holdout. First ten five-card primary answers read so far.",
+  "findings": [
+    "d03 state is now correctly received but unread, yet the primary still gives generic relationship reflection instead of first examining the received content.",
+    "d02/d07 inquiry methods remain generic instead of anchoring a follow-up in the received answer.",
+    "d10 generic organization is weakly connected to the existing answer."
+  ],
+  "actualRows": [
+    {
+      "id": "d02",
+      "question": "선생님에게 받은 답변이 이미 있습니다. 저는 아직 내용을 이해하지 못했어요. 같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요?",
+      "spread": "five",
+      "cards": [
+        {
+          "id": "sw12",
+          "rev": false
+        },
+        {
+          "id": "ar03",
+          "rev": true
+        },
+        {
+          "id": "wa01",
+          "rev": true
+        },
+        {
+          "id": "ar00",
+          "rev": true
+        },
+        {
+          "id": "ar11",
+          "rev": false
+        }
+      ],
+      "after": {
+        "headline": "물어볼 질문을 준비하기",
+        "direct": "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다.\n\n‘핵심’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. ‘장애물’의 완드 에이스 역방향에서 살필 관점은 ‘소진·멈춤’입니다. 빠르게 움직이려는 힘과 멈추어 살필 필요가 함께 있습니다. 진행할 부분과 기다릴 부분을 나누는 것이 두 상징을 함께 활용하는 방법입니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 한꺼번에 많은 답을 얻으려 하기보다 지금 필요한 질문부터 묻고, 답을 정리한 뒤 이어서 물을 순서를 정해 보세요.",
+        "actions": [
+          "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. 계속 버티는 방식이 회복할 여지를 남기는지 점검해 보세요. ‘꺼진 열정’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 바보 역방향은 ‘준비 없는 도약’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 정의 정방향은 ‘공정한 판단’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘핵심’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. ‘장애물’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. 빠르게 움직이려는 힘과 멈추어 살필 필요가 함께 있습니다. 진행할 부분과 기다릴 부분을 나누는 것이 두 상징을 함께 활용하는 방법입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "제약과 실천을 연결하기",
+            "body": "‘장애물’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. ‘조언’의 정의 정방향은 ‘공정한 판단’을 보여 줍니다. 멈추는 시간을 판단을 정리하는 시간으로 활용하는 연결입니다. 즉시 결론을 내리는 일보다 잠시 거리를 둔 뒤 확인할 사실을 분명히 해볼 수 있습니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "선생님에게 받은 답변이 이미 있습니다. 저는 아직 내용을 이해하지 못했어요. 같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요?",
+          "evidenceQuestion": "선생님에게 받은 답변이 이미 있습니다. 저는 아직 내용을 이해하지 못했어요. 같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요",
+              "start": 43,
+              "end": 73
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 6,
+              "end": 11,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inquire",
+            "group": "pace",
+            "primaryMotif": null,
+            "relationAxis": "pace",
+            "contextRule": null,
+            "refs": [
+              0,
+              2
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘핵심’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. ‘장애물’의 완드 에이스 역방향에서 살필 관점은 ‘소진·멈춤’입니다. 빠르게 움직이려는 힘과 멈추어 살필 필요가 함께 있습니다. 진행할 부분과 기다릴 부분을 나누는 것이 두 상징을 함께 활용하는 방법입니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 한꺼번에 많은 답을 얻으려 하기보다 지금 필요한 질문부터 묻고, 답을 정리한 뒤 이어서 물을 순서를 정해 보세요.",
+              "refs": [
+                0,
+                2
+              ],
+              "operation": "inquire",
+              "relationAxis": "pace",
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "sw12",
+                  "reverse": false,
+                  "motifs": [
+                    "speed",
+                    "agency"
+                  ]
+                },
+                {
+                  "index": 2,
+                  "id": "wa01",
+                  "reverse": true,
+                  "motifs": [
+                    "depleted",
+                    "pause"
+                  ]
+                }
+              ],
+              "roleFrame": "실제로 막히는 부분이 있는지 살피는 관점으로, ",
+              "reused": false
+            }
+          }
+        ]
+      },
+      "before": {
+        "headline": "물어볼 질문을 준비하기",
+        "direct": "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다.\n\n‘핵심’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. ‘장애물’의 완드 에이스 역방향에서 살필 관점은 ‘소진·멈춤’입니다. 빠르게 움직이려는 힘과 멈추어 살필 필요가 함께 있습니다. 진행할 부분과 기다릴 부분을 나누는 것이 두 상징을 함께 활용하는 방법입니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 한꺼번에 많은 답을 얻으려 하기보다 지금 필요한 질문부터 묻고, 답을 정리한 뒤 이어서 물을 순서를 정해 보세요.",
+        "actions": [
+          "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. 계속 버티는 방식이 회복할 여지를 남기는지 점검해 보세요. ‘꺼진 열정’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 바보 역방향은 ‘준비 없는 도약’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 정의 정방향은 ‘공정한 판단’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘핵심’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. ‘장애물’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. 빠르게 움직이려는 힘과 멈추어 살필 필요가 함께 있습니다. 진행할 부분과 기다릴 부분을 나누는 것이 두 상징을 함께 활용하는 방법입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "제약과 실천을 연결하기",
+            "body": "‘장애물’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. ‘조언’의 정의 정방향은 ‘공정한 판단’을 보여 줍니다. 멈추는 시간을 판단을 정리하는 시간으로 활용하는 연결입니다. 즉시 결론을 내리는 일보다 잠시 거리를 둔 뒤 확인할 사실을 분명히 해볼 수 있습니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 82,
+          "question": "선생님에게 받은 답변이 이미 있습니다. 저는 아직 내용을 이해하지 못했어요. 같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요?",
+          "evidenceQuestion": "선생님에게 받은 답변이 이미 있습니다. 저는 아직 내용을 이해하지 못했어요. 같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "같은 질문을 되풀이하기보다 무엇을 다시 물어봐야 할까요",
+              "start": 43,
+              "end": 73
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inquire",
+            "group": "pace",
+            "primaryMotif": null,
+            "relationAxis": "pace",
+            "contextRule": null,
+            "refs": [
+              0,
+              2
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘핵심’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. ‘장애물’의 완드 에이스 역방향에서 살필 관점은 ‘소진·멈춤’입니다. 빠르게 움직이려는 힘과 멈추어 살필 필요가 함께 있습니다. 진행할 부분과 기다릴 부분을 나누는 것이 두 상징을 함께 활용하는 방법입니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 한꺼번에 많은 답을 얻으려 하기보다 지금 필요한 질문부터 묻고, 답을 정리한 뒤 이어서 물을 순서를 정해 보세요.",
+              "refs": [
+                0,
+                2
+              ],
+              "operation": "inquire",
+              "relationAxis": "pace",
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "sw12",
+                  "reverse": false,
+                  "motifs": [
+                    "speed",
+                    "agency"
+                  ]
+                },
+                {
+                  "index": 2,
+                  "id": "wa01",
+                  "reverse": true,
+                  "motifs": [
+                    "depleted",
+                    "pause"
+                  ]
+                }
+              ],
+              "roleFrame": "실제로 막히는 부분이 있는지 살피는 관점으로, ",
+              "reused": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "d03",
+      "question": "저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "five",
+      "cards": [
+        {
+          "id": "sw13",
+          "rev": true
+        },
+        {
+          "id": "ar16",
+          "rev": true
+        },
+        {
+          "id": "wa14",
+          "rev": false
+        },
+        {
+          "id": "cu11",
+          "rev": false
+        },
+        {
+          "id": "cu04",
+          "rev": true
+        }
+      ],
+      "after": {
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "실제로 오간 말과 짐작한 거리감을 구분해 보세요. ‘조언’에 놓인 컵 4 역방향의 주제는 ‘닫힌 마음의 변화’입니다.",
+        "actions": [
+          "실제로 오간 말과 짐작한 거리감을 구분해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 탑 역방향은 ‘변화의 회피’를 보여 줍니다. 조금 더 기다려야 할 이유와 불편해서 미루는 이유를 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요. ‘큰 비전의 실행’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 컵 시종 정방향은 ‘다정한 제안’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 4 역방향은 ‘닫힌 마음의 변화’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 27,
+              "end": 37
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "self",
+              "actorEvidence": "저는",
+              "recipient": {
+                "actor": "other",
+                "incoming": false,
+                "evidence": "친구에게"
+              },
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 8,
+              "end": 13,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "self",
+              "actorEvidence": "저는",
+              "recipient": {
+                "actor": "other",
+                "incoming": false,
+                "evidence": "친구에게"
+              },
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 11,
+              "end": 25,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "applications": []
+      },
+      "before": {
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다. ‘조언’에 놓인 컵 4 역방향의 주제는 ‘닫힌 마음의 변화’입니다.",
+        "actions": [
+          "아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 탑 역방향은 ‘변화의 회피’를 보여 줍니다. 조금 더 기다려야 할 이유와 불편해서 미루는 이유를 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요. ‘큰 비전의 실행’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 컵 시종 정방향은 ‘다정한 제안’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 4 역방향은 ‘닫힌 마음의 변화’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": true,
+          "replied": false,
+          "noConflict": false,
+          "waiting": true,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 82,
+          "question": "저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 27,
+              "end": 37
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "self",
+              "actorEvidence": "저는",
+              "recipient": {
+                "actor": "other",
+                "incoming": false,
+                "evidence": "친구에게"
+              },
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 11,
+              "end": 25,
+              "direction": "receive",
+              "predicate": "읽",
+              "accepting": true,
+              "waiting": false,
+              "benefactive": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": true,
+            "resultWaiting": false,
+            "waiting": true
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "applications": []
+      }
+    },
+    {
+      "id": "d07",
+      "question": "받은 회신이 도움이 될지는 모르겠어요. 어떤 점을 다시 물어볼까요?",
+      "spread": "five",
+      "cards": [
+        {
+          "id": "wa10",
+          "rev": false
+        },
+        {
+          "id": "cu07",
+          "rev": false
+        },
+        {
+          "id": "pe10",
+          "rev": true
+        },
+        {
+          "id": "ar16",
+          "rev": false
+        },
+        {
+          "id": "cu11",
+          "rev": false
+        }
+      ],
+      "after": {
+        "headline": "물어볼 질문을 준비하기",
+        "direct": "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다.\n\n‘조언’의 컵 시종 정방향에서 살필 관점은 ‘표현·교류’입니다. 느끼는 것과 실제 표현으로 옮길 내용을 구별해 보세요. 답변을 재촉하거나 원하는 답을 유도하기보다 상대의 설명을 들을 수 있는 질문을 만들고, 이해가 다른 부분은 다시 확인해 보세요.",
+        "actions": [
+          "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 컵 7 정방향은 ‘매력적인 선택지’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 펜타클 10 역방향은 ‘장기 기반의 균열’을 보여 줍니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. ‘장기 기반의 균열’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 탑 정방향은 ‘기반의 흔들림’을 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 시종 정방향은 ‘다정한 제안’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "받은 회신이 도움이 될지는 모르겠어요. 어떤 점을 다시 물어볼까요?",
+          "evidenceQuestion": "받은 회신이 도움이 될지는 모르겠어요. 어떤 점을 다시 물어볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "어떤 점을 다시 물어볼까요",
+              "start": 22,
+              "end": 36
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "회신",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 회신",
+              "start": 0,
+              "end": 5,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inquire",
+            "group": "exchange",
+            "primaryMotif": "expression",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘조언’의 컵 시종 정방향에서 살필 관점은 ‘표현·교류’입니다. 느끼는 것과 실제 표현으로 옮길 내용을 구별해 보세요. 답변을 재촉하거나 원하는 답을 유도하기보다 상대의 설명을 들을 수 있는 질문을 만들고, 이해가 다른 부분은 다시 확인해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "inquire",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "cu11",
+                  "reverse": false,
+                  "motifs": [
+                    "expression",
+                    "connection"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ]
+      },
+      "before": {
+        "headline": "물어볼 질문을 준비하기",
+        "direct": "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다.\n\n‘조언’의 컵 시종 정방향에서 살필 관점은 ‘표현·교류’입니다. 느끼는 것과 실제 표현으로 옮길 내용을 구별해 보세요. 답변을 재촉하거나 원하는 답을 유도하기보다 상대의 설명을 들을 수 있는 질문을 만들고, 이해가 다른 부분은 다시 확인해 보세요.",
+        "actions": [
+          "궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 컵 7 정방향은 ‘매력적인 선택지’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 펜타클 10 역방향은 ‘장기 기반의 균열’을 보여 줍니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. ‘장기 기반의 균열’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 탑 정방향은 ‘기반의 흔들림’을 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 시종 정방향은 ‘다정한 제안’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 82,
+          "question": "받은 회신이 도움이 될지는 모르겠어요. 어떤 점을 다시 물어볼까요?",
+          "evidenceQuestion": "받은 회신이 도움이 될지는 모르겠어요. 어떤 점을 다시 물어볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "어떤 점을 다시 물어볼까요",
+              "start": 22,
+              "end": 36
+            }
+          ],
+          "events": [],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inquire",
+            "group": "exchange",
+            "primaryMotif": "expression",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘조언’의 컵 시종 정방향에서 살필 관점은 ‘표현·교류’입니다. 느끼는 것과 실제 표현으로 옮길 내용을 구별해 보세요. 답변을 재촉하거나 원하는 답을 유도하기보다 상대의 설명을 들을 수 있는 질문을 만들고, 이해가 다른 부분은 다시 확인해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "inquire",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "cu11",
+                  "reverse": false,
+                  "motifs": [
+                    "expression",
+                    "connection"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "d10",
+      "question": "저는 받은 회신은 있지만 답하지는 않았어요. 이제 어떻게 정리할까요?",
+      "spread": "five",
+      "cards": [
+        {
+          "id": "wa11",
+          "rev": true
+        },
+        {
+          "id": "wa04",
+          "rev": false
+        },
+        {
+          "id": "pe10",
+          "rev": false
+        },
+        {
+          "id": "ar09",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": false
+        }
+      ],
+      "after": {
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "추측과 확인된 정보를 나누어 판단 기준을 세워 보세요. ‘장애물’의 펜타클 10 정방향은 ‘오래가는 기반’을 보여 줍니다. ‘조언’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 두 카드에서는 ‘구조’라는 주제를 함께 살펴볼 수 있습니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요.",
+        "actions": [
+          "추측과 확인된 정보를 나누어 판단 기준을 세워 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 완드 시종 역방향은 ‘서투른 의욕’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 펜타클 10 정방향은 ‘오래가는 기반’을 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요. ‘오래가는 기반’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 은둔자 역방향은 ‘고립의 장기화’를 보여 줍니다. 혼자 있을 필요와 도움을 받기 어려운 상태를 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘장애물’의 펜타클 10 정방향은 ‘오래가는 기반’을 보여 줍니다. ‘조언’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 두 카드에서는 ‘구조’라는 주제를 함께 살펴볼 수 있습니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "저는 받은 회신은 있지만 답하지는 않았어요. 이제 어떻게 정리할까요?",
+          "evidenceQuestion": "저는 받은 회신은 있지만 답하지는 않았어요. 이제 어떻게 정리할까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "이제 어떻게 정리할까요",
+              "start": 25,
+              "end": 37
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "회신",
+              "actor": "self",
+              "actorEvidence": "저는",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 회신",
+              "start": 3,
+              "end": 8,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답",
+              "actor": "self",
+              "actorEvidence": "저는",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답하지는 않았어요",
+              "start": 14,
+              "end": 23,
+              "direction": "make",
+              "predicate": "하지",
+              "accepting": false,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false
+            }
+          ],
+          "state": {
+            "sent": false,
+            "received": true,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "result"
+          ]
+        },
+        "applications": []
+      },
+      "before": {
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "direct": "추측과 확인된 정보를 나누어 판단 기준을 세워 보세요. ‘장애물’의 펜타클 10 정방향은 ‘오래가는 기반’을 보여 줍니다. ‘조언’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 두 카드에서는 ‘구조’라는 주제를 함께 살펴볼 수 있습니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요.",
+        "actions": [
+          "추측과 확인된 정보를 나누어 판단 기준을 세워 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 완드 시종 역방향은 ‘서투른 의욕’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 펜타클 10 정방향은 ‘오래가는 기반’을 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요. ‘오래가는 기반’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 은둔자 역방향은 ‘고립의 장기화’를 보여 줍니다. 혼자 있을 필요와 도움을 받기 어려운 상태를 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘장애물’의 펜타클 10 정방향은 ‘오래가는 기반’을 보여 줍니다. ‘조언’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 두 카드에서는 ‘구조’라는 주제를 함께 살펴볼 수 있습니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 82,
+          "question": "저는 받은 회신은 있지만 답하지는 않았어요. 이제 어떻게 정리할까요?",
+          "evidenceQuestion": "저는 받은 회신은 있지만 답하지는 않았어요. 이제 어떻게 정리할까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "이제 어떻게 정리할까요",
+              "start": 25,
+              "end": 37
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답",
+              "actor": "self",
+              "actorEvidence": "저는",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": false,
+              "text": "답하지는 않았어요",
+              "start": 14,
+              "end": 23,
+              "direction": "make",
+              "predicate": "하",
+              "accepting": false,
+              "waiting": false,
+              "benefactive": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "received-reply",
+            "result"
+          ]
+        },
+        "applications": []
+      }
+    }
+  ],
+  "explicitDeniedWaitRowsWithLiteralWaitPhrase": [
+    {
+      "id": "d01",
+      "question": "연락을 먼저 하지는 않았고 상대의 답을 기다리는 상황도 아닙니다. 그냥 혼자 보낸 주말이 공허해요. 이 마음을 어떻게 돌보면 좋을까요?",
+      "spread": "one",
+      "cards": [
+        {
+          "id": "ar19",
+          "rev": true
+        }
+      ],
+      "after": {
+        "headline": "마음을 돌보며 현실과 연결하기",
+        "direct": "지금 느끼는 마음을 한 문장으로 적고, 오늘 덜어낼 부담과 도움을 청할 사람을 하나씩 정해 보세요. 감정을 바로 해결하지 못해도 괜찮습니다.\n\n‘핵심 메시지’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 결론을 재촉하는 마음이 올라올 때 바로 행동할 일과 잠시 보류할 일을 나누고, 기다리는 동안 지킬 일상을 정해 보세요.",
+        "actions": [
+          "지금 느끼는 마음을 한 문장으로 적고, 오늘 덜어낼 부담과 도움을 청할 사람을 하나씩 정해 보세요. 감정을 바로 해결하지 못해도 괜찮습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "연락을 먼저 하지는 않았고 상대의 답을 기다리는 상황도 아닙니다. 그냥 혼자 보낸 주말이 공허해요. 이 마음을 어떻게 돌보면 좋을까요?",
+          "evidenceQuestion": "연락을 먼저 하지는 않았고 상대의 답을 기다리는 상황도 아닙니다. 그냥 혼자 보낸 주말이 공허해요. 이 마음을 어떻게 돌보면 좋을까요?",
+          "requests": [
+            {
+              "kind": "emotion",
+              "goal": "cope",
+              "text": "이 마음을 어떻게 돌보면 좋을까요",
+              "start": 56,
+              "end": 74
+            }
+          ],
+          "events": [
+            {
+              "kind": "contact",
+              "object": "연락",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "연락을 먼저 하지는 않았고",
+              "start": 0,
+              "end": 14,
+              "direction": "send",
+              "predicate": "하지",
+              "accepting": false
+            },
+            {
+              "kind": "reply",
+              "object": "답",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": false,
+              "text": "답을 기다리는 상황도 아닙니다",
+              "start": 19,
+              "end": 35,
+              "direction": "make",
+              "predicate": null,
+              "accepting": false,
+              "waitingEvidence": {
+                "value": false,
+                "status": "asserted",
+                "start": 22,
+                "end": 35,
+                "text": "기다리는 상황도 아닙니다",
+                "tense": "current",
+                "negativeOperators": 1
+              },
+              "waiting": false,
+              "absence": false,
+              "benefactive": false
+            }
+          ],
+          "state": {
+            "sent": false,
+            "received": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "denied",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "received-reply",
+            "result"
+          ]
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "cope",
+            "group": "pace",
+            "primaryMotif": "delay",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              0
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘핵심 메시지’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 결론을 재촉하는 마음이 올라올 때 바로 행동할 일과 잠시 보류할 일을 나누고, 기다리는 동안 지킬 일상을 정해 보세요.",
+              "refs": [
+                0
+              ],
+              "operation": "cope",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "ar19",
+                  "reverse": true,
+                  "motifs": [
+                    "delay",
+                    "ideals"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ]
+      },
+      "before": {
+        "headline": "느끼는 마음과 확인한 사실 나누기",
+        "direct": "지금 느끼는 마음을 한 문장으로 적고, 오늘 덜어낼 부담과 도움을 청할 사람을 하나씩 정해 보세요. 감정을 바로 해결하지 못해도 괜찮습니다.\n\n‘핵심 메시지’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 결론을 재촉하는 마음이 올라올 때 바로 행동할 일과 잠시 보류할 일을 나누고, 기다리는 동안 지킬 일상을 정해 보세요.",
+        "actions": [
+          "지금 느끼는 마음을 한 문장으로 적고, 오늘 덜어낼 부담과 도움을 청할 사람을 하나씩 정해 보세요. 감정을 바로 해결하지 못해도 괜찮습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": true,
+          "replied": false,
+          "noConflict": false,
+          "waiting": true,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 82,
+          "question": "연락을 먼저 하지는 않았고 상대의 답을 기다리는 상황도 아닙니다. 그냥 혼자 보낸 주말이 공허해요. 이 마음을 어떻게 돌보면 좋을까요?",
+          "evidenceQuestion": "연락을 먼저 하지는 않았고 상대의 답을 기다리는 상황도 아닙니다. 그냥 혼자 보낸 주말이 공허해요. 이 마음을 어떻게 돌보면 좋을까요?",
+          "requests": [
+            {
+              "kind": "emotion",
+              "goal": "cope",
+              "text": "이 마음을 어떻게 돌보면 좋을까요",
+              "start": 56,
+              "end": 74
+            }
+          ],
+          "events": [
+            {
+              "kind": "contact",
+              "object": "연락",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": false,
+              "text": "연락을 먼저 하지는 않았고",
+              "start": 0,
+              "end": 14,
+              "direction": "send",
+              "predicate": "하"
+            },
+            {
+              "kind": "reply",
+              "object": "답",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": false,
+              "text": "답을 기다리는 상황도 아닙니다",
+              "start": 19,
+              "end": 35,
+              "direction": "make",
+              "predicate": null,
+              "accepting": false,
+              "waiting": true,
+              "benefactive": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": true,
+            "resultWaiting": false,
+            "waiting": true
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "cope",
+            "group": "pace",
+            "primaryMotif": "delay",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              0
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘핵심 메시지’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 결론을 재촉하는 마음이 올라올 때 바로 행동할 일과 잠시 보류할 일을 나누고, 기다리는 동안 지킬 일상을 정해 보세요.",
+              "refs": [
+                0
+              ],
+              "operation": "cope",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "ar19",
+                  "reverse": true,
+                  "motifs": [
+                    "delay",
+                    "ideals"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "d14",
+      "question": "회신은 아직 없어요. 이제 기다리지 않아요. 오늘 무엇을 준비할까요?",
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "wa05",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        },
+        {
+          "id": "cu14",
+          "rev": true
+        },
+        {
+          "id": "sw01",
+          "rev": false
+        },
+        {
+          "id": "pe07",
+          "rev": false
+        }
+      ],
+      "after": {
+        "headline": "앞둔 일을 작은 단계로 준비하기",
+        "direct": "앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요.\n\n‘내가 취할 행동’의 펜타클 7 정방향에서 살필 관점은 ‘인내·연습’입니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 준비 순서를 정할 때는 지금 진행할 부분과 잠시 멈춰 확인할 부분을 나누고, 다음 판단을 할 시점을 정해 보세요.",
+        "actions": [
+          "앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 완드 5 역방향은 ‘소모적인 충돌’을 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 컵 왕 역방향은 ‘통제되는 감정 표현’을 보여 줍니다. 감정을 조절하는 일과 감정을 드러내지 못하는 일을 구별해 보세요. ‘통제되는 감정 표현’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 소드 에이스 정방향은 ‘선명한 사실 확인’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": true,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "회신은 아직 없어요. 이제 기다리지 않아요. 오늘 무엇을 준비할까요?",
+          "evidenceQuestion": "회신은 아직 없어요. 이제 기다리지 않아요. 오늘 무엇을 준비할까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "오늘 무엇을 준비할까요",
+              "start": 25,
+              "end": 37
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "회신",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "회신은 아직 없어요",
+              "start": 0,
+              "end": 10,
+              "direction": "make",
+              "predicate": null,
+              "accepting": false,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": true,
+              "benefactive": false
+            },
+            {
+              "kind": "reply",
+              "object": "회신",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": false,
+              "text": "이제 기다리지 않아요",
+              "start": 12,
+              "end": 23,
+              "direction": "wait",
+              "waitingEvidence": {
+                "value": false,
+                "status": "asserted",
+                "start": 15,
+                "end": 23,
+                "text": "기다리지 않아요",
+                "tense": "current",
+                "negativeOperators": 1
+              },
+              "inferredObject": true
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "denied",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "prepare",
+            "group": "pace",
+            "primaryMotif": "patience",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘내가 취할 행동’의 펜타클 7 정방향에서 살필 관점은 ‘인내·연습’입니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 준비 순서를 정할 때는 지금 진행할 부분과 잠시 멈춰 확인할 부분을 나누고, 다음 판단을 할 시점을 정해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "prepare",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "pe07",
+                  "reverse": false,
+                  "motifs": [
+                    "patience",
+                    "practice"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ]
+      },
+      "before": {
+        "headline": "앞둔 일을 작은 단계로 준비하기",
+        "direct": "앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요.\n\n‘내가 취할 행동’의 펜타클 7 정방향에서 살필 관점은 ‘인내·연습’입니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 준비 순서를 정할 때는 지금 진행할 부분과 잠시 멈춰 확인할 부분을 나누고, 다음 판단을 할 시점을 정해 보세요.",
+        "actions": [
+          "앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 완드 5 역방향은 ‘소모적인 충돌’을 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 컵 왕 역방향은 ‘통제되는 감정 표현’을 보여 줍니다. 감정을 조절하는 일과 감정을 드러내지 못하는 일을 구별해 보세요. ‘통제되는 감정 표현’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 소드 에이스 정방향은 ‘선명한 사실 확인’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": true,
+          "replied": false,
+          "noConflict": false,
+          "waiting": true,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 82,
+          "question": "회신은 아직 없어요. 이제 기다리지 않아요. 오늘 무엇을 준비할까요?",
+          "evidenceQuestion": "회신은 아직 없어요. 이제 기다리지 않아요. 오늘 무엇을 준비할까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "prepare",
+              "text": "오늘 무엇을 준비할까요",
+              "start": 25,
+              "end": 37
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "회신",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "회신은 아직 없어요",
+              "start": 0,
+              "end": 10,
+              "direction": "make",
+              "predicate": null,
+              "accepting": false,
+              "waiting": true,
+              "benefactive": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": true,
+            "resultWaiting": false,
+            "waiting": true
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "prepare",
+            "group": "pace",
+            "primaryMotif": "patience",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘내가 취할 행동’의 펜타클 7 정방향에서 살필 관점은 ‘인내·연습’입니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 준비 순서를 정할 때는 지금 진행할 부분과 잠시 멈춰 확인할 부분을 나누고, 다음 판단을 할 시점을 정해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "prepare",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "pe07",
+                  "reverse": false,
+                  "motifs": [
+                    "patience",
+                    "practice"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

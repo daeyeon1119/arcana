@@ -7,9 +7,8 @@ arc79Scene=function(question,override='auto'){
  const contacts=model.events.filter(e=>e.kind==='contact'),replies=model.events.filter(e=>e.kind==='reply'),results=model.events.filter(e=>e.kind==='result');
  if(contacts.length||state.sent!==null)f.sent=state.sent===true;
  if(state.received!==null)f.replied=state.received;
- else if(replies.some(e=>e.actor==='self'||e.recipient?.actor==='other'&&e.direction==='receive'&&!e.accepting))f.replied=false;
- if(state.replyWaiting)f.noReply=true;
- else if(state.received===true)f.noReply=false;
+ else if(replies.some(e=>e.status==='asserted'&&e.completed&&(e.actor==='other'&&['receive','read'].includes(e.direction)||e.readingFromOtherReceipt||e.direction==='receive'&&!e.accepting&&e.recipient?.actor==='other')))f.replied=false;
+ if(replies.length||state.received!==null)f.noReply=state.received===false;
  f.replyUnknown=f.sent&&!f.replied&&!f.noReply;
  if(results.length){
   f.known=state.resultKnown===true;f.resultFailed=f.known&&state.outcome==='failed';f.resultPassed=f.known&&state.outcome==='passed';
@@ -20,6 +19,7 @@ arc79Scene=function(question,override='auto'){
  else if(state.waiting)scene.phase='pending';
  else if(results.length&&state.resultKnown===null&&!state.resultWaiting)scene.phase='active';
  else if(state.received===true&&!state.resultWaiting)scene.phase='active';
+ else if(!state.waiting&&(replies.length||state.replyWaitingSource==='denied'||state.resultWaitingSource==='denied'))scene.phase='active';
  f.waiting=scene.phase==='pending';
  if(override==='auto'&&model.entities.romantic&&!scene.medical&&!['health','finances'].includes(scene.domain))scene.domain='relationship';
  const requests=model.requests;
@@ -31,7 +31,8 @@ function arc82Action(scene,pack,task){
  scene.arc82ActionTask=null;
  const support=(operation,text)=>{scene.arc82ActionTask=operation;return text;};
  if(scene.boundary||scene.abuse||scene.urgent||scene.medical||['health','finances'].includes(scene.domain)||scene.facts.known)return null;
- if(state.sent===true&&state.received===false)return '이미 전한 내용을 반복해서 보내기보다, 응답을 기다리는 동안 내 일상을 이어 가고 언제까지 기다릴 수 있을지 정해 보세요.';
+ if(state.sent===true&&state.received===false&&state.replyWaitingSource!=='denied')return '이미 전한 내용을 반복해서 보내기보다, 응답을 기다리는 동안 내 일상을 이어 가고 언제까지 기다릴 수 있을지 정해 보세요.';
+ if(state.replyWaiting&&state.received===null)return '답을 기다리는 동안 지금 이어 갈 일과 다음에 확인할 시점을 나누어 보세요. 회신의 내용이나 상대의 뜻은 확인한 범위에서 읽고, 아직 모르는 부분을 추측으로 채우지 않아도 됩니다.';
  if(state.received===false&&state.replyWaiting)return '아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다.';
  if(state.waiting&&(state.resultWaiting||state.assessmentCompleted===true))return '공식 결과를 확인할 경로와 시간을 정하고, '+(state.assessmentCompleted===true||state.submitted===true?'이미 마친 절차와 지금 할 수 있는 일을 나누어 보세요.':'확인된 사실과 아직 모르는 결과를 나누어 보세요.')+' 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.';
  if(goal==='cope'||task?.kind==='emotion'||scene.intent==='emotion'){
@@ -53,7 +54,7 @@ arc79Action=function(scene,pack){return arc82Action(scene,pack,scene.arc82?.requ
 const ARC82_REPORT=arc79CreateReport;
 arc79CreateReport=function(question,spread,cards,override='auto'){
  const r=ARC82_REPORT(question,spread,cards,override),{scene,intent}=arc79Scene(question,override),model=scene.arc82,pack=arc79Pack(question,spread,cards);
- const manual=arc79ForcedIntent!=='auto',requests=manual?[{kind:intent.primary,goal:intent.primary,text:model.question,start:0,end:model.question.length}]:model.requests;
+ const manual=arc79ForcedIntent!=='auto',requests=manual?[{kind:intent.primary,goal:intent.primary,text:model.question,start:0,end:model.question.length,...(model.requests[0]?.context?{context:model.requests[0].context}:{})}]:model.requests;
  const answers=[];
  if(model.needsContext){r.headline='질문할 상황을 먼저 알려 주세요';r.direct=model.clarification;r.actions=[model.clarification];}
  else if(requests.length){
@@ -80,6 +81,11 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
  return r;
 };
 
+// The old category-only gate cannot judge event/request context. Its registered
+// listener resolves this function at click time; the canonical gate below owns
+// readiness for both complete questions and questions that need clarification.
+a30IsAmbiguous=()=>false;
+$('a30Clarifier').hidden=true;
 // Ask for context before cards are selected. Empty questions intentionally remain daily readings.
 const arc82ContextPanel=document.createElement('div');arc82ContextPanel.id='arc82ContextPanel';arc82ContextPanel.className='arc82-context';arc82ContextPanel.hidden=true;
 arc82ContextPanel.innerHTML='<label for="arc82ContextInput">질문에 필요한 상황</label><p id="arc82ContextHint"></p><input id="arc82ContextInput" type="text" maxlength="350" autocomplete="off" aria-describedby="arc82ContextHint"><button id="arc82ContextContinue" type="button">질문에 반영하고 카드 뽑기</button><p id="arc82ContextError" role="status"></p>';

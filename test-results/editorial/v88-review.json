@@ -1,0 +1,28 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337",
+    "appBytes": 30822350,
+    "webRelease": "7dc985672ec05c8781873acc"
+  },
+  "changedPrimaryRead": [
+    148,
+    268
+  ],
+  "factsCompared": [
+    36,
+    282,
+    284
+  ],
+  "notes": {
+    "36": "동료가 한 사과를 수신으로 표현하되 사용자 발신으로 바꾸지 않는다. 본문은 동일.",
+    "148": "출판사 답을 기다린다고 한 사실만 보존하고 회신 미수신을 확정하지 않는다.",
+    "268": "고객 답을 기다리는 현재 상황을 보존하며 미수신을 추가하지 않는다.",
+    "282": "기다릴 때라는 조건·습관은 현재의 실제 대기나 미수신을 확정하지 않는다.",
+    "284": "기다리며라는 현재 사실을 비교 요청과 함께 보존한다."
+  },
+  "unchangedPrimaryCount": 318,
+  "remainingLimits": "Earlier editorial findings remain applicable. Domain matches 303/320 and naturalness/professional depth are not established by mechanical checks.",
+  "professionalQualityScore": null
+}

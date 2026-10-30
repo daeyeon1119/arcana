@@ -1,0 +1,13 @@
+{
+  "reason": "The final source build failed with Windows Errno 22 while opening an existing output for writing. Dependent checks were incorrectly started; their 160/160 technical pass is not accepted as verification of that final source. The snapshot app remains explicitly identified below.",
+  "observedRelease": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "9cd10157f33b3a865f5396a4058eee045326ea5d70f65c6031143104cbef9e17",
+    "appBytes": 30819970,
+    "webRelease": "da3beb3bbec3fb0f7cc15ed3"
+  },
+  "observedReadingsSHA256": "01b67b57a0ddcc9d6e6458669a9ff2055ba59245178df30eb2fdbefb7bc79041",
+  "actualRuntimeContractFailures": [],
+  "correctiveAction": "Use atomic output replacement, validate the successful build, then start dependent checks sequentially. Not a new or untouched evaluation."
+}
