@@ -1,3 +1,4 @@
+const save=require('./save-artifact.cjs');
 /* Actual v82/v83 outputs, with immutable first-run evidence separate from development. */
 const fs=require('node:fs'),crypto=require('node:crypto'),assert=require('node:assert/strict'),zlib=require('node:zlib'),{execFileSync}=require('node:child_process');
 const phase=process.argv[2]||'development';assert(['development','first','regression','fresh','fresh-regression'].includes(phase),'Unknown evaluation phase');
@@ -12,11 +13,11 @@ if(phase==='regression'){
 }
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 const baseline=execFileSync('git',['show','56b357c:index.html'],{maxBuffer:40*1024*1024});assert.equal(hash(baseline),'fe5c43e5e612c67b5bfbee7b57f9d14b5ea56a05e94d626b47306aacc7aab3cb');
-fs.mkdirSync('.cache',{recursive:true});fs.writeFileSync('.cache/task-v82.html',baseline);fs.mkdirSync(folder,{recursive:true});
+fs.mkdirSync('.cache',{recursive:true});save('.cache/task-v82.html',baseline);fs.mkdirSync(folder,{recursive:true});
 const freeze={appSHA256:hash(fs.readFileSync('index.html')),baselineSHA256:hash(baseline),fixtureSHA256:hash(fixtureText),policySHA256:hash(fs.readFileSync('src/task-policy.js','utf8').replace(/\r\n/g,'\n')),collectorSHA256:hash(fs.readFileSync(__filename,'utf8').replace(/\r\n/g,'\n')),seed:830031,phase,note:fixture.note};
 if(['first','fresh'].includes(phase)&&fs.existsSync(folder+'/readings.json'))throw Error('First outputs already exist; use regression instead of replacing them.');
 if(['first','fresh'].includes(phase)&&fs.existsSync(folder+'/freeze.json'))assert.deepEqual(JSON.parse(fs.readFileSync(folder+'/freeze.json','utf8')),freeze,'Frozen first evaluation changed');
-fs.writeFileSync(folder+'/freeze.json',JSON.stringify(freeze,null,2));
+save(folder+'/freeze.json',JSON.stringify(freeze,null,2));
 (async()=>{
  const browser=await require('./browser.cjs')(),errors=[];try{
  const page=await browser.newPage();page.on('pageerror',error=>errors.push(error.message));await page.route('https://**/*',route=>route.abort());
@@ -39,8 +40,8 @@ fs.writeFileSync(folder+'/freeze.json',JSON.stringify(freeze,null,2));
   if(actual.evidence.some((card,index)=>card.id!==row.cards[index].id||card.reverse!==row.cards[index].rev)||new Set(actual.sections.flatMap(section=>section.refs)).size!==row.cards.length)failures.push({id:row.id,spread:row.spread,error:'card evidence mismatch'});else cardPassed++;
   if(/undefined|\[object Object\]|은는|을를/.test([actual.direct,...actual.actions].join(' ')))failures.push({id:row.id,spread:row.spread,error:'malformed visible text'});
  }
- fs.writeFileSync(folder+'/readings.json',JSON.stringify(readings,null,2));fs.writeFileSync(folder+'/readings.jsonl.gz',zlib.gzipSync(readings.map(row=>JSON.stringify(row)).join('\n')+'\n'));
+ save(folder+'/readings.json',JSON.stringify(readings,null,2));save(folder+'/readings.jsonl.gz',zlib.gzipSync(readings.map(row=>JSON.stringify(row)).join('\n')+'\n'));
  const summary={...freeze,questions:fixture.cases.length,readingsPerVersion:readings.length,errors,failures,checks:{routing:routingPassed,cardEvidence:cardPassed},qualityReviewed:0,note:fixture.note+' Routing checks are not semantic or professional quality scores.'};
- fs.writeFileSync(folder+'/summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));if(errors.length||failures.length)process.exitCode=1;
+ save(folder+'/summary.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));if(errors.length||failures.length)process.exitCode=1;
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

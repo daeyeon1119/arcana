@@ -39,7 +39,9 @@ const purposes=[
  ['무엇을 물어보고 어떻게 고칠까요?',null],
  ['질문을 하지 않으려면 어떻게 준비할까요?',null],
  ['강아지가 장난감을 물려면 어떻게 준비할까요?',null],
- ['말을 걸려면 어떤 조건을 확인할까요?',null]
+ ['말을 걸려면 어떤 조건을 확인할까요?',null],
+ ['초안의 문장과 구성을 어떤 순서로 점검할까요?',null],
+ ['작은 실험으로 결정을 확인하려면 무엇을 할까요?',null]
 ];for(const [text,operation]of purposes){const actual=lex.requestFrame(text);assert.equal(actual?.operation||null,operation,text);rows.push({text,actual});}checks.push('purpose/means and requested question output differ from negative inquiry, biting and explicit condition checks');
 const first=q.parse('🎴 저는 받은 회신을 읽지 않았어요. 무엇부터 살펴볼까요?');for(let i=0;i<540;i++)m.analyze('조각 번호 '+i+'를 살펴봅니다.');assert.deepEqual(q.parse(first.question),first);checks.push('cache eviction and preceding analysis do not change a canonical question model');
 for(const [text,value]of [['의료진의 설명 등 확인 가능한 정보를 살펴보세요.',false],['관람객의 설명을 듣고 자료를 검토해 보세요.',false],['확인한 내용을 의료진에게 전해 보세요.',true],['전달할 요점과 근거를 짧게 정리해 보세요.',true],['자료의 핵심을 먼저 설명해 보세요.',true],['가능한 날짜를 말하고 방법을 함께 정해 보세요.',true],['일정 조정안을 상의해 보세요.',true]])assert.equal(lex.communicates(text),value,text);checks.push('a communication predicate, including nominal verbal forms, differs from a noun mention of someone else’s explanation');

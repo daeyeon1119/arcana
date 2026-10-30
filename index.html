@@ -5626,17 +5626,17 @@ const ARCANA_MORPHOLOGY_NOTICES="Garu (garu-ko)\nCopyright 2026 Yongjin Cho\nhtt
     if(nouns(output).some(t=>!/^(?:준비|정리|일|것)$/.test(t.text)))return null;
    }
    if(purposeWord){
-    const roots=purposeWord.tokens.map(t=>t.text),inquiry=inquiryWord(purposeWord),review=roots.some(t=>/^(?:살피|살펴보|확인|검토|점검|알아보)$/.test(t));
+    const roots=purposeWord.tokens.map(t=>t.text),inquiry=inquiryWord(purposeWord),informationObject=prefix.tokens.some(t=>/^(?:NNG|NNP)$/.test(t.pos)&&/^(?:정보|내용|조건|요건|자격|규정|서류|자료|문서|계약|예약|안내|답변|회신|결과|의미|이해|설명)$/.test(t.text)),review=informationObject&&roots.some(t=>/^(?:살피|살펴보|확인|검토|점검|알아보)$/.test(t));
     if(!negative&&(inquiry||review)&&headRoots.some(t=>/^(?:준비|정리|확인|하)$/.test(t)))return {operation:inquiry?'inquire':'verify',reason:'purpose-before-generic-means',source:text,purpose:{start:purposeWord.start,end:purposeWord.end,text:purposeWord.text},informationGoal:true};
    }
   }
   const lastAction=headAnalysis.words.findLast(w=>inquiryWord(w)||w.tokens.some(t=>t.pos==='VV'&&!/^(?:하|되|보)$/.test(t.text))||w.tokens.some(t=>t.pos==='XSV')&&nouns(w).some(t=>!genericRoots.has(t.text)));
   if(!negative&&lastAction&&inquiryWord(lastAction))return {operation:'inquire',reason:'inflected-inquiry-lemma',source:text,informationGoal:true};
-  // Fill inherited gaps from the requested predicate's lexical root. Adnominal
-  // background verbs and negative predicates cannot supply the operation.
+  // Fill a communication gap from the requested lexical predicate. General
+  // inspection verbs cannot imply the separate condition-checking operation.
   const lexicalAction=headAnalysis.words.findLast(w=>w.tokens.some(t=>/^(?:EF|EC)$/.test(t.pos))&&w.tokens.some(t=>/^(?:VV|XSV)$/.test(t.pos)));
   if(lexicalAction&&!lexicalAction.tokens.some(t=>t.pos==='ETM')&&!/지\s*않|지\s*말/.test(head)){
-   const roots=lexicalAction.tokens.map(t=>t.text),operation=roots.some(t=>/^(?:알리|알려주)$/.test(t))&&lexicalAction.tokens.some(t=>/^(?:EF|EC)$/.test(t.pos)&&/까|나요|가요/.test(t.text))?'communicate':roots.some(t=>/^(?:점검|검토|살피|살펴보|대조)$/.test(t))?'verify':null;
+   const roots=lexicalAction.tokens.map(t=>t.text),operation=roots.some(t=>/^(?:알리|알려주)$/.test(t))&&lexicalAction.tokens.some(t=>/^(?:EF|EC)$/.test(t.pos)&&/까|나요|가요/.test(t.text))?'communicate':null;
    if(operation)return {operation,reason:'requested-lexical-predicate',source:text};
   }
   return null;
