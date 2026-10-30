@@ -1,0 +1,62 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "fa8a316ffb8d0a627176ab95c6ae0d754c33988f813b1cfd2755d4947c19b666",
+  "directlyRead": [
+    {
+      "id": "w21",
+      "directSHA256": "b3e59892f037cecee040e7692b267c0526629a484028ce2a44759bfd56fef5f1"
+    },
+    {
+      "id": "w22",
+      "directSHA256": "c3f295c61ddeabc2a60c1517e6cc65d35712ae6c7d63fb50587964da81c2beff"
+    },
+    {
+      "id": "w23",
+      "directSHA256": "9b12663822c75b9e73572145b4360f00b4fa487cb5c3aa595370eccecd712e27"
+    },
+    {
+      "id": "w24",
+      "directSHA256": "ecb464471b2c81a4e697457e3a7f6ddc05a79fb776a23d59dc043ccb9410955c"
+    },
+    {
+      "id": "w25",
+      "directSHA256": "b8617d667971e8ac946fe73abb05552bb3a581cbe253f9cab6c0b2d297e55558"
+    },
+    {
+      "id": "w26",
+      "directSHA256": "0bce9749a7f5026d77537eab3327525ee071d3445272905937af47d35b322dbc"
+    },
+    {
+      "id": "w27",
+      "directSHA256": "037306e56726ceeacf4d60ba5d609b86c25fb21b2a2e52b37b52319071dc7420"
+    },
+    {
+      "id": "w28",
+      "directSHA256": "d5c421c6e24f0ef1019a9cd34cd431c00f89e3707a0f420c320b6ddbadf91492"
+    }
+  ],
+  "note": "Eight newly authored development-control primary answers read in this turn. The twenty remaining questions are known v89 material with preserved earlier reviews; their new card variants were not all manually reread at baseline. Mechanical target fields do not yet exist and their absence is not an accuracy score. The participants expectation is reserved for a separate planner/unit assertion; this collector does not score it.",
+  "findings": {
+    "w21": "Clinical dose boundary retained; no tarot dose instruction.",
+    "w22": "Hypothetical read does not assert actual receipt; inquiry support retained.",
+    "w23": "Fact/interpretation separation request becomes generic support advice.",
+    "w24": "Undefined two-choice selection fails to ask for context.",
+    "w25": "Inspection is lost from the compound request.",
+    "w26": "A reason to explain is misread as a request for a cause.",
+    "w27": "Document explanation prose is appropriate but no canonical target is recorded.",
+    "w28": "Alone work partition becomes interpersonal expectations advice."
+  },
+  "professionalQualityScore": null
+}

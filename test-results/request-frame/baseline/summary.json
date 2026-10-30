@@ -1,0 +1,1557 @@
+{
+  "phase": "baseline",
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "baselineSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+  "fixtureSHA256": "aa77227ec5a01ebec1fe8c6cd82ecf5da8b857d431c5aa1701a7fedb91e1fc23",
+  "collectorSHA256": "2235229f1163035bd9856b7d3cae15418f3b6476a58ca70008201cb9b810679f",
+  "seed": 900061,
+  "note": "Twenty known v89 questions plus eight author development controls. Baseline frozen before request/object implementation. Evaluator labels never enter the engine. Not an independent, unseen or expert benchmark.",
+  "questions": 28,
+  "readingsPerVersion": 224,
+  "readingsSHA256": "fa8a316ffb8d0a627176ab95c6ae0d754c33988f813b1cfd2755d4947c19b666",
+  "errors": [],
+  "failures": [
+    {
+      "id": "w01",
+      "spread": "one",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w01",
+      "spread": "three",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w01",
+      "spread": "five",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w01",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w01",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w01",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w01",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w01",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w02",
+      "spread": "one",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w02",
+      "spread": "three",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w02",
+      "spread": "five",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w02",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w02",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w02",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w02",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w02",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w04",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w04",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w04",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w04",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w04",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w04",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w04",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w04",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w06",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w06",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w06",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w06",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w06",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w06",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w06",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w06",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "one",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "observation",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "three",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "observation",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "five",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "observation",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "observation",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "observation",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "observation",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "observation",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w07",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "observation",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "one",
+      "key": "operation",
+      "expected": "improve",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "message",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "three",
+      "key": "operation",
+      "expected": "improve",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "message",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "five",
+      "key": "operation",
+      "expected": "improve",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "message",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "improve",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "message",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "improve",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "message",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "improve",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "message",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "improve",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "message",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "improve",
+      "actual": []
+    },
+    {
+      "id": "w09",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "message",
+      "actual": []
+    },
+    {
+      "id": "w10",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "interaction",
+      "actual": []
+    },
+    {
+      "id": "w10",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "interaction",
+      "actual": []
+    },
+    {
+      "id": "w10",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "interaction",
+      "actual": []
+    },
+    {
+      "id": "w10",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "interaction",
+      "actual": []
+    },
+    {
+      "id": "w10",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "interaction",
+      "actual": []
+    },
+    {
+      "id": "w10",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "interaction",
+      "actual": []
+    },
+    {
+      "id": "w10",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "interaction",
+      "actual": []
+    },
+    {
+      "id": "w10",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "interaction",
+      "actual": []
+    },
+    {
+      "id": "w11",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w11",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w11",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w11",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w11",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w11",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w11",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w11",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "requirements",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "one",
+      "key": "operation",
+      "expected": "verify",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "one",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "one",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "id": "w15",
+      "spread": "three",
+      "key": "operation",
+      "expected": "verify",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "three",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "three",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "id": "w15",
+      "spread": "five",
+      "key": "operation",
+      "expected": "verify",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "five",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "five",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "id": "w15",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "verify",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "relationship5",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "id": "w15",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "verify",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "choice5",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "id": "w15",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "verify",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "waiting3",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "id": "w15",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "verify",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "career5",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "id": "w15",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "verify",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": []
+    },
+    {
+      "id": "w15",
+      "spread": "celtic",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "id": "w17",
+      "spread": "one",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "three",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "five",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w17",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w18",
+      "spread": "one",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w18",
+      "spread": "three",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w18",
+      "spread": "five",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w18",
+      "spread": "relationship5",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w18",
+      "spread": "choice5",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w18",
+      "spread": "waiting3",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w18",
+      "spread": "career5",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w18",
+      "spread": "celtic",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w19",
+      "spread": "one",
+      "key": "operation",
+      "expected": "compare",
+      "actual": []
+    },
+    {
+      "id": "w19",
+      "spread": "three",
+      "key": "operation",
+      "expected": "compare",
+      "actual": []
+    },
+    {
+      "id": "w19",
+      "spread": "five",
+      "key": "operation",
+      "expected": "compare",
+      "actual": []
+    },
+    {
+      "id": "w19",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "compare",
+      "actual": []
+    },
+    {
+      "id": "w19",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "compare",
+      "actual": []
+    },
+    {
+      "id": "w19",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "compare",
+      "actual": []
+    },
+    {
+      "id": "w19",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "compare",
+      "actual": []
+    },
+    {
+      "id": "w19",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "compare",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "one",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "three",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "five",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "reflect",
+      "actual": []
+    },
+    {
+      "id": "w20",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "one",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "three",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "five",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": []
+    },
+    {
+      "id": "w23",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "evidence",
+      "actual": []
+    },
+    {
+      "id": "w24",
+      "spread": "one",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w24",
+      "spread": "three",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w24",
+      "spread": "five",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w24",
+      "spread": "relationship5",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w24",
+      "spread": "choice5",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w24",
+      "spread": "waiting3",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w24",
+      "spread": "career5",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w24",
+      "spread": "celtic",
+      "key": "needsContext",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "w25",
+      "spread": "one",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": [
+        "cope"
+      ]
+    },
+    {
+      "id": "w25",
+      "spread": "one",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "id": "w25",
+      "spread": "three",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": [
+        "cope"
+      ]
+    },
+    {
+      "id": "w25",
+      "spread": "three",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "id": "w25",
+      "spread": "five",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": [
+        "cope"
+      ]
+    },
+    {
+      "id": "w25",
+      "spread": "five",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "id": "w25",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": [
+        "cope"
+      ]
+    },
+    {
+      "id": "w25",
+      "spread": "relationship5",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "id": "w25",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": [
+        "cope"
+      ]
+    },
+    {
+      "id": "w25",
+      "spread": "choice5",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "id": "w25",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": [
+        "cope"
+      ]
+    },
+    {
+      "id": "w25",
+      "spread": "waiting3",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "id": "w25",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": [
+        "cope"
+      ]
+    },
+    {
+      "id": "w25",
+      "spread": "career5",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "id": "w25",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "inspect",
+      "actual": [
+        "cope"
+      ]
+    },
+    {
+      "id": "w25",
+      "spread": "celtic",
+      "key": "minRequests",
+      "expected": 2,
+      "actual": 1
+    },
+    {
+      "id": "w26",
+      "spread": "one",
+      "key": "operation",
+      "expected": "communicate",
+      "actual": []
+    },
+    {
+      "id": "w26",
+      "spread": "three",
+      "key": "operation",
+      "expected": "communicate",
+      "actual": []
+    },
+    {
+      "id": "w26",
+      "spread": "five",
+      "key": "operation",
+      "expected": "communicate",
+      "actual": []
+    },
+    {
+      "id": "w26",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "communicate",
+      "actual": []
+    },
+    {
+      "id": "w26",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "communicate",
+      "actual": []
+    },
+    {
+      "id": "w26",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "communicate",
+      "actual": []
+    },
+    {
+      "id": "w26",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "communicate",
+      "actual": []
+    },
+    {
+      "id": "w26",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "communicate",
+      "actual": []
+    },
+    {
+      "id": "w27",
+      "spread": "one",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w27",
+      "spread": "three",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w27",
+      "spread": "five",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w27",
+      "spread": "relationship5",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w27",
+      "spread": "choice5",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w27",
+      "spread": "waiting3",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w27",
+      "spread": "career5",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w27",
+      "spread": "celtic",
+      "key": "targetKind",
+      "expected": "document",
+      "actual": []
+    },
+    {
+      "id": "w28",
+      "spread": "one",
+      "key": "operation",
+      "expected": "coordinate",
+      "actual": []
+    },
+    {
+      "id": "w28",
+      "spread": "three",
+      "key": "operation",
+      "expected": "coordinate",
+      "actual": []
+    },
+    {
+      "id": "w28",
+      "spread": "five",
+      "key": "operation",
+      "expected": "coordinate",
+      "actual": []
+    },
+    {
+      "id": "w28",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "coordinate",
+      "actual": []
+    },
+    {
+      "id": "w28",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "coordinate",
+      "actual": []
+    },
+    {
+      "id": "w28",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "coordinate",
+      "actual": []
+    },
+    {
+      "id": "w28",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "coordinate",
+      "actual": []
+    },
+    {
+      "id": "w28",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "coordinate",
+      "actual": []
+    }
+  ],
+  "mechanicalPassed": 72,
+  "professionalQualityScore": null
+}
