@@ -31,7 +31,7 @@
  function operation(task,question){
   if(!task||!['action','emotion'].includes(task.kind))return null;
   const original=task.evidenceText??task.text??'',cue=original.search(/어떻게|어떡|무엇|뭘|어떤|무슨|어디|언제/);
-  const frame=task.frame||lexicalContext.requestFrame(original);if(frame?.operation)return frame.operation;
+  const frame=task.frame||lexicalContext.requestFrame(original);if(frame?.operation&&(frame.reason!=='requested-lexical-predicate'||!task.goal||task.goal==='action'||task.frame))return frame.operation;
   const framed=cue>0&&/(?:려면|려고|고\s*싶|할\s*때|하는\s*때|앞두고|앞둔|하면서|한\s*뒤)/.test(original.slice(0,cue));
   const text=questionText.requestHead(cue>=0?original.slice(cue):original);
   if(task.kind==='emotion')return 'cope';

@@ -32,7 +32,7 @@
   const questionObject=headAnalysis.words.some(w=>nouns(w).some(t=>t.text==='질문')&&w.tokens.some(t=>t.pos==='JKO'||t.pos==='JKB'&&/^(?:으로|로)$/.test(t.text)));
   const headRoots=headAnalysis.tokens.map(t=>t.text),genericRoots=set('어떻 하 되 준비 정리 확인 점검 검토 시작 진행 순서 방법 단계 질문 일 것 필요 좋 보 수 있');
   const genericPredicate=!headAnalysis.tokens.some(t=>/^(?:NNG|VV|VA)$/.test(t.pos)&&!genericRoots.has(t.text));
-  const generic=/^(?:어떻게|어떡|무엇부터|뭘부터|어디부터|어떤\s*(?:순서|방법))/.test(head)&&genericPredicate&&!headAnalysis.words.some(w=>w.tokens.some(t=>t.pos==='JKO')&&!nouns(w).every(t=>/^(?:준비|정리|질문|일|것)$/.test(t.text)));
+  const generic=/^(?:어떻게|어떡|(?:무엇|뭘)(?:을|를)?(?:부터|먼저)?|어디부터|어떤\s*(?:순서|방법))/.test(head)&&genericPredicate&&!headAnalysis.words.some(w=>w.tokens.some(t=>t.pos==='JKO')&&!nouns(w).every(t=>/^(?:준비|정리|질문|일|것|무엇|뭘)$/.test(t.text)));
   if(!negative&&questionObject&&genericPredicate&&headRoots.some(t=>/^(?:준비|정리|확인|점검|검토|하)$/.test(t)))return {operation:'inquire',reason:'requested-question-as-output-or-instrument',source:text,informationGoal:true};
   const prefix=cue>0?morph.analyze(text.slice(0,cue)):null;
   if(generic&&prefix){
@@ -49,6 +49,13 @@
   }
   const lastAction=headAnalysis.words.findLast(w=>inquiryWord(w)||w.tokens.some(t=>t.pos==='VV'&&!/^(?:하|되|보)$/.test(t.text))||w.tokens.some(t=>t.pos==='XSV')&&nouns(w).some(t=>!genericRoots.has(t.text)));
   if(!negative&&lastAction&&inquiryWord(lastAction))return {operation:'inquire',reason:'inflected-inquiry-lemma',source:text,informationGoal:true};
+  // Fill inherited gaps from the requested predicate's lexical root. Adnominal
+  // background verbs and negative predicates cannot supply the operation.
+  const lexicalAction=headAnalysis.words.findLast(w=>w.tokens.some(t=>/^(?:EF|EC)$/.test(t.pos))&&w.tokens.some(t=>/^(?:VV|XSV)$/.test(t.pos)));
+  if(lexicalAction&&!lexicalAction.tokens.some(t=>t.pos==='ETM')&&!/지\s*않|지\s*말/.test(head)){
+   const roots=lexicalAction.tokens.map(t=>t.text),operation=roots.some(t=>/^(?:알리|알려주)$/.test(t))&&lexicalAction.tokens.some(t=>/^(?:EF|EC)$/.test(t.pos)&&/까|나요|가요/.test(t.text))?'communicate':roots.some(t=>/^(?:점검|검토|살피|살펴보|대조)$/.test(t))?'verify':null;
+   if(operation)return {operation,reason:'requested-lexical-predicate',source:text};
+  }
   return null;
  }
  function hits(analysis,terms,qualify=()=>true){return analysis.words.flatMap(word=>nouns(word).filter(t=>terms.has(t.text)&&qualify(t,word)).map(t=>({term:t.text,pos:t.pos,start:word.start,end:word.end,text:word.text})));}
@@ -62,12 +69,26 @@
   return {start:0,end:question.length,reason:'whole-question'};
  }
  function resolve(question,model,legacyDomain='general',legacyMedical=false,reclassify=null){
-  const scope=focusedScope(question,model),text=question.slice(scope.start,scope.end),analysis=morph.analyze(text);if(!analysis)return null;
+  const scope=focusedScope(question,model),text=question.slice(scope.start,scope.end);
+  // A denied proposition does not establish symptoms. Mask only the denied
+  // clause and preserve other clauses and their literal offsets.
+  const denials=[...text.matchAll(/(?:^|[.!?。！？])([^.!?。！？]*?(?:다는|라는|은|는)\s*(?:뜻|의미|말|것|게|건)(?:은|는|이|가|도)?\s*아니[가-힣]*)/g)].map(m=>({start:m.index+m[0].indexOf(m[1]),end:m.index+m[0].length,text:m[1]}));
+  let clinicalText=text;for(const span of [...denials].reverse())clinicalText=clinicalText.slice(0,span.start)+' '.repeat(span.end-span.start)+clinicalText.slice(span.end);
+  const analysis=morph.analyze(clinicalText);if(!analysis)return null;
   const qualified=(token,word)=>{const ns=nouns(word),head=ns.at(-1)?.text;return token===ns.at(-1)||clinicalHeads.has(head);};
-  const health=hits(analysis,clinical,qualified);
+  let health=hits(analysis,clinical,qualified);
+  const nonhuman=set('식물 나무 꽃 잎 뿌리 줄기 씨앗 화분 기계 장비 엔진 서버 컴퓨터 프로그램 코드 시스템 회로 배터리');
+  const ambiguousClinical=set('진단 검사 치료');
+  const nonhumanHealth=health.filter(h=>{
+   if(!ambiguousClinical.has(h.term))return false;
+   const clauseStart=clinicalText.slice(0,h.start).search(/[^.!?。！？]*$/),clauseEnd=clinicalText.slice(h.end).search(/[.!?。！？]/),end=clauseEnd<0?clinicalText.length:h.end+clauseEnd;
+   const local=analysis.words.filter(w=>w.start>=clauseStart&&w.end<=end);
+   return local.some(w=>nouns(w).some(t=>nonhuman.has(t.text))&&w.tokens.some(t=>/^(?:JKS|JKO|JKG)$/.test(t.pos)))&&!health.some(other=>other.start>=clauseStart&&other.end<=end&&!ambiguousClinical.has(other.term));
+  });
+  health=health.filter(h=>!nonhumanHealth.includes(h));
   // 검사 is ambiguous: a human recipient is not a medical test.
   const checks=hits(analysis,set('검사'),(t,w)=>!w.tokens.some(t=>t.pos==='JKB'&&/에게|한테|께/.test(t.text))&&/(?:검사\s*결과|혈액\s*검사|CT\s*검사|MRI\s*검사|검사를\s*(?:받|했|할|하|앞두))/.test(text));health.push(...checks);
-  const bodyPain=/(?:몸|배|가슴|머리|허리|목)(?:이|가|에)?\s*(?:아프|아파|아픈)|숨.{0,4}(?:못|안)\s*쉬/.test(text);
+  const bodyPain=/(?:몸|배|가슴|머리|허리|목)(?:이|가|에)?\s*(?:아프|아파|아픈)|숨.{0,4}(?:못|안)\s*쉬/.test(clinicalText);
   const institution=hits(analysis,set('병원 의원 보건소 의사 의료진')).length>0;
   const clinicalVisit=institution&&/(?:진료|예약|상담|검사|치료|수술)/.test(text)&&!/(?:입사|취업|채용|면접)/.test(text);
   const jobOnly=/(?:입사|취업|채용|면접)/.test(text)&&!health.length&&!bodyPain;
@@ -78,7 +99,12 @@
   });
   const evidence=Object.fromEntries(Object.entries(domains).map(([domain,terms])=>[domain,hits(analysis,terms)]));
   const otherDomain=Object.entries(evidence).find(([key,rows])=>key!=='waiting'&&rows.length)?.[0];
-  const wellness=hits(analysis,set('건강')).filter(h=>{const w=analysis.words.find(w=>w.start===h.start);return !w.tokens.some(t=>t.pos==='ETM')||!otherDomain;});
+  const abstractHealth=word=>{
+   if(!nouns(word).some(t=>t.text==='건강')||!word.tokens.some(t=>t.pos==='ETM'))return false;
+   const next=analysis.words.find(w=>w.start>=word.end&&nouns(w).length),head=next&&nouns(next).at(-1)?.text;
+   return !!head&&!clinicalHeads.has(head)&&!set('몸 신체 삶 생활 습관 식단 운동 체력 마음 정신').has(head);
+  };
+  const wellness=hits(analysis,set('건강')).filter(h=>!abstractHealth(analysis.words.find(w=>w.start===h.start)));
   // Absence from this bounded vocabulary is not evidence against a domain.
   // Require affirmative contradictory word/argument evidence, then replay the
   // existing classifier with only those unrelated words masked. Other clinical
@@ -87,13 +113,12 @@
    if(health.some(h=>h.start===word.start))return false;
    const ns=nouns(word),head=ns.at(-1),personCase=word.tokens.some(t=>t.pos==='JKS'||t.pos==='JX'||t.pos==='JKB'&&/에게|한테|께/.test(t.text));
    const unrelatedRole=head&&personCase&&/(?:사|자|원|관|인|님|씨|협회|회사|단체)$/.test(head.text)&&[...clinical].some(term=>head.text!==term&&head.text.includes(term));
-   const humanExaminer=ns.some(t=>t.text==='검사')&&word.tokens.some(t=>t.pos==='JKB'&&/에게|한테|께/.test(t.text));
-   const abstractModifier=ns.some(t=>t.text==='건강')&&word.tokens.some(t=>t.pos==='ETM')&&otherDomain&&!wellness.length;
-   return unrelatedRole||humanExaminer||abstractModifier;
+   const humanExaminer=ns.some(t=>t.text==='검사')&&(word.tokens.some(t=>t.pos==='JKB'&&/에게|한테|께/.test(t.text))||word.tokens.some(t=>t.pos==='JKS')&&/^(?:\s*)(?:[가-힣]+\s+){0,2}(?:보내|보냈|전하|전했|설명하|말하)/.test(text.slice(word.end)));
+   return unrelatedRole||humanExaminer||abstractHealth(word)||nonhumanHealth.some(h=>h.start===word.start);
   });
   const rejectedFinance=analysis.words.filter(word=>/주식|코인/.test(word.text)&&nouns(word).length&&!finance.some(h=>h.start===word.start)&&![...financial,...financeComposition].some(term=>nouns(word).at(-1)?.text.endsWith(term)));
   let domain=legacyDomain,retainedMedical=legacyMedical,replayed=null;
-  const rejected=legacyDomain==='health'||legacyMedical?rejectedHealth:legacyDomain==='finances'?rejectedFinance:[];
+  const rejected=[...(legacyDomain==='health'||legacyMedical?rejectedHealth:legacyDomain==='finances'?rejectedFinance:[]),...denials];
   if(rejected.length&&reclassify&&!detectedMedical){
    let cleaned=text;for(const word of [...rejected].sort((a,b)=>b.start-a.start))cleaned=cleaned.slice(0,word.start)+' '.repeat(word.end-word.start)+cleaned.slice(word.end);
    const checked=reclassify(cleaned);domain=checked.domain;retainedMedical=!!checked.medical;replayed={domain,medical:retainedMedical};

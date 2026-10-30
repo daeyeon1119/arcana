@@ -24,3 +24,4 @@ scripts/device-check.js text eol=lf
 vendor/garu/** text eol=lf
 vendor/garu/**/*.wasm -text
 vendor/garu/**/*.gmdl -text
+tests/lexical-first.json text eol=lf

@@ -5615,7 +5615,7 @@ const ARCANA_MORPHOLOGY_NOTICES="Garu (garu-ko)\nCopyright 2026 Yongjin Cho\nhtt
   const questionObject=headAnalysis.words.some(w=>nouns(w).some(t=>t.text==='질문')&&w.tokens.some(t=>t.pos==='JKO'||t.pos==='JKB'&&/^(?:으로|로)$/.test(t.text)));
   const headRoots=headAnalysis.tokens.map(t=>t.text),genericRoots=set('어떻 하 되 준비 정리 확인 점검 검토 시작 진행 순서 방법 단계 질문 일 것 필요 좋 보 수 있');
   const genericPredicate=!headAnalysis.tokens.some(t=>/^(?:NNG|VV|VA)$/.test(t.pos)&&!genericRoots.has(t.text));
-  const generic=/^(?:어떻게|어떡|무엇부터|뭘부터|어디부터|어떤\s*(?:순서|방법))/.test(head)&&genericPredicate&&!headAnalysis.words.some(w=>w.tokens.some(t=>t.pos==='JKO')&&!nouns(w).every(t=>/^(?:준비|정리|질문|일|것)$/.test(t.text)));
+  const generic=/^(?:어떻게|어떡|(?:무엇|뭘)(?:을|를)?(?:부터|먼저)?|어디부터|어떤\s*(?:순서|방법))/.test(head)&&genericPredicate&&!headAnalysis.words.some(w=>w.tokens.some(t=>t.pos==='JKO')&&!nouns(w).every(t=>/^(?:준비|정리|질문|일|것|무엇|뭘)$/.test(t.text)));
   if(!negative&&questionObject&&genericPredicate&&headRoots.some(t=>/^(?:준비|정리|확인|점검|검토|하)$/.test(t)))return {operation:'inquire',reason:'requested-question-as-output-or-instrument',source:text,informationGoal:true};
   const prefix=cue>0?morph.analyze(text.slice(0,cue)):null;
   if(generic&&prefix){
@@ -5632,6 +5632,13 @@ const ARCANA_MORPHOLOGY_NOTICES="Garu (garu-ko)\nCopyright 2026 Yongjin Cho\nhtt
   }
   const lastAction=headAnalysis.words.findLast(w=>inquiryWord(w)||w.tokens.some(t=>t.pos==='VV'&&!/^(?:하|되|보)$/.test(t.text))||w.tokens.some(t=>t.pos==='XSV')&&nouns(w).some(t=>!genericRoots.has(t.text)));
   if(!negative&&lastAction&&inquiryWord(lastAction))return {operation:'inquire',reason:'inflected-inquiry-lemma',source:text,informationGoal:true};
+  // Fill inherited gaps from the requested predicate's lexical root. Adnominal
+  // background verbs and negative predicates cannot supply the operation.
+  const lexicalAction=headAnalysis.words.findLast(w=>w.tokens.some(t=>/^(?:EF|EC)$/.test(t.pos))&&w.tokens.some(t=>/^(?:VV|XSV)$/.test(t.pos)));
+  if(lexicalAction&&!lexicalAction.tokens.some(t=>t.pos==='ETM')&&!/지\s*않|지\s*말/.test(head)){
+   const roots=lexicalAction.tokens.map(t=>t.text),operation=roots.some(t=>/^(?:알리|알려주)$/.test(t))&&lexicalAction.tokens.some(t=>/^(?:EF|EC)$/.test(t.pos)&&/까|나요|가요/.test(t.text))?'communicate':roots.some(t=>/^(?:점검|검토|살피|살펴보|대조)$/.test(t))?'verify':null;
+   if(operation)return {operation,reason:'requested-lexical-predicate',source:text};
+  }
   return null;
  }
  function hits(analysis,terms,qualify=()=>true){return analysis.words.flatMap(word=>nouns(word).filter(t=>terms.has(t.text)&&qualify(t,word)).map(t=>({term:t.text,pos:t.pos,start:word.start,end:word.end,text:word.text})));}
@@ -5645,12 +5652,26 @@ const ARCANA_MORPHOLOGY_NOTICES="Garu (garu-ko)\nCopyright 2026 Yongjin Cho\nhtt
   return {start:0,end:question.length,reason:'whole-question'};
  }
  function resolve(question,model,legacyDomain='general',legacyMedical=false,reclassify=null){
-  const scope=focusedScope(question,model),text=question.slice(scope.start,scope.end),analysis=morph.analyze(text);if(!analysis)return null;
+  const scope=focusedScope(question,model),text=question.slice(scope.start,scope.end);
+  // A denied proposition does not establish symptoms. Mask only the denied
+  // clause and preserve other clauses and their literal offsets.
+  const denials=[...text.matchAll(/(?:^|[.!?。！？])([^.!?。！？]*?(?:다는|라는|은|는)\s*(?:뜻|의미|말|것|게|건)(?:은|는|이|가|도)?\s*아니[가-힣]*)/g)].map(m=>({start:m.index+m[0].indexOf(m[1]),end:m.index+m[0].length,text:m[1]}));
+  let clinicalText=text;for(const span of [...denials].reverse())clinicalText=clinicalText.slice(0,span.start)+' '.repeat(span.end-span.start)+clinicalText.slice(span.end);
+  const analysis=morph.analyze(clinicalText);if(!analysis)return null;
   const qualified=(token,word)=>{const ns=nouns(word),head=ns.at(-1)?.text;return token===ns.at(-1)||clinicalHeads.has(head);};
-  const health=hits(analysis,clinical,qualified);
+  let health=hits(analysis,clinical,qualified);
+  const nonhuman=set('식물 나무 꽃 잎 뿌리 줄기 씨앗 화분 기계 장비 엔진 서버 컴퓨터 프로그램 코드 시스템 회로 배터리');
+  const ambiguousClinical=set('진단 검사 치료');
+  const nonhumanHealth=health.filter(h=>{
+   if(!ambiguousClinical.has(h.term))return false;
+   const clauseStart=clinicalText.slice(0,h.start).search(/[^.!?。！？]*$/),clauseEnd=clinicalText.slice(h.end).search(/[.!?。！？]/),end=clauseEnd<0?clinicalText.length:h.end+clauseEnd;
+   const local=analysis.words.filter(w=>w.start>=clauseStart&&w.end<=end);
+   return local.some(w=>nouns(w).some(t=>nonhuman.has(t.text))&&w.tokens.some(t=>/^(?:JKS|JKO|JKG)$/.test(t.pos)))&&!health.some(other=>other.start>=clauseStart&&other.end<=end&&!ambiguousClinical.has(other.term));
+  });
+  health=health.filter(h=>!nonhumanHealth.includes(h));
   // 검사 is ambiguous: a human recipient is not a medical test.
   const checks=hits(analysis,set('검사'),(t,w)=>!w.tokens.some(t=>t.pos==='JKB'&&/에게|한테|께/.test(t.text))&&/(?:검사\s*결과|혈액\s*검사|CT\s*검사|MRI\s*검사|검사를\s*(?:받|했|할|하|앞두))/.test(text));health.push(...checks);
-  const bodyPain=/(?:몸|배|가슴|머리|허리|목)(?:이|가|에)?\s*(?:아프|아파|아픈)|숨.{0,4}(?:못|안)\s*쉬/.test(text);
+  const bodyPain=/(?:몸|배|가슴|머리|허리|목)(?:이|가|에)?\s*(?:아프|아파|아픈)|숨.{0,4}(?:못|안)\s*쉬/.test(clinicalText);
   const institution=hits(analysis,set('병원 의원 보건소 의사 의료진')).length>0;
   const clinicalVisit=institution&&/(?:진료|예약|상담|검사|치료|수술)/.test(text)&&!/(?:입사|취업|채용|면접)/.test(text);
   const jobOnly=/(?:입사|취업|채용|면접)/.test(text)&&!health.length&&!bodyPain;
@@ -5661,7 +5682,12 @@ const ARCANA_MORPHOLOGY_NOTICES="Garu (garu-ko)\nCopyright 2026 Yongjin Cho\nhtt
   });
   const evidence=Object.fromEntries(Object.entries(domains).map(([domain,terms])=>[domain,hits(analysis,terms)]));
   const otherDomain=Object.entries(evidence).find(([key,rows])=>key!=='waiting'&&rows.length)?.[0];
-  const wellness=hits(analysis,set('건강')).filter(h=>{const w=analysis.words.find(w=>w.start===h.start);return !w.tokens.some(t=>t.pos==='ETM')||!otherDomain;});
+  const abstractHealth=word=>{
+   if(!nouns(word).some(t=>t.text==='건강')||!word.tokens.some(t=>t.pos==='ETM'))return false;
+   const next=analysis.words.find(w=>w.start>=word.end&&nouns(w).length),head=next&&nouns(next).at(-1)?.text;
+   return !!head&&!clinicalHeads.has(head)&&!set('몸 신체 삶 생활 습관 식단 운동 체력 마음 정신').has(head);
+  };
+  const wellness=hits(analysis,set('건강')).filter(h=>!abstractHealth(analysis.words.find(w=>w.start===h.start)));
   // Absence from this bounded vocabulary is not evidence against a domain.
   // Require affirmative contradictory word/argument evidence, then replay the
   // existing classifier with only those unrelated words masked. Other clinical
@@ -5670,13 +5696,12 @@ const ARCANA_MORPHOLOGY_NOTICES="Garu (garu-ko)\nCopyright 2026 Yongjin Cho\nhtt
    if(health.some(h=>h.start===word.start))return false;
    const ns=nouns(word),head=ns.at(-1),personCase=word.tokens.some(t=>t.pos==='JKS'||t.pos==='JX'||t.pos==='JKB'&&/에게|한테|께/.test(t.text));
    const unrelatedRole=head&&personCase&&/(?:사|자|원|관|인|님|씨|협회|회사|단체)$/.test(head.text)&&[...clinical].some(term=>head.text!==term&&head.text.includes(term));
-   const humanExaminer=ns.some(t=>t.text==='검사')&&word.tokens.some(t=>t.pos==='JKB'&&/에게|한테|께/.test(t.text));
-   const abstractModifier=ns.some(t=>t.text==='건강')&&word.tokens.some(t=>t.pos==='ETM')&&otherDomain&&!wellness.length;
-   return unrelatedRole||humanExaminer||abstractModifier;
+   const humanExaminer=ns.some(t=>t.text==='검사')&&(word.tokens.some(t=>t.pos==='JKB'&&/에게|한테|께/.test(t.text))||word.tokens.some(t=>t.pos==='JKS')&&/^(?:\s*)(?:[가-힣]+\s+){0,2}(?:보내|보냈|전하|전했|설명하|말하)/.test(text.slice(word.end)));
+   return unrelatedRole||humanExaminer||abstractHealth(word)||nonhumanHealth.some(h=>h.start===word.start);
   });
   const rejectedFinance=analysis.words.filter(word=>/주식|코인/.test(word.text)&&nouns(word).length&&!finance.some(h=>h.start===word.start)&&![...financial,...financeComposition].some(term=>nouns(word).at(-1)?.text.endsWith(term)));
   let domain=legacyDomain,retainedMedical=legacyMedical,replayed=null;
-  const rejected=legacyDomain==='health'||legacyMedical?rejectedHealth:legacyDomain==='finances'?rejectedFinance:[];
+  const rejected=[...(legacyDomain==='health'||legacyMedical?rejectedHealth:legacyDomain==='finances'?rejectedFinance:[]),...denials];
   if(rejected.length&&reclassify&&!detectedMedical){
    let cleaned=text;for(const word of [...rejected].sort((a,b)=>b.start-a.start))cleaned=cleaned.slice(0,word.start)+' '.repeat(word.end-word.start)+cleaned.slice(word.end);
    const checked=reclassify(cleaned);domain=checked.domain;retainedMedical=!!checked.medical;replayed={domain,medical:retainedMedical};
@@ -6614,7 +6639,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
  }
  function predicate(tail){
   const leading=tail.match(/^[은는이가을를도]+/),offset=leading?.[0].length||0,text=tail.slice(offset);
-  const rules=[['receive',/^(?:받았|받은|받아|받지|받고|받을|받는|받겠|받습니다|왔|오지|오고|오는|오면|올|도착)/],['send',/^(?:보냈|보내|보낼|전했|전하|전할)/],['read',/^(?:읽었|읽은|읽지|읽고|읽을|읽는|읽어|읽습니다)/],['make',/^(?:했|하(?:지|진|고|는|면|려|겠|셨|나(?:요|$))|할|해(?=요|서|도|줄|주|줬|보|\s|$))/]];
+  const rules=[['receive',/^(?:받았|받은|받아|받지|받고|받을|받는|받겠|받습니다|왔|오지|오고|오는|오면|올|도착)/],['send',/^(?:보냈|보내|보낼|전했|전하|전할)/],['read',/^(?:읽었|읽은|읽지|읽고|읽을|읽는|읽어|읽습니다|열어보)/],['make',/^(?:했|하(?:지|진|고|는|면|려|겠|셨|나(?:요|$))|할|해(?=요|서|도|줄|주|줬|보|\s|$))/]];
   for(const word of text.matchAll(/\S+/g)){
    const stripped=word[0].replace(/^(?:안|못)(?=[가-힣])/,'');
    for(const [action,rx]of rules){const m=stripped.match(rx);if(m)return {action,text:m[0],index:offset+word.index+word[0].length-stripped.length};}
@@ -6678,7 +6703,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
 (function(root){
  'use strict';
  const literalEvidence=typeof module==='object'&&module.exports?require('./reading-evidence.js'):root.ARCANA_READING_EVIDENCE;
- const CONTACT=/(?:메시지|메세지|문자|연락|고백|사과|카톡|톡)/g;
+ const CONTACT=/(?:메시지|메세지|문자|연락|고백|사과|카톡|톡|의견|목록|편지|서신|메일)/g;
  const REPLY=/(?:답장|회신|답변|대답|(?<!정|오|문)답(?=이|을|도|은|는|해|했|하|할))/g;
  const RESULT=/(?:검사\s*결과|채점\s*결과|결과|성적|점수|발표|합격|불합격|탈락|낙방|선발|승인|당선)/g;
  const ASSESS=/(?:시험|면접|평가|심사)/g;
@@ -6696,7 +6721,13 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   const text=masked(q),parts=[];let start=0;
   const rx=/[.!?。！？,;]+|(?:하지만|그런데|반면에|그러나)\s+|((?:했|았|었)(?:는데|지만|고|더니))\s*/g;let m;
   const add=end=>{let a=start,b=end;while(a<b&&/\s/.test(text[a]))a++;while(b>a&&/\s/.test(text[b-1]))b--;if(b>a)parts.push({text:text.slice(a,b),start:a,end:b,source:q.slice(a,b)});};
-  while((m=rx.exec(text))){add(m.index+(m[1]?.length||0));start=rx.lastIndex;}add(text.length);return parts;
+  // Past predicates joined by a contrast/sequence ending keep their own
+  // polarity even when the surface conjugation is not in the legacy pattern.
+  const boundaries=[...text.matchAll(rx)].map(m=>({end:m.index+(m[1]?.length||0),next:m.index+m[0].length}));
+  for(const word of morphology.analyze(text)?.words||[]){
+   if(word.tokens.some(t=>t.pos==='EP'&&/았|었|였/.test(t.text))&&word.tokens.some(t=>t.pos==='EC'&&/^(?:지만|는데|고|더니)$/.test(t.text))&&!boundaries.some(b=>word.end>=b.end&&word.end<=b.next))boundaries.push({end:word.end,next:word.end});
+  }
+  for(const boundary of boundaries.sort((a,b)=>a.end-b.end)){if(boundary.end<start)continue;add(boundary.end);start=boundary.next;}add(text.length);return parts;
  }
  function actorAt(text,index){
   let actor='unspecified',evidence='',start=-1;const analysis=morphology.analyze(text.slice(0,index));
@@ -6716,7 +6747,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
   if(/(?:면|다면|다면야|경우|가정|라고\s*가정|했으면|았으면|었으면|다면)\b|(?:했|됐|받았|보냈|왔)(?:으면|다면)|(?:했|받았|보냈|왔|제출했|접수됐)을\s*때/.test(text))return 'conditional';
   if(/(?:까\s*봐|을까\s*봐|다고\s*(?:생각|추측|상상)|일지도|인\s*것\s*같|했을까|왔을까|받았을까|보냈을까|꿈에서)|(?:했는지|보냈는지|왔는지|받았는지).{0,8}(?:모르|모릅|알지\s*못)/.test(text))return 'uncertain';
   if(/(?:다는|라는)\s*말|전해\s*들|다고\s*(?:했|하|해|말)/.test(text))return 'reported';
-  const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|확인|제출|공개)|(?:하|보내|전하|받|오|나오|읽|확인하|제출하|공개되)(?:지(?:는|도|만)?|진)\s*않/.test(text);
+  const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|열어보|확인|제출|공개)|(?:하|보내|전하|받|오|나오|읽|열어보|확인하|제출하|공개되)(?:지(?:는|도|만)?|진)\s*않/.test(text);
   const absentState=!completed(text)&&/(?:없|모르|모릅|모른|미정|미공개|미발표)/.test(text);
   if(verbalNegative||absentState)return 'negated';
   if(/(?:하려|할\s*예정|보낼\s*예정|받을\s*예정|계획|앞두|예정)|(?:할|보낼|전할|받을|올|나올|제출할)(?:까|지|까요|게|\s*예정)/.test(text))return 'planned';
@@ -6742,7 +6773,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
     const actor=genericActor&&genericActor.start>knownActor.start?genericActor:knownActor;let role={actor:actor.actor,actorEvidence:actor.evidence},readingFromOtherReceipt=false;
     if(relative&&['contact','reply'].includes(n.kind)){
      const generic=eventEvidence.actor(part.text,relative.start),known=actorAt(part.text,relative.start),who=generic&&generic.start>known.start?generic:known;
-     add(part,n.kind,n.noun,relative.start,relative.end,{action:relative.action,predicate:relative.predicate,status:relative.status,completed:relative.completed,direction:relative.action,accepting:/^받|^읽/.test(relative.predicate),actor:who.actor,actorEvidence:who.evidence,relative:true});
+     add(part,n.kind,n.noun,relative.start,relative.end,{action:relative.action,predicate:relative.predicate,status:relative.status,completed:relative.completed,direction:relative.action,accepting:/^받|^읽/.test(relative.predicate),actor:who.actor,actorEvidence:who.evidence,relative:true,outgoingUnestablished:relative.action==='send'&&who.actor==='unspecified'&&['receive','read'].includes(predicate?.action)});
      const relativeRecipient=recipientAt(part.text,relative.start),externalDestination=relativeRecipient?.actor==='other'&&!relativeRecipient.incoming;
      readingFromOtherReceipt=predicate?.action==='read'&&(relative.action==='receive'&&(who.actor==='other'||externalDestination&&!/^받/.test(relative.predicate))||relative.action==='send'&&externalDestination||relative.action==='publish');
      if(relative.action==='send'&&predicate&&['receive','read'].includes(predicate.action)){
@@ -6769,6 +6800,9 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
    }
    // A following clause may omit the object: "답장을 보냈다지만 저는 받은 내용이 없어요".
    const priorReply=events.findLast(e=>e.kind==='reply'&&e.end<=part.start);
+   const priorContent=events.findLast(e=>['reply','contact'].includes(e.kind)&&e.end<=part.start);
+   const reading=part.text.match(/^(?:(?:저는|제가|나는|내가|아직|이미|다시|안|못)\s*)*(?:읽|열어보)/);
+   if(priorContent&&reading&&!unique.some(n=>['reply','contact'].includes(n.kind)))add(part,priorContent.kind,priorContent.object,0,part.text.length,{direction:'read',predicate:reading[0].includes('열어보')?'열어보':'읽',accepting:true,inferredObject:true,readingFromOtherReceipt:priorContent.readingFromOtherReceipt||priorContent.actor==='other'&&priorContent.direction==='receive'});
    const priorWaiting=events.findLast(e=>['reply','result'].includes(e.kind)&&e.end<=part.start),waitOnly=eventEvidence.waiting(part.text);
    if(priorWaiting&&waitOnly&&!unique.some(n=>['reply','result'].includes(n.kind))&&eventEvidence.anaphoricWait(part.text,waitOnly.start))add(part,priorWaiting.kind,priorWaiting.object,0,part.text.length,{direction:'wait',waitingEvidence:{...waitOnly,start:part.start+waitOnly.start,end:part.end,text:part.source.slice(waitOnly.start)},inferredObject:true});
    const receipt=part.text.match(/받은\s*(?:것|내용|게)(?:은|는|이|가|도)?\s*없|못\s*받았|받지\s*않았/);
@@ -6794,14 +6828,14 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
    else if(['reply','contact'].includes(e.kind)&&e.direction==='receive'&&e.actor!=='other'&&(e.accepting||e.recipient?.actor!=='other')&&done)state.read=null;
    if(e.kind==='contact'){
     if(e.actor==='mutual'&&done){state.sent=true;state.received=true;}
-    else if(e.direction==='send'&&e.actor!=='other'&&(done||missing))state.sent=done;
+    else if(e.direction==='send'&&e.actor!=='other'&&!e.outgoingUnestablished&&(done||missing))state.sent=done;
     else if(['receive','read'].includes(e.direction)&&!e.readingFromOtherReceipt&&e.actor!=='other'&&(e.accepting||e.recipient?.actor!=='other')&&(done||missing&&e.direction!=='read'))state.received=done;
     else if(e.actor==='other'&&done&&e.direction==='make')state.received=true;
    }
    if(e.kind==='reply'){
     const mine=e.actor==='self',toOther=e.recipient?.actor==='other'&&!e.recipient.incoming;
     const incoming=['receive','read'].includes(e.direction)&&(e.accepting||!toOther)&&e.actor!=='other'||e.direction==='make'&&e.predicate&&!mine&&(e.actor==='other'||e.benefactive);
-    if((mine&&e.direction==='make'||e.actor!=='other'&&e.direction==='send')&&(done||missing))state.sent=done;
+    if((mine&&e.direction==='make'||e.actor!=='other'&&e.direction==='send'&&!e.outgoingUnestablished)&&(done||missing))state.sent=done;
     if(incoming&&done&&!e.readingFromOtherReceipt){state.received=true;state.replyWaiting=false;if(state.replyWaitingSource!=='denied')state.replyWaitingSource='received';}
     else if(e.direction!=='read'&&(incoming&&missing||e.actor==='unspecified'&&e.absence)){
      state.received=false;if(!['explicit','denied'].includes(state.replyWaitingSource)){state.replyWaiting=true;state.replyWaitingSource='absence-inference';}
@@ -6907,7 +6941,7 @@ $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistory
  function parse(input){
   const question=normalize(input),parts=segments(question),requests=requestsFrom(parts,question),events=eventsFrom(parts),state=summarize(events,requests,question);
   const languageAnalysis=morphology.analyze(masked(question));
-  for(const task of requests){const frame=lexicalContext.requestFrame(masked(task.text));if(frame&&task.kind==='action'){task.frame=frame;task.goal=frame.operation;}}
+  for(const task of requests){const frame=lexicalContext.requestFrame(masked(task.text));if(frame&&task.kind==='action'&&(frame.reason!=='requested-lexical-predicate'||task.goal==='action')){task.frame=frame;task.goal=frame.operation;}}
   eventEvidence.bindRequests(requests,events,masked(question),state);
   const generic=question.replace(/[\s.!?。！？,]/g,'');
   const missingChoices=/(?:두\s*(?:가지|개)|둘)\s*중/.test(masked(question))&&/정해|고르|골라|선택|비교/.test(masked(question))&&!/A.{0,80}B|하나는.{1,80}(?:다른|하나는)|(?:첫째|첫\s*번째).{1,80}(?:둘째|두\s*번째)/i.test(masked(question));
@@ -7077,7 +7111,7 @@ const arc89Sources=document.createElement('details');arc89Sources.className='arc
  function operation(task,question){
   if(!task||!['action','emotion'].includes(task.kind))return null;
   const original=task.evidenceText??task.text??'',cue=original.search(/어떻게|어떡|무엇|뭘|어떤|무슨|어디|언제/);
-  const frame=task.frame||lexicalContext.requestFrame(original);if(frame?.operation)return frame.operation;
+  const frame=task.frame||lexicalContext.requestFrame(original);if(frame?.operation&&(frame.reason!=='requested-lexical-predicate'||!task.goal||task.goal==='action'||task.frame))return frame.operation;
   const framed=cue>0&&/(?:려면|려고|고\s*싶|할\s*때|하는\s*때|앞두고|앞둔|하면서|한\s*뒤)/.test(original.slice(0,cue));
   const text=questionText.requestHead(cue>=0?original.slice(cue):original);
   if(task.kind==='emotion')return 'cope';

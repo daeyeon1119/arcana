@@ -1,5 +1,17 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto'),save=require('../scripts/save-artifact.cjs'),m=require('../src/korean-morphology.js'),q=require('../src/question-model.js'),lex=require('../src/lexical-context.js');
 const rows=[],checks=[];const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
+for(const [question,state]of [
+ ['회신은 왔지만 아직 읽지 않았어요.',{received:true,read:false}],
+ ['💬 Lin에게 정리한 의견을 보냈습니다.',{sent:true}],
+ ['회신을 읽었지만 제 의견은 보내지 않았어요.',{received:true,read:true,sent:false}],
+ ['보내 준 답은 읽었습니다.',{received:true,read:true,sent:null}]
+]){const actual=q.parse(question);for(const [key,value]of Object.entries(state))assert.equal(actual.state[key],value,question+' '+key);rows.push({question,state:actual.state});}
+assert.equal(lex.requestFrame('이해한 내용이 맞는지 여쭈려면 무엇을 준비할까요?').operation,'inquire');
+checks.push('content exchange and adjacent past clauses retain separate polarity and unknown relative senders');
+for(const question of ['식물을 관찰하다 기침이 계속돼요. 진료에서 무엇을 물을까요?','서버를 점검하던 중 가슴 통증이 있어요.','몸이 아프다는 뜻은 아니에요. 하지만 구토가 계속돼요.']){
+ const actual=lex.resolve(question,q.parse(question),'health',true,()=>({domain:'general',medical:false}));assert.equal(actual.medical,true,question);
+}
+checks.push('nonhuman background and a denied proposition do not erase separately asserted clinical symptoms');
 for(const text of ['제가 답변을 받았어요.','😊 민수가 답변을 받았어요.','🎴 저는 받은 답변을 아직 읽지 않았어요.','😊😊 어울리는 사람에게 문자를 보냈어요.','𠮷 씨에게 받은 회신을 읽었어요.','e\u0301 제가 답변을 받았어요.','“회신을 받았다”는 문장을 다듬어요.']){
  const a=m.analyze(text);assert(a.ready);for(const word of a.words){assert.equal(text.slice(word.start,word.end),word.text);assert(!/^[\uDC00-\uDFFF]|[\uD800-\uDBFF]$/.test(word.text));assert(word.start>=0&&word.end<=text.length);if(word.tokens.some(t=>t.text==='민수'))assert.equal(word.text,'민수가');}rows.push(a);
 }checks.push('literal eojeol spans are valid UTF-16 across astral symbols, combining marks and quotations');

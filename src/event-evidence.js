@@ -22,7 +22,7 @@
  }
  function predicate(tail){
   const leading=tail.match(/^[은는이가을를도]+/),offset=leading?.[0].length||0,text=tail.slice(offset);
-  const rules=[['receive',/^(?:받았|받은|받아|받지|받고|받을|받는|받겠|받습니다|왔|오지|오고|오는|오면|올|도착)/],['send',/^(?:보냈|보내|보낼|전했|전하|전할)/],['read',/^(?:읽었|읽은|읽지|읽고|읽을|읽는|읽어|읽습니다)/],['make',/^(?:했|하(?:지|진|고|는|면|려|겠|셨|나(?:요|$))|할|해(?=요|서|도|줄|주|줬|보|\s|$))/]];
+  const rules=[['receive',/^(?:받았|받은|받아|받지|받고|받을|받는|받겠|받습니다|왔|오지|오고|오는|오면|올|도착)/],['send',/^(?:보냈|보내|보낼|전했|전하|전할)/],['read',/^(?:읽었|읽은|읽지|읽고|읽을|읽는|읽어|읽습니다|열어보)/],['make',/^(?:했|하(?:지|진|고|는|면|려|겠|셨|나(?:요|$))|할|해(?=요|서|도|줄|주|줬|보|\s|$))/]];
   for(const word of text.matchAll(/\S+/g)){
    const stripped=word[0].replace(/^(?:안|못)(?=[가-힣])/,'');
    for(const [action,rx]of rules){const m=stripped.match(rx);if(m)return {action,text:m[0],index:offset+word.index+word[0].length-stripped.length};}
