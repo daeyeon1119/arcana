@@ -4,10 +4,11 @@ import base64
 import hashlib
 import json
 import re
+from save_artifact import save_text
 root = Path(__file__).resolve().parents[1]
 base = (root / 'ARCANA_tarot_v78_source/html/ARCANA_tarot_v78.html').read_text(encoding='utf-8')
 css = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.css','src/card-mat.css','src/question-context.css','src/web-app.css'])
-js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/question-text.js','src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/verification-facts.js','src/reading-evidence.js','src/question-model.js','src/reading-context.js','src/task-policy.js','src/reading-task.js','src/reading-bridge.js','src/reading-grounded.js','src/card-mat.js','src/web-app.js'])
+js = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/question-text.js','src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/verification-facts.js','src/reading-evidence.js','src/event-evidence.js','src/question-model.js','src/reading-context.js','src/task-policy.js','src/reading-task.js','src/reading-bridge.js','src/reading-grounded.js','src/card-mat.js','src/web-app.js'])
 app_version = json.loads((root / 'package.json').read_text(encoding='utf-8'))['version']
 engine_version = int(app_version.split('.')[0])
 assert js.count('__ARCANA_APP_VERSION__') == 1
@@ -46,7 +47,7 @@ base = base.replace('ARCANA 78.0 |', f'ARCANA {app_version} |', 1)
 web_head = '<link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#17382f"><link rel="icon" href="./assets/app/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="./assets/app/apple-touch-icon.png">'
 base = base.replace('</head>', web_head + '</head>')
 assert base.count('</body>') == 1
-(root / 'index.html').write_text(base.replace('</body>', bundle+'</body>'), encoding='utf-8', newline='\n')
+save_text(root / 'index.html', base.replace('</body>', bundle+'</body>'))
 app_bytes = (root / 'index.html').read_bytes()
 app_sha = hashlib.sha256(app_bytes).hexdigest()
 worker_template = (root / 'src/service-worker.js').read_text(encoding='utf-8')
@@ -56,6 +57,6 @@ def web_asset_bytes(path):
     return source.read_text(encoding='utf-8').encode('utf-8') if source.suffix in {'.webmanifest','.svg'} else source.read_bytes()
 release_hash = hashlib.sha256((app_sha+worker_template).encode()+b''.join(web_asset_bytes(path) for path in web_files)).hexdigest()
 worker = worker_template.replace('__ARCANA_APP_SHA256__', app_sha).replace('__ARCANA_RELEASE_ID__', release_hash[:24])
-(root / 'sw.js').write_text(worker, encoding='utf-8', newline='\n')
-(root / 'release.json').write_text(json.dumps({'appVersion':app_version,'readingEngine':engine_version,'appSHA256':app_sha,'appBytes':len(app_bytes),'webRelease':release_hash[:24]}, indent=2)+'\n', encoding='utf-8', newline='\n')
+save_text(root / 'sw.js', worker)
+save_text(root / 'release.json', json.dumps({'appVersion':app_version,'readingEngine':engine_version,'appSHA256':app_sha,'appBytes':len(app_bytes),'webRelease':release_hash[:24]}, indent=2)+'\n')
 print(f'Built index.html (app {app_version}, reading engine {engine_version}), web cache, 78 original JPEGs embedded ({sum(c["bytes"] for c in manifest["cards"]):,} source bytes)')

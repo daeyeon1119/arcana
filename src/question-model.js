@@ -14,6 +14,7 @@
  const EMOTION=/(?:불안|걱정|두려|두렵|무섭|서운|속상|외롭|외로|허탈|자책|조마조마|민망|초조|공허|위축|슬프|지쳤|지쳐|마음이\s*무거|죄책감|긴장|답답|우울)/;
  const normalize=q=>String(q||'').normalize('NFKC').replace(/\s+/g,' ').trim();
  const questionText=typeof module==='object'&&module.exports?require('./question-text.js'):root.ARCANA_QUESTION_TEXT,masked=questionText.mask;
+ const eventEvidence=typeof module==='object'&&module.exports?require('./event-evidence.js'):root.ARCANA_EVENT_EVIDENCE;
  function segments(q){
   const text=masked(q),parts=[];let start=0;
   const rx=/[.!?。！？,;]+|(?:하지만|그런데|반면에|그러나)\s+|((?:했|았|었)(?:는데|지만|고|더니))\s*/g;let m;
@@ -21,10 +22,10 @@
   while((m=rx.exec(text))){add(m.index+(m[1]?.length||0));start=rx.lastIndex;}add(text.length);return parts;
  }
  function actorAt(text,index){
-  let actor='unspecified',evidence='';
-  for(const m of text.slice(0,index).matchAll(SUBJECT)){actor=/^(?:저|제|나|내)$/.test(m[1])?'self':'other';evidence=m[0];}
-  if(/서로/.test(text.slice(0,index)))return {actor:'mutual',evidence:'서로'};
-  return {actor,evidence};
+  let actor='unspecified',evidence='',start=-1;
+  for(const m of text.slice(0,index).matchAll(SUBJECT)){actor=/^(?:저|제|나|내)$/.test(m[1])?'self':'other';evidence=m[0];start=m.index;}
+  if(/서로/.test(text.slice(0,index)))return {actor:'mutual',evidence:'서로',start:text.slice(0,index).lastIndexOf('서로')};
+  return {actor,evidence,start};
  }
  function recipientAt(text,index){
   const matches=[...text.slice(0,index).matchAll(RECIPIENT)];const m=matches.at(-1);
@@ -35,7 +36,7 @@
   if(/(?:면|다면|다면야|경우|가정|라고\s*가정|했으면|았으면|었으면|다면)\b|(?:했|됐|받았|보냈|왔)(?:으면|다면)|(?:했|받았|보냈|왔|제출했|접수됐)을\s*때/.test(text))return 'conditional';
   if(/(?:까\s*봐|을까\s*봐|다고\s*(?:생각|추측|상상)|일지도|인\s*것\s*같|했을까|왔을까|받았을까|보냈을까|꿈에서)|(?:했는지|보냈는지|왔는지|받았는지).{0,8}(?:모르|모릅|알지\s*못)/.test(text))return 'uncertain';
   if(/(?:다는|라는)\s*말|전해\s*들|다고\s*(?:했|하|해|말)/.test(text))return 'reported';
-  const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|확인|제출|공개)|(?:하지|보내지|전하지|받지|오지|나오지|읽지|확인하지|제출하지|공개되지)\s*않/.test(text);
+  const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|확인|제출|공개)|(?:하|보내|전하|받|오|나오|읽|확인하|제출하|공개되)(?:지(?:는|도|만)?|진)\s*않/.test(text);
   const absentState=!completed(text)&&/(?:없|모르|모릅|모른|미정|미공개|미발표)/.test(text);
   if(verbalNegative||absentState)return 'negated';
   if(/(?:하려|할\s*예정|보낼\s*예정|받을\s*예정|계획|앞두|예정)|(?:할|보낼|전할|받을|올|나올|제출할)(?:까|지|까요|게|\s*예정)/.test(text))return 'planned';
@@ -56,13 +57,27 @@
    const unique=nouns.filter((n,i)=>!nouns.slice(0,i).some(p=>n.index>=p.index&&n.end<=p.end));
    for(let i=0;i<unique.length;i++){
     const n=unique[i],next=unique[i+1],end=Math.min(next?.index??part.text.length,n.end+45),tail=part.text.slice(n.end,end);
-    const predicate=tail.match(/보냈|보내|보낼|전했|전하|전할|받았|받은|받|왔|오지|오|올|도착|읽|했|하|할|해/);
-    if(n.kind==='contact'&&predicate)add(part,'contact',n.noun,n.index,end,{direction:/^(?:받|왔|도착)/.test(predicate[0])?'receive':'send',predicate:predicate[0]});
-    if(n.kind==='reply'&&(predicate||/없|기다|못|않/.test(tail)))add(part,'reply',n.noun,n.index,end,{direction:/^(?:받|왔|도착|읽)/.test(predicate?.[0]||'')?'receive':'make',predicate:predicate?.[0]||null,accepting:/^(?:받|읽)/.test(predicate?.[0]||''),waiting:/^(?:[은는이가을를도]|\s)*(?:(?:아직|전혀|계속|줄곧|한참)\s*)*(?:기다|없|안\s*왔|못\s*받|오지\s*않)/.test(tail),benefactive:/해\s*(?:줬|주었)/.test(tail)});
+    const predicate=eventEvidence.predicate(tail),relative=eventEvidence.relative(part.text,n.index,n.end,unique[i-1]?.end||0),wait=eventEvidence.waiting(tail);
+    const verbStart=n.end+(predicate?.index??wait?.start??0),genericActor=eventEvidence.actor(part.text,verbStart,[{start:n.index,end:n.end}]),knownActor=actorAt(part.text,verbStart);
+    const actor=genericActor&&genericActor.start>knownActor.start?genericActor:knownActor;let role={actor:actor.actor,actorEvidence:actor.evidence},readingFromOtherReceipt=false;
+    if(relative&&['contact','reply'].includes(n.kind)){
+     const generic=eventEvidence.actor(part.text,relative.start),known=actorAt(part.text,relative.start),who=generic&&generic.start>known.start?generic:known;
+     add(part,n.kind,n.noun,relative.start,relative.end,{action:relative.action,predicate:relative.predicate,status:relative.status,completed:relative.completed,direction:relative.action,accepting:/^받|^읽/.test(relative.predicate),actor:who.actor,actorEvidence:who.evidence,relative:true});
+     const relativeRecipient=recipientAt(part.text,relative.start),externalDestination=relativeRecipient?.actor==='other'&&!relativeRecipient.incoming;
+     readingFromOtherReceipt=predicate?.action==='read'&&(relative.action==='receive'&&(who.actor==='other'||externalDestination&&!/^받/.test(relative.predicate))||relative.action==='send'&&externalDestination||relative.action==='publish');
+     if(relative.action==='send'&&predicate&&['receive','read'].includes(predicate.action)){
+      const matrix=part.text.slice(n.end,verbStart),matrixGeneric=eventEvidence.actor(matrix,matrix.length),matrixKnown=actorAt(matrix,matrix.length),matrixActor=matrixGeneric&&matrixGeneric.start>matrixKnown.start?matrixGeneric:matrixKnown;
+      const outerGeneric=eventEvidence.actor(part.text,Math.max(0,who.start)),outerKnown=actorAt(part.text,Math.max(0,who.start)),outerActor=outerGeneric&&outerGeneric.start>outerKnown.start?outerGeneric:outerKnown;
+      const reader=matrixActor.start>=0?matrixActor:outerActor;role={actor:reader.actor,actorEvidence:reader.evidence};
+     }
+    }
+    const waitingEvidence=wait?{...wait,start:part.start+n.end+wait.start,end:part.start+end,text:part.source.slice(n.end+wait.start,end)}:null;
+    if(n.kind==='contact'&&predicate)add(part,'contact',n.noun,n.index,end,{direction:predicate.action==='make'?'send':predicate.action,predicate:predicate.text,accepting:/^받|^읽/.test(predicate.text),readingFromOtherReceipt,...role});
+    if(n.kind==='reply'&&(predicate||/없|기다|못|않/.test(tail)))add(part,'reply',n.noun,n.index,end,{direction:predicate?.action||'make',predicate:predicate?.text||null,accepting:/^받|^읽/.test(predicate?.text||''),waitingEvidence,waiting:wait?.status==='asserted'?wait.value:false,absence:/^(?:[은는이가을를도]|\s)*(?:(?:아직|전혀|계속|줄곧|한참)\s*)*(?:없|안\s*왔|못\s*받|오지\s*않)/.test(tail),benefactive:/해\s*(?:줬|주었)/.test(tail),readingFromOtherReceipt,...role});
     if(n.kind==='result'){
      const positive=/(?:합격|선발|당선|승인)/.test(n.noun)&&!/불합격/.test(n.noun),negative=/(?:불합격|탈락|낙방)/.test(n.noun);
-     const known=/나왔|확정|통보|확인했|받았|했|됐|되었|나온/.test(tail),pending=/기다|아직|공개\s*전|발표\s*전|확인\s*전|미공개|미발표|모르|모릅|모른|안\s*나|못\s*받|나오지/.test(tail);
-     if(known||pending||/(?:전이|전이에|전입니다)$/.test(tail.trim()))add(part,'result',n.noun,n.index,end,{known,pending:pending||/(?:전이|전이에|전입니다)$/.test(tail.trim()),outcome:negative?'failed':positive?'passed':null});
+     const known=/나왔|확정|통보|확인했|받았|했|됐|되었|나온/.test(tail),pending=/아직|공개\s*전|발표\s*전|확인\s*전|미공개|미발표|모르|모릅|모른|안\s*나|못\s*받|나오지/.test(tail);
+     if(known||pending||wait||/(?:전이|전이에|전입니다)$/.test(tail.trim()))add(part,'result',n.noun,n.index,end,{known,pending:pending||/(?:전이|전이에|전입니다)$/.test(tail.trim()),waitingEvidence,outcome:negative?'failed':positive?'passed':null});
     }
     if(n.kind==='assessment'&&/끝|마쳤|치렀|쳤|봤|완료|앞두|예정/.test(tail))add(part,'assessment',n.noun,n.index,end,{upcoming:/앞두|예정/.test(tail)&&!/예정.{0,5}(?:아니|취소)/.test(tail)});
     if(n.kind==='submission'&&/제출|투고|보냈|보내|접수/.test(tail))add(part,'submission',n.noun,n.index,end);
@@ -74,6 +89,8 @@
    }
    // A following clause may omit the object: "답장을 보냈다지만 저는 받은 내용이 없어요".
    const priorReply=events.findLast(e=>e.kind==='reply'&&e.end<=part.start);
+   const priorWaiting=events.findLast(e=>['reply','result'].includes(e.kind)&&e.end<=part.start),waitOnly=eventEvidence.waiting(part.text);
+   if(priorWaiting&&waitOnly&&!unique.some(n=>['reply','result'].includes(n.kind))&&eventEvidence.anaphoricWait(part.text,waitOnly.start))add(part,priorWaiting.kind,priorWaiting.object,0,part.text.length,{direction:'wait',waitingEvidence:{...waitOnly,start:part.start+waitOnly.start,end:part.end,text:part.source.slice(waitOnly.start)},inferredObject:true});
    const receipt=part.text.match(/받은\s*(?:것|내용|게)(?:은|는|이|가|도)?\s*없|못\s*받았|받지\s*않았/);
    if(priorReply&&receipt&&!unique.some(n=>n.kind==='reply'))add(part,'reply',priorReply.object,receipt.index,part.text.length,{direction:'receive',accepting:true,waiting:true,inferredObject:true});
    const priorResult=events.findLast(e=>e.kind==='result'&&e.end<=part.start);
@@ -83,28 +100,36 @@
   return events;
  }
  function summarize(events,requests,q){
-  const state={sent:null,received:null,resultKnown:null,resultPublished:null,outcome:null,outcomeScope:null,assessmentCompleted:null,assessmentUpcoming:false,submitted:null,replyWaiting:false,resultWaiting:false};
+  const state={sent:null,received:null,read:null,resultKnown:null,resultPublished:null,outcome:null,outcomeScope:null,assessmentCompleted:null,assessmentUpcoming:false,submitted:null,replyWaiting:false,resultWaiting:false,replyWaitingSource:null,resultWaitingSource:null};
   const relevant=e=>!['conditional','uncertain','planned','reported'].includes(e.status);
   for(const e of events){
    if(e.kind==='assessment'&&e.upcoming&&!e.completed&&!['conditional','uncertain','reported'].includes(e.status))state.assessmentUpcoming=true;
+   const wait=e.waitingEvidence;
+   if(wait?.status==='asserted'&&wait.tense!=='past'&&!['conditional','uncertain','reported'].includes(e.status)&&e.actor!=='other'&&['reply','result'].includes(e.kind)){
+    const key=e.kind==='reply'?'replyWaiting':'resultWaiting';state[key]=wait.value;state[key+'Source']=wait.value?'explicit':'denied';
+   }
    if(!relevant(e))continue;
    const done=e.completed&&e.status==='asserted',missing=e.status==='negated';
+   if(['reply','contact'].includes(e.kind)&&e.direction==='read'&&!e.readingFromOtherReceipt&&e.actor!=='other'&&(done||missing))state.read=done;
+   else if(['reply','contact'].includes(e.kind)&&e.direction==='receive'&&e.actor!=='other'&&(e.accepting||e.recipient?.actor!=='other')&&done)state.read=null;
    if(e.kind==='contact'){
     if(e.actor==='mutual'&&done){state.sent=true;state.received=true;}
     else if(e.direction==='send'&&e.actor!=='other'&&(done||missing))state.sent=done;
-    else if(e.direction==='receive'&&e.actor!=='other'&&(done||missing))state.received=done;
+    else if(['receive','read'].includes(e.direction)&&!e.readingFromOtherReceipt&&e.actor!=='other'&&(e.accepting||e.recipient?.actor!=='other')&&(done||missing&&e.direction!=='read'))state.received=done;
     else if(e.actor==='other'&&done&&e.direction==='make')state.received=true;
    }
    if(e.kind==='reply'){
     const mine=e.actor==='self',toOther=e.recipient?.actor==='other'&&!e.recipient.incoming;
-    const incoming=e.direction==='receive'&&(e.accepting||!toOther)&&e.actor!=='other'||e.direction==='make'&&!mine&&(e.actor==='other'||e.benefactive);
-    if(mine&&e.direction==='make'&&done)state.sent=true;
-    if(incoming&&done){state.received=true;state.replyWaiting=false;}
-    else if((incoming||e.actor!=='self')&&(missing||e.waiting)){state.received=false;state.replyWaiting=true;}
+    const incoming=['receive','read'].includes(e.direction)&&(e.accepting||!toOther)&&e.actor!=='other'||e.direction==='make'&&e.predicate&&!mine&&(e.actor==='other'||e.benefactive);
+    if((mine&&e.direction==='make'||e.actor!=='other'&&e.direction==='send')&&(done||missing))state.sent=done;
+    if(incoming&&done&&!e.readingFromOtherReceipt){state.received=true;state.replyWaiting=false;if(state.replyWaitingSource!=='denied')state.replyWaitingSource='received';}
+    else if(e.direction!=='read'&&(incoming&&missing||e.actor==='unspecified'&&e.absence)){
+     state.received=false;if(!['explicit','denied'].includes(state.replyWaitingSource)){state.replyWaiting=true;state.replyWaitingSource='absence-inference';}
+    }
    }
    if(e.kind==='result'){
-    if(done&&e.known){state.resultKnown=true;state.resultPublished=true;state.outcome=e.outcome;state.outcomeScope=e.timeScope;state.resultWaiting=false;}
-    else if(e.pending||missing){state.resultKnown=false;state.resultWaiting=true;}
+    if(done&&e.known){state.resultKnown=true;state.resultPublished=true;state.outcome=e.outcome;state.outcomeScope=e.timeScope;state.resultWaiting=false;state.resultWaitingSource='known';}
+    else if(e.pending||missing&&!wait){state.resultKnown=false;if(!['explicit','denied'].includes(state.resultWaitingSource)){state.resultWaiting=true;state.resultWaitingSource='absence-inference';}}
    }
    if(e.kind==='assessment'&&(done||missing))state.assessmentCompleted=done;
    if(e.kind==='submission'&&(done||missing))state.submitted=done;
@@ -112,7 +137,7 @@
   // Prior completed evaluations do not resolve a request about a later attempt.
   const futureAttempt=requests.some(r=>r.kind==='forecast'&&((/다음|재도전/.test(r.text)||state.outcomeScope==='past'&&/다음|재도전/.test(q))&&state.outcomeScope!=='next'||state.outcomeScope==='past'&&/이번/.test(r.text)));
   if(state.resultKnown&&futureAttempt){state.previousOutcome=state.outcome;state.resultKnown=null;state.outcome=null;state.assessmentCompleted=null;}
-  state.waiting=state.received!==true&&state.replyWaiting||!state.assessmentUpcoming&&state.resultKnown!==true&&(state.resultWaiting||state.assessmentCompleted===true);
+  state.waiting=state.received!==true&&state.replyWaiting||!state.assessmentUpcoming&&state.resultKnown!==true&&(state.resultWaiting||state.assessmentCompleted===true&&state.resultWaitingSource!=='denied');
   return state;
  }
  function alternativeCount(text){return [...text.matchAll(/([가-힣]+)지(?=\s|,|$)/g)].filter(m=>(m[1].charCodeAt(m[1].length-1)-0xac00)%28===8).length;}
@@ -201,12 +226,13 @@
  }
  function parse(input){
   const question=normalize(input),parts=segments(question),requests=requestsFrom(parts,question),events=eventsFrom(parts),state=summarize(events,requests,question);
+  eventEvidence.bindRequests(requests,events,masked(question),state);
   const generic=question.replace(/[\s.!?。！？,]/g,'');
   const missingChoices=/(?:두\s*(?:가지|개)|둘)\s*중/.test(masked(question))&&/정해|고르|골라|선택|비교/.test(masked(question))&&!/A.{0,80}B|하나는.{1,80}(?:다른|하나는)|(?:첫째|첫\s*번째).{1,80}(?:둘째|두\s*번째)/i.test(masked(question));
   const options=literalEvidence?.extract(question).options||[],missingDefinedOption=requests.some(request=>request.kind==='compare')&&options.length>0&&(options.length<2||options.some(option=>!option.defined));
   const needsContext=missingChoices||missingDefinedOption||!!generic&&/^(?:(?:저는|제가|나는|내가|지금|이제|그|이|저|일|상황|사람|것|거|앞으로|어떻게|뭘|무엇을|할까요|해야할까요|해야하나요|하면좋을까요|해야|할지|모르겠어요|모르겠습니다|될까요|잘|풀릴까요|봐주세요|보아주세요|알려주세요|좀|요|은|는|이|가|을|를|과|와|하고|에|대해|입니다|이에요|예요))+$/u.test(generic)&&!/오늘|하루|전반|전체/.test(question);
   const romantic=/(?:연애|연인|애인|짝사랑|고백|호감|좋아하는\s*(?:사람|분|이)|좋아하.{0,6}사람)/.test(masked(question));
-  return {version:82,question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices||missingDefinedOption?'비교할 선택지의 내용이 필요합니다. 아직 정하지 않은 안의 내용과 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
+  return {version:88,question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices||missingDefinedOption?'비교할 선택지의 내용이 필요합니다. 아직 정하지 않은 안의 내용과 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
  }
  const api=Object.freeze({parse});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_QUESTION_MODEL=api;
 })(typeof globalThis==='object'?globalThis:this);

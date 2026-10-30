@@ -1,0 +1,262 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "ab52e40d04c2b9276c9bec66738574f77a1086eb61d1917826fe2ec5bba0d3a8",
+    "appBytes": 30819912,
+    "webRelease": "16169cdb854648937699bced"
+  },
+  "rows": [
+    {
+      "id": 56,
+      "question": "헤어진 연인이 먼저 안부를 물었어요. 어떻게 답할까요?",
+      "cards": [
+        {
+          "id": "wa14",
+          "rev": true
+        }
+      ],
+      "beforeFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": true,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "afterFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "beforeDirect": "상대가 실제로 전한 내용에 먼저 답하고, 이어가고 싶은 이야기를 한 가지 덧붙여 보세요. ‘핵심 메시지’에 놓인 완드 왕 역방향의 주제는 ‘독단적인 추진’입니다.",
+      "afterDirect": "상대가 실제로 전한 내용에 먼저 답하고, 이어가고 싶은 이야기를 한 가지 덧붙여 보세요. ‘핵심 메시지’에 놓인 완드 왕 역방향의 주제는 ‘독단적인 추진’입니다."
+    },
+    {
+      "id": 68,
+      "question": "친구가 보내 준 긴 답장을 읽었어요. 어떤 태도로 답하면 좋을까요?",
+      "cards": [
+        {
+          "id": "ar18",
+          "rev": false
+        },
+        {
+          "id": "wa06",
+          "rev": true
+        },
+        {
+          "id": "ar06",
+          "rev": true
+        },
+        {
+          "id": "cu13",
+          "rev": true
+        },
+        {
+          "id": "cu04",
+          "rev": true
+        }
+      ],
+      "beforeFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": true,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "afterFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "beforeDirect": "상대가 실제로 전한 내용에 먼저 답하고, 이어가고 싶은 이야기를 한 가지 덧붙여 보세요. ‘실행의 첫 단계’에 놓인 컵 4 역방향의 주제는 ‘닫힌 마음의 변화’입니다.",
+      "afterDirect": "상대가 실제로 전한 내용에 먼저 답하고, 이어가고 싶은 이야기를 한 가지 덧붙여 보세요. ‘실행의 첫 단계’에 놓인 컵 4 역방향의 주제는 ‘닫힌 마음의 변화’입니다."
+    },
+    {
+      "id": 148,
+      "question": "원고를 출판사에 보냈어요. 답을 기다리는 동안 뭘 할까요?",
+      "cards": [
+        {
+          "id": "ar19",
+          "rev": true
+        },
+        {
+          "id": "ar11",
+          "rev": true
+        },
+        {
+          "id": "ar03",
+          "rev": false
+        },
+        {
+          "id": "ar20",
+          "rev": false
+        },
+        {
+          "id": "ar21",
+          "rev": true
+        }
+      ],
+      "beforeFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": true,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "afterFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "beforeDirect": "접수 여부와 안내된 답변 일정을 확인해 두고, 기다리는 동안 진행할 다른 작업을 작게 정해 보세요. ‘실행의 첫 단계’에 놓인 세계 역방향의 주제는 ‘미완의 과제’입니다.",
+      "afterDirect": "접수 여부와 안내된 답변 일정을 확인해 두고, 기다리는 동안 진행할 다른 작업을 작게 정해 보세요. ‘실행의 첫 단계’에 놓인 세계 역방향의 주제는 ‘미완의 과제’입니다."
+    },
+    {
+      "id": 268,
+      "question": "고객에게 제안서를 보냈어요. 답을 기다리며 무엇을 할까요?",
+      "cards": [
+        {
+          "id": "ar12",
+          "rev": true
+        },
+        {
+          "id": "wa14",
+          "rev": true
+        },
+        {
+          "id": "ar14",
+          "rev": false
+        },
+        {
+          "id": "cu09",
+          "rev": true
+        },
+        {
+          "id": "cu01",
+          "rev": true
+        }
+      ],
+      "beforeFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": true,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "afterFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "beforeDirect": "공식 확인 일정과 경로를 정해 두고, 오늘 할 수 있는 다른 일 하나를 골라 보세요. 이미 끝난 평가를 계속 되짚지 않아도 됩니다. ‘실행의 첫 단계’에 놓인 컵 에이스 역방향의 주제는 ‘막힌 감정’입니다.",
+      "afterDirect": "이번에 제공할 일과 끝났다고 볼 기준을 먼저 정하고, 시간·비용·서로의 책임을 확인해 보세요. ‘실행의 첫 단계’에 놓인 컵 에이스 역방향의 주제는 ‘막힌 감정’입니다."
+    },
+    {
+      "id": 282,
+      "question": "답변을 기다릴 때 휴대폰을 계속 확인하는 이유가 뭘까요?",
+      "cards": [
+        {
+          "id": "wa05",
+          "rev": false
+        },
+        {
+          "id": "ar06",
+          "rev": true
+        },
+        {
+          "id": "cu01",
+          "rev": true
+        },
+        {
+          "id": "sw11",
+          "rev": true
+        },
+        {
+          "id": "wa04",
+          "rev": false
+        }
+      ],
+      "beforeFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": true,
+        "replied": false,
+        "noConflict": false,
+        "waiting": true,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "afterFacts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": true,
+        "upcoming": false,
+        "replyUnknown": false
+      },
+      "beforeDirect": "‘핵심’에 놓인 완드 5의 주제는 ‘다양한 경쟁’입니다. 이 주제가 지금 상황과 맞닿는지, 실제로 반복된 장면을 떠올려 보세요. 실제 원인은 카드만으로 확인할 수 없으므로, 관찰한 사실과 나의 해석을 나누어 보세요.",
+      "afterDirect": "‘핵심’에 놓인 완드 5의 주제는 ‘다양한 경쟁’입니다. 이 주제가 지금 상황과 맞닿는지, 실제로 반복된 장면을 떠올려 보세요. 실제 원인은 카드만으로 확인할 수 없으므로, 관찰한 사실과 나의 해석을 나누어 보세요."
+    }
+  ],
+  "findings": [
+    "56: unknown canonical receipt must not erase independently recognized incoming greeting when the only canonical reply event is a planned response.",
+    "68: a sender inside a relative clause must not become the reader of its head noun.",
+    "148/268: a later what-shall-I-do question incorrectly makes the existing waiting event planned; predicate-level waiting must retain its own modality.",
+    "282: waiting alone does not prove absence of a reply; a habitual when-clause does not prove a current wait. This is distinguished from actual regressions."
+  ],
+  "scope": "Known editorial regression review. These are actual preliminary outputs and not an untouched evaluation."
+}

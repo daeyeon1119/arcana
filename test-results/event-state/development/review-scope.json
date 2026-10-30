@@ -1,0 +1,122 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "readingsSHA256": "b2b35baab930978aae4838ea2d4700f48408b11070f6956c0439ff1400a14964",
+  "directlyRead": [
+    {
+      "id": "d01",
+      "spread": "five",
+      "directSHA256": "d1cd0ef19573a933fcd1f98ae621d0fd7ca6c247cad3667198a189d77f5591e2"
+    },
+    {
+      "id": "d02",
+      "spread": "five",
+      "directSHA256": "7856fd6de29625e176dad183fceb63709a1145449b41cb3a4c2534fe9cd92776"
+    },
+    {
+      "id": "d03",
+      "spread": "five",
+      "directSHA256": "ad51c3573a1746b7265bcdc3ae4c88bedaf7a28ddc04eed0a649ffa258d81825"
+    },
+    {
+      "id": "d04",
+      "spread": "five",
+      "directSHA256": "2bea88fbde7c89aa8e2c713a1f37de2500cc0a3694d56dbe0898c65a12e88e24"
+    },
+    {
+      "id": "d05",
+      "spread": "five",
+      "directSHA256": "ac78499d24115abfc99cd7e7c3173245b516243729dbc26846a6f05768c3e192"
+    },
+    {
+      "id": "d06",
+      "spread": "five",
+      "directSHA256": "732f4ad1533cc4996ecadbd1a222814525b0cb4bf1623e5f14b399db195310d9"
+    },
+    {
+      "id": "d07",
+      "spread": "five",
+      "directSHA256": "775d904f56b82d8556ce4d110398ebe7029d22007461a2682371e6c9fd18a5e4"
+    },
+    {
+      "id": "d08",
+      "spread": "five",
+      "directSHA256": "e7fc53cdded886711ba320af388e6128fcd7b5865cb55a52a6e105acbf0e968a"
+    },
+    {
+      "id": "d09",
+      "spread": "five",
+      "directSHA256": "d201c20c55bfd0129dae95e10e2370f7f4aa956f4a5d61eeca154e381b3f83b0"
+    },
+    {
+      "id": "d10",
+      "spread": "five",
+      "directSHA256": "a77a51ec0373c557b4878fac454388ceac575d960e48a79088c58c259e1543f2"
+    },
+    {
+      "id": "d11",
+      "spread": "five",
+      "directSHA256": "ac4a42d9e0588e7b17f88c3ef33a5990123e95340e3fdaa9fbc1e28388f09e8f"
+    },
+    {
+      "id": "d12",
+      "spread": "five",
+      "directSHA256": "2145122900f99e96aa68906791ffbf2f292f84904829c60a1da21ba06f68a4ea"
+    },
+    {
+      "id": "d13",
+      "spread": "five",
+      "directSHA256": "cc2b384cf37da2f5575a18ffee9eff26c61310c5ae0dabc92c597eb98cbedafe"
+    },
+    {
+      "id": "d14",
+      "spread": "five",
+      "directSHA256": "a7c04b6b3ef6f147587d57f1956adbbcd9c5362036532922e4bd23e407bbbecd"
+    },
+    {
+      "id": "d15",
+      "spread": "five",
+      "directSHA256": "a0c1fd99d129b11326dc2a9d443ec5fc57b8700cf4c95fa2dea4cf355ae10f9b"
+    },
+    {
+      "id": "d16",
+      "spread": "five",
+      "directSHA256": "e46ee5e86b870602e2588bfe04e2291fe7c3a6282dd693696bcdc1a2504fb817"
+    },
+    {
+      "id": "d17",
+      "spread": "five",
+      "directSHA256": "1e1a15dbf4c597e2a88413cadd646b8ef2bd4f5f3e00efc83b60ff9c11de2877"
+    },
+    {
+      "id": "d18",
+      "spread": "five",
+      "directSHA256": "d2b7e55f3326fecedc3d7ba1a7584ee50fb771538f436512d04cbb9961e10232"
+    },
+    {
+      "id": "d19",
+      "spread": "five",
+      "directSHA256": "4ea7d46933b6058abdc892a91539e8e23b73ce01fa9402bade6f5d7fb939dad8"
+    },
+    {
+      "id": "d20",
+      "spread": "five",
+      "directSHA256": "d0536a1567c7a2e22191b7950e8645b5319948ccfd8f06572fd3676007656251"
+    }
+  ],
+  "otherVariants": "All 160 actual outputs saved; mechanical checks only except the separately recorded controlled UI cases.",
+  "professionalQualityScore": null,
+  "remainingFailures": [
+    "d11 clinical substring false positive",
+    "d15 unrelated topic inherits relational domain",
+    "d16 quoted sentence editing target not grounded",
+    "d17 hypothetical request underspecified",
+    "generic/repetitive advice and weak cross-card applications remain"
+  ],
+  "scope": "Previously read twenty primary strings are byte-identical after the operation-precedence and modifier-scope corrections. This is known regression evidence, not a second new evaluation or expert review."
+}

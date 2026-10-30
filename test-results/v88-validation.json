@@ -1,0 +1,787 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "checks": [
+    {
+      "artifact": "test-results/stress-summary.json",
+      "sha256": "057e310665e35b54f40d95155bfdee017f7870e066a84b750ae5b122d522e497",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/editorial/v88-summary.json",
+      "sha256": "b2d461bc23b3dc498cdb5c7be18cf38c44f46651775ee855df8924249ea8541b",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/synthesis/v88-summary.json",
+      "sha256": "107ec885c31aa435cb1b559188833077c2090088db17af94ecfa62ef85b0a837",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/portable-summary.json",
+      "sha256": "bc8fea63963f574a35eeda458bdb740df739383d2d478503e55bf17d762bee25",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/ui-summary.json",
+      "sha256": "f48e67ca6628266a45754130e38200d91fae3857f26d60215a89c6dc93831a4c",
+      "appSHA256": null,
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/images-summary.json",
+      "sha256": "806baaaf268d5fe0b62529ead31138ab2e3e8f1da85d632f98b3204681cf8b32",
+      "appSHA256": null,
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/grounding/ui-summary.json",
+      "sha256": "f7e39f9255540a7ecdc83de21bbb49b193388f65ec91d7a58dcaa28c85b2e603",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/alignment/ui-summary.json",
+      "sha256": "50edfb19eeeede3fa057b0888692f1baf1fce118b60a0ad6372343403d5624b6",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/verification/ui-summary.json",
+      "sha256": "96ea06a30ff118170b5e6b8edda4cec3c2c39e38cb39c53c7647f183fb537254",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/build-repro-v88.json",
+      "sha256": "45190c8327552429a5e3bf80608d6383f38e9c006557bd23e2af548191d550cc",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/lens/ui-summary.json",
+      "sha256": "558de873de0de144ccff8164c318b5e965b313ff303672362aa2c454b4d96fb8",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/device/summary.json",
+      "sha256": "2cae4ff67394152d0f5432e77f07689baf6cd2e4608c841035cc0a0fd85d20b2",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/event-state/ui-summary.json",
+      "sha256": "4f5f69dc06c997e86b586cc786795d160f8efff6182511d55efbfbb1f659c8f3",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/grounding/v88/development/summary.json",
+      "sha256": "4c386a23ed7b1a31c4989cdac77dc731345ab76984d8b38a60f677d261fbb57d",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/grounding/v88/regression/summary.json",
+      "sha256": "e57b8145735859e96c2ab42159e284f594a032ddd4f604cf4b809f55b1f266a7",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/alignment/v88/development/summary.json",
+      "sha256": "9b6db1501b208d11c2429ed1e5db5af7cad9b48fda02d5779885efd5dc1e4191",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/alignment/v88/regression/summary.json",
+      "sha256": "f52f3c0551fe15b3e4a0fad139f6a9b3d8c0f447ff621bd38d42652a273c9783",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v88/development/summary.json",
+      "sha256": "889a4190659e6b14d052ce7de21fd4edeb2fdf8f0a140e6ff892222e04278c40",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v88/regression/summary.json",
+      "sha256": "34285ea0ebee392cefda053787f64be3f113f0940ac982a509e8dac736a36ea8",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v88/fresh-regression/summary.json",
+      "sha256": "da59d0177abb42ca989b1590337afd3d41ea143f761b401baeef0027041d0464",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/verification/v88/development/summary.json",
+      "sha256": "8eb3e84a841c8d3ed060d8c7ca4a1e3fadd743823d96db73b45b8e50c32f67dd",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/verification/v88/regression/summary.json",
+      "sha256": "65105ae00a75b091c35bde39ea2760fda809d1b61d27d57c43b9eae506a5371b",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/lens/v88/development/summary.json",
+      "sha256": "59034be9980fadff319d1536714d9b9d7a70b6a093cc173055e9e8abde2a067d",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/lens/v88/regression/summary.json",
+      "sha256": "3f17c0764023c025317ef501385cc5076c9c0f6fbdb6cc00aa731afd0e5c5be8",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/event-state/development/summary.json",
+      "sha256": "0255e488edd9783b49910ca97c6d68f4964fccd3270d15458a5c2d7e56f5b4d3",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/event-state/regression/summary.json",
+      "sha256": "1ef26d86a5c7249e4e4de9c810ba106de72e24c90b1f6346d10a111916c78156",
+      "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+      "scope": "Technical or known regression evidence; no semantic/expert score."
+    },
+    {
+      "artifact": "test-results/mat/after-geometry.json",
+      "sha256": "4e08073c333da022a00a430e51ddbcf28c729b9a756db217f00ef547d64e047f",
+      "layouts": 32
+    },
+    {
+      "artifact": "test-results/question-text/unit-summary.json",
+      "sha256": "973fabd79c915f6fda68d7b7b77cdfacc0bc3baf8fea94fd4f0b023d4c9c7bbf",
+      "scope": "Known unit/development assertions, not new questions."
+    },
+    {
+      "artifact": "test-results/question-model/unit-summary.json",
+      "sha256": "c48cf7b8a11215cc4b0c56a9eadc99241f14773f83c20e9f4829eceb3a68ff75",
+      "scope": "Known unit/development assertions, not new questions."
+    },
+    {
+      "artifact": "test-results/task-policy/unit-summary.json",
+      "sha256": "065ccdf9f5981707625b8c1f2409fa6cb2f793fa4c4c3ca21bb9fc18e138987e",
+      "scope": "Known unit/development assertions, not new questions."
+    },
+    {
+      "artifact": "test-results/grounding/evidence-summary.json",
+      "sha256": "43b547c60592145245ff75fde6bc2175cee7e1f8e29338fe870b6911b8ce7bfb",
+      "scope": "Known unit/development assertions, not new questions."
+    },
+    {
+      "artifact": "test-results/grounding/bridge-summary.json",
+      "sha256": "f293c5cabe19a514a924a0b051c786100f1aa3f2ca0476b5c79fe6e81673613e",
+      "scope": "Known unit/development assertions, not new questions."
+    },
+    {
+      "artifact": "test-results/verification/unit-summary.json",
+      "sha256": "2cd898fef3687dca63364d85419f81365bf8ef6778c87e8234200630618d6d9e",
+      "scope": "Known unit/development assertions, not new questions."
+    },
+    {
+      "artifact": "test-results/event-state/development/property-summary.json",
+      "sha256": "a3dec33e1e3fdd38e512b13977f1e073c11b4f5ddc2a7c4965abc14109d32848",
+      "scope": "Known unit/development assertions, not new questions."
+    },
+    {
+      "artifact": "test-results/event-state/development/review-scope.json",
+      "sha256": "b0bdad9bb0f7532d278bc87fe79efe3b6600e1548c2084efa9a58b4bc021ada4",
+      "scope": "Explicit agent review scope, not independent/expert review."
+    },
+    {
+      "artifact": "test-results/event-state/regression/review-scope.json",
+      "sha256": "28306cdf29c1722d0506453cd3333b4838b156c10ea11e49d6ad1a2cad2b501e",
+      "scope": "Explicit agent review scope, not independent/expert review."
+    },
+    {
+      "artifact": "test-results/editorial/v88-review.json",
+      "sha256": "81a87e8617ed64e753400aeb7b5eb36d5929e8af43e606e5819cd355491ead38"
+    }
+  ],
+  "fullTestExitCode": 0,
+  "old704RegressionChainExitCode": 0,
+  "fullTestLogSHA256": "b418ac639be13f3c6570a9cac21738e1f801901081d605e0a1386597ba99b1a6",
+  "oldRegressionLogSHA256": {
+    "v88-final2-task-reg.log": "7e0a1047d9ba8a4b79269f6d73b21e0ef3091ca764a129046d8964529d3d8648",
+    "v88-final2-grounding-reg.log": "e4023d2d1ce0315e325abcddaffbcab159e0460aceed3e3f06da61fb0c9a9483",
+    "v88-final2-alignment-reg.log": "4ecbac36cdca8536a6eb5a325edabc992c77f534c175dda0f3d829969eea549e"
+  },
+  "preservedFirstOutputs": {
+    "test-results/grounding/first/readings.json": "150111acdbd495e434017c89a751fbc0d0573bec4ac1c10a342e99df6423d821",
+    "test-results/alignment/first/readings.json": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+    "test-results/verification/first/readings.json": "0f97498364ce94959a852f87768e820b9b14727d01815178289d6d0a10d6613e",
+    "test-results/lens/first/readings.json": "d7263373aed6f8bcd5e4c9fb38dbb6df1b1db0e71f32366b2e7a9a6b40dc2855",
+    "test-results/event-state/first/readings.json": "91bdf1a5c929defdceb393b827563b13dcb2f3200089b23b8cbdeb921369cce4"
+  },
+  "units": {
+    "test-results/question-text/unit-summary.json": {
+      "total": 38,
+      "passed": 38,
+      "note": "Known development properties for quote provenance, non-factual quotations and explicit content checks. Not unseen/expert evidence."
+    },
+    "test-results/question-model/unit-summary.json": {
+      "developmentChecks": 265,
+      "passed": 265,
+      "note": "Authored development/property checks. Includes regressions informed by actual first outputs. Not independent accuracy or professional evaluation."
+    },
+    "test-results/task-policy/unit-summary.json": {
+      "checks": [
+        {
+          "name": "ordinary operation remains the same across topic labels: communicate",
+          "ok": true
+        },
+        {
+          "name": "ordinary operation remains the same across topic labels: inquire",
+          "ok": true
+        },
+        {
+          "name": "ordinary operation remains the same across topic labels: verify",
+          "ok": true
+        },
+        {
+          "name": "ordinary operation remains the same across topic labels: improve",
+          "ok": true
+        },
+        {
+          "name": "ordinary operation remains the same across topic labels: cope",
+          "ok": true
+        },
+        {
+          "name": "urgent outranks communicate",
+          "ok": true
+        },
+        {
+          "name": "urgent outranks cope",
+          "ok": true
+        },
+        {
+          "name": "urgent outranks coordinate",
+          "ok": true
+        },
+        {
+          "name": "urgent outranks prepare",
+          "ok": true
+        },
+        {
+          "name": "urgent outranks improve",
+          "ok": true
+        },
+        {
+          "name": "urgent outranks finish",
+          "ok": true
+        },
+        {
+          "name": "boundary outranks communicate",
+          "ok": true
+        },
+        {
+          "name": "boundary outranks cope",
+          "ok": true
+        },
+        {
+          "name": "boundary outranks coordinate",
+          "ok": true
+        },
+        {
+          "name": "boundary outranks prepare",
+          "ok": true
+        },
+        {
+          "name": "boundary outranks improve",
+          "ok": true
+        },
+        {
+          "name": "boundary outranks finish",
+          "ok": true
+        },
+        {
+          "name": "abuse outranks communicate",
+          "ok": true
+        },
+        {
+          "name": "abuse outranks cope",
+          "ok": true
+        },
+        {
+          "name": "abuse outranks coordinate",
+          "ok": true
+        },
+        {
+          "name": "abuse outranks prepare",
+          "ok": true
+        },
+        {
+          "name": "abuse outranks improve",
+          "ok": true
+        },
+        {
+          "name": "abuse outranks finish",
+          "ok": true
+        },
+        {
+          "name": "reply not received cannot become a new contact instruction",
+          "ok": true
+        },
+        {
+          "name": "preparing questions is distinct from sending them while a reply is pending",
+          "ok": true
+        },
+        {
+          "name": "received answer is acknowledged when the request refers to it, without inventing its contents",
+          "ok": true
+        },
+        {
+          "name": "a global received flag does not attach an unrelated explanation to that reply",
+          "ok": true
+        },
+        {
+          "name": "completed submission is not told to finish again",
+          "ok": true
+        },
+        {
+          "name": "clinical intervention stays with existing clinical path: 약 용량을 어떻게 줄이면 좋을까요?",
+          "ok": true
+        },
+        {
+          "name": "clinical intervention stays with existing clinical path: 통증을 개선할 방법을 알려 주세요.",
+          "ok": true
+        },
+        {
+          "name": "clinical intervention stays with existing clinical path: 치료를 끝낼 방법을 알려 주세요.",
+          "ok": true
+        },
+        {
+          "name": "an unrelated document does not make clinical intervention an ordinary editing task",
+          "ok": true
+        },
+        {
+          "name": "asking a clinician is supported without choosing a clinical outcome",
+          "ok": true
+        },
+        {
+          "name": "financial transaction changes do not become general improvement experiments",
+          "ok": true
+        },
+        {
+          "name": "a financial document can receive editing support without an investment instruction",
+          "ok": true
+        },
+        {
+          "name": "condition checking does not prescribe a bank, amount or personal financial history",
+          "ok": true
+        },
+        {
+          "name": "unhandled intentions keep their existing route",
+          "ok": true
+        },
+        {
+          "name": "pure planner does not mutate original evidence or input settings",
+          "ok": true
+        },
+        {
+          "name": "quoted requests cannot change the actual editing operation",
+          "ok": true
+        },
+        {
+          "name": "background frame cannot supply the requested operation: 범위를 바꾸려면 어떤 내용을 설명해야 할까요?",
+          "ok": true
+        },
+        {
+          "name": "background frame cannot supply the requested operation: 수업을 시작할 때 어떤 조건을 확인해야 할까요?",
+          "ok": true
+        },
+        {
+          "name": "background frame cannot supply the requested operation: 협상을 앞두고 어떤 기준을 세워야 할까요?",
+          "ok": true
+        },
+        {
+          "name": "background frame cannot supply the requested operation: 직무를 바꾸려면 어떤 경험을 먼저 정리해야 할까요?",
+          "ok": true
+        },
+        {
+          "name": "generic how-to predicate can inherit its explicit purpose",
+          "ok": true
+        },
+        {
+          "name": "requested predicate outranks a preparation noun before it",
+          "ok": true
+        },
+        {
+          "name": "generic verb without its required object does not imply task allocation: 검토 의견을 어떻게 나누어 볼까요?",
+          "ok": true
+        },
+        {
+          "name": "generic verb without its required object does not imply task allocation: 단가를 어떻게 조정할까요?",
+          "ok": true
+        },
+        {
+          "name": "explicit role allocation keeps its operation",
+          "ok": true
+        },
+        {
+          "name": "actual bounded question model supplies a usable task: 질문을 정리하는 방법을 알려 주세요.",
+          "ok": true
+        },
+        {
+          "name": "actual bounded question model supplies a usable task: 신청 조건은 무엇을 확인해야 할까요?",
+          "ok": true
+        },
+        {
+          "name": "actual bounded question model supplies a usable task: 자료를 어떻게 설명할까요?",
+          "ok": true
+        },
+        {
+          "name": "artifact target survives broad family and financial labels: 안내문",
+          "ok": true
+        },
+        {
+          "name": "artifact target survives broad family and financial labels: 회칙 문서",
+          "ok": true
+        },
+        {
+          "name": "artifact target survives broad family and financial labels: 교육 자료",
+          "ok": true
+        },
+        {
+          "name": "an absent participant is not an existing collaborator: 팀원",
+          "ok": true
+        },
+        {
+          "name": "an absent participant is not an existing collaborator: 동료",
+          "ok": true
+        },
+        {
+          "name": "an absent participant is not an existing collaborator: 협업자",
+          "ok": true
+        },
+        {
+          "name": "a financial template needs a financial referent beyond a homonymous loan word",
+          "ok": true
+        },
+        {
+          "name": "a homographic substring inside an unrelated ending does not satisfy the artifact target",
+          "ok": true
+        },
+        {
+          "name": "a recipient job title is not itself a request to change responsibilities",
+          "ok": true
+        },
+        {
+          "name": "a submitted stage requires conditions after receipt rather than new eligibility",
+          "ok": true
+        },
+        {
+          "name": "quoted content checking does not assert the quote as a personal event: 용량을 항상 바꿔도 된다",
+          "ok": true
+        },
+        {
+          "name": "quoted content checking does not assert the quote as a personal event: 수익은 무조건 보장된다",
+          "ok": true
+        },
+        {
+          "name": "explicit current participants outrank past participants: 동료와 함께 맡아요",
+          "ok": true
+        },
+        {
+          "name": "explicit current participants outrank past participants: 협업자가 없고 혼자 맡아요",
+          "ok": true
+        },
+        {
+          "name": "hypothetical collaborators do not assert their presence",
+          "ok": true
+        },
+        {
+          "name": "generic product-improvement prose cannot overwrite a personal practice task",
+          "ok": true
+        },
+        {
+          "name": "asking a contact person for practical information does not assert a collaborative team",
+          "ok": true
+        },
+        {
+          "name": "preparing questions may retain supported clinical detail when no missing reply is stated",
+          "ok": true
+        },
+        {
+          "name": "requested eligibility and required documents are requirements, not editing an artifact",
+          "ok": true
+        },
+        {
+          "name": "question preparation accepts an interrogative complement without inventing a received answer",
+          "ok": true
+        },
+        {
+          "name": "editing does not supply a factual document object: 영상",
+          "ok": true
+        },
+        {
+          "name": "editing does not supply a factual document object: 사진",
+          "ok": true
+        },
+        {
+          "name": "editing does not supply a factual document object: 음악",
+          "ok": true
+        },
+        {
+          "name": "editing does not supply a factual document object: 작품",
+          "ok": true
+        },
+        {
+          "name": "shared object and bounded recent topic: 안내문을 어떻게 고치고 어떻게 설명할까요?",
+          "ok": true
+        },
+        {
+          "name": "shared object and bounded recent topic: 안내문을 어떻게 고치고 내 선택을 어떻게 설명할까요?",
+          "ok": true
+        },
+        {
+          "name": "shared object and bounded recent topic: 안내문을 고쳤습니다. 어떻게 설명할까요?",
+          "ok": true
+        },
+        {
+          "name": "shared object and bounded recent topic: 안내문을 고쳤습니다. 운동을 끝냈습니다. 어떻게 설명할까요?",
+          "ok": true
+        },
+        {
+          "name": "bounded omitted document object: 문서를 준비하려고 합니다. 확인한 제목을 구별해서 어떻게 준비할까요?",
+          "ok": true
+        },
+        {
+          "name": "bounded omitted document object: 문서를 준비하려고 합니다. 노래를 어떻게 준비할까요?",
+          "ok": true
+        },
+        {
+          "name": "bounded omitted document object: 자료를 확인했습니다. 이를 어떻게 고칠까요?",
+          "ok": true
+        },
+        {
+          "name": "a generic question cue retains its stated purpose: 무엇부터 해야 할까요",
+          "ok": true
+        },
+        {
+          "name": "a generic question cue retains its stated purpose: 뭘 해야 할까요",
+          "ok": true
+        },
+        {
+          "name": "a generic question cue retains its stated purpose: 뭐부터 할까요",
+          "ok": true
+        },
+        {
+          "name": "a generic question cue retains its stated purpose: 어떻게 할까요",
+          "ok": true
+        },
+        {
+          "name": "a generic complement inherits the explicit preceding purpose: 순서",
+          "ok": true
+        },
+        {
+          "name": "a generic complement inherits the explicit preceding purpose: 방법",
+          "ok": true
+        },
+        {
+          "name": "a generic complement inherits the explicit preceding purpose: 범위",
+          "ok": true
+        },
+        {
+          "name": "a generic complement inherits the explicit preceding purpose: 단계",
+          "ok": true
+        },
+        {
+          "name": "a generic complement inherits the explicit preceding purpose: 기준",
+          "ok": true
+        },
+        {
+          "name": "a requested first step is not replaced by its subordinate completion goal",
+          "ok": true
+        },
+        {
+          "name": "an omitted explanation object may retain the active document topic: 번호는 확인했습니다. archive$&$$.pdf의 날짜는 검토 중입니다.",
+          "ok": true
+        },
+        {
+          "name": "an omitted explanation object may retain the active document topic: 준비했습니다.",
+          "ok": true
+        },
+        {
+          "name": "a new explicit topic ends omitted document inheritance",
+          "ok": true
+        },
+        {
+          "name": "an explicit document remains an artifact when edited: 문서",
+          "ok": true
+        },
+        {
+          "name": "an explicit document remains an artifact when edited: 자료",
+          "ok": true
+        },
+        {
+          "name": "an explicit document remains an artifact when edited: 안내문",
+          "ok": true
+        }
+      ],
+      "total": 98,
+      "note": "Authored development/property checks for request routing, object compatibility and factual/safety invariants. Includes regressions informed by both preserved first-run question sets. Not a first-seen quality benchmark or professional evaluation."
+    },
+    "test-results/grounding/evidence-summary.json": {
+      "total": 43,
+      "passed": 43,
+      "note": "Authored development/property checks for literal spans and provenance. Not an independent quality evaluation."
+    },
+    "test-results/grounding/bridge-summary.json": {
+      "total": 1887,
+      "passed": 1887,
+      "note": "Development matrix/provenance checks across 78 cards, 2 orientations and 12 composition types. Not 1872 user questions, an unseen benchmark or a professional quality score."
+    },
+    "test-results/verification/unit-summary.json": {
+      "total": 96,
+      "passed": 96,
+      "note": "Development properties for literal targets, predicates, states, actors and modality. Not an independent quality or expert score."
+    },
+    "test-results/event-state/development/property-summary.json": {
+      "packageVersion": "88.0.0",
+      "sourceSHA256": {
+        "src/event-evidence.js": "3d17eb397dcf3607ce73dda6c6ce2e416316e77c2d0495c9f00c1b6f7501a1f0",
+        "src/question-model.js": "11fbda193f5fb3636bdf744f5a3c2dfdc98667f976cbec4e5d95d9c7ae761d6a"
+      },
+      "properties": 313,
+      "passed": 313,
+      "topicAndReadAssertions": 13,
+      "failures": [],
+      "note": "Known author-written grammar and metamorphic development properties plus 13 topic/read assertions. These are not distinct unseen user questions, semantic expert scores or a claim of unrestricted Korean understanding."
+    }
+  },
+  "existingEditorialLabelMatches": {
+    "intent": 320,
+    "domain": 303,
+    "questions": 320
+  },
+  "strictLegacyDiagnosticDisagreements": [
+    {
+      "group": "sent",
+      "variant": 0,
+      "question": "좋아하는 사람에게 문자를 보냈는데 답장은 없어요. 더 보내고 싶은 마음을 어떻게 다룰까요?",
+      "intentMatch": false,
+      "domainMatch": true,
+      "facts": []
+    },
+    {
+      "group": "sent",
+      "variant": 2,
+      "question": "연락을 전했지만 회신을 못 받았습니다. 이 상황에서 제가 지킬 태도는 무엇인가요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    },
+    {
+      "group": "accessibility",
+      "variant": 0,
+      "question": "보드게임 규칙을 색만으로 구분해 만들었어요. 여러 사람이 편하게 쓰도록 어떻게 보완할까요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    }
+  ],
+  "strictLegacyIntentDisagreements": [
+    {
+      "id": "u01",
+      "question": "팀원이 제 일정 제안에 답해 줬어요. 그래도 거절당할까 봐 초조한 마음을 어떻게 다룰까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "replied",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u04",
+      "question": "친구에게 연락을 했지만 자신이 없어요. 받은 대답은 없고 기다리는 중입니다. 마음을 어떻게 돌볼까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "sent",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        },
+        {
+          "key": "replied",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        },
+        {
+          "key": "noReply",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u05",
+      "question": "결과가 나왔다는 말을 들었지만 아직 공식 내용을 확인하지 않았어요. 불안을 다룰 방법을 알려 주세요.",
+      "intent": false,
+      "facts": [
+        {
+          "key": "known",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    }
+  ],
+  "remainingSemanticLimits": [
+    "e01 missed unread-content prerequisite in applied request",
+    "e03/e06/e16 request-specific actions too generic",
+    "e07 purpose clause asking is parsed as general prepare",
+    "e09 read acknowledgment and question example missing, card bridge off topic",
+    "e11 unrelated subject/domain leakage",
+    "e13 requested allocation insufficient",
+    "e14 conditional reflection weak",
+    "remaining generality/repetition across domains",
+    "l07 forecast advice remains too generic for the requested confidence in reading aloud",
+    "l17 financial metadata and condition-specific depth remain limited",
+    "l20 two-sentence formatting request is not implemented",
+    "domain depth and repeated general imperatives remain below the professional target",
+    "d11 clinical substring false positive",
+    "d15 unrelated topic inherits relational domain",
+    "d16 quoted sentence editing target not grounded",
+    "d17 hypothetical request underspecified",
+    "generic/repetitive advice and weak cross-card applications remain"
+  ],
+  "technicalPass": true,
+  "qualityScore": null,
+  "physicalPhoneUIOrAirplaneModeVerified": false,
+  "independentExpertReview": false,
+  "note": "Final exact-build technical checks passed. First outputs remain immutable. Fact contracts passing does not mean every requested intent is understood. Current physical Android UI/control is unavailable; public Chrome emulation is separate. No paid service or native model dependency added."
+}

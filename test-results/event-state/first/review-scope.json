@@ -1,0 +1,128 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337",
+    "appBytes": 30822350,
+    "webRelease": "7dc985672ec05c8781873acc"
+  },
+  "readingsSHA256": "91bdf1a5c929defdceb393b827563b13dcb2f3200089b23b8cbdeb921369cce4",
+  "candidateCommit": "83cd30ac42ecebe8045eb8f9315a989626f95f82",
+  "directlyRead": [
+    {
+      "id": "e01",
+      "spread": "five",
+      "directSHA256": "b4baa61241656a9c67430d69f0e01972527d07dbc261689f98e6a10b35f379ee"
+    },
+    {
+      "id": "e02",
+      "spread": "five",
+      "directSHA256": "fa7fb217b6481e09de66e3a43a8a1bed9d1f866cd6d86839ae427544128dc98f"
+    },
+    {
+      "id": "e03",
+      "spread": "five",
+      "directSHA256": "5fa8a8c9500383b5a84d0f84db00c5f68f05298958d78921640cb30c993d399b"
+    },
+    {
+      "id": "e04",
+      "spread": "five",
+      "directSHA256": "c3a6e0ab5bc12f52e69811b71604cd0dfdb5c5a9b5dfb4aafc1020a2411a83e3"
+    },
+    {
+      "id": "e05",
+      "spread": "five",
+      "directSHA256": "fa8b05a27c587103458588c55e6e1c5e97a5fefeb2a27020bd3747cee9ae103e"
+    },
+    {
+      "id": "e06",
+      "spread": "five",
+      "directSHA256": "25a4eda4e31e1f3a04879f49d94a57e3f660b0893569d7b86ab87c6b007b943c"
+    },
+    {
+      "id": "e07",
+      "spread": "five",
+      "directSHA256": "e8071b0680eb6ac36ee195af5f95949a4cda03c5c655688fdd9ebc1eaf3464b3"
+    },
+    {
+      "id": "e08",
+      "spread": "five",
+      "directSHA256": "a5e8e823405910d10d39c3feb2709c29bea76bb9149734f5e4d882e9a0ad3ea4"
+    },
+    {
+      "id": "e09",
+      "spread": "five",
+      "directSHA256": "54e8e72b203fa729341c2fe491b731b62da6847d2de13c45b5a4c9ce4ce2b2c6"
+    },
+    {
+      "id": "e10",
+      "spread": "five",
+      "directSHA256": "af21d8e7eb687f90c0033ea8bf75595dab9940860be2701af476f01b389e6e6d"
+    },
+    {
+      "id": "e11",
+      "spread": "five",
+      "directSHA256": "d8ba8e262c1bf7e198fe85f9c8938600192d3d39122ce9beda94c1e66c02de84"
+    },
+    {
+      "id": "e12",
+      "spread": "five",
+      "directSHA256": "367b3862f2f64867f6fb40b372b100d346574b81391e47798fb043b682b24c63"
+    },
+    {
+      "id": "e13",
+      "spread": "five",
+      "directSHA256": "997b5202bc8df0fc9dfa5748cf93d6f8d66d04a552a96277f937f3fb6b3106f0"
+    },
+    {
+      "id": "e14",
+      "spread": "five",
+      "directSHA256": "75b1be9eae63e8fe46d2131bcce7b0ad631ee6a29ab3d978b8b1105580213f27"
+    },
+    {
+      "id": "e15",
+      "spread": "five",
+      "directSHA256": "3b67fc28e3aa28fae5752fd8dd87eb14baefee78f3b595ddbab907c587c24c12"
+    },
+    {
+      "id": "e16",
+      "spread": "five",
+      "directSHA256": "b7953ec73b17d1cba1993febf72b5038b08d7e4b41a545e102674e7a3bff36c5"
+    },
+    {
+      "id": "e17",
+      "spread": "five",
+      "directSHA256": "66dba438f9447c5e0c242244de440b5b92cc600efecc16601f391cabfa57453e"
+    },
+    {
+      "id": "e18",
+      "spread": "five",
+      "directSHA256": "fa3d5244570f82f869fa5d5b626abcc4136ff8b4b557b954587af16c5a2c4911"
+    },
+    {
+      "id": "e19",
+      "spread": "five",
+      "directSHA256": "4ea7d46933b6058abdc892a91539e8e23b73ce01fa9402bade6f5d7fb939dad8"
+    },
+    {
+      "id": "e20",
+      "spread": "five",
+      "directSHA256": "7f1a91ede0a7f7fe2d6a106d19d1992e159db5f6698fd1bb785707c88a393c58"
+    }
+  ],
+  "otherVariants": "Full 160 before/after report pairs retained; mechanical state contracts only.",
+  "mechanicalPassed": 160,
+  "semanticScore": null,
+  "professionalQualityScore": null,
+  "findings": [
+    "e01 missed unread-content prerequisite in applied request",
+    "e03/e06/e16 request-specific actions too generic",
+    "e07 purpose clause asking is parsed as general prepare",
+    "e09 read acknowledgment and question example missing, card bridge off topic",
+    "e11 unrelated subject/domain leakage",
+    "e13 requested allocation insufficient",
+    "e14 conditional reflection weak",
+    "remaining generality/repetition across domains"
+  ],
+  "scope": "Twenty new author-written questions after source freeze; all twenty five-card primary answers read. Not independent or blind expert validation; after this review they are known development/regression material."
+}

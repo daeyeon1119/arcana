@@ -1,0 +1,220 @@
+{
+  "packageVersion": "88.0.0",
+  "sourceSHA256": {
+    "src/event-evidence.js": "9cf26c46cedbbb03e42ecc19f74ef7c0e80b3d3dab00473580cacfee1d0fedb7",
+    "src/question-model.js": "87a42a934c90dfd9cf25633967a6247fd93da46b199b6257b1a4d013624d71d5"
+  },
+  "properties": 292,
+  "passed": 266,
+  "failures": [
+    {
+      "id": "p027",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 답변이 있습니다.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p028",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 답변을 아직 읽지 않았어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p029",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 답변이 도움이 될지는 모르겠어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p030",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 답변이 있습니다.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p031",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 답변을 아직 읽지 않았어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p032",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 답변이 도움이 될지는 모르겠어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p086",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 회신이 있습니다.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p087",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 회신을 아직 읽지 않았어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p088",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 회신이 도움이 될지는 모르겠어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p089",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 회신이 있습니다.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p090",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 회신을 아직 읽지 않았어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p091",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 회신이 도움이 될지는 모르겠어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p145",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 답장이 있습니다.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p146",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 답장을 아직 읽지 않았어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p147",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 답장이 도움이 될지는 모르겠어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p148",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 답장이 있습니다.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p149",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 답장을 아직 읽지 않았어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p150",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 답장이 도움이 될지는 모르겠어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p204",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 대답이 있습니다.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p205",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 대답을 아직 읽지 않았어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p206",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받은 대답이 도움이 될지는 모르겠어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p207",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 대답이 있습니다.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p208",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 대답을 아직 읽지 않았어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p209",
+      "family": "relative receipt and independent processing",
+      "question": "제가 담당자에게 받아 둔 대답이 도움이 될지는 모르겠어요.",
+      "key": "received",
+      "expected": null,
+      "actual": true
+    },
+    {
+      "id": "p260",
+      "family": "focused verbal negation preserves direction",
+      "question": "제가 연락를 하진 않았어요.",
+      "key": "sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "p272",
+      "family": "focused verbal negation preserves direction",
+      "question": "나는 연락를 하진 않았어요.",
+      "key": "sent",
+      "expected": false,
+      "actual": null
+    }
+  ],
+  "note": "Known author-written grammar and metamorphic development properties. These are not distinct unseen user questions, semantic expert scores or a claim of unrestricted Korean understanding."
+}

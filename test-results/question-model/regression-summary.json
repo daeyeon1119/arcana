@@ -1,6 +1,6 @@
 {
   "note": "54 known v81 questions, replayed as development/regression data. Classification scores do not measure professional quality.",
-  "appSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
   "questions": 54,
   "readingsPerVersion": 432,
   "before": {
@@ -13,7 +13,7 @@
       "total": 33
     },
     "facts": {
-      "passed": 19,
+      "passed": 18,
       "total": 24
     }
   },
@@ -57,7 +57,7 @@
       "ok": true
     },
     {
-      "name": "sent and unsent remain distinct",
+      "name": "send polarity, explicit absence and unknown receipt remain distinct",
       "ok": true
     },
     {

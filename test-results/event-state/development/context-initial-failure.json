@@ -1,0 +1,22 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "826506edddc70f733346d65e98ede70700929e928aac144731c9409fe4e02b55",
+    "appBytes": 30822350,
+    "webRelease": "2d57ad737ef27422f1f13178"
+  },
+  "fullTestLogSHA256": "bbc2110cd1f89bf60de67eaa10e6f2318ba588046a7d86ed943262979b7bfaff",
+  "assertion": "sent and unsent remain distinct",
+  "actualParserExamples": [
+    {
+      "q": "좋아하는 사람에게 문자를 보냈는데 답장은 없어요.",
+      "note": "Generic topical subject was incorrectly 좋아하는, suppressing personal sending and reply absence."
+    },
+    {
+      "q": "고백은 이미 했고 대답을 기다립니다.",
+      "note": "Waiting is stated, absent receipt is not. The old shared noReply=true label incorrectly required absent receipt."
+    }
+  ],
+  "scope": "Recorded before the modifier-scope correction. Original v81 fixture and earlier evidence retained. Current assertions will separately test send polarity, explicit absence, and unknown receipt."
+}

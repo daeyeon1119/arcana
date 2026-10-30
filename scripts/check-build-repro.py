@@ -1,6 +1,7 @@
 """Rebuild a separate CRLF copy and compare exact public release bytes."""
 from pathlib import Path
 import tempfile,shutil,subprocess,sys,hashlib,json
+from save_artifact import save_text
 
 root=Path(__file__).resolve().parents[1]
 (root/'.cache').mkdir(exist_ok=True)
@@ -8,7 +9,7 @@ target=Path(tempfile.mkdtemp(prefix='release-crlf-',dir=root/'.cache'))
 for folder in ['src','assets','ARCANA_tarot_v78_source']:
     shutil.copytree(root/folder,target/folder)
 (target/'scripts').mkdir()
-for name in ['scripts/build.py','package.json','manifest.webmanifest']:
+for name in ['scripts/build.py','scripts/save_artifact.py','package.json','manifest.webmanifest']:
     shutil.copy2(root/name,target/name)
 for folder in ['src','assets']:
     for path in (target/folder).rglob('*'):
@@ -22,5 +23,5 @@ assert all(checks.values()),checks
 release=json.loads((root/'release.json').read_text(encoding='utf-8'))
 assert hashlib.sha256((root/'index.html').read_bytes()).hexdigest()==release['appSHA256']
 result={'release':release,'checks':checks,'note':'Actual rebuild in a separate copy with CRLF sources, manifest and SVG files. JPEG/PNG bytes unchanged. Public output bytes match exactly. Not a semantic quality or physical-device evaluation.'}
-(root/f'test-results/build-repro-v{release["readingEngine"]}.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
+save_text(root/f'test-results/build-repro-v{release["readingEngine"]}.json',json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))

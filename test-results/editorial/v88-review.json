@@ -1,0 +1,44 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "changedPrimaryRead": [
+    148,
+    268
+  ],
+  "factsCompared": [
+    36,
+    282,
+    284
+  ],
+  "notes": {
+    "36": "동료가 한 사과를 수신으로 표현하되 사용자 발신으로 바꾸지 않는다. 본문은 동일.",
+    "148": "출판사 답을 기다린다고 한 사실만 보존하고 회신 미수신을 확정하지 않는다.",
+    "268": "고객 답을 기다리는 현재 상황을 보존하며 미수신을 추가하지 않는다.",
+    "282": "기다릴 때라는 조건·습관은 현재의 실제 대기나 미수신을 확정하지 않는다.",
+    "284": "기다리며라는 현재 사실을 비교 요청과 함께 보존한다."
+  },
+  "unchangedPrimaryCount": 318,
+  "remainingLimits": "Earlier editorial findings remain applicable. Domain matches 303/320 and naturalness/professional depth are not established by mechanical checks.",
+  "professionalQualityScore": null,
+  "beforeSHA256": "aeaf00fb545120df31df701bb702e8facf858e5c9a080aab5180bd6c184e470c",
+  "afterSHA256": "80cfe708a9b199b8e5e72836a853151fabb2eea78afc483c89470f61f94091e6",
+  "actualPairs": [
+    {
+      "id": 148,
+      "question": "원고를 출판사에 보냈어요. 답을 기다리는 동안 뭘 할까요?",
+      "before": "접수 여부와 안내된 답변 일정을 확인해 두고, 기다리는 동안 진행할 다른 작업을 작게 정해 보세요. ‘실행의 첫 단계’에 놓인 세계 역방향의 주제는 ‘미완의 과제’입니다.",
+      "after": "답을 기다리는 동안 지금 이어 갈 일과 다음에 확인할 시점을 나누어 보세요. 회신의 내용이나 상대의 뜻은 확인한 범위에서 읽고, 아직 모르는 부분을 추측으로 채우지 않아도 됩니다. ‘실행의 첫 단계’에 놓인 세계 역방향의 주제는 ‘미완의 과제’입니다."
+    },
+    {
+      "id": 268,
+      "question": "고객에게 제안서를 보냈어요. 답을 기다리며 무엇을 할까요?",
+      "before": "공식 확인 일정과 경로를 정해 두고, 오늘 할 수 있는 다른 일 하나를 골라 보세요. 이미 끝난 평가를 계속 되짚지 않아도 됩니다. ‘실행의 첫 단계’에 놓인 컵 에이스 역방향의 주제는 ‘막힌 감정’입니다.",
+      "after": "답을 기다리는 동안 지금 이어 갈 일과 다음에 확인할 시점을 나누어 보세요. 회신의 내용이나 상대의 뜻은 확인한 범위에서 읽고, 아직 모르는 부분을 추측으로 채우지 않아도 됩니다. ‘실행의 첫 단계’에 놓인 컵 에이스 역방향의 주제는 ‘막힌 감정’입니다."
+    }
+  ]
+}

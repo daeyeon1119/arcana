@@ -1,0 +1,22 @@
+{
+  "phase": "regression",
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "baselineSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "fixtureSHA256": "1efda794636b5e3c4cdb3e80aa14228ad5f25de48a3a42d18bc991eae7da9d05",
+  "collectorSHA256": "fc3ce09c7338ea045392d600261da56627dbcfa93bca4d591ab6b2341e8aa83e",
+  "seed": 880031,
+  "note": "Twenty synthetic author-written questions created after candidate commit 83cd30a. First execution on that frozen implementation; not independent, blind or expert evaluation. Outputs and failures remain immutable. Question variants are development material after review. Expected facts are evaluator-only. Known regression after first outputs informed changes.",
+  "readingsSHA256": "91bdf1a5c929defdceb393b827563b13dcb2f3200089b23b8cbdeb921369cce4",
+  "questions": 20,
+  "readingsPerVersion": 160,
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 160,
+  "qualityScore": null
+}

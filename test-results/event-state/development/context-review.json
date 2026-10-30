@@ -1,0 +1,56 @@
+{
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "source": "test-results/question-model/samples.json",
+  "directlyRead": [
+    {
+      "group": "unsent",
+      "variant": 0,
+      "spread": "three",
+      "directSHA256": "043cffd43c5323f351b57cad8a1b7701190b52ba2dd578d2eeded5cd57468927"
+    },
+    {
+      "group": "unsent",
+      "variant": 1,
+      "spread": "three",
+      "directSHA256": "d1ea42b38ea9410a15ce5d2d2b9f89561def6405b585c3da1f7d651279e368ad"
+    },
+    {
+      "group": "unsent",
+      "variant": 2,
+      "spread": "three",
+      "directSHA256": "da421492ac0be15dac12897e3c69aa58eaa273daad1bfda2d6f550363370d1a9"
+    },
+    {
+      "group": "sent",
+      "variant": 0,
+      "spread": "three",
+      "directSHA256": "af68a554512d1e9a0901f2b99aac850c5fc625b6acdee53bbaa71ccfee7fc78d"
+    },
+    {
+      "group": "sent",
+      "variant": 1,
+      "spread": "three",
+      "directSHA256": "19a760d2dc237d6648571e5e2ff90ca6887491585bda6cc16c624472de814f9d"
+    },
+    {
+      "group": "sent",
+      "variant": 2,
+      "spread": "three",
+      "directSHA256": "01f96968d8627feb337c29a44b38522136cf5b5a4f9c127311d217e29c0d8b35"
+    }
+  ],
+  "findings": {
+    "unsent/0": "Fact polarity is correct after modifier correction, but the approach request receives generic evidence/expectation advice rather than a concrete opening.",
+    "sent/0": "Sending and explicit missing reply are correct, but the card bridge switches to evaluation/comparison/self-worth, weakly matching the requested urge to message again.",
+    "sent/1": "Waiting is retained while receipt remains unknown; the visible response does not assert a missing receipt.",
+    "sent/2": "Explicit sent and missing-reply facts are preserved in the visible answer."
+  },
+  "scope": "Six actual three-card primary answers read after the modifier-scope correction; not all 432 reports reread or independent expert scoring.",
+  "professionalQualityScore": null
+}

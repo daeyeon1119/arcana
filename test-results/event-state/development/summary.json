@@ -1,0 +1,22 @@
+{
+  "phase": "development",
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "baselineSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "fixtureSHA256": "8f25de38e5b1cc97f738ce957d741b36cee3846575cc83e2aad37456f7906863",
+  "collectorSHA256": "fc3ce09c7338ea045392d600261da56627dbcfa93bca4d591ab6b2341e8aa83e",
+  "seed": 880031,
+  "note": "Known author development probes, including v87 review failures. These expectations are evaluation-only, not parser input or an unseen/expert benchmark. Null means the question does not establish a personal fact.",
+  "readingsSHA256": "b2b35baab930978aae4838ea2d4700f48408b11070f6956c0439ff1400a14964",
+  "questions": 20,
+  "readingsPerVersion": 160,
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 160,
+  "qualityScore": null
+}
