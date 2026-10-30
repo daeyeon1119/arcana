@@ -1,0 +1,15 @@
+{
+  "phase": "baseline",
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "baselineSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+  "fixtureSHA256": "9e6388016407e85bc7d19b665c4f89c1b2883cdc7ae32739aa238bbd8672825b",
+  "collectorSHA256": "ded6454b758e6c232237594a28d91719bacb6439010d22ae5aa2e0f2ac42ee24",
+  "seed": 890041,
+  "note": "Known author development probes spanning lexical collisions, grammatical roles, clinical/career coexistence and request purpose. Includes reviewed v88 failures. Expected fields are evaluator-only; not a fresh, independent or expert benchmark."
+}

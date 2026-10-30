@@ -1,0 +1,1175 @@
+{
+  "phase": "baseline",
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "appBytes": 30822607,
+    "webRelease": "957d4eb9189c54050cdc6a2a"
+  },
+  "baselineSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+  "fixtureSHA256": "9e6388016407e85bc7d19b665c4f89c1b2883cdc7ae32739aa238bbd8672825b",
+  "collectorSHA256": "ded6454b758e6c232237594a28d91719bacb6439010d22ae5aa2e0f2ac42ee24",
+  "seed": 890041,
+  "note": "Known author development probes spanning lexical collisions, grammatical roles, clinical/career coexistence and request purpose. Includes reviewed v88 failures. Expected fields are evaluator-only; not a fresh, independent or expert benchmark.",
+  "questions": 24,
+  "readingsPerVersion": 192,
+  "readingsSHA256": "599544dba5a00ddc4732c08692acebac83b18f2a204bdf9392e4a51a574ab873",
+  "errors": [],
+  "failures": [
+    {
+      "id": "k01",
+      "spread": "one",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k01",
+      "spread": "three",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k01",
+      "spread": "five",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k01",
+      "spread": "relationship5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k01",
+      "spread": "choice5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k01",
+      "spread": "waiting3",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k01",
+      "spread": "career5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k01",
+      "spread": "celtic",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k02",
+      "spread": "one",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k02",
+      "spread": "three",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k02",
+      "spread": "five",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k02",
+      "spread": "relationship5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k02",
+      "spread": "choice5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k02",
+      "spread": "waiting3",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k02",
+      "spread": "career5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k02",
+      "spread": "celtic",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k03",
+      "spread": "one",
+      "key": "domain",
+      "expected": "career",
+      "actual": "finances"
+    },
+    {
+      "id": "k03",
+      "spread": "three",
+      "key": "domain",
+      "expected": "career",
+      "actual": "finances"
+    },
+    {
+      "id": "k03",
+      "spread": "five",
+      "key": "domain",
+      "expected": "career",
+      "actual": "finances"
+    },
+    {
+      "id": "k03",
+      "spread": "relationship5",
+      "key": "domain",
+      "expected": "career",
+      "actual": "finances"
+    },
+    {
+      "id": "k03",
+      "spread": "choice5",
+      "key": "domain",
+      "expected": "career",
+      "actual": "finances"
+    },
+    {
+      "id": "k03",
+      "spread": "waiting3",
+      "key": "domain",
+      "expected": "career",
+      "actual": "finances"
+    },
+    {
+      "id": "k03",
+      "spread": "career5",
+      "key": "domain",
+      "expected": "career",
+      "actual": "finances"
+    },
+    {
+      "id": "k03",
+      "spread": "celtic",
+      "key": "domain",
+      "expected": "career",
+      "actual": "finances"
+    },
+    {
+      "id": "k04",
+      "spread": "one",
+      "key": "notDomain",
+      "expected": [
+        "finances"
+      ],
+      "actual": "finances"
+    },
+    {
+      "id": "k04",
+      "spread": "three",
+      "key": "notDomain",
+      "expected": [
+        "finances"
+      ],
+      "actual": "finances"
+    },
+    {
+      "id": "k04",
+      "spread": "five",
+      "key": "notDomain",
+      "expected": [
+        "finances"
+      ],
+      "actual": "finances"
+    },
+    {
+      "id": "k04",
+      "spread": "relationship5",
+      "key": "notDomain",
+      "expected": [
+        "finances"
+      ],
+      "actual": "finances"
+    },
+    {
+      "id": "k04",
+      "spread": "choice5",
+      "key": "notDomain",
+      "expected": [
+        "finances"
+      ],
+      "actual": "finances"
+    },
+    {
+      "id": "k04",
+      "spread": "waiting3",
+      "key": "notDomain",
+      "expected": [
+        "finances"
+      ],
+      "actual": "finances"
+    },
+    {
+      "id": "k04",
+      "spread": "career5",
+      "key": "notDomain",
+      "expected": [
+        "finances"
+      ],
+      "actual": "finances"
+    },
+    {
+      "id": "k04",
+      "spread": "celtic",
+      "key": "notDomain",
+      "expected": [
+        "finances"
+      ],
+      "actual": "finances"
+    },
+    {
+      "id": "k05",
+      "spread": "one",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k05",
+      "spread": "three",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k05",
+      "spread": "five",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k05",
+      "spread": "relationship5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k05",
+      "spread": "choice5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k05",
+      "spread": "waiting3",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k05",
+      "spread": "career5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k05",
+      "spread": "celtic",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k06",
+      "spread": "one",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k06",
+      "spread": "three",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k06",
+      "spread": "five",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k06",
+      "spread": "relationship5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k06",
+      "spread": "choice5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k06",
+      "spread": "waiting3",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k06",
+      "spread": "career5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k06",
+      "spread": "celtic",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k08",
+      "spread": "one",
+      "key": "domain",
+      "expected": "health",
+      "actual": "career"
+    },
+    {
+      "id": "k08",
+      "spread": "one",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k08",
+      "spread": "three",
+      "key": "domain",
+      "expected": "health",
+      "actual": "career"
+    },
+    {
+      "id": "k08",
+      "spread": "three",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k08",
+      "spread": "five",
+      "key": "domain",
+      "expected": "health",
+      "actual": "career"
+    },
+    {
+      "id": "k08",
+      "spread": "five",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k08",
+      "spread": "relationship5",
+      "key": "domain",
+      "expected": "health",
+      "actual": "career"
+    },
+    {
+      "id": "k08",
+      "spread": "relationship5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k08",
+      "spread": "choice5",
+      "key": "domain",
+      "expected": "health",
+      "actual": "career"
+    },
+    {
+      "id": "k08",
+      "spread": "choice5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k08",
+      "spread": "waiting3",
+      "key": "domain",
+      "expected": "health",
+      "actual": "career"
+    },
+    {
+      "id": "k08",
+      "spread": "waiting3",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k08",
+      "spread": "career5",
+      "key": "domain",
+      "expected": "health",
+      "actual": "career"
+    },
+    {
+      "id": "k08",
+      "spread": "career5",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k08",
+      "spread": "celtic",
+      "key": "domain",
+      "expected": "health",
+      "actual": "career"
+    },
+    {
+      "id": "k08",
+      "spread": "celtic",
+      "key": "medical",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "k10",
+      "spread": "one",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k10",
+      "spread": "one",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k10",
+      "spread": "three",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k10",
+      "spread": "three",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k10",
+      "spread": "five",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k10",
+      "spread": "five",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k10",
+      "spread": "relationship5",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k10",
+      "spread": "relationship5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k10",
+      "spread": "choice5",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k10",
+      "spread": "choice5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k10",
+      "spread": "waiting3",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k10",
+      "spread": "waiting3",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k10",
+      "spread": "career5",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k10",
+      "spread": "career5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k10",
+      "spread": "celtic",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k10",
+      "spread": "celtic",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k11",
+      "spread": "one",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k11",
+      "spread": "one",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k11",
+      "spread": "three",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k11",
+      "spread": "three",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k11",
+      "spread": "five",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k11",
+      "spread": "five",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k11",
+      "spread": "relationship5",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k11",
+      "spread": "relationship5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k11",
+      "spread": "choice5",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k11",
+      "spread": "choice5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k11",
+      "spread": "waiting3",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k11",
+      "spread": "waiting3",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k11",
+      "spread": "career5",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k11",
+      "spread": "career5",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k11",
+      "spread": "celtic",
+      "key": "medical",
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "k11",
+      "spread": "celtic",
+      "key": "notDomain",
+      "expected": [
+        "health"
+      ],
+      "actual": "health"
+    },
+    {
+      "id": "k15",
+      "spread": "one",
+      "key": "state.sent",
+      "expected": true,
+      "actual": null
+    },
+    {
+      "id": "k15",
+      "spread": "three",
+      "key": "state.sent",
+      "expected": true,
+      "actual": null
+    },
+    {
+      "id": "k15",
+      "spread": "five",
+      "key": "state.sent",
+      "expected": true,
+      "actual": null
+    },
+    {
+      "id": "k15",
+      "spread": "relationship5",
+      "key": "state.sent",
+      "expected": true,
+      "actual": null
+    },
+    {
+      "id": "k15",
+      "spread": "choice5",
+      "key": "state.sent",
+      "expected": true,
+      "actual": null
+    },
+    {
+      "id": "k15",
+      "spread": "waiting3",
+      "key": "state.sent",
+      "expected": true,
+      "actual": null
+    },
+    {
+      "id": "k15",
+      "spread": "career5",
+      "key": "state.sent",
+      "expected": true,
+      "actual": null
+    },
+    {
+      "id": "k15",
+      "spread": "celtic",
+      "key": "state.sent",
+      "expected": true,
+      "actual": null
+    },
+    {
+      "id": "k16",
+      "spread": "one",
+      "key": "state.sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "k16",
+      "spread": "three",
+      "key": "state.sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "k16",
+      "spread": "five",
+      "key": "state.sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "k16",
+      "spread": "relationship5",
+      "key": "state.sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "k16",
+      "spread": "choice5",
+      "key": "state.sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "k16",
+      "spread": "waiting3",
+      "key": "state.sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "k16",
+      "spread": "career5",
+      "key": "state.sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "k16",
+      "spread": "celtic",
+      "key": "state.sent",
+      "expected": false,
+      "actual": null
+    },
+    {
+      "id": "k19",
+      "spread": "one",
+      "key": "notDomain",
+      "expected": [
+        "family",
+        "relationship",
+        "waiting"
+      ],
+      "actual": "family"
+    },
+    {
+      "id": "k19",
+      "spread": "three",
+      "key": "notDomain",
+      "expected": [
+        "family",
+        "relationship",
+        "waiting"
+      ],
+      "actual": "family"
+    },
+    {
+      "id": "k19",
+      "spread": "five",
+      "key": "notDomain",
+      "expected": [
+        "family",
+        "relationship",
+        "waiting"
+      ],
+      "actual": "family"
+    },
+    {
+      "id": "k19",
+      "spread": "relationship5",
+      "key": "notDomain",
+      "expected": [
+        "family",
+        "relationship",
+        "waiting"
+      ],
+      "actual": "family"
+    },
+    {
+      "id": "k19",
+      "spread": "choice5",
+      "key": "notDomain",
+      "expected": [
+        "family",
+        "relationship",
+        "waiting"
+      ],
+      "actual": "family"
+    },
+    {
+      "id": "k19",
+      "spread": "waiting3",
+      "key": "notDomain",
+      "expected": [
+        "family",
+        "relationship",
+        "waiting"
+      ],
+      "actual": "family"
+    },
+    {
+      "id": "k19",
+      "spread": "career5",
+      "key": "notDomain",
+      "expected": [
+        "family",
+        "relationship",
+        "waiting"
+      ],
+      "actual": "family"
+    },
+    {
+      "id": "k19",
+      "spread": "celtic",
+      "key": "notDomain",
+      "expected": [
+        "family",
+        "relationship",
+        "waiting"
+      ],
+      "actual": "family"
+    },
+    {
+      "id": "k20",
+      "spread": "one",
+      "key": "readPrerequisite",
+      "expected": "explicit unread-content prerequisite",
+      "actual": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’의 교황 정방향에서 살필 관점은 ‘지원·역량’입니다. 이미 쓸 수 있는 자원과 새로 필요한 도움을 구별해 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요."
+    },
+    {
+      "id": "k20",
+      "spread": "three",
+      "key": "readPrerequisite",
+      "expected": "explicit unread-content prerequisite",
+      "actual": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’의 완드 8 정방향에서 살필 관점은 ‘속도·표현’입니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요."
+    },
+    {
+      "id": "k20",
+      "spread": "five",
+      "key": "readPrerequisite",
+      "expected": "explicit unread-content prerequisite",
+      "actual": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요."
+    },
+    {
+      "id": "k20",
+      "spread": "relationship5",
+      "key": "readPrerequisite",
+      "expected": "explicit unread-content prerequisite",
+      "actual": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다시 연결할 자원’의 소드 2 정방향에서 살필 관점은 ‘선택·멈춤’입니다. ‘내가 취할 행동’의 소드 4 정방향에서 살필 관점은 ‘멈춤·회복’입니다. 두 카드에서는 ‘멈춤’이라는 주제를 함께 살펴볼 수 있습니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요."
+    },
+    {
+      "id": "k20",
+      "spread": "choice5",
+      "key": "readPrerequisite",
+      "expected": "explicit unread-content prerequisite",
+      "actual": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요."
+    },
+    {
+      "id": "k20",
+      "spread": "waiting3",
+      "key": "readPrerequisite",
+      "expected": "explicit unread-content prerequisite",
+      "actual": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘오늘의 실천’의 여황제 정방향에서 살필 관점은 ‘돌봄·자원’입니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요."
+    },
+    {
+      "id": "k20",
+      "spread": "career5",
+      "key": "readPrerequisite",
+      "expected": "explicit unread-content prerequisite",
+      "actual": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’의 소드 7 역방향에서 살필 관점은 ‘명료함·표현’입니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요."
+    },
+    {
+      "id": "k20",
+      "spread": "celtic",
+      "key": "readPrerequisite",
+      "expected": "explicit unread-content prerequisite",
+      "actual": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘가능한 귀결’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요."
+    },
+    {
+      "id": "k21",
+      "spread": "one",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "prepare"
+      ]
+    },
+    {
+      "id": "k21",
+      "spread": "three",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "prepare"
+      ]
+    },
+    {
+      "id": "k21",
+      "spread": "five",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "prepare"
+      ]
+    },
+    {
+      "id": "k21",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "prepare"
+      ]
+    },
+    {
+      "id": "k21",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "prepare"
+      ]
+    },
+    {
+      "id": "k21",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "prepare"
+      ]
+    },
+    {
+      "id": "k21",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "prepare"
+      ]
+    },
+    {
+      "id": "k21",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "prepare"
+      ]
+    },
+    {
+      "id": "k22",
+      "spread": "one",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "verify"
+      ]
+    },
+    {
+      "id": "k22",
+      "spread": "three",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "verify"
+      ]
+    },
+    {
+      "id": "k22",
+      "spread": "five",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "verify"
+      ]
+    },
+    {
+      "id": "k22",
+      "spread": "relationship5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "verify"
+      ]
+    },
+    {
+      "id": "k22",
+      "spread": "choice5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "verify"
+      ]
+    },
+    {
+      "id": "k22",
+      "spread": "waiting3",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "verify"
+      ]
+    },
+    {
+      "id": "k22",
+      "spread": "career5",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "verify"
+      ]
+    },
+    {
+      "id": "k22",
+      "spread": "celtic",
+      "key": "operation",
+      "expected": "inquire",
+      "actual": [
+        "verify"
+      ]
+    }
+  ],
+  "mechanicalPassed": 72,
+  "professionalQualityScore": null
+}
