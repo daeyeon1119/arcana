@@ -1,0 +1,39 @@
+{
+  "release": {
+    "appVersion": "89.0.0",
+    "readingEngine": 89,
+    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "appBytes": 33141003,
+    "webRelease": "12dd12a13151379b100bfbdc",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "sourceCommit": "d87a8d05d0fbc92fbf9305296ff59ac56bccd02f",
+  "coreAutocrlf": true,
+  "committedByteHashes": {
+    "index.html": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+    "sw.js": "4b582d20546c721fced4a69f02e29ab4552e0d0f58444b3a0b73d201c592b355",
+    "release.json": "c9a21b2f57f104344ca70776f56c97e2769a58c956e00b6ab0d735d93185e539",
+    "test-results/portable-summary.json": "17e71722caed5ac848930bd3da646eba47fb5c35f31d1e1518eedcb06cb1f525",
+    "test-results/v89-validation.json": "ea433747e12bc30d1f7ddb68c68dd9c6234bea0186d07817886f340b7337cddf",
+    "test-results/verification/first/readings.json": "0f97498364ce94959a852f87768e820b9b14727d01815178289d6d0a10d6613e",
+    "test-results/verification/first/summary.json": "f1d640bfb26fb5726172908a2215ef729ed3d04f43aee2eb677a64431567446e",
+    "test-results/alignment/first/readings.json": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+    "test-results/grounding/first/readings.json": "150111acdbd495e434017c89a751fbc0d0573bec4ac1c10a342e99df6423d821",
+    "device-check.html": "d9b9dd5aeeb77bb1635c6e7f2de6ee3672823e4b9cac8254ef3d096428126eb5",
+    "scripts/device-check.js": "abbfe5fe8880bdb53039241a0541eaf87395f7a4723a1e9a97add9461d9ee05b",
+    "test-results/lens/first/readings.json": "d7263373aed6f8bcd5e4c9fb38dbb6df1b1db0e71f32366b2e7a9a6b40dc2855",
+    "test-results/lens/first/summary.json": "dcdbfbb36685043a71b8d44f94b54fc51941fbcd72bc6f1b3091cd3de73c3e69",
+    "test-results/lens/regression/readings.json": "eba71d3234555ac14bb0a0c58b71fc76caf09291d975f4876ff730c657000bec",
+    "test-results/event-state/first/readings.json": "91bdf1a5c929defdceb393b827563b13dcb2f3200089b23b8cbdeb921369cce4",
+    "test-results/event-state/first/summary.json": "f493ea0a00d2edc7b6c2f2c371c77b4be316ae962e220993b8dc500fac19a488",
+    "test-results/lexical/first/readings.json": "4b2fa9b373ecc51ba1e4d5b828c6f85dcc0531b87a9f5bc6bd2aa1b38b607ed5",
+    "test-results/lexical/first/summary.json": "0b17c3348515ac599b90403e57e9853a9ab126755785a495e92b342cb7c6f66d"
+  },
+  "allByteEqual": true,
+  "note": "Actual separate sparse Git clone/checkout with core.autocrlf=true. Public and first/regression evidence bytes equal committed blobs. No reading regeneration or semantic/expert score."
+}
