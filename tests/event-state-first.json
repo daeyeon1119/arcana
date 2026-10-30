@@ -1,0 +1,163 @@
+{
+  "note": "Twenty synthetic author-written questions created after candidate commit 83cd30a. First execution on that frozen implementation; not independent, blind or expert evaluation. Outputs and failures remain immutable. Question variants are development material after review. Expected facts are evaluator-only.",
+  "candidateCommit": "83cd30ac42ecebe8045eb8f9315a989626f95f82",
+  "candidateRelease": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337",
+    "appBytes": 30822350,
+    "webRelease": "7dc985672ec05c8781873acc"
+  },
+  "cases": [
+    {
+      "id": "e01",
+      "question": "공방 장인에게 받은 회신을 아직 읽지 않았어요. 예약 조건을 살피려면 무엇부터 할까요?",
+      "state": {
+        "received": true,
+        "read": false
+      }
+    },
+    {
+      "id": "e02",
+      "question": "공방 장인이 받은 회신이 있습니다. 제 전시 준비는 어떤 순서로 할까요?",
+      "state": {
+        "received": null
+      }
+    },
+    {
+      "id": "e03",
+      "question": "이번 주에 협동조합에 연락하진 않았습니다. 회신을 기다리는 상황도 아니에요. 혼자 정한 계획을 어떻게 돌아볼까요?",
+      "state": {
+        "sent": false,
+        "waiting": false
+      }
+    },
+    {
+      "id": "e04",
+      "question": "협동조합에 연락을 했지만 답을 기다리지는 않아요. 주말 봉사 준비를 어떻게 나눌까요?",
+      "state": {
+        "sent": true,
+        "replyWaiting": false
+      }
+    },
+    {
+      "id": "e05",
+      "question": "통역사에게 받은 답변이 있어요. 내용의 전제가 이해되지 않는데 어떤 점을 다시 물어볼까요?",
+      "state": {
+        "received": true
+      }
+    },
+    {
+      "id": "e06",
+      "question": "답변을 아직 받지 않았지만 기다리지는 않습니다. 다른 일정은 어떻게 정리할까요?",
+      "state": {
+        "received": false,
+        "replyWaiting": false
+      }
+    },
+    {
+      "id": "e07",
+      "question": "협동조합에서 온 답변이 있습니다. 안내가 모호한 부분을 다시 물으려면 어떻게 준비할까요?",
+      "state": {
+        "received": true
+      }
+    },
+    {
+      "id": "e08",
+      "question": "제가 보낸 회신을 기획자가 받았습니다. 다음 전시는 어떻게 준비할까요?",
+      "state": {
+        "received": null,
+        "sent": true
+      }
+    },
+    {
+      "id": "e09",
+      "question": "출판사가 보낸 답장을 읽었어요. 서로 이해한 내용이 맞는지 어떤 질문으로 확인할까요?",
+      "state": {
+        "received": true,
+        "read": true
+      }
+    },
+    {
+      "id": "e10",
+      "question": "출판사가 받은 답장을 제가 읽었어요. 제 글쓰기 계획을 어떻게 준비할까요?",
+      "state": {
+        "received": null,
+        "read": null
+      }
+    },
+    {
+      "id": "e11",
+      "question": "친구는 결과를 기다리고 있어요. 저는 끝낸 작업을 어떤 기준으로 돌아볼까요?",
+      "state": {
+        "resultWaiting": false
+      }
+    },
+    {
+      "id": "e12",
+      "question": "오디션은 마쳤지만 결과를 기다리는 상황은 아닙니다. 다음 연습은 어떻게 준비할까요?",
+      "state": {
+        "resultWaiting": false,
+        "waiting": false
+      }
+    },
+    {
+      "id": "e13",
+      "question": "발표 결과를 기다리고 있습니다. 쉬는 시간과 연습 시간을 어떻게 나눌까요?",
+      "state": {
+        "resultWaiting": true,
+        "waiting": true
+      }
+    },
+    {
+      "id": "e14",
+      "question": "답변을 받았다면 전제를 먼저 확인했을까요? 이 가정에서 무엇을 돌아볼까요?",
+      "state": {
+        "received": null
+      }
+    },
+    {
+      "id": "e15",
+      "question": "안내문 속 “회신을 받았습니다”라는 문장을 수정 중입니다. 처음 읽는 사람이 이해하게 어떻게 설명할까요?",
+      "state": {
+        "received": null
+      }
+    },
+    {
+      "id": "e16",
+      "question": "그분은 답변을 받았다고 말했습니다. 저는 제 일정부터 어떻게 정리할까요?",
+      "state": {
+        "received": null
+      }
+    },
+    {
+      "id": "e17",
+      "question": "통역사의 회신을 기다립니다. 기다리는 동안 자료를 어떻게 준비할까요?",
+      "state": {
+        "received": null,
+        "replyWaiting": true
+      }
+    },
+    {
+      "id": "e18",
+      "question": "답을 기다리지 않는 것은 아닙니다. 조바심이 날 때 무엇을 돌아볼까요?",
+      "state": {
+        "replyWaiting": true
+      }
+    },
+    {
+      "id": "e19",
+      "question": "회신은 아직 못 받았습니다. 열차를 기다리지 않아요. 오늘 마음을 어떻게 돌볼까요?",
+      "state": {
+        "received": false
+      }
+    },
+    {
+      "id": "e20",
+      "question": "받은 답변은 따로 보관했어요. 이와 별개로 도자기 안내문을 처음 온 관람객에게 어떻게 설명할까요?",
+      "state": {
+        "received": true
+      }
+    }
+  ]
+}

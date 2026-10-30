@@ -1,0 +1,15 @@
+{
+  "phase": "first",
+  "release": {
+    "appVersion": "88.0.0",
+    "readingEngine": 88,
+    "appSHA256": "3a249e13246a1beee90054cd4a44b46a6e6471951e8b2fb01d4f62d31d4a4337",
+    "appBytes": 30822350,
+    "webRelease": "7dc985672ec05c8781873acc"
+  },
+  "baselineSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "fixtureSHA256": "1efda794636b5e3c4cdb3e80aa14228ad5f25de48a3a42d18bc991eae7da9d05",
+  "collectorSHA256": "fc3ce09c7338ea045392d600261da56627dbcfa93bca4d591ab6b2341e8aa83e",
+  "seed": 880031,
+  "note": "Twenty synthetic author-written questions created after candidate commit 83cd30a. First execution on that frozen implementation; not independent, blind or expert evaluation. Outputs and failures remain immutable. Question variants are development material after review. Expected facts are evaluator-only."
+}
