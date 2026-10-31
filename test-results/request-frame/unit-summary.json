@@ -1,5 +1,5 @@
 {
-  "version": "90.0.0",
+  "version": "91.0.0",
   "checks": [
     "literal predicate, object, inherited topic and compound task spans match normalized source",
     "inspection works across document and observation nouns and inflected verbs",

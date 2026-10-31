@@ -1,0 +1,2504 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "count": {
+    "pairs": 24024,
+    "secondaryRuleBeforePrimary": 164,
+    "sharedPrimarySuppressed": 62
+  },
+  "cases": [
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "기술을 행동으로 옮김",
+        "support": "이미 가진 도구를 실제로 활용함",
+        "tag": "advance",
+        "reverse": false,
+        "id": "ar01",
+        "name": "마법사",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "agency",
+          "skill"
+        ]
+      },
+      "b": {
+        "main": "목표를 향한 추진",
+        "support": "흩어진 힘을 한 방향으로 모음",
+        "tag": "advance",
+        "reverse": false,
+        "id": "ar07",
+        "name": "전차",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "agency",
+          "speed"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "readiness",
+        "shared": [
+          "agency"
+        ],
+        "leftMotifs": [
+          "agency",
+          "skill"
+        ],
+        "rightMotifs": [
+          "agency",
+          "speed"
+        ],
+        "contextRule": null,
+        "insight": "움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "positional": "",
+        "core": "‘핵심’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. ‘조언’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "body": "‘핵심’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. ‘조언’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다."
+      },
+      "candidates": [
+        {
+          "axis": "readiness",
+          "kind": "complement",
+          "left": "skill",
+          "right": "agency",
+          "primary": 1
+        },
+        {
+          "axis": "readiness",
+          "kind": "complement",
+          "left": "skill",
+          "right": "speed",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "기술을 행동으로 옮김",
+        "support": "이미 가진 도구를 실제로 활용함",
+        "tag": "advance",
+        "reverse": false,
+        "id": "ar01",
+        "name": "마법사",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "agency",
+          "skill"
+        ]
+      },
+      "b": {
+        "main": "큰 비전의 실행",
+        "support": "장기 방향을 실천으로 이끔",
+        "tag": "advance",
+        "reverse": false,
+        "id": "wa14",
+        "name": "완드 왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "agency",
+          "plan"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "readiness",
+        "shared": [
+          "agency"
+        ],
+        "leftMotifs": [
+          "agency",
+          "skill"
+        ],
+        "rightMotifs": [
+          "agency",
+          "plan"
+        ],
+        "contextRule": null,
+        "insight": "움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "positional": "",
+        "core": "‘핵심’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. ‘조언’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "body": "‘핵심’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. ‘조언’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다."
+      },
+      "candidates": [
+        {
+          "axis": "readiness",
+          "kind": "complement",
+          "left": "agency",
+          "right": "plan",
+          "primary": 1
+        },
+        {
+          "axis": "readiness",
+          "kind": "complement",
+          "left": "skill",
+          "right": "agency",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄과 성장",
+        "support": "시간을 들여 무언가를 키워냄",
+        "tag": "support",
+        "reverse": false,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "resources"
+        ]
+      },
+      "b": {
+        "main": "지친 방어",
+        "support": "모든 상황을 공격으로 느끼기 쉬움",
+        "tag": "rest",
+        "reverse": true,
+        "id": "wa07",
+        "name": "완드 7",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "bounds",
+          "depleted"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "restoration",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "resources"
+        ],
+        "rightMotifs": [
+          "bounds",
+          "depleted"
+        ],
+        "contextRule": null,
+        "insight": "어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 정방향은 ‘돌봄과 성장’을 보여 줍니다. ‘조언’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다.",
+        "body": "‘핵심’의 여황제 정방향은 ‘돌봄과 성장’을 보여 줍니다. ‘조언’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다."
+      },
+      "candidates": [
+        {
+          "axis": "restoration",
+          "kind": "complement",
+          "left": "care",
+          "right": "depleted",
+          "primary": 1
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 2
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "돌봄과 성장",
+        "support": "시간을 들여 무언가를 키워냄",
+        "tag": "support",
+        "reverse": false,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "resources"
+        ]
+      },
+      "b": {
+        "main": "흐려진 감정 경계",
+        "support": "상대의 몫까지 떠안음",
+        "tag": "rest",
+        "reverse": true,
+        "id": "cu13",
+        "name": "컵 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "tension",
+        "semanticKind": "tension",
+        "axis": "space",
+        "shared": [
+          "care"
+        ],
+        "leftMotifs": [
+          "care",
+          "resources"
+        ],
+        "rightMotifs": [
+          "care",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "함께하고 싶은 마음과 스스로 지킬 범위를 동시에 살펴보는 조합입니다. 가까워지는 정도보다 서로 감당할 수 있는 방식이 중요합니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 정방향은 ‘돌봄과 성장’을 보여 줍니다. ‘조언’의 컵 여왕 역방향은 ‘흐려진 감정 경계’를 보여 줍니다. 함께하고 싶은 마음과 스스로 지킬 범위를 동시에 살펴보는 조합입니다. 가까워지는 정도보다 서로 감당할 수 있는 방식이 중요합니다.",
+        "body": "‘핵심’의 여황제 정방향은 ‘돌봄과 성장’을 보여 줍니다. ‘조언’의 컵 여왕 역방향은 ‘흐려진 감정 경계’를 보여 줍니다. 함께하고 싶은 마음과 스스로 지킬 범위를 동시에 살펴보는 조합입니다. 가까워지는 정도보다 서로 감당할 수 있는 방식이 중요합니다."
+      },
+      "candidates": [
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "돌봄과 성장",
+        "support": "시간을 들여 무언가를 키워냄",
+        "tag": "support",
+        "reverse": false,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "resources"
+        ]
+      },
+      "b": {
+        "main": "돌봄으로 인한 소진",
+        "support": "자신의 필요를 뒷순위로 미룸",
+        "tag": "rest",
+        "reverse": true,
+        "id": "pe13",
+        "name": "펜타클 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "depleted"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "restoration",
+        "shared": [
+          "care"
+        ],
+        "leftMotifs": [
+          "care",
+          "resources"
+        ],
+        "rightMotifs": [
+          "care",
+          "depleted"
+        ],
+        "contextRule": null,
+        "insight": "어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 정방향은 ‘돌봄과 성장’을 보여 줍니다. ‘조언’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다.",
+        "body": "‘핵심’의 여황제 정방향은 ‘돌봄과 성장’을 보여 줍니다. ‘조언’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다."
+      },
+      "candidates": [
+        {
+          "axis": "restoration",
+          "kind": "complement",
+          "left": "care",
+          "right": "depleted",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "책임 있는 질서",
+        "support": "경계를 세우고 구조를 안정화함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "ar04",
+        "name": "황제",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "structure",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "structure",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "경직된 통제",
+        "support": "상황이 변했는데도 방식만 고수함",
+        "tag": "part",
+        "reverse": true,
+        "id": "ar04",
+        "name": "황제",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "rigid",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "rigid",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "자기 입장의 수호",
+        "support": "압박 속에서도 경계를 지킴",
+        "tag": "assess",
+        "reverse": false,
+        "id": "wa07",
+        "name": "완드 7",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "bounds",
+          "agency"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "bounds",
+          "agency"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 완드 7 정방향은 ‘자기 입장의 수호’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 완드 7 정방향은 ‘자기 입장의 수호’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 1
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 2
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "지친 방어",
+        "support": "모든 상황을 공격으로 느끼기 쉬움",
+        "tag": "rest",
+        "reverse": true,
+        "id": "wa07",
+        "name": "완드 7",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "bounds",
+          "depleted"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "bounds",
+          "depleted"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 1
+        },
+        {
+          "axis": "restoration",
+          "kind": "complement",
+          "left": "care",
+          "right": "depleted",
+          "primary": 1
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 2
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "막바지의 인내",
+        "support": "지쳤지만 필요한 경계를 지킴",
+        "tag": "rest",
+        "reverse": false,
+        "id": "wa09",
+        "name": "완드 9",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "patience",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "patience",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "경계로 인한 소진",
+        "support": "오래 긴장해 회복할 힘이 부족함",
+        "tag": "support",
+        "reverse": true,
+        "id": "wa09",
+        "name": "완드 9",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "depleted",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "depleted",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 완드 9 역방향은 ‘경계로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 완드 9 역방향은 ‘경계로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "restoration",
+          "kind": "complement",
+          "left": "care",
+          "right": "depleted",
+          "primary": 2
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "감정에 대한 공감",
+        "support": "상대와 자신의 마음을 세심히 읽음",
+        "tag": "support",
+        "reverse": false,
+        "id": "cu13",
+        "name": "컵 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "support"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [
+          "care"
+        ],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "care",
+          "support"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 컵 여왕 정방향은 ‘감정에 대한 공감’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 컵 여왕 정방향은 ‘감정에 대한 공감’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "support",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "흐려진 감정 경계",
+        "support": "상대의 몫까지 떠안음",
+        "tag": "rest",
+        "reverse": true,
+        "id": "cu13",
+        "name": "컵 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [
+          "care"
+        ],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "care",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 컵 여왕 역방향은 ‘흐려진 감정 경계’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 컵 여왕 역방향은 ‘흐려진 감정 경계’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "이겨도 남는 상처",
+        "support": "승패가 관계를 해칠 수 있음",
+        "tag": "assess",
+        "reverse": false,
+        "id": "sw05",
+        "name": "소드 5",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "conflict",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "conflict",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 5 정방향은 ‘이겨도 남는 상처’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 5 정방향은 ‘이겨도 남는 상처’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "신중한 전략",
+        "support": "정보를 모두 드러내지 않는 선택",
+        "tag": "assess",
+        "reverse": false,
+        "id": "sw07",
+        "name": "소드 7",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "plan",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "plan",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 7 정방향은 ‘신중한 전략’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 7 정방향은 ‘신중한 전략’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "마음속 제약",
+        "support": "가능한 선택이 보이지 않는 느낌",
+        "tag": "assess",
+        "reverse": false,
+        "id": "sw08",
+        "name": "소드 8",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "uncertain",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "uncertain",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 8 정방향은 ‘마음속 제약’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 8 정방향은 ‘마음속 제약’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "명확한 경계",
+        "support": "분명한 말과 독립적인 판단",
+        "tag": "assess",
+        "reverse": false,
+        "id": "sw13",
+        "name": "소드 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "clarity",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "clarity",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 여왕 정방향은 ‘명확한 경계’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 여왕 정방향은 ‘명확한 경계’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "차가워진 소통",
+        "support": "확실한 경계가 냉소로 변함",
+        "tag": "reconnect",
+        "reverse": true,
+        "id": "sw13",
+        "name": "소드 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "bounds",
+          "mismatch"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "bounds",
+          "mismatch"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 1
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 2
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "지키고 싶은 안정",
+        "support": "가진 것과 경계를 보호함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "pe04",
+        "name": "펜타클 4",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "security",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "security",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 펜타클 4 정방향은 ‘지키고 싶은 안정’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 펜타클 4 정방향은 ‘지키고 싶은 안정’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "overload",
+          "right": "bounds",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "care",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "b": {
+        "main": "돌봄으로 인한 소진",
+        "support": "자신의 필요를 뒷순위로 미룸",
+        "tag": "rest",
+        "reverse": true,
+        "id": "pe13",
+        "name": "펜타클 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "depleted"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "restoration",
+        "shared": [
+          "care"
+        ],
+        "leftMotifs": [
+          "care",
+          "overload"
+        ],
+        "rightMotifs": [
+          "care",
+          "depleted"
+        ],
+        "contextRule": null,
+        "insight": "어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다.",
+        "positional": "",
+        "core": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다.",
+        "body": "‘핵심’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. ‘조언’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다."
+      },
+      "candidates": [
+        {
+          "axis": "restoration",
+          "kind": "complement",
+          "left": "care",
+          "right": "depleted",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "책임 있는 질서",
+        "support": "경계를 세우고 구조를 안정화함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "ar04",
+        "name": "황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "structure",
+          "bounds"
+        ]
+      },
+      "b": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "structure",
+          "bounds"
+        ],
+        "rightMotifs": [
+          "care",
+          "overload"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. ‘조언’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. ‘조언’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "bounds",
+          "right": "overload",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "bounds",
+          "right": "care",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "책임 있는 질서",
+        "support": "경계를 세우고 구조를 안정화함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "ar04",
+        "name": "황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "structure",
+          "bounds"
+        ]
+      },
+      "b": {
+        "main": "돌봄으로 인한 소진",
+        "support": "자신의 필요를 뒷순위로 미룸",
+        "tag": "rest",
+        "reverse": true,
+        "id": "pe13",
+        "name": "펜타클 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "depleted"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "structure",
+          "bounds"
+        ],
+        "rightMotifs": [
+          "care",
+          "depleted"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. ‘조언’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. ‘조언’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "bounds",
+          "right": "depleted",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "bounds",
+          "right": "care",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "경직된 통제",
+        "support": "상황이 변했는데도 방식만 고수함",
+        "tag": "part",
+        "reverse": true,
+        "id": "ar04",
+        "name": "황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "rigid",
+          "bounds"
+        ]
+      },
+      "b": {
+        "main": "돌봄의 과잉",
+        "support": "보살핌이 간섭이나 소진으로 변함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "ar03",
+        "name": "여황제",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "overload"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "rigid",
+          "bounds"
+        ],
+        "rightMotifs": [
+          "care",
+          "overload"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘조언’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘조언’의 여황제 역방향은 ‘돌봄의 과잉’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "bounds",
+          "right": "overload",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "bounds",
+          "right": "care",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "secondary-rule-before-stronger-primary",
+      "a": {
+        "main": "경직된 통제",
+        "support": "상황이 변했는데도 방식만 고수함",
+        "tag": "part",
+        "reverse": true,
+        "id": "ar04",
+        "name": "황제",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "rigid",
+          "bounds"
+        ]
+      },
+      "b": {
+        "main": "돌봄으로 인한 소진",
+        "support": "자신의 필요를 뒷순위로 미룸",
+        "tag": "rest",
+        "reverse": true,
+        "id": "pe13",
+        "name": "펜타클 여왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "care",
+          "depleted"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [],
+        "leftMotifs": [
+          "rigid",
+          "bounds"
+        ],
+        "rightMotifs": [
+          "care",
+          "depleted"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘조언’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘조언’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "bounds",
+          "right": "depleted",
+          "primary": 0
+        },
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "bounds",
+          "right": "care",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "목표를 향한 추진",
+        "support": "흩어진 힘을 한 방향으로 모음",
+        "tag": "advance",
+        "reverse": false,
+        "id": "ar07",
+        "name": "전차",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "agency",
+          "speed"
+        ]
+      },
+      "b": {
+        "main": "기술을 행동으로 옮김",
+        "support": "이미 가진 도구를 실제로 활용함",
+        "tag": "advance",
+        "reverse": false,
+        "id": "ar01",
+        "name": "마법사",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "agency",
+          "skill"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "readiness",
+        "shared": [
+          "agency"
+        ],
+        "leftMotifs": [
+          "agency",
+          "speed"
+        ],
+        "rightMotifs": [
+          "agency",
+          "skill"
+        ],
+        "contextRule": null,
+        "insight": "움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "positional": "",
+        "core": "‘핵심’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. ‘조언’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "body": "‘핵심’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. ‘조언’의 마법사 정방향은 ‘기술을 행동으로 옮김’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다."
+      },
+      "candidates": [
+        {
+          "axis": "readiness",
+          "kind": "complement",
+          "left": "agency",
+          "right": "skill",
+          "primary": 1
+        },
+        {
+          "axis": "readiness",
+          "kind": "complement",
+          "left": "speed",
+          "right": "skill",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "목표를 향한 추진",
+        "support": "흩어진 힘을 한 방향으로 모음",
+        "tag": "advance",
+        "reverse": false,
+        "id": "ar07",
+        "name": "전차",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "agency",
+          "speed"
+        ]
+      },
+      "b": {
+        "main": "큰 비전의 실행",
+        "support": "장기 방향을 실천으로 이끔",
+        "tag": "advance",
+        "reverse": false,
+        "id": "wa14",
+        "name": "완드 왕",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "agency",
+          "plan"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "readiness",
+        "shared": [
+          "agency"
+        ],
+        "leftMotifs": [
+          "agency",
+          "speed"
+        ],
+        "rightMotifs": [
+          "agency",
+          "plan"
+        ],
+        "contextRule": null,
+        "insight": "움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "positional": "",
+        "core": "‘핵심’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. ‘조언’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다.",
+        "body": "‘핵심’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. ‘조언’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 움직이려는 힘을 준비와 연습에 연결하는 조합입니다. 큰 결론을 한꺼번에 내리기보다 확인할 수 있는 작은 실행으로 옮겨 볼 수 있습니다."
+      },
+      "candidates": [
+        {
+          "axis": "readiness",
+          "kind": "complement",
+          "left": "agency",
+          "right": "plan",
+          "primary": 1
+        },
+        {
+          "axis": "readiness",
+          "kind": "complement",
+          "left": "speed",
+          "right": "plan",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "고립의 장기화",
+        "support": "도움이 필요한데 혼자 버팀",
+        "tag": "support",
+        "reverse": true,
+        "id": "ar09",
+        "name": "은둔자",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "isolation",
+          "support"
+        ]
+      },
+      "b": {
+        "main": "교류 속의 소외",
+        "support": "소속감과 실제 관계의 간격",
+        "tag": "assess",
+        "reverse": true,
+        "id": "cu03",
+        "name": "컵 3",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "isolation",
+          "connection"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "repair",
+        "shared": [
+          "isolation"
+        ],
+        "leftMotifs": [
+          "isolation",
+          "support"
+        ],
+        "rightMotifs": [
+          "isolation",
+          "connection"
+        ],
+        "contextRule": null,
+        "insight": "다른 사람을 이기거나 혼자 버티는 방향보다, 의견과 역할을 확인할 통로가 있는지 살피는 연결입니다. 관계 회복이나 상대의 동의를 보장하는 조합은 아닙니다.",
+        "positional": "",
+        "core": "‘핵심’의 은둔자 역방향은 ‘고립의 장기화’를 보여 줍니다. ‘조언’의 컵 3 역방향은 ‘교류 속의 소외’를 보여 줍니다. 다른 사람을 이기거나 혼자 버티는 방향보다, 의견과 역할을 확인할 통로가 있는지 살피는 연결입니다. 관계 회복이나 상대의 동의를 보장하는 조합은 아닙니다.",
+        "body": "‘핵심’의 은둔자 역방향은 ‘고립의 장기화’를 보여 줍니다. ‘조언’의 컵 3 역방향은 ‘교류 속의 소외’를 보여 줍니다. 다른 사람을 이기거나 혼자 버티는 방향보다, 의견과 역할을 확인할 통로가 있는지 살피는 연결입니다. 관계 회복이나 상대의 동의를 보장하는 조합은 아닙니다."
+      },
+      "candidates": [
+        {
+          "axis": "repair",
+          "kind": "complement",
+          "left": "isolation",
+          "right": "connection",
+          "primary": 1
+        },
+        {
+          "axis": "repair",
+          "kind": "complement",
+          "left": "support",
+          "right": "isolation",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "변화의 순환",
+        "support": "통제할 수 없는 변곡점을 인식함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "ar10",
+        "name": "운명의 수레바퀴",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "transition",
+          "flexibility"
+        ]
+      },
+      "b": {
+        "main": "기반의 흔들림",
+        "support": "오래 버티던 전제가 무너짐",
+        "tag": "part",
+        "reverse": false,
+        "id": "ar16",
+        "name": "탑",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "transition",
+          "security"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "tension",
+        "semanticKind": "tension",
+        "axis": "framework",
+        "shared": [
+          "transition"
+        ],
+        "leftMotifs": [
+          "transition",
+          "flexibility"
+        ],
+        "rightMotifs": [
+          "transition",
+          "security"
+        ],
+        "contextRule": null,
+        "insight": "안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요.",
+        "positional": "",
+        "core": "‘핵심’의 운명의 수레바퀴 정방향은 ‘변화의 순환’을 보여 줍니다. ‘조언’의 탑 정방향은 ‘기반의 흔들림’을 보여 줍니다. 안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요.",
+        "body": "‘핵심’의 운명의 수레바퀴 정방향은 ‘변화의 순환’을 보여 줍니다. ‘조언’의 탑 정방향은 ‘기반의 흔들림’을 보여 줍니다. 안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요."
+      },
+      "candidates": [
+        {
+          "axis": "framework",
+          "kind": "tension",
+          "left": "flexibility",
+          "right": "security",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "변화의 순환",
+        "support": "통제할 수 없는 변곡점을 인식함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "ar10",
+        "name": "운명의 수레바퀴",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "transition",
+          "flexibility"
+        ]
+      },
+      "b": {
+        "main": "더 안정된 곳으로 이동",
+        "support": "혼란에서 벗어나는 전환",
+        "tag": "part",
+        "reverse": false,
+        "id": "sw06",
+        "name": "소드 6",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "transition",
+          "security"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "tension",
+        "semanticKind": "tension",
+        "axis": "framework",
+        "shared": [
+          "transition"
+        ],
+        "leftMotifs": [
+          "transition",
+          "flexibility"
+        ],
+        "rightMotifs": [
+          "transition",
+          "security"
+        ],
+        "contextRule": null,
+        "insight": "안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요.",
+        "positional": "",
+        "core": "‘핵심’의 운명의 수레바퀴 정방향은 ‘변화의 순환’을 보여 줍니다. ‘조언’의 소드 6 정방향은 ‘더 안정된 곳으로 이동’을 보여 줍니다. 안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요.",
+        "body": "‘핵심’의 운명의 수레바퀴 정방향은 ‘변화의 순환’을 보여 줍니다. ‘조언’의 소드 6 정방향은 ‘더 안정된 곳으로 이동’을 보여 줍니다. 안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요."
+      },
+      "candidates": [
+        {
+          "axis": "framework",
+          "kind": "tension",
+          "left": "flexibility",
+          "right": "security",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "기반의 흔들림",
+        "support": "오래 버티던 전제가 무너짐",
+        "tag": "part",
+        "reverse": false,
+        "id": "ar16",
+        "name": "탑",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "transition",
+          "security"
+        ]
+      },
+      "b": {
+        "main": "변화의 순환",
+        "support": "통제할 수 없는 변곡점을 인식함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "ar10",
+        "name": "운명의 수레바퀴",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "transition",
+          "flexibility"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "tension",
+        "semanticKind": "tension",
+        "axis": "framework",
+        "shared": [
+          "transition"
+        ],
+        "leftMotifs": [
+          "transition",
+          "security"
+        ],
+        "rightMotifs": [
+          "transition",
+          "flexibility"
+        ],
+        "contextRule": null,
+        "insight": "안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요.",
+        "positional": "",
+        "core": "‘핵심’의 탑 정방향은 ‘기반의 흔들림’을 보여 줍니다. ‘조언’의 운명의 수레바퀴 정방향은 ‘변화의 순환’을 보여 줍니다. 안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요.",
+        "body": "‘핵심’의 탑 정방향은 ‘기반의 흔들림’을 보여 줍니다. ‘조언’의 운명의 수레바퀴 정방향은 ‘변화의 순환’을 보여 줍니다. 안정된 틀을 지키는 일과 새 가능성에 맞게 바꾸는 일 사이의 조율이 필요합니다. 유지할 기준과 시험해 볼 방식을 나누어 보세요."
+      },
+      "candidates": [
+        {
+          "axis": "framework",
+          "kind": "tension",
+          "left": "security",
+          "right": "flexibility",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "지연된 기쁨",
+        "support": "밝은 면만 보고 어려움을 지나침",
+        "tag": "assess",
+        "reverse": true,
+        "id": "ar19",
+        "name": "태양",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "delay",
+          "ideals"
+        ]
+      },
+      "b": {
+        "main": "지연된 확장",
+        "support": "바깥 조건 때문에 속도가 늦어짐",
+        "tag": "assess",
+        "reverse": true,
+        "id": "wa03",
+        "name": "완드 3",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "delay",
+          "reality"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "evidence",
+        "shared": [
+          "delay"
+        ],
+        "leftMotifs": [
+          "delay",
+          "ideals"
+        ],
+        "rightMotifs": [
+          "delay",
+          "reality"
+        ],
+        "contextRule": null,
+        "insight": "모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다.",
+        "positional": "",
+        "core": "‘핵심’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. ‘조언’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다.",
+        "body": "‘핵심’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. ‘조언’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다."
+      },
+      "candidates": [
+        {
+          "axis": "evidence",
+          "kind": "complement",
+          "left": "ideals",
+          "right": "reality",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "꺼진 열정",
+        "support": "시작보다 동기를 먼저 회복함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "wa01",
+        "name": "완드 에이스",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "depleted",
+          "pause"
+        ]
+      },
+      "b": {
+        "main": "경계로 인한 소진",
+        "support": "오래 긴장해 회복할 힘이 부족함",
+        "tag": "support",
+        "reverse": true,
+        "id": "wa09",
+        "name": "완드 9",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "depleted",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [
+          "depleted"
+        ],
+        "leftMotifs": [
+          "depleted",
+          "pause"
+        ],
+        "rightMotifs": [
+          "depleted",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. ‘조언’의 완드 9 역방향은 ‘경계로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 완드 에이스 역방향은 ‘꺼진 열정’을 보여 줍니다. ‘조언’의 완드 9 역방향은 ‘경계로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "depleted",
+          "right": "bounds",
+          "primary": 1
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "지연된 확장",
+        "support": "바깥 조건 때문에 속도가 늦어짐",
+        "tag": "assess",
+        "reverse": true,
+        "id": "wa03",
+        "name": "완드 3",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "delay",
+          "reality"
+        ]
+      },
+      "b": {
+        "main": "지연된 기쁨",
+        "support": "밝은 면만 보고 어려움을 지나침",
+        "tag": "assess",
+        "reverse": true,
+        "id": "ar19",
+        "name": "태양",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "delay",
+          "ideals"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "evidence",
+        "shared": [
+          "delay"
+        ],
+        "leftMotifs": [
+          "delay",
+          "reality"
+        ],
+        "rightMotifs": [
+          "delay",
+          "ideals"
+        ],
+        "contextRule": null,
+        "insight": "모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다.",
+        "positional": "",
+        "core": "‘핵심’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. ‘조언’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다.",
+        "body": "‘핵심’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. ‘조언’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다."
+      },
+      "candidates": [
+        {
+          "axis": "evidence",
+          "kind": "complement",
+          "left": "reality",
+          "right": "ideals",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "안정된 이정표",
+        "support": "성취를 나눌 공간과 사람들",
+        "tag": "reconnect",
+        "reverse": false,
+        "id": "wa04",
+        "name": "완드 4",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "security",
+          "connection"
+        ]
+      },
+      "b": {
+        "main": "지키고 싶은 안정",
+        "support": "가진 것과 경계를 보호함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "pe04",
+        "name": "펜타클 4",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "security",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "tension",
+        "semanticKind": "tension",
+        "axis": "space",
+        "shared": [
+          "security"
+        ],
+        "leftMotifs": [
+          "security",
+          "connection"
+        ],
+        "rightMotifs": [
+          "security",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "함께하고 싶은 마음과 스스로 지킬 범위를 동시에 살펴보는 조합입니다. 가까워지는 정도보다 서로 감당할 수 있는 방식이 중요합니다.",
+        "positional": "",
+        "core": "‘핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. ‘조언’의 펜타클 4 정방향은 ‘지키고 싶은 안정’을 보여 줍니다. 함께하고 싶은 마음과 스스로 지킬 범위를 동시에 살펴보는 조합입니다. 가까워지는 정도보다 서로 감당할 수 있는 방식이 중요합니다.",
+        "body": "‘핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. ‘조언’의 펜타클 4 정방향은 ‘지키고 싶은 안정’을 보여 줍니다. 함께하고 싶은 마음과 스스로 지킬 범위를 동시에 살펴보는 조합입니다. 가까워지는 정도보다 서로 감당할 수 있는 방식이 중요합니다."
+      },
+      "candidates": [
+        {
+          "axis": "space",
+          "kind": "tension",
+          "left": "connection",
+          "right": "bounds",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "불안정한 기반",
+        "support": "함께 기뻐할 여유가 부족함",
+        "tag": "rest",
+        "reverse": true,
+        "id": "wa04",
+        "name": "완드 4",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "security",
+          "depleted"
+        ]
+      },
+      "b": {
+        "main": "지키고 싶은 안정",
+        "support": "가진 것과 경계를 보호함",
+        "tag": "assess",
+        "reverse": false,
+        "id": "pe04",
+        "name": "펜타클 4",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "security",
+          "bounds"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "complement",
+        "semanticKind": "complement",
+        "axis": "capacity",
+        "shared": [
+          "security"
+        ],
+        "leftMotifs": [
+          "security",
+          "depleted"
+        ],
+        "rightMotifs": [
+          "security",
+          "bounds"
+        ],
+        "contextRule": null,
+        "insight": "부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "positional": "",
+        "core": "‘핵심’의 완드 4 역방향은 ‘불안정한 기반’을 보여 줍니다. ‘조언’의 펜타클 4 정방향은 ‘지키고 싶은 안정’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+        "body": "‘핵심’의 완드 4 역방향은 ‘불안정한 기반’을 보여 줍니다. ‘조언’의 펜타클 4 정방향은 ‘지키고 싶은 안정’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다."
+      },
+      "candidates": [
+        {
+          "axis": "capacity",
+          "kind": "complement",
+          "left": "depleted",
+          "right": "bounds",
+          "primary": 0
+        }
+      ]
+    },
+    {
+      "issue": "common-primary-suppressed",
+      "a": {
+        "main": "소모적인 충돌",
+        "support": "갈등을 피하거나 계속 키움",
+        "tag": "part",
+        "reverse": true,
+        "id": "wa05",
+        "name": "완드 5",
+        "role": "now",
+        "index": 0,
+        "motifs": [
+          "conflict",
+          "avoidance"
+        ]
+      },
+      "b": {
+        "main": "소모적 다툼의 정리",
+        "support": "승부보다 갈등 종료를 택함",
+        "tag": "part",
+        "reverse": true,
+        "id": "sw05",
+        "name": "소드 5",
+        "role": "advice",
+        "index": 4,
+        "motifs": [
+          "conflict",
+          "closure"
+        ]
+      },
+      "relation": {
+        "refs": [
+          0,
+          4
+        ],
+        "kind": "tension",
+        "semanticKind": "tension",
+        "axis": "ending",
+        "shared": [
+          "conflict"
+        ],
+        "leftMotifs": [
+          "conflict",
+          "avoidance"
+        ],
+        "rightMotifs": [
+          "conflict",
+          "closure"
+        ],
+        "contextRule": null,
+        "insight": "다음 단계로 옮겨가는 힘과 익숙한 것을 유지하려는 힘이 맞닿습니다. 이미 끝난 부분과 계속 선택할 수 있는 부분을 나누어 보면 망설임을 구체화할 수 있습니다.",
+        "positional": "",
+        "core": "‘핵심’의 완드 5 역방향은 ‘소모적인 충돌’을 보여 줍니다. ‘조언’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 다음 단계로 옮겨가는 힘과 익숙한 것을 유지하려는 힘이 맞닿습니다. 이미 끝난 부분과 계속 선택할 수 있는 부분을 나누어 보면 망설임을 구체화할 수 있습니다.",
+        "body": "‘핵심’의 완드 5 역방향은 ‘소모적인 충돌’을 보여 줍니다. ‘조언’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 다음 단계로 옮겨가는 힘과 익숙한 것을 유지하려는 힘이 맞닿습니다. 이미 끝난 부분과 계속 선택할 수 있는 부분을 나누어 보면 망설임을 구체화할 수 있습니다."
+      },
+      "candidates": [
+        {
+          "axis": "ending",
+          "kind": "tension",
+          "left": "avoidance",
+          "right": "closure",
+          "primary": 0
+        }
+      ]
+    }
+  ],
+  "note": "All 24,024 ordered, distinct-card orientation pairs examined. Primary-motif coverage is a routing diagnostic, not a semantic or expert-quality score. Representative actual old relations retained."
+}

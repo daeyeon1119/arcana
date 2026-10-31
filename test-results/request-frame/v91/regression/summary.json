@@ -1,0 +1,28 @@
+{
+  "phase": "regression",
+  "release": {
+    "appVersion": "91.0.0",
+    "readingEngine": 91,
+    "appSHA256": "eba279cf4ce0ba46e2ba44221e412fa02a22f96481d4946a306d4bf15519918a",
+    "appBytes": 33182548,
+    "webRelease": "5026b157af835016c0b7c555",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "baselineSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+  "fixtureSHA256": "1fd955f18094ad6068da2f9960bb04f0de1c731238fd0df488dfd641bcf29494",
+  "collectorSHA256": "822a4d13d449b0e0d0fc6b82a5f13fddfc43b705bdfc156dc4605b6e3f652442",
+  "seed": 900061,
+  "note": "Authored only after committing candidate fc60c9e. First execution across 20 self-authored questions and eight fixed spreads, including domain, actor, polarity and compound-output controls. Not independent, blinded or expert evaluation. All first actual outputs and failures remain immutable; later use is regression.",
+  "questions": 20,
+  "readingsPerVersion": 160,
+  "readingsSHA256": "2b88f2f50cafa477eea1aec7176c2b38ffa14d16f3c4562a4eeb3e044ca60d65",
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 160,
+  "professionalQualityScore": null
+}

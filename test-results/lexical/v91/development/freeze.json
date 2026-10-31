@@ -1,0 +1,21 @@
+{
+  "phase": "development",
+  "release": {
+    "appVersion": "91.0.0",
+    "readingEngine": 91,
+    "appSHA256": "eba279cf4ce0ba46e2ba44221e412fa02a22f96481d4946a306d4bf15519918a",
+    "appBytes": 33182548,
+    "webRelease": "5026b157af835016c0b7c555",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "baselineSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+  "fixtureSHA256": "56a7214403d663c3fb8da64b0e8edda87552ecd99c316b2f035f95aaba219ab3",
+  "collectorSHA256": "0aa9c0cb305d6562ff326be6fce01a835b243776180a4adbd5a2e359c362a7f0",
+  "seed": 890041,
+  "note": "Known author development probes spanning lexical collisions, grammatical roles, clinical/career coexistence and request purpose. Includes reviewed v88 failures. Expected fields are evaluator-only; not a fresh, independent or expert benchmark."
+}

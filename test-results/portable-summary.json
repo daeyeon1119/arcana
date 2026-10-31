@@ -1,10 +1,10 @@
 {
   "release": {
-    "appVersion": "90.0.0",
-    "readingEngine": 90,
-    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
-    "appBytes": 33179345,
-    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "appVersion": "91.0.0",
+    "readingEngine": 91,
+    "appSHA256": "eba279cf4ce0ba46e2ba44221e412fa02a22f96481d4946a306d4bf15519918a",
+    "appBytes": 33182548,
+    "webRelease": "5026b157af835016c0b7c555",
     "languageAnalysis": {
       "backend": "garu-ko",
       "version": "0.11.0",
@@ -41,6 +41,6 @@
   "browser": "156.0.4314.50",
   "profiles": 3,
   "questionCardCombinationsPerProfile": 336,
-  "readingParitySHA256": "6fa4c1fc43db01dd46d831341a54892ab4bf90262b60640d28c839b3449cbda7",
+  "readingParitySHA256": "b5b039836cae04c6f81661d1a0c4b9d443261bc8eb608ceb4786f40afc26bd71",
   "note": "Actual browser cache, network-offline and update tests. Inputs include manual topic/focus settings and known compound requests. Android/iPhone profiles are Chromium emulations, not physical phone or Safari tests. Reading equality does not prove professional quality."
 }
