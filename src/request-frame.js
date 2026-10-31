@@ -5,8 +5,8 @@
  const morph=common?require('./korean-morphology.js'):root.ARCANA_KOREAN_MORPHOLOGY;
  const qt=common?require('./question-text.js'):root.ARCANA_QUESTION_TEXT;
  const set=s=>new Set(s.split(' '));
- const generic=set('것 거 일 상황 사람 내용 부분 점 방향 방법 방식 순서 단계 기준 이유 원인 무엇 뭐 어디 언제 어떤 어느 지금 현재 이제 앞 앞으로 선택 가지 쪽 수 필요 도움 질문 준비 정리 확인 검토 점검 진행 고려 결정 해결 생각');
- const documents=set('문서 자료 서류 안내문 안내서 계약서 양식 서식 문구 문장 설명문 보고서 원고 목차 구조 초안 대본 목록 표 장부 책자 공지문 규칙 회칙');
+ const generic=set('것 거 일 상황 사람 내용 부분 점 방향 방법 방식 순서 단계 기준 이유 원인 무엇 뭐 어디 언제 어떤 어느 지금 현재 이제 앞 앞으로 선택 선택지 대안 가지 쪽 수 필요 도움 질문 준비 정리 확인 검토 점검 진행 고려 결정 해결 생각');
+ const documents=set('문서 자료 서류 안내문 안내서 계약서 양식 서식 문구 문장 문단 설명문 보고서 원고 목차 구조 초안 대본 목록 표 장부 책자 공지문 규칙 회칙');
  const observations=set('기록 일지 노트 관찰 관측 데이터 메모 기록장');
  const requirements=set('조건 요건 자격 규정 절차 준비물 필수 서류 기한 일정 비용 신청 예약');
  const evidence=set('근거 사실 정보 자료 관찰 관측 예상 기대 추측 짐작 해석 판단 원인 내용');
@@ -34,7 +34,7 @@
  function operation(word,a){
   const terms=roots(word),all=nouns(a).map(n=>n.term);
   for(const [op,values]of Object.entries(verbs))if(terms.some(t=>values.has(t))){
-   if(op==='cope'&&!all.some(t=>/마음|감정|불안|걱정|긴장|분노|슬픔/.test(t)))continue;
+   if(op==='cope'&&!a.tokens.some(t=>/마음|감정|불안|걱정|긴장|분노|슬픔|답답|슬프|두렵|속상|외롭|자책/.test(t.text)))continue;
    if(op==='coordinate'&&terms.includes('나누')&&!all.some(t=>work.has(t))){
     if(all.some(t=>evidence.has(t)))return all.includes('기대')?'reflect':'inspect';
     continue;
@@ -58,12 +58,12 @@
   let found=finite.at(-1);
   const wrapper=found&&/^(?:알리|알려주|말|설명)$/.test(roots(found.word)[0]||'')&&/주세요|주십시오|해줘/.test(a.text.slice(found.word.start));
   if(!found||wrapper){
-   const nominal=candidates.findLast(x=>(x.nominalInquiry||x.word.tokens.some(t=>t.pos==='ETM'))&&a.words.slice(x.index+1,x.index+4).some(w=>w.tokens.some(t=>t.pos==='NNG'&&/^(?:방법|기준|순서|일|질문|항목|사항|점|내용|것)$/.test(t.text))));
+   const nominal=candidates.findLast(x=>(x.nominalInquiry||x.word.tokens.some(t=>t.pos==='ETM'))&&a.words.slice(x.index+1,x.index+4).some(w=>w.tokens.some(t=>t.pos==='NNG'&&/^(?:방법|기준|순서|일|질문|항목|사항|점|부분|내용|것)$/.test(t.text))));
    if(nominal)found={...nominal,viaNominal:true};else if(wrapper&&!/어떻게|어떤\s*방법|어느\s*순서/.test(a.text))found=null;
   }
   if(!found)return null;
   if(!found.viaNominal){
-   const later=a.words.slice(found.index+1).findLast(w=>!w.tokens.some(t=>t.pos==='ETM')&&w.tokens.some(t=>/^(?:VV|VA|XSV|XSA)$/.test(t.pos))&&!w.tokens.every(t=>!['VV','VA','XSV','XSA','NNG'].includes(t.pos)||set('하 되 있 없 보 않 주 어떻 진행 정리').has(t.text)));
+   const later=a.words.slice(found.index+1).findLast(w=>!w.tokens.some(t=>t.pos==='ETM')&&w.tokens.some(t=>/^(?:VV|VA|XSV|XSA)$/.test(t.pos))&&!w.tokens.every(t=>!['VV','VA','XSV','XSA','NNG'].includes(t.pos)||set('하 되 있 없 보 않 주 좋 어떻 진행 정리').has(t.text)));
    if(later&&!operation(later,a))return null;
   }
   const tail=a.words.slice(found.index,found.index+4).map(w=>w.text).join(' ');
@@ -78,12 +78,13 @@
   const objects=parsed=>nouns(parsed).filter(n=>!n.word.tokens.some(t=>/^(?:VV|VA|XSV|XSA)$/.test(t.pos)));
   let source={text:task.text,start:task.start||0,end:task.end??(task.start||0)+task.text.length},analysis=a,terms=objects(a),inherited=null;
   const active=terms.filter(n=>!generic.has(n.term)&&!n.word.tokens.some(t=>/^(?:VV|VA|XSV|XSA)$/.test(t.pos))),explicit=active.some(n=>n.word.tokens.some(t=>t.pos==='JKO'||t.pos==='JKG'||t.pos==='JKB'&&/^(?:에|에서|으로|로)$/.test(t.text)));
-  const anaphoric=/^(?:두\s*내용|그\s*내용|이\s*내용|그것|이것|이를|그\s*자료|이\s*자료)/.test(task.text.trim());
+  const anaphoric=/^(?:둘(?:을|의|은|다|\s)|두\s*내용|그\s*내용|이\s*내용|그것|이것|이를|그\s*자료|이\s*자료)/.test(task.text.trim());
   const known=terms.some(n=>documents.has(n.term)||observations.has(n.term)||messages.has(n.term)||requirements.has(n.term));
   const separateObject=active.some(n=>!set('자료 내용 문서 그것 이것 그거 이거 그걸 이를').has(n.term)&&n.word.tokens.some(t=>t.pos==='JKO'||t.pos==='JKG'||t.pos==='JKB'&&/^(?:에|에서|으로|로)$/.test(t.text)));
-  if((anaphoric&&!separateObject||!explicit&&!known)&&!/별개|별도로|무관|다른\s*(?:일|주제|문제)/.test(task.text)){
+  const relationalScope=op==='coordinate'&&active.every(n=>set('범위 부분 정도 저 나 제 내').has(n.term));
+  if((anaphoric&&!separateObject||!explicit&&!known||relationalScope)&&!/별개|별도로|무관|다른\s*(?:일|주제|문제)/.test(task.text)){
    const prior=previous(question,task.start||0),parsed=prior&&morph.analyze(qt.mask(prior.text));
-   if(parsed&&objects(parsed).some(n=>documents.has(n.term)||observations.has(n.term)||evidence.has(n.term))){source=prior;analysis=parsed;terms=objects(parsed);inherited=anaphoric?'anaphoric-content':'omitted-recent-object';}
+   if(parsed&&(objects(parsed).some(n=>documents.has(n.term)||observations.has(n.term)||evidence.has(n.term)||op==='coordinate'&&set('약속 규칙 대화 관계').has(n.term))||anaphoric&&parsed.tokens.some(t=>evidence.has(t.text)))){source=prior;analysis=parsed;terms=objects(parsed);inherited=anaphoric?'anaphoric-content':'omitted-recent-object';}
   }
   const all=new Set(terms.map(n=>n.term)),has=s=>terms.some(n=>s.has(n.term));
   let primary=terms.filter(n=>n.word.tokens.some(t=>t.pos==='JKO')&&(inherited||n.word.start<predicateStart)&&(!generic.has(n.term)||messages.has(n.term))).at(-1);
@@ -94,11 +95,11 @@
   const primaryKind=primary&&([[observations,'observation'],[documents,'document'],[messages,'message'],[creative,'creative'],[requirements,'requirements']].find(([terms])=>terms.has(primary.term))?.[1]);
   const modifier=primary&&analysis.words.findLast(w=>w.end<=primary.word.start);
   const requiredObject=primary&&set('자료 서류 준비물').has(primary.term)&&modifier?.tokens.some(t=>t.pos==='ETM')&&modifier.tokens.some(t=>/^(?:필요|준비|제출)$/.test(t.text));
-  const mixed=terms.some(n=>/^(?:기대|추측|짐작|해석|원인)$/.test(n.term))&&analysis.tokens.some(t=>/^(?:사실|관찰|관측|정보|자료|내용)$/.test(t.text));
+  const mixed=analysis.tokens.some(t=>/^(?:기대|추측|짐작|해석|원인)$/.test(t.text))&&analysis.tokens.some(t=>/^(?:사실|관찰|관측|정보|자료|내용)$/.test(t.text));
   let kind='unspecified';
   if(clinicalObject)kind='clinical';else if(assetObject)kind='asset';else if(op==='compare')kind='comparison';
   else if(mixed&&['inspect','reflect'].includes(op)||op==='inspect'&&has(evidence)&&/구별|구분|가진|빠진/.test(task.text))kind='evidence';
-  else if(op==='coordinate'&&/약속|규칙|대화|토론|관계/.test(task.text))kind='interaction';
+  else if(op==='coordinate'&&/약속|규칙|대화|토론|관계/.test(source.text))kind='interaction';
   else if(['inspect','verify'].includes(op)&&requiredObject||op==='verify'&&(has(requirements)||task.output==='항목'))kind='requirements';
   else if(op==='reflect'&&primary&&set('태도 마음 감정 기준 경험 역할 가치 이유 동기 배움').has(primary.term))kind='experience';
   else if(primaryKind)kind=primaryKind;
@@ -136,7 +137,7 @@
   if(op==='improve'&&roots(p?.word||{tokens:[]}).includes('줄이')&&!['message','document','creative'].includes(object.kind))return null;
   if(op==='inspect'&&object.kind==='requirements')op='verify';
   const predicateSpan=p?{start:(task.start||0)+p.word.start,end:(task.start||0)+p.word.end,text:question.slice((task.start||0)+p.word.start,(task.start||0)+p.word.end)}:null;
-  return {version:90,operation:op,target:object,predicate:predicateSpan,requestedOutput:task.output||null,scope:{start:task.start||0,end:task.end??(task.start||0)+task.text.length},reason:task.output?'coordinated-nominal-output':'predicate-and-object'};
+  return {version:90,operation:op,target:object,predicate:predicateSpan,requestedOutput:task.output||null,scope:{start:task.start||0,end:task.end??(task.start||0)+task.text.length},reason:task.output?'coordinated-nominal-output':p?.viaNominal?'nominal-work-head':'predicate-and-object'};
  }
  function outputs(part,question){
   if(!asked(part.text))return [];
@@ -158,10 +159,10 @@
   let result=requests.map(t=>({...t}));
   const kindFor=operation=>operation==='reflect'?'open':operation==='cope'?'emotion':'action';
   const parallel=requests.length>1||/그리고|각각|함께|동시에|방법도|행동도|비교(?:해\s*주고|하고)|알려\s*주고/.test(qt.mask(question));
-  for(const part of parts){
+  for(const [partIndex,part]of parts.entries()){
    const units=outputs(part,question),overlap=result.filter(t=>t.start>=part.start&&t.end<=part.end);
-   if(units.length>overlap.length){result=result.filter(t=>!overlap.includes(t));for(const unit of units){const frame=describe(question,unit);result.push({...unit,kind:kindFor(frame.operation),goal:frame.operation,work:frame});}}
-   else if(!overlap.length&&(explicitMode(part.text)||/어떻게|어떤\s*(?:방법|순서|기준)/.test(part.text))){
+   if(units.length>new Set(overlap.map(t=>t.start+':'+t.end)).size){result=result.filter(t=>!overlap.includes(t));for(const unit of units){const frame=describe(question,unit);result.push({...unit,kind:kindFor(frame.operation),goal:frame.operation,work:frame});}}
+   else if(!overlap.length&&(explicitMode(part.text)||/어떻게|어떤\s*(?:방법|순서|기준)/.test(part.text)||asked(parts[partIndex+1]?.text||'')&&morph.analyze(part.text)?.words.at(-1)?.tokens.some(t=>t.pos==='EC'&&t.text==='고'))){
     const task={...part,text:question.slice(part.start,part.end),kind:'action',goal:'action'},frame=describe(question,task);
     const genericCardTail=/^(?:카드|타로)(?:를\s*통해|로)\s*(?:좀\s*)?(?:돌아보|살펴보|보|성찰하)(?:고\s*싶(?:어요|습니다)|아\s*주세요)$/.test(part.text);
     if(frame&&!(result.length&&genericCardTail))result.push({...task,kind:kindFor(frame.operation),goal:frame.operation,work:frame});
@@ -170,9 +171,10 @@
   for(const task of result){
    const frame=task.work||describe(question,task);if(!frame)continue;
    if(task.kind==='cause'&&/어떻게/.test(task.text)&&frame.operation==='communicate'&&!/왜|어째서/.test(task.text)){task.kind='action';task.goal='communicate';}
-   if(task.kind==='forecast'&&explicitMode(task.text)){task.kind=kindFor(frame.operation);task.goal=frame.operation;}
+   if(task.kind==='forecast'&&(explicitMode(task.text)||frame.reason==='nominal-work-head'&&frame.operation==='reflect')){task.kind=kindFor(frame.operation);task.goal=frame.operation;}
    if(['action','emotion','open'].includes(task.kind))task.work=frame;
   }
+  result=result.filter((t,i)=>!t.work||!result.slice(0,i).some(u=>u.start===t.start&&u.end===t.end&&u.work?.operation===t.work.operation));
   result.sort((a,b)=>a.start-b.start);
   return result.length>1&&!parallel&&!result.some(t=>t.coordinated)?[result.at(-1)]:result;
  }

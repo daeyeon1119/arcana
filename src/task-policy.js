@@ -34,6 +34,7 @@
  }
  function operation(task,question){
   if(!task||!['action','emotion'].includes(task.kind)&&!(task.kind==='open'&&task.work?.operation==='reflect'))return null;
+  if(task.context?.type==='received-content'&&task.work?.operation==='inspect'&&task.work.target.kind==='unspecified')return 'verify';
   if(task.work?.operation)return task.work.operation;
   const original=task.evidenceText??task.text??'',cue=original.search(/어떻게|어떡|무엇|뭘|어떤|무슨|어디|언제/);
   const frame=task.frame||lexicalContext.requestFrame(original);if(frame?.operation&&(frame.reason!=='requested-lexical-predicate'||!task.goal||task.goal==='action'||task.frame))return frame.operation;

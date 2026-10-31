@@ -3,6 +3,7 @@
  function compose(work,{state={},task={},medical=false}={}){
   if(!work)return null;
   const op=work.operation,object=work.target||{},kind=object.kind;
+  if(op==='inspect'&&kind==='unspecified'&&task.context?.type==='received-content')return null;
   if(op==='inspect'){
    if(kind==='evidence'&&object.subtype==='interpretation')return {headline:'관찰한 장면과 원인 해석 나누기',text:'직접 보고 들었거나 기록한 장면과, 그 장면이 생긴 이유에 대한 설명을 나누어 적어 보세요. 각 설명을 뒷받침하는 근거가 무엇인지 확인하고, 다른 설명도 가능한 부분은 가설로 남겨 두세요. 다음에 무엇을 관찰하거나 대조하면 두 설명을 구별할 수 있을지 정해 볼 수 있습니다.'};
    if(kind==='observation')return {headline:'기록에서 관찰과 빈틈을 살펴보기',text:'언제 무엇을 관찰했고 어떤 조건에서 기록했는지 항목을 맞춰 보세요. 실제로 본 내용과 그 원인에 대한 추정을 나누고, 기록이 빠진 때나 비교하기 어려운 조건은 별도로 표시해 보세요. 다음 관찰에서 확인할 한 가지를 정하면 빈틈을 좁힐 수 있습니다.'};

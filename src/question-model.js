@@ -3,7 +3,7 @@
 (function(root){
  'use strict';
  const literalEvidence=typeof module==='object'&&module.exports?require('./reading-evidence.js'):root.ARCANA_READING_EVIDENCE;
- const CONTACT=/(?:메시지|메세지|문자|연락|고백|사과|카톡|톡|의견|목록|편지|서신|메일)/g;
+ const CONTACT=/(?:메시지|메세지|문자|연락|고백|사과|카톡|톡|의견|목록|편지|서신|메일|안내(?:문|서)?(?=은|는|을|를|이|가|도|\s|$))/g;
  const REPLY=/(?:답장|회신|답변|대답|(?<!정|오|문)답(?=이|을|도|은|는|해|했|하|할))/g;
  const RESULT=/(?:검사\s*결과|채점\s*결과|결과|성적|점수|발표|합격|불합격|탈락|낙방|선발|승인|당선)/g;
  const ASSESS=/(?:시험|면접|평가|심사)/g;
@@ -48,7 +48,7 @@
   if(/(?:면|다면|다면야|경우|가정|라고\s*가정|했으면|았으면|었으면|다면)\b|(?:했|됐|받았|보냈|왔)(?:으면|다면)|(?:했|받았|보냈|왔|제출했|접수됐)을\s*때/.test(text))return 'conditional';
   if(/(?:까\s*봐|을까\s*봐|다고\s*(?:생각|추측|상상)|일지도|인\s*것\s*같|했을까|왔을까|받았을까|보냈을까|꿈에서)|(?:했는지|보냈는지|왔는지|받았는지).{0,8}(?:모르|모릅|알지\s*못)/.test(text))return 'uncertain';
   if(/(?:다는|라는)\s*말|전해\s*들|다고\s*(?:했|하|해|말)/.test(text))return 'reported';
-  const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|열어보|확인|제출|공개)|(?:하|보내|전하|받|오|나오|읽|열어보|확인하|제출하|공개되)(?:지(?:는|도|만)?|진)\s*않/.test(text);
+  const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|열어보|펼쳐보|확인|제출|공개)|(?:하|보내|전하|받|오|나오|읽|열어보|펼쳐보|확인하|제출하|공개되)(?:지(?:는|도|만)?|진)\s*않/.test(text);
   const absentState=!completed(text)&&/(?:없|모르|모릅|모른|미정|미공개|미발표)/.test(text);
   if(verbalNegative||absentState)return 'negated';
   if(/(?:하려|할\s*예정|보낼\s*예정|받을\s*예정|계획|앞두|예정)|(?:할|보낼|전할|받을|올|나올|제출할)(?:까|지|까요|게|\s*예정)/.test(text))return 'planned';
@@ -102,7 +102,7 @@
    // A following clause may omit the object: "답장을 보냈다지만 저는 받은 내용이 없어요".
    const priorReply=events.findLast(e=>e.kind==='reply'&&e.end<=part.start);
    const priorContent=events.findLast(e=>['reply','contact'].includes(e.kind)&&e.end<=part.start);
-   const reading=part.text.match(/^(?:(?:저는|제가|나는|내가|아직|이미|다시|안|못)\s*)*(?:읽|열어보)/);
+   const reading=part.text.match(/^(?:(?:저는|제가|나는|내가|아직|이미|다시|안|못)\s*)*(?:읽|열어보|펼쳐보)/);
    if(priorContent&&reading&&!unique.some(n=>['reply','contact'].includes(n.kind)))add(part,priorContent.kind,priorContent.object,0,part.text.length,{direction:'read',predicate:reading[0].includes('열어보')?'열어보':'읽',accepting:true,inferredObject:true,readingFromOtherReceipt:priorContent.readingFromOtherReceipt||priorContent.actor==='other'&&priorContent.direction==='receive'});
    const priorWaiting=events.findLast(e=>['reply','result'].includes(e.kind)&&e.end<=part.start),waitOnly=eventEvidence.waiting(part.text);
    if(priorWaiting&&waitOnly&&!unique.some(n=>['reply','result'].includes(n.kind))&&eventEvidence.anaphoricWait(part.text,waitOnly.start))add(part,priorWaiting.kind,priorWaiting.object,0,part.text.length,{direction:'wait',waitingEvidence:{...waitOnly,start:part.start+waitOnly.start,end:part.end,text:part.source.slice(waitOnly.start)},inferredObject:true});
