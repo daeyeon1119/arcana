@@ -15,6 +15,7 @@ check('the direct object wins over background material and metaphor words',()=>{
  const quoted=plan('자료의 “약 용량을 항상 바꿔도 된다”라는 문구를 참고해 영상을 어떻게 편집할까요?');assert(quoted.contentCheck);assert(quoted.text.includes('의료진·약사'));
 });
 check('a source document and its requested criteria remain separate and literal',()=>{
+ for(const topic of ['신청','예약','등록','이용']){const p=plan(topic+' 조건에서 무엇을 확인할까요?');assert.equal(p.object.subtype,'conditions');for(const term of ['필수','시간','비용','변경','중단','질문'])assert(p.text.includes(term));}
  const text='이 자료에서 어떤 조건을 확인해야 할까요?',p=plan(text);assert.equal(p.operation,'verify');assert.equal(p.object.kind,'requirements');assert.equal(p.object.carrier.kind,'document');assert.equal(p.target,'artifact');assert(p.text.includes('기준일'));
  const post=plan('신청은 이미 접수됐습니다. 추가 사진을 보낼 수 있는지 등 접수 뒤의 조건에서 무엇을 확인할까요?');assert.equal(post.operation,'verify');assert(post.text.includes('이미 접수한 절차는 반복하지'));
  const inquiry=plan('답을 받았을 때 다시 물을 사항을 정리하는 방법을 알려 주세요.');assert.equal(inquiry.operation,'inquire');

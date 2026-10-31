@@ -117,7 +117,7 @@
   const owner=/(?:^|\s)(?:제|내|저의|나의)\s/.test(localOwner)?'self':/(?:그의|상대의|다른\s*사람의)/.test(localOwner)?'other':'unspecified';
   const carrierWord=terms.findLast(t=>documents.has(t.term)&&t.word.tokens.some(p=>p.pos==='JKB'&&p.text==='에서')&&t.word.start<(n?.word.start??Infinity));
   const carrier=carrierWord?{kind:'document',head:carrierWord.term,evidence:{start:source.start+carrierWord.word.start,end:source.start+carrierWord.word.end,text:question.slice(source.start+carrierWord.word.start,source.start+carrierWord.word.end)}}:null;
-  const subtype=kind==='requirements'?(terms.some(n=>/^(?:자격|요건|신청|대상)$/.test(n.term))?'eligibility':all.has('서류')?'documents':'conditions'):kind==='evidence'?(mixed&&!/(?:가진|빠진|없는|미확인)\s*(?:자료|정보)/.test(source.text)?'interpretation':'availability'):null;
+  const subtype=kind==='requirements'?(terms.some(n=>/^(?:자격|요건|대상)$/.test(n.term))?'eligibility':all.has('서류')?'documents':'conditions'):kind==='evidence'?(mixed&&!/(?:가진|빠진|없는|미확인)\s*(?:자료|정보)/.test(source.text)?'interpretation':'availability'):null;
   return {kind,subtype,head:n?.term||null,evidence:evidenceSpan,carrier,owner,...(inherited?{inherited}:{}),modality:modality(source.text)};
  }
  function describe(question,task){
