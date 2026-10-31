@@ -1,10 +1,10 @@
 {
   "release": {
-    "appVersion": "89.0.0",
-    "readingEngine": 89,
-    "appSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
-    "appBytes": 33141003,
-    "webRelease": "12dd12a13151379b100bfbdc",
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
     "languageAnalysis": {
       "backend": "garu-ko",
       "version": "0.11.0",
@@ -12,23 +12,23 @@
       "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
     }
   },
-  "fixtureSHA256": "d5d200956c1822e489ab45812ecad9ca47478f9e5570af2cec35a3875db32bab",
+  "fixtureSHA256": "623e322fa6279ce104035d8018d751b9d2c3a0d319b55e96c0f7277b8fa07f82",
   "probeSHA256": "8a8f2dc68711fb38ed996ed14e6e280590606b5315d566a90cb9d3aaf08414a4",
   "checks": [
     "release metadata matches exact deployed HTML and worker",
-    "desktop: 272 fixed question/card/settings readings equal across locale, timezone and screen",
+    "desktop: 336 fixed question/card/settings readings equal across locale, timezone and screen",
     "desktop: complete app cache respects nested deployment scope",
-    "desktop: offline new tab serves same 272 readings",
+    "desktop: offline new tab serves same 336 readings",
     "desktop: all 78 embedded original JPEGs decode offline",
     "offline draw/reveal/save works without a model server",
-    "android-emulation: 272 fixed question/card/settings readings equal across locale, timezone and screen",
+    "android-emulation: 336 fixed question/card/settings readings equal across locale, timezone and screen",
     "android-emulation: complete app cache respects nested deployment scope",
-    "android-emulation: offline new tab serves same 272 readings",
+    "android-emulation: offline new tab serves same 336 readings",
     "android-emulation: all 78 embedded original JPEGs decode offline",
     "android-emulation: backup restores the same question/cards/report without cloud sync",
-    "iphone-emulation: 272 fixed question/card/settings readings equal across locale, timezone and screen",
+    "iphone-emulation: 336 fixed question/card/settings readings equal across locale, timezone and screen",
     "iphone-emulation: complete app cache respects nested deployment scope",
-    "iphone-emulation: offline new tab serves same 272 readings",
+    "iphone-emulation: offline new tab serves same 336 readings",
     "iphone-emulation: all 78 embedded original JPEGs decode offline",
     "iphone-emulation: backup restores the same question/cards/report without cloud sync",
     "mismatched update is rejected and old offline app and records survive",
@@ -40,7 +40,7 @@
   "errors": [],
   "browser": "156.0.4314.50",
   "profiles": 3,
-  "questionCardCombinationsPerProfile": 272,
-  "readingParitySHA256": "5d25a3ffa318d2b32745287b446525fd7046d64a3b98acfd0897b8e04b2a8057",
+  "questionCardCombinationsPerProfile": 336,
+  "readingParitySHA256": "6fa4c1fc43db01dd46d831341a54892ab4bf90262b60640d28c839b3449cbda7",
   "note": "Actual browser cache, network-offline and update tests. Inputs include manual topic/focus settings and known compound requests. Android/iPhone profiles are Chromium emulations, not physical phone or Safari tests. Reading equality does not prove professional quality."
 }

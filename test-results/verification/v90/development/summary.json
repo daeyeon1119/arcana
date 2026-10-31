@@ -1,0 +1,17 @@
+{
+  "phase": "development",
+  "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+  "baselineSHA256": "b36240aa2735a8dad443d6f74d489e2fac4e826e5bd3839f406cf99bc17c95e5",
+  "fixtureSHA256": "212a932f1bd3c684dacfe1ebdb3c36f823909609bda93e16222c8ceb7a6e48f0",
+  "collectorSHA256": "4ba221de091a20d493c746e67ea760223f30cc6a8ee8d54b7417ed11db346b31",
+  "seed": 860019,
+  "note": "Known/development inputs, including the v85 u16 failure and v84 verification pairs. These are not an unseen or independent expert evaluation. Literal span/application contracts are not a semantic quality or professional score.",
+  "readingsSHA256": "551b268f1e41f67c06427911d03956b746b2a127bac84675e0287345482bff55",
+  "compressedSHA256": "bdc433addf46027746a908fab36dc1d49480f8e8171290549ec7ca9e55344e02",
+  "questions": 8,
+  "readingsPerVersion": 64,
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 64,
+  "qualityScore": null
+}

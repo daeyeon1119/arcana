@@ -1,0 +1,18 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "0f97d9b6604b6074784b4d0fef1c8bdb5c7b61f7b6cf82d90bf494101b9e1800",
+    "appBytes": 33178926,
+    "webRelease": "5f77b58b0921863160f5649d",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "collectorSHA256": "99a93ff7cf2bfdef960920b42d2876393447126451056b0abe5e131cd095c1af",
+  "actualLog": "regression data, not independent accuracy.\",\r\n    \"count\": 48,\r\n    \"before\": 34,\r\n    \"after\": 41,\r\n    \"improved\": 7,\r\n    \"regressed\": 0\r\n  },\r\n  \"failures\": [],\r\n  \"latencyMs\": {\r\n    \"note\": \"Single local generation, excluding browser startup, UI animation and baseline comparison.\",\r\n    \"p50\": 10.7,\r\n    \"p95\": 18.8,\r\n    \"max\": 104.9,\r\n    \"total\": 11824.6\r\n  }\r\n}\r\n\r\n> arcana-tarot@90.0.0 test:ui\r\n> node scripts/ui.cjs\r\n\r\nlocator.waitFor: Timeout 30000ms exceeded.\r\nCall log:\r\n  - waiting for locator('.fan-card').first() to be visible\r\n    62 × locator resolved to hidden <button type=\"button\" data-select=\"0\" class=\"fan-card\" aria-label=\"펼쳐진 덱의 1번째 카드 선택\">…</button>\r\n\r\n    at C:\\Users\\joy01\\Documents\\ChatGPT\\타로앱\\scripts\\ui.cjs:61:81 {\r\n  log: [\r\n    \"  - waiting for locator('.fan-card').first() to be visible\",\r\n    '    62 × locator resolved to hidden <button type=\"button\" data-select=\"0\" class=\"fan-card\" aria-label=\"펼쳐진 덱의 1번째 카드 선택\">…</button>'\r\n  ],\r\n  name: 'TimeoutError'\r\n}\r\n",
+  "review": "The eight-spread UI loop reused the deliberate invalidation-only input 다른 질문입니다. New context validation correctly leaves fan buttons hidden. Keep the invalidation assertion and set a meaningful daily reflection question before checking all eight draw/reveal flows. Clarification has its dedicated real UI checks."
+}

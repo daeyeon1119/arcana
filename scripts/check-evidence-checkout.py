@@ -17,6 +17,8 @@ if major>=88:
     paths+=['test-results/event-state/first/readings.json','test-results/event-state/first/summary.json']
 if major>=89:
     paths+=['test-results/lexical/first/readings.json','test-results/lexical/first/summary.json']
+if major>=90:
+    paths+=['test-results/request-frame/first/readings.json','test-results/request-frame/first/summary.json','tests/request-frame-first.json']
 target=Path(tempfile.mkdtemp(prefix='evidence-checkout-',dir=root/'.cache'))
 git('-c','core.autocrlf=true','clone','--shared','--no-checkout',str(root),str(target))
 git('config','core.autocrlf','true',cwd=target)
@@ -43,6 +45,9 @@ if major>=88:
 if major>=89:
     summary=json.loads((target/'test-results/lexical/first/summary.json').read_text(encoding='utf-8'))
     assert checks['test-results/lexical/first/readings.json']==summary['readingsSHA256']
+if major>=90:
+    summary=json.loads((target/'test-results/request-frame/first/summary.json').read_text(encoding='utf-8'))
+    assert checks['test-results/request-frame/first/readings.json']==summary['readingsSHA256']
 result={'release':release,'sourceCommit':commit,'coreAutocrlf':True,'committedByteHashes':checks,'allByteEqual':True,'note':'Actual separate sparse Git clone/checkout with core.autocrlf=true. Public and first/regression evidence bytes equal committed blobs. No reading regeneration or semantic/expert score.'}
 output=root/f'test-results/checkout-repro-v{release["readingEngine"]}.json'
 temp=output.with_suffix('.json.tmp');temp.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n');temp.replace(output)

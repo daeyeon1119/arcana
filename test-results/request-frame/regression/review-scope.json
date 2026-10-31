@@ -1,0 +1,172 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "d3f2a4cb73cf713d02e756dded4e24ce5e2af40707f760c08a2bfec5da00a470",
+  "directlyRead": [
+    {
+      "id": "p01",
+      "directSHA256": "36413b099b11e7793108196a911766095ce598d5fe3f03aa433a59ae79ada55a"
+    },
+    {
+      "id": "p02",
+      "directSHA256": "504cc9b5ebe1b8769615db727ec9c4ddfb2cf45d3b9ad1e384c290b5e2ae16f9"
+    },
+    {
+      "id": "p03",
+      "directSHA256": "116552633ca9d181fe92f6054de5f5f2576ddf15e78fe87f1f19ab75dddb7995"
+    },
+    {
+      "id": "p04",
+      "directSHA256": "0696ddf167368be857c1d927b02986605519f3d241bd582fd70958aef1fcc3cb"
+    },
+    {
+      "id": "p05",
+      "directSHA256": "8d8b2f2f1181d5ae02401644237c4425fc832e6d7e062112ac8ca3e159a59a79"
+    },
+    {
+      "id": "p06",
+      "directSHA256": "8f12182c705f1aefdfffa1003fda332750abd10631609f934bbd457738e5c48b"
+    },
+    {
+      "id": "p07",
+      "directSHA256": "01036d8e3d04d0bb0135dda8c08036913122f324b0510c272a478c7448525de2"
+    },
+    {
+      "id": "p08",
+      "directSHA256": "06b92c82ef5ace0012805b4ac9b97da6c7f6a74a3850b0527f37653b1b3ab7f7"
+    },
+    {
+      "id": "p09",
+      "directSHA256": "3170dd075a23b753632b4d2e8e2f209e02a9ae7501a31fa59d5d890f9df8e88d"
+    },
+    {
+      "id": "p10",
+      "directSHA256": "fe023e20d80e970b32126ace3050ea191a6536e0bc16012daf0a23baea9822e3"
+    },
+    {
+      "id": "p11",
+      "directSHA256": "71cabc4eed29e9ebe3e24052585df35dbc62b9499a935a3cb65d97c71951a630"
+    },
+    {
+      "id": "p12",
+      "directSHA256": "be6b97a9a9a4a4792bd65d8333d64e9ff134de76667c47198fd4da3bc40806ce"
+    },
+    {
+      "id": "p13",
+      "directSHA256": "fcaae6212258951d2aebdb6f1c9b73ed5457ca73a905cb0dfda3f3f2a5303e57"
+    },
+    {
+      "id": "p14",
+      "directSHA256": "fe658ef52df0914ca361884cacd5833a418463c223a5391c87ce26c875203489"
+    },
+    {
+      "id": "p15",
+      "directSHA256": "cbd5e08a4f3a4af66c0f61e693bf3886eaeae5189de2c0fb3f1eab1290f1f4fe"
+    },
+    {
+      "id": "p16",
+      "directSHA256": "e604dcdf1e43937afadbc39ee293c577369e48d63cae5a88c43e628edd052733"
+    },
+    {
+      "id": "p17",
+      "directSHA256": "a5de678c9332d5821788731bd3407a37da44847795b5fb0996bf535a407bfdd8"
+    },
+    {
+      "id": "p18",
+      "directSHA256": "208e19cb95d3c1fd12ab58f8f35cc289ee3efe365baae5ce2156804953a902bf"
+    },
+    {
+      "id": "p19",
+      "directSHA256": "c42005d2440f16dd2a19bf963192b4ca0c9f492b4581ddd5a5c5e3c386570a2e"
+    },
+    {
+      "id": "p20",
+      "directSHA256": "eb0772b4694d833b1863b5f4d51045c190224aba5bd43c4e336867d9888d652d"
+    }
+  ],
+  "manualProvenance": "All 20 first five-card direct strings were read. Thirteen identical strings carry forward; changed p01/p03/p08/p12/p15/p19/p20 direct strings were read again. p07 language limitation is explicitly retained. Final source 8214485: All 20 direct strings match the previously read strings by SHA-256. Final source 107d498: all five-card direct strings are byte-identical to those already read for source 8214485. Their prior review carries forward by SHA-256; all detailed reports are retained without claiming a new human review. Final source 222e633: p05 was read again: the old general improvement method is retained; concrete expression-editing depth remains weak. Other 19 primary strings are identical.",
+  "remainingSemanticLimits": [
+    "p01: 점검 순서와 문서 대상으로 수정. 문단 자체의 내용은 없어 일반 구조 조언.",
+    "p02: 관찰 기록 점검으로 답하지만 질문의 방문객 반응에 연결한 깊이는 약함.",
+    "p03: 성찰로 수정. 제가 한 표현의 소유 연결은 여전히 중립 문장에 머묾.",
+    "p04: 다른 사람의 발신과 제 노트를 분리함. 카드 조언은 일반적임.",
+    "p06: 발신 상태 유지. 소유가 명시되지 않은 표현에 중립 안내. 전송 사건과 소유의 연결은 약함.",
+    "p07: 수신·미독 상태 계약은 수정. 실제 본문은 공식 안내 확인으로 동일하며 명시적 미독 선확인 연결이 부족함.",
+    "p09: 자료와 추정 구분. 측정 시각이라는 구체 내용 활용은 약함.",
+    "p10: 진료 설명의 핵심 정보 보존과 축약. 임상 판단은 하지 않음.",
+    "p11: 약의 양 변경을 카드로 결정하지 않음. 이미 읽은 안내와 추가 확인 방법은 짧음.",
+    "p12: 앞선 약속을 이어받아 합의와 부담의 범위로 수정.",
+    "p14: 비교 방법을 제공하지만 두 매체 특성의 구체성은 약함.",
+    "p16: 두 행동을 비교하나 일반 시간·비용 기준이 우세함.",
+    "p17: 동기 성찰로 답함. 그림이라는 분야 깊이는 약함.",
+    "p18: 읽으며는 배경으로 두고 성찰 처리. 실제 어려움의 탐색 질문이 일반적임.",
+    "p19: 두 대상 점검과 추가 편집 요청을 유지. 길고 같은 카드 적용이 반복됨.",
+    "p20: 기대·관찰 성찰과 감정 돌봄을 모두 처리. 카드 적용 반복과 깊이의 한계 남음.",
+    "p05: Ordinary expression editing falls back to the established general improvement method; concrete editing advice remains weak."
+  ],
+  "mechanicalFailures": [],
+  "professionalQualityScore": null,
+  "scope": "Known development/regression and bounded author reading. Other arrays and detailed card sections retained but not all manually reread. No independent expert evidence.",
+  "carriedFromRelease": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "c2f24a83b8ab8b4decc1ca47e801afb155262592e04d8ad6375db0f7339968c9",
+    "appBytes": 33178953,
+    "webRelease": "d0ae3c60e6ca30e8e921aef1",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "finalChangeRead": [
+    "p05"
+  ],
+  "carryHistory": [
+    {
+      "release": {
+        "appVersion": "90.0.0",
+        "readingEngine": 90,
+        "appSHA256": "0f97d9b6604b6074784b4d0fef1c8bdb5c7b61f7b6cf82d90bf494101b9e1800",
+        "appBytes": 33178926,
+        "webRelease": "5f77b58b0921863160f5649d",
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+        }
+      },
+      "readingsSHA256": "f9766b3ca67d435476d0e51c919d2cddb053286d0c3509dd6c7b8216579dbc67"
+    },
+    {
+      "release": {
+        "appVersion": "90.0.0",
+        "readingEngine": 90,
+        "appSHA256": "b9a47384e341d8adfee0254a5ebcd9004bda6f6ea41595face352923d875e1c4",
+        "appBytes": 33178952,
+        "webRelease": "4e6b553eb1dd64c73e4ef34b",
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+        }
+      },
+      "readingsSHA256": "ad6aa48f4c31711d7139faef09758f56a23177dde060f6f1df3e2b8ca2509e0b"
+    }
+  ],
+  "finalSourceCommit": "222e6336a08cb7cc122c46a4ff7b2d055de9540a"
+}

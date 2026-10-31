@@ -1,0 +1,22 @@
+{
+  "version": "90.0.0",
+  "checks": [
+    "literal predicate, object, inherited topic and compound task spans match normalized source",
+    "inspection works across document and observation nouns and inflected verbs",
+    "the direct object wins over background material and metaphor words",
+    "a source document and its requested criteria remain separate and literal",
+    "specific clarification and repeated goals preserve each actual object",
+    "self and other expression reflection retain ownership without inventing responses",
+    "separate nominal outputs and coordinated predicates both keep all requested work",
+    "method of explaining a reason differs from asking for its cause",
+    "bare generic direction asks for context while topic and emotion remain usable",
+    "reflection keeps its personal object and simultaneous background is not a second request",
+    "unreceived and hypothetical content never become an actually received answer",
+    "clinical description editing cannot authorize changing clinical quantities",
+    "an earlier document cannot turn actual asset review into document editing",
+    "alone work and interpersonal agreement use different objects and wording",
+    "card lenses use the requested object without changing drawn motifs"
+  ],
+  "examples": 95,
+  "note": "Known grammar, object, scope, actor and safety development properties. No new evaluation or expert quality score."
+}

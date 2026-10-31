@@ -1,0 +1,28 @@
+{
+  "phase": "regression",
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "baselineSHA256": "d7be73ee32f84493a35d72401ee4ffa06cc03d7aa3d452070f20c0d4af427052",
+  "fixtureSHA256": "1efda794636b5e3c4cdb3e80aa14228ad5f25de48a3a42d18bc991eae7da9d05",
+  "collectorSHA256": "fc3ce09c7338ea045392d600261da56627dbcfa93bca4d591ab6b2341e8aa83e",
+  "seed": 880031,
+  "note": "Twenty synthetic author-written questions created after candidate commit 83cd30a. First execution on that frozen implementation; not independent, blind or expert evaluation. Outputs and failures remain immutable. Question variants are development material after review. Expected facts are evaluator-only. Known regression after first outputs informed changes.",
+  "readingsSHA256": "726b5a3a78070a3954f316155719cbe61c071d98a7bf966fb2723a53dbe3ba2c",
+  "questions": 20,
+  "readingsPerVersion": 160,
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 160,
+  "qualityScore": null
+}
