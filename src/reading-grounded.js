@@ -1,19 +1,19 @@
 /* Connect literal constraints and requested work to actual card lenses. */
 function arc87CardFacet(card,participants){
- const motif=arc81Profile(card)[0];
+ const motif=arc91Focus(card).motif;
  const self={connection:'기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요.',exchange:'들이는 시간과 힘, 그 과정에서 얻는 만족이 어떤 관계인지 살펴보세요.',support:'이미 쓸 수 있는 자원과 새로 필요한 도움을 구별해 보세요.',isolation:'혼자 할 필요가 있는 일과 이용할 수 있는 자원을 나누어 보세요.',mismatch:'바라는 상태와 실제 진행 상태 사이에서 어떤 부분이 어긋나는지 살펴보세요.',expression:'느끼는 것과 실제 표현으로 옮길 내용을 구별해 보세요.',suppression:'감정을 느끼는 일과 행동으로 옮길 때의 조절을 나누어 보세요.',conflict:'서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.'};
  const exploratory={grief:'상실감이나 상처가 있다면, 그 마음을 돌볼 시간과 지금 남아 있는 것을 함께 살펴보세요.'};
  return {motif,text:participants!==true&&self[motif]||exploratory[motif]||ARC81_MOTIFS[motif][1]};
 }
 function arc87AppliedLens(card,relation,spread,plan,bridge,usedRefs){
  const cards=relation?relation.refs.map(index=>relation.cards[index]):[card];
- const anchor=atom=>`‘${SPREADS[spread].slots[atom.index][0]}’의 ${atom.name} ${atom.reverse?'역방향':'정방향'}에서 살필 관점은 ‘${arc81Profile(atom).map(motif=>ARC81_MOTIFS[motif][0]).join('·')}’입니다.`;
+ const anchor=atom=>arc81Anchor(atom,spread).replace('보여 줍니다.','상징합니다.');
  const facet=relation?relation.insight:arc87CardFacet(card,plan.participants).text;
  const roles=cards.map(atom=>atom.role),roleFrame=roles.includes('boundary')?'이미 진행된 외부 절차와 조절할 태도를 나누어 보면, ':roles.some(role=>['future','outcome'].includes(role))?'현재 방향이 이어질 때 점검할 관점으로 읽으면, ':roles.includes('obstacle')?'실제로 막히는 부분이 있는지 살피는 관점으로, ':'';
  const refs=cards.map(atom=>atom.index),reused=refs.every(index=>usedRefs.has(index));for(const index of refs)usedRefs.add(index);
  const operationName=plan.operation==='coordinate'&&plan.object?.kind==='interaction'?'합의':plan.operation==='verify'&&plan.object?.kind==='requirements'?'요건 확인':{inspect:'점검',reflect:'성찰',compare:'비교',communicate:'설명',inquire:'질문 준비',verify:'조건 확인',improve:'수정',prepare:'준비',coordinate:'분담',prioritize:'우선순위',finish:'마무리',implement:'실행',cope:'마음 돌보기'}[plan.operation];
- const introduction=reused?`같은 카드의 관점을 ${operationName}에 적용하면, `:cards.map(anchor).join(' ')+' '+facet+' ';
- return {text:introduction+roleFrame+bridge.text,refs,operation:plan.operation,relationAxis:relation?.axis||null,facets:cards.map(atom=>({index:atom.index,id:atom.id,reverse:atom.reverse,motifs:arc81Profile(atom)})),roleFrame,reused};
+ const introduction=reused?`같은 카드의 관점을 ${operationName}에 적용하면, `:(relation?arc91PairAnchor(cards[0],cards[1],spread):cards.map(anchor).join(' '))+' '+facet+' ';
+ return {text:introduction+roleFrame+bridge.text,refs,operation:plan.operation,relationAxis:relation?.axis||null,facets:cards.map(atom=>({index:atom.index,id:atom.id,reverse:atom.reverse,motifs:arc81Profile(atom),focus:arc91Focus(atom)})),roleFrame,reused};
 }
 const ARC84_PREVIOUS_REPORT=arc79CreateReport;
 function arc84ConstraintText(evidence,operation,plan,taskText,usedVerification){
@@ -38,8 +38,9 @@ function arc84ConstraintText(evidence,operation,plan,taskText,usedVerification){
  }
  return {text:clauses.join(' '),quantity:usedQuantity,timeBinding,verification:appliedVerification};
 }
-function arc84Compare(evidence,pack,spread,previous){
+function arc84Compare(evidence,pack,spread,previous,selectionVersion=81){
  const options=evidence.options;if(!options.length)return null;
+ const profile=atom=>selectionVersion===91?arc91FocusedProfile(atom):arc81Profile(atom);
  const byRole=role=>pack.list.find(card=>card.role===role),cardA=byRole('optionA'),cardB=byRole('optionB');
  if(options.length<2||options.some(item=>!item.defined))return {mode:'clarify',text:'비교할 선택지의 내용이 필요합니다. 아직 정하지 않은 안의 내용과 중요하게 보는 기준을 알려 주세요.',action:'아직 정하지 않은 선택지의 내용을 먼저 확인해 보세요.',comparisons:null,refs:[],options};
  const introduction='질문에 적은 선택지를 구분해 읽었습니다.\n'+options.map(item=>item.label+'안: '+item.text).join('\n');
@@ -48,12 +49,12 @@ function arc84Compare(evidence,pack,spread,previous){
  const criteria=(constraints.length?`공통 조건으로 적은 ‘${constraints.join(' · ')}’에 각 안의 시간대와 소요 시간을 대입해 보세요. `:'')+'각 안의 실제 조건과 아직 모르는 부분을 같은 항목으로 비교하세요. 카드의 의미는 확인할 관점이며 어느 안의 결과나 우열을 보장하지 않습니다.';
  let comparisons=null,refs=[];
  if(options.length>2){
-  const common=byRole('criteria')||byRole('advice')||pack.main,lens=ARCANA_READING_BRIDGE.compose('compare',arc81Profile(common));
+  const common=byRole('criteria')||byRole('advice')||pack.main,lens=ARCANA_READING_BRIDGE.compose('compare',profile(common));
   return {mode:'common',text:introduction+'\n\n'+`선택지가 ${options.length}개이므로 각 안의 결과를 카드 한 장씩에 임의로 배정하지 않고 공통 기준으로 비교합니다. `+arc81Anchor(common,spread)+' '+(lens?.text||'같은 항목에서 확인한 조건과 아직 모르는 부분을 나누어 보세요.')+'\n\n'+criteria,action:criteria,comparisons:null,refs:[common.index],options};
  }
  const ordered=[...options].sort((a,b)=>a.sourceStart-b.sourceStart),namedA=options.find(item=>item.label==='A'),namedB=options.find(item=>item.label==='B'),[a,b]=namedA&&namedB?[namedA,namedB]:ordered;
  if(cardA&&cardB){
-  const lensA=ARCANA_READING_BRIDGE.compose('option',arc81Profile(cardA)),lensB=ARCANA_READING_BRIDGE.compose('option',arc81Profile(cardB));
+  const lensA=ARCANA_READING_BRIDGE.compose('option',profile(cardA)),lensB=ARCANA_READING_BRIDGE.compose('option',profile(cardB));
   comparisons=`${a.label}안: ${arc81Anchor(cardA,spread)} ${lensA?.text||ARC81_MOTIFS[arc81Profile(cardA)[0]][1]}\n\n${b.label}안: ${arc81Anchor(cardB,spread)} ${lensB?.text||ARC81_MOTIFS[arc81Profile(cardB)[0]][1]}`;
   refs=[cardA.index,cardB.index];
  }
@@ -67,7 +68,7 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
  for(let index=0;index<report.arc82.answers.length;index++){
   const answer=report.arc82.answers[index],previous=answer.text;
   if(answer.request.kind==='compare'){
-   const comparison=arc84Compare(evidence,pack,spread,answer.directText||answer.text);
+   const comparison=arc84Compare(evidence,pack,spread,answer.directText||answer.text,report.arc81?.selectionVersion);
    if(comparison&&!scene.medical&&!['health','finances'].includes(scene.domain)){
     answer.directText=comparison.text;answer.text=comparison.text;answer.actionText=comparison.action;if(comparison.refs.length)answer.refs=comparison.refs;replacements.set(previous,{body:answer.text,refs:answer.refs});
     applications.push({request:index,operation:'compare',mode:comparison.mode,options:comparison.options.map(item=>({label:item.label,start:item.start,end:item.end})),refs:comparison.refs});
@@ -79,9 +80,11 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   const task={...answer.request,evidenceText:model.evidenceQuestion.slice(answer.request.start,answer.request.end)},plan=ARCANA_TASK_POLICY.plan({question:model.question,evidenceQuestion:model.evidenceQuestion,task,scene,state:model.state});
   if(!plan||scene.medical&&plan.target!=='artifact')continue;
   const card=answer.request.kind==='emotion'||plan.operation==='reflect'?pack.main:pack.advice;
-  const shared=index===0&&report.arc81?.directSynthesisUsed?arc81DirectRelation(pack,spread,answer.request.kind):null;
+  const shared=index===0&&report.arc81?.directSynthesisUsed?arc81DirectRelation(pack,spread,answer.request.kind,report.arc81?.selectionVersion):null;
   const relation=shared&&!['alternatives','distinct'].includes(shared.kind)?shared:null;
-  const bridge=ARCANA_READING_BRIDGE.compose(plan.operation,arc81Profile(card),relation?.axis,{participants:plan.participants,object:plan.object});if(!bridge)continue;
+  const integrateLens=!scene.medical&&!['health','finances'].includes(scene.domain)&&!scene.facts.known;
+  const focus=integrateLens?arc91Focus(card):null,profile=arc81Profile(card),ordered=focus?[focus.motif,...profile.filter(m=>m!==focus.motif)]:profile;
+  const bridge=ARCANA_READING_BRIDGE.compose(plan.operation,ordered,relation?.axis,{participants:plan.participants,object:plan.object});if(!bridge)continue;
   const usesPair=!!(relation&&bridge.relationAxis&&bridge.primary===null);
   const context=arc84ConstraintText(evidence,plan.operation,plan,task.evidenceText,usedVerification),handled=report.arc83?.handled.find(item=>item.request===index);
   const replaceGeneric=handled?.actionSource==='request-policy'&&plan.target==='unspecified'&&!plan.waitingReply&&!plan.submitted&&!plan.contentCheck&&!plan.boundaryText;
@@ -90,7 +93,6 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   // not remove completion lists, question examples or source-checking steps.
   let practical=context.verification.length?ARCANA_VERIFICATION_FACTS.practical(originalPractical):originalPractical;
   if(context.text)practical+=' '+context.text;
-  const integrateLens=!scene.medical&&!['health','finances'].includes(scene.domain)&&!scene.facts.known;
   if(replaceGeneric&&!integrateLens)practical+='\n\n'+(usesPair?'카드의 연결을 더하면, ':`‘${SPREADS[spread].slots[card.index][0]}’ 카드의 관점을 더하면, `)+bridge.text;
   // Retain the previous boundaries, factual introductions and card connection.
   // Only the practical text is replaced, by its actual canonical source.
@@ -109,7 +111,7 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   const body=anchor+' '+bridge.text+(context.text?' '+context.text:'');
   if(!appliedLens&&!report.sections.some(section=>section.body===body)&&!extra.some(section=>section.body===body))extra.push({title:'질문에 적용할 관점',body,refs,kind:'contextual'});
   replacements.set(previous,{body:answer.text,refs:answer.refs});
-  applications.push({request:index,operation:plan.operation,object:plan.object,group:bridge.group,primaryMotif:bridge.primary,relationAxis:bridge.relationAxis,contextRule:bridge.contextRule,refs,replaceGeneric,quantity:context.quantity,timeBinding:context.timeBinding,verification:context.verification,directLens:appliedLens});
+  applications.push({request:index,operation:plan.operation,object:plan.object,group:bridge.group,primaryMotif:focus?.rank>0?null:bridge.primary,...(focus?{selectedMotif:bridge.primary,focus}:{}),relationAxis:bridge.relationAxis,contextRule:bridge.contextRule,refs,replaceGeneric,quantity:context.quantity,timeBinding:context.timeBinding,verification:context.verification,directLens:appliedLens});
  }
  if(applications.length){
   report.direct=report.arc82.answers.map(answer=>answer.directText||answer.text).join('\n\n');

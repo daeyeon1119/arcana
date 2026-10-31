@@ -10,7 +10,7 @@ root = Path(__file__).resolve().parents[1]
 base = (root / 'ARCANA_tarot_v78_source/html/ARCANA_tarot_v78.html').read_text(encoding='utf-8')
 css = '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/arcana79.css','src/card-mat.css','src/question-context.css','src/web-app.css'])
 language_bundle, language_meta = build_morphology()
-js = language_bundle + '\n' + '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/question-text.js','src/korean-morphology.js','src/lexical-context.js','src/request-frame.js','src/arcana79.js','src/reading-polish.js','src/reading-synthesis.js','src/verification-facts.js','src/reading-evidence.js','src/event-evidence.js','src/question-model.js','src/reading-context.js','src/reading-language.js','src/work-guidance.js','src/task-policy.js','src/reading-task.js','src/reading-bridge.js','src/reading-grounded.js','src/card-mat.js','src/web-app.js'])
+js = language_bundle + '\n' + '\n'.join((root / p).read_text(encoding='utf-8') for p in ['src/question-text.js','src/korean-morphology.js','src/lexical-context.js','src/request-frame.js','src/arcana79.js','src/reading-polish.js','src/card-interaction.js','src/reading-synthesis.js','src/verification-facts.js','src/reading-evidence.js','src/event-evidence.js','src/question-model.js','src/reading-context.js','src/reading-language.js','src/work-guidance.js','src/task-policy.js','src/reading-task.js','src/reading-bridge.js','src/reading-grounded.js','src/card-mat.js','src/web-app.js'])
 app_version = json.loads((root / 'package.json').read_text(encoding='utf-8'))['version']
 engine_version = int(app_version.split('.')[0])
 assert js.count('__ARCANA_APP_VERSION__') == 1

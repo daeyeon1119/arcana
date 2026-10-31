@@ -1,0 +1,20 @@
+const assert=require('node:assert/strict'),api=require('../src/card-interaction.js');
+assert.equal(api.focus(['care','overload'],['care','resources'],true).motif,'overload');
+assert.equal(api.focus(['care','bounds'],['care','support'],true).motif,'bounds');
+assert.equal(api.focus(['support','recovery'],['scarcity','isolation'],true).motif,'support','reversed can be constructive');
+assert.equal(api.focus(['care','resources'],['care','overload'],false).motif,'care');
+assert.equal(api.focus(['choice','delay'],['choice','pause'],true).motif,'delay');
+const rules=[['space','tension',['care'],['bounds']],['capacity','complement',['overload'],['bounds']]];
+const selected=api.select(['care','overload'],['structure','bounds'],['care','resources'],['rigid','bounds'],rules);
+assert.equal(selected.selected.axis,'capacity','directional overload must not be discarded for shared primary care');
+assert.equal(selected.selected.left,'overload');assert.equal(selected.selected.directional,1);
+assert.equal(api.select(['start'],['clarity'],['impulse'],['doubt'],rules),null);
+assert.deepEqual(api.select(['structure','bounds'],['care','overload'],['rigid','bounds'],['care','resources'],rules).selected.axis,'capacity','pair order does not change selected axis');
+const fs=require('node:fs'),vm=require('node:vm'),source=fs.readFileSync('src/reading-synthesis.js','utf8');
+const profiles=vm.runInNewContext('('+source.match(/const ARC81_PROFILES=(\{[\s\S]*?\n\});/)[1]+')');
+const links=vm.runInNewContext('('+source.match(/const ARC81_LINKS=(\[[\s\S]*?\n\]);/)[1]+')');
+const atoms=Object.entries(profiles).flatMap(([id,p])=>p.map((raw,i)=>({id,reverse:!!i,motifs:raw.split(','),opposite:p[1-i].split(',')})));
+const focusRows=atoms.map(a=>{const selected=api.focus(a.motifs,a.opposite,a.reverse);assert(a.motifs.includes(selected.motif));if(selected.rank>0){assert(a.reverse);assert(a.opposite.includes(a.motifs[0]));assert(!a.opposite.includes(selected.motif));}return {...a,selected};});
+let pairs=0,changed=0;for(const a of atoms)for(const b of atoms){if(a.id===b.id)continue;pairs++;const selected=api.select(a.motifs,b.motifs,a.opposite,b.opposite,links),swapped=api.select(b.motifs,a.motifs,b.opposite,a.opposite,links);assert.equal(selected?.selected.axis,swapped?.selected.axis);if(!selected)continue;const pick=selected.selected;assert(a.motifs.includes(pick.left)&&b.motifs.includes(pick.right));assert(selected.candidates.every(c=>pick.directional>c.directional||pick.directional===c.directional&&pick.primary>=c.primary));const old=links.find(([, ,x,y])=>a.motifs.some(m=>x.includes(m))&&b.motifs.some(m=>y.includes(m))||a.motifs.some(m=>y.includes(m))&&b.motifs.some(m=>x.includes(m)));if(old[0]!==pick.axis)changed++;}
+fs.mkdirSync('test-results/interaction',{recursive:true});require('../scripts/save-artifact.cjs')('test-results/interaction/unit-summary.json',JSON.stringify({orientations:atoms.length,orderedPairs:pairs,axisSelectionsChangedFromAuthoredOrder:changed,focusRows,note:'Exhaustive deterministic provenance and symmetry checks. Counts are not semantic correctness or professional quality scores.'},null,2)+'\n');
+console.log(JSON.stringify({orientations:atoms.length,orderedPairs:pairs,axisSelectionsChangedFromAuthoredOrder:changed,passed:true}));

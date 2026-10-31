@@ -107,9 +107,13 @@ function arc81Profile(atom){
  return raw.split(',');
 }
 function arc81Anchor(atom,spread){return `‘${SPREADS[spread].slots[atom.index][0]}’의 ${atom.name} ${atom.reverse?'역방향':'정방향'}은 ‘${atom.main}’${arc58Josa(atom.main,'을','를')} 보여 줍니다.`;}
+function arc91Focus(atom){return ARCANA_CARD_INTERACTION.focus(arc81Profile(atom),ARC81_PROFILES[atom.id][atom.reverse?0:1].split(','),atom.reverse);}
+function arc91FocusedProfile(atom){const motifs=arc81Profile(atom),{motif}=arc91Focus(atom);return [motif,...motifs.filter(m=>m!==motif)];}
+function arc91PairAnchor(a,b,spread){const name=atom=>`‘${SPREADS[spread].slots[atom.index][0]}’의 ${atom.name} ${atom.reverse?'역방향':'정방향'}`;return `${name(a)}은 ‘${a.main}’${arc58Josa(a.main,'을','를')}, ${name(b)}은 ‘${b.main}’${arc58Josa(b.main,'을','를')} 상징합니다.`;}
 function arc81Relation(a,b,spread,context=null){
  const left=arc81Profile(a),right=arc81Profile(b),shared=left.filter(x=>right.includes(x));
- const match=ARC81_LINKS.find(([, ,x,y])=>left.some(m=>x.includes(m))&&right.some(m=>y.includes(m))||left.some(m=>y.includes(m))&&right.some(m=>x.includes(m)));
+ const selection=context?.ranked?ARCANA_CARD_INTERACTION.select(left,right,ARC81_PROFILES[a.id][a.reverse?0:1].split(','),ARC81_PROFILES[b.id][b.reverse?0:1].split(','),ARC81_LINKS):null;
+ const match=selection?ARC81_LINKS[selection.selected.ruleIndex]:ARC81_LINKS.find(([, ,x,y])=>left.some(m=>x.includes(m))&&right.some(m=>y.includes(m))||left.some(m=>y.includes(m))&&right.some(m=>x.includes(m)));
  let kind,axis,insight;
  if(match){[axis,kind]=match;insight=match[4];}
  else if(shared.length){kind='shared';axis=shared[0];insight=`두 카드에서는 ‘${ARC81_MOTIFS[axis][0]}’${arc58Josa(ARC81_MOTIFS[axis][0],'이라는','라는')} 주제를 함께 살펴볼 수 있습니다. ${ARC81_MOTIFS[axis][1]}`;}
@@ -123,20 +127,21 @@ function arc81Relation(a,b,spread,context=null){
  if(roles.includes('optionA')&&roles.includes('optionB')){
   kind='alternatives';
   const optionA=a.role==='optionA'?a:b,optionB=a.role==='optionB'?a:b;
-  insight=`A를 살필 때는 ${ARC81_MOTIFS[arc81Profile(optionA)[0]][1]} B를 살필 때는 ${ARC81_MOTIFS[arc81Profile(optionB)[0]][1]}`;
+  insight=`A를 살필 때는 ${ARC81_MOTIFS[(context?.ranked?arc91FocusedProfile(optionA):arc81Profile(optionA))[0]][1]} B를 살필 때는 ${ARC81_MOTIFS[(context?.ranked?arc91FocusedProfile(optionB):arc81Profile(optionB))[0]][1]}`;
   positional='질문에 두 안을 적었다면 A와 B를 적은 순서로 읽어 보세요. 두 경로에서 실제로 감당할 조건을 같은 기준으로 비교해 보세요.';
  }
  else if(roles.includes('boundary'))positional='이미 진행된 외부 절차와 지금 조절할 수 있는 태도를 구분해 읽습니다.';
  else if(roles.includes('obstacle'))positional='제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.';
  else if(roles.includes('future')||roles.includes('outcome'))positional='이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.';
- return {refs:[a.index,b.index],kind,semanticKind,axis,shared,leftMotifs:left,rightMotifs:right,contextRule:contextualInsight&&kind!=='alternatives'?'no-stated-participant':null,insight,positional,core:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}`,body:`${arc81Anchor(a,spread)} ${arc81Anchor(b,spread)} ${insight}${positional?' '+positional:''}`};
+ const anchors=context?.ranked?arc91PairAnchor(a,b,spread):arc81Anchor(a,spread)+' '+arc81Anchor(b,spread);
+ return {...(context?.ranked?{selection:selection?{...selection,applied:kind!=='alternatives'}:null}:{}),refs:[a.index,b.index],kind,semanticKind,axis,shared,leftMotifs:left,rightMotifs:right,contextRule:contextualInsight&&kind!=='alternatives'?'no-stated-participant':null,insight,positional,core:`${anchors} ${insight}`,body:`${anchors} ${insight}${positional?' '+positional:''}`};
 }
 function arc81ChoiceAssigned(pack){
  if(!Object.hasOwn(pack,'question'))return true; // Standalone symbolic diagnostics.
  return arc79ForcedIntent==='compare'||arc79ForcedIntent==='auto'&&!!globalThis.ARCANA_QUESTION_MODEL?.parse(pack.question).requests.some(request=>request.kind==='compare');
 }
-function arc81Relations(pack,spread){
- const byRole=r=>pack.list.find(a=>a.role===r),pairs=[],context=Object.hasOwn(pack,'question')?{participants:globalThis.ARCANA_TASK_POLICY?.participants(pack.question)}:null;
+function arc81Relations(pack,spread,selectionVersion=81){
+ const byRole=r=>pack.list.find(a=>a.role===r),pairs=[],context=Object.hasOwn(pack,'question')?{participants:globalThis.ARCANA_TASK_POLICY?.participants(pack.question),ranked:selectionVersion===91}:null;
  const add=(a,b)=>{if(!a||!b||a.index===b.index)return;const key=[a.index,b.index].sort((x,y)=>x-y).join(':');if(!pairs.some(p=>p.key===key))pairs.push({key,...arc81Relation(a,b,spread,context)});};
  if(spread==='choice5'){if(arc81ChoiceAssigned(pack))add(byRole('optionA'),byRole('optionB'));add(byRole('criteria'),byRole('advice'));}
  else if(spread==='three'){add(byRole('now'),byRole('future'));add(byRole('past'),byRole('now'));}
@@ -146,8 +151,8 @@ function arc81Relations(pack,spread){
  if(!['choice5','three','waiting3','celtic'].includes(spread))pairs.sort((a,b)=>({distinct:0,shared:1,tension:2,complement:2}[b.kind]-{distinct:0,shared:1,tension:2,complement:2}[a.kind]));
  return pairs;
 }
-function arc81DirectRelation(pack,spread,kind){
- return arc81Relations(pack,spread).find(link=>link.kind!=='distinct'&&(kind==='compare'?link.kind==='alternatives':link.kind!=='alternatives'))||null;
+function arc81DirectRelation(pack,spread,kind,selectionVersion=81){
+ return arc81Relations(pack,spread,selectionVersion).find(link=>link.kind!=='distinct'&&(kind==='compare'?link.kind==='alternatives':link.kind!=='alternatives'))||null;
 }
 
 // Preserve the last requested task, including requests phrased as choosing criteria or an attitude.
@@ -189,10 +194,11 @@ arc79Action=function(scene,pack){
 
 const ARC81_REPORT=arc79CreateReport;
 arc79CreateReport=function(q,spread,cards,override='auto'){
- const r=ARC81_REPORT(q,spread,cards,override),{scene,intent}=arc79Scene(q,override),pack=arc79Pack(q,spread,cards),relations=arc81Relations(pack,spread);
+ const r=ARC81_REPORT(q,spread,cards,override),{scene,intent}=arc79Scene(q,override),pack=arc79Pack(q,spread,cards);
+ const protectedReading=scene.medical||['health','finances'].includes(scene.domain)||scene.boundary||scene.abuse||scene.urgent||scene.facts.known,selectionVersion=protectedReading?81:91,relations=arc81Relations(pack,spread,selectionVersion);
  const unassigned=spread==='choice5'&&!arc81ChoiceAssigned(pack),assignmentNote=unassigned?'현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.':null;
  const single=pack.list.map(a=>{
-  const motif=arc81Profile(a)[0],slot=SPREADS[spread].slots[a.index][0];
+  const motif=protectedReading?arc81Profile(a)[0]:arc91Focus(a).motif,slot=SPREADS[spread].slots[a.index][0];
   const role=a.role==='obstacle'?`‘${a.main}’${arc58Josa(a.main,'과','와')} 관련해 실제로 막히는 부분이 있는지 확인해 보세요.`:a.role==='resource'?`이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.`:a.role==='past'?'이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.':a.role==='future'||a.role==='outcome'?'현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.':a.role==='environment'?'주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.':a.role==='boundary'?'이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.':'';
   const unassignedOption=unassigned&&['optionA','optionB'].includes(a.role);
   return {title:slot+(unassignedOption?' (선택지 미지정)':''),body:`${arc81Anchor(a,spread)} ${unassignedOption?'특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. ':''}${ARC81_MOTIFS[motif][1]}${role?' '+role:''}`,refs:[a.index],kind:'card'};
@@ -210,8 +216,7 @@ arc79CreateReport=function(q,spread,cards,override='auto'){
  };
  // Without a semantic link the individual cards carry the evidence; do not add filler pairs.
  r.sections=[...single,...relations.filter(link=>link.kind!=='distinct').map((link,i)=>({title:relationTitle(link,i),body:link.body,refs:link.refs,kind:'relational'}))];
- const protectedReading=scene.medical||['health','finances'].includes(scene.domain)||scene.boundary||scene.abuse||scene.urgent||scene.facts.known;
- const directRelation=arc81DirectRelation(pack,spread,intent.primary);
+ const directRelation=arc81DirectRelation(pack,spread,intent.primary,selectionVersion);
  const useDirectSynthesis=!protectedReading&&!!directRelation&&(intent.primary!=='compare'||spread==='choice5');
  if(useDirectSynthesis){
   const first=directRelation;
@@ -225,7 +230,7 @@ arc79CreateReport=function(q,spread,cards,override='auto'){
   else if(intent.primary==='open')r.direct=first.core+' 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?';
  }
  if(assignmentNote)r.sections.push({title:'선택 배열을 읽는 범위',body:assignmentNote,refs:pack.list.filter(card=>['optionA','optionB'].includes(card.role)).map(card=>card.index),kind:'contextual'});
- r.arc81={version:81,profileSource:'ARC58_ATOMS editorial motifs',directSynthesisUsed:useDirectSynthesis,directRelationRefs:useDirectSynthesis?directRelation.refs:[],choiceAssignment:spread==='choice5'?{assigned:!unassigned,note:assignmentNote}:null,relations:relations.map(({key,body,core,...x})=>x),cardMotifs:pack.list.map(a=>({index:a.index,id:a.id,reverse:a.reverse,motifs:arc81Profile(a)}))};
+ r.arc81={version:81,...(protectedReading?{}:{selectionVersion}),profileSource:'ARC58_ATOMS editorial motifs',directSynthesisUsed:useDirectSynthesis,directRelationRefs:useDirectSynthesis?directRelation.refs:[],choiceAssignment:spread==='choice5'?{assigned:!unassigned,note:assignmentNote}:null,relations:relations.map(({key,body,core,...x})=>x),cardMotifs:pack.list.map(a=>({index:a.index,id:a.id,reverse:a.reverse,motifs:arc81Profile(a)}))};
  return r;
 };
 $('saveReading').addEventListener('click',()=>{if(!readingSaved||!currentHistoryId)return;const records=storedRecords(),record=records.find(r=>r.id===currentHistoryId);if(record){record.engineVersion=81;setStoredRecords(records);}});
