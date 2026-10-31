@@ -189,7 +189,7 @@
   return units;
  }
  function requestsFrom(parts,q){
-  const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.goal===(goal||goalFor(part.text,kind,q))))requests.push({kind,goal:goal||goalFor(part.text,kind,q),text:part.source,start:part.start,end:part.end,...(part.sharedContext?{sharedContext:part.sharedContext}:{})});};
+  const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.start===part.start&&r.end===part.end&&r.goal===(goal||goalFor(part.text,kind,q))))requests.push({kind,goal:goal||goalFor(part.text,kind,q),text:part.source,start:part.start,end:part.end,...(part.sharedContext?{sharedContext:part.sharedContext}:{})});};
   const units=requestUnits(parts,q);
   for(const original of units){
    const correction=original.text.match(/(?:대신|말고|그보다(?:는)?|아니라|(?:이유|원인|예측|전망|비교)보다)\s*|(?:는지|인지|을지|할지)보다(?:는)?\s+/);
@@ -232,7 +232,7 @@
     else emit('action',part);
    }
    else if(forecast)emit('forecast',part);
-   if(/각각|함께|동시에|그리고|방법도/.test(t)&&EMOTION.test(t)&&/다룰|다루|돌볼|돌보|추스/.test(t))emit('emotion',part,'cope');
+   if(/각각|함께|동시에|그리고|방법도/.test(t)&&EMOTION.test(t)&&/다룰|다루|돌볼|돌보|추스/.test(t)&&!requests.some(r=>r.kind==='emotion'&&r.goal==='cope'&&r.start>=part.start&&r.end<=part.end))emit('emotion',part,'cope');
   }
   if(!requests.length){const last=parts.at(-1);if(last&&EMOTION.test(last.text))emit('emotion',last);}
   // A final explicit request supersedes earlier background questions unless coordination is explicit.

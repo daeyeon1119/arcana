@@ -11,7 +11,7 @@ function arc87AppliedLens(card,relation,spread,plan,bridge,usedRefs){
  const facet=relation?relation.insight:arc87CardFacet(card,plan.participants).text;
  const roles=cards.map(atom=>atom.role),roleFrame=roles.includes('boundary')?'이미 진행된 외부 절차와 조절할 태도를 나누어 보면, ':roles.some(role=>['future','outcome'].includes(role))?'현재 방향이 이어질 때 점검할 관점으로 읽으면, ':roles.includes('obstacle')?'실제로 막히는 부분이 있는지 살피는 관점으로, ':'';
  const refs=cards.map(atom=>atom.index),reused=refs.every(index=>usedRefs.has(index));for(const index of refs)usedRefs.add(index);
- const operationName={inspect:'점검',reflect:'성찰',compare:'비교',communicate:'설명',inquire:'질문 준비',verify:'조건 확인',improve:'수정',prepare:'준비',coordinate:'분담',prioritize:'우선순위',finish:'마무리',implement:'실행',cope:'마음 돌보기'}[plan.operation];
+ const operationName=plan.operation==='coordinate'&&plan.object?.kind==='interaction'?'합의':plan.operation==='verify'&&plan.object?.kind==='requirements'?'요건 확인':{inspect:'점검',reflect:'성찰',compare:'비교',communicate:'설명',inquire:'질문 준비',verify:'조건 확인',improve:'수정',prepare:'준비',coordinate:'분담',prioritize:'우선순위',finish:'마무리',implement:'실행',cope:'마음 돌보기'}[plan.operation];
  const introduction=reused?`같은 카드의 관점을 ${operationName}에 적용하면, `:cards.map(anchor).join(' ')+' '+facet+' ';
  return {text:introduction+roleFrame+bridge.text,refs,operation:plan.operation,relationAxis:relation?.axis||null,facets:cards.map(atom=>({index:atom.index,id:atom.id,reverse:atom.reverse,motifs:arc81Profile(atom)})),roleFrame,reused};
 }
@@ -81,7 +81,7 @@ arc79CreateReport=function(question,spread,cards,override='auto'){
   const card=answer.request.kind==='emotion'||plan.operation==='reflect'?pack.main:pack.advice;
   const shared=index===0&&report.arc81?.directSynthesisUsed?arc81DirectRelation(pack,spread,answer.request.kind):null;
   const relation=shared&&!['alternatives','distinct'].includes(shared.kind)?shared:null;
-  const bridge=ARCANA_READING_BRIDGE.compose(plan.operation,arc81Profile(card),relation?.axis,{participants:plan.participants});if(!bridge)continue;
+  const bridge=ARCANA_READING_BRIDGE.compose(plan.operation,arc81Profile(card),relation?.axis,{participants:plan.participants,object:plan.object});if(!bridge)continue;
   const usesPair=!!(relation&&bridge.relationAxis&&bridge.primary===null);
   const context=arc84ConstraintText(evidence,plan.operation,plan,task.evidenceText,usedVerification),handled=report.arc83?.handled.find(item=>item.request===index);
   const replaceGeneric=handled?.actionSource==='request-policy'&&plan.target==='unspecified'&&!plan.waitingReply&&!plan.submitted&&!plan.contentCheck&&!plan.boundaryText;

@@ -1,0 +1,69 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "0e20fd90a932f1132fd28ad3334923e6bb4004c0798bc6300d8aba6bdf34bbe2",
+    "appBytes": 33174505,
+    "webRelease": "fe02e5622347f80add9fb49f",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "actual": {
+    "question": "무엇부터 해야 할지 모르겠어요. 지금 어떤 방향이 좋을까요? 연습 기록을 점검하는 방법이 궁금합니다.",
+    "model": {
+      "version": 90,
+      "languageAnalysis": {
+        "backend": "garu-ko",
+        "version": "0.11.0",
+        "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+        "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+        "ready": true,
+        "failed": false
+      },
+      "question": "무엇부터 해야 할지 모르겠어요. 지금 어떤 방향이 좋을까요? 연습 기록을 점검하는 방법이 궁금합니다.",
+      "evidenceQuestion": "무엇부터 해야 할지 모르겠어요. 지금 어떤 방향이 좋을까요? 연습 기록을 점검하는 방법이 궁금합니다.",
+      "requests": [
+        {
+          "kind": "action",
+          "goal": "action",
+          "text": "무엇부터 해야 할지 모르겠어요",
+          "start": 0,
+          "end": 16
+        }
+      ],
+      "events": [],
+      "state": {
+        "sent": null,
+        "received": null,
+        "read": null,
+        "resultKnown": null,
+        "resultPublished": null,
+        "outcome": null,
+        "outcomeScope": null,
+        "assessmentCompleted": null,
+        "assessmentUpcoming": false,
+        "submitted": null,
+        "replyWaiting": false,
+        "resultWaiting": false,
+        "replyWaitingSource": null,
+        "resultWaitingSource": null,
+        "waiting": false
+      },
+      "needsContext": false,
+      "clarification": null,
+      "entities": {
+        "romantic": false
+      },
+      "unknowns": [
+        "outgoing-contact",
+        "received-reply",
+        "result"
+      ]
+    }
+  },
+  "scope": "Known author UI control. Real context-panel clicks, not a physical phone or a new evaluation. Full reading was not reached."
+}

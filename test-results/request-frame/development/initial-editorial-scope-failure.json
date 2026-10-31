@@ -1,0 +1,872 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "9f0cd5ff0dbab56db9ccad9fdb10acb81eca9927d5b91232f3d74e027491cb9a",
+    "appBytes": 33177041,
+    "webRelease": "5448efcf18cf77e2114f9c17",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "scope": "Read changed direct answers against v89. Multiple over-clarification and background-object failures observed; no expert rating.",
+  "observed": {
+    "27": "speech background beats requested attitude",
+    "107": "subordinate preparation is incorrectly added as an independent request",
+    "155": "personal motivation becomes an outgoing expression",
+    "228": "emotional uncertainty unnecessarily blocked by context gate",
+    "233": "self-criticism blocked",
+    "235": "choice reflection blocked",
+    "240": "reversibility inspection blocked",
+    "244": "two concrete actions blocked",
+    "287": "coping with waiting blocked"
+  },
+  "actual": [
+    {
+      "id": 27,
+      "category": "직장·협업",
+      "question": "직장 회의에서 말을 아끼게 되는 제 태도를 돌아보고 싶어요.",
+      "intent": "open",
+      "domain": "career",
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "ar08",
+          "rev": true
+        },
+        {
+          "id": "pe08",
+          "rev": false
+        },
+        {
+          "id": "ar04",
+          "rev": true
+        },
+        {
+          "id": "wa05",
+          "rev": false
+        },
+        {
+          "id": "sw06",
+          "rev": true
+        }
+      ],
+      "actualIntent": "open",
+      "actualDomain": "career",
+      "headline": "표현에 담은 뜻과 실제 문장 돌아보기",
+      "direct": "실제로 담긴 말과 그 말에서 짐작한 뜻을 구분해 보세요. 표현의 의도나 상대의 반응이 확인되지 않았다면 단정하지 않고, 어떤 부분이 명확하고 어떤 부분이 더 확인되어야 하는지 돌아볼 수 있습니다.\n\n‘지금의 거리감’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 확인한 사실과 그 사실에 붙인 판단을 나누고, 아직 모르는 부분에 다른 해석의 여지를 남겨 보세요.",
+      "actions": [
+        "실제로 담긴 말과 그 말에서 짐작한 뜻을 구분해 보세요. 표현의 의도나 상대의 반응이 확인되지 않았다면 단정하지 않고, 어떤 부분이 명확하고 어떤 부분이 더 확인되어야 하는지 돌아볼 수 있습니다."
+      ],
+      "sections": [
+        {
+          "title": "지금의 거리감",
+          "body": "‘지금의 거리감’의 힘 역방향은 ‘흔들리는 자신감’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "나의 기대",
+          "body": "‘나의 기대’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "확인해야 할 차이",
+          "body": "‘확인해야 할 차이’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. ‘경직된 통제’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "다시 연결할 자원",
+          "body": "‘다시 연결할 자원’의 완드 5 정방향은 ‘다양한 경쟁’을 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "내가 취할 행동",
+          "body": "‘내가 취할 행동’의 소드 6 역방향은 ‘떠나기 어려운 마음’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    },
+    {
+      "id": 107,
+      "category": "시험",
+      "question": "이번 시험을 준비하며 제가 배운 태도를 돌아보고 싶어요.",
+      "intent": "open",
+      "domain": "preparation",
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "sw12",
+          "rev": false
+        },
+        {
+          "id": "wa02",
+          "rev": false
+        },
+        {
+          "id": "wa05",
+          "rev": false
+        },
+        {
+          "id": "ar14",
+          "rev": false
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        }
+      ],
+      "actualIntent": "action",
+      "actualDomain": "preparation",
+      "headline": "요청한 관점을 함께 살펴볼게요",
+      "direct": "시작할 때 필요한 조건·진행 순서·확인할 일정을 적어 보세요. 이미 준비된 것과 한 가지 더 알아볼 것을 나누고, 첫날 해볼 작은 단계부터 정해 보세요.\n\n‘내가 취할 행동’의 태양 역방향에서 살필 관점은 ‘지연·이상’입니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 준비 순서를 정할 때는 지금 진행할 부분과 잠시 멈춰 확인할 부분을 나누고, 다음 판단을 할 시점을 정해 보세요.\n\n처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.\n\n‘지금의 거리감’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 결론을 빨리 내리려는 마음과 시간을 두고 살펴야 할 부분을 구분하고, 지금 붙잡고 싶은 한 장면부터 돌아보세요.",
+      "actions": [
+        "시작할 때 필요한 조건·진행 순서·확인할 일정을 적어 보세요. 이미 준비된 것과 한 가지 더 알아볼 것을 나누고, 첫날 해볼 작은 단계부터 정해 보세요.",
+        "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다."
+      ],
+      "sections": [
+        {
+          "title": "지금의 거리감",
+          "body": "‘지금의 거리감’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "나의 기대",
+          "body": "‘나의 기대’의 완드 2 정방향은 ‘넓어지는 계획’을 보여 줍니다. 크게 세운 방향을 확인 가능한 다음 단계로 나누어 보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "확인해야 할 차이",
+          "body": "‘확인해야 할 차이’의 완드 5 정방향은 ‘다양한 경쟁’을 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. ‘다양한 경쟁’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "다시 연결할 자원",
+          "body": "‘다시 연결할 자원’의 절제 정방향은 ‘적절한 균형’을 보여 줍니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "내가 취할 행동",
+          "body": "‘내가 취할 행동’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "함께 요청한 성찰",
+          "body": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.\n\n‘지금의 거리감’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 결론을 빨리 내리려는 마음과 시간을 두고 살펴야 할 부분을 구분하고, 지금 붙잡고 싶은 한 장면부터 돌아보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "request"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    },
+    {
+      "id": 155,
+      "category": "창작",
+      "question": "창작을 계속하는 제 이유를 돌아보고 싶어요.",
+      "intent": "open",
+      "domain": "project",
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "pe08",
+          "rev": false
+        },
+        {
+          "id": "pe11",
+          "rev": true
+        },
+        {
+          "id": "wa11",
+          "rev": true
+        },
+        {
+          "id": "sw08",
+          "rev": false
+        },
+        {
+          "id": "ar07",
+          "rev": false
+        }
+      ],
+      "actualIntent": "open",
+      "actualDomain": "project",
+      "headline": "표현에 담은 뜻과 실제 문장 돌아보기",
+      "direct": "전하려던 요점과 실제로 쓴 표현을 나란히 놓고, 같은 뜻이 전달되는지 돌아보세요. 분명히 말한 부분과 상대가 추측해야 하는 부분을 나누고, 상대의 반응은 실제로 확인한 범위에서만 참고해 보세요. 다시 표현한다면 남길 말과 달리 쓸 말 한 가지씩을 골라 볼 수 있습니다.\n\n‘지금의 거리감’의 펜타클 8 정방향에서 살필 관점은 ‘연습·역량’입니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요. 잘했거나 어려웠던 한 장면에서 배운 것을 적고, 다음 경험에서 확인해 보고 싶은 한 가지로 연결해 보세요.",
+      "actions": [
+        "전하려던 요점과 실제로 쓴 표현을 나란히 놓고, 같은 뜻이 전달되는지 돌아보세요. 분명히 말한 부분과 상대가 추측해야 하는 부분을 나누고, 상대의 반응은 실제로 확인한 범위에서만 참고해 보세요. 다시 표현한다면 남길 말과 달리 쓸 말 한 가지씩을 골라 볼 수 있습니다."
+      ],
+      "sections": [
+        {
+          "title": "지금의 거리감",
+          "body": "‘지금의 거리감’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "나의 기대",
+          "body": "‘나의 기대’의 펜타클 시종 역방향은 ‘실행 없는 계획’을 보여 줍니다. 크게 세운 방향을 확인 가능한 다음 단계로 나누어 보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "확인해야 할 차이",
+          "body": "‘확인해야 할 차이’의 완드 시종 역방향은 ‘서투른 의욕’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. ‘서투른 의욕’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "다시 연결할 자원",
+          "body": "‘다시 연결할 자원’의 소드 8 정방향은 ‘마음속 제약’을 보여 줍니다. 정보가 부족한 부분을 확신이나 최악의 예상으로 채우지 않아도 됩니다. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "내가 취할 행동",
+          "body": "‘내가 취할 행동’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    },
+    {
+      "id": 228,
+      "category": "선택",
+      "question": "이미 결정을 내렸는데 다시 흔들려요. 어떻게 정리할까요?",
+      "intent": "action",
+      "domain": "decision",
+      "spread": "career5",
+      "cards": [
+        {
+          "id": "wa05",
+          "rev": false
+        },
+        {
+          "id": "sw02",
+          "rev": false
+        },
+        {
+          "id": "ar10",
+          "rev": true
+        },
+        {
+          "id": "sw11",
+          "rev": true
+        },
+        {
+          "id": "sw04",
+          "rev": false
+        }
+      ],
+      "actualIntent": "action",
+      "actualDomain": "decision",
+      "headline": "질문할 상황을 먼저 알려 주세요",
+      "direct": "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.",
+      "actions": [
+        "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요."
+      ],
+      "sections": [
+        {
+          "title": "지금 가진 역량",
+          "body": "‘지금 가진 역량’의 완드 5 정방향은 ‘다양한 경쟁’을 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "나의 동기",
+          "body": "‘나의 동기’의 소드 2 정방향은 ‘판단의 유예’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "현실의 제약",
+          "body": "‘현실의 제약’의 운명의 수레바퀴 역방향은 ‘변화에 대한 저항’을 보여 줍니다. 조금 더 기다려야 할 이유와 불편해서 미루는 이유를 구별해 보세요. ‘변화에 대한 저항’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "도움이 될 자원",
+          "body": "‘도움이 될 자원’의 소드 시종 역방향은 ‘성급한 의심’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "실행의 첫 단계",
+          "body": "‘실행의 첫 단계’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "카드가 만드는 중심 흐름",
+          "body": "‘현실의 제약’의 운명의 수레바퀴 역방향은 ‘변화에 대한 저항’을 보여 줍니다. ‘실행의 첫 단계’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+          "refs": [
+            2,
+            4
+          ],
+          "kind": "relational"
+        },
+        {
+          "title": "자원을 활용하는 방법",
+          "body": "‘도움이 될 자원’의 소드 시종 역방향은 ‘성급한 의심’을 보여 줍니다. ‘실행의 첫 단계’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. 빠르게 움직이려는 힘과 멈추어 살필 필요가 함께 있습니다. 진행할 부분과 기다릴 부분을 나누는 것이 두 상징을 함께 활용하는 방법입니다.",
+          "refs": [
+            3,
+            4
+          ],
+          "kind": "relational"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    },
+    {
+      "id": 233,
+      "category": "선택",
+      "question": "결정을 못 하는 제가 한심하게 느껴져요.",
+      "intent": "emotion",
+      "domain": "decision",
+      "spread": "three",
+      "cards": [
+        {
+          "id": "cu07",
+          "rev": false
+        },
+        {
+          "id": "ar12",
+          "rev": true
+        },
+        {
+          "id": "pe03",
+          "rev": true
+        }
+      ],
+      "actualIntent": "emotion",
+      "actualDomain": "decision",
+      "headline": "질문할 상황을 먼저 알려 주세요",
+      "direct": "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.",
+      "actions": [
+        "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요."
+      ],
+      "sections": [
+        {
+          "title": "과거",
+          "body": "‘과거’의 컵 7 정방향은 ‘매력적인 선택지’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "현재",
+          "body": "‘현재’의 매달린 사람 역방향은 ‘끝없는 희생’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "미래",
+          "body": "‘미래’의 펜타클 3 역방향은 ‘어긋난 협업’을 보여 줍니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    },
+    {
+      "id": 235,
+      "category": "선택",
+      "question": "지난 선택에서 배운 것을 돌아보고 싶어요.",
+      "intent": "open",
+      "domain": "decision",
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "wa14",
+          "rev": true
+        },
+        {
+          "id": "pe03",
+          "rev": false
+        },
+        {
+          "id": "wa06",
+          "rev": false
+        },
+        {
+          "id": "wa03",
+          "rev": true
+        },
+        {
+          "id": "wa01",
+          "rev": false
+        }
+      ],
+      "actualIntent": "open",
+      "actualDomain": "decision",
+      "headline": "질문할 상황을 먼저 알려 주세요",
+      "direct": "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.",
+      "actions": [
+        "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요."
+      ],
+      "sections": [
+        {
+          "title": "지금의 거리감",
+          "body": "‘지금의 거리감’의 완드 왕 역방향은 ‘독단적인 추진’을 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "나의 기대",
+          "body": "‘나의 기대’의 펜타클 3 정방향은 ‘협력 속의 숙련’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "확인해야 할 차이",
+          "body": "‘확인해야 할 차이’의 완드 6 정방향은 ‘인정받는 성과’를 보여 줍니다. 외부의 평가와 내가 지키려는 목표를 나누어 보세요. ‘인정받는 성과’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "다시 연결할 자원",
+          "body": "‘다시 연결할 자원’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "내가 취할 행동",
+          "body": "‘내가 취할 행동’의 완드 에이스 정방향은 ‘새로운 의욕’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "카드가 만드는 중심 흐름",
+          "body": "‘확인해야 할 차이’의 완드 6 정방향은 ‘인정받는 성과’를 보여 줍니다. ‘내가 취할 행동’의 완드 에이스 정방향은 ‘새로운 의욕’을 보여 줍니다. 두 카드에서는 ‘주도성’이라는 주제를 함께 살펴볼 수 있습니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+          "refs": [
+            2,
+            4
+          ],
+          "kind": "relational"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    },
+    {
+      "id": 240,
+      "category": "선택",
+      "question": "되돌릴 수 있는 선택인지 어떻게 점검할까요?",
+      "intent": "action",
+      "domain": "decision",
+      "spread": "one",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        }
+      ],
+      "actualIntent": "action",
+      "actualDomain": "decision",
+      "headline": "질문할 상황을 먼저 알려 주세요",
+      "direct": "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.",
+      "actions": [
+        "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요."
+      ],
+      "sections": [
+        {
+          "title": "핵심 메시지",
+          "body": "‘핵심 메시지’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    },
+    {
+      "id": 244,
+      "category": "감정",
+      "question": "혼자 쉬는 것과 믿는 사람을 만나는 것 중 무엇이 나을까요?",
+      "intent": "compare",
+      "domain": "general",
+      "spread": "career5",
+      "cards": [
+        {
+          "id": "ar04",
+          "rev": true
+        },
+        {
+          "id": "ar18",
+          "rev": false
+        },
+        {
+          "id": "ar02",
+          "rev": false
+        },
+        {
+          "id": "ar19",
+          "rev": true
+        },
+        {
+          "id": "wa10",
+          "rev": false
+        }
+      ],
+      "actualIntent": "compare",
+      "actualDomain": "general",
+      "headline": "질문할 상황을 먼저 알려 주세요",
+      "direct": "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.",
+      "actions": [
+        "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요."
+      ],
+      "sections": [
+        {
+          "title": "지금 가진 역량",
+          "body": "‘지금 가진 역량’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "나의 동기",
+          "body": "‘나의 동기’의 달 정방향은 ‘불확실한 감정’을 보여 줍니다. 정보가 부족한 부분을 확신이나 최악의 예상으로 채우지 않아도 됩니다.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "현실의 제약",
+          "body": "‘현실의 제약’의 여사제 정방향은 ‘관찰과 직관’을 보여 줍니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. ‘관찰과 직관’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "도움이 될 자원",
+          "body": "‘도움이 될 자원’의 태양 역방향은 ‘지연된 기쁨’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "실행의 첫 단계",
+          "body": "‘실행의 첫 단계’의 완드 10 정방향은 ‘무거운 책임’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    },
+    {
+      "id": 287,
+      "category": "결과·기다림",
+      "question": "기다림을 견디는 제 방식을 돌아보고 싶어요.",
+      "intent": "open",
+      "domain": "waiting",
+      "spread": "celtic",
+      "cards": [
+        {
+          "id": "pe09",
+          "rev": false
+        },
+        {
+          "id": "pe06",
+          "rev": true
+        },
+        {
+          "id": "cu03",
+          "rev": false
+        },
+        {
+          "id": "pe13",
+          "rev": false
+        },
+        {
+          "id": "wa06",
+          "rev": false
+        },
+        {
+          "id": "ar15",
+          "rev": false
+        },
+        {
+          "id": "ar19",
+          "rev": false
+        },
+        {
+          "id": "sw13",
+          "rev": true
+        },
+        {
+          "id": "ar00",
+          "rev": false
+        },
+        {
+          "id": "ar20",
+          "rev": true
+        }
+      ],
+      "actualIntent": "open",
+      "actualDomain": "waiting",
+      "headline": "질문할 상황을 먼저 알려 주세요",
+      "direct": "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.",
+      "actions": [
+        "어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요."
+      ],
+      "sections": [
+        {
+          "title": "현재 상황",
+          "body": "‘현재 상황’의 펜타클 9 정방향은 ‘독립적으로 쌓은 성취’를 보여 줍니다. 익숙한 기대와 별개로 스스로 지키고 싶은 기준을 적어 보세요.",
+          "refs": [
+            0
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "가로지르는 도전",
+          "body": "‘가로지르는 도전’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요. ‘기울어진 교환’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+          "refs": [
+            1
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "의식적인 목표",
+          "body": "‘의식적인 목표’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요.",
+          "refs": [
+            2
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "무의식·기반",
+          "body": "‘무의식·기반’의 펜타클 여왕 정방향은 ‘생활을 돌보는 역량’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요.",
+          "refs": [
+            3
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "지나온 영향",
+          "body": "‘지나온 영향’의 완드 6 정방향은 ‘인정받는 성과’를 보여 줍니다. 외부의 평가와 내가 지키려는 목표를 나누어 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+          "refs": [
+            4
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "가까운 흐름",
+          "body": "‘가까운 흐름’의 악마 정방향은 ‘집착의 자각’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+          "refs": [
+            5
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "나 자신의 위치",
+          "body": "‘나 자신의 위치’의 태양 정방향은 ‘드러나는 명료함’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요.",
+          "refs": [
+            6
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "주변 환경",
+          "body": "‘주변 환경’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+          "refs": [
+            7
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "희망과 두려움",
+          "body": "‘희망과 두려움’의 바보 정방향은 ‘새로운 출발’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요.",
+          "refs": [
+            8
+          ],
+          "kind": "card"
+        },
+        {
+          "title": "가능한 귀결",
+          "body": "‘가능한 귀결’의 심판 역방향은 ‘자책에 붙잡힘’을 보여 줍니다. 고칠 행동에 대한 평가와 나 자신에 대한 단정을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+          "refs": [
+            9
+          ],
+          "kind": "card"
+        }
+      ],
+      "facts": {
+        "resultFailed": false,
+        "resultPassed": false,
+        "known": false,
+        "sent": false,
+        "noReply": false,
+        "replied": false,
+        "noConflict": false,
+        "waiting": false,
+        "upcoming": false,
+        "replyUnknown": false
+      }
+    }
+  ]
+}

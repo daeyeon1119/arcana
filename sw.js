@@ -1,8 +1,8 @@
 /* Generated with the app hash. Cache only this app's public shell, never questions or records. */
 'use strict';
-const APP_HASH='4e1772bdf7a818a9e646e0651dcd94c85e357a5e3fdc2ee9d98679b3aafb1507';
+const APP_HASH='abc798464c1c3d2b6363eec0f2034c741021bf8c342ad916e47d311dabb3be77';
 const PREFIX='arcana-web:'+new URL(self.registration.scope).pathname+':';
-const CACHE=PREFIX+'0dbb0d0c134fe57401f592a0';
+const CACHE=PREFIX+'ccfc28685e2f7e6513543cc9';
 const url=path=>new URL(path,self.registration.scope).href;
 const STATIC=['manifest.webmanifest','assets/app/icon-192.png','assets/app/icon-512.png','assets/app/apple-touch-icon.png','assets/app/icon.svg'];
 async function prepare(){

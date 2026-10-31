@@ -1,0 +1,112 @@
+{
+  "scope": "Known Node development controls before changing request deduplication.",
+  "actual": [
+    {
+      "question": "무엇부터 해야 할지 모르겠어요. 지금 어떤 방향이 좋을까요? 연습 기록을 점검하는 방법이 궁금합니다.",
+      "model": {
+        "version": 90,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "무엇부터 해야 할지 모르겠어요. 지금 어떤 방향이 좋을까요? 연습 기록을 점검하는 방법이 궁금합니다.",
+        "evidenceQuestion": "무엇부터 해야 할지 모르겠어요. 지금 어떤 방향이 좋을까요? 연습 기록을 점검하는 방법이 궁금합니다.",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "action",
+            "text": "무엇부터 해야 할지 모르겠어요",
+            "start": 0,
+            "end": 16
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      }
+    },
+    {
+      "question": "보고서의 구성을 점검하고 싶어요. 그리고 관찰 일지의 빈틈도 점검해 주세요.",
+      "model": {
+        "version": 90,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "보고서의 구성을 점검하고 싶어요. 그리고 관찰 일지의 빈틈도 점검해 주세요.",
+        "evidenceQuestion": "보고서의 구성을 점검하고 싶어요. 그리고 관찰 일지의 빈틈도 점검해 주세요.",
+        "requests": [
+          {
+            "kind": "forecast",
+            "goal": "forecast",
+            "text": "그리고 관찰 일지의 빈틈도 점검해 주세요",
+            "start": 19,
+            "end": 41
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      }
+    }
+  ],
+  "finding": "Dedupe by intention and goal dropped a later specific request with the same broad goal. This also lost newly supplied clarification context."
+}

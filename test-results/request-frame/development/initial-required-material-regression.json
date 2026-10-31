@@ -1,0 +1,2764 @@
+{
+  "appSHA256": "0e20fd90a932f1132fd28ad3334923e6bb4004c0798bc6300d8aba6bdf34bbe2",
+  "actualFailedRows": [
+    {
+      "id": "f10",
+      "group": "ceramics-stage",
+      "question": "도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "one",
+      "cards": [
+        {
+          "id": "pe11",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "핵심 메시지 · 펜타클 시종 정방향"
+      ],
+      "before": {
+        "direct": "이번 작업의 목적과 막힌 지점을 적고, 작게 완성해 확인할 한 부분을 골라 보세요. ‘핵심 메시지’에 놓인 펜타클 시종의 주제는 ‘현실적인 배움’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "이번 작업의 목적과 막힌 지점을 적고, 작게 완성해 확인할 한 부분을 골라 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50
+            },
+            "text": "이번 작업의 목적과 막힌 지점을 적고, 작게 완성해 확인할 한 부분을 골라 보세요. ‘핵심 메시지’에 놓인 펜타클 시종의 주제는 ‘현실적인 배움’입니다.",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "message",
+            "meaning": "현실적인 배움"
+          }
+        ]
+      },
+      "after": {
+        "direct": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘핵심 메시지’의 펜타클 시종 정방향에서 살필 관점은 ‘역량·계획’입니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 한 부분을 고친 뒤 같은 기준으로 다시 살펴보고, 바꾼 점이 어떤 차이를 만드는지 기록해 보세요.",
+        "headline": "전체 목적과 각 부분의 연결 점검하기",
+        "actions": [
+          "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "document",
+                  "subtype": null,
+                  "head": "자료",
+                  "evidence": {
+                    "start": 36,
+                    "end": 40,
+                    "text": "자료에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 50,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 50
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘핵심 메시지’의 펜타클 시종 정방향에서 살필 관점은 ‘역량·계획’입니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 한 부분을 고친 뒤 같은 기준으로 다시 살펴보고, 바꾼 점이 어떤 차이를 만드는지 기록해 보세요.",
+            "directText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘핵심 메시지’의 펜타클 시종 정방향에서 살필 관점은 ‘역량·계획’입니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 한 부분을 고친 뒤 같은 기준으로 다시 살펴보고, 바꾼 점이 어떤 차이를 만드는지 기록해 보세요.",
+            "actionText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "inspect",
+              "target": "artifact",
+              "object": {
+                "kind": "document",
+                "subtype": null,
+                "head": "자료",
+                "evidence": {
+                  "start": 36,
+                  "end": 40,
+                  "text": "자료에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "participants": null,
+              "source": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "message",
+            "meaning": "현실적인 배움"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f10",
+      "group": "ceramics-stage",
+      "question": "도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "three",
+      "cards": [
+        {
+          "id": "pe11",
+          "rev": false
+        },
+        {
+          "id": "pe06",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "과거 · 펜타클 시종 정방향",
+        "현재 · 펜타클 6 역방향",
+        "미래 · 황제 역방향"
+      ],
+      "before": {
+        "direct": "지금 목표에 필요하지 않은 요소를 잠시 제외해 보세요. ‘미래’에 놓인 황제 역방향의 주제는 ‘경직된 통제’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "지금 목표에 필요하지 않은 요소를 잠시 제외해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50
+            },
+            "text": "지금 목표에 필요하지 않은 요소를 잠시 제외해 보세요. ‘미래’에 놓인 황제 역방향의 주제는 ‘경직된 통제’입니다.",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "past",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "now",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "future",
+            "meaning": "경직된 통제"
+          }
+        ]
+      },
+      "after": {
+        "direct": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘미래’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+        "headline": "전체 목적과 각 부분의 연결 점검하기",
+        "actions": [
+          "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "document",
+                  "subtype": null,
+                  "head": "자료",
+                  "evidence": {
+                    "start": 36,
+                    "end": 40,
+                    "text": "자료에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 50,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 50
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘미래’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "directText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘미래’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "actionText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "inspect",
+              "target": "artifact",
+              "object": {
+                "kind": "document",
+                "subtype": null,
+                "head": "자료",
+                "evidence": {
+                  "start": 36,
+                  "end": 40,
+                  "text": "자료에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "participants": null,
+              "source": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "past",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "now",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "future",
+            "meaning": "경직된 통제"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f10",
+      "group": "ceramics-stage",
+      "question": "도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "five",
+      "cards": [
+        {
+          "id": "pe11",
+          "rev": false
+        },
+        {
+          "id": "pe06",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": true
+        },
+        {
+          "id": "wa09",
+          "rev": false
+        },
+        {
+          "id": "sw13",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "핵심 · 펜타클 시종 정방향",
+        "근원 · 펜타클 6 역방향",
+        "장애물 · 황제 역방향",
+        "자원 · 완드 9 정방향",
+        "조언 · 소드 여왕 역방향"
+      ],
+      "before": {
+        "direct": "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요. ‘장애물’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. ‘경직된 통제’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘장애물’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "자원을 활용하는 방법",
+            "body": "‘자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. ‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50
+            },
+            "text": "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요. ‘장애물’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              2,
+              4
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "now",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "root",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "차가워진 소통"
+          }
+        ]
+      },
+      "after": {
+        "direct": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘장애물’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘조언’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+        "headline": "전체 목적과 각 부분의 연결 점검하기",
+        "actions": [
+          "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. ‘경직된 통제’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘장애물’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "자원을 활용하는 방법",
+            "body": "‘자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. ‘조언’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "document",
+                  "subtype": null,
+                  "head": "자료",
+                  "evidence": {
+                    "start": 36,
+                    "end": 40,
+                    "text": "자료에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 50,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 50
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘장애물’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘조언’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "directText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘장애물’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘조언’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "actionText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              2,
+              4
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "inspect",
+              "target": "artifact",
+              "object": {
+                "kind": "document",
+                "subtype": null,
+                "head": "자료",
+                "evidence": {
+                  "start": 36,
+                  "end": 40,
+                  "text": "자료에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "participants": null,
+              "source": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "now",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "root",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "차가워진 소통"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f10",
+      "group": "ceramics-stage",
+      "question": "도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "pe11",
+          "rev": false
+        },
+        {
+          "id": "pe06",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": true
+        },
+        {
+          "id": "wa09",
+          "rev": false
+        },
+        {
+          "id": "sw13",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "지금의 거리감 · 펜타클 시종 정방향",
+        "나의 기대 · 펜타클 6 역방향",
+        "확인해야 할 차이 · 황제 역방향",
+        "다시 연결할 자원 · 완드 9 정방향",
+        "내가 취할 행동 · 소드 여왕 역방향"
+      ],
+      "before": {
+        "direct": "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요. ‘확인해야 할 차이’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘내가 취할 행동’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. ‘경직된 통제’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘확인해야 할 차이’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘내가 취할 행동’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "자원을 활용하는 방법",
+            "body": "‘다시 연결할 자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. ‘내가 취할 행동’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50
+            },
+            "text": "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요. ‘확인해야 할 차이’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘내가 취할 행동’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              2,
+              4
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "now",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "차가워진 소통"
+          }
+        ]
+      },
+      "after": {
+        "direct": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘확인해야 할 차이’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘내가 취할 행동’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+        "headline": "전체 목적과 각 부분의 연결 점검하기",
+        "actions": [
+          "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. ‘경직된 통제’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘확인해야 할 차이’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘내가 취할 행동’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "자원을 활용하는 방법",
+            "body": "‘다시 연결할 자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. ‘내가 취할 행동’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "document",
+                  "subtype": null,
+                  "head": "자료",
+                  "evidence": {
+                    "start": 36,
+                    "end": 40,
+                    "text": "자료에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 50,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 50
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘확인해야 할 차이’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘내가 취할 행동’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "directText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘확인해야 할 차이’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘내가 취할 행동’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "actionText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              2,
+              4
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "inspect",
+              "target": "artifact",
+              "object": {
+                "kind": "document",
+                "subtype": null,
+                "head": "자료",
+                "evidence": {
+                  "start": 36,
+                  "end": 40,
+                  "text": "자료에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "participants": null,
+              "source": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "now",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "차가워진 소통"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f10",
+      "group": "ceramics-stage",
+      "question": "도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "choice5",
+      "cards": [
+        {
+          "id": "pe11",
+          "rev": false
+        },
+        {
+          "id": "pe06",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": true
+        },
+        {
+          "id": "wa09",
+          "rev": false
+        },
+        {
+          "id": "sw13",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "선택의 핵심 · 펜타클 시종 정방향",
+        "A의 성격 · 펜타클 6 역방향",
+        "B의 성격 · 황제 역방향",
+        "선택의 기준 · 완드 9 정방향",
+        "다음 한 걸음 · 소드 여왕 역방향"
+      ],
+      "before": {
+        "direct": "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요. ‘A의 성격’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. ‘B의 성격’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. A를 살필 때는 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요. B를 살필 때는 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격",
+            "body": "‘A의 성격’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격",
+            "body": "‘B의 성격’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "두 선택을 함께 읽으면",
+            "body": "‘A의 성격’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. ‘B의 성격’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. A를 살필 때는 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요. B를 살필 때는 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 질문에 두 안을 적었다면 A와 B를 적은 순서로 읽어 보세요. 두 경로에서 실제로 감당할 조건을 같은 기준으로 비교해 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "조언으로 연결하기",
+            "body": "‘선택의 기준’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. ‘다음 한 걸음’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50
+            },
+            "text": "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요. ‘A의 성격’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. ‘B의 성격’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. A를 살필 때는 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요. B를 살필 때는 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "message",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "optionA",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "optionB",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "criteria",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "차가워진 소통"
+          }
+        ]
+      },
+      "after": {
+        "direct": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘선택의 기준’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. ‘다음 한 걸음’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+        "headline": "전체 목적과 각 부분의 연결 점검하기",
+        "actions": [
+          "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘선택의 기준’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. ‘다음 한 걸음’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "document",
+                  "subtype": null,
+                  "head": "자료",
+                  "evidence": {
+                    "start": 36,
+                    "end": 40,
+                    "text": "자료에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 50,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 50
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘선택의 기준’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. ‘다음 한 걸음’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "directText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘선택의 기준’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. ‘다음 한 걸음’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "actionText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              3,
+              4
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "inspect",
+              "target": "artifact",
+              "object": {
+                "kind": "document",
+                "subtype": null,
+                "head": "자료",
+                "evidence": {
+                  "start": 36,
+                  "end": 40,
+                  "text": "자료에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "participants": null,
+              "source": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "message",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "optionA",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "optionB",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "criteria",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "차가워진 소통"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f10",
+      "group": "ceramics-stage",
+      "question": "도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "waiting3",
+      "cards": [
+        {
+          "id": "pe11",
+          "rev": false
+        },
+        {
+          "id": "pe06",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "바꿀 수 없는 것 · 펜타클 시종 정방향",
+        "지금 다룰 마음 · 펜타클 6 역방향",
+        "오늘의 실천 · 황제 역방향"
+      ],
+      "before": {
+        "direct": "지금 목표에 필요하지 않은 요소를 잠시 제외해 보세요. ‘오늘의 실천’에 놓인 황제 역방향의 주제는 ‘경직된 통제’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "지금 목표에 필요하지 않은 요소를 잠시 제외해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50
+            },
+            "text": "지금 목표에 필요하지 않은 요소를 잠시 제외해 보세요. ‘오늘의 실천’에 놓인 황제 역방향의 주제는 ‘경직된 통제’입니다.",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "boundary",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "feeling",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "경직된 통제"
+          }
+        ]
+      },
+      "after": {
+        "direct": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘오늘의 실천’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+        "headline": "전체 목적과 각 부분의 연결 점검하기",
+        "actions": [
+          "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "document",
+                  "subtype": null,
+                  "head": "자료",
+                  "evidence": {
+                    "start": 36,
+                    "end": 40,
+                    "text": "자료에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 50,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 50
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘오늘의 실천’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "directText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘오늘의 실천’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "actionText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "inspect",
+              "target": "artifact",
+              "object": {
+                "kind": "document",
+                "subtype": null,
+                "head": "자료",
+                "evidence": {
+                  "start": 36,
+                  "end": 40,
+                  "text": "자료에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "participants": null,
+              "source": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "boundary",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "feeling",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "경직된 통제"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f10",
+      "group": "ceramics-stage",
+      "question": "도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "career5",
+      "cards": [
+        {
+          "id": "pe11",
+          "rev": false
+        },
+        {
+          "id": "pe06",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": true
+        },
+        {
+          "id": "wa09",
+          "rev": false
+        },
+        {
+          "id": "sw13",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "지금 가진 역량 · 펜타클 시종 정방향",
+        "나의 동기 · 펜타클 6 역방향",
+        "현실의 제약 · 황제 역방향",
+        "도움이 될 자원 · 완드 9 정방향",
+        "실행의 첫 단계 · 소드 여왕 역방향"
+      ],
+      "before": {
+        "direct": "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요. ‘현실의 제약’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘실행의 첫 단계’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. ‘경직된 통제’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘현실의 제약’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘실행의 첫 단계’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "자원을 활용하는 방법",
+            "body": "‘도움이 될 자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. ‘실행의 첫 단계’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50
+            },
+            "text": "초안이나 프로토타입을 보여주고 구체적인 반응을 받아 보세요. ‘현실의 제약’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘실행의 첫 단계’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              2,
+              4
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "self",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "차가워진 소통"
+          }
+        ]
+      },
+      "after": {
+        "direct": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘현실의 제약’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘실행의 첫 단계’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+        "headline": "전체 목적과 각 부분의 연결 점검하기",
+        "actions": [
+          "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. ‘경직된 통제’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘현실의 제약’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘실행의 첫 단계’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "자원을 활용하는 방법",
+            "body": "‘도움이 될 자원’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. ‘실행의 첫 단계’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "document",
+                  "subtype": null,
+                  "head": "자료",
+                  "evidence": {
+                    "start": 36,
+                    "end": 40,
+                    "text": "자료에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 50,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 50
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘현실의 제약’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘실행의 첫 단계’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "directText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘현실의 제약’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘실행의 첫 단계’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "actionText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              2,
+              4
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "inspect",
+              "target": "artifact",
+              "object": {
+                "kind": "document",
+                "subtype": null,
+                "head": "자료",
+                "evidence": {
+                  "start": 36,
+                  "end": 40,
+                  "text": "자료에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "participants": null,
+              "source": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "self",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "차가워진 소통"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f10",
+      "group": "ceramics-stage",
+      "question": "도예 공방 전시에 아직 신청하지 않았습니다. 신청 자격과 필요한 자료에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "celtic",
+      "cards": [
+        {
+          "id": "pe11",
+          "rev": false
+        },
+        {
+          "id": "pe06",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": true
+        },
+        {
+          "id": "wa09",
+          "rev": false
+        },
+        {
+          "id": "sw13",
+          "rev": true
+        },
+        {
+          "id": "ar08",
+          "rev": false
+        },
+        {
+          "id": "ar01",
+          "rev": true
+        },
+        {
+          "id": "pe09",
+          "rev": false
+        },
+        {
+          "id": "sw09",
+          "rev": false
+        },
+        {
+          "id": "wa12",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "현재 상황 · 펜타클 시종 정방향",
+        "가로지르는 도전 · 펜타클 6 역방향",
+        "의식적인 목표 · 황제 역방향",
+        "무의식·기반 · 완드 9 정방향",
+        "지나온 영향 · 소드 여왕 역방향",
+        "가까운 흐름 · 힘 정방향",
+        "나 자신의 위치 · 마법사 역방향",
+        "주변 환경 · 펜타클 9 정방향",
+        "희망과 두려움 · 소드 9 정방향",
+        "가능한 귀결 · 완드 기사 역방향"
+      ],
+      "before": {
+        "direct": "작업에서 잠시 떨어진 뒤 반드시 고칠 한 부분만 적어 보세요. ‘가능한 귀결’에 놓인 완드 기사 역방향의 주제는 ‘충동적인 추진’입니다.",
+        "headline": "지금 선택할 수 있는 한 걸음",
+        "actions": [
+          "작업에서 잠시 떨어진 뒤 반드시 고칠 한 부분만 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요. ‘기울어진 교환’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 힘 정방향은 ‘부드러운 인내’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 펜타클 9 정방향은 ‘독립적으로 쌓은 성취’를 보여 줍니다. 익숙한 기대와 별개로 스스로 지키고 싶은 기준을 적어 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 소드 9 정방향은 ‘반복되는 걱정’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 완드 기사 역방향은 ‘충동적인 추진’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘의식적인 목표’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘무의식·기반’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              2,
+              3
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "나의 태도와 다음 방향",
+            "body": "‘나 자신의 위치’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. ‘가능한 귀결’의 완드 기사 역방향은 ‘충동적인 추진’을 보여 줍니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+            "refs": [
+              6,
+              9
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50
+            },
+            "text": "작업에서 잠시 떨어진 뒤 반드시 고칠 한 부분만 적어 보세요. ‘가능한 귀결’에 놓인 완드 기사 역방향의 주제는 ‘충동적인 추진’입니다.",
+            "refs": [
+              9
+            ]
+          }
+        ],
+        "policy": null,
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "now",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "root",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "past",
+            "meaning": "차가워진 소통"
+          },
+          {
+            "index": 5,
+            "id": "ar08",
+            "reverse": false,
+            "role": "future",
+            "meaning": "부드러운 인내"
+          },
+          {
+            "index": 6,
+            "id": "ar01",
+            "reverse": true,
+            "role": "self",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 7,
+            "id": "pe09",
+            "reverse": false,
+            "role": "environment",
+            "meaning": "독립적으로 쌓은 성취"
+          },
+          {
+            "index": 8,
+            "id": "sw09",
+            "reverse": false,
+            "role": "fear",
+            "meaning": "반복되는 걱정"
+          },
+          {
+            "index": 9,
+            "id": "wa12",
+            "reverse": true,
+            "role": "outcome",
+            "meaning": "충동적인 추진"
+          }
+        ]
+      },
+      "after": {
+        "direct": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘의식적인 목표’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘무의식·기반’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+        "headline": "전체 목적과 각 부분의 연결 점검하기",
+        "actions": [
+          "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 펜타클 시종 정방향은 ‘현실적인 배움’을 보여 줍니다. 이미 가진 능력을 실제로 쓸 장면을 하나 골라 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 펜타클 6 역방향은 ‘기울어진 교환’을 보여 줍니다. 주고받는 관심과 부담이 서로 감당할 수 있는지 점검해 보세요. ‘기울어진 교환’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 힘 정방향은 ‘부드러운 인내’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 펜타클 9 정방향은 ‘독립적으로 쌓은 성취’를 보여 줍니다. 익숙한 기대와 별개로 스스로 지키고 싶은 기준을 적어 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 소드 9 정방향은 ‘반복되는 걱정’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 완드 기사 역방향은 ‘충동적인 추진’을 보여 줍니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘의식적인 목표’의 황제 역방향은 ‘경직된 통제’를 보여 줍니다. ‘무의식·기반’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              2,
+              3
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "나의 태도와 다음 방향",
+            "body": "‘나 자신의 위치’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. ‘가능한 귀결’의 완드 기사 역방향은 ‘충동적인 추진’을 보여 줍니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+            "refs": [
+              6,
+              9
+            ],
+            "kind": "relational"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "start": 25,
+              "end": 50,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "document",
+                  "subtype": null,
+                  "head": "자료",
+                  "evidence": {
+                    "start": 36,
+                    "end": 40,
+                    "text": "자료에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 50,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 50
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘의식적인 목표’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘무의식·기반’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "directText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.\n\n‘의식적인 목표’의 황제 역방향에서 살필 관점은 ‘경직·경계’입니다. ‘무의식·기반’의 완드 9 정방향에서 살필 관점은 ‘인내·경계’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "actionText": "이 자료가 전달하려는 핵심과 각 부분이 맡는 역할을 먼저 짚어 보세요. 전체 흐름에서 빠진 연결이나 중복을 찾은 뒤 문장과 세부 표현을 살피면, 구조 문제와 표현 문제를 구별하기 쉽습니다. 고칠 부분마다 왜 필요한지 한 줄씩 적고 가장 큰 혼란부터 확인해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              2,
+              3
+            ]
+          }
+        ],
+        "policy": {
+          "version": 83,
+          "policy": "request-first",
+          "handled": [
+            {
+              "request": 0,
+              "operation": "inspect",
+              "target": "artifact",
+              "object": {
+                "kind": "document",
+                "subtype": null,
+                "head": "자료",
+                "evidence": {
+                  "start": 36,
+                  "end": 40,
+                  "text": "자료에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "participants": null,
+              "source": "신청 자격과 필요한 자료에서 무엇을 확인할까요",
+              "scope": "ordinary-practical-support",
+              "actionSource": "request-policy"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "index": 0,
+            "id": "pe11",
+            "reverse": false,
+            "role": "now",
+            "meaning": "현실적인 배움"
+          },
+          {
+            "index": 1,
+            "id": "pe06",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "기울어진 교환"
+          },
+          {
+            "index": 2,
+            "id": "ar04",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "경직된 통제"
+          },
+          {
+            "index": 3,
+            "id": "wa09",
+            "reverse": false,
+            "role": "root",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 4,
+            "id": "sw13",
+            "reverse": true,
+            "role": "past",
+            "meaning": "차가워진 소통"
+          },
+          {
+            "index": 5,
+            "id": "ar08",
+            "reverse": false,
+            "role": "future",
+            "meaning": "부드러운 인내"
+          },
+          {
+            "index": 6,
+            "id": "ar01",
+            "reverse": true,
+            "role": "self",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 7,
+            "id": "pe09",
+            "reverse": false,
+            "role": "environment",
+            "meaning": "독립적으로 쌓은 성취"
+          },
+          {
+            "index": 8,
+            "id": "sw09",
+            "reverse": false,
+            "role": "fear",
+            "meaning": "반복되는 걱정"
+          },
+          {
+            "index": 9,
+            "id": "wa12",
+            "reverse": true,
+            "role": "outcome",
+            "meaning": "충동적인 추진"
+          }
+        ]
+      }
+    }
+  ],
+  "failures": [
+    {
+      "id": "f10",
+      "spread": "one",
+      "expectedOperation": "verify",
+      "actual": [
+        "inspect"
+      ],
+      "specialized": [
+        "inspect"
+      ]
+    },
+    {
+      "id": "f10",
+      "spread": "three",
+      "expectedOperation": "verify",
+      "actual": [
+        "inspect"
+      ],
+      "specialized": [
+        "inspect"
+      ]
+    },
+    {
+      "id": "f10",
+      "spread": "five",
+      "expectedOperation": "verify",
+      "actual": [
+        "inspect"
+      ],
+      "specialized": [
+        "inspect"
+      ]
+    },
+    {
+      "id": "f10",
+      "spread": "relationship5",
+      "expectedOperation": "verify",
+      "actual": [
+        "inspect"
+      ],
+      "specialized": [
+        "inspect"
+      ]
+    },
+    {
+      "id": "f10",
+      "spread": "choice5",
+      "expectedOperation": "verify",
+      "actual": [
+        "inspect"
+      ],
+      "specialized": [
+        "inspect"
+      ]
+    },
+    {
+      "id": "f10",
+      "spread": "waiting3",
+      "expectedOperation": "verify",
+      "actual": [
+        "inspect"
+      ],
+      "specialized": [
+        "inspect"
+      ]
+    },
+    {
+      "id": "f10",
+      "spread": "career5",
+      "expectedOperation": "verify",
+      "actual": [
+        "inspect"
+      ],
+      "specialized": [
+        "inspect"
+      ]
+    },
+    {
+      "id": "f10",
+      "spread": "celtic",
+      "expectedOperation": "verify",
+      "actual": [
+        "inspect"
+      ],
+      "specialized": [
+        "inspect"
+      ]
+    }
+  ],
+  "note": "Required application material was read as an existing document to edit. Preserved before applying the positive required-resource modifier."
+}

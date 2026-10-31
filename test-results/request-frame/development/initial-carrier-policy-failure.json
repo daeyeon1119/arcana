@@ -1,0 +1,272 @@
+{
+  "scope": "Known Node planner controls. Not a new evaluation.",
+  "cases": [
+    {
+      "question": "자료의 조건을 확인하려고 작품을 어떻게 편집할까요?",
+      "model": {
+        "version": 90,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "자료의 조건을 확인하려고 작품을 어떻게 편집할까요?",
+        "evidenceQuestion": "자료의 조건을 확인하려고 작품을 어떻게 편집할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "improve",
+            "text": "자료의 조건을 확인하려고 작품을 어떻게 편집할까요",
+            "start": 0,
+            "end": 27,
+            "work": {
+              "version": 90,
+              "operation": "improve",
+              "target": {
+                "kind": "creative",
+                "subtype": null,
+                "head": "작품",
+                "evidence": {
+                  "start": 14,
+                  "end": 17,
+                  "text": "작품을"
+                },
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 22,
+                "end": 27,
+                "text": "편집할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 27
+              },
+              "reason": "predicate-and-object"
+            }
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "plan": {
+        "operation": "improve",
+        "headline": "작게 바꾸고 같은 상황에서 확인하기",
+        "text": "이 자료의 목적과 읽는 사람이 알아야 할 내용을 먼저 적어 보세요. 사실을 설명하는 문장은 내용 자체를 원자료와 대조하고, 확인되지 않은 주장과 확인된 내용을 구별해 보세요. 어려운 표현이나 빠진 정보를 한 부분씩 고친 뒤, 자료의 목적과 확인된 사실이 유지되는지 다시 읽어 보세요.",
+        "source": "자료의 조건을 확인하려고 작품을 어떻게 편집할까요",
+        "scope": "ordinary-practical-support",
+        "target": "artifact",
+        "object": {
+          "kind": "creative",
+          "subtype": null,
+          "head": "작품",
+          "evidence": {
+            "start": 14,
+            "end": 17,
+            "text": "작품을"
+          },
+          "owner": "unspecified",
+          "modality": "requested"
+        },
+        "work": {
+          "version": 90,
+          "operation": "improve",
+          "target": {
+            "kind": "creative",
+            "subtype": null,
+            "head": "작품",
+            "evidence": {
+              "start": 14,
+              "end": 17,
+              "text": "작품을"
+            },
+            "owner": "unspecified",
+            "modality": "requested"
+          },
+          "predicate": {
+            "start": 22,
+            "end": 27,
+            "text": "편집할까요"
+          },
+          "requestedOutput": null,
+          "scope": {
+            "start": 0,
+            "end": 27
+          },
+          "reason": "predicate-and-object"
+        },
+        "participants": null,
+        "preparingQuestion": false,
+        "waitingReply": false,
+        "contentCheck": false,
+        "submitted": false,
+        "boundaryText": ""
+      }
+    },
+    {
+      "question": "자료의 “약 용량을 항상 바꿔도 된다”라는 문구를 참고해 영상을 어떻게 편집할까요?",
+      "model": {
+        "version": 90,
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+          "ready": true,
+          "failed": false
+        },
+        "question": "자료의 “약 용량을 항상 바꿔도 된다”라는 문구를 참고해 영상을 어떻게 편집할까요?",
+        "evidenceQuestion": "자료의                  라는 문구를 참고해 영상을 어떻게 편집할까요?",
+        "requests": [
+          {
+            "kind": "action",
+            "goal": "improve",
+            "text": "자료의 “약 용량을 항상 바꿔도 된다”라는 문구를 참고해 영상을 어떻게 편집할까요",
+            "start": 0,
+            "end": 45,
+            "work": {
+              "version": 90,
+              "operation": "improve",
+              "target": {
+                "kind": "creative",
+                "subtype": null,
+                "head": "영상",
+                "evidence": {
+                  "start": 32,
+                  "end": 35,
+                  "text": "영상을"
+                },
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 40,
+                "end": 45,
+                "text": "편집할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 45
+              },
+              "reason": "predicate-and-object"
+            }
+          }
+        ],
+        "events": [],
+        "state": {
+          "sent": null,
+          "received": null,
+          "read": null,
+          "resultKnown": null,
+          "resultPublished": null,
+          "outcome": null,
+          "outcomeScope": null,
+          "assessmentCompleted": null,
+          "assessmentUpcoming": false,
+          "submitted": null,
+          "replyWaiting": false,
+          "resultWaiting": false,
+          "replyWaitingSource": null,
+          "resultWaitingSource": null,
+          "waiting": false
+        },
+        "needsContext": false,
+        "clarification": null,
+        "entities": {
+          "romantic": false
+        },
+        "unknowns": [
+          "outgoing-contact",
+          "received-reply",
+          "result"
+        ]
+      },
+      "plan": {
+        "operation": "improve",
+        "headline": "작게 바꾸고 같은 상황에서 확인하기",
+        "text": "복약·치료에 관한 문구는 표현만 다듬기 전에 원자료와 의료진·약사의 검토로 내용의 정확성을 확인해 보세요. 확인 전에는 독자가 임의로 약이나 치료를 변경해도 된다고 읽을 표현을 그대로 사용하지 마세요. 이 자료의 목적과 읽는 사람이 알아야 할 내용을 먼저 적어 보세요. 사실을 설명하는 문장은 내용 자체를 원자료와 대조하고, 확인되지 않은 주장과 확인된 내용을 구별해 보세요. 어려운 표현이나 빠진 정보를 한 부분씩 고친 뒤, 자료의 목적과 확인된 사실이 유지되는지 다시 읽어 보세요.",
+        "source": "자료의 “약 용량을 항상 바꿔도 된다”라는 문구를 참고해 영상을 어떻게 편집할까요",
+        "scope": "ordinary-practical-support",
+        "target": "artifact",
+        "object": {
+          "kind": "creative",
+          "subtype": null,
+          "head": "영상",
+          "evidence": {
+            "start": 32,
+            "end": 35,
+            "text": "영상을"
+          },
+          "owner": "unspecified",
+          "modality": "requested"
+        },
+        "work": {
+          "version": 90,
+          "operation": "improve",
+          "target": {
+            "kind": "creative",
+            "subtype": null,
+            "head": "영상",
+            "evidence": {
+              "start": 32,
+              "end": 35,
+              "text": "영상을"
+            },
+            "owner": "unspecified",
+            "modality": "requested"
+          },
+          "predicate": {
+            "start": 40,
+            "end": 45,
+            "text": "편집할까요"
+          },
+          "requestedOutput": null,
+          "scope": {
+            "start": 0,
+            "end": 45
+          },
+          "reason": "predicate-and-object"
+        },
+        "participants": null,
+        "preparingQuestion": false,
+        "waitingReply": false,
+        "contentCheck": true,
+        "submitted": false,
+        "boundaryText": ""
+      }
+    }
+  ],
+  "finding": "The typed primary object was creative, while the legacy artifact flag still selected document-editing prose from a background noun. Preserve explicit quoted-content checks while separating the target from its source."
+}

@@ -123,11 +123,34 @@
   transition:'달라진 현실 속에서도 남길 점과 이제 조정할 기대를 나누고, 익숙해서 붙잡는 부분이 있는지 살펴보세요.',
   care:'실망하거나 아쉬운 부분이 있다면 그 감정과 자신에 대한 평가를 구분하고, 돌볼 필요와 이어 갈 자원을 함께 살펴보세요.'
  };
- for(const group of Object.keys(lenses)){lenses[group].inspect=inspection[group];lenses[group].reflect=reflection[group];}
+ const agreements={
+  evidence:'같은 약속을 서로 어떻게 이해하는지 구체적인 예로 확인하고, 합의한 내용과 아직 다른 해석을 나누어 보세요.',
+  pace:'한 번에 모든 규칙을 정하기보다 먼저 맞출 약속과 이후 다시 조정할 부분을 나누고, 돌아볼 시점을 정해 보세요.',
+  capacity:'좋아 보이는 약속의 수보다 실제로 지킬 수 있는 범위를 살피고, 부담스러운 부분을 말할 여지도 남겨 보세요.',
+  boundary:'서로 꼭 지키고 싶은 경계와 조정할 수 있는 방식을 구분하고, 동의하지 않는 부분을 숨기지 않고 확인해 보세요.',
+  exchange:'한쪽의 요구만 전달하는지 서로의 필요를 듣는지 살피고, 각자가 이해한 약속을 자기 말로 확인해 보세요.',
+  iteration:'작게 합의한 내용을 실제로 적용한 뒤 무엇이 편했고 어려웠는지 돌아보고, 바꿀 규칙을 하나씩 조정해 보세요.',
+  values:'모두에게 좋아 보이는 규칙보다 함께 지키려는 목적을 먼저 확인하고, 우선할 기준이 다른 부분을 나누어 보세요.',
+  transition:'예전에 정한 약속이 지금 상황에도 맞는지 확인하고, 유지할 내용과 다시 합의할 내용을 나누어 보세요.',
+  care:'규칙을 지키는 부담과 관계에서 필요한 배려를 함께 살피고, 어려울 때 말하거나 조정할 통로를 남겨 보세요.'
+ };
+ const requirementLenses={
+  evidence:'어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.',
+  pace:'다음 확인에 앞서 알아야 할 항목과 나중에 확인해도 되는 항목을 나누고, 급히 넘어가면 되돌리기 어려운 부분부터 살펴보세요.',
+  capacity:'현재 자료로 확인할 수 있는 항목과 다른 출처의 확인이 필요한 항목을 나누고, 모르는 부분을 추측으로 채우지 마세요.',
+  boundary:'필수 요건과 예외·변경 가능한 조건을 구분하고, 어디까지가 현재 안내로 확인되는지 표시해 보세요.',
+  exchange:'같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.',
+  iteration:'관련 자료를 항목별로 대조하고, 한 항목을 확인할 때마다 근거와 남은 질문을 함께 정리해 보세요.',
+  values:'다른 사람의 사례나 기대와 이번에 실제로 적용되는 요건을 구분하고, 판단을 바꿀 중요한 항목부터 확인해 보세요.',
+  transition:'현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.',
+  care:'모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.'
+ };
+ for(const group of Object.keys(lenses)){lenses[group].inspect=inspection[group];lenses[group].reflect=reflection[group];lenses[group].agreement=agreements[group];lenses[group].requirements=requirementLenses[group];}
+ selfLenses.exchange.inspect='처음 기록한 내용과 지금 다시 읽은 뜻이 달라지는 부분이 있는지 살피고, 해석이 달라진 근거를 구분해 보세요.';
  function compose(operation,motifs,relationAxis,context={}){
   const primary=motifs?.[0],axisGroup=Object.keys(groups).find(key=>groups[key].includes(relationAxis)),group=relationGroups[relationAxis]||axisGroup||Object.keys(groups).find(key=>groups[key].includes(primary));
   if(!group)return null;
-  const family=Object.hasOwn(work,operation)?'work':operation,selfLens=context.participants!==true&&selfLenses[group]?.[family],text=selfLens||lenses[group][family];if(!text)return null;
+  const family=operation==='coordinate'&&context.object?.kind==='interaction'?'agreement':operation==='verify'&&context.object?.kind==='requirements'?'requirements':Object.hasOwn(work,operation)?'work':operation,selfLens=context.participants!==true&&selfLenses[group]?.[family],text=selfLens||lenses[group][family];if(!text)return null;
   const noun=work[operation],last=noun?.charCodeAt(noun.length-1),particle=last>=0xac00&&last<=0xd7a3&&(last-0xac00)%28===0?'를':'을';
   const relationUsed=!!(relationAxis&&(relationGroups[relationAxis]||axisGroup));
   return {operation,primary:relationUsed?null:primary,group,relationAxis:relationUsed?relationAxis:null,contextRule:selfLens?'self-or-unknown':null,text:family==='work'?noun+particle+' 정할 때는 '+text:text};

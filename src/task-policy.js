@@ -78,7 +78,7 @@
   const lastArtifact=[...topicPrefix.matchAll(new RegExp(artifact.source,'g'))].at(-1),following=lastArtifact?questionText.sentences(topicPrefix.slice(lastArtifact.index+lastArtifact[0].length)):[];
   const omittedArtifact=op==='communicate'&&lastArtifact&&!/[을를]\s|마음|감정|사과|선택|결정/.test(text)&&following.slice(1).every(clause=>/확인|대조|검토|검증|점검|확정/.test(clause));
   const object=task.work?.target||null;
-  const hasArtifact=object?.kind==='document'||!['requirements','clinical','asset'].includes(object?.kind)&&!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||omittedArtifact||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
+  const hasArtifact=object?.kind==='document'||object?.kind==='requirements'&&object.carrier?.kind==='document'||!['requirements','clinical','asset','creative','message'].includes(object?.kind)&&!requiredResources&&(artifact.test(text)||sharedArtifact||sameTask||referent||omittedArtifact||/(?:이\s*(?:말|내용)|조건|요점)/.test(text)&&artifact.test(evidenceQuestion));
   const presentationOnly=op==='improve'&&object?.kind==='message'&&/^(?:설명|말|표현|문장|문구)$/.test(object.head||'');
   const clinicalChange=/(?:약|치료|수술|복용|용량|증상|통증).{0,18}(?:끊|중단|바꾸|늘리|줄이|끝내|시작|개선|선택)|(?:끊|중단|바꾸|늘리|줄이).{0,12}(?:약|치료|복용|용량)/.test(text);
   if(scene.medical||scene.domain==='health'){
@@ -101,9 +101,9 @@
   if(focused){headline=focused.headline;body=focused.text;}
   if(op==='verify'&&state.submitted===true){headline='이미 접수한 뒤의 진행 조건 확인하기';body='이미 접수한 절차는 반복하지 않고, 이후 일정과 안내를 받을 경로, 추가 자료나 변경·철회가 필요한 경우의 조건을 공식 안내에서 확인해 보세요. 확인한 항목과 아직 모르는 항목을 나누어 적어 보세요.';}
   if(preparingQuestion&&state.received===false)body='아직 회신을 받지 못했다는 점을 전제로, 지금 정리할 질문과 답을 받은 뒤 확인할 질문을 나누어 보세요. '+body+' 준비한 질문을 바로 다시 보내라는 뜻은 아닙니다.';
-  const quoted=questionText.quotes(question).map(span=>span.text).join(' '),contentChecks=[];
-  if(target==='artifact'&&/(?:처방|복용|치료|용량)/.test(quoted))contentChecks.push('복약·치료에 관한 문구는 표현만 다듬기 전에 원자료와 의료진·약사의 검토로 내용의 정확성을 확인해 보세요. 확인 전에는 독자가 임의로 약이나 치료를 변경해도 된다고 읽을 표현을 그대로 사용하지 마세요.');
-  if(target==='artifact'&&/(?:원금|수익|수익률|손실)/.test(quoted)&&/(?:항상|언제나|무조건|확실|100\s*%|절대|보장)/.test(quoted))contentChecks.push('보장 표현은 실제 근거와 적용 조건·예외를 원자료에서 확인해 보세요. 확인하지 않은 보장을 사실로 전달하지 않고, 확인된 범위와 아직 확인할 부분을 구별해 설명해 보세요.');
+  const quoted=questionText.quotes(question).map(span=>span.text).join(' '),contentChecks=[];const contentReview=target==='artifact'||object&&['message','creative','interaction'].includes(object.kind)&&['improve','communicate','inspect','coordinate'].includes(op);
+  if(contentReview&&/(?:처방|복용|치료|용량)/.test(quoted))contentChecks.push('복약·치료에 관한 문구는 표현만 다듬기 전에 원자료와 의료진·약사의 검토로 내용의 정확성을 확인해 보세요. 확인 전에는 독자가 임의로 약이나 치료를 변경해도 된다고 읽을 표현을 그대로 사용하지 마세요.');
+  if(contentReview&&/(?:원금|수익|수익률|손실)/.test(quoted)&&/(?:항상|언제나|무조건|확실|100\s*%|절대|보장)/.test(quoted))contentChecks.push('보장 표현은 실제 근거와 적용 조건·예외를 원자료에서 확인해 보세요. 확인하지 않은 보장을 사실로 전달하지 않고, 확인된 범위와 아직 확인할 부분을 구별해 설명해 보세요.');
   if(contentChecks.length)body=contentChecks.join(' ')+' '+body;
   const prefix=target==='received-content'&&['communicate','cope'].includes(op)?'이미 받은 답에서 확인한 내용과 더 알아볼 부분을 구분해 보세요. ':'';
   const clinicalContext=!hasArtifact&&(scene.medical||/(?:진단|치료|검사\s*결과|증상|처방|복용|통증)/.test(evidenceQuestion));
