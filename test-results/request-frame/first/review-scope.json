@@ -1,0 +1,132 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "abc798464c1c3d2b6363eec0f2034c741021bf8c342ad916e47d311dabb3be77",
+    "appBytes": 33177704,
+    "webRelease": "ccfc28685e2f7e6513543cc9",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "implementationCommit": "fc60c9efb9c49b6ba11ac64881afa53c78be7bba",
+  "readingsSHA256": "e4b384bd95c454e80e26026bb76d70b7d228e01ead81c36314d580f3fc5b6092",
+  "directlyRead": [
+    {
+      "id": "p01",
+      "directSHA256": "6250e0826be8ed1cf05e3d116afcbcb6f1134ed4ef050e668f9dbe9bbfae6e96"
+    },
+    {
+      "id": "p02",
+      "directSHA256": "504cc9b5ebe1b8769615db727ec9c4ddfb2cf45d3b9ad1e384c290b5e2ae16f9"
+    },
+    {
+      "id": "p03",
+      "directSHA256": "4818aca617bed2a073d7ca984efa951c5009676c8e93dda1b99e6d14e4a9b11e"
+    },
+    {
+      "id": "p04",
+      "directSHA256": "0696ddf167368be857c1d927b02986605519f3d241bd582fd70958aef1fcc3cb"
+    },
+    {
+      "id": "p05",
+      "directSHA256": "1ff101e6ce0d67750815ba3793eac9176aa40fc2343fcce51441587d98c00387"
+    },
+    {
+      "id": "p06",
+      "directSHA256": "8f12182c705f1aefdfffa1003fda332750abd10631609f934bbd457738e5c48b"
+    },
+    {
+      "id": "p07",
+      "directSHA256": "01036d8e3d04d0bb0135dda8c08036913122f324b0510c272a478c7448525de2"
+    },
+    {
+      "id": "p08",
+      "directSHA256": "efec84d63a36686eb131938e8fdfe53d484b47055b02df1036d2cb596d7559f9"
+    },
+    {
+      "id": "p09",
+      "directSHA256": "3170dd075a23b753632b4d2e8e2f209e02a9ae7501a31fa59d5d890f9df8e88d"
+    },
+    {
+      "id": "p10",
+      "directSHA256": "fe023e20d80e970b32126ace3050ea191a6536e0bc16012daf0a23baea9822e3"
+    },
+    {
+      "id": "p11",
+      "directSHA256": "71cabc4eed29e9ebe3e24052585df35dbc62b9499a935a3cb65d97c71951a630"
+    },
+    {
+      "id": "p12",
+      "directSHA256": "43f43d1965289d7c9851c47bc579ea3ae653c52c95d617c1c0f2fa934bfe874a"
+    },
+    {
+      "id": "p13",
+      "directSHA256": "fcaae6212258951d2aebdb6f1c9b73ed5457ca73a905cb0dfda3f3f2a5303e57"
+    },
+    {
+      "id": "p14",
+      "directSHA256": "fe658ef52df0914ca361884cacd5833a418463c223a5391c87ce26c875203489"
+    },
+    {
+      "id": "p15",
+      "directSHA256": "aef3ee7409698ab8c09c206e8359da9ba2471852df0311d8197632e66d0043dc"
+    },
+    {
+      "id": "p16",
+      "directSHA256": "e604dcdf1e43937afadbc39ee293c577369e48d63cae5a88c43e628edd052733"
+    },
+    {
+      "id": "p17",
+      "directSHA256": "a5de678c9332d5821788731bd3407a37da44847795b5fb0996bf535a407bfdd8"
+    },
+    {
+      "id": "p18",
+      "directSHA256": "208e19cb95d3c1fd12ab58f8f35cc289ee3efe365baae5ce2156804953a902bf"
+    },
+    {
+      "id": "p19",
+      "directSHA256": "af795f6744e4d9a45476320c291bcf4b8277596bc1af6164283de704c49756f5"
+    },
+    {
+      "id": "p20",
+      "directSHA256": "f10d885ba90a5e1964c82a924f8bc22b39f91419bccc6557eba5e122ec19433f"
+    }
+  ],
+  "mechanicalFailedQuestionIds": [
+    "p01",
+    "p03",
+    "p07",
+    "p08",
+    "p12",
+    "p15",
+    "p20"
+  ],
+  "remainingSemanticLimits": [
+    "점검하면 좋을까요의 종결 구조를 놓쳐 일반 조언이 됨.",
+    "관찰 기록 점검으로 답하지만 질문의 방문객 반응에 연결한 깊이는 약함.",
+    "성찰할 부분이라는 관형 구조를 예측 질문으로 오인.",
+    "다른 사람의 발신과 제 노트를 분리함. 카드 조언은 일반적임.",
+    "미발신 사실을 유지하며 표현 편집. 구체 문장 자체는 입력에 없음.",
+    "발신 상태 유지. 소유가 명시되지 않은 표현에 중립 안내. 전송 사건과 소유의 연결은 약함.",
+    "이용 안내의 수신·미독 상태를 놓침. 두 요청 자체는 처리됨.",
+    "이용 안내의 수신·읽음 상태 누락. 실제 내용에 연결한 후속 질문이 약함.",
+    "자료와 추정 구분. 측정 시각이라는 구체 내용 활용은 약함.",
+    "진료 설명의 핵심 정보 보존과 축약. 임상 판단은 하지 않음.",
+    "약의 양 변경을 카드로 결정하지 않음. 이미 읽은 안내와 추가 확인 방법은 짧음.",
+    "앞선 약속을 이어받지 못해 담당자·마감의 업무 분담으로 답함.",
+    "혼자 맡은 작업이라는 사실 보존.",
+    "비교 방법을 제공하지만 두 매체 특성의 구체성은 약함.",
+    "내용이 정해지지 않은 대안을 추가 문맥 없이 비교함.",
+    "두 행동을 비교하나 일반 시간·비용 기준이 우세함.",
+    "동기 성찰로 답함. 그림이라는 분야 깊이는 약함.",
+    "읽으며는 배경으로 두고 성찰 처리. 실제 어려움의 탐색 질문이 일반적임.",
+    "설명문과 관측 노트의 두 점검은 유지. 같은 카드 적용 문장이 반복됨.",
+    "구분해 돌아보고라는 요청 누락. 감정 조언만 실제 적용."
+  ],
+  "professionalQualityScore": null,
+  "scope": "All 20 five-card direct answers read in full, with questions/cards and mechanical states. Other 140 detailed outputs retained but not all manually read. Self-authored first execution; after this review these cases are known regression data."
+}

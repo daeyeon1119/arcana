@@ -1,0 +1,4837 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "abc798464c1c3d2b6363eec0f2034c741021bf8c342ad916e47d311dabb3be77",
+    "appBytes": 33177704,
+    "webRelease": "ccfc28685e2f7e6513543cc9",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "failure": "New generic inspect work overwrote required unread-content review guidance.",
+  "summary": {
+    "phase": "development",
+    "release": {
+      "appVersion": "90.0.0",
+      "readingEngine": 90,
+      "appSHA256": "abc798464c1c3d2b6363eec0f2034c741021bf8c342ad916e47d311dabb3be77",
+      "appBytes": 33177704,
+      "webRelease": "ccfc28685e2f7e6513543cc9",
+      "languageAnalysis": {
+        "backend": "garu-ko",
+        "version": "0.11.0",
+        "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+        "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+      }
+    },
+    "baselineSHA256": "d5cdb74be01768a59a240b9f18645d468690d8faba33fd8f33d49cec1ed2ab88",
+    "fixtureSHA256": "56a7214403d663c3fb8da64b0e8edda87552ecd99c316b2f035f95aaba219ab3",
+    "collectorSHA256": "0aa9c0cb305d6562ff326be6fce01a835b243776180a4adbd5a2e359c362a7f0",
+    "seed": 890041,
+    "note": "Known author development probes spanning lexical collisions, grammatical roles, clinical/career coexistence and request purpose. Includes reviewed v88 failures. Expected fields are evaluator-only; not a fresh, independent or expert benchmark.",
+    "questions": 24,
+    "readingsPerVersion": 192,
+    "readingsSHA256": "afee2e79b47536f73870c57f1d37c56597d1b807616c47f24ac3d34512aa1e96",
+    "errors": [],
+    "failures": [
+      {
+        "id": "k18",
+        "spread": "one",
+        "key": "readPrerequisite",
+        "expected": "explicit unread-content prerequisite",
+        "actual": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요."
+      },
+      {
+        "id": "k18",
+        "spread": "three",
+        "key": "readPrerequisite",
+        "expected": "explicit unread-content prerequisite",
+        "actual": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요."
+      },
+      {
+        "id": "k18",
+        "spread": "five",
+        "key": "readPrerequisite",
+        "expected": "explicit unread-content prerequisite",
+        "actual": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요."
+      },
+      {
+        "id": "k18",
+        "spread": "relationship5",
+        "key": "readPrerequisite",
+        "expected": "explicit unread-content prerequisite",
+        "actual": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘어가기 쉬운 부분과 점검을 반복하는 부분을 구별하고, 이번에 확인할 범위와 멈출 기준을 정해 보세요."
+      },
+      {
+        "id": "k18",
+        "spread": "choice5",
+        "key": "readPrerequisite",
+        "expected": "explicit unread-content prerequisite",
+        "actual": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요."
+      },
+      {
+        "id": "k18",
+        "spread": "waiting3",
+        "key": "readPrerequisite",
+        "expected": "explicit unread-content prerequisite",
+        "actual": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요."
+      },
+      {
+        "id": "k18",
+        "spread": "career5",
+        "key": "readPrerequisite",
+        "expected": "explicit unread-content prerequisite",
+        "actual": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요."
+      },
+      {
+        "id": "k18",
+        "spread": "celtic",
+        "key": "readPrerequisite",
+        "expected": "explicit unread-content prerequisite",
+        "actual": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요."
+      }
+    ],
+    "mechanicalPassed": 184,
+    "professionalQualityScore": null
+  },
+  "actual": [
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "one",
+      "cards": [
+        {
+          "id": "ar02",
+          "rev": false
+        }
+      ],
+      "before": {
+        "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+        "actions": [
+          "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 여사제 정방향은 ‘관찰과 직관’을 보여 줍니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "evidence",
+            "primaryMotif": "intuition",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              0
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+              "refs": [
+                0
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "ar02",
+                  "reverse": false,
+                  "motifs": [
+                    "intuition",
+                    "uncertain"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": null
+      },
+      "after": {
+        "direct": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.",
+        "actions": [
+          "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 여사제 정방향은 ‘관찰과 직관’을 보여 줍니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 90,
+          "languageAnalysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true,
+              "outgoingUnestablished": false
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.",
+            "directText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.",
+            "actionText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inspect",
+            "object": {
+              "kind": "unspecified",
+              "subtype": null,
+              "head": null,
+              "evidence": null,
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "evidence",
+            "primaryMotif": "intuition",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              0
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘핵심 메시지’의 여사제 정방향에서 살필 관점은 ‘직관·불확실성’입니다. 직감이 알려 주는 마음과 실제로 확인해야 할 정보를 나누어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.",
+              "refs": [
+                0
+              ],
+              "operation": "inspect",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "ar02",
+                  "reverse": false,
+                  "motifs": [
+                    "intuition",
+                    "uncertain"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": {
+          "domain": "general",
+          "medical": false,
+          "scope": {
+            "start": 0,
+            "end": 35,
+            "reason": "whole-question"
+          },
+          "evidence": {
+            "health": [],
+            "financial": [],
+            "domains": {
+              "project": [],
+              "family": [],
+              "relationship": [],
+              "career": [],
+              "preparation": [],
+              "decision": [],
+              "stress": [],
+              "waiting": []
+            }
+          },
+          "rejectedWords": [],
+          "replayed": null,
+          "analysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "legacyDomain": "general"
+        }
+      }
+    },
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "three",
+      "cards": [
+        {
+          "id": "sw12",
+          "rev": false
+        },
+        {
+          "id": "ar09",
+          "rev": true
+        },
+        {
+          "id": "sw06",
+          "rev": false
+        }
+      ],
+      "before": {
+        "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+        "actions": [
+          "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 은둔자 역방향은 ‘고립의 장기화’를 보여 줍니다. 혼자 있을 필요와 도움을 받기 어려운 상태를 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 소드 6 정방향은 ‘더 안정된 곳으로 이동’을 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+            "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+            "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "transition",
+            "primaryMotif": "transition",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              2
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+              "refs": [
+                2
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 2,
+                  "id": "sw06",
+                  "reverse": false,
+                  "motifs": [
+                    "transition",
+                    "security"
+                  ]
+                }
+              ],
+              "roleFrame": "현재 방향이 이어질 때 점검할 관점으로 읽으면, ",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": null
+      },
+      "after": {
+        "direct": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.",
+        "actions": [
+          "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 은둔자 역방향은 ‘고립의 장기화’를 보여 줍니다. 혼자 있을 필요와 도움을 받기 어려운 상태를 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 소드 6 정방향은 ‘더 안정된 곳으로 이동’을 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 90,
+          "languageAnalysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true,
+              "outgoingUnestablished": false
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.",
+            "directText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.",
+            "actionText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inspect",
+            "object": {
+              "kind": "unspecified",
+              "subtype": null,
+              "head": null,
+              "evidence": null,
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "transition",
+            "primaryMotif": "transition",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              2
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘미래’의 소드 6 정방향에서 살필 관점은 ‘전환·안정’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.",
+              "refs": [
+                2
+              ],
+              "operation": "inspect",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 2,
+                  "id": "sw06",
+                  "reverse": false,
+                  "motifs": [
+                    "transition",
+                    "security"
+                  ]
+                }
+              ],
+              "roleFrame": "현재 방향이 이어질 때 점검할 관점으로 읽으면, ",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": {
+          "domain": "general",
+          "medical": false,
+          "scope": {
+            "start": 0,
+            "end": 35,
+            "reason": "whole-question"
+          },
+          "evidence": {
+            "health": [],
+            "financial": [],
+            "domains": {
+              "project": [],
+              "family": [],
+              "relationship": [],
+              "career": [],
+              "preparation": [],
+              "decision": [],
+              "stress": [],
+              "waiting": []
+            }
+          },
+          "rejectedWords": [],
+          "replayed": null,
+          "analysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "legacyDomain": "general"
+        }
+      }
+    },
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "five",
+      "cards": [
+        {
+          "id": "wa03",
+          "rev": true
+        },
+        {
+          "id": "pe07",
+          "rev": false
+        },
+        {
+          "id": "wa02",
+          "rev": true
+        },
+        {
+          "id": "ar07",
+          "rev": true
+        },
+        {
+          "id": "ar08",
+          "rev": true
+        }
+      ],
+      "before": {
+        "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+        "actions": [
+          "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 완드 2 역방향은 ‘선택의 유보’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. ‘선택의 유보’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 힘 역방향은 ‘흔들리는 자신감’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "evidence",
+            "primaryMotif": "doubt",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "ar08",
+                  "reverse": true,
+                  "motifs": [
+                    "doubt",
+                    "suppression"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": null
+      },
+      "after": {
+        "direct": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.",
+        "actions": [
+          "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 완드 2 역방향은 ‘선택의 유보’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. ‘선택의 유보’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 힘 역방향은 ‘흔들리는 자신감’을 보여 줍니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 90,
+          "languageAnalysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true,
+              "outgoingUnestablished": false
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.",
+            "directText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.",
+            "actionText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inspect",
+            "object": {
+              "kind": "unspecified",
+              "subtype": null,
+              "head": null,
+              "evidence": null,
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "evidence",
+            "primaryMotif": "doubt",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘조언’의 힘 역방향에서 살필 관점은 ‘의심·억제’입니다. 의심을 뒷받침하는 정보와 아직 모르는 부분을 따로 적어 보세요. 확인한 근거가 있는 항목과 해석에 기대는 항목을 표시하고, 같은 자료를 다시 읽어도 같은 결론이 나오는지 대조해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "inspect",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "ar08",
+                  "reverse": true,
+                  "motifs": [
+                    "doubt",
+                    "suppression"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": {
+          "domain": "general",
+          "medical": false,
+          "scope": {
+            "start": 0,
+            "end": 35,
+            "reason": "whole-question"
+          },
+          "evidence": {
+            "health": [],
+            "financial": [],
+            "domains": {
+              "project": [],
+              "family": [],
+              "relationship": [],
+              "career": [],
+              "preparation": [],
+              "decision": [],
+              "stress": [],
+              "waiting": []
+            }
+          },
+          "rejectedWords": [],
+          "replayed": null,
+          "analysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "legacyDomain": "general"
+        }
+      }
+    },
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "ar07",
+          "rev": false
+        },
+        {
+          "id": "sw04",
+          "rev": false
+        },
+        {
+          "id": "ar16",
+          "rev": true
+        },
+        {
+          "id": "wa02",
+          "rev": false
+        },
+        {
+          "id": "wa03",
+          "rev": true
+        }
+      ],
+      "before": {
+        "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+        "actions": [
+          "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 탑 역방향은 ‘변화의 회피’를 보여 줍니다. 조금 더 기다려야 할 이유와 불편해서 미루는 이유를 구별해 보세요. ‘변화의 회피’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 완드 2 정방향은 ‘넓어지는 계획’을 보여 줍니다. 크게 세운 방향을 확인 가능한 다음 단계로 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘확인해야 할 차이’의 탑 역방향은 ‘변화의 회피’를 보여 줍니다. ‘내가 취할 행동’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+            "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+            "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              2,
+              4
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "pace",
+            "primaryMotif": null,
+            "relationAxis": "delay",
+            "contextRule": null,
+            "refs": [
+              2,
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+              "refs": [
+                2,
+                4
+              ],
+              "operation": "verify",
+              "relationAxis": "delay",
+              "facets": [
+                {
+                  "index": 2,
+                  "id": "ar16",
+                  "reverse": true,
+                  "motifs": [
+                    "avoidance",
+                    "delay"
+                  ]
+                },
+                {
+                  "index": 4,
+                  "id": "wa03",
+                  "reverse": true,
+                  "motifs": [
+                    "delay",
+                    "reality"
+                  ]
+                }
+              ],
+              "roleFrame": "실제로 막히는 부분이 있는지 살피는 관점으로, ",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": null
+      },
+      "after": {
+        "direct": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘어가기 쉬운 부분과 점검을 반복하는 부분을 구별하고, 이번에 확인할 범위와 멈출 기준을 정해 보세요.",
+        "actions": [
+          "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 전차 정방향은 ‘목표를 향한 추진’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 탑 역방향은 ‘변화의 회피’를 보여 줍니다. 조금 더 기다려야 할 이유와 불편해서 미루는 이유를 구별해 보세요. ‘변화의 회피’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 완드 2 정방향은 ‘넓어지는 계획’을 보여 줍니다. 크게 세운 방향을 확인 가능한 다음 단계로 나누어 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘확인해야 할 차이’의 탑 역방향은 ‘변화의 회피’를 보여 줍니다. ‘내가 취할 행동’의 완드 3 역방향은 ‘지연된 확장’을 보여 줍니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              2,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 90,
+          "languageAnalysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true,
+              "outgoingUnestablished": false
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘어가기 쉬운 부분과 점검을 반복하는 부분을 구별하고, 이번에 확인할 범위와 멈출 기준을 정해 보세요.",
+            "directText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘어가기 쉬운 부분과 점검을 반복하는 부분을 구별하고, 이번에 확인할 범위와 멈출 기준을 정해 보세요.",
+            "actionText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              2,
+              4
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inspect",
+            "object": {
+              "kind": "unspecified",
+              "subtype": null,
+              "head": null,
+              "evidence": null,
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "pace",
+            "primaryMotif": null,
+            "relationAxis": "delay",
+            "contextRule": null,
+            "refs": [
+              2,
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘확인해야 할 차이’의 탑 역방향에서 살필 관점은 ‘회피·지연’입니다. ‘내가 취할 행동’의 완드 3 역방향에서 살필 관점은 ‘지연·현실성’입니다. 두 카드에서는 ‘지연’이라는 주제를 함께 살펴볼 수 있습니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 서둘러 넘어가기 쉬운 부분과 점검을 반복하는 부분을 구별하고, 이번에 확인할 범위와 멈출 기준을 정해 보세요.",
+              "refs": [
+                2,
+                4
+              ],
+              "operation": "inspect",
+              "relationAxis": "delay",
+              "facets": [
+                {
+                  "index": 2,
+                  "id": "ar16",
+                  "reverse": true,
+                  "motifs": [
+                    "avoidance",
+                    "delay"
+                  ]
+                },
+                {
+                  "index": 4,
+                  "id": "wa03",
+                  "reverse": true,
+                  "motifs": [
+                    "delay",
+                    "reality"
+                  ]
+                }
+              ],
+              "roleFrame": "실제로 막히는 부분이 있는지 살피는 관점으로, ",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": {
+          "domain": "general",
+          "medical": false,
+          "scope": {
+            "start": 0,
+            "end": 35,
+            "reason": "whole-question"
+          },
+          "evidence": {
+            "health": [],
+            "financial": [],
+            "domains": {
+              "project": [],
+              "family": [],
+              "relationship": [],
+              "career": [],
+              "preparation": [],
+              "decision": [],
+              "stress": [],
+              "waiting": []
+            }
+          },
+          "rejectedWords": [],
+          "replayed": null,
+          "analysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "legacyDomain": "general"
+        }
+      }
+    },
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "choice5",
+      "cards": [
+        {
+          "id": "wa04",
+          "rev": false
+        },
+        {
+          "id": "cu11",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        },
+        {
+          "id": "wa14",
+          "rev": false
+        },
+        {
+          "id": "ar10",
+          "rev": false
+        }
+      ],
+      "before": {
+        "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+        "actions": [
+          "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 컵 시종 역방향은 ‘미숙한 감정 표현’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 운명의 수레바퀴 정방향은 ‘변화의 순환’을 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+            "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+            "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "transition",
+            "primaryMotif": "transition",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "ar10",
+                  "reverse": false,
+                  "motifs": [
+                    "transition",
+                    "flexibility"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": null
+      },
+      "after": {
+        "direct": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.",
+        "actions": [
+          "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 완드 4 정방향은 ‘안정된 이정표’를 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 컵 시종 역방향은 ‘미숙한 감정 표현’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 완드 왕 정방향은 ‘큰 비전의 실행’을 보여 줍니다. 내가 정할 수 있는 일과 다른 사람의 몫을 나누어 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 운명의 수레바퀴 정방향은 ‘변화의 순환’을 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 90,
+          "languageAnalysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true,
+              "outgoingUnestablished": false
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.",
+            "directText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.",
+            "actionText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inspect",
+            "object": {
+              "kind": "unspecified",
+              "subtype": null,
+              "head": null,
+              "evidence": null,
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "transition",
+            "primaryMotif": "transition",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘다음 한 걸음’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이전 단계에서 확인한 부분과 새로 확인할 부분을 나누고, 바뀐 조건이 어디에 영향을 주는지 살펴보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "inspect",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "ar10",
+                  "reverse": false,
+                  "motifs": [
+                    "transition",
+                    "flexibility"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": {
+          "domain": "general",
+          "medical": false,
+          "scope": {
+            "start": 0,
+            "end": 35,
+            "reason": "whole-question"
+          },
+          "evidence": {
+            "health": [],
+            "financial": [],
+            "domains": {
+              "project": [],
+              "family": [],
+              "relationship": [],
+              "career": [],
+              "preparation": [],
+              "decision": [],
+              "stress": [],
+              "waiting": []
+            }
+          },
+          "rejectedWords": [],
+          "replayed": null,
+          "analysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "legacyDomain": "general"
+        }
+      }
+    },
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "waiting3",
+      "cards": [
+        {
+          "id": "sw01",
+          "rev": true
+        },
+        {
+          "id": "ar04",
+          "rev": false
+        },
+        {
+          "id": "sw13",
+          "rev": true
+        }
+      ],
+      "before": {
+        "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요.",
+        "actions": [
+          "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 소드 에이스 역방향은 ‘흐릿한 판단’을 보여 줍니다. 정보가 부족한 부분을 확신이나 최악의 예상으로 채우지 않아도 됩니다. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘지금 다룰 마음’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. ‘오늘의 실천’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요.",
+            "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요.",
+            "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "boundary",
+            "primaryMotif": null,
+            "relationAxis": "bounds",
+            "contextRule": null,
+            "refs": [
+              1,
+              2
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요.",
+              "refs": [
+                1,
+                2
+              ],
+              "operation": "verify",
+              "relationAxis": "bounds",
+              "facets": [
+                {
+                  "index": 1,
+                  "id": "ar04",
+                  "reverse": false,
+                  "motifs": [
+                    "structure",
+                    "bounds"
+                  ]
+                },
+                {
+                  "index": 2,
+                  "id": "sw13",
+                  "reverse": true,
+                  "motifs": [
+                    "bounds",
+                    "mismatch"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": null
+      },
+      "after": {
+        "direct": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+        "actions": [
+          "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 소드 에이스 역방향은 ‘흐릿한 판단’을 보여 줍니다. 정보가 부족한 부분을 확신이나 최악의 예상으로 채우지 않아도 됩니다. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. 역할과 약속, 완료 기준을 구체적으로 정하면 무엇이 달라질지 살펴보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘지금 다룰 마음’의 황제 정방향은 ‘책임 있는 질서’를 보여 줍니다. ‘오늘의 실천’의 소드 여왕 역방향은 ‘차가워진 소통’을 보여 줍니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 90,
+          "languageAnalysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true,
+              "outgoingUnestablished": false
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "directText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+            "actionText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inspect",
+            "object": {
+              "kind": "unspecified",
+              "subtype": null,
+              "head": null,
+              "evidence": null,
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "boundary",
+            "primaryMotif": null,
+            "relationAxis": "bounds",
+            "contextRule": null,
+            "refs": [
+              1,
+              2
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘지금 다룰 마음’의 황제 정방향에서 살필 관점은 ‘구조·경계’입니다. ‘오늘의 실천’의 소드 여왕 역방향에서 살필 관점은 ‘경계·엇갈림’입니다. 두 카드에서는 ‘경계’라는 주제를 함께 살펴볼 수 있습니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 반드시 지킬 기준과 바꾸어도 되는 표현·방식을 나누고, 점검의 범위가 어디까지인지 표시해 보세요.",
+              "refs": [
+                1,
+                2
+              ],
+              "operation": "inspect",
+              "relationAxis": "bounds",
+              "facets": [
+                {
+                  "index": 1,
+                  "id": "ar04",
+                  "reverse": false,
+                  "motifs": [
+                    "structure",
+                    "bounds"
+                  ]
+                },
+                {
+                  "index": 2,
+                  "id": "sw13",
+                  "reverse": true,
+                  "motifs": [
+                    "bounds",
+                    "mismatch"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": {
+          "domain": "general",
+          "medical": false,
+          "scope": {
+            "start": 0,
+            "end": 35,
+            "reason": "whole-question"
+          },
+          "evidence": {
+            "health": [],
+            "financial": [],
+            "domains": {
+              "project": [],
+              "family": [],
+              "relationship": [],
+              "career": [],
+              "preparation": [],
+              "decision": [],
+              "stress": [],
+              "waiting": []
+            }
+          },
+          "rejectedWords": [],
+          "replayed": null,
+          "analysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "legacyDomain": "general"
+        }
+      }
+    },
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "career5",
+      "cards": [
+        {
+          "id": "pe07",
+          "rev": false
+        },
+        {
+          "id": "wa06",
+          "rev": true
+        },
+        {
+          "id": "cu14",
+          "rev": false
+        },
+        {
+          "id": "cu03",
+          "rev": false
+        },
+        {
+          "id": "wa07",
+          "rev": true
+        }
+      ],
+      "before": {
+        "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+        "actions": [
+          "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 완드 6 역방향은 ‘인정에 대한 집착’을 보여 줍니다. 외부의 평가와 내가 지키려는 목표를 나누어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 컵 왕 정방향은 ‘성숙한 감정 조절’을 보여 줍니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. ‘성숙한 감정 조절’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘도움이 될 자원’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. ‘실행의 첫 단계’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+            "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+            "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              3,
+              4
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "capacity",
+            "primaryMotif": null,
+            "relationAxis": "capacity",
+            "contextRule": null,
+            "refs": [
+              3,
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+              "refs": [
+                3,
+                4
+              ],
+              "operation": "verify",
+              "relationAxis": "capacity",
+              "facets": [
+                {
+                  "index": 3,
+                  "id": "cu03",
+                  "reverse": false,
+                  "motifs": [
+                    "connection",
+                    "support"
+                  ]
+                },
+                {
+                  "index": 4,
+                  "id": "wa07",
+                  "reverse": true,
+                  "motifs": [
+                    "bounds",
+                    "depleted"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": null
+      },
+      "after": {
+        "direct": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.",
+        "actions": [
+          "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 펜타클 7 정방향은 ‘기다려야 하는 성과’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 완드 6 역방향은 ‘인정에 대한 집착’을 보여 줍니다. 외부의 평가와 내가 지키려는 목표를 나누어 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 컵 왕 정방향은 ‘성숙한 감정 조절’을 보여 줍니다. 둘 다 잘하려는 기준보다 지금 지속할 수 있는 비율을 살펴보세요. ‘성숙한 감정 조절’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. 내 기대뿐 아니라 상대가 실제로 표현한 의사도 함께 살펴보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘도움이 될 자원’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. ‘실행의 첫 단계’의 완드 7 역방향은 ‘지친 방어’를 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+            "refs": [
+              3,
+              4
+            ],
+            "kind": "relational"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 90,
+          "languageAnalysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true,
+              "outgoingUnestablished": false
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.",
+            "directText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.",
+            "actionText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              3,
+              4
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inspect",
+            "object": {
+              "kind": "unspecified",
+              "subtype": null,
+              "head": null,
+              "evidence": null,
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "capacity",
+            "primaryMotif": null,
+            "relationAxis": "capacity",
+            "contextRule": null,
+            "refs": [
+              3,
+              4
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘도움이 될 자원’의 컵 3 정방향에서 살필 관점은 ‘교류·지원’입니다. ‘실행의 첫 단계’의 완드 7 역방향에서 살필 관점은 ‘경계·소진’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.",
+              "refs": [
+                3,
+                4
+              ],
+              "operation": "inspect",
+              "relationAxis": "capacity",
+              "facets": [
+                {
+                  "index": 3,
+                  "id": "cu03",
+                  "reverse": false,
+                  "motifs": [
+                    "connection",
+                    "support"
+                  ]
+                },
+                {
+                  "index": 4,
+                  "id": "wa07",
+                  "reverse": true,
+                  "motifs": [
+                    "bounds",
+                    "depleted"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": {
+          "domain": "general",
+          "medical": false,
+          "scope": {
+            "start": 0,
+            "end": 35,
+            "reason": "whole-question"
+          },
+          "evidence": {
+            "health": [],
+            "financial": [],
+            "domains": {
+              "project": [],
+              "family": [],
+              "relationship": [],
+              "career": [],
+              "preparation": [],
+              "decision": [],
+              "stress": [],
+              "waiting": []
+            }
+          },
+          "rejectedWords": [],
+          "replayed": null,
+          "analysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "legacyDomain": "general"
+        }
+      }
+    },
+    {
+      "id": "k18",
+      "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+      "spread": "celtic",
+      "cards": [
+        {
+          "id": "pe02",
+          "rev": true
+        },
+        {
+          "id": "sw12",
+          "rev": false
+        },
+        {
+          "id": "ar21",
+          "rev": true
+        },
+        {
+          "id": "cu11",
+          "rev": false
+        },
+        {
+          "id": "sw10",
+          "rev": true
+        },
+        {
+          "id": "pe08",
+          "rev": false
+        },
+        {
+          "id": "sw06",
+          "rev": true
+        },
+        {
+          "id": "sw13",
+          "rev": false
+        },
+        {
+          "id": "ar10",
+          "rev": true
+        },
+        {
+          "id": "pe10",
+          "rev": false
+        }
+      ],
+      "before": {
+        "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+        "actions": [
+          "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 펜타클 2 역방향은 ‘과부하된 일상’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. ‘빠른 결단’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 세계 역방향은 ‘미완의 과제’를 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 컵 시종 정방향은 ‘다정한 제안’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 소드 6 역방향은 ‘떠나기 어려운 마음’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 소드 여왕 정방향은 ‘명확한 경계’를 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 운명의 수레바퀴 역방향은 ‘변화에 대한 저항’을 보여 줍니다. 조금 더 기다려야 할 이유와 불편해서 미루는 이유를 구별해 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 펜타클 10 정방향은 ‘오래가는 기반’을 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘현재 상황’의 펜타클 2 역방향은 ‘과부하된 일상’을 보여 줍니다. ‘가로지르는 도전’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              1
+            ],
+            "kind": "relational"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 88,
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+            "directText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+            "actionText": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              0,
+              1
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "capacity",
+            "primaryMotif": null,
+            "relationAxis": "sustain",
+            "contextRule": null,
+            "refs": [
+              0,
+              1
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 필요한 비용·시간·노력이 실제로 확보된 범위에 들어가는지 확인하고, 부족한 항목은 추측으로 메우지 말고 미확인으로 남겨 보세요.",
+              "refs": [
+                0,
+                1
+              ],
+              "operation": "verify",
+              "relationAxis": "sustain",
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "pe02",
+                  "reverse": true,
+                  "motifs": [
+                    "overload",
+                    "depleted"
+                  ]
+                },
+                {
+                  "index": 1,
+                  "id": "sw12",
+                  "reverse": false,
+                  "motifs": [
+                    "speed",
+                    "agency"
+                  ]
+                }
+              ],
+              "roleFrame": "실제로 막히는 부분이 있는지 살피는 관점으로, ",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": null
+      },
+      "after": {
+        "direct": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.",
+        "actions": [
+          "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 펜타클 2 역방향은 ‘과부하된 일상’을 보여 줍니다. 감당할 수 있는 범위와 추가로 떠안은 몫을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. ‘빠른 결단’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 세계 역방향은 ‘미완의 과제’를 보여 줍니다. 외부 절차가 늦어지는 것과 결정을 미루는 일을 구별해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 컵 시종 정방향은 ‘다정한 제안’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 펜타클 8 정방향은 ‘반복된 연습’을 보여 줍니다. 반복한 시간과 실제로 달라진 부분을 함께 확인해 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 소드 6 역방향은 ‘떠나기 어려운 마음’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 소드 여왕 정방향은 ‘명확한 경계’를 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 운명의 수레바퀴 역방향은 ‘변화에 대한 저항’을 보여 줍니다. 조금 더 기다려야 할 이유와 불편해서 미루는 이유를 구별해 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 펜타클 10 정방향은 ‘오래가는 기반’을 보여 줍니다. 지키려는 기반과 그 기반을 유지하는 데 드는 부담을 함께 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘현재 상황’의 펜타클 2 역방향은 ‘과부하된 일상’을 보여 줍니다. ‘가로지르는 도전’의 소드 기사 정방향은 ‘빠른 결단’을 보여 줍니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              1
+            ],
+            "kind": "relational"
+          }
+        ],
+        "domain": "general",
+        "medical": false,
+        "urgent": false,
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": true,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "model": {
+          "version": 90,
+          "languageAnalysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "question": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "evidenceQuestion": "민수에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "requests": [
+            {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": true,
+              "text": "받은 답변",
+              "start": 5,
+              "end": 10,
+              "action": "receive",
+              "predicate": "받은",
+              "direction": "receive",
+              "accepting": true,
+              "relative": true,
+              "outgoingUnestablished": false
+            },
+            {
+              "kind": "reply",
+              "object": "답변",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "negated",
+              "completed": false,
+              "text": "답변을 아직 읽지 않았어요",
+              "start": 8,
+              "end": 22,
+              "direction": "read",
+              "predicate": "읽지",
+              "accepting": true,
+              "waitingEvidence": null,
+              "waiting": false,
+              "absence": false,
+              "benefactive": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
+          "state": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "needsContext": false,
+          "clarification": null,
+          "entities": {
+            "romantic": false
+          },
+          "unknowns": [
+            "outgoing-contact",
+            "result"
+          ]
+        },
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "무엇부터 살펴볼까요",
+              "start": 24,
+              "end": 34,
+              "work": {
+                "version": 90,
+                "operation": "inspect",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 34,
+                  "text": "살펴볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 34
+                },
+                "reason": "predicate-and-object"
+              },
+              "context": {
+                "type": "received-content",
+                "sourceEvent": {
+                  "start": 5,
+                  "end": 10,
+                  "object": "답변",
+                  "text": "받은 답변"
+                },
+                "read": false
+              }
+            },
+            "text": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.",
+            "directText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.\n\n‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.",
+            "actionText": "점검하려는 대상이 충족해야 할 기준을 먼저 적고, 각 기준에서 확인한 근거와 아직 모르는 부분을 구분해 보세요. 예상과 실제가 다른 한 지점을 골라 어떤 정보가 더 필요한지 살피고, 확인 뒤에 바꿀 부분을 정해 보세요.",
+            "actionTask": "inspect",
+            "refs": [
+              0,
+              1
+            ]
+          }
+        ],
+        "applications": [
+          {
+            "request": 0,
+            "operation": "inspect",
+            "object": {
+              "kind": "unspecified",
+              "subtype": null,
+              "head": null,
+              "evidence": null,
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "capacity",
+            "primaryMotif": null,
+            "relationAxis": "sustain",
+            "contextRule": null,
+            "refs": [
+              0,
+              1
+            ],
+            "replaceGeneric": false,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘현재 상황’의 펜타클 2 역방향에서 살필 관점은 ‘과부하·소진’입니다. ‘가로지르는 도전’의 소드 기사 정방향에서 살필 관점은 ‘속도·주도성’입니다. 시작하거나 밀고 나가는 힘과 쉬어 갈 여지를 함께 보는 조합입니다. 계속할 의지와 지금 감당할 수 있는 양을 따로 살펴보세요. 실제로 막히는 부분이 있는지 살피는 관점으로, 가장 큰 혼란을 만드는 한 부분부터 점검하고, 지금 확인할 수 없는 부분은 미확인으로 남겨 부담을 나누어 보세요.",
+              "refs": [
+                0,
+                1
+              ],
+              "operation": "inspect",
+              "relationAxis": "sustain",
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "pe02",
+                  "reverse": true,
+                  "motifs": [
+                    "overload",
+                    "depleted"
+                  ]
+                },
+                {
+                  "index": 1,
+                  "id": "sw12",
+                  "reverse": false,
+                  "motifs": [
+                    "speed",
+                    "agency"
+                  ]
+                }
+              ],
+              "roleFrame": "실제로 막히는 부분이 있는지 살피는 관점으로, ",
+              "reused": false
+            }
+          }
+        ],
+        "lexical": {
+          "domain": "general",
+          "medical": false,
+          "scope": {
+            "start": 0,
+            "end": 35,
+            "reason": "whole-question"
+          },
+          "evidence": {
+            "health": [],
+            "financial": [],
+            "domains": {
+              "project": [],
+              "family": [],
+              "relationship": [],
+              "career": [],
+              "preparation": [],
+              "decision": [],
+              "stress": [],
+              "waiting": []
+            }
+          },
+          "rejectedWords": [],
+          "replayed": null,
+          "analysis": {
+            "backend": "garu-ko",
+            "version": "0.11.0",
+            "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+            "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+            "ready": true,
+            "failed": false
+          },
+          "legacyDomain": "general"
+        }
+      }
+    }
+  ]
+}
