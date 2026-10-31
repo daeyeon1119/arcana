@@ -1,0 +1,61 @@
+{
+  "url": "https://daeyeon1119.github.io/arcana/device-check.html",
+  "release": {
+    "appVersion": "91.0.0",
+    "readingEngine": 91,
+    "appSHA256": "eba279cf4ce0ba46e2ba44221e412fa02a22f96481d4946a306d4bf15519918a",
+    "appBytes": 33182548,
+    "webRelease": "5026b157af835016c0b7c555",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "publicAssetSHA256": {
+    "release.json": "d4802d44971fe08d7fa13f8c91c859000b9363260f520a16aa834b9a4692250d",
+    "device-check.html": "d9b9dd5aeeb77bb1635c6e7f2de6ee3672823e4b9cac8254ef3d096428126eb5",
+    "scripts/device-check.js": "abbfe5fe8880bdb53039241a0541eaf87395f7a4723a1e9a97add9461d9ee05b"
+  },
+  "result": {
+    "kind": "arcana-actual-browser-check",
+    "language": "ko-KR",
+    "screen": {
+      "width": 390,
+      "height": 844,
+      "pixelRatio": 1
+    },
+    "physicalDeviceConfirmedByUser": false,
+    "professionalQualityScore": null,
+    "release": {
+      "appVersion": "91.0.0",
+      "readingEngine": 91,
+      "appSHA256": "eba279cf4ce0ba46e2ba44221e412fa02a22f96481d4946a306d4bf15519918a",
+      "appBytes": 33182548,
+      "webRelease": "5026b157af835016c0b7c555",
+      "languageAnalysis": {
+        "backend": "garu-ko",
+        "version": "0.11.0",
+        "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+        "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+      }
+    },
+    "appSHA256": "eba279cf4ce0ba46e2ba44221e412fa02a22f96481d4946a306d4bf15519918a",
+    "readings": 336,
+    "readingParitySHA256": "b5b039836cae04c6f81661d1a0c4b9d443261bc8eb608ceb4786f40afc26bd71",
+    "originalCardsDecoded": 78,
+    "passed": true,
+    "scope": "Actual browser execution only. Physical device, manual touch, saving, installation and offline use require separate user confirmation."
+  },
+  "errors": [],
+  "browser": "156.0.8078.76",
+  "note": "Actual public HTTPS checker execution in Chromium mobile emulation. Not a physical Android phone or manual touch/install/offline test. No expert quality score.",
+  "publicationScope": "Derived synthetic runner evidence; UA omitted. Not a user phone diagnostic.",
+  "deployment": {
+    "testedMainCommit": "a0fcee95a36931d31e13bc34157aad47faa96ea2",
+    "sourcePullRequest": "https://github.com/daeyeon1119/arcana/pull/28",
+    "pagesWorkflowRunId": 41215848374,
+    "pagesConclusion": "success"
+  }
+}
