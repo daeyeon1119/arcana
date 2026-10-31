@@ -1,0 +1,957 @@
+{
+  "url": "https://daeyeon1119.github.io/arcana/",
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "collectorSHA256": "c83d359039d30b93eca1848290b013fdc2bc60f5e4a4b860492409561ecb48d7",
+  "browser": "156.0.8078.76",
+  "profiles": [
+    {
+      "name": "chrome-desktop",
+      "flows": [
+        {
+          "spread": "one",
+          "question": "이번 작업에서 배운 점을 돌아보려면 무엇을 살펴볼까요?",
+          "offline": false,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "cu08",
+              "rev": false
+            }
+          ],
+          "direct": "‘핵심 메시지’에 놓인 컵 8의 주제는 ‘익숙한 것과의 거리’입니다. 이 주제를 내 일상과 연결하면 지금 가장 먼저 돌아보고 싶은 것은 무엇인가요?",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 1,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 128
+        },
+        {
+          "spread": "three",
+          "question": "저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "offline": false,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "ar11",
+              "rev": true
+            },
+            {
+              "id": "sw12",
+              "rev": false
+            },
+            {
+              "id": "ar10",
+              "rev": false
+            }
+          ],
+          "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘미래’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+          "expectedState": {
+            "received": true,
+            "read": false
+          },
+          "actualState": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 3,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 408
+        },
+        {
+          "spread": "five",
+          "question": "저는 받은 회신은 있지만 답하지는 않았어요. 이제 어떻게 정리할까요?",
+          "offline": false,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "cu09",
+              "rev": false
+            },
+            {
+              "id": "wa10",
+              "rev": false
+            },
+            {
+              "id": "ar17",
+              "rev": false
+            },
+            {
+              "id": "ar10",
+              "rev": true
+            },
+            {
+              "id": "ar18",
+              "rev": false
+            }
+          ],
+          "direct": "전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘조언’의 달 정방향에서 살필 관점은 ‘불확실성·직관’입니다. 정보가 부족한 부분을 확신이나 최악의 예상으로 채우지 않아도 됩니다. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+          "expectedState": {
+            "received": true,
+            "sent": false
+          },
+          "actualState": {
+            "sent": false,
+            "received": true,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 5,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 688
+        },
+        {
+          "spread": "celtic",
+          "question": "이번 작업에서 배운 점을 돌아보려면 무엇을 살펴볼까요?",
+          "offline": false,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "ar18",
+              "rev": true
+            },
+            {
+              "id": "sw01",
+              "rev": false
+            },
+            {
+              "id": "wa14",
+              "rev": true
+            },
+            {
+              "id": "sw12",
+              "rev": true
+            },
+            {
+              "id": "pe08",
+              "rev": false
+            },
+            {
+              "id": "cu03",
+              "rev": false
+            },
+            {
+              "id": "wa03",
+              "rev": false
+            },
+            {
+              "id": "ar09",
+              "rev": true
+            },
+            {
+              "id": "ar07",
+              "rev": false
+            },
+            {
+              "id": "cu02",
+              "rev": false
+            }
+          ],
+          "direct": "‘현재 상황’의 달 역방향은 ‘혼란이 걷히는 과정’을 보여 줍니다. ‘가로지르는 도전’의 소드 에이스 정방향은 ‘선명한 사실 확인’을 보여 줍니다. 두 카드에서는 ‘명료함’이라는 주제를 함께 살펴볼 수 있습니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 10,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 444
+        },
+        {
+          "spread": "relationship5",
+          "question": "친구에게 이미 연락했는데 답장이 없어요. 어떻게 해야 할까요?",
+          "offline": false,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "ar04",
+              "rev": true
+            },
+            {
+              "id": "ar09",
+              "rev": true
+            },
+            {
+              "id": "wa12",
+              "rev": false
+            },
+            {
+              "id": "ar15",
+              "rev": true
+            },
+            {
+              "id": "pe13",
+              "rev": false
+            }
+          ],
+          "direct": "이미 마음을 전했고 아직 답을 받지 못한 상황입니다. 이미 전한 내용을 반복해서 보내기보다, 응답을 기다리는 동안 내 일상을 이어 가고 언제까지 기다릴 수 있을지 정해 보세요. ‘다시 연결할 자원’의 악마 역방향은 ‘속박에서 벗어남’을 보여 줍니다. ‘내가 취할 행동’의 펜타클 여왕 정방향은 ‘생활을 돌보는 역량’을 보여 줍니다. 함께하고 싶은 마음과 스스로 지킬 범위를 동시에 살펴보는 조합입니다. 가까워지는 정도보다 서로 감당할 수 있는 방식이 중요합니다.",
+          "expectedState": {},
+          "actualState": {
+            "sent": true,
+            "received": false,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": true,
+            "resultWaiting": false,
+            "replyWaitingSource": "absence-inference",
+            "resultWaitingSource": null,
+            "waiting": true
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 5,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 688
+        },
+        {
+          "spread": "choice5",
+          "question": "완성한 원고를 출판할지 공모전에 낼지 고민이에요.",
+          "offline": false,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "ar08",
+              "rev": false
+            },
+            {
+              "id": "pe11",
+              "rev": true
+            },
+            {
+              "id": "cu09",
+              "rev": false
+            },
+            {
+              "id": "cu06",
+              "rev": true
+            },
+            {
+              "id": "sw09",
+              "rev": true
+            }
+          ],
+          "direct": "‘A의 성격’의 펜타클 시종 역방향은 ‘실행 없는 계획’을 보여 줍니다. ‘B의 성격’의 컵 9 정방향은 ‘개인적인 만족’을 보여 줍니다. A를 살필 때는 크게 세운 방향을 확인 가능한 다음 단계로 나누어 보세요. B를 살필 때는 좋아 보이는 모습과 스스로 편안하게 느끼는 상태가 같은지 돌아보세요. 질문에 두 안을 적었다면 A와 B를 적은 순서로 읽어 보세요. 두 경로에서 실제로 감당할 조건을 같은 기준으로 비교해 보세요.",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 5,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 372
+        },
+        {
+          "spread": "waiting3",
+          "question": "시험 결과가 아직 안 나왔어요. 합격할까요?",
+          "offline": false,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "pe07",
+              "rev": true
+            },
+            {
+              "id": "cu04",
+              "rev": false
+            },
+            {
+              "id": "ar18",
+              "rev": true
+            }
+          ],
+          "direct": "‘지금 다룰 마음’의 컵 4 정방향은 ‘권태와 재검토’를 보여 줍니다. ‘오늘의 실천’의 달 역방향은 ‘혼란이 걷히는 과정’을 보여 줍니다. 멈추는 시간을 판단을 정리하는 시간으로 활용하는 연결입니다. 즉시 결론을 내리는 일보다 잠시 거리를 둔 뒤 확인할 사실을 분명히 해볼 수 있습니다. 실제 결과와 시점은 이후의 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 확인된 사실과 아직 모르는 결과를 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": false,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": true,
+            "replyWaitingSource": null,
+            "resultWaitingSource": "absence-inference",
+            "waiting": true
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 3,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 408
+        },
+        {
+          "spread": "career5",
+          "question": "이직할 때 무엇부터 해야 할까요?",
+          "offline": false,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "ar12",
+              "rev": true
+            },
+            {
+              "id": "cu09",
+              "rev": true
+            },
+            {
+              "id": "wa09",
+              "rev": true
+            },
+            {
+              "id": "ar14",
+              "rev": true
+            },
+            {
+              "id": "wa03",
+              "rev": false
+            }
+          ],
+          "direct": "지원 자격이나 실무 준비에서 이번 주 할 일을 하나 정해 보세요. 관심 있는 직무의 공고 하나에서 필요한 역량과 지금 갖춘 경험을 나란히 적어 보세요. ‘지금 가진 역량’의 매달린 사람 역방향은 ‘끝없는 희생’을 보여 줍니다. ‘현실의 제약’의 완드 9 역방향은 ‘경계로 인한 소진’을 보여 줍니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다.",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 5,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 688
+        },
+        {
+          "spread": "three",
+          "question": "오프라인에서도 이번 작업에서 배운 점을 돌아보려면 무엇을 살펴볼까요?",
+          "offline": true,
+          "inputMethod": "desktop pointer click",
+          "cards": [
+            {
+              "id": "cu10",
+              "rev": true
+            },
+            {
+              "id": "sw04",
+              "rev": false
+            },
+            {
+              "id": "wa10",
+              "rev": true
+            }
+          ],
+          "direct": "‘현재’에 놓인 소드 4의 주제는 ‘필요한 휴식’입니다. 이 주제를 내 일상과 연결하면 지금 가장 먼저 돌아보고 싶은 것은 무엇인가요?",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 3,
+          "openedNames": 0,
+          "stageWidth": 957,
+          "boardWidth": 408
+        }
+      ],
+      "offlineNewTabPreservesEightRecords": true,
+      "offlineDrawSaveAndReloadPreservesNinthRecord": true
+    },
+    {
+      "name": "chrome-mobile-emulation",
+      "flows": [
+        {
+          "spread": "one",
+          "question": "이번 작업에서 배운 점을 돌아보려면 무엇을 살펴볼까요?",
+          "offline": false,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "ar15",
+              "rev": true
+            }
+          ],
+          "direct": "‘핵심 메시지’에 놓인 악마 역방향의 주제는 ‘속박에서 벗어남’입니다. 이 주제를 내 일상과 연결하면 지금 가장 먼저 돌아보고 싶은 것은 무엇인가요?",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 1,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 104
+        },
+        {
+          "spread": "three",
+          "question": "저는 친구에게 받은 답변을 아직 읽지 않았어요. 무엇부터 살펴볼까요?",
+          "offline": false,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "sw04",
+              "rev": true
+            },
+            {
+              "id": "ar11",
+              "rev": false
+            },
+            {
+              "id": "wa11",
+              "rev": true
+            }
+          ],
+          "direct": "아직 읽지 않은 내용은 추측으로 채우지 말고, 살펴볼 수 있는 때에 전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘미래’의 완드 시종 역방향에서 살필 관점은 ‘충동·현실성’입니다. 지금 움직이고 싶은 마음과 그 뒤 감당할 조건을 함께 살펴보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 서둘러 넘기면 되돌리기 어려운 조건을 먼저 확인하고, 기다려야 확인되는 항목에는 확인 시점을 따로 적어 보세요.",
+          "expectedState": {
+            "received": true,
+            "read": false
+          },
+          "actualState": {
+            "sent": null,
+            "received": true,
+            "read": false,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 3,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 328
+        },
+        {
+          "spread": "five",
+          "question": "저는 받은 회신은 있지만 답하지는 않았어요. 이제 어떻게 정리할까요?",
+          "offline": false,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "ar17",
+              "rev": false
+            },
+            {
+              "id": "ar08",
+              "rev": false
+            },
+            {
+              "id": "wa08",
+              "rev": true
+            },
+            {
+              "id": "cu10",
+              "rev": false
+            },
+            {
+              "id": "wa05",
+              "rev": true
+            }
+          ],
+          "direct": "전달받은 내용을 먼저 확인해 보세요. 실제로 전해진 내용과 내가 짐작한 뜻을 나누어 적고, 이해하기 어려운 부분은 다음에 확인할 질문으로 남겨 보세요.\n\n‘핵심’의 별 정방향에서 살필 관점은 ‘회복·희망’입니다. ‘장애물’의 완드 8 역방향에서 살필 관점은 ‘엇갈림·지연’입니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 실제로 막히는 부분이 있는지 살피는 관점으로, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+          "expectedState": {
+            "received": true,
+            "sent": false
+          },
+          "actualState": {
+            "sent": false,
+            "received": true,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": "received",
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 5,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 328
+        },
+        {
+          "spread": "celtic",
+          "question": "이번 작업에서 배운 점을 돌아보려면 무엇을 살펴볼까요?",
+          "offline": false,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "pe10",
+              "rev": true
+            },
+            {
+              "id": "sw10",
+              "rev": false
+            },
+            {
+              "id": "cu14",
+              "rev": true
+            },
+            {
+              "id": "sw01",
+              "rev": true
+            },
+            {
+              "id": "ar04",
+              "rev": true
+            },
+            {
+              "id": "ar17",
+              "rev": false
+            },
+            {
+              "id": "ar02",
+              "rev": true
+            },
+            {
+              "id": "sw14",
+              "rev": true
+            },
+            {
+              "id": "pe11",
+              "rev": false
+            },
+            {
+              "id": "sw11",
+              "rev": false
+            }
+          ],
+          "direct": "‘나 자신의 위치’의 여사제 역방향은 ‘직관에 대한 불신’을 보여 줍니다. ‘가능한 귀결’의 소드 시종 정방향은 ‘예리한 관찰’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 10,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 336
+        },
+        {
+          "spread": "relationship5",
+          "question": "친구에게 이미 연락했는데 답장이 없어요. 어떻게 해야 할까요?",
+          "offline": false,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "cu11",
+              "rev": true
+            },
+            {
+              "id": "sw08",
+              "rev": true
+            },
+            {
+              "id": "cu12",
+              "rev": true
+            },
+            {
+              "id": "ar06",
+              "rev": false
+            },
+            {
+              "id": "ar20",
+              "rev": true
+            }
+          ],
+          "direct": "이미 마음을 전했고 아직 답을 받지 못한 상황입니다. 이미 전한 내용을 반복해서 보내기보다, 응답을 기다리는 동안 내 일상을 이어 가고 언제까지 기다릴 수 있을지 정해 보세요. ‘지금의 거리감’의 컵 시종 역방향은 ‘미숙한 감정 표현’을 보여 줍니다. ‘확인해야 할 차이’의 컵 기사 역방향은 ‘이상화된 약속’을 보여 줍니다. 두 카드에서는 ‘이상’이라는 주제를 함께 살펴볼 수 있습니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+          "expectedState": {},
+          "actualState": {
+            "sent": true,
+            "received": false,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": true,
+            "resultWaiting": false,
+            "replyWaitingSource": "absence-inference",
+            "resultWaitingSource": null,
+            "waiting": true
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 5,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 328
+        },
+        {
+          "spread": "choice5",
+          "question": "완성한 원고를 출판할지 공모전에 낼지 고민이에요.",
+          "offline": false,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "ar12",
+              "rev": true
+            },
+            {
+              "id": "sw10",
+              "rev": false
+            },
+            {
+              "id": "wa06",
+              "rev": false
+            },
+            {
+              "id": "ar08",
+              "rev": false
+            },
+            {
+              "id": "sw04",
+              "rev": false
+            }
+          ],
+          "direct": "‘A의 성격’의 소드 10 정방향은 ‘고통스러운 종료’를 보여 줍니다. ‘B의 성격’의 완드 6 정방향은 ‘인정받는 성과’를 보여 줍니다. A를 살필 때는 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. B를 살필 때는 외부의 평가와 내가 지키려는 목표를 나누어 보세요. 질문에 두 안을 적었다면 A와 B를 적은 순서로 읽어 보세요. 두 경로에서 실제로 감당할 조건을 같은 기준으로 비교해 보세요.",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 5,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 328
+        },
+        {
+          "spread": "waiting3",
+          "question": "시험 결과가 아직 안 나왔어요. 합격할까요?",
+          "offline": false,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "sw07",
+              "rev": false
+            },
+            {
+              "id": "wa12",
+              "rev": false
+            },
+            {
+              "id": "cu08",
+              "rev": true
+            }
+          ],
+          "direct": "‘지금 다룰 마음’에 놓인 완드 기사의 주제는 ‘과감한 돌진’입니다. 이 흐름을 참고하되, 결과와 시점은 실제 변화로 확인해야 합니다. 공식 결과를 확인할 경로와 시간을 정하고, 확인된 사실과 아직 모르는 결과를 나누어 보세요. 오늘 이어갈 다른 일이나 쉴 시간도 하나 정해 보세요.",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": false,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": true,
+            "replyWaitingSource": null,
+            "resultWaitingSource": "absence-inference",
+            "waiting": true
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 3,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 328
+        },
+        {
+          "spread": "career5",
+          "question": "이직할 때 무엇부터 해야 할까요?",
+          "offline": false,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "sw05",
+              "rev": false
+            },
+            {
+              "id": "pe11",
+              "rev": true
+            },
+            {
+              "id": "cu03",
+              "rev": false
+            },
+            {
+              "id": "ar17",
+              "rev": false
+            },
+            {
+              "id": "wa12",
+              "rev": true
+            }
+          ],
+          "direct": "빠른 결론보다 자신의 우선순위를 정리해 보세요. 관심 있는 직무의 공고 하나에서 필요한 역량과 지금 갖춘 경험을 나란히 적어 보세요. ‘지금 가진 역량’의 소드 5 정방향은 ‘이겨도 남는 상처’를 보여 줍니다. ‘현실의 제약’의 컵 3 정방향은 ‘함께하는 기쁨’을 보여 줍니다. 관심을 주려는 일과 스스로 지킬 범위를 함께 살펴보는 연결입니다. 계속할 분량과 쉬어 갈 여지를 실제로 감당할 수 있는 범위에서 정해 보세요.",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 5,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 328
+        },
+        {
+          "spread": "three",
+          "question": "오프라인에서도 이번 작업에서 배운 점을 돌아보려면 무엇을 살펴볼까요?",
+          "offline": true,
+          "inputMethod": "emulated touchscreen tap",
+          "cards": [
+            {
+              "id": "sw05",
+              "rev": true
+            },
+            {
+              "id": "ar12",
+              "rev": true
+            },
+            {
+              "id": "ar02",
+              "rev": true
+            }
+          ],
+          "direct": "‘현재’에 놓인 매달린 사람 역방향의 주제는 ‘끝없는 희생’입니다. 이 주제를 내 일상과 연결하면 지금 가장 먼저 돌아보고 싶은 것은 무엇인가요?",
+          "expectedState": {},
+          "actualState": {
+            "sent": null,
+            "received": null,
+            "read": null,
+            "resultKnown": null,
+            "resultPublished": null,
+            "outcome": null,
+            "outcomeScope": null,
+            "assessmentCompleted": null,
+            "assessmentUpcoming": false,
+            "submitted": null,
+            "replyWaiting": false,
+            "resultWaiting": false,
+            "replyWaitingSource": null,
+            "resultWaitingSource": null,
+            "waiting": false
+          },
+          "historyContainsSameAnswer": true,
+          "opened": 3,
+          "openedNames": 0,
+          "stageWidth": 336,
+          "boardWidth": 328
+        }
+      ],
+      "offlineNewTabPreservesEightRecords": true,
+      "offlineDrawSaveAndReloadPreservesNinthRecord": true
+    }
+  ],
+  "errors": [],
+  "requestedOrigins": [
+    "https://daeyeon1119.github.io",
+    "https://fonts.googleapis.com"
+  ],
+  "physicalAndroidControlled": false,
+  "airplaneModeOnPhysicalDeviceTested": false,
+  "scope": "Actual public HTTPS Google Chrome on Windows with isolated synthetic test profiles. One desktop pointer profile and one standard 390x844 mobile touch emulation. No personal device diagnostic or personal saved reading is collected. Network-offline uses browser network control, not physical airplane mode. No physical phone UI or professional quality claim.",
+  "publicationScope": "Derived synthetic test evidence only; runner UA and generated record IDs are omitted. Raw debug output stays in ignored .cache.",
+  "deployment": {
+    "testedMainCommit": "970cf37cbef6fcebdb250270d6fa93457e54e66b",
+    "sourcePullRequest": "https://github.com/daeyeon1119/arcana/pull/26",
+    "pagesWorkflowRunId": 41176097831,
+    "pagesConclusion": "success"
+  }
+}
