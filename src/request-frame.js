@@ -84,7 +84,7 @@
   const relationalScope=op==='coordinate'&&active.every(n=>set('범위 부분 정도 저 나 제 내').has(n.term));
   if((anaphoric&&!separateObject||!explicit&&!known||relationalScope)&&!/별개|별도로|무관|다른\s*(?:일|주제|문제)/.test(task.text)){
    const prior=previous(question,task.start||0),parsed=prior&&morph.analyze(qt.mask(prior.text));
-   if(parsed&&(objects(parsed).some(n=>documents.has(n.term)||observations.has(n.term)||evidence.has(n.term)||op==='coordinate'&&set('약속 규칙 대화 관계').has(n.term))||anaphoric&&parsed.tokens.some(t=>evidence.has(t.text)))){source=prior;analysis=parsed;terms=objects(parsed);inherited=anaphoric?'anaphoric-content':'omitted-recent-object';}
+   if(parsed&&(objects(parsed).some(n=>documents.has(n.term)||observations.has(n.term)||evidence.has(n.term)||requirements.has(n.term)||op==='coordinate'&&set('약속 규칙 대화 관계').has(n.term))||anaphoric&&parsed.tokens.some(t=>evidence.has(t.text)))){source=prior;analysis=parsed;terms=objects(parsed);inherited=anaphoric?'anaphoric-content':'omitted-recent-object';}
   }
   const all=new Set(terms.map(n=>n.term)),has=s=>terms.some(n=>s.has(n.term));
   let primary=terms.filter(n=>n.word.tokens.some(t=>t.pos==='JKO')&&(inherited||n.word.start<predicateStart)&&(!generic.has(n.term)||messages.has(n.term))).at(-1);
