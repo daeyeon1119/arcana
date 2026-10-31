@@ -1,0 +1,17 @@
+{
+  "phase": "regression",
+  "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+  "baselineSHA256": "0b26b25e8fdb201d6298632c7c799293a1613a9d0f078b18a512c1563932aac0",
+  "fixtureSHA256": "d0d297c34a192b51492b2f5d1da05911444f5d555b6d95bd0bde86362f49df48",
+  "collectorSHA256": "368fb5978e656d25a7c9d54b273533f9bc085de07774f8df31a671fc230feff4",
+  "seed": 850041,
+  "note": "Known questions corrected after first evaluation. This run is regression, not a fresh holdout. Authored after candidate freeze 624494e (HTML SHA256 634ced37ea7a81db5489f92596f290d401030c2223304e794d2f7f67da67f73f). Sixteen self-authored first-run diagnostic questions, not independent expert evidence. v84 and the frozen candidate use identical questions/cards/orientations/arrays/focus settings. Expected comparison labels are collector-only contracts, not engine input. Preserve all actual first outputs and observed failures. Any corrections informed by these outputs make subsequent runs regressions. Dispatch/position contracts are not semantic quality or expert scores.",
+  "readingsSHA256": "6959821bf0c91b022428aeadb4e81ab93843ae8bc07edd50e5a063e7c38829ca",
+  "compressedSHA256": "c6e4689fc3c950dbc674a3e1490fd0d8bf8a305ea77d9c01a9165d83a2efb49b",
+  "questions": 16,
+  "readingsPerVersion": 128,
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 128,
+  "qualityScore": null
+}

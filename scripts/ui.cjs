@@ -56,6 +56,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
  await p.locator('.nav-item[data-view="reader"]').click();
  await p.locator('#question').fill('다른 질문입니다.');assert.equal(await p.evaluate(()=>ritualPhase),'idle');assert.equal(await p.locator('#report').evaluate(e=>e.classList.contains('visible')),false);checks.push('editing question invalidates old draw');
  // All eight complete UI paths, including custom spread slot counts.
+ await p.locator('#question').fill('오늘 하루의 흐름을 돌아보고 싶어요.');
  for(const spread of await p.evaluate(()=>Object.keys(SPREADS))){
   await p.evaluate(s=>{document.querySelector(`[data-spread="${s}"]`).click();},spread);
   await p.locator('#startReading').click();await p.locator('.fan-card').first().waitFor();

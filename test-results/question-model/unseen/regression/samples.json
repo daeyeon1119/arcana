@@ -1704,7 +1704,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -1721,7 +1721,35 @@
               "goal": "cope",
               "text": "그래도 거절당할까 봐 초조한 마음을 어떻게 다룰까요",
               "start": 21,
-              "end": 49
+              "end": 49,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "마음",
+                  "evidence": {
+                    "start": 37,
+                    "end": 40,
+                    "text": "마음을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 49,
+                  "text": "다룰까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 21,
+                  "end": 49
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [
@@ -1782,7 +1810,35 @@
               "goal": "cope",
               "text": "그래도 거절당할까 봐 초조한 마음을 어떻게 다룰까요",
               "start": 21,
-              "end": 49
+              "end": 49,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "마음",
+                  "evidence": {
+                    "start": 37,
+                    "end": 40,
+                    "text": "마음을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 45,
+                  "end": 49,
+                  "text": "다룰까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 21,
+                  "end": 49
+                },
+                "reason": "predicate-and-object"
+              }
             },
             "text": "이미 받은 답의 내용과 그 뒤에도 남아 있는 마음을 나누어 적어 보세요. 답을 다시 확인받는 일보다 지금 필요한 휴식이나 지지를 먼저 살펴볼 수 있습니다.\n\n‘현재’의 여황제 역방향에서 살필 관점은 ‘돌봄·과부하’입니다. ‘미래’의 펜타클 4 정방향에서 살필 관점은 ‘안정·경계’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 지금의 부담을 더 견디는 방법만 찾기보다 줄일 몫과 회복할 시간을 나누고, 필요한 도움을 받을 통로가 있는지도 살펴보세요.",
             "directText": "이미 받은 답의 내용과 그 뒤에도 남아 있는 마음을 나누어 적어 보세요. 답을 다시 확인받는 일보다 지금 필요한 휴식이나 지지를 먼저 살펴볼 수 있습니다.\n\n‘현재’의 여황제 역방향에서 살필 관점은 ‘돌봄·과부하’입니다. ‘미래’의 펜타클 4 정방향에서 살필 관점은 ‘안정·경계’입니다. 부담을 더 견디는 방법보다 도움과 역할의 경계를 활용해 감당할 몫을 조정하는 관점으로 이어집니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 지금의 부담을 더 견디는 방법만 찾기보다 줄일 몫과 회복할 시간을 나누고, 필요한 도움을 받을 통로가 있는지도 살펴보세요.",
@@ -1880,7 +1936,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -2055,7 +2111,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -2236,7 +2292,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -2253,7 +2309,35 @@
               "goal": "cope",
               "text": "마음을 어떻게 돌볼까요",
               "start": 43,
-              "end": 55
+              "end": 55,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "마음",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "마음을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 51,
+                  "end": 55,
+                  "text": "돌볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 43,
+                  "end": 55
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [
@@ -2361,7 +2445,35 @@
               "goal": "cope",
               "text": "마음을 어떻게 돌볼까요",
               "start": 43,
-              "end": 55
+              "end": 55,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "마음",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "마음을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 51,
+                  "end": 55,
+                  "text": "돌볼까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 43,
+                  "end": 55
+                },
+                "reason": "predicate-and-object"
+              }
             },
             "text": "지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.\n\n‘현재’의 컵 2 역방향에서 살필 관점은 ‘엇갈림·상호성’입니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. 오간 말이 있다면 그 내용과 덧붙인 해석을 나누고, 마음을 나눌 때는 상대의 동의와 지금 가능한 범위도 확인해 보세요.",
             "directText": "지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.\n\n‘현재’의 컵 2 역방향에서 살필 관점은 ‘엇갈림·상호성’입니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. 오간 말이 있다면 그 내용과 덧붙인 해석을 나누고, 마음을 나눌 때는 상대의 동의와 지금 가능한 범위도 확인해 보세요.",
@@ -2440,7 +2552,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -2457,7 +2569,35 @@
               "goal": "cope",
               "text": "불안을 다룰 방법을 알려 주세요",
               "start": 38,
-              "end": 55
+              "end": 55,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "불안",
+                  "evidence": {
+                    "start": 38,
+                    "end": 41,
+                    "text": "불안을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 42,
+                  "end": 44,
+                  "text": "다룰"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 38,
+                  "end": 55
+                },
+                "reason": "nominal-work-head"
+              }
             }
           ],
           "events": [
@@ -2531,7 +2671,35 @@
               "goal": "cope",
               "text": "불안을 다룰 방법을 알려 주세요",
               "start": 38,
-              "end": 55
+              "end": 55,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "불안",
+                  "evidence": {
+                    "start": 38,
+                    "end": 41,
+                    "text": "불안을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 42,
+                  "end": 44,
+                  "text": "다룰"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 38,
+                  "end": 55
+                },
+                "reason": "nominal-work-head"
+              }
             },
             "text": "지금 느끼는 마음을 한 문장으로 적고, 오늘 덜어낼 부담과 도움을 청할 사람을 하나씩 정해 보세요. 감정을 바로 해결하지 못해도 괜찮습니다.\n\n‘현재’의 컵 여왕 역방향에서 살필 관점은 ‘돌봄·경계’입니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 힘든 마음이 바로 사라져야 한다고 재촉하지 말고, 지금 필요한 휴식과 지지, 이어 갈 수 있는 작은 일상을 구분해 보세요.",
             "directText": "지금 느끼는 마음을 한 문장으로 적고, 오늘 덜어낼 부담과 도움을 청할 사람을 하나씩 정해 보세요. 감정을 바로 해결하지 못해도 괜찮습니다.\n\n‘현재’의 컵 여왕 역방향에서 살필 관점은 ‘돌봄·경계’입니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 힘든 마음이 바로 사라져야 한다고 재촉하지 말고, 지금 필요한 휴식과 지지, 이어 갈 수 있는 작은 일상을 구분해 보세요.",
@@ -2610,7 +2778,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -2627,7 +2795,35 @@
               "goal": "prepare",
               "text": "당연히 결과도 모르는데 지금 무엇을 준비할까요",
               "start": 31,
-              "end": 56
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "prepare",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": "결과",
+                  "evidence": {
+                    "start": 35,
+                    "end": 38,
+                    "text": "결과도"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 51,
+                  "end": 56,
+                  "text": "준비할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 31,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [
@@ -2698,7 +2894,35 @@
               "goal": "prepare",
               "text": "당연히 결과도 모르는데 지금 무엇을 준비할까요",
               "start": 31,
-              "end": 56
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "prepare",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": "결과",
+                  "evidence": {
+                    "start": 35,
+                    "end": 38,
+                    "text": "결과도"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 51,
+                  "end": 56,
+                  "text": "준비할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 31,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
             },
             "text": "앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요.\n\n‘미래’의 컵 4 정방향에서 살필 관점은 ‘멈춤·재검토’입니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 준비 순서를 정할 때는 지금 진행할 부분과 잠시 멈춰 확인할 부분을 나누고, 다음 판단을 할 시점을 정해 보세요.",
             "directText": "앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요.\n\n‘미래’의 컵 4 정방향에서 살필 관점은 ‘멈춤·재검토’입니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 준비 순서를 정할 때는 지금 진행할 부분과 잠시 멈춰 확인할 부분을 나누고, 다음 판단을 할 시점을 정해 보세요.",
@@ -2778,7 +3002,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -2934,7 +3158,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -3062,9 +3286,9 @@
         }
       ],
       "actualIntent": "action",
-      "direct": "아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다. ‘현재’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. ‘미래’의 컵 에이스 역방향은 ‘막힌 감정’을 보여 줍니다. 느끼는 마음을 드러내는 일과 조절하거나 숨기는 일 사이의 차이가 드러납니다. 무엇을 누구에게 어느 정도 전할지는 실제 상황에 맞춰 정해야 합니다.",
+      "direct": "지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.\n\n‘현재’의 소드 9 역방향에서 살필 관점은 ‘회복·표현’입니다. ‘미래’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 느끼는 마음을 드러내는 일과 조절하거나 숨기는 일 사이의 차이가 드러납니다. 무엇을 누구에게 어느 정도 전할지는 실제 상황에 맞춰 정해야 합니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 오간 말이 있다면 그 내용과 덧붙인 해석을 나누고, 마음을 나눌 때는 상대의 동의와 지금 가능한 범위도 확인해 보세요.",
       "actions": [
-        "아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다."
+        "지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다."
       ],
       "sections": [
         {
@@ -3104,7 +3328,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -3121,7 +3345,35 @@
               "goal": "cope",
               "text": "먼저 재촉하고 싶은 마음을 어떻게 다스릴까요",
               "start": 29,
-              "end": 53
+              "end": 53,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "마음",
+                  "evidence": {
+                    "start": 40,
+                    "end": 43,
+                    "text": "마음을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 48,
+                  "end": 53,
+                  "text": "다스릴까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 29,
+                  "end": 53
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [
@@ -3182,12 +3434,40 @@
               "goal": "cope",
               "text": "먼저 재촉하고 싶은 마음을 어떻게 다스릴까요",
               "start": 29,
-              "end": 53
+              "end": 53,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "마음",
+                  "evidence": {
+                    "start": 40,
+                    "end": 43,
+                    "text": "마음을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 48,
+                  "end": 53,
+                  "text": "다스릴까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 29,
+                  "end": 53
+                },
+                "reason": "predicate-and-object"
+              }
             },
-            "text": "아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다. ‘현재’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. ‘미래’의 컵 에이스 역방향은 ‘막힌 감정’을 보여 줍니다. 느끼는 마음을 드러내는 일과 조절하거나 숨기는 일 사이의 차이가 드러납니다. 무엇을 누구에게 어느 정도 전할지는 실제 상황에 맞춰 정해야 합니다.",
-            "directText": "아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다. ‘현재’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. ‘미래’의 컵 에이스 역방향은 ‘막힌 감정’을 보여 줍니다. 느끼는 마음을 드러내는 일과 조절하거나 숨기는 일 사이의 차이가 드러납니다. 무엇을 누구에게 어느 정도 전할지는 실제 상황에 맞춰 정해야 합니다.",
-            "actionText": "아직 받지 못한 답을 확인할 경로와 시점을 정해 보세요. 응답이 오기 전에는 그 내용이나 상대의 뜻을 추측으로 채우지 않고, 내 일상을 이어 갈 일을 하나 골라 볼 수 있습니다.",
-            "actionTask": null,
+            "text": "지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.\n\n‘현재’의 소드 9 역방향에서 살필 관점은 ‘회복·표현’입니다. ‘미래’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 느끼는 마음을 드러내는 일과 조절하거나 숨기는 일 사이의 차이가 드러납니다. 무엇을 누구에게 어느 정도 전할지는 실제 상황에 맞춰 정해야 합니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 오간 말이 있다면 그 내용과 덧붙인 해석을 나누고, 마음을 나눌 때는 상대의 동의와 지금 가능한 범위도 확인해 보세요.",
+            "directText": "지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.\n\n‘현재’의 소드 9 역방향에서 살필 관점은 ‘회복·표현’입니다. ‘미래’의 컵 에이스 역방향에서 살필 관점은 ‘억제·멈춤’입니다. 느끼는 마음을 드러내는 일과 조절하거나 숨기는 일 사이의 차이가 드러납니다. 무엇을 누구에게 어느 정도 전할지는 실제 상황에 맞춰 정해야 합니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 오간 말이 있다면 그 내용과 덧붙인 해석을 나누고, 마음을 나눌 때는 상대의 동의와 지금 가능한 범위도 확인해 보세요.",
+            "actionText": "지금 느끼는 마음을 한 문장으로 적고, 실제로 확인한 사실과 아직 모르는 부분을 나누어 보세요. 바로 바꿀 수 있는 일 한 가지와 잠시 내려놓을 걱정을 구분하고, 쉴 시간이나 도움을 청할 방법도 정해 볼 수 있습니다.",
+            "actionTask": "cope",
             "refs": [
               1,
               2
@@ -3263,7 +3543,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -3416,7 +3696,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -3433,7 +3713,35 @@
               "goal": "coordinate",
               "text": "역할은 어떻게 나눌까요",
               "start": 40,
-              "end": 52
+              "end": 52,
+              "work": {
+                "version": 90,
+                "operation": "coordinate",
+                "target": {
+                  "kind": "responsibility",
+                  "subtype": null,
+                  "head": "역할",
+                  "evidence": {
+                    "start": 40,
+                    "end": 43,
+                    "text": "역할은"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 48,
+                  "end": 52,
+                  "text": "나눌까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 40,
+                  "end": 52
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [],
@@ -3473,7 +3781,35 @@
               "goal": "coordinate",
               "text": "역할은 어떻게 나눌까요",
               "start": 40,
-              "end": 52
+              "end": 52,
+              "work": {
+                "version": 90,
+                "operation": "coordinate",
+                "target": {
+                  "kind": "responsibility",
+                  "subtype": null,
+                  "head": "역할",
+                  "evidence": {
+                    "start": 40,
+                    "end": 43,
+                    "text": "역할은"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 48,
+                  "end": 52,
+                  "text": "나눌까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 40,
+                  "end": 52
+                },
+                "reason": "predicate-and-object"
+              }
             },
             "text": "함께 해야 할 일을 적고, 각 일의 담당자·마감·예상 소요 시간·완료 기준을 맞춰 보세요. 겹치는 일과 빠지는 일을 먼저 확인하면 나눌 몫을 구체적으로 정할 수 있습니다.\n\n‘미래’의 완드 여왕 역방향에서 살필 관점은 ‘비교·의심’입니다. 다른 사람의 성과와 내 과정에서 확인할 기준을 분리해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 할 일과 맡을 범위를 정할 때는 이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.",
             "directText": "함께 해야 할 일을 적고, 각 일의 담당자·마감·예상 소요 시간·완료 기준을 맞춰 보세요. 겹치는 일과 빠지는 일을 먼저 확인하면 나눌 몫을 구체적으로 정할 수 있습니다.\n\n‘미래’의 완드 여왕 역방향에서 살필 관점은 ‘비교·의심’입니다. 다른 사람의 성과와 내 과정에서 확인할 기준을 분리해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 할 일과 맡을 범위를 정할 때는 이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.",
@@ -3519,9 +3855,9 @@
         }
       ],
       "actualIntent": "action",
-      "direct": "바꾸고 싶은 부분 한 가지와 지금 어떤 점이 어려운지를 구체적으로 적어 보세요. 한 번에 한 가지를 바꾼 작은 방법을 시도하고, 전후의 차이를 같은 기준으로 확인해 보세요.\n\n‘미래’의 소드 2 역방향에서 살필 관점은 ‘선택·지연’입니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 바꿀 방법을 정할 때는 이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.",
+      "direct": "이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다.\n\n‘미래’의 소드 2 역방향에서 살필 관점은 ‘선택·지연’입니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 마칠 기준을 정할 때는 이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.",
       "actions": [
-        "바꾸고 싶은 부분 한 가지와 지금 어떤 점이 어려운지를 구체적으로 적어 보세요. 한 번에 한 가지를 바꾼 작은 방법을 시도하고, 전후의 차이를 같은 기준으로 확인해 보세요."
+        "이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다."
       ],
       "sections": [
         {
@@ -3552,7 +3888,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -3569,7 +3905,35 @@
               "goal": "finish",
               "text": "어느 정도면 이번 수정을 마쳐도 될까요",
               "start": 25,
-              "end": 46
+              "end": 46,
+              "work": {
+                "version": 90,
+                "operation": "finish",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": "수정",
+                  "evidence": {
+                    "start": 35,
+                    "end": 38,
+                    "text": "수정을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 39,
+                  "end": 42,
+                  "text": "마쳐도"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 46
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [],
@@ -3609,12 +3973,40 @@
               "goal": "finish",
               "text": "어느 정도면 이번 수정을 마쳐도 될까요",
               "start": 25,
-              "end": 46
+              "end": 46,
+              "work": {
+                "version": 90,
+                "operation": "finish",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": "수정",
+                  "evidence": {
+                    "start": 35,
+                    "end": 38,
+                    "text": "수정을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 39,
+                  "end": 42,
+                  "text": "마쳐도"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 25,
+                  "end": 46
+                },
+                "reason": "predicate-and-object"
+              }
             },
-            "text": "바꾸고 싶은 부분 한 가지와 지금 어떤 점이 어려운지를 구체적으로 적어 보세요. 한 번에 한 가지를 바꾼 작은 방법을 시도하고, 전후의 차이를 같은 기준으로 확인해 보세요.\n\n‘미래’의 소드 2 역방향에서 살필 관점은 ‘선택·지연’입니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 바꿀 방법을 정할 때는 이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.",
-            "directText": "바꾸고 싶은 부분 한 가지와 지금 어떤 점이 어려운지를 구체적으로 적어 보세요. 한 번에 한 가지를 바꾼 작은 방법을 시도하고, 전후의 차이를 같은 기준으로 확인해 보세요.\n\n‘미래’의 소드 2 역방향에서 살필 관점은 ‘선택·지연’입니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 바꿀 방법을 정할 때는 이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.",
-            "actionText": "바꾸고 싶은 부분 한 가지와 지금 어떤 점이 어려운지를 구체적으로 적어 보세요. 한 번에 한 가지를 바꾼 작은 방법을 시도하고, 전후의 차이를 같은 기준으로 확인해 보세요.",
-            "actionTask": "improve",
+            "text": "이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다.\n\n‘미래’의 소드 2 역방향에서 살필 관점은 ‘선택·지연’입니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 마칠 기준을 정할 때는 이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.",
+            "directText": "이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다.\n\n‘미래’의 소드 2 역방향에서 살필 관점은 ‘선택·지연’입니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 마칠 기준을 정할 때는 이번 일에서 꼭 지키려는 목적에 필요한 기준부터 정해 보세요. 외부 평가가 신경 쓰인다면 그 평가와 목적을 나누어 볼 수 있습니다.",
+            "actionText": "이번 단계의 목적과 꼭 충족할 기준을 먼저 적어 보세요. 그 기준을 충족했다면 새로 떠오른 수정은 다음 단계 목록에 남기고, 이번 작업을 마칠 시점을 정해 볼 수 있습니다.",
+            "actionTask": "finish",
             "refs": [
               2
             ]
@@ -3688,7 +4080,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -3708,7 +4100,25 @@
               "end": 46
             }
           ],
-          "events": [],
+          "events": [
+            {
+              "kind": "contact",
+              "object": "안내",
+              "actor": "unspecified",
+              "actorEvidence": "",
+              "recipient": null,
+              "timeScope": "unspecified",
+              "status": "asserted",
+              "completed": false,
+              "text": "안내가 처음 오는 사람에게 어렵대요",
+              "start": 7,
+              "end": 26,
+              "direction": "receive",
+              "predicate": "오는",
+              "accepting": false,
+              "readingFromOtherReceipt": false
+            }
+          ],
           "state": {
             "sent": null,
             "received": null,
@@ -3836,7 +4246,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -3860,7 +4270,35 @@
               "goal": "cope",
               "text": "긴장된 마음을 돌볼 방법을 각각 알려 주세요",
               "start": 21,
-              "end": 45
+              "end": 45,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "마음",
+                  "evidence": {
+                    "start": 25,
+                    "end": 28,
+                    "text": "마음을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 31,
+                  "text": "돌볼"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 21,
+                  "end": 45
+                },
+                "reason": "nominal-work-head"
+              }
             }
           ],
           "events": [],
@@ -3916,7 +4354,35 @@
               "goal": "cope",
               "text": "긴장된 마음을 돌볼 방법을 각각 알려 주세요",
               "start": 21,
-              "end": 45
+              "end": 45,
+              "work": {
+                "version": 90,
+                "operation": "cope",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "마음",
+                  "evidence": {
+                    "start": 25,
+                    "end": 28,
+                    "text": "마음을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 29,
+                  "end": 31,
+                  "text": "돌볼"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 21,
+                  "end": 45
+                },
+                "reason": "nominal-work-head"
+              }
             },
             "text": "지금 가장 큰 감정을 한 문장으로 적고, 바로 바꿀 수 있는 일과 잠시 내려놓을 걱정을 나누어 보세요. 쉬는 시간이나 도움을 청할 사람도 정해 볼 수 있습니다.\n\n‘현재’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 달라진 부분이 있다면 바로 받아들여야 한다고 재촉하기보다, 끝난 일과 아직 선택할 수 있는 일을 나누고 이어 갈 작은 일상을 정해 보세요.",
             "directText": "지금 가장 큰 감정을 한 문장으로 적고, 바로 바꿀 수 있는 일과 잠시 내려놓을 걱정을 나누어 보세요. 쉬는 시간이나 도움을 청할 사람도 정해 볼 수 있습니다.\n\n‘현재’의 운명의 수레바퀴 정방향에서 살필 관점은 ‘전환·유연성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 달라진 부분이 있다면 바로 받아들여야 한다고 재촉하기보다, 끝난 일과 아직 선택할 수 있는 일을 나누고 이어 갈 작은 일상을 정해 보세요.",
@@ -4025,7 +4491,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -4196,7 +4662,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -4220,7 +4686,35 @@
               "goal": "communicate",
               "text": "그리고 다른 멤버에게 제 결정을 어떻게 말하면 좋을지도 알려 주세요",
               "start": 29,
-              "end": 66
+              "end": 66,
+              "work": {
+                "version": 90,
+                "operation": "communicate",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": "저",
+                  "evidence": {
+                    "start": 41,
+                    "end": 42,
+                    "text": "제"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 60,
+                  "end": 62,
+                  "text": "알려"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 29,
+                  "end": 66
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [],
@@ -4276,7 +4770,35 @@
               "goal": "communicate",
               "text": "그리고 다른 멤버에게 제 결정을 어떻게 말하면 좋을지도 알려 주세요",
               "start": 29,
-              "end": 66
+              "end": 66,
+              "work": {
+                "version": 90,
+                "operation": "communicate",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": "저",
+                  "evidence": {
+                    "start": 41,
+                    "end": 42,
+                    "text": "제"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 60,
+                  "end": 62,
+                  "text": "알려"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 29,
+                  "end": 66
+                },
+                "reason": "predicate-and-object"
+              }
             },
             "text": "전달할 결론과 그 이유 한 가지를 짧게 정리해 보세요. 내 선택을 설명하는 부분과 상대의 의견을 들어야 할 부분을 나누고, 상대가 답할 여지도 남겨 두세요.\n\n‘미래’의 컵 2 정방향에서 살필 관점은 ‘교류·상호성’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 전할 내용만 정리하기보다 듣거나 읽는 사람이 무엇을 이해했는지 확인할 질문을 남기고, 서로 다른 이해를 조정할 통로를 마련해 보세요.",
             "directText": "전달할 결론과 그 이유 한 가지를 짧게 정리해 보세요. 내 선택을 설명하는 부분과 상대의 의견을 들어야 할 부분을 나누고, 상대가 답할 여지도 남겨 두세요.\n\n‘미래’의 컵 2 정방향에서 살필 관점은 ‘교류·상호성’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 전할 내용만 정리하기보다 듣거나 읽는 사람이 무엇을 이해했는지 확인할 질문을 남기고, 서로 다른 이해를 조정할 통로를 마련해 보세요.",
@@ -4355,7 +4877,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -4500,7 +5022,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -4637,7 +5159,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -4724,9 +5246,9 @@
         }
       ],
       "actualIntent": "open",
-      "direct": "‘현재’의 완드 6 역방향은 ‘인정에 대한 집착’을 보여 줍니다. ‘미래’의 소드 왕 정방향은 ‘원칙에 따른 판단’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
+      "direct": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.\n\n‘현재’의 완드 6 역방향에서 살필 관점은 ‘인정·의심’입니다. ‘미래’의 소드 왕 정방향에서 살필 관점은 ‘명료함·구조’입니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 확인한 사실과 그 사실에 붙인 판단을 나누고, 아직 모르는 부분에 다른 해석의 여지를 남겨 보세요.",
       "actions": [
-        "지금 나에게 필요한 것 한 가지를 고르고, 오늘 쓸 수 있는 시간 안에서 작게 해보세요."
+        "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다."
       ],
       "sections": [
         {
@@ -4766,7 +5288,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -4783,7 +5305,35 @@
               "goal": "open",
               "text": "오늘은 전반적으로 어떤 태도를 돌아보면 좋을까요",
               "start": 0,
-              "end": 26
+              "end": 26,
+              "work": {
+                "version": 90,
+                "operation": "reflect",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "태도",
+                  "evidence": {
+                    "start": 13,
+                    "end": 16,
+                    "text": "태도를"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 17,
+                  "end": 21,
+                  "text": "돌아보면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 26
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [],
@@ -4823,12 +5373,40 @@
               "goal": "open",
               "text": "오늘은 전반적으로 어떤 태도를 돌아보면 좋을까요",
               "start": 0,
-              "end": 26
+              "end": 26,
+              "work": {
+                "version": 90,
+                "operation": "reflect",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "태도",
+                  "evidence": {
+                    "start": 13,
+                    "end": 16,
+                    "text": "태도를"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 17,
+                  "end": 21,
+                  "text": "돌아보면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 26
+                },
+                "reason": "predicate-and-object"
+              }
             },
-            "text": "‘현재’의 완드 6 역방향은 ‘인정에 대한 집착’을 보여 줍니다. ‘미래’의 소드 왕 정방향은 ‘원칙에 따른 판단’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
-            "directText": "‘현재’의 완드 6 역방향은 ‘인정에 대한 집착’을 보여 줍니다. ‘미래’의 소드 왕 정방향은 ‘원칙에 따른 판단’을 보여 줍니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다. 이 두 관점 중 지금 상황에 더 맞닿는 부분은 무엇인가요?",
-            "actionText": "지금 나에게 필요한 것 한 가지를 고르고, 오늘 쓸 수 있는 시간 안에서 작게 해보세요.",
-            "actionTask": "prepare",
+            "text": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.\n\n‘현재’의 완드 6 역방향에서 살필 관점은 ‘인정·의심’입니다. ‘미래’의 소드 왕 정방향에서 살필 관점은 ‘명료함·구조’입니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 확인한 사실과 그 사실에 붙인 판단을 나누고, 아직 모르는 부분에 다른 해석의 여지를 남겨 보세요.",
+            "directText": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.\n\n‘현재’의 완드 6 역방향에서 살필 관점은 ‘인정·의심’입니다. ‘미래’의 소드 왕 정방향에서 살필 관점은 ‘명료함·구조’입니다. 모호한 느낌을 곧바로 결론으로 삼기보다, 확인 가능한 정보를 통해 기대와 추측을 가려내는 연결입니다. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 확인한 사실과 그 사실에 붙인 판단을 나누고, 아직 모르는 부분에 다른 해석의 여지를 남겨 보세요.",
+            "actionText": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.",
+            "actionTask": "reflect",
             "refs": [
               1,
               2
@@ -4870,9 +5448,9 @@
         }
       ],
       "actualIntent": "action",
-      "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요. ‘미래’에 놓인 소드 9 역방향의 주제는 ‘걱정을 꺼내는 과정’입니다.",
+      "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘미래’에 놓인 소드 9 역방향의 주제는 ‘걱정을 꺼내는 과정’입니다.",
       "actions": [
-        "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요."
+        "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요."
       ],
       "sections": [
         {
@@ -4910,7 +5488,7 @@
         },
         {
           "title": "질문에 적용할 관점",
-          "body": "‘미래’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+          "body": "‘미래’의 소드 9 역방향은 ‘걱정을 꺼내는 과정’을 보여 줍니다. 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
           "refs": [
             2
           ],
@@ -4920,7 +5498,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -4937,7 +5515,36 @@
               "goal": "action",
               "text": "무엇을 살펴봐야 할까요",
               "start": 34,
-              "end": 46
+              "end": 46,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 18,
+                    "end": 21,
+                    "text": "조건은"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "inherited": "omitted-recent-object",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 38,
+                  "end": 42,
+                  "text": "살펴봐야"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 34,
+                  "end": 46
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [],
@@ -4977,11 +5584,40 @@
               "goal": "action",
               "text": "무엇을 살펴봐야 할까요",
               "start": 34,
-              "end": 46
+              "end": 46,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 18,
+                    "end": 21,
+                    "text": "조건은"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "inherited": "omitted-recent-object",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 38,
+                  "end": 42,
+                  "text": "살펴봐야"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 34,
+                  "end": 46
+                },
+                "reason": "predicate-and-object"
+              }
             },
-            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요. ‘미래’에 놓인 소드 9 역방향의 주제는 ‘걱정을 꺼내는 과정’입니다.",
-            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요. ‘미래’에 놓인 소드 9 역방향의 주제는 ‘걱정을 꺼내는 과정’입니다.",
-            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 시작할 때의 요건뿐 아니라 계속 이용하거나 실행할 때 생기는 부담과 중단할 때의 조건도 실제 일정과 함께 확인해 보세요.",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘미래’에 놓인 소드 9 역방향의 주제는 ‘걱정을 꺼내는 과정’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘미래’에 놓인 소드 9 역방향의 주제는 ‘걱정을 꺼내는 과정’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘미래’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
             "actionTask": "verify",
             "refs": [
               2
@@ -5056,7 +5692,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -5079,6 +5715,34 @@
                 "reason": "explicit-main-clause-question-output",
                 "source": "다음 진료를 위해 질문을 어떻게 준비할까요",
                 "informationGoal": true
+              },
+              "work": {
+                "version": 90,
+                "operation": "inquire",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": "진료",
+                  "evidence": {
+                    "start": 26,
+                    "end": 29,
+                    "text": "진료를"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 41,
+                  "end": 46,
+                  "text": "준비할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 23,
+                  "end": 46
+                },
+                "reason": "predicate-and-object"
               }
             }
           ],
@@ -5125,6 +5789,34 @@
                 "reason": "explicit-main-clause-question-output",
                 "source": "다음 진료를 위해 질문을 어떻게 준비할까요",
                 "informationGoal": true
+              },
+              "work": {
+                "version": 90,
+                "operation": "inquire",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": "진료",
+                  "evidence": {
+                    "start": 26,
+                    "end": 29,
+                    "text": "진료를"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 41,
+                  "end": 46,
+                  "text": "준비할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 23,
+                  "end": 46
+                },
+                "reason": "predicate-and-object"
               }
             },
             "text": "진단·치료 판단은 의료진의 설명과 실제 검사 결과를 기준으로 하고, 카드는 마음과 준비를 살펴보는 데 활용해 보세요. 궁금한 점을 한 문장씩 적고, 이미 아는 내용과 아직 모르는 점을 나누어 보세요. “이 부분을 조금 더 설명해 주실 수 있나요?”, “아직 확인할 점은 무엇인가요?”처럼 실제로 말할 질문을 만들고, 꼭 물을 것부터 순서를 정해 보세요. 답을 듣는 자리에서 메모하거나 다시 설명을 부탁할 방법도 정해 둘 수 있습니다. ‘미래’에 놓인 절제의 주제는 ‘적절한 균형’입니다.",
@@ -5171,9 +5863,9 @@
         }
       ],
       "actualIntent": "open",
-      "direct": "‘현재’에 놓인 펜타클 10 역방향의 주제는 ‘장기 기반의 균열’입니다. 지금 하는 일에서 계속 지키고 싶은 것과 바꾸고 싶은 조건은 무엇인가요?",
+      "direct": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.\n\n‘현재’의 펜타클 10 역방향에서 살필 관점은 ‘엇갈림·안정’입니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. 내가 기대한 모습과 실제로 표현되거나 경험한 것을 나누고, 그 차이를 확인할 수 있는 정보가 무엇인지 살펴보세요.",
       "actions": [
-        "빠른 결론보다 자신의 우선순위를 정리해 보세요."
+        "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다."
       ],
       "sections": [
         {
@@ -5204,7 +5896,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -5221,7 +5913,35 @@
               "goal": "open",
               "text": "관계에서 배운 점을 돌아보고 싶어요",
               "start": 29,
-              "end": 48
+              "end": 48,
+              "work": {
+                "version": 90,
+                "operation": "reflect",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "관계",
+                  "evidence": {
+                    "start": 29,
+                    "end": 33,
+                    "text": "관계에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 40,
+                  "end": 44,
+                  "text": "돌아보고"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 29,
+                  "end": 48
+                },
+                "reason": "predicate-and-object"
+              }
             }
           ],
           "events": [
@@ -5279,12 +5999,40 @@
               "goal": "open",
               "text": "관계에서 배운 점을 돌아보고 싶어요",
               "start": 29,
-              "end": 48
+              "end": 48,
+              "work": {
+                "version": 90,
+                "operation": "reflect",
+                "target": {
+                  "kind": "experience",
+                  "subtype": null,
+                  "head": "관계",
+                  "evidence": {
+                    "start": 29,
+                    "end": 33,
+                    "text": "관계에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 40,
+                  "end": 44,
+                  "text": "돌아보고"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 29,
+                  "end": 48
+                },
+                "reason": "predicate-and-object"
+              }
             },
-            "text": "‘현재’에 놓인 펜타클 10 역방향의 주제는 ‘장기 기반의 균열’입니다. 지금 하는 일에서 계속 지키고 싶은 것과 바꾸고 싶은 조건은 무엇인가요?",
-            "directText": "‘현재’에 놓인 펜타클 10 역방향의 주제는 ‘장기 기반의 균열’입니다. 지금 하는 일에서 계속 지키고 싶은 것과 바꾸고 싶은 조건은 무엇인가요?",
-            "actionText": "빠른 결론보다 자신의 우선순위를 정리해 보세요.",
-            "actionTask": null,
+            "text": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.\n\n‘현재’의 펜타클 10 역방향에서 살필 관점은 ‘엇갈림·안정’입니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. 내가 기대한 모습과 실제로 표현되거나 경험한 것을 나누고, 그 차이를 확인할 수 있는 정보가 무엇인지 살펴보세요.",
+            "directText": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.\n\n‘현재’의 펜타클 10 역방향에서 살필 관점은 ‘엇갈림·안정’입니다. 같은 말이나 약속을 서로 다르게 이해하는 부분이 있는지 확인해 보세요. 내가 기대한 모습과 실제로 표현되거나 경험한 것을 나누고, 그 차이를 확인할 수 있는 정보가 무엇인지 살펴보세요.",
+            "actionText": "처음 중요하게 여긴 것, 실제로 경험한 것, 지금 다르게 느끼는 점을 나누어 적어 보세요. 잘됐거나 어려웠던 한 장면을 구체적으로 떠올리고, 앞으로도 지킬 기준과 조정할 기대를 하나씩 골라 볼 수 있습니다.",
+            "actionTask": "reflect",
             "refs": [
               1
             ]
@@ -5358,7 +6106,7 @@
       "context": {
         "version": 82,
         "model": {
-          "version": 89,
+          "version": 90,
           "languageAnalysis": {
             "backend": "garu-ko",
             "version": "0.11.0",
@@ -5375,7 +6123,31 @@
               "goal": "prepare",
               "text": "시작할 기준을 어떻게 잡을까요",
               "start": 38,
-              "end": 54
+              "end": 54,
+              "work": {
+                "version": 90,
+                "operation": "prepare",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 38,
+                  "end": 41,
+                  "text": "시작할"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 38,
+                  "end": 54
+                },
+                "reason": "nominal-work-head"
+              }
             }
           ],
           "events": [],
@@ -5415,7 +6187,31 @@
               "goal": "prepare",
               "text": "시작할 기준을 어떻게 잡을까요",
               "start": 38,
-              "end": 54
+              "end": 54,
+              "work": {
+                "version": 90,
+                "operation": "prepare",
+                "target": {
+                  "kind": "unspecified",
+                  "subtype": null,
+                  "head": null,
+                  "evidence": null,
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 38,
+                  "end": 41,
+                  "text": "시작할"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 38,
+                  "end": 54
+                },
+                "reason": "nominal-work-head"
+              }
             },
             "text": "앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요.\n\n‘미래’의 컵 6 정방향에서 살필 관점은 ‘교류·재검토’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 준비 순서를 정할 때는 원하는 결과와 실제 진행 상태를 나누어 보고, 어긋나는 부분이 있다면 이번 단계에서 바꿀 수 있는 조건부터 확인해 보세요.",
             "directText": "앞둔 일에서 꼭 필요한 준비와 확인할 일정을 나누어 보세요. 이미 갖춘 것은 남겨 두고, 아직 필요한 것 중 지금 할 수 있는 한 단계와 확인할 시점을 정해 보세요.\n\n‘미래’의 컵 6 정방향에서 살필 관점은 ‘교류·재검토’입니다. 기대하는 경험과 실제로 이어 가는 방식을 나누어 살펴보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 준비 순서를 정할 때는 원하는 결과와 실제 진행 상태를 나누어 보고, 어긋나는 부분이 있다면 이번 단계에서 바꿀 수 있는 조건부터 확인해 보세요.",

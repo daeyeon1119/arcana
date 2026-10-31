@@ -1,0 +1,22 @@
+{
+  "phase": "regression",
+  "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+  "baselineSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+  "fixtureSHA256": "7d48515f1bb206d48a8db522fd97bd1f68532071aec9ca23fe056ffc816ecb6f",
+  "collectorSHA256": "aaf749f27c2706df2fb36b9408c2b92180ab777084889682a4617f16e4634138",
+  "seed": 870037,
+  "note": "Twenty author-written diagnostic questions created after candidate 39d81a9 (HTML d79a5aef2e627735296eb8beb69c8cd9ec4fcf098041c1f98cd24ce54bfba3e0). New to this candidate's execution, authored with implementation knowledge; not independent or expert-blind evidence. Includes unfamiliar topics, different request syntax, mixed intent, negative facts and format constraints. Preserve all first outputs before corrections. Corrections informed by first outputs: known regression, not untouched holdout.",
+  "readingsSHA256": "487eefc672610ec5199cd3d67236c30b8e9699a56292cc859a696dfc9897e17e",
+  "questions": 20,
+  "readingsPerVersion": 160,
+  "errors": [],
+  "failures": [],
+  "mechanicalPassed": 160,
+  "qualityScore": null,
+  "remainingSemanticLimits": [
+    "l07 forecast advice remains too generic for the requested confidence in reading aloud",
+    "l17 financial metadata and condition-specific depth remain limited",
+    "l20 two-sentence formatting request is not implemented",
+    "domain depth and repeated general imperatives remain below the professional target"
+  ]
+}

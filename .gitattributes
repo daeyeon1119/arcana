@@ -25,3 +25,4 @@ vendor/garu/** text eol=lf
 vendor/garu/**/*.wasm -text
 vendor/garu/**/*.gmdl -text
 tests/lexical-first.json text eol=lf
+tests/request-frame-first.json text eol=lf

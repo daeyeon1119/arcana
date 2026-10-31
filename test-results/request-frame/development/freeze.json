@@ -1,0 +1,21 @@
+{
+  "phase": "development",
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "baselineSHA256": "349eee8bb86f25a3ec974c9cb16ef9a776f0cbb96d1d81e5a550272e5f8a9932",
+  "fixtureSHA256": "aa77227ec5a01ebec1fe8c6cd82ecf5da8b857d431c5aa1701a7fedb91e1fc23",
+  "collectorSHA256": "822a4d13d449b0e0d0fc6b82a5f13fddfc43b705bdfc156dc4605b6e3f652442",
+  "seed": 900061,
+  "note": "Twenty known v89 questions plus eight author development controls. Baseline frozen before request/object implementation. Evaluator labels never enter the engine. Not an independent, unseen or expert benchmark."
+}

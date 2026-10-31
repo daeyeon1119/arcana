@@ -1,0 +1,195 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "readingsSHA256": "da001b424be6f06daf555bd5db9bce5e2ccf319bd2cbfdb59d8a8119eb4f52f7",
+  "directlyRead": [
+    {
+      "id": "w01",
+      "directSHA256": "36413b099b11e7793108196a911766095ce598d5fe3f03aa433a59ae79ada55a"
+    },
+    {
+      "id": "w02",
+      "directSHA256": "0c5302fe8b42c01048cd85bdfd6e94f563b8a9c7c457ba2ff3b00dca424d4338"
+    },
+    {
+      "id": "w03",
+      "directSHA256": "c38819a11ce5f0f8baf357ff0a9f552e5b688c429188daf04e64d9117330611b"
+    },
+    {
+      "id": "w04",
+      "directSHA256": "a3ae16d093e49fa37382d634238adcd70359ba3afa9af451b45c5f41d6e08c6d"
+    },
+    {
+      "id": "w05",
+      "directSHA256": "cb3ededf19ad81c1b7d9b522250eb9d2c4a7e1a2c4ed725d31d299e89d624a9e"
+    },
+    {
+      "id": "w06",
+      "directSHA256": "c3f219c2108be6e286407629e97ee93490a1d833a8d4fe0ceec2af32157edf1e"
+    },
+    {
+      "id": "w07",
+      "directSHA256": "d2c104b938812e431f0b2b04778a5b825e8f26332306274cd7072851cc0ae0ea"
+    },
+    {
+      "id": "w08",
+      "directSHA256": "0e88ed1150885f4dc354a2fc38633a7273f92db9f6d0b9853e16f5a20cfc8068"
+    },
+    {
+      "id": "w09",
+      "directSHA256": "e8e5746f5989403156c33f35fa7b85e0bca0ca5ccc9b622d18acdc5966d01b65"
+    },
+    {
+      "id": "w10",
+      "directSHA256": "491cd244638989572613ac42f246088c8940313b5fc6a4e326651f619c2205ca"
+    },
+    {
+      "id": "w11",
+      "directSHA256": "580da85de5e1ac7ea63ddca5ecfb2c4c1772742a9fc9ec75bda8374c43dbd622"
+    },
+    {
+      "id": "w12",
+      "directSHA256": "d7753aefcc1657b251122d3e673a0052deabf9e446cccd2c26cdb5c397853c23"
+    },
+    {
+      "id": "w13",
+      "directSHA256": "d014109bc7aea3c39eed92b4f74fb234dd5ce7abcd62f9578867ef87b0da8d94"
+    },
+    {
+      "id": "w14",
+      "directSHA256": "9fbb692e86909f69273532b24bf24ee3d7715339cec7a8c9792ba355e4640edd"
+    },
+    {
+      "id": "w15",
+      "directSHA256": "82edd645133f2d00ca03a8f9fc6c572d852a3a6688a6696b49f22e1959d00cdf"
+    },
+    {
+      "id": "w16",
+      "directSHA256": "55aee67250eba5eaf078bbd50706c4f2967943c3c13a29461ff4914a384aed64"
+    },
+    {
+      "id": "w17",
+      "directSHA256": "35b746cd1af586069df9235b936cc4addbbe4678da6754e96a335fbcbf9f738a"
+    },
+    {
+      "id": "w18",
+      "directSHA256": "cbd5e08a4f3a4af66c0f61e693bf3886eaeae5189de2c0fb3f1eab1290f1f4fe"
+    },
+    {
+      "id": "w19",
+      "directSHA256": "3cba1c296573d30b0b660307a7b6e90b4da4e4cc031764b421dcdb9a77e9ed7f"
+    },
+    {
+      "id": "w20",
+      "directSHA256": "31343b43c34bf0038d7601f3b5e0e83b1fce38e368d3a6106c1ddee416180a60"
+    },
+    {
+      "id": "w21",
+      "directSHA256": "b3e59892f037cecee040e7692b267c0526629a484028ce2a44759bfd56fef5f1"
+    },
+    {
+      "id": "w22",
+      "directSHA256": "354a6e8cc4f2488a5699670d7ea70c8b55750231c2bd54ea17dc8ea0529625c2"
+    },
+    {
+      "id": "w23",
+      "directSHA256": "767152bbcc2c7002a2417ff181e8088b99af7b8e34571870ba87570569ed4eae"
+    },
+    {
+      "id": "w24",
+      "directSHA256": "cbd5e08a4f3a4af66c0f61e693bf3886eaeae5189de2c0fb3f1eab1290f1f4fe"
+    },
+    {
+      "id": "w25",
+      "directSHA256": "37b95bb3d7c9f68f4175a07c621d15535f26ad1cafa638aa7e5b29ac5b230a8b"
+    },
+    {
+      "id": "w26",
+      "directSHA256": "f2b6841204f5e10563f98a23eab946c08e5afed436d51e3377e93afb6b98f95f"
+    },
+    {
+      "id": "w27",
+      "directSHA256": "037306e56726ceeacf4d60ba5d609b86c25fb21b2a2e52b37b52319071dc7420"
+    },
+    {
+      "id": "w28",
+      "directSHA256": "ab5e8c3f982be2e78c7296a432fb2b367cc528e9b3ef037d8da97ded5fe1e65c"
+    }
+  ],
+  "manualProvenance": "All 28 initial five-card direct strings were read. The 22 identical strings carry forward by hash; six changed strings (w04/w10/w11/w15/w23/w26) were read again for the final build. Final source 8214485: w15 condition checklist read again; remaining 27 direct strings match the previously read strings by SHA-256. Final source 107d498: all five-card direct strings are byte-identical to those already read for source 8214485. Their prior review carries forward by SHA-256; all detailed reports are retained without claiming a new human review. Final source 222e633: All 28 primary direct strings remain identical to the previously read strings.",
+  "remainingSemanticLimits": [
+    "w01: 목차의 전체 흐름·중복·빠진 연결을 점검한다. 카드 결합은 여전히 넓은 일반론이다.",
+    "w04: 미독 목록 선확인과 자료명·형식·확인 상태. 카드 연결은 일반적임.",
+    "w05: 면접 질문의 구체성은 일반적이다.",
+    "w06: 내 선택 설명 대신 문서 설명으로 맞춘다. 실제 계약 조항의 깊이는 낮다.",
+    "w08: 의료진에게 증상을 전하는 일반 준비만 제공한다.",
+    "w09: 증상 설명의 축약과 복약 변경을 구별한다. 실제 결과를 단정하지 않는다.",
+    "w10: 약속 합의와 부담·조정 여지로 보완. 업무 분담 표현 제거.",
+    "w15: 대관 조건 확인과 물을 질문을 둘 다 처리. 실제 질문 예시는 여전히 일반적임.",
+    "w20: 기대·관찰·해석을 나눈다. 카드 결합의 반복은 남는다.",
+    "w23: 장면과 원인 설명의 근거·대안 가설을 나눔. 분야별 예시는 약함."
+  ],
+  "mechanicalFailures": [],
+  "professionalQualityScore": null,
+  "scope": "Known development/regression and bounded author reading. Other arrays and detailed card sections retained but not all manually reread. No independent expert evidence.",
+  "carriedFromRelease": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "c2f24a83b8ab8b4decc1ca47e801afb155262592e04d8ad6375db0f7339968c9",
+    "appBytes": 33178953,
+    "webRelease": "d0ae3c60e6ca30e8e921aef1",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "finalChangeRead": [],
+  "carryHistory": [
+    {
+      "release": {
+        "appVersion": "90.0.0",
+        "readingEngine": 90,
+        "appSHA256": "0f97d9b6604b6074784b4d0fef1c8bdb5c7b61f7b6cf82d90bf494101b9e1800",
+        "appBytes": 33178926,
+        "webRelease": "5f77b58b0921863160f5649d",
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+        }
+      },
+      "readingsSHA256": "49f74d196f12c8b1aaabf9bba7bb90bcc5928f50609fa6f8297ba2a4bfb39e92"
+    },
+    {
+      "release": {
+        "appVersion": "90.0.0",
+        "readingEngine": 90,
+        "appSHA256": "b9a47384e341d8adfee0254a5ebcd9004bda6f6ea41595face352923d875e1c4",
+        "appBytes": 33178952,
+        "webRelease": "4e6b553eb1dd64c73e4ef34b",
+        "languageAnalysis": {
+          "backend": "garu-ko",
+          "version": "0.11.0",
+          "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+          "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+        }
+      },
+      "readingsSHA256": "da001b424be6f06daf555bd5db9bce5e2ccf319bd2cbfdb59d8a8119eb4f52f7"
+    }
+  ],
+  "finalSourceCommit": "222e6336a08cb7cc122c46a4ff7b2d055de9540a"
+}

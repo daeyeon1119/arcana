@@ -1,0 +1,3623 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "c2f24a83b8ab8b4decc1ca47e801afb155262592e04d8ad6375db0f7339968c9",
+    "appBytes": 33178953,
+    "webRelease": "d0ae3c60e6ca30e8e921aef1",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "summary": {
+    "phase": "development",
+    "appSHA256": "c2f24a83b8ab8b4decc1ca47e801afb155262592e04d8ad6375db0f7339968c9",
+    "baselineSHA256": "d2bae483a80c910de531135505ce0f6a10aeaf2f9fa52aa56b054c61669c0879",
+    "fixtureSHA256": "348e453aa879c0c69107a8c81bb1ba7a19bbfe74e3430ca918d32d6f71957fb8",
+    "collectorSHA256": "aaf749f27c2706df2fb36b9408c2b92180ab777084889682a4617f16e4634138",
+    "seed": 870037,
+    "note": "Known/development questions, including v86 review failures. Expectations are collector-only contracts, not engine input or a semantic/professional score.",
+    "readingsSHA256": "0a5921c49f1da0d94c780377c62b69f39c7f78fe1a0a1553feda470d719ad16b",
+    "questions": 12,
+    "readingsPerVersion": 96,
+    "errors": [],
+    "failures": [
+      {
+        "id": "verify",
+        "spread": "one",
+        "error": "same-context practical method discarded"
+      },
+      {
+        "id": "verify",
+        "spread": "three",
+        "error": "same-context practical method discarded"
+      },
+      {
+        "id": "verify",
+        "spread": "five",
+        "error": "same-context practical method discarded"
+      },
+      {
+        "id": "verify",
+        "spread": "relationship5",
+        "error": "same-context practical method discarded"
+      },
+      {
+        "id": "verify",
+        "spread": "choice5",
+        "error": "same-context practical method discarded"
+      },
+      {
+        "id": "verify",
+        "spread": "waiting3",
+        "error": "same-context practical method discarded"
+      },
+      {
+        "id": "verify",
+        "spread": "career5",
+        "error": "same-context practical method discarded"
+      },
+      {
+        "id": "verify",
+        "spread": "celtic",
+        "error": "same-context practical method discarded"
+      }
+    ],
+    "mechanicalPassed": 88,
+    "qualityScore": null,
+    "matrix": {
+      "actualReadings": 1560,
+      "compressedSHA256": "1bb46d7f6146088bed755ee174640388f3e3de8a3b47d4b0559b4e92fb5dcb8f",
+      "failures": [],
+      "note": "Ten known task phrasings across every card and orientation. Not 1560 distinct questions or an independent semantic evaluation."
+    }
+  },
+  "actual": [
+    {
+      "id": "verify",
+      "question": "신청 조건에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "spread": "one",
+      "cards": [
+        {
+          "id": "cu08",
+          "rev": false
+        }
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요. ‘핵심 메시지’에 놓인 컵 8의 주제는 ‘익숙한 것과의 거리’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘핵심 메시지’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요. ‘핵심 메시지’에 놓인 컵 8의 주제는 ‘익숙한 것과의 거리’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요. ‘핵심 메시지’에 놓인 컵 8의 주제는 ‘익숙한 것과의 거리’입니다.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 이미 마친 절차와 다음 단계에서 새로 필요한 조건을 나누고, 이전 조건이 그대로 적용되는지 공식 안내로 확인해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "message",
+            "meaning": "익숙한 것과의 거리"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "transition",
+            "primaryMotif": "transition",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              0
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": []
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "확인할 조건을 나누어 살피기",
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘핵심 메시지’의 컵 8 정방향에서 살필 관점은 ‘전환·자율성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "eligibility",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 3,
+                    "end": 7,
+                    "text": "조건에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 17
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘핵심 메시지’의 컵 8 정방향에서 살필 관점은 ‘전환·자율성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘핵심 메시지’의 컵 8 정방향에서 살필 관점은 ‘전환·자율성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "actionTask": "verify",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "message",
+            "meaning": "익숙한 것과의 거리"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "transition",
+            "primaryMotif": "transition",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              0
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘핵심 메시지’의 컵 8 정방향에서 살필 관점은 ‘전환·자율성’입니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.",
+              "refs": [
+                0
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 0,
+                  "id": "cu08",
+                  "reverse": false,
+                  "motifs": [
+                    "transition",
+                    "autonomy"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "요건과 빠진 안내를 구분해 확인하기",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "work": {
+              "version": 90,
+              "operation": "verify",
+              "target": {
+                "kind": "requirements",
+                "subtype": "eligibility",
+                "head": "조건",
+                "evidence": {
+                  "start": 3,
+                  "end": 7,
+                  "text": "조건에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 12,
+                "end": 17,
+                "text": "확인할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 17
+              },
+              "reason": "predicate-and-object"
+            },
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "verify",
+      "question": "신청 조건에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "spread": "three",
+      "cards": [
+        {
+          "id": "cu08",
+          "rev": false
+        },
+        {
+          "id": "sw12",
+          "rev": true
+        },
+        {
+          "id": "sw05",
+          "rev": true
+        }
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요. ‘현재’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘미래’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘현재’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘미래’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘현재’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘미래’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요. ‘현재’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘미래’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요. ‘현재’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘미래’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "past",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "now",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "future",
+            "meaning": "소모적 다툼의 정리"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "exchange",
+            "primaryMotif": null,
+            "relationAxis": "conflict",
+            "contextRule": null,
+            "refs": [
+              1,
+              2
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": []
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "확인할 조건을 나누어 살피기",
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘현재’의 소드 기사 역방향에서 살필 관점은 ‘속도·충돌’입니다. ‘미래’의 소드 5 역방향에서 살필 관점은 ‘충돌·마무리’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘현재’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘미래’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "eligibility",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 3,
+                    "end": 7,
+                    "text": "조건에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 17
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘현재’의 소드 기사 역방향에서 살필 관점은 ‘속도·충돌’입니다. ‘미래’의 소드 5 역방향에서 살필 관점은 ‘충돌·마무리’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘현재’의 소드 기사 역방향에서 살필 관점은 ‘속도·충돌’입니다. ‘미래’의 소드 5 역방향에서 살필 관점은 ‘충돌·마무리’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "actionTask": "verify",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "past",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "now",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "future",
+            "meaning": "소모적 다툼의 정리"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "exchange",
+            "primaryMotif": null,
+            "relationAxis": "conflict",
+            "contextRule": null,
+            "refs": [
+              1,
+              2
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘현재’의 소드 기사 역방향에서 살필 관점은 ‘속도·충돌’입니다. ‘미래’의 소드 5 역방향에서 살필 관점은 ‘충돌·마무리’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.",
+              "refs": [
+                1,
+                2
+              ],
+              "operation": "verify",
+              "relationAxis": "conflict",
+              "facets": [
+                {
+                  "index": 1,
+                  "id": "sw12",
+                  "reverse": true,
+                  "motifs": [
+                    "speed",
+                    "conflict"
+                  ]
+                },
+                {
+                  "index": 2,
+                  "id": "sw05",
+                  "reverse": true,
+                  "motifs": [
+                    "conflict",
+                    "closure"
+                  ]
+                }
+              ],
+              "roleFrame": "현재 방향이 이어질 때 점검할 관점으로 읽으면, ",
+              "reused": false
+            }
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "요건과 빠진 안내를 구분해 확인하기",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "work": {
+              "version": 90,
+              "operation": "verify",
+              "target": {
+                "kind": "requirements",
+                "subtype": "eligibility",
+                "head": "조건",
+                "evidence": {
+                  "start": 3,
+                  "end": 7,
+                  "text": "조건에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 12,
+                "end": 17,
+                "text": "확인할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 17
+              },
+              "reason": "predicate-and-object"
+            },
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "verify",
+      "question": "신청 조건에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "spread": "five",
+      "cards": [
+        {
+          "id": "cu08",
+          "rev": false
+        },
+        {
+          "id": "sw12",
+          "rev": true
+        },
+        {
+          "id": "sw05",
+          "rev": true
+        },
+        {
+          "id": "wa11",
+          "rev": false
+        },
+        {
+          "id": "cu09",
+          "rev": true
+        }
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘조언’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. ‘소모적 다툼의 정리’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘조언’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘조언’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘조언’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘조언’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "now",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "root",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "겉과 속의 불일치"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "evidence",
+            "primaryMotif": "ideals",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": []
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "확인할 조건을 나누어 살피기",
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘조언’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. ‘소모적 다툼의 정리’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "eligibility",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 3,
+                    "end": 7,
+                    "text": "조건에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 17
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘조언’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘조언’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "now",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "root",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "겉과 속의 불일치"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "evidence",
+            "primaryMotif": "ideals",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘조언’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "cu09",
+                  "reverse": true,
+                  "motifs": [
+                    "ideals",
+                    "review"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "요건과 빠진 안내를 구분해 확인하기",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "work": {
+              "version": 90,
+              "operation": "verify",
+              "target": {
+                "kind": "requirements",
+                "subtype": "eligibility",
+                "head": "조건",
+                "evidence": {
+                  "start": 3,
+                  "end": 7,
+                  "text": "조건에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 12,
+                "end": 17,
+                "text": "확인할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 17
+              },
+              "reason": "predicate-and-object"
+            },
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "verify",
+      "question": "신청 조건에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "cu08",
+          "rev": false
+        },
+        {
+          "id": "sw12",
+          "rev": true
+        },
+        {
+          "id": "sw05",
+          "rev": true
+        },
+        {
+          "id": "wa11",
+          "rev": false
+        },
+        {
+          "id": "cu09",
+          "rev": true
+        }
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘내가 취할 행동’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. ‘소모적 다툼의 정리’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘내가 취할 행동’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘내가 취할 행동’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘내가 취할 행동’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "now",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "겉과 속의 불일치"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "evidence",
+            "primaryMotif": "ideals",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": []
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "확인할 조건을 나누어 살피기",
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘내가 취할 행동’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. ‘소모적 다툼의 정리’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "eligibility",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 3,
+                    "end": 7,
+                    "text": "조건에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 17
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘내가 취할 행동’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘내가 취할 행동’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "now",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "겉과 속의 불일치"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "evidence",
+            "primaryMotif": "ideals",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘내가 취할 행동’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "cu09",
+                  "reverse": true,
+                  "motifs": [
+                    "ideals",
+                    "review"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "요건과 빠진 안내를 구분해 확인하기",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "work": {
+              "version": 90,
+              "operation": "verify",
+              "target": {
+                "kind": "requirements",
+                "subtype": "eligibility",
+                "head": "조건",
+                "evidence": {
+                  "start": 3,
+                  "end": 7,
+                  "text": "조건에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 12,
+                "end": 17,
+                "text": "확인할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 17
+              },
+              "reason": "predicate-and-object"
+            },
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "verify",
+      "question": "신청 조건에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "spread": "choice5",
+      "cards": [
+        {
+          "id": "cu08",
+          "rev": false
+        },
+        {
+          "id": "sw12",
+          "rev": true
+        },
+        {
+          "id": "sw05",
+          "rev": true
+        },
+        {
+          "id": "wa11",
+          "rev": false
+        },
+        {
+          "id": "cu09",
+          "rev": true
+        }
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘다음 한 걸음’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘다음 한 걸음’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘다음 한 걸음’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘다음 한 걸음’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "message",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "optionA",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "optionB",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "criteria",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "겉과 속의 불일치"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "evidence",
+            "primaryMotif": "ideals",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": []
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "확인할 조건을 나누어 살피기",
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘다음 한 걸음’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "eligibility",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 3,
+                    "end": 7,
+                    "text": "조건에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 17
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘다음 한 걸음’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘다음 한 걸음’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "message",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "optionA",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "optionB",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "criteria",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "겉과 속의 불일치"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "evidence",
+            "primaryMotif": "ideals",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘다음 한 걸음’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "cu09",
+                  "reverse": true,
+                  "motifs": [
+                    "ideals",
+                    "review"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "요건과 빠진 안내를 구분해 확인하기",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "work": {
+              "version": 90,
+              "operation": "verify",
+              "target": {
+                "kind": "requirements",
+                "subtype": "eligibility",
+                "head": "조건",
+                "evidence": {
+                  "start": 3,
+                  "end": 7,
+                  "text": "조건에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 12,
+                "end": 17,
+                "text": "확인할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 17
+              },
+              "reason": "predicate-and-object"
+            },
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "verify",
+      "question": "신청 조건에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "spread": "waiting3",
+      "cards": [
+        {
+          "id": "cu08",
+          "rev": false
+        },
+        {
+          "id": "sw12",
+          "rev": true
+        },
+        {
+          "id": "sw05",
+          "rev": true
+        }
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요. ‘지금 다룰 마음’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘오늘의 실천’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘지금 다룰 마음’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘오늘의 실천’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘지금 다룰 마음’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘오늘의 실천’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요. ‘지금 다룰 마음’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘오늘의 실천’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요. ‘지금 다룰 마음’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘오늘의 실천’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n카드의 연결을 더하면, 같은 조건을 다르게 이해할 여지가 있는지 문서나 안내에서 대조해 보세요. 함께 확인할 사람이 있다면 각자가 부담할 몫도 명확히 해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "boundary",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "feeling",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "소모적 다툼의 정리"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "exchange",
+            "primaryMotif": null,
+            "relationAxis": "conflict",
+            "contextRule": null,
+            "refs": [
+              1,
+              2
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": []
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "확인할 조건을 나누어 살피기",
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘지금 다룰 마음’의 소드 기사 역방향에서 살필 관점은 ‘속도·충돌’입니다. ‘오늘의 실천’의 소드 5 역방향에서 살필 관점은 ‘충돌·마무리’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘지금 다룰 마음’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. ‘오늘의 실천’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "eligibility",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 3,
+                    "end": 7,
+                    "text": "조건에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 17
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘지금 다룰 마음’의 소드 기사 역방향에서 살필 관점은 ‘속도·충돌’입니다. ‘오늘의 실천’의 소드 5 역방향에서 살필 관점은 ‘충돌·마무리’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘지금 다룰 마음’의 소드 기사 역방향에서 살필 관점은 ‘속도·충돌’입니다. ‘오늘의 실천’의 소드 5 역방향에서 살필 관점은 ‘충돌·마무리’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "actionTask": "verify",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "boundary",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "feeling",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "소모적 다툼의 정리"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "exchange",
+            "primaryMotif": null,
+            "relationAxis": "conflict",
+            "contextRule": null,
+            "refs": [
+              1,
+              2
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘지금 다룰 마음’의 소드 기사 역방향에서 살필 관점은 ‘속도·충돌’입니다. ‘오늘의 실천’의 소드 5 역방향에서 살필 관점은 ‘충돌·마무리’입니다. 서로 맞지 않는 요구가 있다면 각각의 목적과 감당할 범위를 나누어 보세요. 같은 안내를 다르게 이해할 여지가 있는지 살피고, 해석이 다른 부분은 담당자에게 확인할 질문으로 남겨 보세요.",
+              "refs": [
+                1,
+                2
+              ],
+              "operation": "verify",
+              "relationAxis": "conflict",
+              "facets": [
+                {
+                  "index": 1,
+                  "id": "sw12",
+                  "reverse": true,
+                  "motifs": [
+                    "speed",
+                    "conflict"
+                  ]
+                },
+                {
+                  "index": 2,
+                  "id": "sw05",
+                  "reverse": true,
+                  "motifs": [
+                    "conflict",
+                    "closure"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "요건과 빠진 안내를 구분해 확인하기",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "work": {
+              "version": 90,
+              "operation": "verify",
+              "target": {
+                "kind": "requirements",
+                "subtype": "eligibility",
+                "head": "조건",
+                "evidence": {
+                  "start": 3,
+                  "end": 7,
+                  "text": "조건에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 12,
+                "end": 17,
+                "text": "확인할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 17
+              },
+              "reason": "predicate-and-object"
+            },
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "verify",
+      "question": "신청 조건에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "spread": "career5",
+      "cards": [
+        {
+          "id": "cu08",
+          "rev": false
+        },
+        {
+          "id": "sw12",
+          "rev": true
+        },
+        {
+          "id": "sw05",
+          "rev": true
+        },
+        {
+          "id": "wa11",
+          "rev": false
+        },
+        {
+          "id": "cu09",
+          "rev": true
+        }
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘실행의 첫 단계’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. ‘소모적 다툼의 정리’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘실행의 첫 단계’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘실행의 첫 단계’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요. ‘실행의 첫 단계’에 놓인 컵 9 역방향의 주제는 ‘겉과 속의 불일치’입니다.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 조건의 출처와 기준일을 표시하고, 결정을 바꿀 만큼 중요한 미확인 항목부터 대조해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "self",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "겉과 속의 불일치"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "evidence",
+            "primaryMotif": "ideals",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": []
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "확인할 조건을 나누어 살피기",
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘실행의 첫 단계’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요. ‘소모적 다툼의 정리’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "eligibility",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 3,
+                    "end": 7,
+                    "text": "조건에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 17
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘실행의 첫 단계’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘실행의 첫 단계’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "self",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "resource",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "겉과 속의 불일치"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "evidence",
+            "primaryMotif": "ideals",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              4
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘실행의 첫 단계’의 컵 9 역방향에서 살필 관점은 ‘이상·재검토’입니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 어떤 안내가 현재 적용되는지 출처와 기준일을 확인하고, 직접 확인한 요건과 아직 추측인 부분을 구분해 보세요.",
+              "refs": [
+                4
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 4,
+                  "id": "cu09",
+                  "reverse": true,
+                  "motifs": [
+                    "ideals",
+                    "review"
+                  ]
+                }
+              ],
+              "roleFrame": "",
+              "reused": false
+            }
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "요건과 빠진 안내를 구분해 확인하기",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "work": {
+              "version": 90,
+              "operation": "verify",
+              "target": {
+                "kind": "requirements",
+                "subtype": "eligibility",
+                "head": "조건",
+                "evidence": {
+                  "start": 3,
+                  "end": 7,
+                  "text": "조건에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 12,
+                "end": 17,
+                "text": "확인할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 17
+              },
+              "reason": "predicate-and-object"
+            },
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "verify",
+      "question": "신청 조건에서 무엇을 확인할까요?",
+      "operation": "verify",
+      "spread": "celtic",
+      "cards": [
+        {
+          "id": "cu08",
+          "rev": false
+        },
+        {
+          "id": "sw12",
+          "rev": true
+        },
+        {
+          "id": "sw05",
+          "rev": true
+        },
+        {
+          "id": "wa11",
+          "rev": false
+        },
+        {
+          "id": "cu09",
+          "rev": true
+        },
+        {
+          "id": "wa09",
+          "rev": false
+        },
+        {
+          "id": "ar06",
+          "rev": false
+        },
+        {
+          "id": "wa07",
+          "rev": false
+        },
+        {
+          "id": "cu04",
+          "rev": true
+        },
+        {
+          "id": "wa14",
+          "rev": true
+        }
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요. ‘가능한 귀결’에 놓인 완드 왕 역방향의 주제는 ‘독단적인 추진’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. ‘공격적인 속도’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 기다리는 동안 유지할 일과 기다림을 끝낼 기준을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 연인 정방향은 ‘가치에 맞는 선택’을 보여 줍니다. 내가 중요하게 여기는 것과 실제 선택의 기준이 이어지는지 살펴보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 완드 7 정방향은 ‘자기 입장의 수호’를 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 컵 4 역방향은 ‘닫힌 마음의 변화’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 완드 왕 역방향은 ‘독단적인 추진’을 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘가능한 귀결’의 완드 왕 역방향은 ‘독단적인 추진’을 보여 줍니다. 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요.",
+            "refs": [
+              9
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요. ‘가능한 귀결’에 놓인 완드 왕 역방향의 주제는 ‘독단적인 추진’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요. ‘가능한 귀결’에 놓인 완드 왕 역방향의 주제는 ‘독단적인 추진’입니다.",
+            "actionText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 반드시 지켜야 할 요건과 조정 가능한 조건을 나누고, 변경·중단 때 누가 무엇을 확인해야 하는지 살펴보세요.",
+            "actionTask": "verify",
+            "refs": [
+              9
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "now",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "root",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "past",
+            "meaning": "겉과 속의 불일치"
+          },
+          {
+            "index": 5,
+            "id": "wa09",
+            "reverse": false,
+            "role": "future",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 6,
+            "id": "ar06",
+            "reverse": false,
+            "role": "self",
+            "meaning": "가치에 맞는 선택"
+          },
+          {
+            "index": 7,
+            "id": "wa07",
+            "reverse": false,
+            "role": "environment",
+            "meaning": "자기 입장의 수호"
+          },
+          {
+            "index": 8,
+            "id": "cu04",
+            "reverse": true,
+            "role": "fear",
+            "meaning": "닫힌 마음의 변화"
+          },
+          {
+            "index": 9,
+            "id": "wa14",
+            "reverse": true,
+            "role": "outcome",
+            "meaning": "독단적인 추진"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "group": "boundary",
+            "primaryMotif": "rigid",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              9
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": []
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "확인할 조건을 나누어 살피기",
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘가능한 귀결’의 완드 왕 역방향에서 살필 관점은 ‘경직·분산’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 필수 요건과 예외·변경 가능한 조건을 구분하고, 어디까지가 현재 안내로 확인되는지 표시해 보세요.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 컵 8 정방향은 ‘익숙한 것과의 거리’를 보여 줍니다. 떠날 부분과 다음 단계에 가져갈 것을 나누어 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 소드 기사 역방향은 ‘공격적인 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. ‘공격적인 속도’와 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 소드 5 역방향은 ‘소모적 다툼의 정리’를 보여 줍니다. 서로 다른 의견과 관계를 해치는 방식의 다툼을 나누어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 완드 시종 정방향은 ‘탐험하는 초심’을 보여 줍니다. 완벽하게 준비된 뒤의 출발과 작게 시험해 보는 출발을 구분해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 컵 9 역방향은 ‘겉과 속의 불일치’를 보여 줍니다. 기대하는 모습과 현재 확인할 수 있는 모습을 나누어 보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 완드 9 정방향은 ‘막바지의 인내’를 보여 줍니다. 지금 할 수 있는 일과 시간이 더 필요한 부분이 있는지 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 연인 정방향은 ‘가치에 맞는 선택’을 보여 줍니다. 내가 중요하게 여기는 것과 실제 선택의 기준이 이어지는지 살펴보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 완드 7 정방향은 ‘자기 입장의 수호’를 보여 줍니다. 내가 맡을 몫과 맡지 않을 몫을 구별해 보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 컵 4 역방향은 ‘닫힌 마음의 변화’를 보여 줍니다. 서로 다른 안을 같은 기준으로 비교하고 있는지 확인해 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 완드 왕 역방향은 ‘독단적인 추진’을 보여 줍니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "신청 조건에서 무엇을 확인할까요",
+              "start": 0,
+              "end": 17,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "eligibility",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 3,
+                    "end": 7,
+                    "text": "조건에서"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 12,
+                  "end": 17,
+                  "text": "확인할까요"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 0,
+                  "end": 17
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘가능한 귀결’의 완드 왕 역방향에서 살필 관점은 ‘경직·분산’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 필수 요건과 예외·변경 가능한 조건을 구분하고, 어디까지가 현재 안내로 확인되는지 표시해 보세요.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.\n\n‘가능한 귀결’의 완드 왕 역방향에서 살필 관점은 ‘경직·분산’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 필수 요건과 예외·변경 가능한 조건을 구분하고, 어디까지가 현재 안내로 확인되는지 표시해 보세요.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "actionTask": "verify",
+            "refs": [
+              9
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "cu08",
+            "reverse": false,
+            "role": "now",
+            "meaning": "익숙한 것과의 거리"
+          },
+          {
+            "index": 1,
+            "id": "sw12",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "공격적인 속도"
+          },
+          {
+            "index": 2,
+            "id": "sw05",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "소모적 다툼의 정리"
+          },
+          {
+            "index": 3,
+            "id": "wa11",
+            "reverse": false,
+            "role": "root",
+            "meaning": "탐험하는 초심"
+          },
+          {
+            "index": 4,
+            "id": "cu09",
+            "reverse": true,
+            "role": "past",
+            "meaning": "겉과 속의 불일치"
+          },
+          {
+            "index": 5,
+            "id": "wa09",
+            "reverse": false,
+            "role": "future",
+            "meaning": "막바지의 인내"
+          },
+          {
+            "index": 6,
+            "id": "ar06",
+            "reverse": false,
+            "role": "self",
+            "meaning": "가치에 맞는 선택"
+          },
+          {
+            "index": 7,
+            "id": "wa07",
+            "reverse": false,
+            "role": "environment",
+            "meaning": "자기 입장의 수호"
+          },
+          {
+            "index": 8,
+            "id": "cu04",
+            "reverse": true,
+            "role": "fear",
+            "meaning": "닫힌 마음의 변화"
+          },
+          {
+            "index": 9,
+            "id": "wa14",
+            "reverse": true,
+            "role": "outcome",
+            "meaning": "독단적인 추진"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "applications": [
+          {
+            "request": 0,
+            "operation": "verify",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "group": "boundary",
+            "primaryMotif": "rigid",
+            "relationAxis": null,
+            "contextRule": null,
+            "refs": [
+              9
+            ],
+            "replaceGeneric": true,
+            "quantity": null,
+            "timeBinding": {
+              "value": null,
+              "reason": "no-available-time",
+              "candidates": []
+            },
+            "verification": [],
+            "directLens": {
+              "text": "‘가능한 귀결’의 완드 왕 역방향에서 살필 관점은 ‘경직·분산’입니다. 지키려는 원칙과 바꾸어도 되는 방식을 나누어 보세요. 현재 방향이 이어질 때 점검할 관점으로 읽으면, 필수 요건과 예외·변경 가능한 조건을 구분하고, 어디까지가 현재 안내로 확인되는지 표시해 보세요.",
+              "refs": [
+                9
+              ],
+              "operation": "verify",
+              "relationAxis": null,
+              "facets": [
+                {
+                  "index": 9,
+                  "id": "wa14",
+                  "reverse": true,
+                  "motifs": [
+                    "rigid",
+                    "dispersion"
+                  ]
+                }
+              ],
+              "roleFrame": "현재 방향이 이어질 때 점검할 관점으로 읽으면, ",
+              "reused": false
+            }
+          }
+        ],
+        "plans": [
+          {
+            "operation": "verify",
+            "headline": "요건과 빠진 안내를 구분해 확인하기",
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 대상 자격과 필요한 자료·제출 방식·일정 중 질문과 관련 있는 항목을 골라, 나에게 적용되는 내용과 아직 모르는 점을 구분해 보세요. 불명확한 요건은 확인할 출처와 질문을 따로 적어 두면 좋습니다.",
+            "source": "신청 조건에서 무엇을 확인할까요",
+            "scope": "ordinary-practical-support",
+            "target": "unspecified",
+            "object": {
+              "kind": "requirements",
+              "subtype": "eligibility",
+              "head": "조건",
+              "evidence": {
+                "start": 3,
+                "end": 7,
+                "text": "조건에서"
+              },
+              "carrier": null,
+              "owner": "unspecified",
+              "modality": "requested"
+            },
+            "work": {
+              "version": 90,
+              "operation": "verify",
+              "target": {
+                "kind": "requirements",
+                "subtype": "eligibility",
+                "head": "조건",
+                "evidence": {
+                  "start": 3,
+                  "end": 7,
+                  "text": "조건에서"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "predicate": {
+                "start": 12,
+                "end": 17,
+                "text": "확인할까요"
+              },
+              "requestedOutput": null,
+              "scope": {
+                "start": 0,
+                "end": 17
+              },
+              "reason": "predicate-and-object"
+            },
+            "participants": null,
+            "preparingQuestion": false,
+            "waitingReply": false,
+            "contentCheck": false,
+            "submitted": false,
+            "boundaryText": ""
+          }
+        ]
+      }
+    }
+  ],
+  "review": "Application conditions were narrowed to eligibility without explicit eligibility evidence. Time/cost and change/stop checks were lost. Restore broad conditions and reuse the established practical checklist; retain existing preservation checks."
+}

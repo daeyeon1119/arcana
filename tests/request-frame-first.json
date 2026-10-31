@@ -1,0 +1,239 @@
+{
+  "implementationCommit": "fc60c9efb9c49b6ba11ac64881afa53c78be7bba",
+  "note": "Authored only after committing candidate fc60c9e. First execution across 20 self-authored questions and eight fixed spreads, including domain, actor, polarity and compound-output controls. Not independent, blinded or expert evaluation. All first actual outputs and failures remain immutable; later use is regression.",
+  "cases": [
+    {
+      "id": "p01",
+      "question": "도서관 기획전의 설명문 초안을 만들었습니다. 문단 사이 연결을 어떤 순서로 점검하면 좋을까요?",
+      "expect": {
+        "operations": [
+          "inspect"
+        ],
+        "targetKinds": [
+          "document"
+        ]
+      }
+    },
+    {
+      "id": "p02",
+      "question": "도서관 기획전에서 관찰한 방문객 반응을 일지에 적었습니다. 기록이 빠진 구간을 어떤 기준으로 살펴볼까요?",
+      "expect": {
+        "operations": [
+          "inspect"
+        ],
+        "targetKinds": [
+          "observation"
+        ]
+      }
+    },
+    {
+      "id": "p03",
+      "question": "저는 조교에게 제 의견을 보냈어요. 제가 한 표현에서 돌아볼 부분은 무엇일까요?",
+      "expect": {
+        "state": {
+          "sent": true
+        },
+        "operations": [
+          "reflect"
+        ]
+      }
+    },
+    {
+      "id": "p04",
+      "question": "Mina가 조교에게 의견을 보냈어요. 저는 제 연습 노트를 어떻게 점검할까요?",
+      "expect": {
+        "state": {
+          "sent": null
+        },
+        "operations": [
+          "inspect"
+        ],
+        "targetKinds": [
+          "observation"
+        ]
+      }
+    },
+    {
+      "id": "p05",
+      "question": "아직 의견을 보내지 않았어요. 보내기 전 표현을 어떻게 다듬을까요?",
+      "expect": {
+        "state": {
+          "sent": false
+        },
+        "operations": [
+          "improve"
+        ]
+      }
+    },
+    {
+      "id": "p06",
+      "question": "의견을 보냈고 상대가 읽었다고 했어요. 이미 전한 표현을 어떻게 돌아볼까요?",
+      "expect": {
+        "state": {
+          "sent": true
+        },
+        "operations": [
+          "reflect"
+        ]
+      }
+    },
+    {
+      "id": "p07",
+      "question": "공연장 담당자가 보내 준 이용 안내는 받았지만 펼쳐보지 않았습니다. 신청 요건을 확인할 항목과 물어볼 질문을 각각 정리해 주세요.",
+      "expect": {
+        "state": {
+          "received": true,
+          "read": false
+        },
+        "operations": [
+          "verify",
+          "inquire"
+        ],
+        "minRequests": 2
+      }
+    },
+    {
+      "id": "p08",
+      "question": "공연장 담당자가 보내 준 이용 안내를 읽었습니다. 신청 요건을 확인할 항목과 물어볼 질문을 각각 정리해 주세요.",
+      "expect": {
+        "state": {
+          "received": true,
+          "read": true
+        },
+        "operations": [
+          "verify",
+          "inquire"
+        ],
+        "minRequests": 2
+      }
+    },
+    {
+      "id": "p09",
+      "question": "수질 관측 수치는 확보했지만 측정 시각이 빠졌습니다. 가지고 있는 근거와 추정은 어떻게 구별할까요?",
+      "expect": {
+        "medical": false,
+        "operations": [
+          "inspect"
+        ],
+        "targetKinds": [
+          "evidence"
+        ]
+      }
+    },
+    {
+      "id": "p10",
+      "question": "진료 때 말할 증상 설명이 너무 깁니다. 중요한 사실을 남기고 설명을 어떻게 줄일까요?",
+      "expect": {
+        "medical": true,
+        "operations": [
+          "improve"
+        ],
+        "targetKinds": [
+          "message"
+        ]
+      }
+    },
+    {
+      "id": "p11",
+      "question": "진료 안내를 읽었어요. 약의 양을 줄이면 괜찮을까요?",
+      "expect": {
+        "medical": true,
+        "notTargetKinds": [
+          "document"
+        ]
+      }
+    },
+    {
+      "id": "p12",
+      "question": "서로 정한 약속이 부담스럽습니다. 지킬 수 있는 범위를 어떻게 합의할까요?",
+      "expect": {
+        "operations": [
+          "coordinate"
+        ],
+        "targetKinds": [
+          "interaction"
+        ]
+      }
+    },
+    {
+      "id": "p13",
+      "question": "협업하는 사람은 없고 혼자 맡았습니다. 이번 작업의 몫을 어떻게 나눌까요?",
+      "expect": {
+        "operations": [
+          "coordinate"
+        ],
+        "participants": false
+      }
+    },
+    {
+      "id": "p14",
+      "question": "야외 낭독회와 실내 녹음 중 어떤 방식을 택할지 비교하는 방법이 궁금해요.",
+      "expect": {
+        "operations": [
+          "compare"
+        ]
+      }
+    },
+    {
+      "id": "p15",
+      "question": "대안의 내용은 정하지 않았습니다. 어느 쪽을 고르는 게 좋을까요?",
+      "expect": {
+        "needsContext": true
+      }
+    },
+    {
+      "id": "p16",
+      "question": "주말에 혼자 걷는 것과 친구를 만나 이야기하는 것의 차이를 어떻게 비교할까요?",
+      "expect": {
+        "needsContext": false,
+        "operations": [
+          "compare"
+        ]
+      }
+    },
+    {
+      "id": "p17",
+      "question": "그림을 계속 그리는 제 동기를 돌아보고 싶습니다.",
+      "expect": {
+        "needsContext": false,
+        "operations": [
+          "reflect"
+        ],
+        "targetKinds": [
+          "experience"
+        ]
+      }
+    },
+    {
+      "id": "p18",
+      "question": "안내서를 읽으며 제가 어떤 점을 어려워했는지 돌아보고 싶어요.",
+      "expect": {
+        "operations": [
+          "reflect"
+        ],
+        "minRequests": 1
+      }
+    },
+    {
+      "id": "p19",
+      "question": "전시 설명문 구조를 점검하고 관측 노트의 누락도 검토해 주세요. 각각 고칠 부분을 정하고 싶어요.",
+      "expect": {
+        "operations": [
+          "inspect"
+        ],
+        "minRequests": 2
+      }
+    },
+    {
+      "id": "p20",
+      "question": "기대했던 반응과 실제로 관찰한 일이 달라요. 둘을 구분해 돌아보고, 제가 느끼는 답답함을 돌볼 방법도 알려 주세요.",
+      "expect": {
+        "operations": [
+          "reflect",
+          "cope"
+        ],
+        "minRequests": 2
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "arcana-tarot",
-  "version": "89.0.0",
+  "version": "90.0.0",
   "private": true,
   "description": "Offline Korean tarot reflection app and reproducible reading checks",
   "scripts": {
@@ -11,7 +11,7 @@
     "test:mat": "node scripts/mat.cjs after",
     "test:portable": "node scripts/portable.cjs",
     "verify:public": "node scripts/public-check.cjs",
-    "test:editorial": "node scripts/editorial.cjs v89",
+    "test:editorial": "node scripts/editorial.cjs v90",
     "test:question-model": "node tests/question-model.cjs",
     "test:task-policy": "node tests/task-policy.cjs",
     "test:reading-evidence": "node tests/reading-evidence.cjs",
@@ -40,11 +40,11 @@
     "report:blind-review": "python scripts/local_blind_review.py",
     "test:blind-review": "npm run report:blind-review && node scripts/local-blind-check.cjs",
     "test:question-regression": "node scripts/question-unseen.cjs regression",
-    "test:synthesis": "node scripts/synthesis.cjs v89",
+    "test:synthesis": "node scripts/synthesis.cjs v90",
     "diagnose:generalization": "node scripts/context.cjs",
     "report:synthesis": "python scripts/synthesis_report.py",
     "report:questions": "python scripts/question_report.py",
-    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-text && npm run test:korean && npm run test:lexical && npm run test:lexical-regression && npm run test:language-cold && npm run test:event-state && npm run test:event-reading && npm run test:event-regression && npm run test:event-ui && npm run test:question-model && npm run test:task-policy && npm run test:reading-evidence && npm run test:verification-facts && npm run test:reading-bridge && npm run test:grounding && npm run test:verification-reading && npm run test:verification-ui && npm run test:verification-regression && npm run test:lens && npm run test:lens-ui && npm run test:lens-regression && npm run test:alignment && npm run test:alignment-ui && npm run test:task-reading && npm run test:stress && npm run test:ui && npm run test:grounding-ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:device && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression",
+    "test": "npm run test:local-contract && npm run test:local-planner && npm run test:local-separated && npm run test:local-transport && npm run test:local-config && npm run test:local-report && npm run test:blind-review && npm run test:question-text && npm run test:korean && npm run test:request-frame-unit && npm run test:request-frame && npm run test:request-frame-regression && npm run test:request-frame-ui && npm run test:lexical && npm run test:lexical-regression && npm run test:language-cold && npm run test:event-state && npm run test:event-reading && npm run test:event-regression && npm run test:event-ui && npm run test:question-model && npm run test:task-policy && npm run test:reading-evidence && npm run test:verification-facts && npm run test:reading-bridge && npm run test:grounding && npm run test:verification-reading && npm run test:verification-ui && npm run test:verification-regression && npm run test:lens && npm run test:lens-ui && npm run test:lens-regression && npm run test:alignment && npm run test:alignment-ui && npm run test:task-reading && npm run test:stress && npm run test:ui && npm run test:grounding-ui && npm run test:images && npm run test:mat && npm run test:portable && npm run test:device && npm run test:editorial && npm run test:synthesis && npm run diagnose:generalization && npm run test:question-regression",
     "test:verification-ui": "node scripts/verification-ui.cjs",
     "test:verification-regression": "node scripts/verification-reading.cjs regression",
     "test:lens": "node scripts/lens-reading.cjs development",
@@ -59,7 +59,11 @@
     "test:korean": "node tests/korean-morphology.cjs",
     "test:lexical": "node scripts/lexical-reading.cjs development",
     "test:language-cold": "node scripts/language-cold-check.cjs",
-    "test:lexical-regression": "node scripts/lexical-reading.cjs regression"
+    "test:lexical-regression": "node scripts/lexical-reading.cjs regression",
+    "test:request-frame": "node scripts/request-frame-reading.cjs development",
+    "test:request-frame-unit": "node tests/request-frame.cjs",
+    "test:request-frame-ui": "node scripts/request-frame-ui.cjs",
+    "test:request-frame-regression": "node scripts/request-frame-reading.cjs regression"
   },
   "devDependencies": {
     "playwright": "1.62.1"

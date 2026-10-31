@@ -1,0 +1,2955 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "c2f24a83b8ab8b4decc1ca47e801afb155262592e04d8ad6375db0f7339968c9",
+    "appBytes": 33178953,
+    "webRelease": "d0ae3c60e6ca30e8e921aef1",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "summary": {
+    "phase": "development",
+    "appSHA256": "c2f24a83b8ab8b4decc1ca47e801afb155262592e04d8ad6375db0f7339968c9",
+    "baselineSHA256": "734c5b56f427b9152b7a31180debf25e541bf23555eeeb23f49b4192189e5f9f",
+    "fixtureSHA256": "8ef7d9268ecac48ca0316ae45d3f2dfe98617ea1305b7ba061b75330b0293737",
+    "collectorSHA256": "22d5bbe22a34ed65f566b7d44910ca39730b8243c3de93f5f733a9c100fcc9bd",
+    "seed": 840031,
+    "note": "12 known v83 questions, used as development material. Not an independent/unseen quality evaluation. Mechanical invariants are not a semantic or professional quality score.",
+    "readingsSHA256": "82c08eaf860e0c5e3a7efa3a607cf343e24316670e1ecaab0b963f820e63ed1f",
+    "compressedSHA256": "f0b78169411fd6f5613eb65e5a7f32fda8bd4a793cb0734eb609fa5f0a5efc8b",
+    "questions": 12,
+    "readingsPerVersion": 96,
+    "errors": [],
+    "failures": [
+      {
+        "id": "n05",
+        "spread": "one",
+        "error": "previous practical steps were discarded"
+      },
+      {
+        "id": "n05",
+        "spread": "three",
+        "error": "previous practical steps were discarded"
+      },
+      {
+        "id": "n05",
+        "spread": "five",
+        "error": "previous practical steps were discarded"
+      },
+      {
+        "id": "n05",
+        "spread": "relationship5",
+        "error": "previous practical steps were discarded"
+      },
+      {
+        "id": "n05",
+        "spread": "choice5",
+        "error": "previous practical steps were discarded"
+      },
+      {
+        "id": "n05",
+        "spread": "waiting3",
+        "error": "previous practical steps were discarded"
+      },
+      {
+        "id": "n05",
+        "spread": "career5",
+        "error": "previous practical steps were discarded"
+      },
+      {
+        "id": "n05",
+        "spread": "celtic",
+        "error": "previous practical steps were discarded"
+      }
+    ],
+    "mechanicalChecksPassed": 88,
+    "qualityReviewed": 0
+  },
+  "actual": [
+    {
+      "id": "n05",
+      "group": "loan-object",
+      "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "one",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "핵심 메시지 · 소드 3 역방향"
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘핵심 메시지’에 놓인 소드 3 역방향의 주제는 ‘상처에서의 회복’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘핵심 메시지’에 놓인 소드 3 역방향의 주제는 ‘상처에서의 회복’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘핵심 메시지’에 놓인 소드 3 역방향의 주제는 ‘상처에서의 회복’입니다.",
+            "actionText": "대출 잔액·금리·상환일을 공식 내역으로 확인하고, 월 상환액을 감당할 수 있는지 계산해 보세요.",
+            "actionTask": null,
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "message",
+            "meaning": "상처에서의 회복"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": null
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘핵심 메시지’에 놓인 소드 3 역방향의 주제는 ‘상처에서의 회복’입니다.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심 메시지",
+            "body": "‘핵심 메시지’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘핵심 메시지’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "조건을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 47,
+                  "end": 51,
+                  "text": "확인하면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘핵심 메시지’에 놓인 소드 3 역방향의 주제는 ‘상처에서의 회복’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘핵심 메시지’에 놓인 소드 3 역방향의 주제는 ‘상처에서의 회복’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘핵심 메시지’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              0
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "message",
+            "meaning": "상처에서의 회복"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": {
+          "version": 84,
+          "questionEvidence": {
+            "version": 86,
+            "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+            "options": [],
+            "optionDefinitions": [],
+            "quantities": [],
+            "schedules": [],
+            "verification": [],
+            "verificationUnbound": [],
+            "verificationOtherModalities": []
+          },
+          "applications": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "object": {
+                "kind": "requirements",
+                "subtype": "conditions",
+                "head": "조건",
+                "evidence": {
+                  "start": 43,
+                  "end": 46,
+                  "text": "조건을"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "group": "care",
+              "primaryMotif": "grief",
+              "relationAxis": null,
+              "contextRule": null,
+              "refs": [
+                0
+              ],
+              "replaceGeneric": true,
+              "quantity": null,
+              "timeBinding": {
+                "value": null,
+                "reason": "no-available-time",
+                "candidates": []
+              },
+              "verification": [],
+              "directLens": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "n05",
+      "group": "loan-object",
+      "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "three",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        },
+        {
+          "id": "ar01",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "과거 · 소드 3 역방향",
+        "현재 · 마법사 역방향",
+        "미래 · 펜타클 왕 역방향"
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘미래’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘과거’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘현재’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다.",
+            "refs": [
+              0,
+              1
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘미래’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘미래’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+            "actionText": "대출 잔액·금리·상환일을 공식 내역으로 확인하고, 월 상환액을 감당할 수 있는지 계산해 보세요.",
+            "actionTask": null,
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "past",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "now",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "future",
+            "meaning": "성과에 대한 집착"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": null
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘미래’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요. ‘미래’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘미래’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "과거",
+            "body": "‘과거’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현재",
+            "body": "‘현재’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "미래",
+            "body": "‘미래’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘과거’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘현재’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다.",
+            "refs": [
+              0,
+              1
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘미래’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "조건을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 47,
+                  "end": 51,
+                  "text": "확인하면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘미래’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요. ‘미래’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘미래’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요. ‘미래’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘미래’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "past",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "now",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "future",
+            "meaning": "성과에 대한 집착"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": {
+          "version": 84,
+          "questionEvidence": {
+            "version": 86,
+            "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+            "options": [],
+            "optionDefinitions": [],
+            "quantities": [],
+            "schedules": [],
+            "verification": [],
+            "verificationUnbound": [],
+            "verificationOtherModalities": []
+          },
+          "applications": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "object": {
+                "kind": "requirements",
+                "subtype": "conditions",
+                "head": "조건",
+                "evidence": {
+                  "start": 43,
+                  "end": 46,
+                  "text": "조건을"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "group": "transition",
+              "primaryMotif": "attachment",
+              "relationAxis": null,
+              "contextRule": null,
+              "refs": [
+                2
+              ],
+              "replaceGeneric": true,
+              "quantity": null,
+              "timeBinding": {
+                "value": null,
+                "reason": "no-available-time",
+                "candidates": []
+              },
+              "verification": [],
+              "directLens": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "n05",
+      "group": "loan-object",
+      "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "five",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        },
+        {
+          "id": "ar01",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        },
+        {
+          "id": "ar07",
+          "rev": true
+        },
+        {
+          "id": "cu05",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "핵심 · 소드 3 역방향",
+        "근원 · 마법사 역방향",
+        "장애물 · 펜타클 왕 역방향",
+        "자원 · 전차 역방향",
+        "조언 · 컵 5 정방향"
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘조언’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. ‘성과에 대한 집착’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘핵심’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘장애물’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘조언’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘조언’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "actionText": "대출 잔액·금리·상환일을 공식 내역으로 확인하고, 월 상환액을 감당할 수 있는지 계산해 보세요.",
+            "actionTask": null,
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "now",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "root",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "resource",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "상실 이후의 시선"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": null
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘조언’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘조언’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘조언’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "핵심",
+            "body": "‘핵심’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "근원",
+            "body": "‘근원’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "장애물",
+            "body": "‘장애물’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. ‘성과에 대한 집착’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "자원",
+            "body": "‘자원’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "조언",
+            "body": "‘조언’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘핵심’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘장애물’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘조언’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "조건을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 47,
+                  "end": 51,
+                  "text": "확인하면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘조언’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘조언’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘조언’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘조언’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘조언’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "now",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "root",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "resource",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "상실 이후의 시선"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": {
+          "version": 84,
+          "questionEvidence": {
+            "version": 86,
+            "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+            "options": [],
+            "optionDefinitions": [],
+            "quantities": [],
+            "schedules": [],
+            "verification": [],
+            "verificationUnbound": [],
+            "verificationOtherModalities": []
+          },
+          "applications": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "object": {
+                "kind": "requirements",
+                "subtype": "conditions",
+                "head": "조건",
+                "evidence": {
+                  "start": 43,
+                  "end": 46,
+                  "text": "조건을"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "group": "care",
+              "primaryMotif": "grief",
+              "relationAxis": null,
+              "contextRule": null,
+              "refs": [
+                4
+              ],
+              "replaceGeneric": true,
+              "quantity": null,
+              "timeBinding": {
+                "value": null,
+                "reason": "no-available-time",
+                "candidates": []
+              },
+              "verification": [],
+              "directLens": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "n05",
+      "group": "loan-object",
+      "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "relationship5",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        },
+        {
+          "id": "ar01",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        },
+        {
+          "id": "ar07",
+          "rev": true
+        },
+        {
+          "id": "cu05",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "지금의 거리감 · 소드 3 역방향",
+        "나의 기대 · 마법사 역방향",
+        "확인해야 할 차이 · 펜타클 왕 역방향",
+        "다시 연결할 자원 · 전차 역방향",
+        "내가 취할 행동 · 컵 5 정방향"
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘내가 취할 행동’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. ‘성과에 대한 집착’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘지금의 거리감’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘확인해야 할 차이’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘내가 취할 행동’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘내가 취할 행동’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "actionText": "대출 잔액·금리·상환일을 공식 내역으로 확인하고, 월 상환액을 감당할 수 있는지 계산해 보세요.",
+            "actionTask": null,
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "now",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "resource",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "상실 이후의 시선"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": null
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘내가 취할 행동’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금의 거리감",
+            "body": "‘지금의 거리감’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 기대",
+            "body": "‘나의 기대’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "확인해야 할 차이",
+            "body": "‘확인해야 할 차이’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. ‘성과에 대한 집착’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다시 연결할 자원",
+            "body": "‘다시 연결할 자원’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "내가 취할 행동",
+            "body": "‘내가 취할 행동’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘지금의 거리감’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘확인해야 할 차이’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘내가 취할 행동’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "조건을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 47,
+                  "end": 51,
+                  "text": "확인하면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘내가 취할 행동’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘내가 취할 행동’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘내가 취할 행동’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "now",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "resource",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "상실 이후의 시선"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": {
+          "version": 84,
+          "questionEvidence": {
+            "version": 86,
+            "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+            "options": [],
+            "optionDefinitions": [],
+            "quantities": [],
+            "schedules": [],
+            "verification": [],
+            "verificationUnbound": [],
+            "verificationOtherModalities": []
+          },
+          "applications": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "object": {
+                "kind": "requirements",
+                "subtype": "conditions",
+                "head": "조건",
+                "evidence": {
+                  "start": 43,
+                  "end": 46,
+                  "text": "조건을"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "group": "care",
+              "primaryMotif": "grief",
+              "relationAxis": null,
+              "contextRule": null,
+              "refs": [
+                4
+              ],
+              "replaceGeneric": true,
+              "quantity": null,
+              "timeBinding": {
+                "value": null,
+                "reason": "no-available-time",
+                "candidates": []
+              },
+              "verification": [],
+              "directLens": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "n05",
+      "group": "loan-object",
+      "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "choice5",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        },
+        {
+          "id": "ar01",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        },
+        {
+          "id": "ar07",
+          "rev": true
+        },
+        {
+          "id": "cu05",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "선택의 핵심 · 소드 3 역방향",
+        "A의 성격 · 마법사 역방향",
+        "B의 성격 · 펜타클 왕 역방향",
+        "선택의 기준 · 전차 역방향",
+        "다음 한 걸음 · 컵 5 정방향"
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘다음 한 걸음’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격",
+            "body": "‘A의 성격’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격",
+            "body": "‘B의 성격’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "두 선택을 함께 읽으면",
+            "body": "‘A의 성격’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. ‘B의 성격’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. A를 살필 때는 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요. B를 살필 때는 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. 질문에 두 안을 적었다면 A와 B를 적은 순서로 읽어 보세요. 두 경로에서 실제로 감당할 조건을 같은 기준으로 비교해 보세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘다음 한 걸음’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘다음 한 걸음’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "actionText": "대출 잔액·금리·상환일을 공식 내역으로 확인하고, 월 상환액을 감당할 수 있는지 계산해 보세요.",
+            "actionTask": null,
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "message",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "optionA",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "optionB",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "criteria",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "상실 이후의 시선"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": null
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘다음 한 걸음’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "선택의 핵심",
+            "body": "‘선택의 핵심’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "A의 성격 (선택지 미지정)",
+            "body": "‘A의 성격’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "B의 성격 (선택지 미지정)",
+            "body": "‘B의 성격’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 특정 선택지의 결과나 조건으로 연결하지 않고 카드 자체의 주제를 살펴봅니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택의 기준",
+            "body": "‘선택의 기준’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "다음 한 걸음",
+            "body": "‘다음 한 걸음’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "선택 배열을 읽는 범위",
+            "body": "현재 답변의 초점에 따라 A/B 자리의 카드를 특정 선택지에 배정하지 않았습니다. 선택지별 비교가 필요하면 각 안의 내용을 적고, ‘답변의 초점’에서 ‘선택지 비교’를 골라 주세요.",
+            "refs": [
+              1,
+              2
+            ],
+            "kind": "contextual"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘다음 한 걸음’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "조건을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 47,
+                  "end": 51,
+                  "text": "확인하면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘다음 한 걸음’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘다음 한 걸음’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘다음 한 걸음’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "message",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "optionA",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "optionB",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "criteria",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "상실 이후의 시선"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": {
+          "version": 84,
+          "questionEvidence": {
+            "version": 86,
+            "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+            "options": [],
+            "optionDefinitions": [],
+            "quantities": [],
+            "schedules": [],
+            "verification": [],
+            "verificationUnbound": [],
+            "verificationOtherModalities": []
+          },
+          "applications": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "object": {
+                "kind": "requirements",
+                "subtype": "conditions",
+                "head": "조건",
+                "evidence": {
+                  "start": 43,
+                  "end": 46,
+                  "text": "조건을"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "group": "care",
+              "primaryMotif": "grief",
+              "relationAxis": null,
+              "contextRule": null,
+              "refs": [
+                4
+              ],
+              "replaceGeneric": true,
+              "quantity": null,
+              "timeBinding": {
+                "value": null,
+                "reason": "no-available-time",
+                "candidates": []
+              },
+              "verification": [],
+              "directLens": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "n05",
+      "group": "loan-object",
+      "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "waiting3",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        },
+        {
+          "id": "ar01",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "바꿀 수 없는 것 · 소드 3 역방향",
+        "지금 다룰 마음 · 마법사 역방향",
+        "오늘의 실천 · 펜타클 왕 역방향"
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘오늘의 실천’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘바꿀 수 없는 것’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘오늘의 실천’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 이미 진행된 외부 절차와 지금 조절할 수 있는 태도를 구분해 읽습니다.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘오늘의 실천’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘오늘의 실천’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+            "actionText": "대출 잔액·금리·상환일을 공식 내역으로 확인하고, 월 상환액을 감당할 수 있는지 계산해 보세요.",
+            "actionTask": null,
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "boundary",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "feeling",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "성과에 대한 집착"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": null
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘오늘의 실천’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요. ‘오늘의 실천’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘오늘의 실천’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "바꿀 수 없는 것",
+            "body": "‘바꿀 수 없는 것’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 이미 진행된 외부 절차를 내 행동으로 되돌릴 수 있다고 읽지는 않습니다.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지금 다룰 마음",
+            "body": "‘지금 다룰 마음’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "오늘의 실천",
+            "body": "‘오늘의 실천’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘바꿀 수 없는 것’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘오늘의 실천’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 이미 진행된 외부 절차와 지금 조절할 수 있는 태도를 구분해 읽습니다.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘오늘의 실천’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "조건을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 47,
+                  "end": 51,
+                  "text": "확인하면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘오늘의 실천’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요. ‘오늘의 실천’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘오늘의 실천’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요. ‘오늘의 실천’에 놓인 펜타클 왕 역방향의 주제는 ‘성과에 대한 집착’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘오늘의 실천’ 카드의 관점을 더하면, 현재 단계에 적용되는 요건과 다음 단계에서 달라질 수 있는 조건을 나누고, 이전 안내가 그대로 유효한지 확인해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              2
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "boundary",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "feeling",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "advice",
+            "meaning": "성과에 대한 집착"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": {
+          "version": 84,
+          "questionEvidence": {
+            "version": 86,
+            "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+            "options": [],
+            "optionDefinitions": [],
+            "quantities": [],
+            "schedules": [],
+            "verification": [],
+            "verificationUnbound": [],
+            "verificationOtherModalities": []
+          },
+          "applications": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "object": {
+                "kind": "requirements",
+                "subtype": "conditions",
+                "head": "조건",
+                "evidence": {
+                  "start": 43,
+                  "end": 46,
+                  "text": "조건을"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "group": "transition",
+              "primaryMotif": "attachment",
+              "relationAxis": null,
+              "contextRule": null,
+              "refs": [
+                2
+              ],
+              "replaceGeneric": true,
+              "quantity": null,
+              "timeBinding": {
+                "value": null,
+                "reason": "no-available-time",
+                "candidates": []
+              },
+              "verification": [],
+              "directLens": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "n05",
+      "group": "loan-object",
+      "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "career5",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        },
+        {
+          "id": "ar01",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        },
+        {
+          "id": "ar07",
+          "rev": true
+        },
+        {
+          "id": "cu05",
+          "rev": false
+        }
+      ],
+      "cardLabels": [
+        "지금 가진 역량 · 소드 3 역방향",
+        "나의 동기 · 마법사 역방향",
+        "현실의 제약 · 펜타클 왕 역방향",
+        "도움이 될 자원 · 전차 역방향",
+        "실행의 첫 단계 · 컵 5 정방향"
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘실행의 첫 단계’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. ‘성과에 대한 집착’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘지금 가진 역량’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘현실의 제약’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘실행의 첫 단계’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘실행의 첫 단계’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "actionText": "대출 잔액·금리·상환일을 공식 내역으로 확인하고, 월 상환액을 감당할 수 있는지 계산해 보세요.",
+            "actionTask": null,
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "self",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "resource",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "상실 이후의 시선"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": null
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘실행의 첫 단계’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "지금 가진 역량",
+            "body": "‘지금 가진 역량’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나의 동기",
+            "body": "‘나의 동기’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "현실의 제약",
+            "body": "‘현실의 제약’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요. ‘성과에 대한 집착’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "도움이 될 자원",
+            "body": "‘도움이 될 자원’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요. 이 관점을 활용할 사람·경험·조건이 실제로 있는지 살펴보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "실행의 첫 단계",
+            "body": "‘실행의 첫 단계’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘지금 가진 역량’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘현실의 제약’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              2
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘실행의 첫 단계’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "refs": [
+              4
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "조건을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 47,
+                  "end": 51,
+                  "text": "확인하면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘실행의 첫 단계’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘실행의 첫 단계’에 놓인 컵 5의 주제는 ‘상실 이후의 시선’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘실행의 첫 단계’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              4
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "self",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "resource",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "advice",
+            "meaning": "상실 이후의 시선"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": {
+          "version": 84,
+          "questionEvidence": {
+            "version": 86,
+            "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+            "options": [],
+            "optionDefinitions": [],
+            "quantities": [],
+            "schedules": [],
+            "verification": [],
+            "verificationUnbound": [],
+            "verificationOtherModalities": []
+          },
+          "applications": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "object": {
+                "kind": "requirements",
+                "subtype": "conditions",
+                "head": "조건",
+                "evidence": {
+                  "start": 43,
+                  "end": 46,
+                  "text": "조건을"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "group": "care",
+              "primaryMotif": "grief",
+              "relationAxis": null,
+              "contextRule": null,
+              "refs": [
+                4
+              ],
+              "replaceGeneric": true,
+              "quantity": null,
+              "timeBinding": {
+                "value": null,
+                "reason": "no-available-time",
+                "candidates": []
+              },
+              "verification": [],
+              "directLens": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "n05",
+      "group": "loan-object",
+      "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+      "operation": "verify",
+      "specialized": true,
+      "spread": "celtic",
+      "cards": [
+        {
+          "id": "sw03",
+          "rev": true
+        },
+        {
+          "id": "ar01",
+          "rev": true
+        },
+        {
+          "id": "pe14",
+          "rev": true
+        },
+        {
+          "id": "ar07",
+          "rev": true
+        },
+        {
+          "id": "cu05",
+          "rev": false
+        },
+        {
+          "id": "wa13",
+          "rev": false
+        },
+        {
+          "id": "sw04",
+          "rev": false
+        },
+        {
+          "id": "pe13",
+          "rev": true
+        },
+        {
+          "id": "ar19",
+          "rev": false
+        },
+        {
+          "id": "sw10",
+          "rev": true
+        }
+      ],
+      "cardLabels": [
+        "현재 상황 · 소드 3 역방향",
+        "가로지르는 도전 · 마법사 역방향",
+        "의식적인 목표 · 펜타클 왕 역방향",
+        "무의식·기반 · 전차 역방향",
+        "지나온 영향 · 컵 5 정방향",
+        "가까운 흐름 · 완드 여왕 정방향",
+        "나 자신의 위치 · 소드 4 정방향",
+        "주변 환경 · 펜타클 여왕 역방향",
+        "희망과 두려움 · 태양 정방향",
+        "가능한 귀결 · 소드 10 역방향"
+      ],
+      "before": {
+        "headline": "확인할 조건을 나누어 살피기",
+        "direct": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘가능한 귀결’에 놓인 소드 10 역방향의 주제는 ‘끝나지 않는 고통’입니다.",
+        "actions": [
+          "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요. ‘재능의 분산’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 완드 여왕 정방향은 ‘자신감 있는 표현’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 태양 정방향은 ‘드러나는 명료함’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘현재 상황’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘가로지르는 도전’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              1
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "나의 태도와 다음 방향",
+            "body": "‘나 자신의 위치’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. ‘가능한 귀결’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+            "refs": [
+              6,
+              9
+            ],
+            "kind": "relational"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56
+            },
+            "text": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘가능한 귀결’에 놓인 소드 10 역방향의 주제는 ‘끝나지 않는 고통’입니다.",
+            "directText": "확인하려는 조건을 필수 요건, 필요한 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 확인한 근거와 아직 모르는 항목을 따로 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 보세요. ‘가능한 귀결’에 놓인 소드 10 역방향의 주제는 ‘끝나지 않는 고통’입니다.",
+            "actionText": "대출 잔액·금리·상환일을 공식 내역으로 확인하고, 월 상환액을 감당할 수 있는지 계산해 보세요.",
+            "actionTask": null,
+            "refs": [
+              9
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "now",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "root",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "past",
+            "meaning": "상실 이후의 시선"
+          },
+          {
+            "index": 5,
+            "id": "wa13",
+            "reverse": false,
+            "role": "future",
+            "meaning": "자신감 있는 표현"
+          },
+          {
+            "index": 6,
+            "id": "sw04",
+            "reverse": false,
+            "role": "self",
+            "meaning": "필요한 휴식"
+          },
+          {
+            "index": 7,
+            "id": "pe13",
+            "reverse": true,
+            "role": "environment",
+            "meaning": "돌봄으로 인한 소진"
+          },
+          {
+            "index": 8,
+            "id": "ar19",
+            "reverse": false,
+            "role": "fear",
+            "meaning": "드러나는 명료함"
+          },
+          {
+            "index": 9,
+            "id": "sw10",
+            "reverse": true,
+            "role": "outcome",
+            "meaning": "끝나지 않는 고통"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": null
+      },
+      "after": {
+        "headline": "요건과 빠진 안내를 구분해 확인하기",
+        "direct": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘가능한 귀결’에 놓인 소드 10 역방향의 주제는 ‘끝나지 않는 고통’입니다.",
+        "actions": [
+          "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요."
+        ],
+        "sections": [
+          {
+            "title": "현재 상황",
+            "body": "‘현재 상황’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요.",
+            "refs": [
+              0
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가로지르는 도전",
+            "body": "‘가로지르는 도전’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 여러 가능성 가운데 이번 단계에서 집중할 한 가지를 골라 보세요. ‘재능의 분산’과 관련해 실제로 막히는 부분이 있는지 확인해 보세요.",
+            "refs": [
+              1
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "의식적인 목표",
+            "body": "‘의식적인 목표’의 펜타클 왕 역방향은 ‘성과에 대한 집착’을 보여 줍니다. 계속 유지하는 이유와 달라진 현실을 따로 적어 보세요.",
+            "refs": [
+              2
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "무의식·기반",
+            "body": "‘무의식·기반’의 전차 역방향은 ‘방향을 잃은 속도’를 보여 줍니다. 빨리 움직이는 것과 방향에 맞게 움직이는 것을 구별해 보세요.",
+            "refs": [
+              3
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "지나온 영향",
+            "body": "‘지나온 영향’의 컵 5 정방향은 ‘상실 이후의 시선’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 이미 겪은 일을 바꾸기보다 현재에 남아 있는 영향을 돌아보는 자리입니다.",
+            "refs": [
+              4
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가까운 흐름",
+            "body": "‘가까운 흐름’의 완드 여왕 정방향은 ‘자신감 있는 표현’을 보여 줍니다. 내가 느끼는 것과 실제로 전달한 말 사이의 차이를 돌아보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              5
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "나 자신의 위치",
+            "body": "‘나 자신의 위치’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. 잠시 멈출 이유와 다시 움직일 기준을 함께 정해 보세요.",
+            "refs": [
+              6
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "주변 환경",
+            "body": "‘주변 환경’의 펜타클 여왕 역방향은 ‘돌봄으로 인한 소진’을 보여 줍니다. 관심을 주는 일에 나 자신의 필요도 포함되어 있는지 돌아보세요. 주변 사람의 마음을 추측하기보다 실제 말과 행동에서 확인할 수 있는 부분을 살펴보세요.",
+            "refs": [
+              7
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "희망과 두려움",
+            "body": "‘희망과 두려움’의 태양 정방향은 ‘드러나는 명료함’을 보여 줍니다. 확인한 사실과 그 사실에 덧붙인 해석을 구별해 보세요.",
+            "refs": [
+              8
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "가능한 귀결",
+            "body": "‘가능한 귀결’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 잃은 것을 인정할 시간과 아직 남아 있는 것을 함께 살펴보세요. 현재의 방향이 이어질 때 점검할 관점이며, 결과가 확정됐다는 뜻은 아닙니다.",
+            "refs": [
+              9
+            ],
+            "kind": "card"
+          },
+          {
+            "title": "카드가 만드는 중심 흐름",
+            "body": "‘현재 상황’의 소드 3 역방향은 ‘상처에서의 회복’을 보여 줍니다. ‘가로지르는 도전’의 마법사 역방향은 ‘재능의 분산’을 보여 줍니다. 도움과 회복의 여지를 활용하면서 오래 붙잡고 있는 부분을 살펴보는 조합입니다. 당장 끝내야 한다는 뜻보다, 다시 움직일 수 있는 작은 여지를 찾는 관점입니다. 제약의 자리는 그 문제가 이미 있다고 확정하기보다, 실제로 막히는 부분이 있는지 확인하는 질문으로 읽어 보세요.",
+            "refs": [
+              0,
+              1
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "나의 태도와 다음 방향",
+            "body": "‘나 자신의 위치’의 소드 4 정방향은 ‘필요한 휴식’을 보여 줍니다. ‘가능한 귀결’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 어려움을 바로 없애려는 시선에서 회복에 필요한 시간과 돌봄을 살피는 쪽으로 이어집니다. 힘든 경험이 저절로 좋은 결과로 바뀐다고 해석하지는 않습니다. 이후의 카드는 고정된 결과보다 현재의 방향에서 이어서 점검할 관점으로 읽습니다.",
+            "refs": [
+              6,
+              9
+            ],
+            "kind": "relational"
+          },
+          {
+            "title": "질문에 적용할 관점",
+            "body": "‘가능한 귀결’의 소드 10 역방향은 ‘끝나지 않는 고통’을 보여 줍니다. 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "refs": [
+              9
+            ],
+            "kind": "contextual"
+          }
+        ],
+        "requests": [
+          {
+            "request": {
+              "kind": "action",
+              "goal": "action",
+              "text": "읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요",
+              "start": 24,
+              "end": 56,
+              "work": {
+                "version": 90,
+                "operation": "verify",
+                "target": {
+                  "kind": "requirements",
+                  "subtype": "conditions",
+                  "head": "조건",
+                  "evidence": {
+                    "start": 43,
+                    "end": 46,
+                    "text": "조건을"
+                  },
+                  "carrier": null,
+                  "owner": "unspecified",
+                  "modality": "requested"
+                },
+                "predicate": {
+                  "start": 47,
+                  "end": 51,
+                  "text": "확인하면"
+                },
+                "requestedOutput": null,
+                "scope": {
+                  "start": 24,
+                  "end": 56
+                },
+                "reason": "predicate-and-object"
+              }
+            },
+            "text": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘가능한 귀결’에 놓인 소드 10 역방향의 주제는 ‘끝나지 않는 고통’입니다.",
+            "directText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요. ‘가능한 귀결’에 놓인 소드 10 역방향의 주제는 ‘끝나지 않는 고통’입니다.",
+            "actionText": "공식 안내에서 이번에 적용되는 요건을 살펴보세요. 관련 조건을 이용하거나 실행할 범위, 일정과 시간·비용, 변경하거나 중단할 때의 조건으로 나누어 보세요. 이미 확인한 내용과 아직 모르는 항목을 표시하고, 모르는 부분은 누구에게 어떤 질문으로 확인할지 적어 두면 좋습니다.\n\n‘가능한 귀결’ 카드의 관점을 더하면, 모든 불확실성을 한꺼번에 해결하려 하기보다 중요한 질문부터 정하고, 확인할 수 있는 경로와 다음 시점을 마련해 보세요.",
+            "actionTask": "verify",
+            "refs": [
+              9
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "index": 0,
+            "id": "sw03",
+            "reverse": true,
+            "role": "now",
+            "meaning": "상처에서의 회복"
+          },
+          {
+            "index": 1,
+            "id": "ar01",
+            "reverse": true,
+            "role": "obstacle",
+            "meaning": "재능의 분산"
+          },
+          {
+            "index": 2,
+            "id": "pe14",
+            "reverse": true,
+            "role": "goal",
+            "meaning": "성과에 대한 집착"
+          },
+          {
+            "index": 3,
+            "id": "ar07",
+            "reverse": true,
+            "role": "root",
+            "meaning": "방향을 잃은 속도"
+          },
+          {
+            "index": 4,
+            "id": "cu05",
+            "reverse": false,
+            "role": "past",
+            "meaning": "상실 이후의 시선"
+          },
+          {
+            "index": 5,
+            "id": "wa13",
+            "reverse": false,
+            "role": "future",
+            "meaning": "자신감 있는 표현"
+          },
+          {
+            "index": 6,
+            "id": "sw04",
+            "reverse": false,
+            "role": "self",
+            "meaning": "필요한 휴식"
+          },
+          {
+            "index": 7,
+            "id": "pe13",
+            "reverse": true,
+            "role": "environment",
+            "meaning": "돌봄으로 인한 소진"
+          },
+          {
+            "index": 8,
+            "id": "ar19",
+            "reverse": false,
+            "role": "fear",
+            "meaning": "드러나는 명료함"
+          },
+          {
+            "index": 9,
+            "id": "sw10",
+            "reverse": true,
+            "role": "outcome",
+            "meaning": "끝나지 않는 고통"
+          }
+        ],
+        "facts": {
+          "resultFailed": false,
+          "resultPassed": false,
+          "known": false,
+          "sent": false,
+          "noReply": false,
+          "replied": false,
+          "noConflict": false,
+          "waiting": false,
+          "upcoming": false,
+          "replyUnknown": false
+        },
+        "grounding": {
+          "version": 84,
+          "questionEvidence": {
+            "version": 86,
+            "question": "동네 도서관의 책 대출 안내가 바뀌었어요. 읽고 싶은 책을 빌리기 전에 어떤 조건을 확인하면 좋을까요?",
+            "options": [],
+            "optionDefinitions": [],
+            "quantities": [],
+            "schedules": [],
+            "verification": [],
+            "verificationUnbound": [],
+            "verificationOtherModalities": []
+          },
+          "applications": [
+            {
+              "request": 0,
+              "operation": "verify",
+              "object": {
+                "kind": "requirements",
+                "subtype": "conditions",
+                "head": "조건",
+                "evidence": {
+                  "start": 43,
+                  "end": 46,
+                  "text": "조건을"
+                },
+                "carrier": null,
+                "owner": "unspecified",
+                "modality": "requested"
+              },
+              "group": "care",
+              "primaryMotif": "grief",
+              "relationAxis": null,
+              "contextRule": null,
+              "refs": [
+                9
+              ],
+              "replaceGeneric": true,
+              "quantity": null,
+              "timeBinding": {
+                "value": null,
+                "reason": "no-available-time",
+                "candidates": []
+              },
+              "verification": [],
+              "directLens": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "review": "The old contract requires the complete v83 sentence verbatim. Actual final prose preserves criteria, time/cost, change/stop terms, known/unknown and questions, but rephrases them. Preserve this failure and replace only the structured requirements path with concept checks; the old exact check remains for other paths."
+}

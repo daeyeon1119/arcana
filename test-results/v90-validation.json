@@ -1,0 +1,595 @@
+{
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "interpretationSourceCommit": "222e6336a08cb7cc122c46a4ff7b2d055de9540a",
+  "checks": [
+    {
+      "artifact": "test-results/stress-summary.json",
+      "sha256": "dbd8534fa4aab42730ddf2c45de354feb6b9e4834e2fa9b7d4dfab03748a9c0e",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/editorial/v90-summary.json",
+      "sha256": "157bb0e76f029453cfa3e9bc363d4379a2f26d2c03c7ab2fe3294dabf2106d0e",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/synthesis/v90-summary.json",
+      "sha256": "7eaa677a97dc0ca4d063543dbce4856570a6fad8929ff589310b7741531f9b22",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/portable-summary.json",
+      "sha256": "4625a4f2c1bdc8ea21081cf12e8b02ba7cba69f5729c23602ea63da987d72c55",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/ui-summary.json",
+      "sha256": "f48e67ca6628266a45754130e38200d91fae3857f26d60215a89c6dc93831a4c",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/images-summary.json",
+      "sha256": "5ff57441a5b0ecf15c166fc1679c9d29f5364d2f8f029e44388975a72ddcc0a7",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/ui-summary.json",
+      "sha256": "b1bba1835d091ef736d9e31dee3cfebe7ff5025cea93da223c19a09474b41a1e",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/alignment/ui-summary.json",
+      "sha256": "676c364615701771b75e75a62413892778379a986625c984199ec553fb5dfe35",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/verification/ui-summary.json",
+      "sha256": "8d929ea475cdf2012f8b87dac39f09964997fbe6eea130638dbfe095edf61319",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/build-repro-v90.json",
+      "sha256": "ca2a1450afda4b4cd2b7bb3b975e30632cdda4b0a4193a906d5f9d6525a0fc57",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/lens/ui-summary.json",
+      "sha256": "2409ddc65e661945813421f3f80b0f64f59309fb09fa731732da07d51072b1dc",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/device/summary.json",
+      "sha256": "f03c4cab22fa7cd83c1433891e52769d545a516a15e57bf4d68cdcd6bf54e198",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/ui-summary.json",
+      "sha256": "255433c1c8d4aa87ddeee66b83cfd6816bbb777cf4e9d511a8db20bbe37535d5",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/v90/development/summary.json",
+      "sha256": "96ba6def732683ebcda9f03950eef09d863c4474cc16a317a9bdcd8ae11908f1",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/v90/regression/summary.json",
+      "sha256": "f92d77f086f0af3eb7bca89e7c9b5650543f278db072f19811a9eb013f673b1c",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/alignment/v90/development/summary.json",
+      "sha256": "473b88eda4218a18144c4113818ee09e377c7b44b0ba4c3dfce2993a45528f84",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/alignment/v90/regression/summary.json",
+      "sha256": "a2d9ce60705c63d5e7c332407bf0b8a5f0904d0ea5b80b5f69476cb8a8ca5756",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v90/development/summary.json",
+      "sha256": "eae4da5495d1ff678d48d19ca48c6db3e18aa144a2aaea7e88d444c9d66ac65b",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v90/regression/summary.json",
+      "sha256": "779cc24774bddd9110491e0d8045b428ca471dcfe1dfbcecf1fce2a4e640a883",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/v90/fresh-regression/summary.json",
+      "sha256": "929506329344ea54fbd3345b0761c475de939e4d782e877728d0b3df6f6b0d10",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/verification/v90/development/summary.json",
+      "sha256": "46f1f74e70a3ed8698fb8ca42d67333203a94b0dad715cb1821fa51298ecb161",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/verification/v90/regression/summary.json",
+      "sha256": "9b888609976c68a10b3b378df031417ab89e7feebdd199ea404193cebb0c1cb4",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/lens/v90/development/summary.json",
+      "sha256": "3cb64e1266eeee112809e7ee0afa8e45c3ac1438d8856efccbfed0c847034a65",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/lens/v90/regression/summary.json",
+      "sha256": "bbf2d954705d0298825cad57292f9d7f8f5467b832893642b763bd623fb1a93f",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/v90/development/summary.json",
+      "sha256": "c18c22ff0fffa631a2a50ebb76ec165f344e2aaeee17480e30b522c0f9a2361f",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/v90/regression/summary.json",
+      "sha256": "b4d675391d1031d676c4914fc4787e5a1013dfee5a12aea5fb08da8683746a6b",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/mat/after-geometry.json",
+      "sha256": "4e08073c333da022a00a430e51ddbcf28c729b9a756db217f00ef547d64e047f",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/question-text/unit-summary.json",
+      "sha256": "973fabd79c915f6fda68d7b7b77cdfacc0bc3baf8fea94fd4f0b023d4c9c7bbf",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/question-model/unit-summary.json",
+      "sha256": "c48cf7b8a11215cc4b0c56a9eadc99241f14773f83c20e9f4829eceb3a68ff75",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/task-policy/unit-summary.json",
+      "sha256": "065ccdf9f5981707625b8c1f2409fa6cb2f793fa4c4c3ca21bb9fc18e138987e",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/evidence-summary.json",
+      "sha256": "43b547c60592145245ff75fde6bc2175cee7e1f8e29338fe870b6911b8ce7bfb",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/grounding/bridge-summary.json",
+      "sha256": "f293c5cabe19a514a924a0b051c786100f1aa3f2ca0476b5c79fe6e81673613e",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/verification/unit-summary.json",
+      "sha256": "2cd898fef3687dca63364d85419f81365bf8ef6778c87e8234200630618d6d9e",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/event-state/v90/development/property-summary.json",
+      "sha256": "f7007ebb6aa22440de038d3b7c334ac8dfec65f687fc3e58bbf07329a4012b9e",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/unit-summary.json",
+      "sha256": "2886d2c6d61e4a29d9fc861a8299684388b417fe31b2b06adbf4636f1aa455eb",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/v90/development/summary.json",
+      "sha256": "5818a464d3fc04d79375de49827c4fbacf17df2d3e601973aa6da965f5aaf3f5",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/v90/regression/summary.json",
+      "sha256": "99ebaa38b4b21f78a3094b921ca0c42866c404e080305c7f8ab12568533e3dad",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/lexical/v90/cold-summary.json",
+      "sha256": "de014d8c544613c477010ed8a709334aadb7062450fd66cc33081a64e4d78b46",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/question-model/regression-summary.json",
+      "sha256": "65423b7e747c2170c8be81e2300cadfc5cc0c6b726fed1f893bc214179022d98",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/question-model/unseen/regression/summary.json",
+      "sha256": "a8ef75d6f754223952d585edc976e6319c0d1f16794e7733193647ccc413c6f9",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/request-frame/unit-summary.json",
+      "sha256": "86d67a4866e5036dba7e353fe2ce99697e9c5fe0f1292ac04c46e95219473a81",
+      "appSHA256": null,
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/request-frame/ui-summary.json",
+      "sha256": "38c10d88c0a6cfcac7ea5f9680d5fcc50a839a4028c5a6eca264284160fba6fb",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/request-frame/development/summary.json",
+      "sha256": "47f776c5e2f2ea989a0bc7b0ce2bc750b2489b1af58f12dc7e33596a0762d9f5",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/request-frame/development/review-scope.json",
+      "sha256": "5516e10e266676e2c67d468cc1c26177301074c246935cc859c29a2ff6cc8cd6",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/request-frame/regression/summary.json",
+      "sha256": "302c250e02e7a7a889bb344f968cdef4319068ed7a128192f4acba8bb9efbdc1",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/request-frame/regression/review-scope.json",
+      "sha256": "12ceb31c225bee955f47a39f9de273f5dd2f15eb750909f6d45b76e512019b12",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    },
+    {
+      "artifact": "test-results/editorial/v90-review.json",
+      "sha256": "771d1ffbdc708bd27c9c58c60e8a0c15abdc4867fe41d60cd119fdf3bd47e4cf",
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "scope": "Technical or known development/regression; bounded author reading only where an explicit review scope is present. No expert score."
+    }
+  ],
+  "fullTestCompletedInGroups": true,
+  "groupsPlan": {
+    "release": {
+      "appVersion": "90.0.0",
+      "readingEngine": 90,
+      "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+      "appBytes": 33179345,
+      "webRelease": "d3fb7e7e08fce927f4e89e9b",
+      "languageAnalysis": {
+        "backend": "garu-ko",
+        "version": "0.11.0",
+        "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+        "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+      }
+    },
+    "sourceCommit": "222e6336a08cb7cc122c46a4ff7b2d055de9540a",
+    "totalCommands": 46,
+    "originalCommandOrder": [
+      "npm run test:local-contract",
+      "npm run test:local-planner",
+      "npm run test:local-separated",
+      "npm run test:local-transport",
+      "npm run test:local-config",
+      "npm run test:local-report",
+      "npm run test:blind-review",
+      "npm run test:question-text",
+      "npm run test:korean",
+      "npm run test:request-frame-unit",
+      "npm run test:request-frame",
+      "npm run test:request-frame-regression",
+      "npm run test:request-frame-ui",
+      "npm run test:lexical",
+      "npm run test:lexical-regression",
+      "npm run test:language-cold",
+      "npm run test:event-state",
+      "npm run test:event-reading",
+      "npm run test:event-regression",
+      "npm run test:event-ui",
+      "npm run test:question-model",
+      "npm run test:task-policy",
+      "npm run test:reading-evidence",
+      "npm run test:verification-facts",
+      "npm run test:reading-bridge",
+      "npm run test:grounding",
+      "npm run test:verification-reading",
+      "npm run test:verification-ui",
+      "npm run test:verification-regression",
+      "npm run test:lens",
+      "npm run test:lens-ui",
+      "npm run test:lens-regression",
+      "npm run test:alignment",
+      "npm run test:alignment-ui",
+      "npm run test:task-reading",
+      "npm run test:stress",
+      "npm run test:ui",
+      "npm run test:grounding-ui",
+      "npm run test:images",
+      "npm run test:mat",
+      "npm run test:portable",
+      "npm run test:device",
+      "npm run test:editorial",
+      "npm run test:synthesis",
+      "npm run diagnose:generalization",
+      "npm run test:question-regression"
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "commands": [
+          "npm run test:local-contract",
+          "npm run test:local-planner",
+          "npm run test:local-separated",
+          "npm run test:local-transport",
+          "npm run test:local-config",
+          "npm run test:local-report",
+          "npm run test:blind-review",
+          "npm run test:question-text",
+          "npm run test:korean",
+          "npm run test:request-frame-unit",
+          "npm run test:request-frame",
+          "npm run test:request-frame-regression",
+          "npm run test:request-frame-ui",
+          "npm run test:lexical",
+          "npm run test:lexical-regression",
+          "npm run test:language-cold",
+          "npm run test:event-state",
+          "npm run test:question-model",
+          "npm run test:task-policy",
+          "npm run test:reading-evidence",
+          "npm run test:verification-facts",
+          "npm run test:reading-bridge"
+        ]
+      },
+      {
+        "group": 2,
+        "commands": [
+          "npm run test:task-reading",
+          "npm run test:grounding",
+          "npm run test:verification-reading",
+          "npm run test:verification-ui",
+          "npm run test:verification-regression",
+          "npm run test:lens",
+          "npm run test:lens-ui",
+          "npm run test:lens-regression",
+          "npm run test:alignment",
+          "npm run test:alignment-ui"
+        ]
+      },
+      {
+        "group": 3,
+        "commands": [
+          "npm run test:event-reading",
+          "npm run test:event-regression",
+          "npm run test:event-ui",
+          "npm run test:stress",
+          "npm run test:ui",
+          "npm run test:grounding-ui",
+          "npm run test:images",
+          "npm run test:mat",
+          "npm run test:portable",
+          "npm run test:device",
+          "npm run test:editorial",
+          "npm run test:synthesis",
+          "npm run diagnose:generalization",
+          "npm run test:question-regression"
+        ]
+      }
+    ]
+  },
+  "groupExitCodes": [
+    0,
+    0,
+    0
+  ],
+  "groupedTestLogSHA256": {
+    "1": "d5195dd25ee1b05bf072d5ec78b87c5c319e93d0978189ce8266ee3653337bc5",
+    "2": "214f0e7d64c8ee21fc9912646e48cc7a66381cd9d4d663cbc28894fa4d99acae",
+    "3": "ee2812c2c1d67d4ecc583419126d5ab6aa51973b3ae1b9c94628b35378c85a6f"
+  },
+  "old704RegressionChainExitCode": 0,
+  "oldRegressionLogSHA256": {
+    "v90-r6-task.log": "81f35aa85a2d4ba21cf639f729f8c08d4679ffe682d07d02a8e092e54b2bbefa",
+    "v90-r6-fresh.log": "72a2a574cc68624f5e9557ba12203dcea7e2a516c77815c3fcae82b405ab9084",
+    "v90-r6-grounding.log": "5d1023783d797ce85a307f6ec219915f2dfa3990d8028f78b329fd41649dea4a",
+    "v90-r6-alignment.log": "b862c2408b13210e1c6ffdd75b1bda95a477bf1138df37edcdccf6d580b2e6b7"
+  },
+  "preservedFirstOutputs": {
+    "test-results/grounding/first/readings.json": "150111acdbd495e434017c89a751fbc0d0573bec4ac1c10a342e99df6423d821",
+    "test-results/alignment/first/readings.json": "fc08edfb43a068b1b1c724bd19cec322a096cd6686beef86181a1637d2a827a6",
+    "test-results/verification/first/readings.json": "0f97498364ce94959a852f87768e820b9b14727d01815178289d6d0a10d6613e",
+    "test-results/lens/first/readings.json": "d7263373aed6f8bcd5e4c9fb38dbb6df1b1db0e71f32366b2e7a9a6b40dc2855",
+    "test-results/event-state/first/readings.json": "91bdf1a5c929defdceb393b827563b13dcb2f3200089b23b8cbdeb921369cce4",
+    "test-results/lexical/first/readings.json": "4b2fa9b373ecc51ba1e4d5b828c6f85dcc0531b87a9f5bc6bd2aa1b38b607ed5",
+    "test-results/request-frame/first/readings.json": "e4b384bd95c454e80e26026bb76d70b7d228e01ead81c36314d580f3fc5b6092"
+  },
+  "stressReadings": 1024,
+  "portableCombinationsPerProfile": 336,
+  "portableProfiles": 3,
+  "knownRequestDevelopmentReadings": 224,
+  "knownRequestRegressionReadings": 160,
+  "newFirstExecution": {
+    "questions": 20,
+    "readings": 160,
+    "candidateCommit": "fc60c9efb9c49b6ba11ac64881afa53c78be7bba",
+    "preservedCommit": "3a8d37a",
+    "contractFailedQuestionIds": [
+      "p01",
+      "p03",
+      "p07",
+      "p08",
+      "p12",
+      "p15",
+      "p20"
+    ],
+    "note": "Self-authored and now known regression data. Original first failures remain immutable."
+  },
+  "remainingSemanticLimits": [
+    "p01: 점검 순서와 문서 대상으로 수정. 문단 자체의 내용은 없어 일반 구조 조언.",
+    "p02: 관찰 기록 점검으로 답하지만 질문의 방문객 반응에 연결한 깊이는 약함.",
+    "p03: 성찰로 수정. 제가 한 표현의 소유 연결은 여전히 중립 문장에 머묾.",
+    "p04: 다른 사람의 발신과 제 노트를 분리함. 카드 조언은 일반적임.",
+    "p06: 발신 상태 유지. 소유가 명시되지 않은 표현에 중립 안내. 전송 사건과 소유의 연결은 약함.",
+    "p07: 수신·미독 상태 계약은 수정. 실제 본문은 공식 안내 확인으로 동일하며 명시적 미독 선확인 연결이 부족함.",
+    "p09: 자료와 추정 구분. 측정 시각이라는 구체 내용 활용은 약함.",
+    "p10: 진료 설명의 핵심 정보 보존과 축약. 임상 판단은 하지 않음.",
+    "p11: 약의 양 변경을 카드로 결정하지 않음. 이미 읽은 안내와 추가 확인 방법은 짧음.",
+    "p12: 앞선 약속을 이어받아 합의와 부담의 범위로 수정.",
+    "p14: 비교 방법을 제공하지만 두 매체 특성의 구체성은 약함.",
+    "p16: 두 행동을 비교하나 일반 시간·비용 기준이 우세함.",
+    "p17: 동기 성찰로 답함. 그림이라는 분야 깊이는 약함.",
+    "p18: 읽으며는 배경으로 두고 성찰 처리. 실제 어려움의 탐색 질문이 일반적임.",
+    "p19: 두 대상 점검과 추가 편집 요청을 유지. 길고 같은 카드 적용이 반복됨.",
+    "p20: 기대·관찰 성찰과 감정 돌봄을 모두 처리. 카드 적용 반복과 깊이의 한계 남음.",
+    "p05: Ordinary expression editing falls back to the established general improvement method; concrete editing advice remains weak.",
+    "w01: 목차의 전체 흐름·중복·빠진 연결을 점검한다. 카드 결합은 여전히 넓은 일반론이다.",
+    "w04: 미독 목록 선확인과 자료명·형식·확인 상태. 카드 연결은 일반적임.",
+    "w05: 면접 질문의 구체성은 일반적이다.",
+    "w06: 내 선택 설명 대신 문서 설명으로 맞춘다. 실제 계약 조항의 깊이는 낮다.",
+    "w08: 의료진에게 증상을 전하는 일반 준비만 제공한다.",
+    "w09: 증상 설명의 축약과 복약 변경을 구별한다. 실제 결과를 단정하지 않는다.",
+    "w10: 약속 합의와 부담·조정 여지로 보완. 업무 분담 표현 제거.",
+    "w15: 대관 조건 확인과 물을 질문을 둘 다 처리. 실제 질문 예시는 여전히 일반적임.",
+    "w20: 기대·관찰·해석을 나눈다. 카드 결합의 반복은 남는다.",
+    "w23: 장면과 원인 설명의 근거·대안 가설을 나눔. 분야별 예시는 약함."
+  ],
+  "strictLegacyDiagnosticDisagreements": [
+    {
+      "group": "sent",
+      "variant": 0,
+      "question": "좋아하는 사람에게 문자를 보냈는데 답장은 없어요. 더 보내고 싶은 마음을 어떻게 다룰까요?",
+      "intentMatch": false,
+      "domainMatch": true,
+      "facts": []
+    },
+    {
+      "group": "sent",
+      "variant": 2,
+      "question": "연락을 전했지만 회신을 못 받았습니다. 이 상황에서 제가 지킬 태도는 무엇인가요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    },
+    {
+      "group": "accessibility",
+      "variant": 0,
+      "question": "보드게임 규칙을 색만으로 구분해 만들었어요. 여러 사람이 편하게 쓰도록 어떻게 보완할까요?",
+      "intentMatch": true,
+      "domainMatch": false,
+      "facts": []
+    }
+  ],
+  "strictLegacyIntentDisagreements": [
+    {
+      "id": "u01",
+      "question": "팀원이 제 일정 제안에 답해 줬어요. 그래도 거절당할까 봐 초조한 마음을 어떻게 다룰까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "replied",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u04",
+      "question": "친구에게 연락을 했지만 자신이 없어요. 받은 대답은 없고 기다리는 중입니다. 마음을 어떻게 돌볼까요?",
+      "intent": false,
+      "facts": [
+        {
+          "key": "sent",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        },
+        {
+          "key": "replied",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        },
+        {
+          "key": "noReply",
+          "expected": true,
+          "actual": true,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    },
+    {
+      "id": "u05",
+      "question": "결과가 나왔다는 말을 들었지만 아직 공식 내용을 확인하지 않았어요. 불안을 다룰 방법을 알려 주세요.",
+      "intent": false,
+      "facts": [
+        {
+          "key": "known",
+          "expected": false,
+          "actual": false,
+          "ok": true
+        }
+      ],
+      "requests": null,
+      "clarify": null
+    }
+  ],
+  "technicalPass": true,
+  "qualityScore": null,
+  "independentExpertReview": false,
+  "physicalPhoneUIOrAirplaneModeVerified": false,
+  "note": "Exact-build technical checks. Semantic limitations and strict legacy diagnostic disagreements are retained. No paid service, question upload, native model/server dependency or generated card art added. Public checks follow the main merge."
+}

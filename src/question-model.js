@@ -3,7 +3,7 @@
 (function(root){
  'use strict';
  const literalEvidence=typeof module==='object'&&module.exports?require('./reading-evidence.js'):root.ARCANA_READING_EVIDENCE;
- const CONTACT=/(?:메시지|메세지|문자|연락|고백|사과|카톡|톡|의견|목록|편지|서신|메일)/g;
+ const CONTACT=/(?:메시지|메세지|문자|연락|고백|사과|카톡|톡|의견|목록|편지|서신|메일|안내(?:문|서)?(?=은|는|을|를|이|가|도|\s|$))/g;
  const REPLY=/(?:답장|회신|답변|대답|(?<!정|오|문)답(?=이|을|도|은|는|해|했|하|할))/g;
  const RESULT=/(?:검사\s*결과|채점\s*결과|결과|성적|점수|발표|합격|불합격|탈락|낙방|선발|승인|당선)/g;
  const ASSESS=/(?:시험|면접|평가|심사)/g;
@@ -17,6 +17,7 @@
  const eventEvidence=typeof module==='object'&&module.exports?require('./event-evidence.js'):root.ARCANA_EVENT_EVIDENCE;
  const morphology=typeof module==='object'&&module.exports?require('./korean-morphology.js'):root.ARCANA_KOREAN_MORPHOLOGY;
  const lexicalContext=typeof module==='object'&&module.exports?require('./lexical-context.js'):root.ARCANA_LEXICAL_CONTEXT;
+ const workModel=typeof module==='object'&&module.exports?require('./request-frame.js'):root.ARCANA_REQUEST_FRAME;
  function segments(q){
   const text=masked(q),parts=[];let start=0;
   const rx=/[.!?。！？,;]+|(?:하지만|그런데|반면에|그러나)\s+|((?:했|았|었)(?:는데|지만|고|더니))\s*/g;let m;
@@ -47,7 +48,7 @@
   if(/(?:면|다면|다면야|경우|가정|라고\s*가정|했으면|았으면|었으면|다면)\b|(?:했|됐|받았|보냈|왔)(?:으면|다면)|(?:했|받았|보냈|왔|제출했|접수됐)을\s*때/.test(text))return 'conditional';
   if(/(?:까\s*봐|을까\s*봐|다고\s*(?:생각|추측|상상)|일지도|인\s*것\s*같|했을까|왔을까|받았을까|보냈을까|꿈에서)|(?:했는지|보냈는지|왔는지|받았는지).{0,8}(?:모르|모릅|알지\s*못)/.test(text))return 'uncertain';
   if(/(?:다는|라는)\s*말|전해\s*들|다고\s*(?:했|하|해|말)/.test(text))return 'reported';
-  const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|열어보|확인|제출|공개)|(?:하|보내|전하|받|오|나오|읽|열어보|확인하|제출하|공개되)(?:지(?:는|도|만)?|진)\s*않/.test(text);
+  const verbalNegative=/(?:^|\s|[은는을를이가도])(?:안|못)\s*(?:했|하|해|보냈|보내|전했|전하|받|왔|오|나왔|나오|읽|열어보|펼쳐보|확인|제출|공개)|(?:하|보내|전하|받|오|나오|읽|열어보|펼쳐보|확인하|제출하|공개되)(?:지(?:는|도|만)?|진)\s*않/.test(text);
   const absentState=!completed(text)&&/(?:없|모르|모릅|모른|미정|미공개|미발표)/.test(text);
   if(verbalNegative||absentState)return 'negated';
   if(/(?:하려|할\s*예정|보낼\s*예정|받을\s*예정|계획|앞두|예정)|(?:할|보낼|전할|받을|올|나올|제출할)(?:까|지|까요|게|\s*예정)/.test(text))return 'planned';
@@ -101,7 +102,7 @@
    // A following clause may omit the object: "답장을 보냈다지만 저는 받은 내용이 없어요".
    const priorReply=events.findLast(e=>e.kind==='reply'&&e.end<=part.start);
    const priorContent=events.findLast(e=>['reply','contact'].includes(e.kind)&&e.end<=part.start);
-   const reading=part.text.match(/^(?:(?:저는|제가|나는|내가|아직|이미|다시|안|못)\s*)*(?:읽|열어보)/);
+   const reading=part.text.match(/^(?:(?:저는|제가|나는|내가|아직|이미|다시|안|못)\s*)*(?:읽|열어보|펼쳐보)/);
    if(priorContent&&reading&&!unique.some(n=>['reply','contact'].includes(n.kind)))add(part,priorContent.kind,priorContent.object,0,part.text.length,{direction:'read',predicate:reading[0].includes('열어보')?'열어보':'읽',accepting:true,inferredObject:true,readingFromOtherReceipt:priorContent.readingFromOtherReceipt||priorContent.actor==='other'&&priorContent.direction==='receive'});
    const priorWaiting=events.findLast(e=>['reply','result'].includes(e.kind)&&e.end<=part.start),waitOnly=eventEvidence.waiting(part.text);
    if(priorWaiting&&waitOnly&&!unique.some(n=>['reply','result'].includes(n.kind))&&eventEvidence.anaphoricWait(part.text,waitOnly.start))add(part,priorWaiting.kind,priorWaiting.object,0,part.text.length,{direction:'wait',waitingEvidence:{...waitOnly,start:part.start+waitOnly.start,end:part.end,text:part.source.slice(waitOnly.start)},inferredObject:true});
@@ -188,7 +189,7 @@
   return units;
  }
  function requestsFrom(parts,q){
-  const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.goal===(goal||goalFor(part.text,kind,q))))requests.push({kind,goal:goal||goalFor(part.text,kind,q),text:part.source,start:part.start,end:part.end,...(part.sharedContext?{sharedContext:part.sharedContext}:{})});};
+  const requests=[];const emit=(kind,part,goal)=>{if(!requests.some(r=>r.kind===kind&&r.start===part.start&&r.end===part.end&&r.goal===(goal||goalFor(part.text,kind,q))))requests.push({kind,goal:goal||goalFor(part.text,kind,q),text:part.source,start:part.start,end:part.end,...(part.sharedContext?{sharedContext:part.sharedContext}:{})});};
   const units=requestUnits(parts,q);
   for(const original of units){
    const correction=original.text.match(/(?:대신|말고|그보다(?:는)?|아니라|(?:이유|원인|예측|전망|비교)보다)\s*|(?:는지|인지|을지|할지)보다(?:는)?\s+/);
@@ -231,7 +232,7 @@
     else emit('action',part);
    }
    else if(forecast)emit('forecast',part);
-   if(/각각|함께|동시에|그리고|방법도/.test(t)&&EMOTION.test(t)&&/다룰|다루|돌볼|돌보|추스/.test(t))emit('emotion',part,'cope');
+   if(/각각|함께|동시에|그리고|방법도/.test(t)&&EMOTION.test(t)&&/다룰|다루|돌볼|돌보|추스/.test(t)&&!requests.some(r=>r.kind==='emotion'&&r.goal==='cope'&&r.start>=part.start&&r.end<=part.end))emit('emotion',part,'cope');
   }
   if(!requests.length){const last=parts.at(-1);if(last&&EMOTION.test(last.text))emit('emotion',last);}
   // A final explicit request supersedes earlier background questions unless coordination is explicit.
@@ -239,16 +240,17 @@
   return requests;
  }
  function parse(input){
-  const question=normalize(input),parts=segments(question),requests=requestsFrom(parts,question),events=eventsFrom(parts),state=summarize(events,requests,question);
+  const question=normalize(input),parts=segments(question),originalRequests=requestsFrom(parts,question);
   const languageAnalysis=morphology.analyze(masked(question));
-  for(const task of requests){const frame=lexicalContext.requestFrame(masked(task.text));if(frame&&task.kind==='action'&&(frame.reason!=='requested-lexical-predicate'||task.goal==='action')){task.frame=frame;task.goal=frame.operation;}}
+  for(const task of originalRequests){const frame=lexicalContext.requestFrame(masked(task.text));if(frame&&task.kind==='action'&&(frame.reason!=='requested-lexical-predicate'||task.goal==='action')){task.frame=frame;task.goal=frame.operation;}}
+  const requests=workModel.refine(question,originalRequests,parts),events=eventsFrom(parts),state=summarize(events,requests,question);
   eventEvidence.bindRequests(requests,events,masked(question),state);
   const generic=question.replace(/[\s.!?。！？,]/g,'');
   const missingChoices=/(?:두\s*(?:가지|개)|둘)\s*중/.test(masked(question))&&/정해|고르|골라|선택|비교/.test(masked(question))&&!/A.{0,80}B|하나는.{1,80}(?:다른|하나는)|(?:첫째|첫\s*번째).{1,80}(?:둘째|두\s*번째)/i.test(masked(question));
   const options=literalEvidence?.extract(question).options||[],missingDefinedOption=requests.some(request=>request.kind==='compare')&&options.length>0&&(options.length<2||options.some(option=>!option.defined));
-  const needsContext=missingChoices||missingDefinedOption||!!generic&&/^(?:(?:저는|제가|나는|내가|지금|이제|그|이|저|일|상황|사람|것|거|앞으로|어떻게|뭘|무엇을|할까요|해야할까요|해야하나요|하면좋을까요|해야|할지|모르겠어요|모르겠습니다|될까요|잘|풀릴까요|봐주세요|보아주세요|알려주세요|좀|요|은|는|이|가|을|를|과|와|하고|에|대해|입니다|이에요|예요))+$/u.test(generic)&&!/오늘|하루|전반|전체/.test(question);
+  const needsContext=missingChoices||missingDefinedOption||workModel.lacksContext(question,events,requests)||!!generic&&/^(?:(?:저는|제가|나는|내가|지금|이제|그|이|저|일|상황|사람|것|거|앞으로|어떻게|뭘|무엇을|할까요|해야할까요|해야하나요|하면좋을까요|해야|할지|모르겠어요|모르겠습니다|될까요|잘|풀릴까요|봐주세요|보아주세요|알려주세요|좀|요|은|는|이|가|을|를|과|와|하고|에|대해|입니다|이에요|예요))+$/u.test(generic)&&!/오늘|하루|전반|전체/.test(question);
   const romantic=/(?:연애|연인|애인|짝사랑|고백|호감|좋아하는\s*(?:사람|분|이)|좋아하.{0,6}사람)/.test(masked(question));
-  return {version:89,languageAnalysis:{...morphology.status(),ready:!!languageAnalysis?.ready},question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices||missingDefinedOption?'비교할 선택지의 내용이 필요합니다. 아직 정하지 않은 안의 내용과 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
+  return {version:90,languageAnalysis:{...morphology.status(),ready:!!languageAnalysis?.ready},question,evidenceQuestion:masked(question),requests,events,state,needsContext,clarification:needsContext?(missingChoices||missingDefinedOption?'비교할 선택지의 내용이 필요합니다. 아직 정하지 않은 안의 내용과 중요하게 보는 기준을 한두 문장으로 알려 주세요.':'어떤 일에 관한 질문인가요? 지금 상황과 알고 싶은 점을 한두 문장으로 알려 주세요.'):null,entities:{romantic},unknowns:[...(state.sent===null?['outgoing-contact']:[]),...(state.received===null?['received-reply']:[]),...(state.resultKnown===null?['result']:[])]};
  }
  const api=Object.freeze({parse});if(typeof module==='object'&&module.exports)module.exports=api;else root.ARCANA_QUESTION_MODEL=api;
 })(typeof globalThis==='object'?globalThis:this);

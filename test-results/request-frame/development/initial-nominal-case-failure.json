@@ -1,0 +1,296 @@
+{
+  "scope": "Node module development property; not a bundled app or new evaluation.",
+  "question": "확인할 항목과 물어볼 질문을 각각 정리해 주세요.",
+  "analysis": {
+    "text": "확인할 항목과 물어볼 질문을 각각 정리해 주세요.",
+    "ready": true,
+    "tokens": [
+      {
+        "text": "확인",
+        "pos": "NNG",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "text": "하",
+        "pos": "XSV",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "text": "ㄹ",
+        "pos": "ETM",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "text": "항목",
+        "pos": "NNG",
+        "start": 4,
+        "end": 7
+      },
+      {
+        "text": "과",
+        "pos": "JKB",
+        "start": 4,
+        "end": 7
+      },
+      {
+        "text": "물어보",
+        "pos": "VV",
+        "start": 8,
+        "end": 11
+      },
+      {
+        "text": "ㄹ",
+        "pos": "ETM",
+        "start": 8,
+        "end": 11
+      },
+      {
+        "text": "질문",
+        "pos": "NNG",
+        "start": 12,
+        "end": 15
+      },
+      {
+        "text": "을",
+        "pos": "JKO",
+        "start": 12,
+        "end": 15
+      },
+      {
+        "text": "각각",
+        "pos": "MAG",
+        "start": 16,
+        "end": 18
+      },
+      {
+        "text": "정리",
+        "pos": "NNG",
+        "start": 19,
+        "end": 22
+      },
+      {
+        "text": "하",
+        "pos": "XSV",
+        "start": 19,
+        "end": 22
+      },
+      {
+        "text": "아",
+        "pos": "EC",
+        "start": 19,
+        "end": 22
+      },
+      {
+        "text": "주",
+        "pos": "VX",
+        "start": 23,
+        "end": 27
+      },
+      {
+        "text": "세요",
+        "pos": "EF",
+        "start": 23,
+        "end": 27
+      },
+      {
+        "text": ".",
+        "pos": "SF",
+        "start": 23,
+        "end": 27
+      }
+    ],
+    "words": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "확인할",
+        "tokens": [
+          {
+            "text": "확인",
+            "pos": "NNG",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "text": "하",
+            "pos": "XSV",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "text": "ㄹ",
+            "pos": "ETM",
+            "start": 0,
+            "end": 3
+          }
+        ]
+      },
+      {
+        "start": 4,
+        "end": 7,
+        "text": "항목과",
+        "tokens": [
+          {
+            "text": "항목",
+            "pos": "NNG",
+            "start": 4,
+            "end": 7
+          },
+          {
+            "text": "과",
+            "pos": "JKB",
+            "start": 4,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "text": "물어볼",
+        "tokens": [
+          {
+            "text": "물어보",
+            "pos": "VV",
+            "start": 8,
+            "end": 11
+          },
+          {
+            "text": "ㄹ",
+            "pos": "ETM",
+            "start": 8,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "start": 12,
+        "end": 15,
+        "text": "질문을",
+        "tokens": [
+          {
+            "text": "질문",
+            "pos": "NNG",
+            "start": 12,
+            "end": 15
+          },
+          {
+            "text": "을",
+            "pos": "JKO",
+            "start": 12,
+            "end": 15
+          }
+        ]
+      },
+      {
+        "start": 16,
+        "end": 18,
+        "text": "각각",
+        "tokens": [
+          {
+            "text": "각각",
+            "pos": "MAG",
+            "start": 16,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "start": 19,
+        "end": 22,
+        "text": "정리해",
+        "tokens": [
+          {
+            "text": "정리",
+            "pos": "NNG",
+            "start": 19,
+            "end": 22
+          },
+          {
+            "text": "하",
+            "pos": "XSV",
+            "start": 19,
+            "end": 22
+          },
+          {
+            "text": "아",
+            "pos": "EC",
+            "start": 19,
+            "end": 22
+          }
+        ]
+      },
+      {
+        "start": 23,
+        "end": 27,
+        "text": "주세요.",
+        "tokens": [
+          {
+            "text": "주",
+            "pos": "VX",
+            "start": 23,
+            "end": 27
+          },
+          {
+            "text": "세요",
+            "pos": "EF",
+            "start": 23,
+            "end": 27
+          },
+          {
+            "text": ".",
+            "pos": "SF",
+            "start": 23,
+            "end": 27
+          }
+        ]
+      }
+    ]
+  },
+  "actual": {
+    "version": 90,
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac",
+      "ready": true,
+      "failed": false
+    },
+    "question": "확인할 항목과 물어볼 질문을 각각 정리해 주세요.",
+    "evidenceQuestion": "확인할 항목과 물어볼 질문을 각각 정리해 주세요.",
+    "requests": [],
+    "events": [],
+    "state": {
+      "sent": null,
+      "received": null,
+      "read": null,
+      "resultKnown": null,
+      "resultPublished": null,
+      "outcome": null,
+      "outcomeScope": null,
+      "assessmentCompleted": null,
+      "assessmentUpcoming": false,
+      "submitted": null,
+      "replyWaiting": false,
+      "resultWaiting": false,
+      "replyWaitingSource": null,
+      "resultWaitingSource": null,
+      "waiting": false
+    },
+    "needsContext": false,
+    "clarification": null,
+    "entities": {
+      "romantic": false
+    },
+    "unknowns": [
+      "outgoing-contact",
+      "received-reply",
+      "result"
+    ]
+  },
+  "finding": "The analyzer tagged a coordinating 과 as JKB in the full sentence. The explicit parallel-output grammar should not rely on JC alone."
+}

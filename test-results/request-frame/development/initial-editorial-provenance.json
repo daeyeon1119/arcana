@@ -1,0 +1,8 @@
+{
+  "release": "f710cb00fbac73a4b4328159d65ac395223dcdaed4d758e03799011b97f50335",
+  "readingsSHA256": "1cead9ba6cfccd5fd130a3267f41056270178297b2e19df7330d74f08dc215bb",
+  "file": "initial-editorial-readings.json.gz",
+  "sourceBaseCommit": "3cc70c37f87658909c51a4c54df29600f3c51c67",
+  "sourcePatch": "initial-integration-source.patch.gz",
+  "note": "Actual intermediate 320 outputs preserved before re-running the corrected target binding. Changed primary strings were not all manually read on this source."
+}

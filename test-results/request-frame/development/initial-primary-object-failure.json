@@ -1,0 +1,112 @@
+{
+  "scope": "Additional known development controls, not a new holdout.",
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "4e1772bdf7a818a9e646e0651dcd94c85e357a5e3fdc2ee9d98679b3aafb1507",
+    "appBytes": 33165971,
+    "webRelease": "0dbb0d0c134fe57401f592a0",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "cases": [
+    {
+      "question": "자료의 조건을 확인하려고 작품을 어떻게 편집할까요?",
+      "actual": [
+        {
+          "version": 90,
+          "operation": "improve",
+          "target": {
+            "kind": "document",
+            "head": "자료",
+            "evidence": {
+              "start": 0,
+              "end": 3,
+              "text": "자료의"
+            },
+            "owner": "unspecified",
+            "modality": "requested"
+          },
+          "predicate": {
+            "start": 22,
+            "end": 27,
+            "text": "편집할까요"
+          },
+          "requestedOutput": null,
+          "scope": {
+            "start": 0,
+            "end": 27
+          },
+          "reason": "predicate-and-object"
+        }
+      ]
+    },
+    {
+      "question": "표현 방식을 참고해 음악을 어떻게 다듬을까요?",
+      "actual": [
+        {
+          "version": 90,
+          "operation": "improve",
+          "target": {
+            "kind": "message",
+            "head": "표현",
+            "evidence": {
+              "start": 0,
+              "end": 2,
+              "text": "표현"
+            },
+            "owner": "unspecified",
+            "modality": "requested"
+          },
+          "predicate": {
+            "start": 19,
+            "end": 24,
+            "text": "다듬을까요"
+          },
+          "requestedOutput": null,
+          "scope": {
+            "start": 0,
+            "end": 24
+          },
+          "reason": "predicate-and-object"
+        }
+      ]
+    },
+    {
+      "question": "과거 기록을 참고해 문서를 어떻게 고칠까요?",
+      "actual": [
+        {
+          "version": 90,
+          "operation": "improve",
+          "target": {
+            "kind": "observation",
+            "head": "기록",
+            "evidence": {
+              "start": 3,
+              "end": 6,
+              "text": "기록을"
+            },
+            "owner": "unspecified",
+            "modality": "requested"
+          },
+          "predicate": {
+            "start": 19,
+            "end": 23,
+            "text": "고칠까요"
+          },
+          "requestedOutput": null,
+          "scope": {
+            "start": 0,
+            "end": 23
+          },
+          "reason": "predicate-and-object"
+        }
+      ]
+    }
+  ],
+  "finding": "A background noun class won over the direct object of the requested predicate."
+}

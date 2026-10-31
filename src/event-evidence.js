@@ -22,7 +22,7 @@
  }
  function predicate(tail){
   const leading=tail.match(/^[은는이가을를도]+/),offset=leading?.[0].length||0,text=tail.slice(offset);
-  const rules=[['receive',/^(?:받았|받은|받아|받지|받고|받을|받는|받겠|받습니다|왔|오지|오고|오는|오면|올|도착)/],['send',/^(?:보냈|보내|보낼|전했|전하|전할)/],['read',/^(?:읽었|읽은|읽지|읽고|읽을|읽는|읽어|읽습니다|열어보)/],['make',/^(?:했|하(?:지|진|고|는|면|려|겠|셨|나(?:요|$))|할|해(?=요|서|도|줄|주|줬|보|\s|$))/]];
+  const rules=[['receive',/^(?:받았|받은|받아|받지|받고|받을|받는|받겠|받습니다|왔|오지|오고|오는|오면|올|도착)/],['send',/^(?:보냈|보내|보낼|전했|전하|전할)/],['read',/^(?:읽었|읽은|읽지|읽고|읽을|읽는|읽어|읽습니다|열어보|펼쳐보)/],['make',/^(?:했|하(?:지|진|고|는|면|려|겠|셨|나(?:요|$))|할|해(?=요|서|도|줄|주|줬|보|\s|$))/]];
   for(const word of text.matchAll(/\S+/g)){
    const stripped=word[0].replace(/^(?:안|못)(?=[가-힣])/,'');
    for(const [action,rx]of rules){const m=stripped.match(rx);if(m)return {action,text:m[0],index:offset+word.index+word[0].length-stripped.length};}
@@ -46,7 +46,8 @@
   for(let i=0;!m&&i<3;i++){
    const token=head.trimEnd().match(/\S+$/);if(!token)break;
    const word=token[0],last=word.charCodeAt(word.length-1),modifier=last>=0xac00&&last<=0xd7a3&&(last-0xac00)%28===4||/^(?:제|내|그|이|저|아주|매우|조금|더|꽤)$/.test(word)||/의$/.test(word);
-   if(!modifier)break;head=head.slice(0,token.index);m=rx.exec(head);
+   const nominalModifier=morphology.analyze(word)?.tokens.every(t=>/^(?:NNG|NNP|SL|SH)$/.test(t.pos));
+   if(!modifier&&!nominalModifier)break;head=head.slice(0,token.index);m=rx.exec(head);
   }
   if(!m)return null;const verb=m[1],after=text.slice(nounEnd),start=minimum+m.index,frame=text.slice(0,start);
   const conditional=/^(?:이|가|은|는|을|를|도)?\s*(?:이미\s*)?(?:있다면|있으면|있을\s*때|이라면|이라\s*가정|이\s*있다고\s*가정)/.test(after)||/(?:만약|가정)/.test(frame);
