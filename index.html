@@ -5847,6 +5847,11 @@ const ARCANA_MORPHOLOGY_NOTICES="Garu (garu-ko)\nCopyright 2026 Yongjin Cho\nhtt
   // Purpose/readiness requests already have a separately identified main goal.
   if(['finish','implement','prioritize','prepare','inquire'].includes(task.goal)&&['inspect','communicate'].includes(op)&&!/어떻게\s*(?:설명|말|전|알려)/.test(text))return null;
   const object=target(question,task,a,op,p?.word.start);
+  // Keep an established contextual method when this frame adds no object.
+  if(op==='inspect'&&object.kind==='unspecified'&&!task.output)return null;
+  // Ordinary expression edits already have contextual guidance. The new
+  // presentation path is for an explicit shortening request.
+  if(op==='improve'&&object.kind==='message'&&!roots(p?.word||{tokens:[]}).includes('줄이'))return null;
   if(p?.word.tokens.some(t=>t.pos==='EC'&&/면|려|고자/.test(t.text))&&object.kind==='unspecified'&&!task.frame?.informationGoal&&!task.output)return null;
   if(op==='coordinate'&&object.kind==='unspecified')return null;
   if(op==='improve'&&roots(p?.word||{tokens:[]}).includes('줄이')&&!['message','document','creative'].includes(object.kind))return null;
