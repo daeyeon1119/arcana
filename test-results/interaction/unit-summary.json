@@ -1,0 +1,2816 @@
+{
+  "orientations": 156,
+  "orderedPairs": 24024,
+  "axisSelectionsChangedFromAuthoredOrder": 108,
+  "focusRows": [
+    {
+      "id": "ar00",
+      "reverse": false,
+      "motifs": [
+        "start",
+        "explore"
+      ],
+      "opposite": [
+        "impulse",
+        "reality"
+      ],
+      "selected": {
+        "motif": "start",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar00",
+      "reverse": true,
+      "motifs": [
+        "impulse",
+        "reality"
+      ],
+      "opposite": [
+        "start",
+        "explore"
+      ],
+      "selected": {
+        "motif": "impulse",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar01",
+      "reverse": false,
+      "motifs": [
+        "agency",
+        "skill"
+      ],
+      "opposite": [
+        "dispersion",
+        "delay"
+      ],
+      "selected": {
+        "motif": "agency",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar01",
+      "reverse": true,
+      "motifs": [
+        "dispersion",
+        "delay"
+      ],
+      "opposite": [
+        "agency",
+        "skill"
+      ],
+      "selected": {
+        "motif": "dispersion",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar02",
+      "reverse": false,
+      "motifs": [
+        "intuition",
+        "uncertain"
+      ],
+      "opposite": [
+        "doubt",
+        "uncertain"
+      ],
+      "selected": {
+        "motif": "intuition",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar02",
+      "reverse": true,
+      "motifs": [
+        "doubt",
+        "uncertain"
+      ],
+      "opposite": [
+        "intuition",
+        "uncertain"
+      ],
+      "selected": {
+        "motif": "doubt",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar03",
+      "reverse": false,
+      "motifs": [
+        "care",
+        "resources"
+      ],
+      "opposite": [
+        "care",
+        "overload"
+      ],
+      "selected": {
+        "motif": "care",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar03",
+      "reverse": true,
+      "motifs": [
+        "care",
+        "overload"
+      ],
+      "opposite": [
+        "care",
+        "resources"
+      ],
+      "selected": {
+        "motif": "overload",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "ar04",
+      "reverse": false,
+      "motifs": [
+        "structure",
+        "bounds"
+      ],
+      "opposite": [
+        "rigid",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "structure",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar04",
+      "reverse": true,
+      "motifs": [
+        "rigid",
+        "bounds"
+      ],
+      "opposite": [
+        "structure",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "rigid",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar05",
+      "reverse": false,
+      "motifs": [
+        "support",
+        "skill"
+      ],
+      "opposite": [
+        "review",
+        "autonomy"
+      ],
+      "selected": {
+        "motif": "support",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar05",
+      "reverse": true,
+      "motifs": [
+        "review",
+        "autonomy"
+      ],
+      "opposite": [
+        "support",
+        "skill"
+      ],
+      "selected": {
+        "motif": "review",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar06",
+      "reverse": false,
+      "motifs": [
+        "values",
+        "choice"
+      ],
+      "opposite": [
+        "mismatch",
+        "delay"
+      ],
+      "selected": {
+        "motif": "values",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar06",
+      "reverse": true,
+      "motifs": [
+        "mismatch",
+        "delay"
+      ],
+      "opposite": [
+        "values",
+        "choice"
+      ],
+      "selected": {
+        "motif": "mismatch",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar07",
+      "reverse": false,
+      "motifs": [
+        "agency",
+        "speed"
+      ],
+      "opposite": [
+        "speed",
+        "dispersion"
+      ],
+      "selected": {
+        "motif": "agency",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar07",
+      "reverse": true,
+      "motifs": [
+        "speed",
+        "dispersion"
+      ],
+      "opposite": [
+        "agency",
+        "speed"
+      ],
+      "selected": {
+        "motif": "dispersion",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "ar08",
+      "reverse": false,
+      "motifs": [
+        "patience",
+        "balance"
+      ],
+      "opposite": [
+        "doubt",
+        "suppression"
+      ],
+      "selected": {
+        "motif": "patience",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar08",
+      "reverse": true,
+      "motifs": [
+        "doubt",
+        "suppression"
+      ],
+      "opposite": [
+        "patience",
+        "balance"
+      ],
+      "selected": {
+        "motif": "doubt",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar09",
+      "reverse": false,
+      "motifs": [
+        "pause",
+        "review"
+      ],
+      "opposite": [
+        "isolation",
+        "support"
+      ],
+      "selected": {
+        "motif": "pause",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar09",
+      "reverse": true,
+      "motifs": [
+        "isolation",
+        "support"
+      ],
+      "opposite": [
+        "pause",
+        "review"
+      ],
+      "selected": {
+        "motif": "isolation",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar10",
+      "reverse": false,
+      "motifs": [
+        "transition",
+        "flexibility"
+      ],
+      "opposite": [
+        "avoidance",
+        "delay"
+      ],
+      "selected": {
+        "motif": "transition",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar10",
+      "reverse": true,
+      "motifs": [
+        "avoidance",
+        "delay"
+      ],
+      "opposite": [
+        "transition",
+        "flexibility"
+      ],
+      "selected": {
+        "motif": "avoidance",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar11",
+      "reverse": false,
+      "motifs": [
+        "clarity",
+        "values"
+      ],
+      "opposite": [
+        "review",
+        "mismatch"
+      ],
+      "selected": {
+        "motif": "clarity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar11",
+      "reverse": true,
+      "motifs": [
+        "review",
+        "mismatch"
+      ],
+      "opposite": [
+        "clarity",
+        "values"
+      ],
+      "selected": {
+        "motif": "review",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar12",
+      "reverse": false,
+      "motifs": [
+        "pause",
+        "review"
+      ],
+      "opposite": [
+        "delay",
+        "overload"
+      ],
+      "selected": {
+        "motif": "pause",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar12",
+      "reverse": true,
+      "motifs": [
+        "delay",
+        "overload"
+      ],
+      "opposite": [
+        "pause",
+        "review"
+      ],
+      "selected": {
+        "motif": "delay",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar13",
+      "reverse": false,
+      "motifs": [
+        "closure",
+        "transition"
+      ],
+      "opposite": [
+        "attachment",
+        "delay"
+      ],
+      "selected": {
+        "motif": "closure",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar13",
+      "reverse": true,
+      "motifs": [
+        "attachment",
+        "delay"
+      ],
+      "opposite": [
+        "closure",
+        "transition"
+      ],
+      "selected": {
+        "motif": "attachment",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar14",
+      "reverse": false,
+      "motifs": [
+        "balance",
+        "flexibility"
+      ],
+      "opposite": [
+        "mismatch",
+        "balance"
+      ],
+      "selected": {
+        "motif": "balance",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar14",
+      "reverse": true,
+      "motifs": [
+        "mismatch",
+        "balance"
+      ],
+      "opposite": [
+        "balance",
+        "flexibility"
+      ],
+      "selected": {
+        "motif": "mismatch",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar15",
+      "reverse": false,
+      "motifs": [
+        "attachment",
+        "review"
+      ],
+      "opposite": [
+        "autonomy",
+        "transition"
+      ],
+      "selected": {
+        "motif": "attachment",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar15",
+      "reverse": true,
+      "motifs": [
+        "autonomy",
+        "transition"
+      ],
+      "opposite": [
+        "attachment",
+        "review"
+      ],
+      "selected": {
+        "motif": "autonomy",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar16",
+      "reverse": false,
+      "motifs": [
+        "transition",
+        "security"
+      ],
+      "opposite": [
+        "avoidance",
+        "delay"
+      ],
+      "selected": {
+        "motif": "transition",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar16",
+      "reverse": true,
+      "motifs": [
+        "avoidance",
+        "delay"
+      ],
+      "opposite": [
+        "transition",
+        "security"
+      ],
+      "selected": {
+        "motif": "avoidance",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar17",
+      "reverse": false,
+      "motifs": [
+        "recovery",
+        "hope"
+      ],
+      "opposite": [
+        "doubt",
+        "hope"
+      ],
+      "selected": {
+        "motif": "recovery",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar17",
+      "reverse": true,
+      "motifs": [
+        "doubt",
+        "hope"
+      ],
+      "opposite": [
+        "recovery",
+        "hope"
+      ],
+      "selected": {
+        "motif": "doubt",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar18",
+      "reverse": false,
+      "motifs": [
+        "uncertain",
+        "intuition"
+      ],
+      "opposite": [
+        "clarity",
+        "review"
+      ],
+      "selected": {
+        "motif": "uncertain",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar18",
+      "reverse": true,
+      "motifs": [
+        "clarity",
+        "review"
+      ],
+      "opposite": [
+        "uncertain",
+        "intuition"
+      ],
+      "selected": {
+        "motif": "clarity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar19",
+      "reverse": false,
+      "motifs": [
+        "clarity",
+        "joy"
+      ],
+      "opposite": [
+        "delay",
+        "ideals"
+      ],
+      "selected": {
+        "motif": "clarity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar19",
+      "reverse": true,
+      "motifs": [
+        "delay",
+        "ideals"
+      ],
+      "opposite": [
+        "clarity",
+        "joy"
+      ],
+      "selected": {
+        "motif": "delay",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar20",
+      "reverse": false,
+      "motifs": [
+        "review",
+        "agency"
+      ],
+      "opposite": [
+        "judgement",
+        "delay"
+      ],
+      "selected": {
+        "motif": "review",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar20",
+      "reverse": true,
+      "motifs": [
+        "judgement",
+        "delay"
+      ],
+      "opposite": [
+        "review",
+        "agency"
+      ],
+      "selected": {
+        "motif": "judgement",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar21",
+      "reverse": false,
+      "motifs": [
+        "closure",
+        "joy"
+      ],
+      "opposite": [
+        "delay",
+        "closure"
+      ],
+      "selected": {
+        "motif": "closure",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "ar21",
+      "reverse": true,
+      "motifs": [
+        "delay",
+        "closure"
+      ],
+      "opposite": [
+        "closure",
+        "joy"
+      ],
+      "selected": {
+        "motif": "delay",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa01",
+      "reverse": false,
+      "motifs": [
+        "start",
+        "agency"
+      ],
+      "opposite": [
+        "depleted",
+        "pause"
+      ],
+      "selected": {
+        "motif": "start",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa01",
+      "reverse": true,
+      "motifs": [
+        "depleted",
+        "pause"
+      ],
+      "opposite": [
+        "start",
+        "agency"
+      ],
+      "selected": {
+        "motif": "depleted",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa02",
+      "reverse": false,
+      "motifs": [
+        "plan",
+        "explore"
+      ],
+      "opposite": [
+        "choice",
+        "avoidance"
+      ],
+      "selected": {
+        "motif": "plan",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa02",
+      "reverse": true,
+      "motifs": [
+        "choice",
+        "avoidance"
+      ],
+      "opposite": [
+        "plan",
+        "explore"
+      ],
+      "selected": {
+        "motif": "choice",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa03",
+      "reverse": false,
+      "motifs": [
+        "explore",
+        "patience"
+      ],
+      "opposite": [
+        "delay",
+        "reality"
+      ],
+      "selected": {
+        "motif": "explore",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa03",
+      "reverse": true,
+      "motifs": [
+        "delay",
+        "reality"
+      ],
+      "opposite": [
+        "explore",
+        "patience"
+      ],
+      "selected": {
+        "motif": "delay",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa04",
+      "reverse": false,
+      "motifs": [
+        "security",
+        "connection"
+      ],
+      "opposite": [
+        "security",
+        "depleted"
+      ],
+      "selected": {
+        "motif": "security",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa04",
+      "reverse": true,
+      "motifs": [
+        "security",
+        "depleted"
+      ],
+      "opposite": [
+        "security",
+        "connection"
+      ],
+      "selected": {
+        "motif": "depleted",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "wa05",
+      "reverse": false,
+      "motifs": [
+        "conflict",
+        "explore"
+      ],
+      "opposite": [
+        "conflict",
+        "avoidance"
+      ],
+      "selected": {
+        "motif": "conflict",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa05",
+      "reverse": true,
+      "motifs": [
+        "conflict",
+        "avoidance"
+      ],
+      "opposite": [
+        "conflict",
+        "explore"
+      ],
+      "selected": {
+        "motif": "avoidance",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "wa06",
+      "reverse": false,
+      "motifs": [
+        "recognition",
+        "agency"
+      ],
+      "opposite": [
+        "recognition",
+        "doubt"
+      ],
+      "selected": {
+        "motif": "recognition",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa06",
+      "reverse": true,
+      "motifs": [
+        "recognition",
+        "doubt"
+      ],
+      "opposite": [
+        "recognition",
+        "agency"
+      ],
+      "selected": {
+        "motif": "doubt",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "wa07",
+      "reverse": false,
+      "motifs": [
+        "bounds",
+        "agency"
+      ],
+      "opposite": [
+        "bounds",
+        "depleted"
+      ],
+      "selected": {
+        "motif": "bounds",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa07",
+      "reverse": true,
+      "motifs": [
+        "bounds",
+        "depleted"
+      ],
+      "opposite": [
+        "bounds",
+        "agency"
+      ],
+      "selected": {
+        "motif": "depleted",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "wa08",
+      "reverse": false,
+      "motifs": [
+        "speed",
+        "expression"
+      ],
+      "opposite": [
+        "mismatch",
+        "delay"
+      ],
+      "selected": {
+        "motif": "speed",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa08",
+      "reverse": true,
+      "motifs": [
+        "mismatch",
+        "delay"
+      ],
+      "opposite": [
+        "speed",
+        "expression"
+      ],
+      "selected": {
+        "motif": "mismatch",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa09",
+      "reverse": false,
+      "motifs": [
+        "patience",
+        "bounds"
+      ],
+      "opposite": [
+        "depleted",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "patience",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa09",
+      "reverse": true,
+      "motifs": [
+        "depleted",
+        "bounds"
+      ],
+      "opposite": [
+        "patience",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "depleted",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa10",
+      "reverse": false,
+      "motifs": [
+        "overload",
+        "resources"
+      ],
+      "opposite": [
+        "overload",
+        "support"
+      ],
+      "selected": {
+        "motif": "overload",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa10",
+      "reverse": true,
+      "motifs": [
+        "overload",
+        "support"
+      ],
+      "opposite": [
+        "overload",
+        "resources"
+      ],
+      "selected": {
+        "motif": "support",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "wa11",
+      "reverse": false,
+      "motifs": [
+        "start",
+        "explore"
+      ],
+      "opposite": [
+        "impulse",
+        "reality"
+      ],
+      "selected": {
+        "motif": "start",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa11",
+      "reverse": true,
+      "motifs": [
+        "impulse",
+        "reality"
+      ],
+      "opposite": [
+        "start",
+        "explore"
+      ],
+      "selected": {
+        "motif": "impulse",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa12",
+      "reverse": false,
+      "motifs": [
+        "speed",
+        "agency"
+      ],
+      "opposite": [
+        "impulse",
+        "delay"
+      ],
+      "selected": {
+        "motif": "speed",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa12",
+      "reverse": true,
+      "motifs": [
+        "impulse",
+        "delay"
+      ],
+      "opposite": [
+        "speed",
+        "agency"
+      ],
+      "selected": {
+        "motif": "impulse",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa13",
+      "reverse": false,
+      "motifs": [
+        "expression",
+        "agency"
+      ],
+      "opposite": [
+        "comparison",
+        "doubt"
+      ],
+      "selected": {
+        "motif": "expression",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa13",
+      "reverse": true,
+      "motifs": [
+        "comparison",
+        "doubt"
+      ],
+      "opposite": [
+        "expression",
+        "agency"
+      ],
+      "selected": {
+        "motif": "comparison",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa14",
+      "reverse": false,
+      "motifs": [
+        "agency",
+        "plan"
+      ],
+      "opposite": [
+        "rigid",
+        "dispersion"
+      ],
+      "selected": {
+        "motif": "agency",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "wa14",
+      "reverse": true,
+      "motifs": [
+        "rigid",
+        "dispersion"
+      ],
+      "opposite": [
+        "agency",
+        "plan"
+      ],
+      "selected": {
+        "motif": "rigid",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu01",
+      "reverse": false,
+      "motifs": [
+        "expression",
+        "connection"
+      ],
+      "opposite": [
+        "suppression",
+        "pause"
+      ],
+      "selected": {
+        "motif": "expression",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu01",
+      "reverse": true,
+      "motifs": [
+        "suppression",
+        "pause"
+      ],
+      "opposite": [
+        "expression",
+        "connection"
+      ],
+      "selected": {
+        "motif": "suppression",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu02",
+      "reverse": false,
+      "motifs": [
+        "connection",
+        "exchange"
+      ],
+      "opposite": [
+        "mismatch",
+        "exchange"
+      ],
+      "selected": {
+        "motif": "connection",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu02",
+      "reverse": true,
+      "motifs": [
+        "mismatch",
+        "exchange"
+      ],
+      "opposite": [
+        "connection",
+        "exchange"
+      ],
+      "selected": {
+        "motif": "mismatch",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu03",
+      "reverse": false,
+      "motifs": [
+        "connection",
+        "support"
+      ],
+      "opposite": [
+        "isolation",
+        "connection"
+      ],
+      "selected": {
+        "motif": "connection",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu03",
+      "reverse": true,
+      "motifs": [
+        "isolation",
+        "connection"
+      ],
+      "opposite": [
+        "connection",
+        "support"
+      ],
+      "selected": {
+        "motif": "isolation",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu04",
+      "reverse": false,
+      "motifs": [
+        "pause",
+        "review"
+      ],
+      "opposite": [
+        "choice",
+        "impulse"
+      ],
+      "selected": {
+        "motif": "pause",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu04",
+      "reverse": true,
+      "motifs": [
+        "choice",
+        "impulse"
+      ],
+      "opposite": [
+        "pause",
+        "review"
+      ],
+      "selected": {
+        "motif": "choice",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu05",
+      "reverse": false,
+      "motifs": [
+        "grief",
+        "resources"
+      ],
+      "opposite": [
+        "recovery",
+        "transition"
+      ],
+      "selected": {
+        "motif": "grief",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu05",
+      "reverse": true,
+      "motifs": [
+        "recovery",
+        "transition"
+      ],
+      "opposite": [
+        "grief",
+        "resources"
+      ],
+      "selected": {
+        "motif": "recovery",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu06",
+      "reverse": false,
+      "motifs": [
+        "connection",
+        "review"
+      ],
+      "opposite": [
+        "attachment",
+        "review"
+      ],
+      "selected": {
+        "motif": "connection",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu06",
+      "reverse": true,
+      "motifs": [
+        "attachment",
+        "review"
+      ],
+      "opposite": [
+        "connection",
+        "review"
+      ],
+      "selected": {
+        "motif": "attachment",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu07",
+      "reverse": false,
+      "motifs": [
+        "choice",
+        "ideals"
+      ],
+      "opposite": [
+        "choice",
+        "reality"
+      ],
+      "selected": {
+        "motif": "choice",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu07",
+      "reverse": true,
+      "motifs": [
+        "choice",
+        "reality"
+      ],
+      "opposite": [
+        "choice",
+        "ideals"
+      ],
+      "selected": {
+        "motif": "reality",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "cu08",
+      "reverse": false,
+      "motifs": [
+        "transition",
+        "autonomy"
+      ],
+      "opposite": [
+        "attachment",
+        "avoidance"
+      ],
+      "selected": {
+        "motif": "transition",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu08",
+      "reverse": true,
+      "motifs": [
+        "attachment",
+        "avoidance"
+      ],
+      "opposite": [
+        "transition",
+        "autonomy"
+      ],
+      "selected": {
+        "motif": "attachment",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu09",
+      "reverse": false,
+      "motifs": [
+        "joy",
+        "values"
+      ],
+      "opposite": [
+        "ideals",
+        "review"
+      ],
+      "selected": {
+        "motif": "joy",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu09",
+      "reverse": true,
+      "motifs": [
+        "ideals",
+        "review"
+      ],
+      "opposite": [
+        "joy",
+        "values"
+      ],
+      "selected": {
+        "motif": "ideals",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu10",
+      "reverse": false,
+      "motifs": [
+        "connection",
+        "security"
+      ],
+      "opposite": [
+        "ideals",
+        "mismatch"
+      ],
+      "selected": {
+        "motif": "connection",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu10",
+      "reverse": true,
+      "motifs": [
+        "ideals",
+        "mismatch"
+      ],
+      "opposite": [
+        "connection",
+        "security"
+      ],
+      "selected": {
+        "motif": "ideals",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu11",
+      "reverse": false,
+      "motifs": [
+        "expression",
+        "connection"
+      ],
+      "opposite": [
+        "ideals",
+        "mismatch"
+      ],
+      "selected": {
+        "motif": "expression",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu11",
+      "reverse": true,
+      "motifs": [
+        "ideals",
+        "mismatch"
+      ],
+      "opposite": [
+        "expression",
+        "connection"
+      ],
+      "selected": {
+        "motif": "ideals",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu12",
+      "reverse": false,
+      "motifs": [
+        "expression",
+        "connection"
+      ],
+      "opposite": [
+        "ideals",
+        "mismatch"
+      ],
+      "selected": {
+        "motif": "expression",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu12",
+      "reverse": true,
+      "motifs": [
+        "ideals",
+        "mismatch"
+      ],
+      "opposite": [
+        "expression",
+        "connection"
+      ],
+      "selected": {
+        "motif": "ideals",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu13",
+      "reverse": false,
+      "motifs": [
+        "care",
+        "support"
+      ],
+      "opposite": [
+        "care",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "care",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu13",
+      "reverse": true,
+      "motifs": [
+        "care",
+        "bounds"
+      ],
+      "opposite": [
+        "care",
+        "support"
+      ],
+      "selected": {
+        "motif": "bounds",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "cu14",
+      "reverse": false,
+      "motifs": [
+        "balance",
+        "pause"
+      ],
+      "opposite": [
+        "suppression",
+        "expression"
+      ],
+      "selected": {
+        "motif": "balance",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "cu14",
+      "reverse": true,
+      "motifs": [
+        "suppression",
+        "expression"
+      ],
+      "opposite": [
+        "balance",
+        "pause"
+      ],
+      "selected": {
+        "motif": "suppression",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw01",
+      "reverse": false,
+      "motifs": [
+        "clarity",
+        "review"
+      ],
+      "opposite": [
+        "uncertain",
+        "impulse"
+      ],
+      "selected": {
+        "motif": "clarity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw01",
+      "reverse": true,
+      "motifs": [
+        "uncertain",
+        "impulse"
+      ],
+      "opposite": [
+        "clarity",
+        "review"
+      ],
+      "selected": {
+        "motif": "uncertain",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw02",
+      "reverse": false,
+      "motifs": [
+        "choice",
+        "pause"
+      ],
+      "opposite": [
+        "choice",
+        "delay"
+      ],
+      "selected": {
+        "motif": "choice",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw02",
+      "reverse": true,
+      "motifs": [
+        "choice",
+        "delay"
+      ],
+      "opposite": [
+        "choice",
+        "pause"
+      ],
+      "selected": {
+        "motif": "delay",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "sw03",
+      "reverse": false,
+      "motifs": [
+        "grief",
+        "clarity"
+      ],
+      "opposite": [
+        "grief",
+        "recovery"
+      ],
+      "selected": {
+        "motif": "grief",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw03",
+      "reverse": true,
+      "motifs": [
+        "grief",
+        "recovery"
+      ],
+      "opposite": [
+        "grief",
+        "clarity"
+      ],
+      "selected": {
+        "motif": "recovery",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "sw04",
+      "reverse": false,
+      "motifs": [
+        "pause",
+        "recovery"
+      ],
+      "opposite": [
+        "depleted",
+        "delay"
+      ],
+      "selected": {
+        "motif": "pause",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw04",
+      "reverse": true,
+      "motifs": [
+        "depleted",
+        "delay"
+      ],
+      "opposite": [
+        "pause",
+        "recovery"
+      ],
+      "selected": {
+        "motif": "depleted",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw05",
+      "reverse": false,
+      "motifs": [
+        "conflict",
+        "bounds"
+      ],
+      "opposite": [
+        "conflict",
+        "closure"
+      ],
+      "selected": {
+        "motif": "conflict",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw05",
+      "reverse": true,
+      "motifs": [
+        "conflict",
+        "closure"
+      ],
+      "opposite": [
+        "conflict",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "closure",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "sw06",
+      "reverse": false,
+      "motifs": [
+        "transition",
+        "security"
+      ],
+      "opposite": [
+        "attachment",
+        "delay"
+      ],
+      "selected": {
+        "motif": "transition",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw06",
+      "reverse": true,
+      "motifs": [
+        "attachment",
+        "delay"
+      ],
+      "opposite": [
+        "transition",
+        "security"
+      ],
+      "selected": {
+        "motif": "attachment",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw07",
+      "reverse": false,
+      "motifs": [
+        "plan",
+        "bounds"
+      ],
+      "opposite": [
+        "clarity",
+        "expression"
+      ],
+      "selected": {
+        "motif": "plan",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw07",
+      "reverse": true,
+      "motifs": [
+        "clarity",
+        "expression"
+      ],
+      "opposite": [
+        "plan",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "clarity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw08",
+      "reverse": false,
+      "motifs": [
+        "uncertain",
+        "bounds"
+      ],
+      "opposite": [
+        "autonomy",
+        "review"
+      ],
+      "selected": {
+        "motif": "uncertain",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw08",
+      "reverse": true,
+      "motifs": [
+        "autonomy",
+        "review"
+      ],
+      "opposite": [
+        "uncertain",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "autonomy",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw09",
+      "reverse": false,
+      "motifs": [
+        "doubt",
+        "uncertain"
+      ],
+      "opposite": [
+        "recovery",
+        "expression"
+      ],
+      "selected": {
+        "motif": "doubt",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw09",
+      "reverse": true,
+      "motifs": [
+        "recovery",
+        "expression"
+      ],
+      "opposite": [
+        "doubt",
+        "uncertain"
+      ],
+      "selected": {
+        "motif": "recovery",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw10",
+      "reverse": false,
+      "motifs": [
+        "grief",
+        "closure"
+      ],
+      "opposite": [
+        "grief",
+        "recovery"
+      ],
+      "selected": {
+        "motif": "grief",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw10",
+      "reverse": true,
+      "motifs": [
+        "grief",
+        "recovery"
+      ],
+      "opposite": [
+        "grief",
+        "closure"
+      ],
+      "selected": {
+        "motif": "recovery",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "sw11",
+      "reverse": false,
+      "motifs": [
+        "clarity",
+        "explore"
+      ],
+      "opposite": [
+        "doubt",
+        "impulse"
+      ],
+      "selected": {
+        "motif": "clarity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw11",
+      "reverse": true,
+      "motifs": [
+        "doubt",
+        "impulse"
+      ],
+      "opposite": [
+        "clarity",
+        "explore"
+      ],
+      "selected": {
+        "motif": "doubt",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw12",
+      "reverse": false,
+      "motifs": [
+        "speed",
+        "agency"
+      ],
+      "opposite": [
+        "speed",
+        "conflict"
+      ],
+      "selected": {
+        "motif": "speed",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw12",
+      "reverse": true,
+      "motifs": [
+        "speed",
+        "conflict"
+      ],
+      "opposite": [
+        "speed",
+        "agency"
+      ],
+      "selected": {
+        "motif": "conflict",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "sw13",
+      "reverse": false,
+      "motifs": [
+        "clarity",
+        "bounds"
+      ],
+      "opposite": [
+        "bounds",
+        "mismatch"
+      ],
+      "selected": {
+        "motif": "clarity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw13",
+      "reverse": true,
+      "motifs": [
+        "bounds",
+        "mismatch"
+      ],
+      "opposite": [
+        "clarity",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "mismatch",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "sw14",
+      "reverse": false,
+      "motifs": [
+        "clarity",
+        "structure"
+      ],
+      "opposite": [
+        "rigid",
+        "support"
+      ],
+      "selected": {
+        "motif": "clarity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "sw14",
+      "reverse": true,
+      "motifs": [
+        "rigid",
+        "support"
+      ],
+      "opposite": [
+        "clarity",
+        "structure"
+      ],
+      "selected": {
+        "motif": "rigid",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe01",
+      "reverse": false,
+      "motifs": [
+        "start",
+        "resources"
+      ],
+      "opposite": [
+        "scarcity",
+        "impulse"
+      ],
+      "selected": {
+        "motif": "start",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe01",
+      "reverse": true,
+      "motifs": [
+        "scarcity",
+        "impulse"
+      ],
+      "opposite": [
+        "start",
+        "resources"
+      ],
+      "selected": {
+        "motif": "scarcity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe02",
+      "reverse": false,
+      "motifs": [
+        "balance",
+        "flexibility"
+      ],
+      "opposite": [
+        "overload",
+        "depleted"
+      ],
+      "selected": {
+        "motif": "balance",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe02",
+      "reverse": true,
+      "motifs": [
+        "overload",
+        "depleted"
+      ],
+      "opposite": [
+        "balance",
+        "flexibility"
+      ],
+      "selected": {
+        "motif": "overload",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe03",
+      "reverse": false,
+      "motifs": [
+        "skill",
+        "support"
+      ],
+      "opposite": [
+        "mismatch",
+        "structure"
+      ],
+      "selected": {
+        "motif": "skill",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe03",
+      "reverse": true,
+      "motifs": [
+        "mismatch",
+        "structure"
+      ],
+      "opposite": [
+        "skill",
+        "support"
+      ],
+      "selected": {
+        "motif": "mismatch",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe04",
+      "reverse": false,
+      "motifs": [
+        "security",
+        "bounds"
+      ],
+      "opposite": [
+        "attachment",
+        "rigid"
+      ],
+      "selected": {
+        "motif": "security",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe04",
+      "reverse": true,
+      "motifs": [
+        "attachment",
+        "rigid"
+      ],
+      "opposite": [
+        "security",
+        "bounds"
+      ],
+      "selected": {
+        "motif": "attachment",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe05",
+      "reverse": false,
+      "motifs": [
+        "scarcity",
+        "isolation"
+      ],
+      "opposite": [
+        "support",
+        "recovery"
+      ],
+      "selected": {
+        "motif": "scarcity",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe05",
+      "reverse": true,
+      "motifs": [
+        "support",
+        "recovery"
+      ],
+      "opposite": [
+        "scarcity",
+        "isolation"
+      ],
+      "selected": {
+        "motif": "support",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe06",
+      "reverse": false,
+      "motifs": [
+        "exchange",
+        "support"
+      ],
+      "opposite": [
+        "exchange",
+        "mismatch"
+      ],
+      "selected": {
+        "motif": "exchange",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe06",
+      "reverse": true,
+      "motifs": [
+        "exchange",
+        "mismatch"
+      ],
+      "opposite": [
+        "exchange",
+        "support"
+      ],
+      "selected": {
+        "motif": "mismatch",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "pe07",
+      "reverse": false,
+      "motifs": [
+        "patience",
+        "practice"
+      ],
+      "opposite": [
+        "impulse",
+        "review"
+      ],
+      "selected": {
+        "motif": "patience",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe07",
+      "reverse": true,
+      "motifs": [
+        "impulse",
+        "review"
+      ],
+      "opposite": [
+        "patience",
+        "practice"
+      ],
+      "selected": {
+        "motif": "impulse",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe08",
+      "reverse": false,
+      "motifs": [
+        "practice",
+        "skill"
+      ],
+      "opposite": [
+        "perfection",
+        "depleted"
+      ],
+      "selected": {
+        "motif": "practice",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe08",
+      "reverse": true,
+      "motifs": [
+        "perfection",
+        "depleted"
+      ],
+      "opposite": [
+        "practice",
+        "skill"
+      ],
+      "selected": {
+        "motif": "perfection",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe09",
+      "reverse": false,
+      "motifs": [
+        "autonomy",
+        "resources"
+      ],
+      "opposite": [
+        "comparison",
+        "doubt"
+      ],
+      "selected": {
+        "motif": "autonomy",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe09",
+      "reverse": true,
+      "motifs": [
+        "comparison",
+        "doubt"
+      ],
+      "opposite": [
+        "autonomy",
+        "resources"
+      ],
+      "selected": {
+        "motif": "comparison",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe10",
+      "reverse": false,
+      "motifs": [
+        "security",
+        "structure"
+      ],
+      "opposite": [
+        "mismatch",
+        "security"
+      ],
+      "selected": {
+        "motif": "security",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe10",
+      "reverse": true,
+      "motifs": [
+        "mismatch",
+        "security"
+      ],
+      "opposite": [
+        "security",
+        "structure"
+      ],
+      "selected": {
+        "motif": "mismatch",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe11",
+      "reverse": false,
+      "motifs": [
+        "skill",
+        "plan"
+      ],
+      "opposite": [
+        "plan",
+        "delay"
+      ],
+      "selected": {
+        "motif": "skill",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe11",
+      "reverse": true,
+      "motifs": [
+        "plan",
+        "delay"
+      ],
+      "opposite": [
+        "skill",
+        "plan"
+      ],
+      "selected": {
+        "motif": "delay",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "pe12",
+      "reverse": false,
+      "motifs": [
+        "practice",
+        "patience"
+      ],
+      "opposite": [
+        "rigid",
+        "delay"
+      ],
+      "selected": {
+        "motif": "practice",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe12",
+      "reverse": true,
+      "motifs": [
+        "rigid",
+        "delay"
+      ],
+      "opposite": [
+        "practice",
+        "patience"
+      ],
+      "selected": {
+        "motif": "rigid",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe13",
+      "reverse": false,
+      "motifs": [
+        "care",
+        "resources"
+      ],
+      "opposite": [
+        "care",
+        "depleted"
+      ],
+      "selected": {
+        "motif": "care",
+        "rank": 0,
+        "directional": false,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe13",
+      "reverse": true,
+      "motifs": [
+        "care",
+        "depleted"
+      ],
+      "opposite": [
+        "care",
+        "resources"
+      ],
+      "selected": {
+        "motif": "depleted",
+        "rank": 1,
+        "directional": true,
+        "reason": "reversal-specific-facet"
+      }
+    },
+    {
+      "id": "pe14",
+      "reverse": false,
+      "motifs": [
+        "security",
+        "resources"
+      ],
+      "opposite": [
+        "attachment",
+        "rigid"
+      ],
+      "selected": {
+        "motif": "security",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    },
+    {
+      "id": "pe14",
+      "reverse": true,
+      "motifs": [
+        "attachment",
+        "rigid"
+      ],
+      "opposite": [
+        "security",
+        "resources"
+      ],
+      "selected": {
+        "motif": "attachment",
+        "rank": 0,
+        "directional": true,
+        "reason": "canonical-primary"
+      }
+    }
+  ],
+  "note": "Exhaustive deterministic provenance and symmetry checks. Counts are not semantic correctness or professional quality scores."
+}

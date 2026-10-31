@@ -1,0 +1,27 @@
+{
+  "phase": "development",
+  "release": {
+    "appVersion": "91.0.0",
+    "readingEngine": 91,
+    "appSHA256": "eba279cf4ce0ba46e2ba44221e412fa02a22f96481d4946a306d4bf15519918a",
+    "appBytes": 33182548,
+    "webRelease": "5026b157af835016c0b7c555",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "baselineSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+  "collectorSHA256": "dc42335e5c0090922c32e78e57d91df4a060d8b8c0348399f7f12ffa15481cfb",
+  "fixtureSHA256": "505418f3ee59e97f9bcbe560a3880ecbda60f972617591a5e5bc01438f00a4fb",
+  "candidateCommit": "45a54e3a56cc5c5fb0af9961ca114ac8d65efa1a",
+  "note": "24 known questions/card layouts. Development diagnostics, not a professional quality score.",
+  "questions": 24,
+  "readingsPerVersion": 24,
+  "readingsSHA256": "34a7fcac8fbfc2b57cd3a9f2548480ad2dd4a0f4d2235e5f976c9052f174892b",
+  "errors": [],
+  "failures": [],
+  "qualityScore": null
+}
