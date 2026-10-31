@@ -1,0 +1,38 @@
+{
+  "url": "https://daeyeon1119.github.io/arcana/",
+  "release": {
+    "appVersion": "90.0.0",
+    "readingEngine": 90,
+    "appSHA256": "7123dc9c2c668978cb8743db51c46afe7c3c468ae2962c4c66e51479c2e239c4",
+    "appBytes": 33179345,
+    "webRelease": "d3fb7e7e08fce927f4e89e9b",
+    "languageAnalysis": {
+      "backend": "garu-ko",
+      "version": "0.11.0",
+      "modelSHA256": "f9ca34a2ad1d0a152f434dc21a755a802aef5a4f8d8246ff29625367d12a9ef7",
+      "wasmSHA256": "4469411fdc11ac3f4ed49908b568b6d8b784eef1119471f5b2e21fc04cd75dac"
+    }
+  },
+  "checks": [
+    "desktop: public HTTPS app bytes in offline cache match tested local build",
+    "desktop: 336 public/offline question/card/settings readings match local outputs exactly",
+    "desktop: 78 originals decode after public site is reopened offline",
+    "mobile-emulation: public HTTPS app bytes in offline cache match tested local build",
+    "mobile-emulation: 336 public/offline question/card/settings readings match local outputs exactly",
+    "mobile-emulation: 78 originals decode after public site is reopened offline",
+    "public application makes no request to this PC or a model endpoint"
+  ],
+  "errors": [],
+  "requestedOrigins": [
+    "https://daeyeon1119.github.io",
+    "https://fonts.googleapis.com"
+  ],
+  "browser": "156.0.8078.76",
+  "note": "Actual public HTTPS download and offline browser runs. Mobile is a Chromium profile, not a physical phone/Safari test. Fonts were blocked; no claim of professional reading quality.",
+  "deployment": {
+    "testedMainCommit": "970cf37cbef6fcebdb250270d6fa93457e54e66b",
+    "sourcePullRequest": "https://github.com/daeyeon1119/arcana/pull/26",
+    "pagesWorkflowRunId": 41176097831,
+    "pagesConclusion": "success"
+  }
+}
